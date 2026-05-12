@@ -1,0 +1,287 @@
+.ratings-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Caudex', serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #333;
+
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.heading img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  position: relative;
+}
+
+.review-slider {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 280px;
+  position: relative;
+}
+
+.review-track {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+  height: 100%;
+}
+
+.review-card {
+  flex: 0 0 100%;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.review-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.review-city {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.review-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #34495e;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bdc3c7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+.ratings-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-height: 80px;
+}
+
+.rating-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.rating-info {
+  flex: 1;
+}
+
+.rating-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  color: #f39c12;
+  font-size: 1rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .main-content {
+    gap: 2rem;
+  }
+  
+  .ratings-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .rating-box {
+    padding: 0.8rem;
+    min-height: 70px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .ratings-container {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .review-card {
+    padding: 1.5rem;
+  }
+
+  .review-slider {
+    max-width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  .ratings-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .rating-box {
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .social-icon {
+    font-size: 2.2rem;
+  }
+
+  .rating-info h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .ratings-container {
+    padding: 1rem 0.25rem;
+  }
+
+  .heading h1 {
+    font-size: 1.4rem;
+  }
+
+  .heading img {
+    max-width: 250px;
+  }
+
+  .review-card {
+    padding: 1.25rem;
+  }
+
+  .review-slider {
+    height: 260px;
+  }
+
+  .review-name {
+    font-size: 1.3rem;
+  }
+
+  .review-description {
+    font-size: 0.95rem;
+  }
+
+  .rating-box {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+  }
+
+  .stars {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .rating-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.8rem;
+  }
+
+  .review-slider {
+    height: 240px;
+  }
+}

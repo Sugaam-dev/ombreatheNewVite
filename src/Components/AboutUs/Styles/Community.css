@@ -1,0 +1,255 @@
+/* Community.css - Professional Community Section Styles */
+
+.community-school-section {
+ 
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.community-school-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(44, 62, 149, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(173, 216, 230, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.community-school-title {
+  color: #2c3e95;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.community-school-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #2c3e95, #5a6bb8);
+  border-radius: 2px;
+}
+
+.community-school-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.community-school-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.community-school-intro {
+  margin-bottom: 25px;
+}
+
+.community-school-bullet {
+  color: #2c3e95;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.community-school-description {
+  color: #495057;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 400;
+}
+
+.community-school-image-container {
+  width: 100%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+.community-school-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  border-radius: 15px;
+}
+
+.community-school-card:hover .community-school-image {
+  transform: scale(1.05);
+}
+
+.community-school-info {
+  text-align: left;
+}
+
+.community-school-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.community-school-highlight {
+  color: #2c3e95;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.community-school-highlight strong {
+  font-weight: 600;
+}
+
+.community-school-text {
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.community-school-philosophy {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.community-school-philosophy-intro {
+  color: #495057;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.community-school-highlight-blue {
+  color: #2c3e95;
+  font-weight: 600;
+  position: relative;
+}
+
+.community-school-quote {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.community-school-quote::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 2rem;
+  color: #2c3e95;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .community-school-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+  
+  .community-school-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .community-school-section {
+    padding: 50px 0;
+  }
+  
+  .community-school-title {
+    font-size: 2.25rem;
+    margin-bottom: 50px;
+  }
+  
+  .community-school-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .community-school-section {
+    padding: 25px 0;
+  }
+  
+  .community-school-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .community-school-card {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .community-school-image {
+    height: 220px;
+  }
+  
+  .community-school-description,
+  .community-school-philosophy-intro,
+  .community-school-quote,
+  .community-school-text {
+    font-size: 1rem;
+  }
+  
+  .community-school-intro,
+  .community-school-info {
+    margin-bottom: 20px;
+  }
+  
+  .community-school-image-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .community-school-title {
+    font-size: 1.75rem;
+  }
+  
+  .community-school-card {
+    padding: 15px;
+  }
+  
+  .community-school-image {
+    height: 200px;
+  }
+  
+  .community-school-bullet {
+    margin-right: 10px;
+  }
+}

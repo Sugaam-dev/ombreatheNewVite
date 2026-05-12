@@ -1,0 +1,292 @@
+
+
+/* ========================================
+   SOULFIT CREDENTIALS SECTION STYLES
+======================================== */
+.soulfit-credentials-section {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%); */
+  padding: 0rem 1rem;
+  padding-bottom: 2rem;
+}
+
+.soulfit-credentials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   CREDENTIALS HEADER STYLES
+======================================== */
+.soulfit-credentials-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.soulfit-credentials-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.soulfit-credentials-header p {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ========================================
+   CREDENTIALS GRID STYLES
+======================================== */
+.soulfit-credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* ========================================
+   CREDENTIAL CARD STYLES
+======================================== */
+.soulfit-credential-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.soulfit-credential-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.soulfit-credential-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.soulfit-credential-card:hover::before {
+  left: 100%;
+}
+
+/* ========================================
+   ICON CONTAINER STYLES
+======================================== */
+.soulfit-icon-container {
+  width: 5rem;
+  height: 5rem;
+  background: #f97316;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.soulfit-credential-card:hover .soulfit-icon-container {
+  background: #E34133;
+  transform: scale(1.1) rotate(12deg);
+}
+
+.soulfit-icon-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3), transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.soulfit-credential-card:hover .soulfit-icon-container::after {
+  transform: translateX(100%);
+}
+
+.soulfit-icon-emoji {
+  font-size: 2rem;
+  display: block;
+}
+
+/* ========================================
+   CARD CONTENT STYLES
+======================================== */
+.soulfit-card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.soulfit-credential-card:hover .soulfit-card-content h3 {
+  color: #f97316;
+}
+
+.soulfit-card-content p {
+  color: #6b7280;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.soulfit-credential-card:hover .soulfit-card-content p {
+  color: #4b5563;
+}
+
+/* ========================================
+   CTA SECTION STYLES
+======================================== */
+.soulfit-cta-section {
+  display: flex;
+  justify-content: center;
+}
+
+.soulfit-cta-card {
+  background: white;
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  transition: box-shadow 0.3s ease;
+}
+
+.soulfit-cta-card:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.soulfit-cta-card h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.soulfit-cta-card p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   CTA BUTTON STYLES
+======================================== */
+.soulfit-cta-button {
+  background: #E34133;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.soulfit-cta-button:hover {
+  background: #ea580c;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4);
+}
+
+.soulfit-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.4s;
+}
+
+.soulfit-cta-button:hover::before {
+  left: 100%;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - TABLET
+======================================== */
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+  
+  .soulfit-credentials-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .soulfit-credentials-header p {
+    font-size: 1.125rem;
+  }
+  
+  .soulfit-credential-card {
+    padding: 1.5rem;
+  }
+  
+  .soulfit-icon-container {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .soulfit-cta-card {
+    padding: 2rem;
+  }
+  
+  .soulfit-cta-card h2 {
+    font-size: 2rem;
+  }
+  
+  .soulfit-credentials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+======================================== */
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 1.75rem;
+  }
+  
+  .soulfit-credentials-header h2 {
+    font-size: 2rem;
+  }
+  
+  .soulfit-credential-card {
+    padding: 1.25rem;
+  }
+  
+  .soulfit-cta-card {
+    padding: 1.5rem;
+  }
+  
+  .soulfit-cta-card h2 {
+    font-size: 1.75rem;
+  }
+}
+
+

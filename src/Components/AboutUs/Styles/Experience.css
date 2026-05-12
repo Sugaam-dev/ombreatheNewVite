@@ -1,0 +1,593 @@
+/* Experience.css - Professional Bali Experience Section Styles */
+
+.bali-experience-section {
+
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bali-experience-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 25% 20%, rgba(173, 216, 230, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 80%, rgba(255, 182, 193, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Header Styles */
+.bali-experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bali-experience-title {
+  color: #2c3e95;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 1;
+}
+
+.bali-experience-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #2c3e95, #5a6bb8);
+  border-radius: 2px;
+}
+
+.bali-experience-subtitle {
+  color: #6c757d;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Content Styles */
+.bali-experience-content {
+  position: relative;
+  z-index: 1;
+}
+
+.bali-experience-intro {
+  margin-bottom: 30px;
+}
+
+.bali-experience-bullet {
+  color: #2c3e95;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.bali-experience-content-title {
+  color: #2c3e95;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.bali-experience-description {
+  color: #495057;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Features List */
+.bali-experience-features {
+  margin-top: 30px;
+}
+
+.bali-experience-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(44, 62, 149, 0.1);
+}
+
+.bali-experience-feature:last-child {
+  border-bottom: none;
+}
+
+.bali-experience-feature-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.bali-experience-feature-text {
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Carousel Styles */
+.bali-experience-carousel-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.bali-experience-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bali-carousel-image-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bali-carousel-image-wrapper {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.8);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bali-carousel-image-wrapper:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 30px 60px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.bali-experience-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.6s ease;
+}
+
+.bali-carousel-image-wrapper:hover .bali-experience-image {
+  transform: scale(1.05);
+}
+
+.bali-carousel-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 30px 25px 25px;
+  border-radius: 0 0 25px 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.bali-carousel-image-wrapper:hover .bali-carousel-image-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bali-carousel-image-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Carousel Arrows */
+.bali-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #2c3e95;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bali-carousel-arrow:hover {
+  background: #2c3e95;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(44, 62, 149, 0.3);
+}
+
+.bali-carousel-arrow-prev {
+  left: -30px;
+}
+
+.bali-carousel-arrow-next {
+  right: -30px;
+}
+
+/* Carousel Indicators */
+.bali-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.bali-carousel-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(44, 62, 149, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.bali-carousel-indicator.active {
+  background-color: #2c3e95;
+  transform: scale(1.3);
+}
+
+.bali-carousel-indicator:hover {
+  background-color: #5a6bb8;
+  transform: scale(1.2);
+}
+
+/* Progress Bar */
+.bali-carousel-progress {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(44, 62, 149, 0.1);
+  border-radius: 2px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.bali-carousel-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2c3e95, #5a6bb8);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Location Card Styles */
+.bali-experience-location {
+  position: relative;
+  z-index: 1;
+}
+
+.bali-location-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.bali-location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.bali-location-header {
+  margin-bottom: 20px;
+}
+
+.bali-location-title {
+  margin-bottom: 10px;
+}
+
+.bali-location-highlight {
+  color: #2c3e95;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.bali-location-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bali-rating-stars {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.bali-rating-text {
+  color: #6c757d;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.bali-location-description {
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.bali-location-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.bali-highlight-item {
+  text-align: center;
+  padding: 15px 10px;
+  background: rgba(44, 62, 149, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.bali-highlight-item:hover {
+  background: rgba(44, 62, 149, 0.1);
+  transform: translateY(-2px);
+}
+
+.bali-highlight-number {
+  display: block;
+  color: #2c3e95;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bali-highlight-label {
+  color: #6c757d;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Background Decorative Elements */
+.bali-experience-bg-element-1 {
+  position: absolute;
+  top: 10%;
+  left: -8%;
+  width: 300px;
+  height: 400px;
+  background: rgba(173, 216, 230, 0.08);
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  z-index: 0;
+}
+
+.bali-experience-bg-element-2 {
+  position: absolute;
+  bottom: 15%;
+  right: -10%;
+  width: 350px;
+  height: 450px;
+  background: rgba(255, 182, 193, 0.08);
+  border-radius: 50%;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .bali-experience-title {
+    font-size: 3rem;
+  }
+  
+  .bali-experience-content-title {
+    font-size: 1.5rem;
+  }
+  
+  .bali-experience-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bali-experience-section {
+    padding: 50px 0;
+  }
+  
+  .bali-experience-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .bali-experience-location {
+    margin-top: 40px;
+  }
+  
+  .bali-experience-title {
+    font-size: 2.5rem;
+  }
+  
+  .bali-carousel-arrow-prev {
+    left: -20px;
+  }
+  
+  .bali-carousel-arrow-next {
+    right: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bali-experience-section {
+    padding: 25px 0;
+  }
+  
+  .bali-experience-title {
+    font-size: 2.25rem;
+  }
+  
+  .bali-experience-image {
+    height: 300px;
+  }
+  
+  .bali-carousel-arrow {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+  
+  .bali-carousel-arrow-prev {
+    left: -15px;
+  }
+  
+  .bali-carousel-arrow-next {
+    right: -15px;
+  }
+  
+  .bali-location-card {
+    padding: 25px;
+  }
+  
+  .bali-location-highlights {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bali-experience-title {
+    font-size: 2rem;
+  }
+  
+  .bali-experience-content-title {
+    font-size: 1.375rem;
+  }
+  
+  .bali-experience-image {
+    height: 280px;
+  }
+  
+  .bali-carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .bali-carousel-arrow-prev {
+    left: -10px;
+  }
+  
+  .bali-carousel-arrow-next {
+    right: -10px;
+  }
+  
+  .bali-experience-bg-element-1,
+  .bali-experience-bg-element-2 {
+    display: none;
+  }
+  
+  .bali-location-card {
+    padding: 20px;
+  }
+  
+  .bali-experience-content,
+  .bali-experience-location {
+    padding: 0 15px;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .bali-experience-image,
+  .bali-carousel-arrow,
+  .bali-carousel-indicator,
+  .bali-location-card,
+  .bali-highlight-item {
+    transition: none;
+  }
+  
+  .bali-carousel-image-wrapper:hover {
+    transform: none;
+  }
+}
+/* --- NEW: Location Tabs Styles --- */
+.location-tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.location-tab-btn {
+  background: white;
+  border: 1px solid rgba(44, 62, 149, 0.2);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.location-tab-btn:hover {
+  border-color: #2c3e95;
+  color: #2c3e95;
+}
+
+.location-tab-btn.active {
+  background: #2c3e95;
+  color: #ffffff;
+  border-color: #2c3e95;
+  box-shadow: 0 4px 15px rgba(44, 62, 149, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Ensure the image transition feels smooth */
+.bali-experience-image {
+  transition: opacity 0.5s ease-in-out;
+  /* Prevent image height jumping */
+ 
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Feature icon tweak */
+.bali-experience-feature-icon {
+  background: rgba(44, 62, 149, 0.05);
+  padding: 5px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+/* Responsive adjustments for tabs */
+@media (max-width: 768px) {
+  .location-tab-btn {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+  }
+}

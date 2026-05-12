@@ -1,0 +1,584 @@
+/* ====================================
+   YOGA GALLERY STYLES
+   ==================================== */
+
+/* Gallery Container */
+.gallery-container {
+  padding: 5rem 0;
+  /* background: #f8f9fa; */
+}
+
+.gallery-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Gallery Header */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  color: #2E3A87;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.gallery-subtitle {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Main Gallery Wrapper */
+.gallery-main-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-main-container {
+  width: 100%;
+}
+
+/* Gallery Viewport - Dynamic sizing to match image resolution */
+.gallery-viewport {
+  position: relative;
+  background-color: #f8f9fa;
+  cursor: grab;
+  user-select: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+  /* Remove fixed aspect ratio - let image determine size */
+  width: fit-content;
+  height: fit-content;
+  max-width: 100%;
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.gallery-viewport.dragging {
+  cursor: grabbing;
+}
+
+/* Image Container - Flexible to match image size */
+.gallery-image-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Main Image - Natural size with proper containment */
+.gallery-main-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  object-position: center;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateZ(0);
+  display: block;
+}
+
+.gallery-main-image.loaded {
+  opacity: 1;
+}
+
+/* Loading State */
+.gallery-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 249, 250, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.gallery-loading-content {
+  text-align: center;
+  color: #6c757d;
+}
+
+.gallery-loading-content p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Loading Spinner */
+.gallery-spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e9ecef;
+  border-top: 3px solid #2E3A87;
+  border-radius: 50%;
+  animation: gallery-spin 1s linear infinite;
+}
+
+@keyframes gallery-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Navigation Buttons */
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.gallery-nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-nav-btn span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.gallery-nav-prev {
+  left: 1rem;
+}
+
+.gallery-nav-next {
+  right: 1rem;
+}
+
+/* Dot Indicators */
+.gallery-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 90%;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.gallery-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.gallery-dot.visible {
+  width: 8px;
+  height: 8px;
+}
+
+.gallery-dot.active {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 1;
+}
+
+/* Remove all extra sections that are no longer needed */
+
+/* Gallery Controls - REMOVED */
+/* .gallery-controls { display: none; } */
+
+/* Thumbnails Section - REMOVED */
+/* .gallery-thumbnails-section { display: none; } */
+
+/* Gallery Actions - REMOVED */
+/* .gallery-actions { display: none; } */
+
+/* Gallery Info - REMOVED */
+/* .gallery-info { display: none; } */
+
+/* Gallery Help - REMOVED */
+/* .gallery-help { display: none; } */
+
+/* Empty State */
+.gallery-empty {
+  text-align: center;
+  padding: 5rem 0;
+  color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .gallery-container {
+    padding: 3rem 0;
+  }
+  
+  .gallery-title {
+    font-size: 2rem;
+  }
+  
+  .gallery-subtitle {
+    font-size: 1rem;
+  }
+  
+  .gallery-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .gallery-nav-btn span {
+    font-size: 1.2rem;
+  }
+  
+  .gallery-nav-prev {
+    left: 0.5rem;
+  }
+  
+  .gallery-nav-next {
+    right: 0.5rem;
+  }
+  
+  .gallery-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .gallery-help {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-inner {
+    padding: 0 0.5rem;
+  }
+  
+  .gallery-viewport {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-thumbnails-section {
+    display: block;
+  }
+}
+
+/* Performance Optimizations */
+.gallery-viewport,
+.gallery-main-image,
+.gallery-nav-btn {
+  will-change: transform;
+}
+
+/* Smooth scrolling for thumbnails */
+.gallery-thumbnails {
+  scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+.gallery-nav-btn:focus,
+.gallery-dot:focus,
+.gallery-btn:focus,
+.gallery-thumbnail:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Additional Animations */
+@keyframes gallery-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-header {
+  animation: gallery-fade-in 0.6s ease-out;
+}
+
+.gallery-viewport {
+  animation: gallery-fade-in 0.8s ease-out 0.2s both;
+}
+
+.gallery-controls {
+  animation: gallery-fade-in 1s ease-out 0.4s both;
+}
+
+/* Loading Animation */
+@keyframes gallery-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.gallery-main-image:not(.loaded) {
+  animation: gallery-pulse 1.5s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.gallery-viewport:hover .gallery-nav-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-nav-btn {
+  opacity: 0.8;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .gallery-nav-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .gallery-nav-btn:hover {
+    transform: translateY(-50%);
+  }
+  
+  .gallery-thumbnail:hover {
+    transform: none;
+  }
+  
+  .gallery-thumbnail.active {
+    transform: scale(1.05);
+  }
+}
+
+/* High DPI Display Optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .gallery-main-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-main-image,
+  .gallery-nav-btn,
+  .gallery-dot,
+  .gallery-thumbnail,
+  .gallery-btn {
+    transition: none;
+  }
+  
+  .gallery-spinner {
+    animation: none;
+  }
+  
+  .gallery-header,
+  .gallery-viewport,
+  .gallery-controls {
+    animation: none;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .gallery-container {
+    background: #1a1a1a;
+  }
+  
+  .gallery-title {
+    color: #4a90e2;
+  }
+  
+  .gallery-subtitle,
+  .gallery-counter,
+  .gallery-loaded,
+  .gallery-help,
+  .gallery-thumbnails-title,
+  .gallery-thumbnails-info small {
+    color: #b0b0b0;
+  }
+  
+  .gallery-viewport {
+    background-color: #2a2a2a;
+  }
+  
+  .gallery-image-container {
+    background-color: #2a2a2a;
+  }
+  
+  .gallery-loading {
+    background-color: rgba(42, 42, 42, 0.95);
+    color: #b0b0b0;
+  }
+  
+  .gallery-spinner {
+    border-color: #3a3a3a;
+    border-top-color: #4a90e2;
+  }
+  
+  .gallery-thumbnail {
+    border-color: #3a3a3a;
+  }
+  
+  .gallery-thumbnail:hover {
+    border-color: #4a90e2;
+  }
+  
+  .gallery-thumbnail.active {
+    border-color: #4a90e2;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  }
+  
+  .gallery-btn-secondary {
+    border-color: #b0b0b0;
+    color: #b0b0b0;
+  }
+  
+  .gallery-btn-secondary:hover {
+    background-color: #b0b0b0;
+    color: #1a1a1a;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .gallery-container {
+    background: white;
+    padding: 1rem 0;
+  }
+  
+  .gallery-nav-btn,
+  .gallery-dots,
+  .gallery-controls,
+  .gallery-thumbnails-section {
+    display: none !important;
+  }
+  
+  .gallery-viewport {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+  
+  .gallery-title {
+    color: #333;
+  }
+  
+  .gallery-subtitle {
+    color: #666;
+  }
+}
+
+/* Custom Scrollbar for Thumbnails */
+.gallery-thumbnails::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 2px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Error State */
+.gallery-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.gallery-error-message {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Fullscreen Mode Support */
+.gallery-viewport:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: unset;
+  max-height: unset;
+}
+
+.gallery-viewport:-moz-full-screen {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: unset;
+  max-height: unset;
+}
+
+.gallery-viewport:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: unset;
+  max-height: unset;
+}
+
+/* Additional Utility Classes */
+.gallery-hidden {
+  display: none !important;
+}
+
+.gallery-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* End of Gallery Styles */
