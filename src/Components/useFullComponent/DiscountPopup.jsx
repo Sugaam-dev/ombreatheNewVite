@@ -11,8 +11,13 @@ const DiscountPopup = () => {
 
   const WHATSAPP_NUMBER = "917483987568";
 
-  const MESSAGE =
-    "Hi! I'd like to claim the 20% discount for the Rishikesh 2026 retreat.";
+const MESSAGE =
+  "Hi! I'd like to claim the 20% discount for the Rishikesh 2026 retreat.";
+
+useEffect(() => {
+  const img = new Image();
+  img.src = img1;
+}, []);
 
   // =========================
   // OPEN POPUP
@@ -331,14 +336,15 @@ const DiscountPopup = () => {
 
             {/* IMAGE */}
             <div className="img-box">
-              <img
-                src={img1}
-                alt="Rishikesh Retreat"
-                loading="lazy"
-                decoding="async"
-                width="600"
-                height="800"
-              />
+            <img
+  src={img1}
+  alt="Rishikesh Retreat"
+  loading="eager"
+  fetchPriority="high"
+  decoding="sync"
+  width="600"
+  height="800"
+/>
             </div>
 
             {/* CONTENT */}

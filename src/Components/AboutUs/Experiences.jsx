@@ -5,6 +5,7 @@ import './Styles/Experience.css';
 import baliExperience1 from '../../images/Gallery/8.jpg';
 import baliExperience2 from '../../images/Gallery/9.jpg';
 import baliExperience3 from '../../images/Gallery/11.jpg';
+import SectionHeading from '../useFullComponent/SectionHeading';
 // import baliExperience4 from '../../images/Gallery/8.jpg';
 // import baliExperience5 from '../../images/Gallery/9.jpg';
 // import baliExperience6 from '../../images/Gallery/11.jpg';
@@ -147,8 +148,15 @@ const Experience = () => {
         </div>
 
         <div className="text-center mb-5">
-          <h2 className="bali-experience-title">{activeLoc.name} Experience</h2>
-          <p className="bali-experience-subtitle">{activeLoc.subtitle}</p>
+          {/* <h2 className="bali-experience-title">{activeLoc.name} Experience</h2>
+          <p className="bali-experience-subtitle">{activeLoc.subtitle}</p> */}
+        <SectionHeading
+  title={activeLoc.name}
+  highlight="Experience"
+  subtitle={activeLoc.subtitle}
+  highlightColor="#4a7c68"
+  textColor="#1e1e1c"
+/>
         </div>
 
         <div className="row align-items-center g-4">

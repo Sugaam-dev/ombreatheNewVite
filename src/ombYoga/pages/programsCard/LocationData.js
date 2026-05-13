@@ -104,7 +104,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "50hr",
         hours: "50",
-        title: "Foundation",
+        title: "6 Days 50 Hours Multi-Style Yoga Course",
         price: "$650",
         duration: "6 days",
         badge: "Beginner Friendly",
@@ -113,7 +113,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "100hr",
         hours: "100",
-        title: "Foundation",
+        title: "10 Days 100 Hours Multi-Style Yoga Course",
         price: "$999",
         duration: "10 days",
         badge: "Most Popular",
@@ -122,7 +122,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "200hr",
         hours: "200",
-        title: "Professional",
+        title: "20 Days 200 Hours Multi-Style YTTC",
         price: "$1,299",
         duration: "20 days",
         badge: "Yoga Alliance",
@@ -131,7 +131,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "300hr",
         hours: "300",
-        title: "Advanced",
+        title: "26 Days 300 Hours Advanced Multi-Style YTTC",
         price: "$2,099",
         duration: "26 days",
         badge: "For Teachers",
@@ -140,7 +140,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "500hr",
         hours: "500",
-        title: "Master",
+        title: "56 Days 500 Hours Multi-Style YTTC",
         price: "$3,599",
         duration: "~56 days",
         badge: "Elite Program",
@@ -157,7 +157,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "kundalini50hr",
         hours: "50",
-        title: "Awakening",
+        title: "6 Days 50 Hours Kundalini Yoga Course",
         price: "$650",
         duration: "6 days",
         badge: "Beginner Friendly",
@@ -166,7 +166,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "kundalini100hr",
         hours: "100",
-        title: "Activation",
+        title: "10 Days 100 Hours Kundalini YTTC",
         price: "$999",
         duration: "10 days",
         badge: "Immersive",
@@ -175,7 +175,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "kundalini200hr",
         hours: "200",
-        title: "Integration",
+        title: "20 Days 200 Hours Kundalini YTTC",
         price: "$1,299",
         duration: "20 days",
         badge: "Yoga Alliance",
@@ -184,7 +184,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "kundalini300hr",
         hours: "300",
-        title: "Mastery",
+        title: "26 Days 300 Hours Advanced Kundalini YTTC",
         price: "$2,199",
         duration: "26 days",
         badge: "Advanced",
@@ -193,7 +193,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "kundalini500hr",
         hours: "500",
-        title: "Transmission",
+        title: "56 Days 500 Hours Kundalini YTTC",
         price: "$3,699",
         duration: "~56 days",
         badge: "Elite Program",
@@ -210,7 +210,7 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "yinyoga",
         hours: "50",
-        title: "Yin Yoga",
+        title: "6 Days 50 Hours Yin Yoga Course",
         price: "$650",
         duration: "6 days",
         badge: "Specialty",
@@ -218,8 +218,8 @@ export const PROGRAM_CATEGORIES = [
       },
       {
         path: "prenatalyoga",
-        hours: "85",
-        title: "Prenatal Yoga",
+        hours: "N/A",
+        title: "Prenatal Yoga TTC",
         price: "$650",
         duration: "6 days",
         badge: "Specialty",
@@ -228,16 +228,16 @@ export const PROGRAM_CATEGORIES = [
       {
         path: "aerialyoga",
         hours: "50",
-        title: "Aerial Yoga",
+        title: "5 Days Aerial Yoga Course",
         price: "$550",
-        duration: "6 days",
+        duration: "5 days",
         badge: "Equipment Provided",
         certification: "YACEP",
       },
       {
         path: "acroYoga",
         hours: "50",
-        title: "Acro Yoga",
+        title: "5 Days Acro Yoga Course",
         price: "$799",
         duration: "5 days",
         badge: "Partner Practice",
