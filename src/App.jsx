@@ -88,6 +88,9 @@ function NormalisedTTCRoute() {
   );
 }
 
+
+
+
 function NormalisedLocationRoute() {
   const { location: loc } = useParams();
   const navigate = useNavigate();
@@ -112,6 +115,7 @@ function NormalisedLocationRoute() {
 // ROUTES
 // ==========================================
 function AppRoutes() {
+  
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

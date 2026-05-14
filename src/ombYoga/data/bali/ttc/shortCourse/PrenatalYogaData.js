@@ -25,6 +25,7 @@ export const PrenatalYogaData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const PrenatalYogaData = {
         desc:
           "Support expectant mothers through safe and nurturing prenatal yoga — become a certified teacher in Bali.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const PrenatalYogaData = {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

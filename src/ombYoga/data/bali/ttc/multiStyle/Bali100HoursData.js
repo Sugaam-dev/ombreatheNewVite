@@ -25,6 +25,7 @@ export const Bali100HoursData= {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const Bali100HoursData= {
         desc:
           "Transform your body, mind, and lifestyle through structured 100-hour yoga teacher training in Bali.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const Bali100HoursData= {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

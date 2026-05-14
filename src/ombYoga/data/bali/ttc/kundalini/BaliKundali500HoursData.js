@@ -25,6 +25,7 @@ export const BaliKundali500HoursData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const BaliKundali500HoursData = {
         desc:
           "The ultimate Kundalini journey — 500 hours of immersive advanced training in Bali for the highest global certification.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const BaliKundali500HoursData = {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

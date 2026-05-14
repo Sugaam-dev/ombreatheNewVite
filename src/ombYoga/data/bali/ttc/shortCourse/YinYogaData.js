@@ -25,6 +25,7 @@ export const YinYogaData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const YinYogaData = {
         desc:
           "Master the art of passive stretching and deep relaxation through Yin Yoga teacher training in Bali.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const YinYogaData = {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

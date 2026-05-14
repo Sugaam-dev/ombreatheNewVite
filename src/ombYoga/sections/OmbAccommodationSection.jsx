@@ -11,6 +11,7 @@ import {
   CheckCircle,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OmbAccommodationSection = ({ data }) => {
   const [activeRoom, setActiveRoom] = useState(0);
@@ -154,7 +155,8 @@ const OmbAccommodationSection = ({ data }) => {
                 {room.price}
               </div>
 
-             <button
+             <Link
+             to={content.url}
   onMouseEnter={(e) => {
     e.currentTarget.style.transform = "translateY(-2px)";
     e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.2)";
@@ -189,10 +191,11 @@ const OmbAccommodationSection = ({ data }) => {
     // ✨ EFFECTS
     boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
     transition: "all 0.25s ease",
+    textDecoration:"none",
   }}
 >
   {content.buttonText} <ArrowRight size={16} />
-</button>
+</Link>
             </div>
           </div>
         </div>

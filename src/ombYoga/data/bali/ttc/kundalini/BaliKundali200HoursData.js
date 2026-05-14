@@ -25,6 +25,7 @@ export const BaliKundali200HoursData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const BaliKundali200HoursData = {
         desc:
           "Transform your life and awaken others through 200-hour Kundalini yoga teacher training in Bali.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const BaliKundali200HoursData = {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

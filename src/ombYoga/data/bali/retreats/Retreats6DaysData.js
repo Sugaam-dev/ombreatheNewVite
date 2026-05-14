@@ -25,6 +25,7 @@ export const Retreats6DaysData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const Retreats6DaysData = {
         desc:
           "Reset, detox and reconnect through 6 days of yoga, Ayurveda and deep inner renewal in sacred Ubud.",
         buttonText: "Book Your Retreat",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const Retreats6DaysData = {
       ],
 
       buttonText: "Book Your Retreat",
+        url:"/contact",
     },
   },
 

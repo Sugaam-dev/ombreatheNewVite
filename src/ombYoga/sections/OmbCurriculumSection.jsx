@@ -16,6 +16,7 @@ import {
   BrainCircuit,
   BellRing,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OmbCurriculumSection = ({ data }) => {
   const { colors, content } = data;
@@ -169,17 +170,20 @@ const OmbCurriculumSection = ({ data }) => {
 
           <p style={{ opacity: 0.8 }}>{content.cta.desc}</p>
 
-          <button
+          <Link
+            to={content.cta.url}
             style={{
               marginTop: 20,
               padding: "10px 20px",
               borderRadius: 20,
               border: "none",
               cursor: "pointer",
+              textDecoration:"none",
             }}
           >
             {content.cta.buttonText} <ChevronRight size={16} />
-          </button>
+          </Link>
+           
         </div>
       </div>
     </section>

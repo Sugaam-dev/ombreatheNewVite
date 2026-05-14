@@ -25,6 +25,7 @@ export const AcroYogaData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const AcroYogaData = {
         desc:
           "Rise together through Acro Yoga teacher training in Bali — earn your YACEP certification in 5 dynamic days.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const AcroYogaData = {
       ],
 
       buttonText: "Book Now",
+        url:"/contact",
     },
   },
 

@@ -27,6 +27,7 @@ export const Bali50HourData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+      url:"/contact"
     },
 
     gains: [
@@ -347,6 +348,7 @@ export const Bali50HourData = {
         desc:
           "Transform your body, mind, and lifestyle through structured multi style yoga training in Bali.",
         buttonText: "Start Your Journey",
+        url:"/contact",
       },
     },
   },
@@ -647,6 +649,7 @@ export const Bali50HourData = {
       ],
 
       buttonText: "Book Now",
+      url:"/contact",
     },
   },
 

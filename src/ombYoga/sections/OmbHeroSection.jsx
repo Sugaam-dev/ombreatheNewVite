@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MapPin, ArrowRight, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OmbHeroSection = ({ data }) => {
   const [loaded, setLoaded] = useState(false);
@@ -144,7 +145,8 @@ const OmbHeroSection = ({ data }) => {
           </p>
 
           {/* CTA BUTTON */}
-          <button
+          <Link
+          to={hero.url}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-3px)";
               e.currentTarget.style.background = colors.goldLight;
@@ -170,10 +172,11 @@ const OmbHeroSection = ({ data }) => {
               fontWeight: 600,
               fontSize: "clamp(0.9rem, 1.5vw, 1rem)",
               transition: "all 0.35s ease",
+              textDecoration:"none",
             }}
           >
             {hero.buttonText} <ArrowRight size={18} />
-          </button>
+          </Link>
         </div>
       </div>
 

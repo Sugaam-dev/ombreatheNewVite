@@ -1,4 +1,4 @@
-export const BaliKundali100HoursData = {
+export const RishikeshKundali100HoursData = {
   heroSection: {
     colors: {
       cream: "#E8F5F5",
@@ -13,11 +13,11 @@ export const BaliKundali100HoursData = {
     },
 
     hero: {
-      location: "Ubud, Bali · 100-Hour Kundalini",
+      location: "Rishikesh · 100-Hour Kundalini",
       title: "Activate Your",
       highlight: "Kundalini Power",
       subtitle:
-        "100-hour Kundalini yoga teacher training in Bali — chakra activation, Kriya, Pranayama & Yoga Alliance certification",
+        "100-hour Kundalini yoga teacher training in Rishikesh — chakra activation, Kriya, Pranayama & Yoga Alliance certification",
       price: "$999",
       priceNote: "Includes stay, meals & Yoga Alliance certification",
       bgImage:
@@ -34,7 +34,7 @@ export const BaliKundali100HoursData = {
       "Anatomy & physiology of chakras with Ayurvedic principles",
       "Teaching methodology — how to create & lead Kundalini classes",
       "Yoga Alliance recognized 100-hour Kundalini certification",
-      "Profound personal transformation & spiritual development in Bali",
+      "Profound personal transformation & spiritual development in Rishikesh",
     ],
 
     certificates: [
@@ -69,7 +69,7 @@ export const BaliKundali100HoursData = {
       title: "Join our",
       highlight: "Kundalini awakening",
       subtitle:
-        "Immerse yourself in authentic Kundalini yoga in Bali — 7 chakra activation, Kriya practice, energy healing & certified teacher training.",
+        "Immerse yourself in authentic Kundalini yoga in Rishikesh — 7 chakra activation, Kriya practice, energy healing & certified teacher training.",
       stats: [
         { value: "100+", label: "Training Hours", icon: "clock" },
         { value: "7 Chakras", label: "Complete Study", icon: "sparkles" },
@@ -80,7 +80,7 @@ export const BaliKundali100HoursData = {
       bottomText1:
         "Our 100-hour Kundalini training goes deeper into the spiritual and energy components of yoga than any other program.",
       bottomText2:
-        "Learn in Bali's serene atmosphere — the perfect haven for those seeking enlightenment through Kundalini practice.",
+        "Learn in Rishikesh's serene atmosphere — the perfect haven for those seeking enlightenment through Kundalini practice.",
     },
   },
 
@@ -95,7 +95,7 @@ export const BaliKundali100HoursData = {
     },
 
     content: {
-      eyebrow: "Bali Kundalini Experience",
+      eyebrow: "Rishikesh Kundalini Experience",
       title: "Join our",
       highlight: "transformative",
       duration: "10-day",
@@ -123,7 +123,7 @@ export const BaliKundali100HoursData = {
         },
         {
           icon: "compass",
-          title: "Bali Excursions & Culture",
+          title: "Rishikesh Excursions & Culture",
           sub: "Temples, beaches & cultural landmarks",
         },
       ],
@@ -153,7 +153,7 @@ export const BaliKundali100HoursData = {
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
       quoteStart: "Activate your chakras and",
       highlight: "awaken your Kundalini energy",
-      quoteEnd: "in the spiritual heart of Bali",
+      quoteEnd: "in the spiritual heart of Rishikesh",
       description:
         "Step into the world of Kundalini yoga — a potent instrument for self-improvement and metamorphosis. As the energy flows through the chakras, experience enhanced self-awareness, self-confidence, and spiritual growth that can profoundly transform your life and teaching practice.",
     },
@@ -199,7 +199,7 @@ export const BaliKundali100HoursData = {
       specialHighlight: "This Training",
       specials: [
         {
-          title: "#1 Yoga School in Bali",
+          title: "#1 Yoga School in Rishikesh",
           desc: "Yoga Alliance certified school with teachers trained in Kundalini yoga's origin in India",
           icon: "heart",
         },
@@ -344,7 +344,7 @@ export const BaliKundali100HoursData = {
       cta: {
         title: "Become a Certified Kundalini Yoga Teacher",
         desc:
-          "Activate your chakras and transform your life through 100-hour Kundalini yoga teacher training in Bali.",
+          "Activate your chakras and transform your life through 100-hour Kundalini yoga teacher training in Rishikesh.",
         buttonText: "Start Your Journey",
           url:"/contact",
       },
@@ -413,9 +413,9 @@ export const BaliKundali100HoursData = {
     content: {
       eyebrow: "Excursions",
       title: "Explore",
-      highlight: "Bali Experiences",
+      highlight: "Rishikesh Experiences",
       subtitle:
-        "Discover Bali's temples, beaches, cultural landmarks and nature — curated excursions included in the course.",
+        "Discover Rishikesh's temples, beaches, cultural landmarks and nature — curated excursions included in the course.",
 
       excursions: [
         {
@@ -475,7 +475,7 @@ export const BaliKundali100HoursData = {
           duration: "3 Hours",
           icon: "camera",
           img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-          desc: "Explore local markets, art galleries & Balinese culture.",
+          desc: "Explore local markets, art galleries & Rishikeshnese culture.",
           highlights: ["Local markets", "Art & craft", "Cultural walk"],
         },
       ],
@@ -580,7 +580,7 @@ export const BaliKundali100HoursData = {
 
     content: {
       title: "Your",
-      highlight: "Stay in Bali",
+      highlight: "Stay in Rishikesh",
       subtitle:
         "Experience comfort, nature, and deep relaxation during your 10-day Kundalini journey in Ubud.",
 
@@ -607,7 +607,7 @@ export const BaliKundali100HoursData = {
           tagBg: "#1A6065",
           price: "$1,299",
           img: "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200&q=80",
-          desc: "Private room with AC, private washroom and luxurious Balinese ambience.",
+          desc: "Private room with AC, private washroom and luxurious Rishikeshnese ambience.",
           features: [
             "Private ensuite",
             "Air conditioning",
@@ -623,7 +623,7 @@ export const BaliKundali100HoursData = {
           tagBg: "#C8874A",
           price: "$1,699",
           img: "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c1?w=1200&q=80",
-          desc: "Private room without meals — enjoy Bali's local restaurants and food culture independently.",
+          desc: "Private room without meals — enjoy Rishikesh's local restaurants and food culture independently.",
           features: [
             "Private room",
             "No meals included",
@@ -664,26 +664,26 @@ export const BaliKundali100HoursData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Bali",
+      highlight: "heart of Rishikesh",
       subtitle:
         "Located in Ubud — a haven for those seeking enlightenment — surrounded by jungle, temples, and nature.",
 
-      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Rishikesh 80571, Indonesia",
 
       mapEmbed:
-        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Bali+Indonesia&output=embed",
+        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Rishikesh+Indonesia&output=embed",
 
       spots: [
         {
           name: "Ubud Center",
           distance: "5 min walk",
-          desc: "Heart of Bali's culture with cafés, markets & temples.",
+          desc: "Heart of Rishikesh's culture with cafés, markets & temples.",
           icon: "globe",
         },
         {
           name: "Rice Terraces",
           distance: "15 min drive",
-          desc: "Famous green landscapes of Bali.",
+          desc: "Famous green landscapes of Rishikesh.",
           icon: "leaf",
         },
         {
@@ -730,7 +730,7 @@ export const BaliKundali100HoursData = {
       title: "Kundalini",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 100-hour Kundalini yoga teacher training in Bali.",
+        "Find answers to the most common questions about World Peace Yoga School's 100-hour Kundalini yoga teacher training in Rishikesh.",
 
       faqs: [
         {
@@ -766,7 +766,7 @@ export const BaliKundali100HoursData = {
         {
           question: "During the training, would there be vegetarian options available?",
           answer:
-            "Yes — using only fresh, locally sourced organic ingredients, the program provides vegetarian sattvic meals three times daily. Sundays serve only breakfast, giving you the chance to explore Ubud's local restaurants and Bali food culture.",
+            "Yes — using only fresh, locally sourced organic ingredients, the program provides vegetarian sattvic meals three times daily. Sundays serve only breakfast, giving you the chance to explore Ubud's local restaurants and Rishikesh food culture.",
         },
         {
           question: "After finishing this course, will I be qualified to teach Kundalini Yoga?",

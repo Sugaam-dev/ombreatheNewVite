@@ -2,7 +2,32 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/omBreatheLogo.png";
 import "./Navbar.css";
+import {
+  LOCATIONS,
+  PROGRAM_LINKS,
+  RETREAT_LINKS,
+  buildPath,
+} from "../../ombYoga/data/locations";
 
+// ─────────────────────────────────────────────────────────────────────────────
+// TTC sub-category section definitions (static — no data here)
+// ─────────────────────────────────────────────────────────────────────────────
+const TTC_SECTIONS = [
+  { title: "Multi-Style YTTC", dataKey: "multiStyle", subCatKey: "multiStyle" },
+  { title: "Kundalini YTTC", dataKey: "kundalini", subCatKey: "kundalini" },
+  {
+    title: "Short Courses",
+    dataKey: "shortCourses",
+    subCatKey: "shortCourses",
+  },
+  {
+    title: "Specialization",
+    dataKey: "specialization",
+    subCatKey: "specialization",
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
@@ -12,29 +37,29 @@ const Navbar = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 992);
 
   const [ttcView, setTtcView] = useState("main");
-  const [selectedTtcLoc, setSelectedTtcLoc] = useState("");
+  const [selectedTtcSlug, setSelectedTtcSlug] = useState("");
 
   const [retreatView, setRetreatView] = useState("main");
-  const [selectedRetreatLoc, setSelectedRetreatLoc] = useState("");
+  const [selectedRetreatSlug, setSelectedRetreatSlug] = useState("");
 
   const [mobileAccordion, setMobileAccordion] = useState({
     programs: false,
     retreats: false,
   });
-  const toggleMobileAccordion = (key) => {
+  const toggleMobileAccordion = (key) =>
     setMobileAccordion((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
 
   const [openSubCat, setOpenSubCat] = useState({});
-  const toggleSubCat = (key) => {
+  const toggleSubCat = (key) =>
     setOpenSubCat((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
 
   const location = useLocation();
   const timeoutRef = useRef(null);
 
+  // isSubActive: strict equality against slug-based path — no encoding needed
   const isSubActive = (path) => location.pathname === path;
 
+  // ── resize handler ──────────────────────────────────────────────────────
   useEffect(() => {
     const handleResize = () => {
       const desktop = window.innerWidth >= 992;
@@ -45,6 +70,7 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // ── active top-level link from URL ──────────────────────────────────────
   useEffect(() => {
     const path = location.pathname;
     if (path === "/" || path === "") setActiveLink("home");
@@ -55,139 +81,70 @@ const Navbar = () => {
     else if (path.includes("/retreat")) setActiveLink("retreats");
   }, [location]);
 
+  // ── desktop dropdown helpers ────────────────────────────────────────────
   const openProgramsMenu = () => {
     if (isDesktop) {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      clearTimeout(timeoutRef.current);
       setDropdownOpen({ programs: true, retreats: false });
     }
   };
   const closeProgramsMenu = () => {
     if (isDesktop) {
-      timeoutRef.current = setTimeout(() => {
-        setDropdownOpen((prev) => ({ ...prev, programs: false }));
-      }, 300);
+      timeoutRef.current = setTimeout(
+        () => setDropdownOpen((p) => ({ ...p, programs: false })),
+        300,
+      );
     }
   };
   const openRetreatsMenu = () => {
     if (isDesktop) {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      clearTimeout(timeoutRef.current);
       setDropdownOpen({ programs: false, retreats: true });
     }
   };
   const closeRetreatsMenu = () => {
     if (isDesktop) {
-      timeoutRef.current = setTimeout(() => {
-        setDropdownOpen((prev) => ({ ...prev, retreats: false }));
-      }, 300);
+      timeoutRef.current = setTimeout(
+        () => setDropdownOpen((p) => ({ ...p, retreats: false })),
+        300,
+      );
     }
   };
   const closeAllMenus = () => {
     if (isDesktop) {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      clearTimeout(timeoutRef.current);
       setDropdownOpen({ programs: false, retreats: false });
     }
   };
 
   const handleToggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
-
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
     setDropdownOpen({});
     setIsDrawerOpen(false);
   };
-
   const toggleLocation = (e, loc) => {
     e.preventDefault();
     e.stopPropagation();
     setActiveLocation(activeLocation === loc ? null : loc);
   };
-
-  const toggleMobileCategory = (cat) => {
+  const toggleMobileCategory = (cat) =>
     setActiveMobileCategory(activeMobileCategory === cat ? null : cat);
-  };
 
-  const handleTtcLocationSelection = (loc) => {
-    setSelectedTtcLoc(loc);
+  const handleTtcLocationSelection = (slug) => {
+    setSelectedTtcSlug(slug);
     setTtcView("detail");
   };
 
-  // ==========================================
-  // PROGRAM LINKS CONFIG
-  // ==========================================
-  const PROGRAM_LINKS = {
-    Mysuru: {
-      multiStyle: [],
-      kundalini: [],
-      shortCourses: [],
-      specialization: [],
-    },
-    Bali: {
-      multiStyle: [
-        { path: "50hr", label: "6 Days 50 Hours Multi-Style Yoga Course" },
-        { path: "100hr", label: "10 Days 100 Hours Multi-Style YTTC" },
-        { path: "200hr", label: "20 Days 200 Hours Multi-Style YTTC" },
-        { path: "300hr", label: "26 Days 300 Hours Multi-Style YTTC" },
-        { path: "500hr", label: "56 Days 500 Hours Multi-Style YTTC" },
-      ],
-      kundalini: [
-        {
-          path: "kundalini50hr",
-          label: "6 Days 50 Hours Kundalini Yoga Course",
-        },
-        { path: "kundalini100hr", label: "10 Days 100 Hours Kundalini YTTC" },
-        { path: "kundalini200hr", label: "20 Days 200 Hours Kundalini YTTC" },
-        { path: "kundalini300hr", label: "26 Days 300 Hours Kundalini YTTC" },
-        { path: "kundalini500hr", label: "56 Days 500 Hours Kundalini YTTC" },
-      ],
-      shortCourses: [
-        { path: "yinyoga", label: "Yin Yoga TTC" },
-        { path: "prenatalyoga", label: "Prenatal Yoga TTC" },
-        { path: "aerialyoga", label: "Aerial Yoga TTC" },
-        { path: "acroYoga", label: "Acro Yoga TTC" },
-      ],
-      specialization: [{ path: "soundhealing", label: "Sound Healing Course" }],
-    },
-    Rishikesh: {
-      multiStyle: [],
-      kundalini: [],
-      shortCourses: [],
-      specialization: [],
-    },
-    "Chiang Mai": {
-      multiStyle: [
-        { path: "100hr", label: "100 Hour Foundation" },
-        { path: "200hr", label: "200 Hour TTC" },
-      ],
-      kundalini: [],
-      shortCourses: [{ path: "acroYoga", label: "Acro Yoga" }],
-      specialization: [],
-    },
-    Dharamshala: {
-      multiStyle: [],
-      kundalini: [],
-      shortCourses: [],
-      specialization: [],
-    },
-  };
-
-  const RETREAT_LINKS = {
-    Mysuru: [],
-    Bali: [{ path: "retreats6days", label: "6-day yoga and detox retreat" },
-
-    ],
-    Rishikesh: [],
-    "Chiang Mai": [],
-    Dharamshala: [],
-  };
-
-  const renderRetreatLinks = (city) => {
-    const links = RETREAT_LINKS[city] || [];
+  // ── desktop retreat links renderer ──────────────────────────────────────
+  const renderRetreatLinks = (slug) => {
+    const links = RETREAT_LINKS[slug] || [];
     if (links.length === 0)
       return (
         <span style={{ color: "#aaa", fontSize: "13px" }}>Coming Soon</span>
       );
     return links.map(({ path, label }) => {
-      const fullPath = `/programs/${city}/${path}`;
+      const fullPath = buildPath(slug, path);
       return (
         <Link
           key={path}
@@ -201,33 +158,11 @@ const Navbar = () => {
     });
   };
 
-  // ==========================================
-  // MOBILE TTC SUB-CATEGORY RENDERER
-  // Bug fixed: (array || []).map() not array || [].map()
-  // ==========================================
-  const TTC_SECTIONS = [
-    {
-      title: "Multi-Style YTTC",
-      dataKey: "multiStyle",
-      subCatKey: "multiStyle",
-    },
-    { title: "Kundalini YTTC", dataKey: "kundalini", subCatKey: "kundalini" },
-    {
-      title: "Short Courses",
-      dataKey: "shortCourses",
-      subCatKey: "shortCourses",
-    },
-    {
-      title: "Specialization",
-      dataKey: "specialization",
-      subCatKey: "specialization",
-    },
-  ];
-
-  const renderMobileTTCSubCats = (loc) =>
+  // ── mobile TTC sub-category renderer ────────────────────────────────────
+  const renderMobileTTCSubCats = (slug) =>
     TTC_SECTIONS.map(({ title, dataKey, subCatKey }) => {
-      const key = `${loc}-${subCatKey}`;
-      const items = PROGRAM_LINKS[loc]?.[dataKey] || []; // ✅ fixed parens
+      const key = `${slug}-${subCatKey}`;
+      const items = PROGRAM_LINKS[slug]?.[dataKey] || [];
       return (
         <div key={key}>
           <div
@@ -255,20 +190,21 @@ const Navbar = () => {
                   Coming Soon
                 </span>
               ) : (
-                items.map(({ path, label }) => (
-                  <Link
-                    key={path}
-                    className={
-                      isSubActive(`/programs/${loc}/${path}`)
-                        ? "m-sub-active-text"
-                        : ""
-                    }
-                    to={`/programs/${loc}/${path}`}
-                    onClick={() => handleLinkClick("programs")}
-                  >
-                    {label}
-                  </Link>
-                ))
+                items.map(({ path, label }) => {
+                  const fullPath = buildPath(slug, path);
+                  return (
+                    <Link
+                      key={path}
+                      to={fullPath}
+                      className={
+                        isSubActive(fullPath) ? "m-sub-active-text" : ""
+                      }
+                      onClick={() => handleLinkClick("programs")}
+                    >
+                      {label}
+                    </Link>
+                  );
+                })
               )}
             </div>
           )}
@@ -276,6 +212,7 @@ const Navbar = () => {
       );
     });
 
+  // ─────────────────────────────────────────────────────────────────────────
   return (
     <>
       <nav
@@ -290,7 +227,9 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="logo-image" />
           </Link>
 
-          {/* ========== DESKTOP NAV ========== */}
+          {/* ════════════════════════════════════
+              DESKTOP NAV
+          ════════════════════════════════════ */}
           {isDesktop && (
             <ul className="navbar-nav mx-auto d-flex flex-row align-items-center nav-spacing">
               <li className="nav-item" onMouseEnter={closeAllMenus}>
@@ -313,7 +252,7 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              {/* PROGRAMS */}
+              {/* PROGRAMS ─────────────────────── */}
               <li
                 className="nav-item mega-static"
                 onMouseEnter={openProgramsMenu}
@@ -346,6 +285,7 @@ const Navbar = () => {
                   <div className="container-fluid px-lg-5">
                     {ttcView === "main" ? (
                       <div className="row py-4 fade-in">
+                        {/* Membership */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">MEMBERSHIP PROGRAMS</h6>
                           {[
@@ -379,6 +319,7 @@ const Navbar = () => {
                           ))}
                         </div>
 
+                        {/* Online */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">ONLINE COURSES</h6>
                           {[
@@ -405,29 +346,25 @@ const Navbar = () => {
                           ))}
                         </div>
 
+                        {/* TTC locations — driven by LOCATIONS array */}
                         <div className="col-lg-4 mega-column no-border">
                           <h6 className="column-title">
                             TTC (TEACHER TRAINING)
                           </h6>
-                          {[
-                            "Mysuru",
-                            "Bali",
-                            "Rishikesh",
-                            "Chiang Mai",
-                            "Dharamshala",
-                          ].map((loc) => (
+                          {LOCATIONS.map(({ slug, label }) => (
                             <div
-                              key={loc}
-                              className={`loc-toggle ${location.pathname.toLowerCase().includes(loc.toLowerCase()) ? "active-loc-text" : ""}`}
-                              onClick={() => handleTtcLocationSelection(loc)}
+                              key={slug}
+                              className={`loc-toggle ${location.pathname.toLowerCase().includes(slug) ? "active-loc-text" : ""}`}
+                              onClick={() => handleTtcLocationSelection(slug)}
                             >
-                              <span>{loc} TTC</span>
+                              <span>{label} TTC</span>
                               <span className="symbol">→</span>
                             </div>
                           ))}
                         </div>
                       </div>
                     ) : (
+                      /* TTC detail view */
                       <div className="row py-4 fade-in">
                         <div className="col-12 mb-3 d-flex align-items-center">
                           <button
@@ -437,7 +374,11 @@ const Navbar = () => {
                             ← Back to Programs
                           </button>
                           <h5 className="ms-4 mb-0 ttc-selected-title">
-                            {selectedTtcLoc} Teacher Training
+                            {
+                              LOCATIONS.find((l) => l.slug === selectedTtcSlug)
+                                ?.label
+                            }{" "}
+                            Teacher Training
                           </h5>
                         </div>
 
@@ -447,29 +388,35 @@ const Navbar = () => {
                             className={`col-lg-3 mega-column ${idx === 3 ? "no-border" : ""}`}
                           >
                             <h6 className="column-title">{title}</h6>
-                            {(PROGRAM_LINKS[selectedTtcLoc]?.[dataKey] || [])
+                            {(PROGRAM_LINKS[selectedTtcSlug]?.[dataKey] || [])
                               .length === 0 ? (
                               <span className="coming-soon-text">
                                 Coming Soon
                               </span>
                             ) : (
-                              PROGRAM_LINKS[selectedTtcLoc][dataKey].map(
-                                ({ path, label }) => (
-                                  <Link
-                                    key={path}
-                                    className={
-                                      isSubActive(
-                                        `/programs/${selectedTtcLoc}/${path}`,
-                                      )
-                                        ? "sub-link-active"
-                                        : ""
-                                    }
-                                    to={`/programs/${selectedTtcLoc}/${path}`}
-                                    onClick={() => handleLinkClick("programs")}
-                                  >
-                                    {label}
-                                  </Link>
-                                ),
+                              PROGRAM_LINKS[selectedTtcSlug][dataKey].map(
+                                ({ path, label }) => {
+                                  const fullPath = buildPath(
+                                    selectedTtcSlug,
+                                    path,
+                                  );
+                                  return (
+                                    <Link
+                                      key={path}
+                                      to={fullPath}
+                                      className={
+                                        isSubActive(fullPath)
+                                          ? "sub-link-active"
+                                          : ""
+                                      }
+                                      onClick={() =>
+                                        handleLinkClick("programs")
+                                      }
+                                    >
+                                      {label}
+                                    </Link>
+                                  );
+                                },
                               )
                             )}
                           </div>
@@ -480,7 +427,7 @@ const Navbar = () => {
                 </div>
               </li>
 
-              {/* RETREATS */}
+              {/* RETREATS ─────────────────────── */}
               <li
                 className="nav-item mega-static"
                 onMouseEnter={openRetreatsMenu}
@@ -512,21 +459,15 @@ const Navbar = () => {
                 >
                   <div className="container-fluid px-lg-5">
                     <div className="row py-4 fade-in">
-                      {[
-                        "Mysuru",
-                        "Bali",
-                        "Rishikesh",
-                        "Chiang Mai",
-                        "Dharamshala",
-                      ].map((loc, idx, arr) => (
+                      {LOCATIONS.map(({ slug, label }, idx, arr) => (
                         <div
-                          key={loc}
+                          key={slug}
                           className={`col-lg mega-column ${idx === arr.length - 1 ? "no-border" : ""}`}
                         >
                           <h6 className="column-title">
-                            {loc.toUpperCase()} RETREAT
+                            {label.toUpperCase()} RETREAT
                           </h6>
-                          {renderRetreatLinks(loc)}
+                          {renderRetreatLinks(slug)}
                         </div>
                       ))}
                     </div>
@@ -565,7 +506,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* ========== MOBILE SIDE DRAWER ========== */}
+        {/* ════════════════════════════════════
+            MOBILE SIDE DRAWER
+        ════════════════════════════════════ */}
         <div className={`mobile-side-drawer ${isDrawerOpen ? "open" : ""}`}>
           <div className="drawer-header">
             <img src={logo} alt="Logo" className="drawer-logo" />
@@ -587,7 +530,7 @@ const Navbar = () => {
               About
             </Link>
 
-            {/* MOBILE PROGRAMS ACCORDION */}
+            {/* MOBILE PROGRAMS ACCORDION ─────── */}
             <div className="drawer-accordion">
               <div
                 className={`drawer-link d-flex justify-content-between align-items-center ${activeLink === "programs" ? "mobile-active-text" : ""}`}
@@ -603,7 +546,7 @@ const Navbar = () => {
 
               {mobileAccordion.programs && (
                 <div className="drawer-sub-menu">
-                  {/* MEMBERSHIP */}
+                  {/* Membership */}
                   <div className="drawer-loc-item">
                     <div
                       className="drawer-loc-header"
@@ -647,7 +590,7 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  {/* ONLINE */}
+                  {/* Online */}
                   <div className="drawer-loc-item">
                     <div
                       className="drawer-loc-header"
@@ -678,7 +621,7 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  {/* TTC */}
+                  {/* TTC — driven by LOCATIONS array */}
                   <div className="drawer-loc-item">
                     <div
                       className="drawer-loc-header"
@@ -690,35 +633,21 @@ const Navbar = () => {
                     <div
                       className={`drawer-loc-body ${activeMobileCategory === "TTC" ? "open" : ""}`}
                     >
-                      {[
-                        "Mysuru",
-                        "Bali",
-                        "Rishikesh",
-                        "Chiang Mai",
-                        "Dharamshala",
-                      ].map((loc) => (
-                        <div key={loc} className="drawer-nested-loc mb-2">
+                      {LOCATIONS.map(({ slug, label }) => (
+                        <div key={slug} className="drawer-nested-loc mb-2">
                           <div
-                            className={`drawer-loc-header nested ${
-                              location.pathname
-                                .toLowerCase()
-                                .includes(loc.toLowerCase())
-                                ? "m-active-path-text"
-                                : ""
-                            }`}
-                            onClick={(e) => toggleLocation(e, `m-ttc-${loc}`)}
+                            className={`drawer-loc-header nested ${location.pathname.toLowerCase().includes(slug) ? "m-active-path-text" : ""}`}
+                            onClick={(e) => toggleLocation(e, `m-ttc-${slug}`)}
                           >
-                            {loc} TTC{" "}
+                            {label} TTC{" "}
                             <span>
-                              {activeLocation === `m-ttc-${loc}` ? "−" : "+"}
+                              {activeLocation === `m-ttc-${slug}` ? "−" : "+"}
                             </span>
                           </div>
-
                           <div
-                            className={`drawer-loc-body ${activeLocation === `m-ttc-${loc}` ? "open" : ""}`}
+                            className={`drawer-loc-body ${activeLocation === `m-ttc-${slug}` ? "open" : ""}`}
                           >
-                            {/* ✅ uses the extracted helper — no more operator precedence bug */}
-                            {renderMobileTTCSubCats(loc)}
+                            {renderMobileTTCSubCats(slug)}
                           </div>
                         </div>
                       ))}
@@ -728,7 +657,7 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* MOBILE RETREATS ACCORDION */}
+            {/* MOBILE RETREATS ACCORDION ──────── */}
             <div className="drawer-accordion">
               <div
                 className={`drawer-link d-flex justify-content-between align-items-center ${activeLink === "retreats" ? "mobile-active-text" : ""}`}
@@ -757,29 +686,17 @@ const Navbar = () => {
                     </div>
 
                     {retreatView === "main" ? (
-                      [
-                        "Mysuru",
-                        "Bali",
-                        "Rishikesh",
-                        "Chiang Mai",
-                        "Dharamshala",
-                      ].map((loc) => (
+                      LOCATIONS.map(({ slug, label }) => (
                         <div
-                          key={loc}
-                          className={`drawer-loc-header nested ${
-                            location.pathname
-                              .toLowerCase()
-                              .includes(loc.toLowerCase())
-                              ? "m-active-path-text"
-                              : ""
-                          }`}
+                          key={slug}
+                          className={`drawer-loc-header nested ${location.pathname.toLowerCase().includes(slug) ? "m-active-path-text" : ""}`}
                           onClick={(e) => {
                             e.stopPropagation();
-                            setSelectedRetreatLoc(loc);
+                            setSelectedRetreatSlug(slug);
                             setRetreatView("detail");
                           }}
                         >
-                          <span>{loc} Retreat</span>
+                          <span>{label} Retreat</span>
                           <span className="symbol">→</span>
                         </div>
                       ))
@@ -805,10 +722,15 @@ const Navbar = () => {
                             letterSpacing: "0.5px",
                           }}
                         >
-                          {selectedRetreatLoc} Retreat
+                          {
+                            LOCATIONS.find(
+                              (l) => l.slug === selectedRetreatSlug,
+                            )?.label
+                          }{" "}
+                          Retreat
                         </div>
                         <div className="mobile-sub-cat-body">
-                          {(RETREAT_LINKS[selectedRetreatLoc] || []).length ===
+                          {(RETREAT_LINKS[selectedRetreatSlug] || []).length ===
                           0 ? (
                             <span
                               style={{
@@ -821,9 +743,12 @@ const Navbar = () => {
                               Coming Soon
                             </span>
                           ) : (
-                            (RETREAT_LINKS[selectedRetreatLoc] || []).map(
+                            (RETREAT_LINKS[selectedRetreatSlug] || []).map(
                               ({ path, label }) => {
-                                const fullPath = `/programs/${selectedRetreatLoc}/${path}`;
+                                const fullPath = buildPath(
+                                  selectedRetreatSlug,
+                                  path,
+                                );
                                 return (
                                   <Link
                                     key={path}
@@ -902,11 +827,11 @@ const Navbar = () => {
         }
         .logo-image { height: 85px; }
 
-        .sub-link-active   { color: #007bff !important; font-weight: 700 !important; }
-        .active-loc-text   { color: #007bff !important; font-weight: 700 !important; }
-        .mobile-active-text{ color: #007bff !important; font-weight: 700 !important; }
-        .m-sub-active-text { color: #007bff !important; font-weight: 700 !important; }
-        .m-active-path-text{ color: #007bff !important; font-weight: 700 !important; }
+        .sub-link-active    { color: #007bff !important; font-weight: 700 !important; }
+        .active-loc-text    { color: #007bff !important; font-weight: 700 !important; }
+        .mobile-active-text { color: #007bff !important; font-weight: 700 !important; }
+        .m-sub-active-text  { color: #007bff !important; font-weight: 700 !important; }
+        .m-active-path-text { color: #007bff !important; font-weight: 700 !important; }
 
         @media (min-width: 992px) {
           .nav-spacing { gap: 3.8rem; }
@@ -1003,7 +928,6 @@ const Navbar = () => {
           margin-left: 6px;
         }
         .rotated { transform: rotate(180deg); }
-
         .symbol { font-size: 16px; font-weight: 300; opacity: 0.7; }
 
         .book-blue-btn {

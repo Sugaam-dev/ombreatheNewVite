@@ -25,6 +25,7 @@ export const SoundHealingData = {
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
+        url:"/contact",
     },
 
     gains: [
@@ -345,6 +346,7 @@ export const SoundHealingData = {
         desc:
           "Master the ancient art of Tibetan singing bowl healing through Level-1 & Level-2 sound healing training in Bali.",
         buttonText: "Start Your Journey",
+          url:"/contact",
       },
     },
   },
@@ -645,6 +647,7 @@ export const SoundHealingData = {
       ],
 
       buttonText: "Book Now",
+      url:"/contact",
     },
   },
 
