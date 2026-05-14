@@ -3,12 +3,20 @@ import React, {
   useState,
   useMemo,
 } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "../Styles/Yogaschool.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-import SliderImport from "react-slick";
+// =========================================
+// SLIDER FIX — handles both default and
+// module object exports across versions
+// =========================================
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import _Slider from "react-slick";
+const SliderComponent = _Slider.default || _Slider;
 
 import school from "../images/logo/1.png";
 import Teachings from "../images/logo/2.png";
@@ -19,7 +27,6 @@ import logo from "../images/lg.png";
 import firstimage from "../images/Websitefirstimage.jpg";
 import SectionHeading from "./useFullComponent/SectionHeading";
 
-
 const Yogaschool = () => {
 
   const [images, setImages] = useState({
@@ -27,10 +34,12 @@ const Yogaschool = () => {
     yogaSchool: null,
   });
 
+  const navigate = useNavigate();
+
   // =========================================
   // AOS
   // =========================================
-const Slider = SliderImport.default || SliderImport;
+
   useEffect(() => {
     Aos.init({
       duration: 800,
@@ -86,6 +95,7 @@ const Slider = SliderImport.default || SliderImport;
         description:
           "Immerse yourself in tropical serenity, sacred temples, waterfalls, and transformative yoga retreats surrounded by Bali's spiritual energy.",
         color: "#ff914d",
+        link: "/programs/bali",
       },
       {
         location: "Mysuru",
@@ -95,6 +105,7 @@ const Slider = SliderImport.default || SliderImport;
         description:
           "Train in Mysuru, the yoga capital of South India, where authentic yogic discipline and ancient teachings continue to inspire practitioners worldwide.",
         color: "#2e8b57",
+        link: "/mysuru-yoga-teacher-training",
       },
       {
         location: "Rishikesh",
@@ -104,6 +115,7 @@ const Slider = SliderImport.default || SliderImport;
         description:
           "Practice yoga by the sacred Ganges River surrounded by Himalayan energy in the spiritual heart of India.",
         color: "#4caf50",
+        link: "/rishikesh-yoga-retreat",
       },
       {
         location: "Chiang Mai",
@@ -113,6 +125,7 @@ const Slider = SliderImport.default || SliderImport;
         description:
           "Blend yoga, meditation, mindfulness, and nature in the peaceful mountains and temples of Northern Thailand.",
         color: "#d97706",
+        link: "/chiangmai-retreat",
       },
       {
         location: "Dharamshala",
@@ -122,6 +135,7 @@ const Slider = SliderImport.default || SliderImport;
         description:
           "Reconnect with yourself in the serene Himalayan atmosphere inspired by Tibetan spiritual culture and meditation.",
         color: "#6b7280",
+        link: "/dharamshala-yoga-retreat",
       },
     ],
     []
@@ -173,8 +187,6 @@ const Slider = SliderImport.default || SliderImport;
     []
   );
 
-  // console.log(Slider);
-
   return (
     <>
       <div className="yogaschool">
@@ -185,29 +197,13 @@ const Slider = SliderImport.default || SliderImport;
           {/* HEADING */}
           {/* ========================================= */}
 
-          {/* <div className="heading">
-
-            <h1>
-              Best Yoga School In India and Indonesia
-            </h1>
-
-            {images.logo && (
-              <img
-                src={images.logo}
-                alt="Ombreathe Logo"
-                loading="lazy"
-              />
-            )}
-
-          </div> */}
-
           <SectionHeading
-  title="Best Yoga School In"
-  highlight="India and Indonesia"
-  subtitle="Discover authentic yoga teacher training, retreats & holistic wellness programs with Ombreathe"
-  highlightColor="#4a7c68"
-  textColor="#1e1e1c"
-/>
+            title="Best Yoga School In"
+            highlight="India and Indonesia"
+            subtitle="Discover authentic yoga teacher training, retreats & holistic wellness programs with Ombreathe"
+            highlightColor="#4a7c68"
+            textColor="#1e1e1c"
+          />
 
           {/* ========================================= */}
           {/* MODERN LOCATION SLIDER */}
@@ -215,7 +211,7 @@ const Slider = SliderImport.default || SliderImport;
 
           <div className="location-slider">
 
-            <Slider {...locationSettings}>
+            <SliderComponent {...locationSettings}>
 
               {slideContent.map((slide, index) => (
 
@@ -240,7 +236,10 @@ const Slider = SliderImport.default || SliderImport;
 
                         <p>{slide.description}</p>
 
-                        <button style={{ background: slide.color }}>
+                        <button
+                          style={{ background: slide.color }}
+                          onClick={() => navigate(slide.link)}
+                        >
                           Explore More
                         </button>
 
@@ -254,7 +253,7 @@ const Slider = SliderImport.default || SliderImport;
 
               ))}
 
-            </Slider>
+            </SliderComponent>
 
           </div>
 
