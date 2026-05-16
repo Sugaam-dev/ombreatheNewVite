@@ -39,8 +39,7 @@ const Navbar = () => {
   const [ttcView, setTtcView] = useState("main");
   const [selectedTtcSlug, setSelectedTtcSlug] = useState("");
 
-  const [retreatView, setRetreatView] = useState("main");
-  const [selectedRetreatSlug, setSelectedRetreatSlug] = useState("");
+  
 
   const [mobileAccordion, setMobileAccordion] = useState({
     programs: false,
@@ -697,90 +696,64 @@ useEffect(() => {
                       RETREATS BY LOCATION
                     </div>
 
-                    {retreatView === "main" ? (
-                      LOCATIONS.map(({ slug, label }) => (
-                        <div
-                          key={slug}
-                          className={`drawer-loc-header nested ${location.pathname.toLowerCase().includes(slug) ? "m-active-path-text" : ""}`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedRetreatSlug(slug);
-                            setRetreatView("detail");
-                          }}
-                        >
-                          <span>{label} Retreat</span>
-                          <span className="symbol">→</span>
-                        </div>
-                      ))
-                    ) : (
-                      <div>
-                        <div
-                          className="drawer-loc-header nested"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setRetreatView("main");
-                          }}
-                          style={{ color: "#007bff", fontWeight: 600 }}
-                        >
-                          ← Back to Retreats
-                        </div>
-                        <div
-                          style={{
-                            padding: "8px 0 4px 0",
-                            fontSize: "13px",
-                            fontWeight: 700,
-                            color: "#333",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.5px",
-                          }}
-                        >
-                          {
-                            LOCATIONS.find(
-                              (l) => l.slug === selectedRetreatSlug,
-                            )?.label
-                          }{" "}
-                          Retreat
-                        </div>
-                        <div className="mobile-sub-cat-body">
-                          {(RETREAT_LINKS[selectedRetreatSlug] || []).length ===
-                          0 ? (
-                            <span
-                              style={{
-                                color: "#aaa",
-                                fontSize: "13px",
-                                padding: "8px 0",
-                                display: "block",
-                              }}
-                            >
-                              Coming Soon
-                            </span>
-                          ) : (
-                            (RETREAT_LINKS[selectedRetreatSlug] || []).map(
-                              ({ path, label }) => {
-                                const fullPath = buildPath(
-                                  selectedRetreatSlug,
-                                  path,
-                                );
-                                return (
-                                  <Link
-                                    key={path}
-                                    to={fullPath}
-                                    className={
-                                      isSubActive(fullPath)
-                                        ? "m-sub-active-text"
-                                        : ""
-                                    }
-                                    onClick={() => handleLinkClick("retreats")}
-                                  >
-                                    {label}
-                                  </Link>
-                                );
-                              },
-                            )
-                          )}
-                        </div>
-                      </div>
-                    )}
+                    {LOCATIONS.map(({ slug, label }) => (
+  <div key={slug} className="drawer-nested-loc mb-2">
+    <div
+      className={`drawer-loc-header nested ${
+        location.pathname.toLowerCase().includes(slug)
+          ? "m-active-path-text"
+          : ""
+      }`}
+      onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
+    >
+      <span>{label} Retreat</span>
+
+      <span>
+        {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
+      </span>
+    </div>
+
+    <div
+      className={`drawer-loc-body ${
+        activeLocation === `m-retreat-${slug}` ? "open" : ""
+      }`}
+    >
+      <div className="mobile-sub-cat-body">
+        {(RETREAT_LINKS[slug] || []).length === 0 ? (
+          <span
+            style={{
+              color: "#aaa",
+              fontSize: "13px",
+              padding: "8px 0",
+              display: "block",
+            }}
+          >
+            Coming Soon
+          </span>
+        ) : (
+          (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
+            const fullPath = buildPath(slug, path);
+
+            return (
+              <Link
+                key={path}
+                to={fullPath}
+                className={
+                  isSubActive(fullPath)
+                    ? "m-sub-active-text"
+                    : ""
+                }
+                onClick={() => handleLinkClick("retreats")}
+              >
+                {label}
+              </Link>
+            );
+          })
+        )}
+      </div>
+    </div>
+  </div>
+))}
                   </div>
                 </div>
               )}
