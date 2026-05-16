@@ -119,37 +119,49 @@ const ProgramsCarousel = () => {
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
- const settings = {
-  dots: true,
-  infinite: true,
-  speed: 450,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  adaptiveHeight: false,
-  pauseOnHover: true,
-  waitForAnimate: false,
-  cssEase: "ease-out",
-  swipeToSlide: true,
-  arrows: false,
-  dotsClass: "slick-dots pc-dots",
-
-  responsive: [
-    {
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 2,
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 450,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    adaptiveHeight: false,
+    pauseOnHover: true,
+    waitForAnimate: false,
+    cssEase: "ease-out",
+    useTransform: true,
+    swipeToSlide: true,
+    arrows: false,
+    dotsClass: "slick-dots pc-dots",
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          infinite: true,
+        },
       },
-    },
-  ],
-};
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          infinite: true,
+        },
+      },
+    ],
+  };
 
   return (
     <section className="pc-section">
