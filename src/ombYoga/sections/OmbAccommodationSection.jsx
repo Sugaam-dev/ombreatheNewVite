@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Waves,
   Heart,
@@ -15,6 +15,15 @@ import { Link } from "react-router-dom";
 
 const OmbAccommodationSection = ({ data }) => {
   const [activeRoom, setActiveRoom] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const { colors, content } = data;
 
@@ -35,15 +44,15 @@ const OmbAccommodationSection = ({ data }) => {
     <section
       style={{
         background: colors.navy,
-        padding: "clamp(80px,10vw,130px) 20px",
+        padding: "clamp(50px,8vw,100px) 16px",
         color: colors.white,
       }}
     >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
         {/* HEADER */}
-        <div style={{ marginBottom: 50 }}>
-          <h2>
+        <div style={{ marginBottom: 40 }}>
+          <h2 style={{ fontSize: "clamp(1.5rem,4vw,2.2rem)" }}>
             {content.title} <em>{content.highlight}</em>
           </h2>
           <p style={{ opacity: 0.7, maxWidth: 600 }}>
@@ -52,12 +61,22 @@ const OmbAccommodationSection = ({ data }) => {
         </div>
 
         {/* TABS */}
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 40 }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 10,
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            paddingBottom: 6,
+            marginBottom: 30,
+          }}
+        >
           {content.rooms.map((r, i) => (
             <button
               key={i}
               onClick={() => setActiveRoom(i)}
               style={{
+                flex: "0 0 auto",
                 padding: "10px 18px",
                 borderRadius: 30,
                 border: `1px solid ${colors.border}`,
@@ -77,16 +96,19 @@ const OmbAccommodationSection = ({ data }) => {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
-            gap: 30,
+            gridTemplateColumns: isMobile
+              ? "1fr"
+              : "repeat(auto-fit,minmax(260px,1fr))",
+            gap: 24,
           }}
         >
           {/* IMAGE */}
           <div
             style={{
-              borderRadius: 24,
+              borderRadius: 20,
               overflow: "hidden",
-              minHeight: "420px",
+              minHeight: "250px",
+              height: "clamp(250px,40vw,420px)",
               boxShadow: colors.shadowLg,
             }}
           >
@@ -106,8 +128,8 @@ const OmbAccommodationSection = ({ data }) => {
           <div
             style={{
               background: colors.white,
-              borderRadius: 24,
-              padding: "clamp(24px,4vw,40px)",
+              borderRadius: 20,
+              padding: "clamp(20px,4vw,36px)",
               color: colors.navy,
               boxShadow: colors.shadowMd,
               display: "flex",
@@ -135,7 +157,8 @@ const OmbAccommodationSection = ({ data }) => {
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
+                  gridTemplateColumns:
+                    "repeat(auto-fit,minmax(140px,1fr))",
                   gap: 10,
                   marginTop: 20,
                 }}
@@ -150,66 +173,61 @@ const OmbAccommodationSection = ({ data }) => {
             </div>
 
             {/* CTA */}
-            <div style={{ marginTop: 30 }}>
-              <div style={{ fontSize: "1.2rem", fontWeight: 600 }}>
+            <div style={{ marginTop: 24 }}>
+              <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
                 {room.price}
               </div>
 
-             <Link
-             to={content.url}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "translateY(-2px)";
-    e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.2)";
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "translateY(0)";
-    e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.1)";
-  }}
-  onMouseDown={(e) => {
-    e.currentTarget.style.transform = "scale(0.96)";
-  }}
-  onMouseUp={(e) => {
-    e.currentTarget.style.transform = "translateY(-2px)";
-  }}
-  style={{
-    marginTop: 16,
-    padding: "12px 22px",
-    borderRadius: 30,
-    border: "none",
-    cursor: "pointer",
-    display: "inline-flex",
-    alignItems: "center",
-    gap: 8,
-
-    // 🎨 COLORS (FROM DATA)
-    background: colors.navy,
-    color: colors.white,
-
-    fontWeight: 500,
-    fontSize: "0.9rem",
-
-    // ✨ EFFECTS
-    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-    transition: "all 0.25s ease",
-    textDecoration:"none",
-  }}
->
-  {content.buttonText} <ArrowRight size={16} />
-</Link>
+              <Link
+                to={content.url}
+                style={{
+                  marginTop: 14,
+                  padding: "12px 20px",
+                  borderRadius: 30,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: colors.navy,
+                  color: colors.white,
+                  fontWeight: 500,
+                  fontSize: "0.9rem",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  transition: "all 0.25s ease",
+                  textDecoration: "none",
+                }}
+                onMouseEnter={(e) => {
+                  if (!isMobile) {
+                    e.currentTarget.style.transform =
+                      "translateY(-2px)";
+                    e.currentTarget.style.boxShadow =
+                      "0 8px 20px rgba(0,0,0,0.2)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 12px rgba(0,0,0,0.1)";
+                }}
+              >
+                {content.buttonText} <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </div>
 
         {/* AMENITIES */}
-        <div style={{ marginTop: 60 }}>
-          <h3>Amenities</h3>
+        <div style={{ marginTop: 50 }}>
+          <h3 style={{ fontSize: "clamp(1.2rem,3vw,1.6rem)" }}>
+            Amenities
+          </h3>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit,minmax(120px,1fr))",
-              gap: 16,
-              marginTop: 20,
+              gridTemplateColumns:
+                "repeat(auto-fit,minmax(110px,1fr))",
+              gap: 14,
+              marginTop: 16,
             }}
           >
             {content.amenities.map((a, i) => (
@@ -217,13 +235,15 @@ const OmbAccommodationSection = ({ data }) => {
                 key={i}
                 style={{
                   background: colors.cardBg,
-                  padding: 16,
+                  padding: 14,
                   borderRadius: 12,
                   textAlign: "center",
                 }}
               >
                 {iconMap[a.icon]}
-                <div style={{ fontSize: "0.8rem" }}>{a.label}</div>
+                <div style={{ fontSize: "0.8rem", marginTop: 6 }}>
+                  {a.label}
+                </div>
               </div>
             ))}
           </div>

@@ -47,7 +47,7 @@ function Cont() {
   };
 
   return (
-    <div style={{ fontFamily: "Caudex, serif", padding: "20px" }}>
+    <div style={{ fontFamily: "Caudex, serif"}}>
       {/* <h1
         style={{
           textAlign: "center",
@@ -66,90 +66,11 @@ function Cont() {
   textColor="#1e1e1c"
 />
 
-      {/* Container */}
-      <div
-        style={{
-          maxWidth: "550px",
-          width: "100%",
-          margin: "0 auto",
-          borderRadius: "12px",
-          background: "#fffdf8",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
-          overflow: "hidden",
-        }}
-      >
-        {/* WhatsApp 1 */}
-        <a
-          href="https://wa.me/917483987568"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ ...itemStyle, textDecoration: "none" }}
-          onMouseEnter={hover}
-          onMouseLeave={leave}
-        >
-          <div style={leftStyle}>
-            <div style={iconBox("#e8f7ee")}>
-              <IoLogoWhatsapp color="#25D366" />
-            </div>
-            +91 74839 87568
-          </div>
-          <span style={{ fontSize: "12px", color: "#888" }}>WhatsApp</span>
-        </a>
-
-        {/* WhatsApp 2 */}
-        <a
-          href="https://wa.me/917829997007"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ ...itemStyle, textDecoration: "none" }}
-          onMouseEnter={hover}
-          onMouseLeave={leave}
-        >
-          <div style={leftStyle}>
-            <div style={iconBox("#e8f7ee")}>
-              <IoLogoWhatsapp color="#25D366" />
-            </div>
-            +91 78299 97007
-          </div>
-          <span style={{ fontSize: "12px", color: "#888" }}>WhatsApp</span>
-        </a>
-
-        {/* Email 1 */}
-        <a
-          href="mailto:info@ombreathe.in"
-          style={{ ...itemStyle, textDecoration: "none" }}
-          onMouseEnter={hover}
-          onMouseLeave={leave}
-        >
-          <div style={leftStyle}>
-            <div style={iconBox("#fdecea")}>
-              <MdEmail color="#EA4335" />
-            </div>
-            info@ombreathe.in
-          </div>
-          <span style={{ fontSize: "12px", color: "#888" }}>Email</span>
-        </a>
-
-        {/* Email 2 */}
-        <a
-          href="mailto:ombreathein@gmail.com"
-          style={{ ...itemStyle, textDecoration: "none" }}
-          onMouseEnter={hover}
-          onMouseLeave={leave}
-        >
-          <div style={leftStyle}>
-            <div style={iconBox("#fdecea")}>
-              <MdEmail color="#EA4335" />
-            </div>
-            ombreathein@gmail.com
-          </div>
-          <span style={{ fontSize: "12px", color: "#888" }}>Email</span>
-        </a>
-      </div>
 
       <div style={{ marginTop: "50px" }}>
+         <Contact />
         <Ratings />
-        <Contact />
+       
       </div>
     </div>
   );

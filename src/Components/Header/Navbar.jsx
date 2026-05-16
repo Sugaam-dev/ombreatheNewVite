@@ -81,6 +81,21 @@ const Navbar = () => {
     else if (path.includes("/retreat")) setActiveLink("retreats");
   }, [location]);
 
+
+  // Add this new useEffect after your existing location useEffect
+useEffect(() => {
+  const isOnProgramsPage =
+    location.pathname.includes("/programs") ||
+    location.pathname.includes("/online") ||
+    location.pathname.includes("/ttc") ||      // add any TTC path segments you use
+    LOCATIONS.some(({ slug }) => location.pathname.toLowerCase().includes(slug));
+
+  if (!isOnProgramsPage) {
+    setTtcView("main");
+    setSelectedTtcSlug("");
+  }
+}, [location.pathname]);
+
   // ── desktop dropdown helpers ────────────────────────────────────────────
   const openProgramsMenu = () => {
     if (isDesktop) {
@@ -367,12 +382,9 @@ const Navbar = () => {
                       /* TTC detail view */
                       <div className="row py-4 fade-in">
                         <div className="col-12 mb-3 d-flex align-items-center">
-                          <button
-                            className="back-btn"
-                            onClick={() => setTtcView("main")}
-                          >
-                            ← Back to Programs
-                          </button>
+                         <button className="back-btn" onClick={() => setTtcView("main")}>
+  ← Back to Programs
+</button>
                           <h5 className="ms-4 mb-0 ttc-selected-title">
                             {
                               LOCATIONS.find((l) => l.slug === selectedTtcSlug)
@@ -897,16 +909,31 @@ const Navbar = () => {
             cursor: pointer;
           }
           .mega-column a:hover, .loc-toggle:hover { color: #007bff; }
-          .back-btn {
-            background: #f8f9fa;
-            border: 1px solid #007bff;
-            color: #007bff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 13px;
-            cursor: pointer;
-            transition: 0.3s;
-          }
+        .back-btn {
+  background: transparent;
+  border: 1.5px solid #007bff;
+  color: #007bff;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+  animation: backBtnPulse 2s ease-in-out infinite;
+}
+.back-btn:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateX(-3px);
+  animation: none;
+}
+@keyframes backBtnPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(0, 123, 255, 0); }
+}
           .bridge-area {
             position: absolute;
             bottom: -15px;

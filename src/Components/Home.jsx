@@ -34,7 +34,7 @@ import Ayurveda from "./Ayurveda";
 import Offering from "./Offering";
 import BannerImage from "./HomeCredentials/BannerImage";
 import GuruLineage from "./HomeCredentials/GuruLineage";
-import Schedule from "./Teachers/Schedule";
+// import Schedule from "./Teachers/Schedule";
 import Blog from "./Blog/Blog";
 import Accordion from "./Accordion";
 import Ratings from "./Ratings";
@@ -83,7 +83,7 @@ const Home = () => {
 
       <GuruLineage />
 
-      <Schedule />
+      {/* <Schedule /> */}
 
       <Blog />
 

@@ -6,9 +6,9 @@ import OmbCommunitySection from "../sections/OmbCommunitySection";
 
 import { OmbDataMap } from "../data/OmbDataMap";
 import { useParams } from "react-router-dom";
-import Gallery from "../../Components/HomeCredentials/Gallery";
-import YogaTeachers from "../../Components/Teachers/YogaTeachers";
-import Ratings from "../../Components/Ratings";
+// import Gallery from "../../Components/HomeCredentials/Gallery";
+// import YogaTeachers from "../../Components/Teachers/YogaTeachers";
+// import Ratings from "../../Components/Ratings";
 import Contact from "../../Components/Contact";
 import Questions from "./questions/Questions";
 
@@ -93,21 +93,21 @@ const OmbYogaPage = () => {
           <OmbLocationSection data={data.locationSection} />
         </Suspense>
 
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}>
           <Gallery />
         </Suspense>
 
         <Suspense fallback={<Loading />}>
           <YogaTeachers />
-        </Suspense>
+        </Suspense> */}
 
         <Suspense fallback={<Loading />}>
           <Questions data={data.teacherTrainingFaq} />
         </Suspense>
 
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}>
           <Ratings />
-        </Suspense>
+        </Suspense> */}
 
         <Suspense fallback={<Loading />}>
           <Contact />
