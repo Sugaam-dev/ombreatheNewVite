@@ -205,7 +205,7 @@ useEffect(() => {
                 </span>
               ) : (
                 items.map(({ path, label }) => {
-                  const fullPath = buildPath(slug, path);
+                  const fullPath = buildPath(slug, path, "retreats");
                   return (
                     <Link
                       key={path}
@@ -732,7 +732,7 @@ useEffect(() => {
           </span>
         ) : (
           (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
-            const fullPath = buildPath(slug, path);
+         const fullPath = buildPath(slug, path, "retreats");
 
             return (
               <Link
