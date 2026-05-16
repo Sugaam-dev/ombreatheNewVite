@@ -158,7 +158,7 @@ useEffect(() => {
         <span style={{ color: "#aaa", fontSize: "13px" }}>Coming Soon</span>
       );
     return links.map(({ path, label }) => {
-      const fullPath = buildPath(slug, path);
+ const fullPath = buildPath(slug, path, "retreats");
       return (
         <Link
           key={path}

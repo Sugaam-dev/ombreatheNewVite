@@ -106,4 +106,5 @@ export const RETREAT_LINKS = {
 // ─────────────────────────────────────────────
 // PATH BUILDER  (single function, used everywhere)
 // ─────────────────────────────────────────────
-export const buildPath = (slug, course) => `/programs/${slug}/${course}`;
+export const buildPath = (slug, course, type = "programs") =>
+  `/${type}/${slug}/${course}`;

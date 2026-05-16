@@ -206,6 +206,10 @@ function AppRoutes() {
           path="programs/:location"
           element={<NormalisedLocationRoute />}
         />
+        <Route
+  path="retreats/:location/:course"
+  element={<NormalisedTTCRoute />}
+/>
 
         {/* 404 */}
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
