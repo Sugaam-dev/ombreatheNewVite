@@ -510,7 +510,7 @@ export const AcroYogaData = {
           title: "Breakfast",
           icon: "sun",
           time: "09:30 – 10:30",
-          img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=80",
+          img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
           desc: "Nourishing Ayurvedic breakfast to replenish after your morning Acro Yoga practice session.",
           items: [
             "Fresh tropical fruits",

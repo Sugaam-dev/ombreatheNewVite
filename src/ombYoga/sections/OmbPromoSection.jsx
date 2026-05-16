@@ -29,27 +29,40 @@ const OmbPromoSection = ({ data }) => {
 
   return (
     <section
+      className="omb-promo-container"
       style={{
         background: "transparent",
-        padding: "clamp(70px,9vw,110px) 20px",
+        padding: "clamp(40px, 8vw, 90px) 16px", // Reduced excessive global padding for smaller mobile viewports
       }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "clamp(40px,6vw,80px)",
-            alignItems: "center",
-          }}
-        >
+      {/* Dynamic inline stylesheet to manage specific structural rules for layout breakpoints cleanly */}
+      <style>{`
+        .omb-promo-grid {
+          display: grid;
+          grid-template-columns: 1.1fr 0.9fr;
+          gap: clamp(30px, 5vw, 60px);
+          align-items: center;
+        }
+        @media (max-width: 868px) {
+          .omb-promo-grid {
+            grid-template-columns: 1fr !important;
+            gap: 40px !important;
+          }
+          .omb-small-images img {
+            height: 120px !important;
+          }
+        }
+      `}</style>
+
+      <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%" }}>
+        <div className="omb-promo-grid">
           {/* LEFT */}
-          <div>
-            <div style={{ display: "flex", gap: 6 }}>
+          <div style={{ width: "100%" }}>
+            <div style={{ display: "flex", gap: 6, alignItems: "center", fontSize: "0.95rem", marginBottom: 12 }}>
               <Sparkles size={14} /> {content.eyebrow}
             </div>
 
-            <h2>
+            <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)", lineHeight: 1.25, marginBottom: 24, fontWeight: 500 }}>
               {content.title}{" "}
               <em>{content.highlight}</em> {content.duration} journey in{" "}
               <strong>{content.strongText}</strong>
@@ -92,7 +105,7 @@ const OmbPromoSection = ({ data }) => {
                       color: colors.white,
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
+                    justifyContent:"center"
                     }}
                   >
                     {iconMap[f.icon]}
@@ -100,11 +113,12 @@ const OmbPromoSection = ({ data }) => {
 
                   {/* TEXT */}
                   <div>
-                    <p style={{ fontWeight: 600 }}>{f.title}</p>
+                    <p style={{ fontWeight: 600, fontSize: "1.05rem", marginBottom: 2 }}>{f.title}</p>
                     <p
                       style={{
-                        fontSize: "0.8rem",
+                        fontSize: "0.85rem",
                         color: colors.violet,
+                        lineHeight: 1.4,
                       }}
                     >
                       {f.sub}
@@ -116,15 +130,16 @@ const OmbPromoSection = ({ data }) => {
           </div>
 
           {/* RIGHT */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, width: "100%" }}>
 
             {/* MAIN IMAGE */}
             <div
               style={{
                 borderRadius: 20,
                 overflow: "hidden",
-                height: "clamp(220px,30vw,360px)",
+                height: "clamp(220px, 30vw, 360px)",
                 position: "relative",
+                width: "100%",
               }}
             >
               <img
@@ -149,10 +164,12 @@ const OmbPromoSection = ({ data }) => {
 
             {/* SMALL IMAGES */}
             <div
+              className="omb-small-images"
               style={{
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
                 gap: 14,
+                width: "100%",
               }}
             >
               <img

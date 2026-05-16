@@ -131,7 +131,7 @@ export const OmbServiceData = {
         food:
           "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
         stay:
-          "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+          "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
       },
     },
   },
@@ -435,7 +435,7 @@ export const OmbServiceData = {
         tagBg: "#5B4FCF",
         duration: "Half Day",
         icon: "globe",
-        img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800&q=80",
+        img: "https://www.bulgarihotels.com/.imaging/bhr-wide-big-jpg/dam/arteit/80235---the-temple-of-tirta-empul---an-ancient-rit/format-2560x1600-80235/jcr%3Acontent",
         desc: "Sacred purification temple with holy spring pools.",
         highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
       },
@@ -524,7 +524,7 @@ export const OmbServiceData = {
         title: "Breakfast",
         icon: "sun",
         time: "07:30 – 09:00",
-        img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+        img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
         desc: "Start your day with vibrant, nourishing foods.",
         items: [
           "Fresh tropical fruits",
@@ -538,7 +538,7 @@ export const OmbServiceData = {
         title: "Lunch",
         icon: "coffee",
         time: "12:30 – 01:30",
-        img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+        img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
         desc: "Balanced meals to fuel your practice.",
         items: [
           "Rice bowls",
@@ -552,7 +552,7 @@ export const OmbServiceData = {
         title: "Dinner",
         icon: "moon",
         time: "06:30 – 08:00",
-        img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+        img: "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
         desc: "Light and calming evening meals.",
         items: [
           "Lentil dishes",

@@ -510,7 +510,7 @@ export const PrenatalYogaData = {
           title: "Breakfast",
           icon: "sun",
           time: "09:00 – 10:00",
-          img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=80",
+          img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
           desc: "Nourishing Ayurvedic breakfast — fresh fruits, grains and herbal teas to energize your morning practice.",
           items: [
             "Fresh tropical fruits",

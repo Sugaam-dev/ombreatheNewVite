@@ -443,7 +443,7 @@ sage: "#8A5A10",
           title: "Breakfast",
           icon: "sun",
           time: "09:00 – 09:45",
-          img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=80",
+          img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
           desc: "Nourishing yogic breakfast after your morning Sadhana and Hatha yoga practice.",
           items: [
             "Seasonal fresh fruits",

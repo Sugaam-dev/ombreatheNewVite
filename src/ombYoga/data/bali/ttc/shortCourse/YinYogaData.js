@@ -510,7 +510,7 @@ export const YinYogaData = {
           title: "Fruits & Tea",
           icon: "sun",
           time: "08:45 – 09:30",
-          img: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=80",
+          img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
           desc: "Fresh fruits and herbal teas to gently energize your morning Yin practice.",
           items: [
             "Fresh tropical fruits",

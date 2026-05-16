@@ -133,7 +133,7 @@ export const BaliKundali300HoursData = {
         food:
           "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
         stay:
-          "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=800&q=80",
+          "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
       },
     },
   },
@@ -424,7 +424,7 @@ export const BaliKundali300HoursData = {
           tagBg: "#8A6A10",
           duration: "Half Day",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800&q=80",
+          img: "https://www.bulgarihotels.com/.imaging/bhr-wide-big-jpg/dam/arteit/80235---the-temple-of-tirta-empul---an-ancient-rit/format-2560x1600-80235/jcr%3Acontent",
           desc: "Sacred purification temple with holy spring pools.",
           highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
         },
@@ -510,7 +510,7 @@ export const BaliKundali300HoursData = {
           title: "Fruits & Tea",
           icon: "sun",
           time: "08:45 – 09:30",
-          img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+          img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
           desc: "Seasonal fruits, detox spice tea with ginger, cinnamon & cardamom — a traditional Kundalini practice.",
           items: [
             "Seasonal fresh fruits",
@@ -524,7 +524,7 @@ export const BaliKundali300HoursData = {
           title: "Brunch",
           icon: "coffee",
           time: "10:45 – 12:00",
-          img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+          img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
           desc: "Nourishing locally sourced organic meals to fuel your afternoon advanced Kundalini sessions.",
           items: [
             "Rice bowls",
@@ -538,7 +538,7 @@ export const BaliKundali300HoursData = {
           title: "Dinner",
           icon: "moon",
           time: "18:30 – 19:30",
-          img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+          img: "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
           desc: "Light calming evening sattvic meals — Sundays explore Ubud's local restaurants freely.",
           items: [
             "Lentil dishes",
