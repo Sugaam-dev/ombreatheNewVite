@@ -56,16 +56,15 @@ const LocationCard = memo(({ loc, onClick }) => (
     >
       {/* IMAGE */}
       <div className="pc-card__img-wrap">
-     <img
-  src={loc.image}
-  alt={loc.name}
-  className="pc-card__img"
-  loading="lazy"
-  decoding="async"
-  onError={(e) => {
-    e.target.src = "https://via.placeholder.com/600x400?text=Image";
-  }}
-/>
+        <img
+          src={loc.image}
+          alt={loc.name}
+          className="pc-card__img"
+          loading="lazy"
+          decoding="async"
+          width="500"
+          height="300"
+        />
         <div
           className="pc-card__img-overlay"
           style={{ "--accent": loc.accent }}
@@ -196,11 +195,10 @@ const ProgramsCarousel = () => {
 .pc-section {
   width: 100%;
   padding: clamp(36px, 4vw, 90px) 0;
- 
+  // background: #fafaf8;
   overflow: hidden;
   font-family: 'Caudex', serif;
   box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 /* ==========================================
@@ -235,7 +233,7 @@ const ProgramsCarousel = () => {
 }
 
 .pc-wrap .slick-track {
-  display: flex !important;   /* FIX */
+  display: flex !important;
   align-items: stretch;
 }
 
@@ -730,9 +728,7 @@ const ProgramsCarousel = () => {
   }
 
   .pc-wrap .slick-slide {
-   max-width: 100%;
-    overflow: hidden;
-        display: flex !important;
+    width: 100% !important;
   }
 
   .pc-slide {

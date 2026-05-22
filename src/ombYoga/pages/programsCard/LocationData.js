@@ -43,7 +43,7 @@ export const LOCATION_DATA = {
     subheadline: "Where the Himalayas and the Ganges unite",
     description:
       "Perched on the banks of the sacred Ganges, beneath the eternal Himalayas — Rishikesh is where yoga was born for the world. Every breath here carries centuries of practice and devotion.",
-    heroImage: "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1600&q=90",
+    heroImage: "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt80398e03b309f555/68a82def94a89550e2e57d49/lucas-hemingway-Ezp5CvwKoXQ-unsplash-header_mobile.jpg?format=webp&auto=avif&quality=60&crop=1%3A1&width=1440",
     accentColor: "#4a7fb5",
     accentLight: "#eaf2fb",
     highlights: [
