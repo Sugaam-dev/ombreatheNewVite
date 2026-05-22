@@ -120,48 +120,69 @@ const ProgramsCarousel = () => {
   const sliderRef = useRef(null);
 
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 450,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    adaptiveHeight: false,
-    pauseOnHover: true,
-    waitForAnimate: false,
-    cssEase: "ease-out",
-    useTransform: true,
-    swipeToSlide: true,
-    arrows: false,
-    dotsClass: "slick-dots pc-dots",
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+  dots: true,
+  infinite: true,
+  speed: 450,
+
+  slidesToShow: 3,
+  slidesToScroll: 1,
+
+  autoplay: true,
+  autoplaySpeed: 3000,
+
+  adaptiveHeight: true,
+
+  pauseOnHover: true,
+  waitForAnimate: false,
+
+  cssEase: "ease-out",
+
+  useTransform: true,
+  swipeToSlide: true,
+
+  arrows: false,
+
+  variableWidth: false,
+  initialSlide: 0,
+
+  dotsClass: "slick-dots pc-dots",
+
+  responsive: [
+    {
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          infinite: true,
-        },
+    },
+
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        centerMode: false,
+        variableWidth: false,
+
+        infinite: true,
       },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          infinite: true,
-        },
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        centerMode: false,
+        variableWidth: false,
+
+        infinite: true,
       },
-    ],
-  };
+    },
+  ],
+};
 
   return (
     <section className="pc-section">
@@ -187,15 +208,14 @@ const ProgramsCarousel = () => {
         </div>
       </div>
 
-      <style>{`
-/* ==========================================
+  <style>{`
+  /* ==========================================
    SECTION
 ========================================== */
 
 .pc-section {
   width: 100%;
   padding: clamp(36px, 4vw, 90px) 0;
-  // background: #fafaf8;
   overflow: hidden;
   font-family: 'Caudex', serif;
   box-sizing: border-box;
@@ -216,6 +236,7 @@ const ProgramsCarousel = () => {
   width: min(96%, 1800px);
   margin-inline: auto;
   overflow: hidden;
+  min-width: 0;
 }
 
 /* ==========================================
@@ -225,21 +246,33 @@ const ProgramsCarousel = () => {
 .pc-wrap .slick-slider {
   width: 100%;
   overflow: hidden;
+  min-width: 0;
 }
 
 .pc-wrap .slick-list {
   overflow: hidden;
   width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  min-width: 0;
 }
 
 .pc-wrap .slick-track {
   display: flex !important;
   align-items: stretch;
+
+  min-width: 0;
+}
+
+.pc-wrap .slick-track::before,
+.pc-wrap .slick-track::after {
+  display: none !important;
 }
 
 .pc-wrap .slick-slide {
   height: auto !important;
-  float: none !important;
 }
 
 .pc-wrap .slick-slide > div {
@@ -255,6 +288,7 @@ const ProgramsCarousel = () => {
   padding: clamp(6px, 0.8vw, 18px);
   box-sizing: border-box;
   height: 100%;
+  min-width: 0;
 }
 
 /* ==========================================
@@ -274,6 +308,8 @@ const ProgramsCarousel = () => {
   flex-direction: column;
 
   height: 100%;
+
+  min-width: 0;
 
   box-shadow:
     0 4px 18px rgba(0,0,0,0.06);
@@ -406,8 +442,6 @@ const ProgramsCarousel = () => {
   font-size: clamp(12.5px, 0.75vw, 24px);
 
   line-height: 1.72;
-
- 
 
   margin: 0;
 
@@ -570,127 +604,6 @@ const ProgramsCarousel = () => {
 }
 
 /* ==========================================
-   1450px–1899px
-========================================== */
-
-@media (min-width: 1450px) and (max-width: 1899px) {
-
-  .pc-wrap {
-    max-width: 1700px;
-  }
-
-  .pc-card__img-wrap {
-    height: 280px;
-  }
-
-  .pc-card__name {
-    font-size: 34px;
-  }
-
-  .pc-card__desc {
-    font-size: 18px;
-  }
-}
-
-/* ==========================================
-   1900px+
-========================================== */
-
-@media (min-width: 1900px) {
-
-  .pc-wrap {
-    max-width: 2100px;
-  }
-
-  .pc-slide {
-    padding: 14px;
-  }
-
-  .pc-card {
-    border-radius: 24px;
-  }
-
-  .pc-card__img-wrap {
-    height: 320px;
-  }
-
-  .pc-card__body {
-    padding: 26px;
-    gap: 12px;
-  }
-
-  .pc-card__name {
-    font-size: 40px;
-  }
-
-  .pc-card__desc {
-    font-size: 18px;
-    line-height: 1.82;
-  }
-
-  .pc-card__pill {
-    font-size: 12px;
-  }
-
-  .pc-card__count {
-    font-size: 13px;
-  }
-
-  .pc-card__cta {
-    font-size: 14px;
-  }
-}
-
-/* ==========================================
-   2560px+
-========================================== */
-
-@media (min-width: 2560px) {
-
-  .pc-wrap {
-    max-width: 2450px;
-  }
-
-  .pc-slide {
-    padding: 18px;
-  }
-
-  .pc-card {
-    min-height: 820px;
-  }
-
-  .pc-card__img-wrap {
-    height: 420px;
-  }
-
-  .pc-card__body {
-    padding: 34px;
-    gap: 16px;
-  }
-
-  .pc-card__name {
-    font-size: 48px;
-  }
-
-  .pc-card__desc {
-    font-size: 24px;
-    line-height: 1.95;
-  }
-
-  .pc-card__pill {
-    font-size: 14px;
-  }
-
-  .pc-card__count {
-    font-size: 15px;
-  }
-
-  .pc-card__cta {
-    font-size: 16px;
-  }
-}
-
-/* ==========================================
    TABLET
 ========================================== */
 
@@ -725,10 +638,6 @@ const ProgramsCarousel = () => {
 
   .pc-outer {
     padding-inline: 10px;
-  }
-
-  .pc-wrap .slick-slide {
-    width: 100% !important;
   }
 
   .pc-slide {
@@ -834,7 +743,7 @@ const ProgramsCarousel = () => {
     text-align: center;
   }
 }
-      `}</style>
+  `}</style>
     </section>
   );
 };
