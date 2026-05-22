@@ -1,108 +1,135 @@
-import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { IoStar, IoStarHalf } from "react-icons/io5";
+import React, { useState, useEffect, useRef } from "react";
+import { IoStar } from "react-icons/io5";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import "../Styles/ratings.css";
-import SectionHeading from "./useFullComponent/SectionHeading";
-// import lg from '../images/lg.png'
-// import {SectionHeading} from "./useFullComponent/SectionHeading";
+
 function Ratings() {
-  const data = [
+  const testimonials = [
     {
-      name: "Kristella",
-      city: "Bali",
-      description: "Experiencing sound healing and inner child healing!",
+      stars: 5,
+      quote: "The Yoga TTC in Bali changed my life completely. The teachers, the food, the environment — everything was magical!",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      name: "Jessica M.",
+      country: "USA",
     },
     {
-      name: "Emily",
-      city: "Bali",
-      description: `I wanted to relax and gain more experience in yoga and meditation. I chose it for the silent meditation and structured program.`,
+      stars: 5,
+      quote: "Ayurveda Healing Retreat in Rishikesh gave me a new life. I feel lighter, healthier and mentally so calm.",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      name: "Arjun P.",
+      country: "Australia",
+    },
+    {
+      stars: 5,
+      quote: "A life-changing experience! I found my purpose and a beautiful community for life.",
+      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+      name: "Maria K.",
+      country: "Germany",
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonials];
+  
+  const [currentIndex, setCurrentIndex] = useState(testimonials.length);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const timeoutRef = useRef(null);
+  const autoPlayRef = useRef(null);
 
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % data.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [data.length]);
+  const resetAutoplay = () => {
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    autoPlayRef.current = setInterval(() => {
+      handleNext();
+    }, 4000);
+  };
 
-  const socialRatings = [
-    { icon: FaFacebook, name: "Facebook", color: "#1877F2" },
-    { icon: FaInstagram, name: "Instagram", color: "#E4405F" },
-    { icon: FaYoutube, name: "YouTube", color: "#FF0000" },
-  ];
+  useEffect(() => {
+    resetAutoplay();
+    return () => {
+      if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    };
+  }, [currentIndex]);
+
+  const handleNext = () => {
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev - 1);
+  };
+
+  const handleTransitionEnd = () => {
+    if (currentIndex >= testimonials.length * 2) {
+      setIsTransitioning(false);
+      setCurrentIndex(currentIndex - testimonials.length);
+    } else if (currentIndex < testimonials.length) {
+      setIsTransitioning(false);
+      setCurrentIndex(currentIndex + testimonials.length);
+    }
+  };
+
+  useEffect(() => {
+    if (!isTransitioning) {
+      timeoutRef.current = setTimeout(() => {
+        setIsTransitioning(true);
+      }, 50);
+    }
+    return () => clearTimeout(timeoutRef.current);
+  }, [isTransitioning]);
 
   return (
-    <div className="ratings-container">
-      {/* <div className="heading">
-        <h1>What our students say about their yoga teacher training by Ombreathe</h1>
-        <img src={lg} alt="Ombreathe Logo" />
-      </div> */}
-<SectionHeading
-  title="What Our Students Say About Their"
-  highlight="Yoga Teacher Training"
-  subtitle="Hear inspiring experiences and transformational journeys shared by students from the Ombreathe community"
-  highlightColor="#4a7c68"
-  textColor="#1e1e1c"
-/>
-
-      <div className="main-content">
-        <div className="reviews-section">
-          <div className="review-slider">
-            <div 
-              className="review-track"
-              style={{
-                transform: `translateX(-${currentSlide * 100}%)`,
-              }}
-            >
-              {data.map((review, index) => (
-                <div key={index} className="review-card">
-                  <div className="review-name">{review.name}</div>
-                  <div className="review-city">{review.city}</div>
-                  <div className="review-description">{review.description}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          <div className="slide-indicators">
-            {data.map((_, index) => (
-              <div
-                key={index}
-                className={`indicator ${index === currentSlide ? 'active' : ''}`}
-                onClick={() => setCurrentSlide(index)}
-              />
-            ))}
-          </div>
+    <section className="testimonials-section">
+      <div className="testimonials-header">
+        <div className="title-group">
+          <span className="subtitle-tag">LOVED BY OUR COMMUNITY</span>
+          <h2 className="main-title">What Our Students Say</h2>
         </div>
+        
+        <div className="navigation-buttons">
+          <button className="nav-btn" onClick={handlePrev} aria-label="Previous slide">
+            <FiChevronLeft />
+          </button>
+          <button className="nav-btn" onClick={handleNext} aria-label="Next slide">
+            <FiChevronRight />
+          </button>
+        </div>
+      </div>
 
-        <div className="ratings-section">
-          {socialRatings.map((social, index) => {
-            const IconComponent = social.icon;
-            return (
-              <div key={index} className="rating-box">
-                <IconComponent 
-                  className="social-icon" 
-                  style={{ color: social.color }}
-                />
-                <div className="rating-info">
-                  <h3>{social.name}</h3>
-                  <div className="stars">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStarHalf />
+      <div className="testimonials-window">
+        <div 
+          className="testimonials-track"
+          onTransitionEnd={handleTransitionEnd}
+          style={{
+            transform: `translateX(calc(-${currentIndex} * var(--card-width-fallback)))`,
+            transition: isTransitioning ? "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)" : "none"
+          }}
+        >
+          {duplicatedTestimonials.map((item, index) => (
+            <div key={index} className="testimonial-card-wrapper">
+              {/* Single fully unified card item */}
+              <div className="testimonial-card">
+                <div className="star-rating">
+                  {[...Array(item.stars)].map((_, i) => (
+                    <IoStar key={i} className="star-icon" />
+                  ))}
+                </div>
+
+                <p className="review-text">“{item.quote}”</p>
+
+                <div className="reviewer-profile">
+                  <img src={item.avatar} alt={item.name} className="reviewer-avatar" />
+                  <div className="reviewer-details">
+                    <h4 className="reviewer-name">{item.name}</h4>
+                    <p className="reviewer-country">{item.country}</p>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

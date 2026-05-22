@@ -58,12 +58,12 @@ const WhyChoose = () => {
         "Corporate yoga, mindfulness, pranayama, sound healing and stress relief workshops designed for modern lifestyles.",
     },
 
-    // {
-    //   icon: <Leaf />,
-    //   title: "Holistic Approach",
-    //   description:
-    //     "We integrate physical, emotional, spiritual and mental well-being through authentic yogic practices and mindful living.",
-    // },
+    {
+      icon: <Leaf />,
+      title: "Holistic Approach",
+      description:
+        "We integrate physical, emotional, spiritual and mental well-being through authentic yogic practices and mindful living.",
+    },
   ];
 
   return (
