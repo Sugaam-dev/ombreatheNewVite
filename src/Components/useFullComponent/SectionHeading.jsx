@@ -35,7 +35,7 @@ const SectionHeading = ({
 
           .section-heading p {
             font-family: 'DM Sans', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 300;
             color: #8f877f;
             letter-spacing: 0.03em;

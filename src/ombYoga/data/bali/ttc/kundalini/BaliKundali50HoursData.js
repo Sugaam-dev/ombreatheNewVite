@@ -14,8 +14,8 @@ export const BaliKundali50HoursData = {
 
     hero: {
       location: "Ubud, Bali · 50-Hour Kundalini",
-      title: "Awaken Your",
-      highlight: "Kundalini Energy",
+      title: "Kundalini Yoga Course",
+      highlight: "6 Days 50 Hours ",
       subtitle:
         "50-hour Kundalini yoga teacher training in Bali — chakras, Nadis, Kriya & spiritual awakening from within",
       price: "$650",

@@ -13,8 +13,8 @@ textFade: "rgba(255,255,255,0.8)",
 
     hero: {
    location: "Rishikesh, India · 500-Hour Master",
-title: "Master the Art of",
-highlight: "Yoga Teaching",
+title: "Multi-Style YTTC",
+highlight: "56 Days 500 Hours ",
 subtitle: "500-hour yoga teacher training in Rishikesh — 200 + 300 hours combined, RYT-500 & lifetime Himalayan mastery",
 price: "$2,899",
 priceNote: "Includes stay, meals & RYT-500 certification",

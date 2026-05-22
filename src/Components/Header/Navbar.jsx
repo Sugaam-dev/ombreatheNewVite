@@ -39,8 +39,6 @@ const Navbar = () => {
   const [ttcView, setTtcView] = useState("main");
   const [selectedTtcSlug, setSelectedTtcSlug] = useState("");
 
-  
-
   const [mobileAccordion, setMobileAccordion] = useState({
     programs: false,
     retreats: false,
@@ -54,6 +52,11 @@ const Navbar = () => {
 
   const location = useLocation();
   const timeoutRef = useRef(null);
+
+  // Helper variables for routing contextual active checks
+  const currentPathLower = location.pathname.toLowerCase();
+  const isTtcPath = currentPathLower.startsWith("/programs") || currentPathLower.startsWith("/online");
+  const isRetreatPath = currentPathLower.startsWith("/retreats");
 
   // isSubActive: strict equality against slug-based path — no encoding needed
   const isSubActive = (path) => location.pathname === path;
@@ -75,25 +78,25 @@ const Navbar = () => {
     if (path === "/" || path === "") setActiveLink("home");
     else if (path === "/about") setActiveLink("about");
     else if (path === "/contact") setActiveLink("contact");
-    else if (path.includes("/programs") || path.includes("/online"))
+    else if (path.startsWith("/programs") || path.startsWith("/online"))
       setActiveLink("programs");
-    else if (path.includes("/retreat")) setActiveLink("retreats");
+    else if (path.startsWith("/retreats")) setActiveLink("retreats");
   }, [location]);
 
-
   // Add this new useEffect after your existing location useEffect
-useEffect(() => {
-  const isOnProgramsPage =
-    location.pathname.includes("/programs") ||
-    location.pathname.includes("/online") ||
-    location.pathname.includes("/ttc") ||      // add any TTC path segments you use
-    LOCATIONS.some(({ slug }) => location.pathname.toLowerCase().includes(slug));
+  useEffect(() => {
+    const path = location.pathname.toLowerCase();
 
-  if (!isOnProgramsPage) {
-    setTtcView("main");
-    setSelectedTtcSlug("");
-  }
-}, [location.pathname]);
+    const isProgramsPage =
+      path.startsWith("/programs") ||
+      path.startsWith("/online");
+
+    // ✅ Reset only when user leaves programs (includes retreats)
+    if (!isProgramsPage) {
+      setTtcView("main");
+      setSelectedTtcSlug("");
+    }
+  }, [location.pathname]);
 
   // ── desktop dropdown helpers ────────────────────────────────────────────
   const openProgramsMenu = () => {
@@ -116,21 +119,21 @@ useEffect(() => {
       setDropdownOpen({ programs: false, retreats: true });
     }
   };
-  const closeRetreatsMenu = () => {
-    if (isDesktop) {
-      timeoutRef.current = setTimeout(
-        () => setDropdownOpen((p) => ({ ...p, retreats: false })),
-        300,
-      );
-    }
-  };
+
   const closeAllMenus = () => {
     if (isDesktop) {
       clearTimeout(timeoutRef.current);
       setDropdownOpen({ programs: false, retreats: false });
     }
   };
-
+  const closeRetreatsMenu = () => {
+    if (isDesktop) {
+      timeoutRef.current = setTimeout(
+        () => setDropdownOpen((p) => ({ ...p, retreats: false })),
+        300
+      );
+    }
+  };
   const handleToggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
   const handleLinkClick = (linkName) => {
     setActiveLink(linkName);
@@ -158,7 +161,7 @@ useEffect(() => {
         <span style={{ color: "#aaa", fontSize: "13px" }}>Coming Soon</span>
       );
     return links.map(({ path, label }) => {
- const fullPath = buildPath(slug, path, "retreats");
+      const fullPath = buildPath(slug, path, "retreats");
       return (
         <Link
           key={path}
@@ -368,7 +371,7 @@ useEffect(() => {
                           {LOCATIONS.map(({ slug, label }) => (
                             <div
                               key={slug}
-                              className={`loc-toggle ${location.pathname.toLowerCase().includes(slug) ? "active-loc-text" : ""}`}
+                              className={`loc-toggle ${isTtcPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}
                               onClick={() => handleTtcLocationSelection(slug)}
                             >
                               <span>{label} TTC</span>
@@ -381,9 +384,9 @@ useEffect(() => {
                       /* TTC detail view */
                       <div className="row py-4 fade-in">
                         <div className="col-12 mb-3 d-flex align-items-center">
-                         <button className="back-btn" onClick={() => setTtcView("main")}>
-  ← Back to Programs
-</button>
+                          <button className="back-btn" onClick={() => setTtcView("main")}>
+                            ← Back to Programs
+                          </button>
                           <h5 className="ms-4 mb-0 ttc-selected-title">
                             {
                               LOCATIONS.find((l) => l.slug === selectedTtcSlug)
@@ -448,7 +451,7 @@ useEffect(() => {
                   className={`nav-link premium-link ${activeLink === "retreats" ? "active" : ""}`}
                   to="#"
                 >
-                  Retreats{" "}
+                  Retreats {" "}
                   <span
                     className={`arrow-icon ${dropdownOpen.retreats ? "rotated" : ""}`}
                   >
@@ -475,7 +478,7 @@ useEffect(() => {
                           key={slug}
                           className={`col-lg mega-column ${idx === arr.length - 1 ? "no-border" : ""}`}
                         >
-                          <h6 className="column-title">
+                          <h6 className={`column-title ${isRetreatPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}>
                             {label.toUpperCase()} RETREAT
                           </h6>
                           {renderRetreatLinks(slug)}
@@ -547,7 +550,7 @@ useEffect(() => {
                 className={`drawer-link d-flex justify-content-between align-items-center ${activeLink === "programs" ? "mobile-active-text" : ""}`}
                 onClick={() => toggleMobileAccordion("programs")}
               >
-                Programs{" "}
+                <nav>Programs </nav>
                 <span
                   className={`arrow-icon ${mobileAccordion.programs ? "rotated" : ""}`}
                 >
@@ -647,7 +650,7 @@ useEffect(() => {
                       {LOCATIONS.map(({ slug, label }) => (
                         <div key={slug} className="drawer-nested-loc mb-2">
                           <div
-                            className={`drawer-loc-header nested ${location.pathname.toLowerCase().includes(slug) ? "m-active-path-text" : ""}`}
+                            className={`drawer-loc-header nested ${isTtcPath && currentPathLower.split("/").includes(slug) ? "m-active-path-text" : ""}`}
                             onClick={(e) => toggleLocation(e, `m-ttc-${slug}`)}
                           >
                             {label} TTC{" "}
@@ -674,7 +677,7 @@ useEffect(() => {
                 className={`drawer-link d-flex justify-content-between align-items-center ${activeLink === "retreats" ? "mobile-active-text" : ""}`}
                 onClick={() => toggleMobileAccordion("retreats")}
               >
-                Retreats{" "}
+                <nav>Destination Retreats </nav>
                 <span
                   className={`arrow-icon ${mobileAccordion.retreats ? "rotated" : ""}`}
                 >
@@ -697,63 +700,63 @@ useEffect(() => {
                     </div>
 
                     {LOCATIONS.map(({ slug, label }) => (
-  <div key={slug} className="drawer-nested-loc mb-2">
-    <div
-      className={`drawer-loc-header nested ${
-        location.pathname.toLowerCase().includes(slug)
-          ? "m-active-path-text"
-          : ""
-      }`}
-      onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
-    >
-      <span>{label} Retreat</span>
+                      <div key={slug} className="drawer-nested-loc mb-2">
+                        <div
+                          className={`drawer-loc-header nested ${
+                            isRetreatPath && currentPathLower.split("/").includes(slug)
+                              ? "m-active-path-text"
+                              : ""
+                          }`}
+                          onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
+                        >
+                          <span>{label} Retreat</span>
 
-      <span>
-        {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
-      </span>
-    </div>
+                          <span>
+                            {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
+                          </span>
+                        </div>
 
-    <div
-      className={`drawer-loc-body ${
-        activeLocation === `m-retreat-${slug}` ? "open" : ""
-      }`}
-    >
-      <div className="mobile-sub-cat-body">
-        {(RETREAT_LINKS[slug] || []).length === 0 ? (
-          <span
-            style={{
-              color: "#aaa",
-              fontSize: "13px",
-              padding: "8px 0",
-              display: "block",
-            }}
-          >
-            Coming Soon
-          </span>
-        ) : (
-          (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
-         const fullPath = buildPath(slug, path, "retreats");
+                        <div
+                          className={`drawer-loc-body ${
+                            activeLocation === `m-retreat-${slug}` ? "open" : ""
+                          }`}
+                        >
+                          <div className="mobile-sub-cat-body">
+                            {(RETREAT_LINKS[slug] || []).length === 0 ? (
+                              <span
+                                style={{
+                                  color: "#aaa",
+                                  fontSize: "13px",
+                                  padding: "8px 0",
+                                  display: "block",
+                                }}
+                              >
+                                Coming Soon
+                              </span>
+                            ) : (
+                              (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
+                                const fullPath = buildPath(slug, path, "retreats");
 
-            return (
-              <Link
-                key={path}
-                to={fullPath}
-                className={
-                  isSubActive(fullPath)
-                    ? "m-sub-active-text"
-                    : ""
-                }
-                onClick={() => handleLinkClick("retreats")}
-              >
-                {label}
-              </Link>
-            );
-          })
-        )}
-      </div>
-    </div>
-  </div>
-))}
+                                return (
+                                  <Link
+                                    key={path}
+                                    to={fullPath}
+                                    className={
+                                      isSubActive(fullPath)
+                                        ? "m-sub-active-text"
+                                        : ""
+                                    }
+                                    onClick={() => handleLinkClick("retreats")}
+                                  >
+                                    {label}
+                                  </Link>
+                                );
+                              })
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -796,15 +799,61 @@ useEffect(() => {
         .loc-toggle,
         .drawer-loc-header,
         .back-btn,
-        .ttc-selected-title {
-          font-family: Caudex, serif !important;
-        }
+      
         .coming-soon-text {
           color: #aaa;
           font-size: 13px;
           display: block;
           padding-top: 8px;
         }
+
+    .ttc-selected-title {
+  color: #111 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  
+  /* Text Fade-In Animation */
+  animation: titleFadeIn 0.4s ease forwards;
+}
+
+.ttc-selected-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #ff9933; /* Matching Saffron accent bar */
+  border-radius: 2px;
+  
+  /* Accent Line Growing Animation */
+  animation: lineGrow 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
+  width: 0;
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to { width: 45px; }
+}
+
+@keyframes titleFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to { width: 100px; }
+}
         .premium-navbar {
           background: #fff !important;
           padding: 0 !important;
@@ -858,7 +907,7 @@ useEffect(() => {
           .mega-panel.show { display: block; animation: slideUpFade 0.3s ease; }
           .mega-column {
             border-right: 1px solid #f0f0f0;
-            padding: 0 30px;
+            padding: 0 2px 0 10px;
             min-height: 250px;
           }
           .mega-column.no-border { border-right: none; }
@@ -882,30 +931,50 @@ useEffect(() => {
             cursor: pointer;
           }
           .mega-column a:hover, .loc-toggle:hover { color: #007bff; }
-        .back-btn {
-  background: transparent;
-  border: 1.5px solid #007bff;
-  color: #007bff;
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 13px;
+    
+         .back-btn {
+  /* Bhagwa / Saffron Gradient Theme */
+  background: linear-gradient(135deg, #ff9933 0%, #ff6600 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-size: 14px;
   font-weight: 700;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  transition: background 0.25s, color 0.25s, transform 0.2s;
-  animation: backBtnPulse 2s ease-in-out infinite;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.35);
+  
+  /* Combined Animations: Slide entrance from right, then start smooth up/down float */
+  animation: backBtnSlideIn 0.4s ease-out exact, bhagwaFloat 3s ease-in-out infinite 0.4s;
 }
+
 .back-btn:hover {
-  background: #007bff;
-  color: #fff;
-  transform: translateX(-3px);
-  animation: none;
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+  background: linear-gradient(135deg, #ffaa44 0%, #ff5500 100%) !important;
 }
-@keyframes backBtnPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4); }
-  50%       { box-shadow: 0 0 0 6px rgba(0, 123, 255, 0); }
+
+/* Up and Down Smooth Floating Animation */
+@keyframes bhagwaFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Initial Entrance Animation */
+@keyframes backBtnSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
           .bridge-area {
             position: absolute;

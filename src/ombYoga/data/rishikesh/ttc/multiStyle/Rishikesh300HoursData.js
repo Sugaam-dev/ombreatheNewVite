@@ -13,8 +13,8 @@ overlay: "linear-gradient(180deg, rgba(45,8,8,0.55), rgba(45,8,8,0.9))",
 
     hero: {
     location: "Rishikesh, India · 300-Hour Advanced",
-title: "Elevate Your",
-highlight: "Yoga Mastery",
+title: "Multi-Style YTTC",
+highlight: "30 Days 300 Hours ",
 subtitle: "300-hour advanced yoga teacher training in Rishikesh — RYT-300, Classical Dance, Ganga Sadhna & complimentary Yin YTTC",
 price: "$1,699",
       priceNote: "Includes stay, meals & certification",

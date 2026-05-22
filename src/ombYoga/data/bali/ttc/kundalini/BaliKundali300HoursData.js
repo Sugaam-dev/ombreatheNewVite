@@ -14,8 +14,8 @@ export const BaliKundali300HoursData = {
 
     hero: {
       location: "Ubud, Bali · 300-Hour Kundalini",
-      title: "Master the Power of",
-      highlight: "Kundalini Yoga",
+      title: "Kundalini YTTC",
+      highlight: "30 Days 300 Hours ",
       subtitle:
         "300-hour advanced Kundalini yoga teacher training in Bali — deep chakra mastery, Yin Yoga & RYT-300 certification",
       price: "$2,199",

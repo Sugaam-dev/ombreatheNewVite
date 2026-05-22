@@ -6,8 +6,6 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Components/Header/Navbar";
 import ScrollToTop from "./Components/useFullComponent/ScrollToTop";
 
-// IMPORTANT:
-// Convert logo to WebP if possible
 import logo from "./images/omBreatheLogo.png";
 
 // ==========================================
@@ -36,8 +34,6 @@ function Layout() {
         className="background-logo"
         loading="lazy"
         decoding="async"
-        width="500"
-        height="320"
       />
 
       {/* ==========================================
@@ -85,6 +81,8 @@ function Layout() {
           overflow-x: hidden;
           background: #ffffff;
           min-height: 100vh;
+
+          z-index: 1; /* ✅ ensures proper stacking */
         }
 
         .main-layout {
@@ -98,15 +96,23 @@ function Layout() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+
           width: min(500px, 60vw);
           height: auto;
+
           opacity: 0.05;
-          z-index: -1;
+
+          z-index: 0; /* ✅ FIXED (was -1) */
+
           pointer-events: none;
           user-select: none;
+
           will-change: transform;
           backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
+
+          /* optional premium look */
+          filter: grayscale(100%);
         }
 
         /* ==========================================
@@ -120,6 +126,7 @@ function Layout() {
 
           .background-logo {
             width: 550px;
+            opacity: 0.04;
           }
         }
 

@@ -14,8 +14,8 @@ export const Bali500HoursData = {
 
     hero: {
       location: "Ubud, Bali · 500-Hour Multi Style",
-      title: "Master the Art of",
-      highlight: "Yoga Teaching",
+      title: "Multi-Style YTTC",
+      highlight: "56 Days 500 Hours ",
       subtitle:
         "500-hour multi style yoga teacher training in Bali — the ultimate RYT-500 certification combining 200 + 300 hour TTC",
       price: "$3,599",

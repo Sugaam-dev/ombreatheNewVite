@@ -103,8 +103,9 @@ const OmbHeroSection = ({ data }) => {
               transition: "all 0.8s ease 0.1s",
             }}
           >
-            {hero.title}{" "}
+         
             <em style={{ color: colors.goldLight }}>{hero.highlight}</em>
+               {hero.title}{" "}
           </h1>
 
           {/* SUBTITLE */}

@@ -14,8 +14,8 @@ export const Bali200HoursData = {
 
     hero: {
       location: "Ubud, Bali · 200-Hour Multi Style",
-      title: "Elevate Your",
-      highlight: "Yoga Journey",
+      title: "Multi-Style YTTC",
+      highlight: "20 Days 200 Hours ",
       subtitle:
         "200-hour multi style yoga teacher training in Bali — Ashtanga, Hatha, Vinyasa & Vedic Philosophy",
       price: "$1,299",

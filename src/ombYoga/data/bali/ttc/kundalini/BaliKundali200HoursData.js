@@ -14,8 +14,8 @@ export const BaliKundali200HoursData = {
 
     hero: {
       location: "Ubud, Bali · 200-Hour Kundalini",
-      title: "Transform Through",
-      highlight: "Kundalini Yoga",
+      title: "Kundalini YTTC",
+      highlight: "20 Days 200 Hours ",
       subtitle:
         "200-hour Kundalini yoga teacher training in Bali — 7 chakras, Kriya, Tantra philosophy & RYT-200 certification",
       price: "$1,299",

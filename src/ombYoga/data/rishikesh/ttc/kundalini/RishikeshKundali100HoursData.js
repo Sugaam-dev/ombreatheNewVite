@@ -14,8 +14,8 @@ export const RishikeshKundali100HoursData = {
 
     hero: {
       location: "Rishikesh · 100-Hour Kundalini",
-      title: "Activate Your",
-      highlight: "Kundalini Power",
+      title: "Kundalini YTTC",
+      highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour Kundalini yoga teacher training in Rishikesh — chakra activation, Kriya, Pranayama & Yoga Alliance certification",
       price: "$999",

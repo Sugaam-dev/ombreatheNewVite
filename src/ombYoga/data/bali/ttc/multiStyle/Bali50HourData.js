@@ -16,10 +16,10 @@ export const Bali50HourData = {
 
     hero: {
       location: "Ubud, Bali · 50-Hour Multi Style",
-      title: "Begin Your",
-      highlight: "Yoga Journey",
+      title: "Multi-Style Yoga Training in Bali",
+      highlight: "6-Day 50-Hour ",
       subtitle:
-        "Transform your life with a 50-hour multi style yoga teacher training in Bali",
+        "An immersive experience to transform your body, mind, and teaching journey",
       price: "$650",
       priceNote: "Includes stay, meals & certification",
       bgImage:

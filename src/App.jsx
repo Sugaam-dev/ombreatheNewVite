@@ -55,6 +55,7 @@ import shivShaktiSadhanaData from "./Components/Services/Membership/data/shivSha
 import saptaRishiSadhanaData from "./Components/Services/Membership/data/saptaRishiSadhanaData";
 import pashuPatayaaData from "./Components/Services/Membership/data/pashuPatayaaData";
 import shaktiSadhanaData from "./Components/Services/Membership/data/shaktiSadhanaData";
+import ProgramsCarousel from "./ombYoga/pages/programsCard/ProgramsCarousel";
 
 // ==========================================
 // PAGE LOADER
@@ -158,6 +159,13 @@ function AppRoutes() {
               <YogaTeachers />
             </Suspense>
           }
+        />
+        <Route path="programs"
+        element={
+              <Suspense fallback={<PageLoader />}>
+              <ProgramsCarousel/>
+            </Suspense>
+        }
         />
 
         {/* MEMBERSHIP PROGRAMS */}

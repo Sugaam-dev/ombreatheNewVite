@@ -359,7 +359,7 @@ const Yogaschool = () => {
 
                 <div
                   className="itemlogo"
-                  style={{ background: feature.color }}
+                 
                 >
                   <img
                     src={feature.icon}

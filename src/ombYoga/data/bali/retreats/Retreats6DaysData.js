@@ -14,8 +14,8 @@ export const Retreats6DaysData = {
 
     hero: {
       location: "Ubud, Bali · 6-Day Yoga & Wellness Retreat",
-      title: "Reset, Detox &",
-      highlight: "Reconnect",
+      title: "Yoga and Detox Retreat",
+      highlight: "6-Day ",
       subtitle:
         "A 6-day yoga and detox retreat in Bali — Shat Karma, Panchakarma, Ayurveda, yoga & deep inner renewal",
       price: "$650",

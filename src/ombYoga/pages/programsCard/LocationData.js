@@ -248,7 +248,7 @@ export const PROGRAM_CATEGORIES = [
   {
     id: "specialization",
     icon: "🎵",
-    label: "Specialization",
+    label: "Specialization & Retreats",
     desc: "Deepen into the healing arts — ancient sound practices and holistic wellness for modern professionals.",
     programs: [
       {

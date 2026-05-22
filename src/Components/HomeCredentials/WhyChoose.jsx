@@ -12,6 +12,7 @@ import {
   Leaf,
   ArrowRight
 } from "lucide-react";
+import TransformationJourney from './TransformationJourney';
 
 const WhyChoose = () => {
 
@@ -57,12 +58,12 @@ const WhyChoose = () => {
         "Corporate yoga, mindfulness, pranayama, sound healing and stress relief workshops designed for modern lifestyles.",
     },
 
-    {
-      icon: <Leaf />,
-      title: "Holistic Approach",
-      description:
-        "We integrate physical, emotional, spiritual and mental well-being through authentic yogic practices and mindful living.",
-    },
+    // {
+    //   icon: <Leaf />,
+    //   title: "Holistic Approach",
+    //   description:
+    //     "We integrate physical, emotional, spiritual and mental well-being through authentic yogic practices and mindful living.",
+    // },
   ];
 
   return (
@@ -144,7 +145,7 @@ const WhyChoose = () => {
             <div className="soulfit-cta-card">
 
               <div className="soulfit-cta-badge">
-                Begin Your Yoga Journey
+               <p>Begin Your Yoga Journey</p>
               </div>
 
               <h2>
@@ -175,6 +176,7 @@ const WhyChoose = () => {
         </div>
 
       </div>
+      <TransformationJourney/>
     </>
   );
 };

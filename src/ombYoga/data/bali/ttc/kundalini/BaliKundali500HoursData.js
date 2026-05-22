@@ -14,8 +14,8 @@ export const BaliKundali500HoursData = {
 
     hero: {
       location: "Ubud, Bali · 500-Hour Kundalini",
-      title: "Unleash Your",
-      highlight: "Kundalini Mastery",
+      title: "Kundalini YTTC",
+      highlight: "56 Days 500 Hours ",
       subtitle:
         "500-hour Kundalini yoga teacher training in Bali — the ultimate RYT-500 combining 200 + 300 hour Kundalini TTC",
       price: "$3,699",

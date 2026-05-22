@@ -104,7 +104,7 @@ const ImageSliderBanner = () => {
   }, [navigate]);
 
   const retreats = useCallback(() => {
-    navigate("/programs/retreat-7-adventure");
+    navigate("/programs");
   }, [navigate]);
 
   useEffect(() => {
@@ -580,7 +580,7 @@ const ImageSliderBanner = () => {
 
         <div className="slider-content">
           <h1 className="slider-title">
-            Welcome To The Ombreathe For
+           Master Yogic Living Beyond Certification with Ombreathe..
           </h1>
 
           <div className="type">
@@ -607,7 +607,7 @@ const ImageSliderBanner = () => {
               onClick={retreats}
               type="button"
             >
-              Retreat Program
+        Destination Retreats
             </button>
           </div>
         </div>

@@ -14,8 +14,8 @@ export const Rishikesh100HoursData = {
 
     hero: {
       location: "Rishikesh, India · 100-Hour Foundation",
-      title: "Begin Your",
-      highlight: "Yoga Journey",
+      title: "Multi-Style YTTC",
+      highlight: "10 Days 100 Hours",
       subtitle:
         "100-hour yoga teacher training in Rishikesh — Hatha, Ashtanga, Pranayama & Himalayan tradition",
       price: "$899",

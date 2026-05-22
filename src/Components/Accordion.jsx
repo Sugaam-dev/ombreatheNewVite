@@ -186,281 +186,334 @@ const Accordion = () => {
         <div className="accordion-items">{renderedItems}</div>
       </div>
 
-      <style>{`
-        .faq-wrapper {
-          min-height: 100vh;
-        }
+    <style>{`
 
-        .heading h1 {
-          font-size: 2.5rem;
-          margin-bottom: 20px;
-          font-family: "Caudex", serif;
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
+/* ==========================================
+   WRAPPER (CENTER + CONTROL WIDTH)
+========================================== */
 
-        .logo-img {
-          width: 200px;
-          height: auto;
-          opacity: 0.9;
-        }
+.faq-wrapper {
+  width: 100%;
+  max-width: 1200px; /* laptop default */
+  margin: 0 auto;
 
-        .accordion-container {
-          width: 90%;
-          max-width: 800px;
-          margin: -20px auto 50px;
-          background: white;
-          border-radius: 15px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-          overflow: hidden;
-        }
+  padding:
+    clamp(30px, 4vw, 90px)
+    clamp(12px, 2vw, 40px)
+    clamp(40px, 5vw, 100px);
 
-        .category-tabs {
-          display: flex;
-          background: #f8f9fa;
-          border-bottom: 1px solid #e9ecef;
-        }
+  // background: linear-gradient(180deg, #fafaf8 0%, #ffffff 100%);
+  box-sizing: border-box;
+}
 
-        .tab-button {
-          flex: 1;
-          padding: 20px;
-          border: none;
-          background: transparent;
-          cursor: pointer;
-          font-size: 1rem;
-          font-weight: 600;
-          color: #6c757d;
-          transition: all 0.3s ease;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-        }
+.faq-wrapper *,
+.faq-wrapper *::before,
+.faq-wrapper *::after {
+  box-sizing: border-box;
+}
 
-        .tab-button:hover {
-          background: #e9ecef;
-          color: #495057;
-        }
+/* ==========================================
+   CONTAINER
+========================================== */
 
-        .tab-button.active {
-          background: linear-gradient(135deg, #667eea, #764ba2);
-          color: white;
-        }
+.accordion-container {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: clamp(18px, 1.5vw, 32px);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+}
 
-        .tab-icon {
-          font-size: 1.2rem;
-        }
+/* ==========================================
+   TABS
+========================================== */
 
-        .section-header {
-          padding: 30px;
-          text-align: center;
-          border-bottom: 1px solid #e9ecef;
-        }
+.category-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #f8f9fa;
+  border-bottom: 1px solid #ececec;
+}
 
-        .section-header h2 {
-          color: #333;
-          margin-bottom: 10px;
-          font-size: 1.8rem;
-        }
+.tab-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 
-        .section-subtitle {
-          color: #6c757d;
-          font-size: 1rem;
-          margin: 0;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-        .accordion-items {
-          padding: 20px;
-        }
+  gap: clamp(8px, 0.8vw, 14px);
+  padding: clamp(14px, 1.2vw, 24px);
 
-        .accordion-item {
-          margin-bottom: 15px;
-          border-radius: 10px;
-          overflow: hidden;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
+  font-size: clamp(13px, 0.9vw, 18px);
+  font-weight: 600;
 
-        .title {
-          cursor: pointer;
-          padding: 20px;
-          background-color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          transition: all 0.3s ease;
-          border: 1px solid #e9ecef;
-        }
+  color: #666;
+  transition: 0.25s ease;
+}
 
-        .title:hover {
-          background-color: #f8f9fa;
-        }
+.tab-button:hover {
+  background: #eceff1;
+  color: #333;
+}
 
-        .title.active {
-          background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-          border-color: #2196f3;
-        }
+.tab-button.active {
+  background: linear-gradient(135deg, #4a7c68, #6b9c87);
+  color: #fff;
+}
 
-        .question-text {
-          font-weight: 600;
-          color: #333;
-          flex: 1;
-          text-align: left;
-        }
+.tab-icon {
+  font-size: clamp(16px, 1vw, 22px);
+}
 
-        .icon {
-          font-size: 24px;
-          color: #2196f3;
-          font-weight: bold;
-          transition: transform 0.3s ease;
-          width: 30px;
-          text-align: center;
-        }
+/* ==========================================
+   HEADER
+========================================== */
 
-        .title.active .icon {
-          transform: rotate(180deg);
-        }
+.section-header {
+  padding: clamp(24px, 2.5vw, 50px);
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
 
-        .content {
-          max-height: 0;
-          overflow: hidden;
-          background-color: #ffffff;
-          opacity: 0;
-          transform: scaleY(0);
-          transform-origin: top;
-          transition: max-height 0.4s ease, opacity 0.4s ease,
-            transform 0.4s ease, padding 0.4s ease;
-          border-left: 3px solid transparent;
-        }
+.section-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px, 2.2vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #1e1e1c;
+  margin-bottom: clamp(10px, 1vw, 20px);
+}
 
-        .content.active {
-          max-height: 300px;
-          opacity: 1;
-          transform: scaleY(1);
-          padding: 25px;
-          border-left: 3px solid #2196f3;
-          background: #fafafa;
-        }
+.section-subtitle {
+  font-size: clamp(13px, 1vw, 20px);
+  line-height: 1.7;
+  color: #777;
+  margin: 0 auto;
+  max-width: 60ch;
+}
 
-        .content p {
-          margin: 0;
-          font-size: 16px;
-          color: #555;
-          line-height: 1.6;
-        }
+/* ==========================================
+   ACCORDION ITEMS
+========================================== */
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-          .heading h1 {
-            font-size: 2rem;
-          }
+.accordion-items {
+  padding: clamp(16px, 2vw, 36px);
+}
 
-          .logo-img {
-            width: 150px;
-          }
+.accordion-item {
+  margin-bottom: clamp(12px, 1vw, 18px);
+  border-radius: clamp(14px, 1vw, 22px);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ececec;
+  transition: 0.25s ease;
+}
 
-          .accordion-container {
-            width: 95%;
-            margin: -10px auto 30px;
-          }
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.05);
+}
 
-          .tab-button {
-            padding: 15px 10px;
-            font-size: 0.9rem;
-            flex-direction: column;
-            gap: 5px;
-          }
+/* ==========================================
+   TITLE
+========================================== */
 
-          .tab-icon {
-            font-size: 1rem;
-          }
+.title {
+  cursor: pointer;
+  padding: clamp(16px, 1.3vw, 26px);
 
-          .section-header {
-            padding: 20px 15px;
-          }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-          .section-header h2 {
-            font-size: 1.5rem;
-          }
+  gap: clamp(10px, 1vw, 18px);
+  transition: 0.25s ease;
+}
 
-          .accordion-items {
-            padding: 15px;
-          }
+.title:hover {
+  background: #fafafa;
+}
 
-          .title {
-            padding: 15px;
-          }
+.title.active {
+  background: linear-gradient(135deg, #eef7f2, #dceee6);
+}
 
-          .question-text {
-            font-size: 0.95rem;
-          }
+/* ==========================================
+   QUESTION
+========================================== */
 
-          .content.active {
-            max-height: 250px;
-            padding: 20px;
-          }
-        }
+.question-text {
+  flex: 1;
+  font-size: clamp(14px, 1.1vw, 20px);
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1e1e1c;
+}
 
-        @media (max-width: 480px) {
-          .yogaschool {
-            padding: 20px 10px;
-          }
+/* ==========================================
+   ICON
+========================================== */
 
-          .heading h1 {
-            font-size: 1.5rem;
-          }
+.icon {
+  width: clamp(26px, 2vw, 40px);
+  height: clamp(26px, 2vw, 40px);
 
-          .logo-img {
-            width: 120px;
-          }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-          .accordion-container {
-            width: 100%;
-            margin: 0 auto 20px;
-            border-radius: 0;
-          }
+  border-radius: 50%;
+  background: #f2f5f3;
+  color: #4a7c68;
 
-          .tab-button {
-            padding: 12px 8px;
-            font-size: 0.8rem;
-          }
+  font-size: clamp(16px, 1.2vw, 24px);
+  transition: 0.25s ease;
+}
 
-          .section-header {
-            padding: 15px 10px;
-          }
+.title.active .icon {
+  transform: rotate(180deg);
+  background: #4a7c68;
+  color: #fff;
+}
 
-          .section-header h2 {
-            font-size: 1.3rem;
-          }
+/* ==========================================
+   CONTENT
+========================================== */
 
-          .section-subtitle {
-            font-size: 0.9rem;
-          }
+.content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
 
-          .accordion-items {
-            padding: 10px;
-          }
+  transition: 0.35s ease;
+  background: #fcfcfc;
+}
 
-          .title {
-            padding: 12px;
-          }
+.content.active {
+  max-height: 500px;
+  opacity: 1;
 
-          .question-text {
-            font-size: 0.9rem;
-          }
+  padding:
+    0
+    clamp(16px, 1.5vw, 28px)
+    clamp(20px, 1.8vw, 30px);
+}
 
-          .icon {
-            font-size: 20px;
-          }
+.content p {
+  font-size: clamp(13px, 1vw, 18px);
+  line-height: 1.8;
+  color: #555;
+}
 
-          .content.active {
-            max-height: 200px;
-            padding: 15px;
-          }
+/* ==========================================
+   LARGE SCREENS (1920px+)
+========================================== */
 
-          .content p {
-            font-size: 14px;
-          }
-        }
-      `}</style>
+@media (min-width: 1600px) {
+  .faq-wrapper {
+    max-width: 1400px;
+  }
+
+  .section-header h2 {
+    font-size: 56px;
+  }
+
+  .question-text {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   ULTRA WIDE (2560px+)
+========================================== */
+
+@media (min-width: 2560px) {
+  .faq-wrapper {
+    max-width: 1900px;
+  }
+
+  .section-header h2 {
+    font-size: 64px;
+  }
+
+  .section-subtitle {
+    font-size: 22px;
+  }
+
+  .question-text {
+    font-size: 22px;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1023px) {
+  .section-header h2 {
+    font-size: 34px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .faq-wrapper {
+    padding: 25px 10px 60px;
+  }
+
+  .category-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .question-text {
+    font-size: 14px;
+  }
+
+  .content p {
+    font-size: 13px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+
+  .question-text {
+    font-size: 13px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+}
+
+`}</style>
     </div>
   );
 };

@@ -13,8 +13,8 @@ overlay: "linear-gradient(180deg, rgba(45,26,0,0.55), rgba(45,26,0,0.9))",
 
     hero: {
      location: "Rishikesh, India · 200-Hour Professional",
-title: "Discover Your",
-highlight: "Yoga Teaching Abilities",
+title: "Multi-Style YTTC",
+highlight: "20 Days 200 Hours",
 subtitle: "200-hour yoga teacher training in Rishikesh — Hatha, Ashtanga, RYT-200 & Himalayan tradition",
 price: "$1,399",
       priceNote: "Includes stay, meals & certification",

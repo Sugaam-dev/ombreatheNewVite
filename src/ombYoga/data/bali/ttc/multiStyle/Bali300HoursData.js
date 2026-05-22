@@ -14,8 +14,8 @@ export const Bali300HoursData = {
 
     hero: {
       location: "Ubud, Bali · 300-Hour Advanced Multi Style",
-      title: "Master Your",
-      highlight: "Yoga Journey",
+      title: "Multi-Style YTTC",
+      highlight: "26 Days 300 Hours ",
       subtitle:
         "300-hour advanced yoga teacher training in Bali — Ashtanga, Hatha, Yin Yoga & Vedic Philosophy",
       price: "$2,099",

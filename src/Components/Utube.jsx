@@ -10,230 +10,307 @@ import { Link } from "react-router-dom";
 
 // ─── Inline styles ─────────────────────────────────────────────────────────
 const styles = `
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap');
 
+/* ==========================================
+   SECTION (CENTER FIX)
+========================================== */
+
+.yt-section {
+  --sage: #4a7c68;
+  --sage-light: #7aab95;
+  --sage-dark: #2d5244;
+  --clay: #c4855a;
+  --clay-light: #e8c5ac;
+  --cream: #faf7f2;
+  --warm-white: #f5f0e8;
+  --ink: #1e1e1c;
+  --ink-muted: #4a4a46;
+  --ink-faint: #8a8a84;
+
+  width: 100%;
+  max-width: 1200px; /* ✅ laptop perfect */
+  margin: 0 auto;
+
+  font-family: 'DM Sans', sans-serif;
+  padding: clamp(40px, 5vw, 120px) clamp(12px, 2vw, 40px);
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+.yt-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+
+  gap: clamp(24px, 4vw, 60px);
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.yt-desc-label {
+  font-size: clamp(10px, 0.8vw, 14px);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 12px;
+}
+
+.yt-desc-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px, 2.4vw, 48px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 16px;
+
+}
+
+.yt-desc-text {
+  font-size: clamp(14px, 1vw, 18px);
+  line-height: 1.8;
+  color: var(--ink-muted);
+  max-width: 65ch;
+}
+
+/* ==========================================
+   VIDEO
+========================================== */
+
+.yt-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: var(--sage-dark);
+
+  box-shadow:
+    0 10px 30px rgba(45,82,68,0.12),
+    0 28px 70px rgba(45,82,68,0.12);
+}
+
+/* corners */
+.yt-video-wrap::before,
+.yt-video-wrap::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--clay);
+}
+
+.yt-video-wrap::before {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.yt-video-wrap::after {
+  bottom: -2px;
+  left: -2px;
+  border-right: none;
+  border-top: none;
+}
+
+/* ==========================================
+   THUMBNAIL
+========================================== */
+
+.yt-thumb {
+  position: absolute;
+  inset: 0;
+
+  background: url(https://img.youtube.com/vi/_xLrirWP-S0/maxresdefault.jpg) center/cover;
+
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.yt-thumb:hover {
+  transform: scale(1.03);
+}
+
+.yt-thumb-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: linear-gradient(
+    160deg,
+    rgba(45,82,68,0.3),
+    rgba(20,20,18,0.6)
+  );
+}
+
+/* ==========================================
+   PLAY BUTTON
+========================================== */
+
+.yt-play-btn {
+  width: clamp(50px, 4vw, 80px);
+  height: clamp(50px, 4vw, 80px);
+
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.25s;
+}
+
+.yt-play-btn:hover {
+  background: white;
+  transform: scale(1.08);
+}
+
+.yt-play-label {
+  font-size: clamp(11px, 0.8vw, 16px);
+  color: rgba(255,255,255,0.85);
+  margin-top: 10px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.yt-footer-strip {
+  margin-top: clamp(40px, 5vw, 80px);
+
+  width: 100%;
+  background: var(--sage-dark);
+
+  padding: clamp(18px, 2vw, 30px);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.yt-footer-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 1.6vw, 32px);
+  font-style: italic;
+  color: var(--clay-light);
+}
+
+.yt-footer-cta {
+  padding: 10px 22px;
+  border-radius: 100px;
+
+  border: 1.5px solid var(--clay-light);
+  color: var(--clay-light);
+
+  font-size: clamp(12px, 0.9vw, 14px);
+  text-decoration: none;
+
+  transition: 0.25s;
+}
+
+.yt-footer-cta:hover {
+  background: var(--clay);
+  color: #fff;
+}
+
+/* ==========================================
+   LARGE SCREENS (1920px)
+========================================== */
+
+@media (min-width: 1600px) {
   .yt-section {
-    --sage:       #4a7c68;
-    --sage-light: #7aab95;
-    --sage-dark:  #2d5244;
-    --clay:       #c4855a;
-    --clay-light: #e8c5ac;
-    --cream:      #faf7f2;
-    --warm-white: #f5f0e8;
-    --ink:        #1e1e1c;
-    --ink-muted:  #4a4a46;
-    --ink-faint:  #8a8a84;
-
-    font-family: 'DM Sans', sans-serif;
-    // background: var(--cream);
+    max-width: 1400px;
   }
 
-  /* ── Divider ── */
-  .yt-divider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 0 clamp(20px, 5vw, 80px);
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .yt-divider-line { flex: 1; height: 1px; background: var(--clay-light); opacity: 0.5; }
-  .yt-divider-icon { color: var(--clay); font-size: 16px; opacity: 0.7; }
-
-  /* ── Body: description + video ── */
-  .yt-body {
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: clamp(32px, 5vw, 72px);
-    align-items: center;
-    padding: clamp(36px, 5vw, 64px) clamp(20px, 5vw, 80px) 0;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  @media (max-width: 860px) {
-    .yt-body { grid-template-columns: 1fr; }
-  }
-
-  /* ── Description panel ── */
-  .yt-desc-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--clay);
-    margin-bottom: 14px;
-  }
   .yt-desc-heading {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(22px, 2.6vw, 30px);
-    font-weight: 400;
-    line-height: 1.35;
-    color: var(--ink);
-    margin: 0 0 18px;
+    font-size: 54px;
   }
+
   .yt-desc-text {
-    font-size: 15px;
-    line-height: 1.8;
-    color: var(--ink-muted);
-    white-space: pre-line;
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   ULTRA WIDE (2560px)
+========================================== */
+
+@media (min-width: 2560px) {
+  .yt-section {
+    max-width: 1900px;
   }
 
-  /* ── Video panel ── */
-  .yt-video-wrap {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    aspect-ratio: 16/9;
-    background: var(--sage-dark);
-    box-shadow:
-      0 4px 20px rgba(45,82,68,0.15),
-      0 24px 56px rgba(45,82,68,0.1);
-  }
-  .yt-video-wrap::before {
-    content: '';
-    position: absolute;
-    top: -2px; right: -2px;
-    width: 52px; height: 52px;
-    border-top: 3px solid var(--clay);
-    border-right: 3px solid var(--clay);
-    border-radius: 0 18px 0 0;
-    z-index: 10;
-    pointer-events: none;
-  }
-  .yt-video-wrap::after {
-    content: '';
-    position: absolute;
-    bottom: -2px; left: -2px;
-    width: 52px; height: 52px;
-    border-bottom: 3px solid var(--clay);
-    border-left: 3px solid var(--clay);
-    border-radius: 0 0 0 18px;
-    z-index: 10;
-    pointer-events: none;
+  .yt-desc-heading {
+    font-size: 62px;
   }
 
-  .yt-thumb {
-    position: absolute; inset: 0;
-    background-image: url(https://img.youtube.com/vi/_xLrirWP-S0/maxresdefault.jpg);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-  }
-  .yt-thumb:hover { transform: scale(1.025); }
-
-  .yt-thumb-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(160deg, rgba(45,82,68,0.32) 0%, rgba(30,30,28,0.55) 100%);
-    display: flex; align-items: center; justify-content: center;
-    flex-direction: column;
-    gap: 14px;
+  .yt-desc-text {
+    font-size: 20px;
   }
 
-  .yt-play-btn {
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(6px);
-    border: 2px solid rgba(255,255,255,0.6);
-    display: flex; align-items: center; justify-content: center;
-    transition: all 0.25s ease;
-    cursor: pointer;
+  .yt-footer-text {
+    font-size: 36px;
   }
-  .yt-play-btn:hover { background: rgba(255,255,255,0.9); transform: scale(1.1); }
-  .yt-play-btn:hover .yt-play-icon { color: var(--sage-dark); }
-  .yt-play-icon { color: #fff; transition: color 0.2s ease; }
+}
 
-  .yt-play-label {
-    font-size: 12px;
-    color: rgba(255,255,255,0.8);
-    letter-spacing: 0.08em;
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1023px) {
+  .yt-body {
+    grid-template-columns: 1fr;
   }
+}
 
-  .yt-iframe {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-    border: none;
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .yt-section {
+    padding: 30px 12px;
   }
 
-  .yt-shimmer {
-    position: absolute; inset: 0;
-    background: linear-gradient(90deg, var(--sage-dark) 0%, #3f7260 50%, var(--sage-dark) 100%);
-    background-size: 200% 100%;
-    animation: ytShimmer 1.8s ease-in-out infinite;
-    display: flex; align-items: center; justify-content: center;
-    color: rgba(255,255,255,0.4);
+  .yt-desc-heading {
+    font-size: 28px;
+  }
+
+  .yt-desc-text {
     font-size: 14px;
   }
-  @keyframes ytShimmer {
-    0%   { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-  }
 
-  .yt-hd-badge {
-    position: absolute;
-    top: 12px; right: 12px;
-    background: rgba(0,0,0,0.65);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    padding: 3px 8px;
-    border-radius: 4px;
-    z-index: 5;
-  }
-
-  /* ── Footer strip ── */
-  .yt-footer-strip {
-    margin-top: clamp(36px, 5vw, 64px);
-    background: var(--sage-dark);
-    padding: clamp(18px, 3vw, 30px) clamp(20px, 5vw, 80px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
   .yt-footer-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(16px, 2vw, 24px);
-    font-weight: 300;
-    font-style: italic;
-    color: var(--clay-light);
-  }
-  .yt-footer-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 11px 26px;
-    background: transparent;
-    border: 1.5px solid var(--clay-light);
-    border-radius: 100px;
-    color: var(--clay-light);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family: 'DM Sans', sans-serif;
-  }
-  .yt-footer-cta:hover {
-    background: var(--clay);
-    border-color: var(--clay);
-    color: #fff;
+    font-size: 22px;
   }
 
-  /* Entry animations */
-  @keyframes ytFadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+  .yt-footer-cta {
+    width: 100%;
+    text-align: center;
   }
-  .yt-animate { animation: ytFadeUp 0.65s ease both; }
-  .yt-animate--d1 { animation-delay: 0.05s; }
-  .yt-animate--d2 { animation-delay: 0.18s; }
-  .yt-animate--d3 { animation-delay: 0.30s; }
+}
 `;
 
 // ─── OptimizedYouTubePlayer ────────────────────────────────────────────────
