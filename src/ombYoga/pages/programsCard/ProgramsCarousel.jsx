@@ -1053,7 +1053,7 @@ const ProgramsCarousel = () => {
       </div>
 
   <style>{`
-  /* ==========================================
+ /* ==========================================
    SECTION
 ========================================== */
 
@@ -1080,7 +1080,6 @@ const ProgramsCarousel = () => {
   width: min(96%, 1800px);
   margin-inline: auto;
   overflow: hidden;
-  min-width: 0;
 }
 
 /* ==========================================
@@ -1090,38 +1089,16 @@ const ProgramsCarousel = () => {
 .pc-wrap .slick-slider {
   width: 100%;
   overflow: hidden;
-  min-width: 0;
 }
 
 .pc-wrap .slick-list {
   overflow: hidden;
   width: 100%;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  min-width: 0;
-}
-
-.pc-wrap .slick-track {
-  display: flex !important;
-  align-items: stretch;
-
-  min-width: 0;
-}
-
-.pc-wrap .slick-track::before,
-.pc-wrap .slick-track::after {
-  display: none !important;
 }
 
 .pc-wrap .slick-slide {
-  height: auto !important;
-}
-
-.pc-wrap .slick-slide > div {
-  height: 100%;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* ==========================================
@@ -1132,7 +1109,6 @@ const ProgramsCarousel = () => {
   padding: clamp(6px, 0.8vw, 18px);
   box-sizing: border-box;
   height: 100%;
-  min-width: 0;
 }
 
 /* ==========================================
@@ -1153,20 +1129,12 @@ const ProgramsCarousel = () => {
 
   height: 100%;
 
-  min-width: 0;
-
   box-shadow:
     0 4px 18px rgba(0,0,0,0.06);
 
   transition:
     transform 0.28s ease,
     box-shadow 0.28s ease;
-
-  will-change: transform;
-
-  transform: translateZ(0);
-
-  backface-visibility: hidden;
 }
 
 .pc-card:hover {
@@ -1203,12 +1171,6 @@ const ProgramsCarousel = () => {
   background: #f2f2f2;
 
   transition: transform 0.3s ease;
-
-  will-change: transform;
-
-  transform: translateZ(0);
-
-  backface-visibility: hidden;
 }
 
 .pc-card:hover .pc-card__img {
@@ -1405,7 +1367,7 @@ const ProgramsCarousel = () => {
 }
 
 /* ==========================================
-   1024px–1440px
+   DESKTOP
 ========================================== */
 
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -1485,7 +1447,7 @@ const ProgramsCarousel = () => {
   }
 
   .pc-slide {
-    padding: 6px 2px;
+    padding: 8px;
   }
 
   .pc-card {
@@ -1493,33 +1455,33 @@ const ProgramsCarousel = () => {
   }
 
   .pc-card__img-wrap {
-    height: 200px;
+    height: 220px;
   }
 
   .pc-card__body {
-    padding: 16px;
-    gap: 8px;
+    padding: 18px;
+    gap: 10px;
   }
 
   .pc-card__tagline {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 1.5px;
   }
 
   .pc-card__name {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .pc-card__desc {
-    font-size: 13px;
-    line-height: 1.65;
+    font-size: 15px;
+    line-height: 1.7;
 
     -webkit-line-clamp: unset;
   }
 
   .pc-card__pill {
-    font-size: 9px;
-    padding: 5px 9px;
+    font-size: 10px;
+    padding: 6px 10px;
   }
 
   .pc-card__footer {
@@ -1547,7 +1509,7 @@ const ProgramsCarousel = () => {
   }
 
   .pc-slide {
-    padding: 4px 1px;
+    padding: 6px;
   }
 
   .pc-card {
@@ -1555,24 +1517,24 @@ const ProgramsCarousel = () => {
   }
 
   .pc-card__img-wrap {
-    height: 180px;
+    height: 200px;
   }
 
   .pc-card__body {
-    padding: 14px;
+    padding: 16px;
   }
 
   .pc-card__name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .pc-card__desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .pc-card__pill {
-    font-size: 8px;
-    padding: 4px 8px;
+    font-size: 9px;
+    padding: 5px 8px;
   }
 
   .pc-card__footer {
