@@ -52,9 +52,13 @@ export const PROGRAM_LINKS = {
       { path: "prenatalyoga", label: "Prenatal Yoga TTC" },
       { path: "aerialyoga",   label: "Aerial Yoga TTC" },
       { path: "acroyoga",     label: "Acro Yoga TTC" },
+      
     ],
     specialization: [
       { path: "soundhealing", label: "Sound Healing Course" },
+          { path: "100houryogatherapyayurve", label: "Bali 100Hours Yoga Therapy Ayurveda" },
+           { path: "ayurvedictreatmentttc", label: "Ayurvedic Treatment In Bali" },
+             { path: "ayurveda5hoursabhyangam", label: "Ayurveda Massage Course In Bali" },
     ],
   },
 
@@ -89,8 +93,19 @@ export const PROGRAM_LINKS = {
   },
 
   dharamshala: {
-    multiStyle:     [],
-    kundalini:      [],
+      multiStyle: [
+      { path: "100hr", label: "10 Days 100 Hours Multi-Style YTTC" },
+      { path: "200hr", label: "20 Days 200 Hours Multi-Style YTTC" },
+      { path: "300hr", label: "26 Days 300 Hours Multi-Style YTTC" },
+      { path: "500hr", label: "56 Days 500 Hours Multi-Style YTTC" },
+    ],
+    kundalini:      [  
+           { path: "kundalini50hr", label: "5 Days 50 Hours Kundalini YTTC" },
+      { path: "kundalini100hr", label: "10 Days 100 Hours Kundalini YTTC" },
+            { path: "kundalini200hr", label: "25 Days 200 Hours Kundalini YTTC" },
+      { path: "kundalini300hr", label: "29 Days 300 Hours Kundalini YTTC" },
+      { path: "kundalini500hr", label: "59 Days 500 Hours Kundalini YTTC" },
+    ],
     shortCourses:   [],
     specialization: [],
   },

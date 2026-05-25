@@ -60,15 +60,22 @@ const OmbExcursionSection = ({ data }) => {
               style={{
                 borderRadius: 16,
                 overflow: "hidden",
-                boxShadow: colors.cardShadow,
-                transition: "transform 0.3s ease",
-                transform: hovered === i ? "translateY(-6px)" : "none",
+                background: colors.white,
+                /* Enhanced depth: base shadow vs a richer, deeper shadow on hover */
+                boxShadow: hovered === i 
+                  ? "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" 
+                  : colors.cardShadow || "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+                
+                /* Smoother animation curves */
+                transition: "transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
+                transform: hovered === i ? "translateY(-8px)" : "translateY(0)",
+                cursor: "pointer"
               }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
             >
-              {/* IMAGE */}
-              <div style={{ height: 200, position: "relative" }}>
+              {/* IMAGE container */}
+              <div style={{ height: 200, position: "relative", overflow: "hidden" }}>
                 <img
                   src={exc.img}
                   alt={exc.title}
@@ -77,9 +84,9 @@ const OmbExcursionSection = ({ data }) => {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
-                    transform:
-                      hovered === i ? "scale(1.08)" : "scale(1)",
-                    transition: "transform 0.5s ease",
+                    transform: hovered === i ? "scale(1.05)" : "scale(1)",
+                    /* Matched transition speed for parity with the card lift */
+                    transition: "transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)",
                   }}
                 />
 
@@ -88,6 +95,9 @@ const OmbExcursionSection = ({ data }) => {
                     position: "absolute",
                     inset: 0,
                     background: colors.overlay,
+                    /* Subtle overlay dimming/lightening on hover if desired */
+                    opacity: hovered === i ? 0.85 : 1,
+                    transition: "opacity 0.4s ease",
                   }}
                 />
 
@@ -100,6 +110,7 @@ const OmbExcursionSection = ({ data }) => {
                     padding: "4px 10px",
                     borderRadius: 20,
                     fontSize: "0.7rem",
+                    fontWeight: 500,
                   }}
                 >
                   {exc.duration}
@@ -136,10 +147,10 @@ const OmbExcursionSection = ({ data }) => {
                 </h3>
 
                 {/* DESC */}
-                <p>{exc.desc}</p>
+                <p style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.9rem", lineMedium: "1.4" }}>{exc.desc}</p>
 
                 {/* HIGHLIGHTS */}
-                <div style={{ marginTop: 10 }}>
+                <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
                   {exc.highlights.map((h, j) => (
                     <div
                       key={j}
