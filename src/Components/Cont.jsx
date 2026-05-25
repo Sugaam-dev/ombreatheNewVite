@@ -4,7 +4,7 @@ import Ratings from "./Ratings";
 
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import SectionHeading from "./useFullComponent/SectionHeading";
+// import SectionHeading from "./useFullComponent/SectionHeading";
 
 function Cont() {
   const itemStyle = {
@@ -58,16 +58,10 @@ function Cont() {
       >
         Contact Us
       </h1> */}
-      <SectionHeading
-  title="Connect With Your"
-  highlight="Inner Peace"
-  subtitle="Contact us to start your mindful journey"
-  highlightColor="#4a7c68"
-  textColor="#1e1e1c"
-/>
 
 
-      <div style={{ marginTop: "50px" }}>
+
+      <div>
          <Contact />
         <Ratings />
        

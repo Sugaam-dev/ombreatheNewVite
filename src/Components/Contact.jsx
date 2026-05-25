@@ -12,6 +12,7 @@ import {
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import SectionHeading from "./useFullComponent/SectionHeading";
 
 const LOCATIONS = [
   {
@@ -195,8 +196,14 @@ export default function Contact() {
       `}</style>
 
       <div className="cp-hero">
-        <h1>Start Your Healing Journey.</h1>
-        <p>We’re here to help you find your natural balance.</p>
+     <SectionHeading
+     title="Connect With Your"
+     highlight="Inner Peace"
+     subtitle="Contact us to start your mindful journey"
+     highlightColor="#4a7c68"
+     textColor="#ffffff"
+   />
+   
       </div>
 
       <div className="cp-main-grid">

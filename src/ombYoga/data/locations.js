@@ -44,7 +44,7 @@ export const PROGRAM_LINKS = {
       { path: "kundalini50hr",  label: "6 Days 50 Hours Kundalini Yoga Course" },
       { path: "kundalini100hr", label: "10 Days 100 Hours Kundalini YTTC" },
       { path: "kundalini200hr", label: "20 Days 200 Hours Kundalini YTTC" },
-      { path: "kundalini300hr", label: "26 Days 300 Hours Kundalini YTTC" },
+      { path: "kundalini300hr", label: "30 Days 300 Hours Kundalini YTTC" },
       { path: "kundalini500hr", label: "56 Days 500 Hours Kundalini YTTC" },
     ],
     shortCourses: [

@@ -1,5 +1,12 @@
-// ─── Location Data ────────────────────────────────────────────────────────────
+// ─── Program Categories Meta ───────────────────────────────────────────────────
+export const PROGRAM_CATEGORIES = [
+  { id: "multi-style",    icon: "🧘", label: "Multi-Style YTTC" },
+  { id: "kundalini",      icon: "🔥", label: "Kundalini YTTC" },
+  { id: "short",          icon: "🌿", label: "Short Courses" },
+  { id: "specialization", icon: "🎵", label: "Specialization & Retreats" }
+];
 
+// ─── Location Specific Datasets ───────────────────────────────────────────────
 export const LOCATION_DATA = {
   Bali: {
     tagline: "Island of the Gods",
@@ -17,6 +24,73 @@ export const LOCATION_DATA = {
       { icon: "🍃", label: "Organic Living",    desc: "Farm-to-table Ayurvedic meals daily" },
     ],
     facts: ["Yoga Alliance Certified", "Small Batch Classes (max 12)", "Airport Transfers Included", "24/7 Support"],
+    
+    programsByCategoryId: {
+      "multi-style": [
+        { path: "50hr", hours: "50", title: "6 Days 50 Hours Multi-Style Yoga Course", price: "$750", duration: "6 days", badge: "Beginner Friendly", certification: "YACEP" },
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Multi-Style Yoga Course", price: "$1,150", duration: "10 days", badge: "Most Popular", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Multi-Style YTTC", price: "$1,599", duration: "20 days", badge: "Luxury Eco-Stay", certification: "RYT-200" },
+        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Multi-Style YTTC", price: "$2,399", duration: "26 days", badge: "For Teachers", certification: "RYT-300" },
+      { path: "500hr", hours: "500", title: "56 Days 500 Hours Advanced Multi-Style YTTC", price: "$3,599", duration: "56 days", badge: "For Teachers", certification: "RYT-500" }
+   
+      ],
+      "kundalini": [
+           {
+    path: "kundalini50hr",
+    hours: "50",
+    title: "6 Days 50 Hours Kundalini YTTC",
+    price: "$650",
+    duration: "6 days",
+    badge: "Beginner Awakening",
+    // certification: "RYT-100"
+  },
+         {
+    path: "kundalini100hr",
+    hours: "100",
+    title: "10 Days 100 Hours Kundalini YTTC",
+    price: "$999",
+    duration: "10 days",
+    badge: "Beginner Awakening",
+    certification: "RYT-100"
+  },
+  {
+    path: "kundalini200hr",
+    hours: "200",
+    title: "20 Days 200 Hours Kundalini YTTC",
+    price: "$1,299",
+    duration: "20 days",
+    badge: "Energy Awakening",
+    certification: "RYT-200"
+  },
+  {
+    path: "kundalini300hr",
+    hours: "300",
+    title: "30 Days 300 Hours Kundalini YTTC",
+    price: "$2,199",
+    duration: "30 days",
+    badge: "Advanced Transformation",
+    certification: "RYT-300"
+  },
+  {
+    path: "kundalini500hr",
+    hours: "500",
+    title: "50 Days 500 Hours Kundalini YTTC",
+    price: "$3,699",
+    duration: "50 days",
+    badge: "Mastery & Enlightenment",
+    certification: "RYT-500"
+  }
+
+      ],
+      "short": [
+        { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Yin Yoga Course", price: "$790", duration: "6 days", badge: "Specialty", certification: "Yoga Alliance" },
+        { path: "aerialyoga", hours: "50", title: "5 Days Aerial Yoga Course", price: "$650", duration: "5 days", badge: "Silk Hammocks Provided", certification: "YACEP" },
+        { path: "acroYoga", hours: "50", title: "5 Days Acro Yoga Course", price: "$899", duration: "5 days", badge: "Beachside Practice", certification: "YACEP" }
+      ],
+      "specialization": [
+        { path: "wellness-retreat", hours: "N/A", title: "Yoga & Wellness Detox Retreat", price: "$850", duration: "6 days", badge: "Spa Cleanse", certification: "YACEP" }
+      ]
+    }
   },
 
   Mysuru: {
@@ -35,6 +109,18 @@ export const LOCATION_DATA = {
       { icon: "📿", label: "Deep Heritage",      desc: "Ancient lineage teachers available" },
     ],
     facts: ["Yoga Alliance Certified", "Vegetarian Meals Included", "Cultural Excursions", "Visa Assistance"],
+    
+    programsByCategoryId: {
+      "multi-style": [
+        { path: "50hr", hours: "50", title: "6 Days 50 Hours Primary Series Foundations", price: "$450", duration: "6 days", badge: "Intense Shala Setup", certification: "YACEP" },
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Classical Ashtanga Course", price: "$850", duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Traditional Multi-Style YTTC", price: "$1,199", duration: "20 days", badge: "Authentic Shala", certification: "RYT-200" },
+        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Ashtanga Vinyasa", price: "$1,899", duration: "26 days", badge: "Intense Practice", certification: "RYT-300" }
+      ],
+      "short": [
+        { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Yin & Restoration", price: "$550", duration: "6 days", badge: "Traditional Styles", certification: "Yoga Alliance" }
+      ]
+    }
   },
 
   Rishikesh: {
@@ -53,6 +139,30 @@ export const LOCATION_DATA = {
       { icon: "🎶", label: "Kirtan Nights",    desc: "Nightly devotional music gatherings" },
     ],
     facts: ["Yoga Alliance Certified", "Ashram-style Stay", "Ganga Aarti Access", "Meditation Caves"],
+    
+    programsByCategoryId: {
+      "multi-style": [
+        { path: "50hr", hours: "50", title: "6 Days 50 Hours Vedic Foundation", price: "$499", duration: "6 days", badge: "Ganga Ashram Stay", certification: "YACEP" },
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Hatha & Vinyasa Course", price: "$750", duration: "10 days", badge: "Ashram Immersion", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Holy Ganges Multi-Style YTTC", price: "$999", duration: "20 days", badge: "Best Value Ashram", certification: "RYT-200" },
+        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Multi-Style YTTC", price: "$1,699", duration: "26 days", badge: "Deep Philosophy", certification: "RYT-300" },
+        { path: "500hr", hours: "500", title: "56 Days 500 Hours Master Multi-Style Training", price: "$2,999", duration: "56 days", badge: "Ultimate Mastery", certification: "RYT-500" }
+      ],
+      "kundalini": [
+        { path: "kundalini50hr", hours: "50", title: "6 Days 50 Hours Kundalini Awakening", price: "$550", duration: "6 days", badge: "Kriya Foundations", certification: "YACEP" },
+        { path: "kundalini100hr", hours: "100", title: "10 Days 100 Hours Shaktipat Kundalini", price: "$799", duration: "10 days", badge: "Spiritual Awakening", certification: "Yoga Alliance" },
+        { path: "kundalini200hr", hours: "200", title: "20 Days 200 Hours Authentic Kundalini YTTC", price: "$1,150", duration: "20 days", badge: "Sacred Lineage", certification: "RYT-200" },
+        { path: "kundalini300hr", hours: "300", title: "26 Days 300 Hours Advanced Kundalini YTTC", price: "$1,850", duration: "26 days", badge: "Tantric Path", certification: "RYT-300" },
+        { path: "kundalini500hr", hours: "500", title: "56 Days 500 Hours Complete Kundalini Master", price: "$3,200", duration: "~56 days", badge: "Elite Shaktipat", certification: "RYT-500" }
+      ],
+      "short": [
+        { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Meditative Yin Yoga", price: "$499", duration: "6 days", badge: "Ganga Riverside", certification: "Yoga Alliance" }
+      ],
+      "specialization": [
+        { path: "soundhealing", hours: "50", title: "Vedic Sound Healing Level 1 & 2", price: "$350", duration: "4 days", badge: "Tibetan Bowls Included", certification: "YACEP" },
+        { path: "wellness-retreat", hours: "N/A", title: "Ganga Aarti & Ashram Detox Retreat", price: "$550", duration: "6 days", badge: "Sacred Detox", certification: "YACEP" }
+      ]
+    }
   },
 
   "Chiang Mai": {
@@ -71,6 +181,20 @@ export const LOCATION_DATA = {
       { icon: "🐘", label: "Ethical Wildlife", desc: "Optional elephant sanctuary visits" },
     ],
     facts: ["Yoga Alliance Certified", "Thai Cooking Class", "Temple Tour Included", "Visa on Arrival"],
+    
+    programsByCategoryId: {
+      "multi-style": [
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Nature Calm Course", price: "$899", duration: "10 days", badge: "Highland Retreat", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Lanna Highland YTTC", price: "$1,350", duration: "20 days", badge: "Mountain Sanctuary", certification: "RYT-200" }
+      ],
+      "short": [
+        { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Zen Yin Yoga", price: "$650", duration: "6 days", badge: "Buddhist Vibe", certification: "Yoga Alliance" },
+        { path: "prenatalyoga", hours: "N/A", title: "Sacred Prenatal Yoga TTC", price: "$650", duration: "6 days", badge: "Specialized Care", certification: "RPYT" }
+      ],
+      "specialization": [
+        { path: "wellness-retreat", hours: "N/A", title: "Monastery Meditation & Wellness Retreat", price: "$699", duration: "6 days", badge: "Total Stillness", certification: "YACEP" }
+      ]
+    }
   },
 
   Dharamshala: {
@@ -89,212 +213,26 @@ export const LOCATION_DATA = {
       { icon: "🙏", label: "Dharma Teachings",   desc: "Guest talks by Tibetan monks & scholars" },
     ],
     facts: ["Yoga Alliance Certified", "Himalayan Trekking", "Tibetan Cooking Class", "Meditation Retreats"],
+    
+    programsByCategoryId: {
+      "multi-style": [
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Mountain Meditation", price: "$699", duration: "10 days", badge: "Cool Altitude Shala", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Himalayan Zen YTTC", price: "$1,100", duration: "20 days", badge: "High Elevation Shala", certification: "RYT-200" },
+        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Masters Path", price: "$1,999", duration: "26 days", badge: "Deep Philosophy", certification: "RYT-300" }
+      ],
+      "short": [
+        { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Dhauladhar Yin Path", price: "$599", duration: "6 days", badge: "Alpine Vibe", certification: "Yoga Alliance" }
+      ],
+      "specialization": [
+        { path: "soundhealing", hours: "50", title: "Tibetan Singing Bowl Certification", price: "$450", duration: "4 days", badge: "Monk Guided Sessions", certification: "YACEP" }
+      ]
+    }
   },
 };
 
-// ─── Program Categories ───────────────────────────────────────────────────────
-
-export const PROGRAM_CATEGORIES = [
-  {
-    id: "multi-style",
-    icon: "🧘",
-    label: "Multi-Style YTTC",
-    desc: "The most comprehensive path — blend Hatha, Vinyasa, Ashtanga & more into one powerful certification.",
-    programs: [
-      {
-        path: "50hr",
-        hours: "50",
-        title: "6 Days 50 Hours Multi-Style Yoga Course",
-        price: "$650",
-        duration: "6 days",
-        badge: "Beginner Friendly",
-        certification: "YACEP",
-      },
-      {
-        path: "100hr",
-        hours: "100",
-        title: "10 Days 100 Hours Multi-Style Yoga Course",
-        price: "$999",
-        duration: "10 days",
-        badge: "Most Popular",
-        certification: "Yoga Alliance",
-      },
-      {
-        path: "200hr",
-        hours: "200",
-        title: "20 Days 200 Hours Multi-Style YTTC",
-        price: "$1,299",
-        duration: "20 days",
-        badge: "Yoga Alliance",
-        certification: "RYT-200",
-      },
-      {
-        path: "300hr",
-        hours: "300",
-        title: "26 Days 300 Hours Advanced Multi-Style YTTC",
-        price: "$2,099",
-        duration: "26 days",
-        badge: "For Teachers",
-        certification: "RYT-300",
-      },
-      {
-        path: "500hr",
-        hours: "500",
-        title: "56 Days 500 Hours Multi-Style YTTC",
-        price: "$3,599",
-        duration: "~56 days",
-        badge: "Elite Program",
-        certification: "RYT-500",
-      },
-    ],
-  },
-  {
-    id: "kundalini",
-    icon: "🔥",
-    label: "Kundalini YTTC",
-    desc: "Awaken your life force energy through mantra, breathwork, Kriya and transformational Kundalini practice.",
-    programs: [
-      {
-        path: "kundalini50hr",
-        hours: "50",
-        title: "6 Days 50 Hours Kundalini Yoga Course",
-        price: "$650",
-        duration: "6 days",
-        badge: "Beginner Friendly",
-        certification: "YACEP",
-      },
-      {
-        path: "kundalini100hr",
-        hours: "100",
-        title: "10 Days 100 Hours Kundalini YTTC",
-        price: "$999",
-        duration: "10 days",
-        badge: "Immersive",
-        certification: "Yoga Alliance",
-      },
-      {
-        path: "kundalini200hr",
-        hours: "200",
-        title: "20 Days 200 Hours Kundalini YTTC",
-        price: "$1,299",
-        duration: "20 days",
-        badge: "Yoga Alliance",
-        certification: "RYT-200",
-      },
-      {
-        path: "kundalini300hr",
-        hours: "300",
-        title: "26 Days 300 Hours Advanced Kundalini YTTC",
-        price: "$2,199",
-        duration: "26 days",
-        badge: "Advanced",
-        certification: "RYT-300",
-      },
-      {
-        path: "kundalini500hr",
-        hours: "500",
-        title: "56 Days 500 Hours Kundalini YTTC",
-        price: "$3,699",
-        duration: "~56 days",
-        badge: "Elite Program",
-        certification: "RYT-500",
-      },
-    ],
-  },
-  {
-    id: "short",
-    icon: "🌿",
-    label: "Short Courses",
-    desc: "Focused specialty training. Perfect as an add-on or standalone certification for working teachers.",
-    programs: [
-      {
-        path: "yinyoga",
-        hours: "50",
-        title: "6 Days 50 Hours Yin Yoga Course",
-        price: "$650",
-        duration: "6 days",
-        badge: "Specialty",
-        certification: "Yoga Alliance",
-      },
-      {
-        path: "prenatalyoga",
-        hours: "N/A",
-        title: "Prenatal Yoga TTC",
-        price: "$650",
-        duration: "6 days",
-        badge: "Specialty",
-        certification: "RPYT",
-      },
-      {
-        path: "aerialyoga",
-        hours: "50",
-        title: "5 Days Aerial Yoga Course",
-        price: "$550",
-        duration: "5 days",
-        badge: "Equipment Provided",
-        certification: "YACEP",
-      },
-      {
-        path: "acroYoga",
-        hours: "50",
-        title: "5 Days Acro Yoga Course",
-        price: "$799",
-        duration: "5 days",
-        badge: "Partner Practice",
-        certification: "YACEP",
-      },
-    ],
-  },
-  {
-    id: "specialization",
-    icon: "🎵",
-    label: "Specialization & Retreats",
-    desc: "Deepen into the healing arts — ancient sound practices and holistic wellness for modern professionals.",
-    programs: [
-      {
-        path: "soundhealing",
-        hours: "50",
-        title: "Sound Healing Level 1 & 2",
-        price: "$400",
-        duration: "4 days",
-        badge: "Transformational",
-        certification: "YACEP",
-      },
-      {
-        path: "wellness-retreat",
-        hours: "N/A",
-        title: "Yoga & Wellness Detox Retreat",
-        price: "$650",
-        duration: "6 days",
-        badge: "Retreat",
-        certification: "YACEP",
-      },
-    ],
-  },
-];
-
 // ─── Testimonials ─────────────────────────────────────────────────────────────
-
 export const TESTIMONIALS = [
-  {
-    name: "Sarah M.",
-    country: "🇦🇺 Australia",
-    program: "200hr Multi-Style",
-    text: "The 200hr training completely rewired how I understand yoga. The teachers were world-class, the food was incredible, and I left as a completely different person.",
-    avatar: "SM",
-  },
-  {
-    name: "Kai T.",
-    country: "🇩🇪 Germany",
-    program: "Kundalini 200hr",
-    text: "I came burnt out from corporate life. After 28 days of Kundalini training, I felt alive again. The program structure was rigorous but deeply nourishing.",
-    avatar: "KT",
-  },
-  {
-    name: "Priya R.",
-    country: "🇮🇳 India",
-    program: "Sound Healing",
-    text: "The sound healing certification is extraordinary. I now run workshops back home using exactly what I learned. Worth every rupee and every moment.",
-    avatar: "PR",
-  },
+  { name: "Sarah M.", country: "🇦🇺 Australia", program: "200hr Multi-Style", text: "The 200hr training completely rewired how I understand yoga. The teachers were world-class, the food was incredible, and I left as a completely different person.", avatar: "SM" },
+  { name: "Kai T.", country: "🇩🇪 Germany", program: "Kundalini 200hr", text: "I came burnt out from corporate life. After 28 days of Kundalini training, I felt alive again. The program structure was rigorous but deeply nourishing.", avatar: "KT" },
+  { name: "Priya R.", country: "🇮🇳 India", program: "Sound Healing", text: "The sound healing certification is extraordinary. I now run workshops back home using exactly what I learned. Worth every rupee and every moment.", avatar: "PR" }
 ];
