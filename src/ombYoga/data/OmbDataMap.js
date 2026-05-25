@@ -21,7 +21,14 @@ import { Rishikesh100HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh100
 import { Rishikesh200HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh200HoursData";
 import { Rishikesh300HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh300HoursData";
 import { Rishikesh500HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh500HoursData";
+
+
+import { RishikeshKundali50HoursData } from "./rishikesh/ttc/kundalini/RishikeshKundali50HoursData";
 import { RishikeshKundali100HoursData } from "./rishikesh/ttc/kundalini/RishikeshKundali100HoursData";
+import { RishikeshKundali200HoursData } from "./rishikesh/ttc/kundalini/RishikeshKundali200HoursData";
+import { RishikeshKundali300HoursData } from "./rishikesh/ttc/kundalini/RishikeshKundali300HoursData";
+import { RishikeshKundali500HoursData } from "./rishikesh/ttc/kundalini/RishikeshKundali500HoursData";
+
 
 export const OmbDataMap = {
   // ── Mysuru ──────────────────────────────────
@@ -61,7 +68,11 @@ export const OmbDataMap = {
     "300hr": Rishikesh300HoursData,
     "500hr": Rishikesh500HoursData,
 
+    "kundalini50hr": RishikeshKundali50HoursData,
     "kundalini100hr": RishikeshKundali100HoursData,
+      "kundalini200hr": RishikeshKundali200HoursData,
+    "kundalini300hr": RishikeshKundali300HoursData,
+    "kundalini500hr": RishikeshKundali500HoursData,
   },
 
   // ── Chiang Mai ──────────────────────────────

@@ -90,14 +90,16 @@
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 20px;
-  border: 1px solid #000;
+  border: 1px solid #0e8339;
   background: transparent;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .offering-content button:hover {
-  background: #000;
+   /* background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16); */
+/* background-color:#3d523b; */
+  background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
   color: #fff;
 }
 

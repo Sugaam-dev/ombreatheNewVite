@@ -11,12 +11,15 @@ import { useParams } from "react-router-dom";
 // import Ratings from "../../Components/Ratings";
 import Contact from "../../Components/Contact";
 import Questions from "./questions/Questions";
+// import MassageSection from "../sections/MassageSection";
+
 
 const OmbPromoSection          = lazy(() => import("../sections/OmbPromoSection"));
 const OmbTransformationSection = lazy(() => import("../sections/OmbTransformationSection"));
 const OmbPracticeSection       = lazy(() => import("../sections/OmbPracticeSection"));
 const OmbCurriculumSection     = lazy(() => import("../sections/OmbCurriculumSection"));
 const OmbScheduleSection       = lazy(() => import("../sections/OmbScheduleSection"));
+const MassageSection      = lazy(() => import("../sections/MassageSection"));
 const OmbExcursionSection      = lazy(() => import("../sections/OmbExcursionSection"));
 const OmbFoodSection           = lazy(() => import("../sections/OmbFoodSection"));
 const OmbAccommodationSection  = lazy(() => import("../sections/OmbAccommodationSection"));
@@ -61,6 +64,7 @@ const OmbYogaPage = () => {
           <OmbPromoSection data={data.promoSection} />
         </Suspense>
 
+
         <Suspense fallback={<Loading />}>
           <OmbTransformationSection data={data.transformationSection} />
         </Suspense>
@@ -76,7 +80,9 @@ const OmbYogaPage = () => {
         <Suspense fallback={<Loading />}>
           <OmbScheduleSection data={data.scheduleSection} />
         </Suspense>
-
+ <Suspense fallback={<Loading />}>
+          <MassageSection data={data.MassageSection} />
+        </Suspense>
         <Suspense fallback={<Loading />}>
           <OmbExcursionSection data={data.excursionSection} />
         </Suspense>

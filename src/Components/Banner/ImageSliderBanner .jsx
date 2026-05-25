@@ -368,12 +368,11 @@ const ImageSliderBanner = () => {
         }
 
         .retreat-program-btn{
-          background:
-            linear-gradient(
-              135deg,
-              rgba(39,174,96,.95),
-              rgba(0,128,128,.95)
-            );
+        
+           
+  background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
+  color: #fff;
+
         }
 
         .slider-button:hover{

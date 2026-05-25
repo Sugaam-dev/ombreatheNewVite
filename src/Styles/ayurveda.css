@@ -121,7 +121,7 @@
 }
 
 .wellness-cta-button {
-  background: linear-gradient(45deg, #0066cc, #ff6600);
+  background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
   color: white;
   border: none;
   padding: 18px 36px;
@@ -157,7 +157,8 @@
 .wellness-cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(0, 102, 204, 0.4);
-  background: linear-gradient(45deg, #0052a3, #e55a00);
+    
+      background: linear-gradient(145deg, #052e16, #0e8339 40%, #16a34a);
   text-decoration: none;
   color: white;
 }
@@ -193,7 +194,7 @@
 }
 
 .wellness-slider-btn {
-  background: linear-gradient(45deg, #0066cc, #ff6600);
+ background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.2);
   width: 55px;
@@ -213,7 +214,7 @@
 }
 
 .wellness-slider-btn:hover {
-  background: linear-gradient(45deg, #0052a3, #e55a00);
+  background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
   border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);

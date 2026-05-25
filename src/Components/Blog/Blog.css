@@ -111,8 +111,8 @@ body {
 
 .show-more-btn {
   background: transparent;
-  color: #6366f1;
-  border: 2px solid #6366f1;
+  color: #052e16;
+  border: 2px solid #052e16;
   padding: 16px 40px;
   border-radius: 50px;
   font-size: 16px;
@@ -127,7 +127,7 @@ body {
   /* background: #6366f1; */
   /* color: white; */
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 25px rgba(19, 97, 55, 0.3);
 }
 
 .show-more-btn:active {

@@ -1,10 +1,8 @@
 import React, { 
   useMemo, 
-
   memo, 
   useState, 
   useEffect,
-  
 } from 'react';
 import { Link } from "react-router-dom";
 import {
@@ -131,7 +129,7 @@ const SocialLinks = memo(() => {
           <a 
             key={label}
             href={href}
-            className="btn btn-outline-light btn-sm rounded-circle p-2"
+            className="btn btn-outline-dark btn-sm rounded-circle p-2"
             aria-label={label}
             target="_blank"
             rel="noopener noreferrer"
@@ -154,7 +152,7 @@ const QuickLinks = memo(() => {
   ], []);
 
   return (
-    <div className="px-lg-3" style={{borderRight: '1px solid rgba(255,255,255,0.2)', minHeight: '300px'}}>
+    <div className="px-lg-3" style={{borderRight: '1px solid rgba(0,0,0,0.1)', minHeight: '300px'}}>
       <h6 className="text-uppercase fw-bold mb-3">Quick Links</h6>
       <ul className="list-unstyled">
         {links.map(({ to, label }) => (
@@ -189,11 +187,11 @@ const ContactInfo = memo(() => {
       <h6 className="text-uppercase fw-bold mb-3">Contact Info</h6>
       <ul className="list-unstyled ">
         <li className="mb-3 d-flex align-items-start">
-        <Phone
-  size={18}
-  className="me-3 mt-1 flex-shrink-0"
-  style={{ color: '#42A5F6' }}
-/>
+          <Phone
+            size={18}
+            className="me-3 mt-1 flex-shrink-0"
+            style={{ color: '#42A5F6' }}
+          />
           <div>
             {contactData.phones.map(({ number, display }) => (
               <p key={number} className="mb-1">
@@ -206,11 +204,11 @@ const ContactInfo = memo(() => {
           </div>
         </li>
         <li className="mb-3 d-flex align-items-start">
-         <Mail
-  size={18}
-  className="me-3 mt-1 flex-shrink-0"
-  style={{ color: '#42A5F6' }}
-/>
+          <Mail
+            size={18}
+            className="me-3 mt-1 flex-shrink-0"
+            style={{ color: '#42A5F6' }}
+          />
           <div>
             {contactData.email.map(({ address, display }) => (
               <p key={address} className="mb-1">
@@ -223,11 +221,11 @@ const ContactInfo = memo(() => {
           </div>
         </li>
         <li className="mb-3 d-flex align-items-start">
-         <MapPin
-  size={18}
-  className="me-3 mt-1 flex-shrink-0"
-  style={{ color: '#42A5F6' }}
-/>
+          <MapPin
+            size={18}
+            className="me-3 mt-1 flex-shrink-0"
+            style={{ color: '#42A5F6' }}
+          />
           <div>
             <address className="mb-0 footer-address">
               {contactData.address}
@@ -350,13 +348,13 @@ const Footer = () => {
         }
       `}</style>
 
-      {/* Main Footer */}
-      <footer className="text-light py-5" style={{ backgroundColor: '#16769E' }}>
+      {/* Main Footer with White Background and Top Border */}
+      <footer className="text-dark py-5" style={{ backgroundColor: '#ffffff', borderTop: '1px solid #e0e0e0' }}>
         <div className="container">
           <div className="row g-4">
             {/* Brand Section */}
             <div className="col-lg-4 col-md-6">
-              <div className="footer-brand pe-lg-4" style={{borderRight: '1px solid rgba(255,255,255,0.2)', minHeight: '300px'}}>
+              <div className="footer-brand pe-lg-4" style={{borderRight: '1px solid rgba(0,0,0,0.1)', minHeight: '300px'}}>
                 <OptimizedImage
                   imageKey="logo"
                   alt="Yogalayaa Logo"
@@ -405,7 +403,7 @@ const Footer = () => {
 
       {/* <ScrollToTopButton /> */}
 
-      {/* Custom Styles (WhatsApp styles completely removed) */}
+      {/* Custom Styles */}
       <style>{`
         .social-links h6,
         .px-lg-3 h6,
@@ -419,25 +417,25 @@ const Footer = () => {
         }
 
         .footer-description {
-          color: #000 !important;
+          color: #212529 !important;
           font-weight: 500;
           line-height: 1.6;
         }
         
         .footer-address {
-          color: #000 !important;
+          color: #212529 !important;
           font-weight: 500;
           line-height: 1.5;
         }
         
         .contact-hours {
-          color: #000 !important;
+          color: #6c757d !important;
           font-weight: 500;
-          opacity: 0.8;
+          opacity: 0.9;
         }
         
         .footer-link {
-          color: #000 !important;
+          color: #212529 !important;
           text-decoration: none !important;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           font-weight: 500;
@@ -452,12 +450,12 @@ const Footer = () => {
           height: 2px;
           bottom: -2px;
           left: 0;
-          background: linear-gradient(rgb(255, 153, 51));
+          background: #FF9933;
           transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .footer-link:hover {
-          color: #ffffff !important;
+          color: #42A5F6 !important;
           transform: translateX(5px);
         }
         
@@ -500,7 +498,7 @@ const Footer = () => {
         }
         
         .social-links .btn {
-          border: 2px solid rgba(255, 255, 255, 0.3);
+          border: 2px solid rgba(0, 0, 0, 0.15);
           backdrop-filter: blur(10px);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -508,6 +506,7 @@ const Footer = () => {
         .social-links .btn:hover {
           background-color: #42A5F6;
           border-color: #42A5F6;
+          color: #ffffff !important;
           transform: translateY(-3px) scale(1.05);
           box-shadow: 0 8px 25px rgba(66, 165, 246, 0.3);
         }

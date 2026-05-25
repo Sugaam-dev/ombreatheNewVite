@@ -1000,7 +1000,8 @@ const Navbar = () => {
         .symbol { font-size: 16px; font-weight: 300; opacity: 0.7; }
 
         .book-blue-btn {
-          background: linear-gradient(135deg, #ff9933 0%, #000080 100%) !important;
+          background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
+          // background-color:#105162;
           color: #fff !important;
           padding: 12px 32px !important;
           border-radius: 50px !important;
@@ -1013,7 +1014,7 @@ const Navbar = () => {
         }
         .book-blue-btn:hover {
           transform: translateY(-8px);
-          box-shadow: 0 12px 25px rgba(0,0,128,0.5);
+          box-shadow: 0 12px 25px rgba(11, 78, 53, 0.5);
         }
         @keyframes floatingGlow {
           0%, 100% { transform: translateY(0); }

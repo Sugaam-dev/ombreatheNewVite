@@ -14,6 +14,8 @@ const OmbHeroSection = ({ data }) => {
   const { colors, hero, gains, certificates, content } = data;
 
   return (
+    <>
+
     <section style={{ background: colors.cream }}>
 
       {/* ── HERO ── */}
@@ -146,38 +148,9 @@ const OmbHeroSection = ({ data }) => {
           </p>
 
           {/* CTA BUTTON */}
-          <Link
-          to={hero.url}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-3px)";
-              e.currentTarget.style.background = colors.goldLight;
-              e.currentTarget.style.color = colors.navy;
-              e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.25)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.background = colors.navy;
-              e.currentTarget.style.color = colors.white;
-              e.currentTarget.style.boxShadow = "none";
-            }}
-            style={{
-              background: colors.navy,
-              color: colors.white,
-              border: "none",
-              padding: "clamp(12px, 2vw, 16px) clamp(22px, 3vw, 32px)",
-              borderRadius: 30,
-              cursor: "pointer",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 8,
-              fontWeight: 600,
-              fontSize: "clamp(0.9rem, 1.5vw, 1rem)",
-              transition: "all 0.35s ease",
-              textDecoration:"none",
-            }}
-          >
-            {hero.buttonText} <ArrowRight size={18} />
-          </Link>
+          <Link to="/contact" className="cta-btn">
+    Book Now <ArrowRight size={18} />
+  </Link>
         </div>
       </div>
 
@@ -323,6 +296,62 @@ const OmbHeroSection = ({ data }) => {
         </div>
       </div>
     </section>
+     <style>
+    {`
+     .cta-btn {
+        background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
+        color: #fff;
+        border: none;
+        padding: clamp(12px, 2vw, 16px) clamp(22px, 3vw, 32px);
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        animation: floatingGlow 3.5s infinite ease-in-out;
+      }
+
+      /* Hover: lift + scale + glow */
+      .cta-btn:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(11, 78, 53, 0.6);
+      }
+
+      /* Shine effect */
+      .cta-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255,255,255,0.3),
+          transparent
+        );
+        transition: all 0.6s ease;
+      }
+
+      .cta-btn:hover::before {
+        left: 100%;
+      }
+
+      /* Floating animation */
+      @keyframes floatingGlow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+    `}
+  </style>
+      </>
   );
 };
 
