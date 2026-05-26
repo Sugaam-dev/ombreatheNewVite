@@ -1,4 +1,4 @@
-export const BaliAyurveda5HoursAbhyangamData = {
+export const ChiangAyurveda5HoursAbhyangamData = {
   heroSection: {
     colors: {
       cream: "#FDFBF7",       // Clean warm sesame cream
@@ -13,7 +13,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
     },
 
     hero: {
-      location: "Bali · Ayurveda Massage Course",
+      location: "Chiang Mai · Ayurveda Massage Course",
       title: "Abhyangam Massage Training",
       highlight: "5 Hours Intensive Training",
       subtitle:
@@ -99,7 +99,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
       title: "Experience the",
       highlight: "uses of ancient herbal oils",
       duration: "1-2 days",
-      strongText: "Ubud, Bali",
+      strongText: "Ubud, Chiang Mai",
       features: [
         {
           icon: "sparkles",
@@ -119,7 +119,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
         {
           icon: "heart",
           title: "Global Custom Calendars",
-          sub: "Guru Vishnu and Maa Haripriya organize their time between Rishikesh and Bali centers based on active schedules",
+          sub: "Guru Vishnu and Maa Haripriya organize their time between Rishikesh and Chiang Mai centers based on active schedules",
         },
         {
           icon: "compass",
@@ -368,7 +368,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
     },
 
     content: {
-      eyebrow: "The Bali Hub",
+      eyebrow: "The Chiang Mai Hub",
       title: "Immerse in the",
       highlight: "Spiritual Atmosphere of Ubud",
       subtitle:
@@ -382,7 +382,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
           duration: "Day Outing",
           icon: "globe",
           img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-          desc: "Relax your cognitive layers completely along gorgeous Balinese sandy beach settings.",
+          desc: "Relax your cognitive layers completely along gorgeous Chiang Mainese sandy beach settings.",
           highlights: ["Tropical ocean breezes", "Nervous system calming", "Natural restoration"],
         },
         {
@@ -565,11 +565,11 @@ export const BaliAyurveda5HoursAbhyangamData = {
     content: {
       eyebrow: "Geographical Setting",
       title: "Timeless Sanctuary:",
-      highlight: "Jalan Bisma, Ubud, Bali",
+      highlight: "Jalan Bisma, Ubud, Chiang Mai",
       subtitle:
-        "Operated directly inside Bali's traditional wellness hub where natural silence and tropical air patterns support muscle decompression.",
+        "Operated directly inside Chiang Mai's traditional wellness hub where natural silence and tropical air patterns support muscle decompression.",
       address:
-        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
       mapEmbed:
         "https://www.google.com/maps?q=-8.5132,115.2575&output=embed",
 
@@ -628,7 +628,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
 
       faqs: [
         {
-          question: "What exactly is the short-format Ayurveda Course in Bali?",
+          question: "What exactly is the short-format Ayurveda Course in Chiang Mai?",
           answer:
             "This is an intensive foundational program providing you with a proper knowledge of basic yet vital concepts of Ayurveda history, bodily constitutions, and 5 hours of intensive on-site Abhyangam massage bodywork.",
         },

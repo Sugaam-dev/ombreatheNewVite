@@ -1,8 +1,8 @@
-export const BaliAyurvedicTreatmentTTCData = {
+export const RishikeshAyurvedaTherapistDiplomaData = {
   heroSection: {
     colors: {
-      cream: "#FAF5EF",       // Soft herbal saffron cream
-      goldLight: "#D35400",   // Warm therapeutic medicated amber
+      cream: "#FAF6F0",       // Soft herbal saffron cream
+      goldLight: "#D35400",   // Warm therapeutic amber
       navy: "#3E2723",        // Deep earthy bark brown
       sage: "#7E57C2",        // Spiritual amethyst accent tint
       overlay:
@@ -13,13 +13,13 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     hero: {
-      location: "Bali · Ayurvedic Treatment & Massage Therapist TTC",
-      title: "Ayurveda Massage TTC",
-      highlight: "12 Days Advanced Training",
+      location: "Rishikesh · Ayurveda Therapist Diploma Course",
+      title: "Ayurveda Therapist Course",
+      highlight: "10 Days Intensive Training",
       subtitle:
-        "Master the oldest Ayurveda massage rituals and therapeutic oil techniques practiced for thousands of years to naturally balance Vata, Pitta, and Kapha doshas.",
-      price: "$1450",
-      priceNote: "Includes comfortable lodging, 3 daily fresh sattvic meals, expert doctor consultations, and formal YACEP certification",
+        "Unite body, mind, and spirit to restore absolute balance and harmony. Master advanced oil body massage, ancient acupressure, body structure, and marma points.",
+      price: "$1099",
+      priceNote: "Includes 9 nights lodging, 3 daily fresh sattvic meals, study manuals, and Yoga Alliance validation",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",
       certificateImage:
@@ -29,23 +29,23 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     gains: [
-      "Proficiency in advanced full-body strokes following the five internal vector functions of bodily movement",
-      "Comprehensive knowledge of Tridosha body types, the seven core elements, and traditional herbal oils",
-      "Hands-on clinical mastery of traditional Abhyangam, Shirodhara, Pizhichil, and structural Swedana sets",
-      "Practical execution of point-specific pressure triggers across essential energetic marma zones",
-      "Deep neurological decompression resulting in total stress elimination, anxiety release, and anti-aging cell shifts",
-      "International alignment via standard Yoga Alliance YACEP registry validation upon prompt completion",
+      "Proficiency in clinical full-body Abhyangam strokes utilizing premium medicinal herbal oils",
+      "Comprehensive knowledge of Tridosha body types, the seven essential elements, and native plants",
+      "Hands-on workspace mastery of classical Shirodhara, Pizhichil, Netra Tarpana, and Swedana therapy",
+      "Targeted point-specific trigger application maps across crucial acupressure marma zones",
+      "Deep metabolic detoxification to fully eliminate deep physical stress, fatigue, and neurological anxieties",
+      "International professional alignment via authorized global status recognition from Yoga Alliance",
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Ayurveda Therapist" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Marma Specialist" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "YACEP Certification" },
+      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Ayurveda Diploma" },
+      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Massage Therapist" },
+      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance" },
     ],
 
     content: {
       bottomText:
-        "This basic to advanced Ayurvedic therapist course provides a detailed theoretical-practical framework ideal for your rejuvenation, self-healing, and international career elevation.",
+        "This 10-day Ayurveda and Massage Therapist Course provides the complete theoretical-practical knowledge and credentials required to confidently establish your own private practice or wellness center.",
     },
   },
 
@@ -65,22 +65,22 @@ export const BaliAyurvedicTreatmentTTCData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "Vedic Heritage Immersion",
+      eyebrow: "Vedic Therapeutic Lineage",
       title: "Join our",
-      highlight: "ethnic therapeutic lineage",
+      highlight: "health and wellness collective",
       subtitle:
-        "World Peace Yoga School in Bali delivers pure Ayurvedic treatment disciplines, bringing body, mind, and spirit into total alignment using authentic medicated herbal oils.",
+        "Rishikesh is the perfect location to investigate health. Experience this tranquil course from our Vedic heritage, learning simultaneous front and back strokes following the five vector functions of doshas.",
       stats: [
-        { value: "12 Days", label: "Complete Training Run", icon: "clock" },
-        { value: "Tridosha", label: "Constitutional Blueprint", icon: "sparkles" },
-        { value: "Marma", label: "Acupressure Point Map", icon: "calendar" },
-        { value: "YACEP", label: "Yoga Alliance Approval", icon: "award" },
-        { value: "Holistic", label: "Total Toxic Detoxification", icon: "globe" },
+        { value: "10 Days", label: "Intensive Practical Course", icon: "clock" },
+        { value: "Tridosha", label: "Constitutional Profiling", icon: "sparkles" },
+        { value: "Marma Map", label: "Ancient Acupressure Labs", icon: "calendar" },
+        { value: "Alliance", label: "Global Certification", icon: "award" },
+        { value: "5000 Yrs", label: "Authentic Subtle Science", icon: "globe" },
       ],
       bottomText1:
-        "We combine ancient text insights with intense physical workshops covering everything from head to toes, providing simultaneous front and back body stroke training.",
+        "Our course emphasizes Abhyangam as a core part of Dinacharya because it is fundamentally preventative, progressing fluidly from classical massage mechanics to advanced myofascial release.",
       bottomText2:
-        "Our tropical Bali campus features a peaceful wellness center environment designed to remove modern anxieties and anchor you firmly inside deep interiorizing silence blocks.",
+        "Located at World Peace Wellness in a peaceful environment next to the holy Ganges River, our center provides the perfect spot to get away from the busyness of everyday life and heal yourself.",
     },
   },
 
@@ -95,43 +95,43 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     content: {
-      eyebrow: "Theoretical-Practical Specialization",
+      eyebrow: "Lived Heritage Specialization",
       title: "Restore your",
       highlight: "vitality and peace",
-      duration: "12-day",
-      strongText: "Ubud, Bali",
+      duration: "10-day",
+      strongText: "Rishikesh, India",
       features: [
         {
           icon: "award",
-          title: "Doctor Consultations Included",
-          sub: "Receive individual constitutional checking profiles directly overseen by clinical experts",
+          title: "Yoga Alliance Certification",
+          sub: "Graduate with a globally valid registration certificate that officially recognizes your professional expertise",
         },
         {
           icon: "bed",
-          title: "Cozy Sanitized Accommodations",
-          sub: "Spacious private and double shared room structures backed completely by tropical silence parameters",
+          title: "Clean Pleasant Accommodations",
+          sub: "Comfortable residential features providing twin-shared, private single, or female-only shared options",
         },
         {
           icon: "utensils",
-          title: "Freshly Cooked Sattvic Meals",
-          sub: "Three clean daily food assemblies designed explicitly to protect and cleanse the inner system",
+          title: "Fresh Nutrient-Rich Food",
+          sub: "Three delicious daily vegetarian sattvic dishes prepared strictly to preserve natural nutritional value",
         },
         {
           icon: "heart",
-          title: "All-Healing Module Scope",
-          sub: "Master specialized herbal powders, dry friction therapies, and customized herbal facial care routines",
+          title: "Esoteric Therapy Arsenal",
+          sub: "Master advanced dry body friction, herbal powder compressions, and Netra Tarpana eye treatments",
         },
         {
           icon: "compass",
-          title: "Tropical Balance Excursions",
-          sub: "Group outdoor trips mapped cleanly across calm beaches and spiritual wellness landmarks",
+          title: "Integrated Holy Sightseeing",
+          sub: "Curated outdoor group excursions to sacred regional temples, local ashrams, and pristine river sandbanks",
         },
       ],
       images: {
         main:
           "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
         food:
-          "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=800&q=80", // Vegetarian Sattvic Asset URL
+          "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=800&q=80",
         stay:
           "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
       },
@@ -151,18 +151,18 @@ export const BaliAyurvedicTreatmentTTCData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=1600&q=80",
-      quoteStart: "AyurHeals the mind, body, and soul",
-      highlight: "with nature's absolute physical touch",
-      quoteEnd: "and simultaneous strokes of pure alignment",
+      quoteStart: "AyurHealing touches the inner human soul",
+      highlight: "restoring balance, harmony, and raw life force",
+      quoteEnd: "via the most natural approach to bodily relaxation",
       description:
-        "Health and well-being provide the ultimate gateway to personal growth and self-fulfillment. By experiencing simultaneous massage movements mapped to the five vector functions of your body, your nervous layout calms down completely, unlocking anti-aging support loops.",
+        "You do not learn anything from anyone unless you are truly desirous of change. Our curriculum blends academic history parameters with rigorous practical workshops covering from the head down to the toes, transforming how you view health advantages.",
     },
   },
 
   practiceSection: {
     colors: {
       navy: "#3E2723",
-      cream: "#FAF5EF",
+      cream: "#FAF6F0",
       white: "#ffffff",
       shadowSm: "0 4px 12px rgba(0,0,0,0.04)",
       shadowLg: "0 10px 30px rgba(62,39,35,0.15)",
@@ -170,26 +170,26 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     content: {
-      eyebrow: "Syllabus Modalities",
+      eyebrow: "Syllabus Disciplines",
       title: "Mastery of",
       highlight: "Oils, Marma Points & Body Cleansing",
       subtitle:
-        "Acquire profound knowledge regarding structural setups and preparations across premium oil massage branches.",
+        "Acquire the precise movement tracks required to operate as an international master of classical Ayurveda massage.",
       practices: [
         {
-          label: "Abhyanga Body Alignments",
-          desc: "Execute complete full-body medicated oil strokes across back and front systems systematically.",
+          label: "Abhyanga Body Massage",
+          desc: "Execute complete full-body oil massage tracks mapped cleanly across front and back structures.",
           icon: "sparkles",
           img: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=80",
         },
         {
-          label: "Liquid Streams & Shirodhara",
-          desc: "Perform meticulous liquid forehead streams, Shirodhara pacing, and Takradhara using medicated buttermilk layers.",
+          label: "Forehead Liquid Pours",
+          desc: "Perform meticulous Shirodhara forehead pacing, and Takradhara using medicated butter-milk layers.",
           icon: "wind",
           img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
         },
         {
-          label: "Localized Swedana and Bastis",
+          label: "Poultices & Regional Bastis",
           desc: "Master Podikkizhi herbal poultices (Pinda Swedana), regional Kati Basti warmth rings, and Nasyam nasal cleansings.",
           icon: "feather",
           img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=800&q=80",
@@ -199,7 +199,7 @@ export const BaliAyurvedicTreatmentTTCData = {
       specialHighlight: "Why Our Curriculum Conquers",
       specials: [
         {
-          title: "Simultaneous Vector Mechanics",
+          title: "Simultaneous Vector Strokes",
           desc: "Learn complex multi-hand synchronization matching the vector paths that manage your physiological frameworks.",
           icon: "heart",
         },
@@ -222,7 +222,7 @@ export const BaliAyurvedicTreatmentTTCData = {
       navy: "#3E2723",
       violet: "#8D6E63",
       sage: "#A1887F",
-      cream: "#FAF5EF",
+      cream: "#FAF6F0",
       white: "#ffffff",
       shadowSm: "0 4px 12px rgba(0,0,0,0.05)",
       shadowLg: "0 10px 30px rgba(62,39,35,0.15)",
@@ -232,7 +232,7 @@ export const BaliAyurvedicTreatmentTTCData = {
 
     content: {
       eyebrow: "Syllabus Breakdowns",
-      title: "12 Days of",
+      title: "10 Days of",
       highlight: "Clinical Educational Integration",
       subtitle:
         "Every single step maps directly to professional therapist parameters, combining foundational history with practical mechanics.",
@@ -304,19 +304,19 @@ export const BaliAyurvedicTreatmentTTCData = {
         {
           title: "Stage One",
           days: "Vedic Arrival",
-          desc: "Day 1 Welcome home check-in block after 2 PM, campus layout introduction, and twilight community assembly dinner.",
+          desc: "Day 1 Welcome home check-in block after 2 PM, room adjustments, resting allocations, and twilight community dinner meeting.",
           color: "#3E2723",
         },
         {
           title: "Stage Two",
           days: "Technical Labs",
-          desc: "Days 2 to 11 lock focus completely onto twin daily practice blocks, full demonstrations, and core history tracks.",
+          desc: "Days 2 to 9 lock focus completely onto twin daily practice blocks, full demonstrations, and core history theory tracks.",
           color: "#8D6E63",
         },
         {
           title: "Stage Three",
           days: "Registry Exit",
-          desc: "Day 12 closes the circle with formal therapist assessment loops, certificate generation, and departure packing.",
+          desc: "Day 10 closes the circle with formal therapist assessment loops, certificate generation, and departure check-out before 9 AM.",
           color: "#A1887F",
         },
       ],
@@ -325,7 +325,7 @@ export const BaliAyurvedicTreatmentTTCData = {
         title: "Ready to Become a Certified Professional Therapist?",
         desc:
           "Transform your understanding of ancestral arts, acquire absolute mastery over medicinal oils, and unlock 24/7 registration privileges.",
-        buttonText: "Contact Us For Any Query",
+        buttonText: "Apply Now For This Course",
         url: "/contact",
       },
     },
@@ -333,7 +333,7 @@ export const BaliAyurvedicTreatmentTTCData = {
 
   scheduleSection: {
     colors: {
-      cream: "#FAF5EF",
+      cream: "#FAF6F0",
       creamDark: "#F0E4D8",
       navy: "#3E2723",
       violet: "#8D6E63",
@@ -355,8 +355,8 @@ export const BaliAyurvedicTreatmentTTCData = {
 
       morning: [
         { time: "06:00 AM - 07:30 AM", activity: "Holistic Hatha Yoga, Pranayama & Meditation", icon: "moon" },
-        { time: "08:00 AM - 09:00 AM", activity: "Ayurveda and Yoga Internal Detox", icon: "wind" },
-        { time: "09:00 AM - 10:00 AM", activity: "Fresh Ashram Breakfast Served", icon: "sun" },
+        { time: "08:00 AM - 09:00 AM", activity: "Ayurveda and Yoga Campus Detox Block", icon: "wind" },
+        { time: "09:00 AM - 10:00 AM", activity: "Freshly Sourced Ashram Breakfast", icon: "sun" },
         { time: "11:00 AM - 12:30 PM", activity: "Ayurveda Massage Therapy Practical Session A", icon: "coffee" },
         { time: "12:30 PM - 01:00 PM", activity: "Self-Practice Muscle Coordination Check", icon: "brain" },
       ],
@@ -389,45 +389,46 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     content: {
-      eyebrow: "Relaxing Excursions",
+      eyebrow: "Ashram Outings",
       title: "Explore the Beautiful",
-      highlight: "Tropical Landscape of Bali",
+      highlight: "Vedic Heritage of Rishikesh",
       subtitle:
-        "Excursion packages are thoughtfully bundled inside tuition parameters to maintain an ideal balance between training and relaxing.",
+        "Excursion opportunities are thoughtfully bundled inside tuition parameters to support your self-healing track.",
 
+      // FIX: Restored exact schema key to map array correctly and prevent UI map crashes
       excursions: [
         {
-          title: "Tropical Calm Beach Outings",
-          tag: "Ocean Balance",
+          title: "Holy Ganges River Sandbanks", // FIX: Restored title key
+          tag: "Contemplation",
           tagBg: "#8D6E63",
-          duration: "Half Day",
+          duration: "Walking Distance",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-          desc: "Walk along pristine Balinese coastal lines to naturally center and ground your mental tracks.",
-          highlights: ["Calm beach walks", "Ocean breeze breathing", "Elemental tranquility"],
+          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          desc: "Sit quietly along pristine white sand lines to naturally internalize your training modules.",
+          highlights: ["Vibrating spiritual energy", "River step meditations", "Deep internal listening"],
         },
         {
-          title: "Ubud Spiritual Landmarks",
-          tag: "Vedic Heritage",
+          title: "Himalayan Foothills Sanctuary", // FIX: Restored title key
+          tag: "Forest Trek",
           tagBg: "#A1887F",
-          duration: "3 Hours",
+          duration: "Half Day Tour",
           icon: "trees",
           img: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
-          desc: "Visit highly peaceful nature sanctuaries and ancient structural properties surrounding the town.",
-          highlights: ["Spiritual forest paths", "Silent architecture lines", "Deep energetic grounding"],
+          desc: "Explore high natural wilderness layers directly bordering our campus line safely.",
+          highlights: ["Refreshing cold mountain breeze", "Wild peacock encounters", "Distraction-free environment"],
         },
       ],
 
       bottom: {
-        title: "All Outdoor Inclusions Bundled ✨",
-        desc: "Tuition fully covers specialized airport pickup runs, regional taxi coordination services, and complete library study access.",
+        title: "All Outdoor Excursions Handled ✨",
+        desc: "Tuition packages fully cover specialized airport pickup runs, regional taxi coordination, and complete library study access.",
       },
     },
   },
 
   foodSection: {
     colors: {
-      cream: "#FAF5EF",
+      cream: "#FAF6F0",
       navy: "#3E2723",
       white: "#ffffff",
       sage: "#8D6E63",
@@ -437,10 +438,10 @@ export const BaliAyurvedicTreatmentTTCData = {
 
     content: {
       eyebrow: "Systemic Cleanliness",
-      title: "Freshly Cooked Sattvic",
-      highlight: "Dietary Core Discipline",
+      title: "Freshly Sourced Sattvic",
+      highlight: "Dietary Core Code Compliance",
       subtitle:
-        "Yogic life requires strict behavioral cleanliness. We serve three daily plant-based meals to protect internal fluid networks.",
+        "Yogic lifestyle commands code discipline. We serve three daily plant-based meals to protect internal fluid networks.",
 
       meals: [
         {
@@ -462,7 +463,7 @@ export const BaliAyurvedicTreatmentTTCData = {
           title: "Midday Dosha Balancing",
           icon: "coffee",
           time: "01:00 PM – 02:00 PM",
-          img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80", // Vegetarian Sattvic Asset
+          img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset
           desc: "Nutrient-dense grains paired with traditional lentils to supply equal energy distribution parameters.",
           items: [
             "Traditional Ayurvedic Khichdi pots",
@@ -490,10 +491,10 @@ export const BaliAyurvedicTreatmentTTCData = {
       dietary: [
         { icon: "leaf", label: "100% Pure Vegetarian" },
         { icon: "feather", label: "Strictly Meat & Egg Free" },
-        { icon: "sparkles", label: "Gluten-Free Custom Adaptations" },
+        { icon: "sparkles", label: "Nutrient Preservation Logic" },
         { icon: "sun", label: "Sattvic Ashram Principles" },
         { icon: "shield", label: "Zero Alcohol Allowances" },
-        { icon: "heart", label: "Zero Tobacco/Fermented Goods" },
+        { icon: "heart", label: "Zero Tobacco Behaviors" },
       ],
 
       philosophy: [
@@ -517,33 +518,33 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     content: {
-      title: "Rejuvenating Blissful",
+      title: "Cozy Protected",
       highlight: "Ashram Room Layouts",
       subtitle:
         "Select your preferred configuration option inside a dedicated center built to support full educational absorption.",
 
       rooms: [
         {
-          type: "2 Shared Companion Room",
+          type: "2 Shared Room Layout",
           tag: "Standard Value Inclusions",
           tagBg: "#8D6E63",
-          price: "$1450",
+          price: "$1099",
           img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-          desc: "Comfortable, clean shared space featuring attached private plumbing tools and weekly laundry options.",
+          desc: "Clean shared practitioner quarters housing private bathrooms, library book access, and full wireless internet feeds.",
           features: [
-            "Twin practitioner setting",
-            "Private en-suite washroom",
-            "Weekly clean linen shifts",
+            "Twin roommate setting",
+            "Private attached bathroom",
+            "Full daily meals packed",
             "High internet wireless stream",
             "Personal secure wardrobes",
             "Daily space maintenance loops",
           ],
         },
         {
-          type: "Private Deluxe Sanctuary",
+          type: "Private Deluxe Space",
           tag: "Sovereign Luxury Tier",
           tagBg: "#3E2723",
-          price: "$1600",
+          price: "$1499",
           img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
           desc: "Complete personal spatial isolation, ideal for long hours of scriptural study and independent meditation.",
           features: [
@@ -556,31 +557,31 @@ export const BaliAyurvedicTreatmentTTCData = {
           ],
         },
         {
-          type: "Non-Residential Selection",
-          tag: "External Practice Only",
+          type: "4 Shared Room Block",
+          tag: "Females Only Space",
           tagBg: "#C8874A",
-          price: "$1250",
+          price: "$950",
           img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-          desc: "Access all practical workshops, masterclasses, and certified evaluation loops while arranging outside stay structures.",
+          desc: "Budget-friendly shared environments limited strictly to female practitioners for collaborative support tracking.",
           features: [
-            "Full course materials access",
-            "All practical training blocks",
-            "On-site demonstration seats",
-            "Yoga Alliance YACEP logs",
-            "Flexible out-living capability",
-            "Full library access metrics",
+            "Shared female bed layout",
+            "Ensuite group bathroom",
+            "Highly ventilated space bounds",
+            "Individual secure storage",
+            "High sisterhood support",
+            "Most accessible pricing bracket",
           ],
         },
       ],
 
       amenities: [
-        { icon: "waves", label: "Pristine On-Campus Shalas" },
+        { icon: "waves", label: "Three Grand Practice Halls" },
         { icon: "heart", label: "Specialist Treatment Spaces" },
         { icon: "leaf", label: "Fully Stocked Scripture Library" },
         { icon: "wifi", label: "Fast Global Wi-Fi Feed" },
         { icon: "utensils", label: "Fresh Vegetarian Restaurant" },
-        { icon: "feather", label: "Doctor Assessment Rooms" },
-        { icon: "trees", label: "Tropical Forest Views" },
+        { icon: "feather", label: "Traditional Meditation Cave" },
+        { icon: "trees", label: "Himalayan Forest Views" },
         { icon: "music", label: "Supportive Family Community" },
       ],
 
@@ -591,7 +592,7 @@ export const BaliAyurvedicTreatmentTTCData = {
 
   locationSection: {
     colors: {
-      cream: "#FAF5EF",
+      cream: "#FAF6F0",
       navy: "#3E2723",
       violet: "#8D6E63",
       white: "#ffffff",
@@ -600,48 +601,48 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     content: {
-      eyebrow: "Geographical Context",
-      title: "Timeless Sanctuary:",
-      highlight: "Jalan Bisma, Ubud, Bali",
+      eyebrow: "Geographical Setting",
+      title: "Timeless Domain:",
+      highlight: "Laxman Jhula, Rishikesh",
       subtitle:
-        "Operated directly inside Bali's premium healing hub where dense tropical nature and quiet settings ease modern circulatory stress.",
+        "Operated directly on Badrinath Road nearby the Kriya Yoga Ashram, where natural silence and refreshing mountain air streams support focus.",
       address:
-        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+        "World Peace Wellness, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
       mapEmbed:
-        "https://www.google.com/maps?q=-8.5132,115.2575&output=embed",
+        "https://www.google.com/maps?q=World+Peace+Wellness+Badrinath+Rd+Rishikesh&output=embed",
 
       spots: [
         {
-          name: "Jalan Bisma Walking Grid",
-          distance: "Ashram Footprint",
-          desc: "Secure landmark corridor lined with clean organic apothecary shops and raw fruit counters.",
+          name: "Badrinath Road Corridor",
+          distance: "Campus Footprint",
+          desc: "Secure landmark neighborhood axis providing fast entry paths into ancient walking paths.",
           icon: "globe",
         },
         {
-          name: "Ubud Central Marketplace",
-          distance: "Short walking distance",
-          desc: "Great historical cultural core full of ancestral craft stalls and standard health suppliers.",
+          name: "Kriya Yoga Ashram Neighbors",
+          distance: "Immediate Borderline",
+          desc: "Maintains a pristine, quiet setting dedicated strictly to absolute silence and energetic charges.",
           icon: "leaf",
         },
         {
-          name: "Pristine Calm Sandy Beaches",
-          distance: "Localized day transit",
-          desc: "Scenic environments perfect for tracking elemental water behaviors during rest days.",
+          name: "Holy Ganga Riverbank",
+          distance: "Short foot walk",
+          desc: "Timeless white sand beaches ideal for setting down white clothing for twilight introspection.",
           icon: "sparkles",
         },
         {
-          name: "On-Site Multi-Halls Complex",
-          distance: "Inside campus layout",
-          desc: "Houses our specialized doctor consultation spaces and premium massage demonstration frames.",
+          name: "Himalayan Mountain Wilderness",
+          distance: "Immediate Backing",
+          desc: "Provides refreshing cold breeze flows and pristine air qualities directly into our shalas.",
           icon: "trees",
         },
       ],
 
       stats: [
-        { label: "Transit Solution", value: "Airport Pickup Packed", icon: "globe" },
-        { label: "Operational Registry", value: "YACEP Verified Hub", icon: "map" },
-        { label: "Arrival Guideline", value: "Check-In After 2 PM", icon: "mountain" },
-        { label: "Instruction Voice", value: "Himalayan Root Masters", icon: "sun" },
+        { label: "River Proximity", value: "Walking Distance", icon: "globe" },
+        { label: "Security Parameter", value: "CCTV Monitored", icon: "map" },
+        { label: "Campus Setting", value: "Nature Surrounded", icon: "mountain" },
+        { label: "Alumni Access", value: "Global System Support", icon: "sun" },
       ],
     },
   },
@@ -659,65 +660,58 @@ export const BaliAyurvedicTreatmentTTCData = {
 
     content: {
       title: "Therapist Inquiries",
-      highlight: "12-Day Ayurveda FAQ Matrix",
+      highlight: "10-Day Ayurveda FAQ Matrix",
       subtitle:
-        "Explicitly clarifying constitutional backgrounds, mobile guidelines, and testing frameworks for global registrants.",
+        "Explicitly clarifying constitutional backgrounds, module structures, and testing frameworks for global registrants.",
 
       faqs: [
         {
-          question: "What exactly is the Ayurveda Therapist Program of Bali?",
+          question: "What Lessons Are Included In Ayurveda And Massage Course?",
           answer:
-            "This is an intensive, 12-day theoretical-practical specialization module designed to make you proficient in traditional Ayurvedic healing arts. It blends foundational text analysis with hands-on practice loops across classical massage setups.",
+            "An Ayurveda and Massage course is a set course covering the ideas and techniques of massage treatments derived from Ayurvedic tradition. Usually covered in the course are Ayurveda's three doshas, herbal remedies, and dietary suggestions. Students also receive practical knowledge of massage techniques including Marma treatment, Shirodhara, and Abhyanga.",
         },
         {
-          question: "What will the structural curriculum be like for me daily?",
+          question: "Why Should I Join Ayurveda Massage Course In Rishikesh?",
           answer:
-            "The syllabus packs deep explorations of Prakriti body constitutions, five elements theory, marma zones, and intense practice hours for master full-body strokes, liquid Shirodhara pours, Poultices, and Kati Basti setups.",
+            "Learning Ayurveda and massage in a practical environment is possible in Rishikesh, also referred to as the 'Yoga Capital of the World'. Surrounded by the holy Ganga River and the serene Himalayas, this is a perfect location to investigate spirituality and health. The city boasts several reputable colleges and practitioners so you may receive actual instruction in a serene environment.",
         },
         {
-          question: "Who is eligible for this residential Ayurveda massage course?",
+          question: "What Are The Things Covered In this Course?",
           answer:
-            "We warmly welcome seasoned bodyworkers, yoga teachers looking to expand their anatomy credits, and total beginners seeking deep personal rejuvenation. No prior experience is required; complex metrics are taught from baseline layers.",
+            "A quick review of the theory, history, and fundamental concepts of Ayurveda. Dosha's study clarifies several bodily types and their behavior. Ayurvedic herbs and oils: the essentials for your knowledge about them. Among the several massage techniques are abhyanga and marma. Ayurvedic cuisine is excellent for your balance and general wellness. Exercises and courses in hands-on training help one become better at massaging. Regarding mental wellness, breathing, and meditation are wise practices.",
         },
         {
-          question: "Will I receive an official international certificate upon completion?",
+          question: "Why Should I Enroll In This Course?",
           answer:
-            "Yes! World Peace Yoga School is an authorized registration space. Graduating this 12-day therapist track provides you with a formal Yoga Alliance YACEP certificate to verify your expert status globally.",
+            "Expertise: Professional Skills To be working, get certified as an Ayurvedic massage therapist. Discover how to strike equilibrium with your body, mind, and soul. Work opportunities could follow from health centers, spas, or private practice. Ayurvedic methods might assist in your personal development by means of health and well-being.",
         },
         {
-          question: "Can we use our personal mobile phones on campus?",
+          question: "Will I Get Any Certificate After The Ayurveda Massage TTC In Rishikesh?",
           answer:
-            "To support cognitive focus and mind-body calmness, mobile phones are strictly prohibited during active classroom blocks or demonstration sessions. You are completely free to use them during your designated personal rest hours.",
+            "Most excellent Rishikesh schools award certificates to their graduates. World Peace Wellness offers a Yoga Alliance certificate after you complete the training successfully.",
         },
         {
-          question: "What are your core rules regarding student behavioral codes?",
+          question: "How Much and what is the duration of the ayurveda course?",
           answer:
-            "Smoking, alcohol use, and non-vegetarian inputs are strictly prohibited inside or near school bounds. Out of absolute respect for our lineage guides and other practitioners, absolute punctuality must be followed across all sessions.",
+            "The course fee depends on your accommodation. Without stay and food it costs 800 USD and duration is 10 days including the days of check in and check out.",
         },
         {
-          question: "What is your financial refund and postponement procedure?",
+          question: "Can I make myself a professional Therapist with this course?",
           answer:
-            "All initial advance payment deposits remain entirely non-refundable. If an emergency scenario like an illness or flight shift occurs prior to arrival, you can reschedule your course timeline safely within 12 months of your primary booking date.",
+            "Yes, of course. The course provides the full practical demonstration and theoretical knowledge required to be an established professional.",
         },
         {
-          question: "What specific items or preparations should I look after?",
+          question: "What Is The best time to join the course?",
           answer:
-            "We supply all core textbooks, manual packets, and therapeutic oils on campus. We recommend maintaining an open-minded cognitive state, ready to absorb deep adjustments. Modest clothing choices should be packed out of respect for local traditions.",
+            "We run the course every month starting from the 21st till the 30th. You can seamlessly register and join in any month.",
         },
         {
-          question: "How is the food quality managed at the Ubud center?",
-          answer:
-            "We employ a dedicated, full-time culinary staff on campus to prepare fresh, organic, plant-based vegetarian and gluten-free variations daily. This guarantees your internal fluid channels stay perfectly safe from unhygienic external parameters.",
-        },
-        {
-          question: "What core logistics are packed inside the base course pricing?",
+          question: "What items should look after for tracking my course checklist?",
           answer: [
-            "11 Nights - 12 Days residential wellness room lodging",
-            "Three freshly cooked daily sattvic meals and organic dynamic teas",
-            "Individual constitutional consultation profiles with an Ayurveda doctor",
-            "Complete supply of physical textbooks, manuals, and workspace media",
-            "Complimentary incoming airport pickup shuttle service from the terminal",
-            "Full group access to integrated weekend sightseeing tours and library parameters",
+            "Comfortable, stretchable loose clothing lines for active practical work",
+            "A dedicated clean diary notebook for capturing theoretical principles",
+            "Valid administrative tracking components matching total stay durations",
+            "Personal care protection cosmetics and relevant scriptural manuals",
           ],
         },
       ],

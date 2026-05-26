@@ -1,4 +1,4 @@
-export const Bali100HourYogaTherapyAyurvedaData = {
+export const Chiang100HourYogaTherapyAyurvedaData = {
   heroSection: {
     colors: {
       cream: "#EBF5F5",       // Deep ocean pool cream
@@ -13,7 +13,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
     },
 
     hero: {
-      location: "Bali · 100-Hour Yoga Therapy & Ayurveda Wellness TTC",
+      location: "Chiang Mai · 100-Hour Yoga Therapy & Ayurveda Wellness TTC",
       title: "Yoga Therapy TTC",
       highlight: "10 Days of Immersions",
       subtitle:
@@ -33,7 +33,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
       "Dual global credentials featuring Yoga Alliance YACEP and India's Yoga Therapy Foundation certification",
       "Practical execution of specialized breathwork, sound bath healing, and mindfulness-based stress reduction",
       "Targeted clinical approaches to manage chronic body pain, lifestyle disorders, and structural alignment checks",
-      "Immersion within natural Balinese healing fields paired with local spiritual master blessings",
+      "Immersion within natural Chiang Mainese healing fields paired with local spiritual master blessings",
       "Lifetime professional post-training support and entry paths into continuous education frameworks",
     ],
 
@@ -69,7 +69,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
       title: "Join our",
       highlight: "healing force in the world",
       subtitle:
-        "Bali is famous for its natural beauty, and nature is the ultimate healer. Our Ubud campus offers a transformative experience tailored specifically for yoga professionals looking to scale up.",
+        "Chiang Mai is famous for its natural beauty, and nature is the ultimate healer. Our Ubud campus offers a transformative experience tailored specifically for yoga professionals looking to scale up.",
       stats: [
         { value: "100 Hrs", label: "Advanced Level 2 Scope", icon: "clock" },
         { value: "Dual Cert", label: "YACEP & Foundation", icon: "sparkles" },
@@ -99,7 +99,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
       title: "Experience a",
       highlight: "transformative healing journey",
       duration: "10-day",
-      strongText: "Ubud, Bali",
+      strongText: "Ubud, Chiang Mai",
       features: [
         {
           icon: "award",
@@ -123,7 +123,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
         },
         {
           icon: "compass",
-          title: "Sacred Balinese Water Rituals",
+          title: "Sacred Chiang Mainese Water Rituals",
           sub: "Excursions directly to Tirtha Empul holy springs and the tropical Ubud Monkey Forest",
         },
       ],
@@ -196,11 +196,11 @@ export const Bali100HourYogaTherapyAyurvedaData = {
         },
       ],
       specialTitle: "What Sets",
-      specialHighlight: "Our Bali Center Apart",
+      specialHighlight: "Our Chiang Mai Center Apart",
       specials: [
         {
           title: "Integrated Triple System Focus",
-          desc: "The only advanced school in Bali seamlessly merging systemic Yoga Therapy, custom Ayurveda adjustments, and raw Naturopathy rules.",
+          desc: "The only advanced school in Chiang Mai seamlessly merging systemic Yoga Therapy, custom Ayurveda adjustments, and raw Naturopathy rules.",
           icon: "heart",
         },
         {
@@ -324,7 +324,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
       cta: {
         title: "Ready to Step Toward Becoming a Healing Force?",
         desc:
-          "Secure your residential space inside Bali's premier therapy training today. Transform your skills and scale up your professional credibility.",
+          "Secure your residential space inside Chiang Mai's premier therapy training today. Transform your skills and scale up your professional credibility.",
         buttonText: "Click Here To Join Course Today",
         url: "/contact",
       },
@@ -393,7 +393,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
     content: {
       eyebrow: "Curated Inclusions",
       title: "Explore Sacred",
-      highlight: "Balinese Spiritual Excursions",
+      highlight: "Chiang Mainese Spiritual Excursions",
       subtitle:
         "Special outings are thoughtfully integrated to enrich your inner balance and connect your practice to nature.",
 
@@ -405,7 +405,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
           duration: "Half Day",
           icon: "globe",
           img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-          desc: "Experience the sacred ancient Balinese water purification ritual to cleanly wash body, mind, and soul.",
+          desc: "Experience the sacred ancient Chiang Mainese water purification ritual to cleanly wash body, mind, and soul.",
           highlights: ["Holy water pools", "Spiritual purification", "Ancestral temple lines"],
         },
         {
@@ -604,11 +604,11 @@ export const Bali100HourYogaTherapyAyurvedaData = {
     content: {
       eyebrow: "The Therapeutic Matrix",
       title: "Global Healing Hub:",
-      highlight: "Jalan Bisma, Ubud, Bali",
+      highlight: "Jalan Bisma, Ubud, Chiang Mai",
       subtitle:
         "Based right inside the wellness capital where lush rice fields and dense tropical greenery speed up deep nervous system restoration.",
       address:
-        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
       mapEmbed:
         "https://www.google.com/maps?q=-8.5132,115.2575&output=embed", // Specific to Jl. Bisma Ubud bounds
 
@@ -661,13 +661,13 @@ export const Bali100HourYogaTherapyAyurvedaData = {
 
     content: {
       title: "Logistical Inquiries",
-      highlight: "100-Hour Bali Therapy FAQ",
+      highlight: "100-Hour Chiang Mai Therapy FAQ",
       subtitle:
         "Explicitly defining target profiles, certificates, and operational metrics for incoming yoga professionals.",
 
       faqs: [
         {
-          question: "What exactly is the 10 Days Yoga Therapy and Wellness TTC in Ubud Bali?",
+          question: "What exactly is the 10 Days Yoga Therapy and Wellness TTC in Ubud Chiang Mai?",
           answer:
             "This is an intensive, fast-track training program designed to introduce you to structural yoga therapy, Ayurveda adjustments, and holistic naturopathy. Learn targeted physical asanas, breathwork, and lifestyle therapy metrics while living inside a serene spiritual atmosphere.",
         },
@@ -687,9 +687,9 @@ export const Bali100HourYogaTherapyAyurvedaData = {
             "Yes, you secure two specific certificates: 1. A Yoga Alliance certified YACEP tracking document for continuous professional education, and 2. A formal Yoga Therapist Certification issued from the Yoga Therapy Foundation, India.",
         },
         {
-          question: "Where exactly is the training campus held in Bali?",
+          question: "Where exactly is the training campus held in Chiang Mai?",
           answer:
-            "The course takes place at our spacious World Peace Yoga School Bali campus located on Jalan Bisma in Ubud, surrounded by green fields, natural silence, and high spiritual energy fields.",
+            "The course takes place at our spacious World Peace Yoga School Chiang Mai campus located on Jalan Bisma in Ubud, surrounded by green fields, natural silence, and high spiritual energy fields.",
         },
         {
           question: "What fields are included within the base course fee?",

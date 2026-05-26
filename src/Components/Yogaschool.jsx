@@ -61,7 +61,7 @@ const Yogaschool = () => {
   }, []);
 
   // =========================================
-  // SLIDER SETTINGS
+  // SLIDER SETTINGS (With Accessibility Fix)
   // =========================================
 
   const locationSettings = useMemo(
@@ -77,6 +77,15 @@ const Yogaschool = () => {
       pauseOnHover: true,
       swipeToSlide: true,
       adaptiveHeight: false,
+      // 🛠️ ACCESSIBILITY FIX: Clear active focus from slides before they are hidden
+      beforeChange: () => {
+        if (
+          document.activeElement && 
+          (document.activeElement.closest(".slick-slide") || document.activeElement.closest(".modern-slide"))
+        ) {
+          document.activeElement.blur();
+        }
+      }
     }),
     []
   );
@@ -105,7 +114,7 @@ const Yogaschool = () => {
         description:
           "Train in Mysuru, the yoga capital of South India, where authentic yogic discipline and ancient teachings continue to inspire practitioners worldwide.",
         color: "#2e8b57",
-        link: "/mysuru-yoga-teacher-training",
+        link: "/programs/mysuru",
       },
       {
         location: "Rishikesh",
@@ -115,7 +124,7 @@ const Yogaschool = () => {
         description:
           "Practice yoga by the sacred Ganges River surrounded by Himalayan energy in the spiritual heart of India.",
         color: "#4caf50",
-        link: "/rishikesh-yoga-retreat",
+        link: "/programs/rishikesh",
       },
       {
         location: "Chiang Mai",
@@ -125,7 +134,7 @@ const Yogaschool = () => {
         description:
           "Blend yoga, meditation, mindfulness, and nature in the peaceful mountains and temples of Northern Thailand.",
         color: "#d97706",
-        link: "/chiangmai-retreat",
+        link: "/programs/chiang-mai",
       },
       {
         location: "Dharamshala",
@@ -135,7 +144,7 @@ const Yogaschool = () => {
         description:
           "Reconnect with yourself in the serene Himalayan atmosphere inspired by Tibetan spiritual culture and meditation.",
         color: "#6b7280",
-        link: "/dharamshala-yoga-retreat",
+        link: "/programs/dharamshala",
       },
     ],
     []
@@ -357,10 +366,7 @@ const Yogaschool = () => {
                 style={{ "--accent": feature.accent }}
               >
 
-                <div
-                  className="itemlogo"
-                 
-                >
+                <div className="itemlogo">
                   <img
                     src={feature.icon}
                     alt={feature.title}

@@ -1,4 +1,4 @@
-export const BaliAyurvedicTreatmentTTCData = {
+export const ChiangAyurvedicTreatmentTTCData = {
   heroSection: {
     colors: {
       cream: "#FAF5EF",       // Soft herbal saffron cream
@@ -13,7 +13,7 @@ export const BaliAyurvedicTreatmentTTCData = {
     },
 
     hero: {
-      location: "Bali · Ayurvedic Treatment & Massage Therapist TTC",
+      location: "Chiang Mai · Ayurvedic Treatment & Massage Therapist TTC",
       title: "Ayurveda Massage TTC",
       highlight: "12 Days Advanced Training",
       subtitle:
@@ -69,7 +69,7 @@ export const BaliAyurvedicTreatmentTTCData = {
       title: "Join our",
       highlight: "ethnic therapeutic lineage",
       subtitle:
-        "World Peace Yoga School in Bali delivers pure Ayurvedic treatment disciplines, bringing body, mind, and spirit into total alignment using authentic medicated herbal oils.",
+        "World Peace Yoga School in Chiang Mai delivers pure Ayurvedic treatment disciplines, bringing body, mind, and spirit into total alignment using authentic medicated herbal oils.",
       stats: [
         { value: "12 Days", label: "Complete Training Run", icon: "clock" },
         { value: "Tridosha", label: "Constitutional Blueprint", icon: "sparkles" },
@@ -80,7 +80,7 @@ export const BaliAyurvedicTreatmentTTCData = {
       bottomText1:
         "We combine ancient text insights with intense physical workshops covering everything from head to toes, providing simultaneous front and back body stroke training.",
       bottomText2:
-        "Our tropical Bali campus features a peaceful wellness center environment designed to remove modern anxieties and anchor you firmly inside deep interiorizing silence blocks.",
+        "Our tropical Chiang Mai campus features a peaceful wellness center environment designed to remove modern anxieties and anchor you firmly inside deep interiorizing silence blocks.",
     },
   },
 
@@ -99,7 +99,7 @@ export const BaliAyurvedicTreatmentTTCData = {
       title: "Restore your",
       highlight: "vitality and peace",
       duration: "12-day",
-      strongText: "Ubud, Bali",
+      strongText: "Ubud, Chiang Mai",
       features: [
         {
           icon: "award",
@@ -391,7 +391,7 @@ export const BaliAyurvedicTreatmentTTCData = {
     content: {
       eyebrow: "Relaxing Excursions",
       title: "Explore the Beautiful",
-      highlight: "Tropical Landscape of Bali",
+      highlight: "Tropical Landscape of Chiang Mai",
       subtitle:
         "Excursion packages are thoughtfully bundled inside tuition parameters to maintain an ideal balance between training and relaxing.",
 
@@ -403,7 +403,7 @@ export const BaliAyurvedicTreatmentTTCData = {
           duration: "Half Day",
           icon: "globe",
           img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-          desc: "Walk along pristine Balinese coastal lines to naturally center and ground your mental tracks.",
+          desc: "Walk along pristine Chiang Mainese coastal lines to naturally center and ground your mental tracks.",
           highlights: ["Calm beach walks", "Ocean breeze breathing", "Elemental tranquility"],
         },
         {
@@ -602,11 +602,11 @@ export const BaliAyurvedicTreatmentTTCData = {
     content: {
       eyebrow: "Geographical Context",
       title: "Timeless Sanctuary:",
-      highlight: "Jalan Bisma, Ubud, Bali",
+      highlight: "Jalan Bisma, Ubud, Chiang Mai",
       subtitle:
-        "Operated directly inside Bali's premium healing hub where dense tropical nature and quiet settings ease modern circulatory stress.",
+        "Operated directly inside Chiang Mai's premium healing hub where dense tropical nature and quiet settings ease modern circulatory stress.",
       address:
-        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+        "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
       mapEmbed:
         "https://www.google.com/maps?q=-8.5132,115.2575&output=embed",
 
@@ -665,7 +665,7 @@ export const BaliAyurvedicTreatmentTTCData = {
 
       faqs: [
         {
-          question: "What exactly is the Ayurveda Therapist Program of Bali?",
+          question: "What exactly is the Ayurveda Therapist Program of Chiang Mai?",
           answer:
             "This is an intensive, 12-day theoretical-practical specialization module designed to make you proficient in traditional Ayurvedic healing arts. It blends foundational text analysis with hands-on practice loops across classical massage setups.",
         },

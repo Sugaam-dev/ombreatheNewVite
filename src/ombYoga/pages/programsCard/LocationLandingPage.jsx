@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { LOCATION_DATA, PROGRAM_CATEGORIES } from "./LocationData";
+import { LANDING_LOCATION_DATA, LANDING_PROGRAM_CATEGORIES } from "./LandingPageData";
 
 const LANDING_PAGE_STYLES = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -300,17 +300,17 @@ const LocationLandingPage = () => {
   const programsRef = useRef(null); 
 
   // Synchronously resolve structural names out of matching data parameters
-  const matchedKey = Object.keys(LOCATION_DATA).find(
+  const matchedKey = Object.keys(LANDING_LOCATION_DATA).find(
     (key) => key.toLowerCase() === location.toLowerCase()
   );
   const resolvedLocationName = matchedKey || "Bali";
-  const data = LOCATION_DATA[resolvedLocationName] || LOCATION_DATA["Bali"];
+  const data = LANDING_LOCATION_DATA[resolvedLocationName] || LANDING_LOCATION_DATA["Bali"];
 
   const storageKey = `active_cat_${resolvedLocationName.toLowerCase()}`;
 
   // 🛠️ FIX: Clean initialization block that avoids reliance on useEffect routines
   const [activeCategory, setActiveCategory] = useState(() => {
-    const savedTab = localStorage.getItem(storageKey);
+    const savedTab = sessionStorage.getItem(storageKey);
     if (savedTab && data.programsByCategoryId?.[savedTab]?.length > 0) {
       return savedTab;
     }
@@ -321,11 +321,11 @@ const LocationLandingPage = () => {
   });
 
   const activeLocationPrograms = data.programsByCategoryId?.[activeCategory] || [];
-  const selectedCategoryMeta = PROGRAM_CATEGORIES.find((c) => c.id === activeCategory);
+  const selectedCategoryMeta = LANDING_PROGRAM_CATEGORIES.find((c) => c.id === activeCategory);
 
   const handleTabChange = (catId) => {
     setActiveCategory(catId);
-    localStorage.setItem(storageKey, catId);
+    sessionStorage.setItem(storageKey, catId);
   };
 
   const scrollToPrograms = () =>
@@ -334,7 +334,7 @@ const LocationLandingPage = () => {
   // 🛠️ FIX: Handled dynamic URL city swapping without disturbing local tab selections
   useEffect(() => { 
     window.scrollTo(0, 0); 
-    const savedTab = localStorage.getItem(storageKey);
+    const savedTab = sessionStorage.getItem(storageKey);
     if (savedTab && data.programsByCategoryId?.[savedTab]?.length > 0) {
       setActiveCategory(savedTab);
     } else {
@@ -412,7 +412,7 @@ const LocationLandingPage = () => {
             </div>
 
             <div className="llp-tabs">
-              {PROGRAM_CATEGORIES.map((cat) => {
+              {LANDING_PROGRAM_CATEGORIES.map((cat) => {
                 const hasCourses = !!data.programsByCategoryId?.[cat.id]?.length;
                 if (!hasCourses) return null;
 

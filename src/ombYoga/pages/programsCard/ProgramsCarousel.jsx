@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { useNavigate } from "react-router-dom";
-import { LOCATION_DATA, PROGRAM_CATEGORIES } from "./LocationData";
+import { CAROUSEL_LOCATION_DATA, PROGRAM_CATEGORIES } from "./CarouselData";
 import SectionHeading from "../../../Components/useFullComponent/SectionHeading";
 
 const CAROUSEL_STYLES = `
@@ -13,7 +13,7 @@ const CAROUSEL_STYLES = `
   }
 
   /* ==========================================
-     INFINITE MARQUEE RAIL RAIL HOUSING
+      INFINITE MARQUEE RAIL RAIL HOUSING
   ========================================== */
   .pc-outer {
     width: 100%;
@@ -38,7 +38,7 @@ const CAROUSEL_STYLES = `
   }
 
   /* ==========================================
-     SLIDE SIZING & BOUNDARIES
+      SLIDE SIZING & BOUNDARIES
   ========================================== */
   .pc-slide {
     padding: clamp(6px, 0.8vw, 18px);
@@ -53,7 +53,7 @@ const CAROUSEL_STYLES = `
   @media (min-width: 1900px) { .pc-slide { width: 460px !important; } }
 
   /* ==========================================
-     CARD STYLING
+      CARD STYLING
   ========================================== */
   .pc-card {
     background: #fff;
@@ -166,18 +166,11 @@ const CAROUSEL_STYLES = `
   }
 `;
 
-// Compute localized program lengths across active objects
-const TOTAL_PROGRAMS = Object.values(LOCATION_DATA).reduce((sum, loc) => {
-  if (!loc.programsByCategoryId) return sum;
-  const count = Object.values(loc.programsByCategoryId).reduce((subSum, list) => subSum + list.length, 0);
-  return sum + count;
-}, 0);
-
-const LOCATION_ENTRIES = Object.entries(LOCATION_DATA).map(([name, data]) => ({
+const LOCATION_ENTRIES = Object.entries(CAROUSEL_LOCATION_DATA).map(([name, data]) => ({
   name,
   tagline: data.tagline,
   description: data.description,
-  programs: TOTAL_PROGRAMS,
+  programs: data.totalProgramsCount,
   image: data.heroImage,
   accent: data.accentColor,
   path: `/programs/${name.toLowerCase()}`,
