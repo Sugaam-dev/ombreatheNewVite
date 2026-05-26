@@ -15,7 +15,7 @@ export const Rishikesh10DaysPanchakarmaData = {
     hero: {
       location: "Rishikesh · 10 Days Classical Panchakarma Program",
       title: "Panchakarma Therapy",
-      highlight: "10 Days Complete Detox",
+      highlight: "10 Days Complete Detox ",
       subtitle:
         "Welcome to the science of cellular purification. Remove deep-rooted mind-body afflictions, reset critical systemic functions, and rejuvenate under expert Ayurvedic practitioners.",
       price: "$799 Regular",

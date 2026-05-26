@@ -15,7 +15,7 @@ export const RishikeshKundali50HoursData = {
     hero: {
       location: "Rishikesh · 50-Hour Trikālī Tantra Course",
       title: "Trikālī Tantra Course",
-      highlight: "5 Days 50 Hours",
+      highlight: "5 Days 50 Hours ",
       subtitle:
         "Tread into the sacred, pure, and non-dualistic dimension of Kashmir Shaivism. A holistic science of consciousness awakening, free from modern distortions and illusions.",
       price: "$799",

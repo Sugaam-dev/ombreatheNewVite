@@ -15,7 +15,7 @@ export const Rishikesh50HourYogaNidraData = {
     hero: {
       location: "Rishikesh · 50-Hour Yoga Nidra Teacher Training",
       title: "Yoga Nidra TTC",
-      highlight: "5 Days 50 Hours",
+      highlight: "5 Days 50 Hours ",
       subtitle:
         "A spiritual and scientific exploration of conscious relaxation. Merge ancient yogic wisdom with modern neuroscience to master brain wave states and nervous system regulation.",
       price: "$500",

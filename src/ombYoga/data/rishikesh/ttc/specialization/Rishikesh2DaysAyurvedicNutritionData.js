@@ -15,7 +15,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
     hero: {
       location: "Rishikesh · 2 Days Ayurvedic Nutrition Course",
       title: "Ayurvedic Nutrition Course",
-      highlight: "5 Hours Total Scope",
+      highlight: "5 Hours Total Scope ",
       subtitle:
         "Empower yourself to consume food mindfully. Learn how subtle, minor modifications in your diet and lifestyle can create a massive difference in long-term wellness tracking.",
       price: "$150",

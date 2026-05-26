@@ -15,7 +15,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
     hero: {
       location: "Rishikesh · Ayurveda Therapist Diploma Course",
       title: "Ayurveda Therapist Course",
-      highlight: "10 Days Intensive Training",
+      highlight: "10 Days Intensive Training ",
       subtitle:
         "Unite body, mind, and spirit to restore absolute balance and harmony. Master advanced oil body massage, ancient acupressure, body structure, and marma points.",
       price: "$1099",

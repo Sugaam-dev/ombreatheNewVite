@@ -15,7 +15,7 @@ export const RishikeshKundali300HoursData = {
     hero: {
       location: "Rishikesh · 300-Hour Advanced Yoga TTC",
       title: "Advanced Yoga YTTC",
-      highlight: "29 Days 300 Hours",
+      highlight: "29 Days 300 Hours ",
       subtitle:
         "Relish a transformational involvement and ecstasy in the Yoga Capital of the World. Master Ashtanga Vinyasa, Hatha alignment, anatomy, and Vedic philosophy.",
       price: "$1699",

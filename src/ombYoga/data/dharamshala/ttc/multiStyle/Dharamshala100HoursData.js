@@ -15,7 +15,7 @@ export const Dharamshala100HoursData = {
     hero: {
       location: "Dharamshala, India · 100-Hour Foundation",
       title: "Multi-Style YTTC",
-      highlight: "10 Days 100 Hours",
+      highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour yoga teacher training in Dharamshala — Hatha, Ashtanga, Pranayama & Himalayan tradition",
       price: "$899",

@@ -15,7 +15,7 @@ export const ChiangAyurveda5HoursAbhyangamData = {
     hero: {
       location: "Chiang Mai · Ayurveda Massage Course",
       title: "Abhyangam Massage Training",
-      highlight: "5 Hours Intensive Training",
+      highlight: "5 Hours Intensive Training ",
       subtitle:
         "Learn the ancient arts of deep healing with Indian Ayurvedic Full-Body Massage. Master myofascial tissue restoration and hands-on movement sequences in 1 or 2 days.",
       price: "$250",

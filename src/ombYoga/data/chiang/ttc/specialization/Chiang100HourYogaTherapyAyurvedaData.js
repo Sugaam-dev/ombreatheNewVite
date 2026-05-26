@@ -15,7 +15,7 @@ export const Chiang100HourYogaTherapyAyurvedaData = {
     hero: {
       location: "Chiang Mai · 100-Hour Yoga Therapy & Ayurveda Wellness TTC",
       title: "Yoga Therapy TTC",
-      highlight: "10 Days of Immersions",
+      highlight: "10 Days of Immersions ",
       subtitle:
         "An advanced post-TTC program for yoga professionals. Boost your career as a wellness coach, healer, and therapist in the spiritual heart of Ubud.",
       price: "$1299",

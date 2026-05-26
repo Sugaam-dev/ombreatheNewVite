@@ -15,7 +15,7 @@ export const RishikeshPrenatalYogaData = {
     hero: {
       location: "Rishikesh · 85-Hour RPYT Prenatal Yoga Course",
       title: "Prenatal Yoga TTC",
-      highlight: "6 Days 85 Hours",
+      highlight: "6 Days 85 Hours ",
       subtitle:
         "Expose yourself to the wonderful, blissful world of Prenatal Yoga. A unique, encyclopedic curriculum offering a complete mix of theory, meditation, and customized safety asanas.",
       price: "$599",

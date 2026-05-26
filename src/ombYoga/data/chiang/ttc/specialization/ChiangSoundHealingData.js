@@ -15,7 +15,7 @@ export const ChiangSoundHealingData = {
     hero: {
       location: "Ubud, Bali · Sound Healing Level-1 & Level-2",
       title: "Heal Through the",
-      highlight: "Power of Sound",
+      highlight: "Power of Sound ",
       subtitle:
         "Sound healing Level-1 & Level-2 course in Bali — Tibetan singing bowls, chakra healing & YACEP certification",
       price: "$400",

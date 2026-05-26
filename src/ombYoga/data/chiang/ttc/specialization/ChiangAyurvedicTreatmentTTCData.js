@@ -15,7 +15,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
     hero: {
       location: "Chiang Mai · Ayurvedic Treatment & Massage Therapist TTC",
       title: "Ayurveda Massage TTC",
-      highlight: "12 Days Advanced Training",
+      highlight: "12 Days Advanced Training ",
       subtitle:
         "Master the oldest Ayurveda massage rituals and therapeutic oil techniques practiced for thousands of years to naturally balance Vata, Pitta, and Kapha doshas.",
       price: "$1450",

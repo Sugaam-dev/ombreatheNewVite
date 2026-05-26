@@ -16,7 +16,7 @@ export const DharamshalaKundali200HoursData = {
     hero: {
       location: "Dharamshala · 200-Hour Kundalini Yoga TTC",
       title: "Kundalini Yoga YTTC",
-      highlight: "25 Days 200 Hours",
+      highlight: "25 Days 200 Hours ",
       subtitle:
         "Activate your dormant power through profound, realistic learning and authentic practice. Awaken your cosmic energy centers, kriya paths, and foundational tantra traditions.",
       price: "$1399",

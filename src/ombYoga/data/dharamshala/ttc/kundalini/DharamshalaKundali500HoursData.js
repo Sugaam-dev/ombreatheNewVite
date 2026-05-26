@@ -15,7 +15,7 @@ export const DharamshalaKundali500HoursData = {
     hero: {
       location: "Dharamshala · 500-Hour Master Yoga TTC",
       title: "Master Yoga YTTC",
-      highlight: "59 Days 500 Hours",
+      highlight: "59 Days 500 Hours ",
       subtitle:
         "The ultimate combined 200-Hour + 300-Hour training at our flagship Laxman Jhula center. Two months of intense learning to become an expert Yogi for life.",
       price: "$2899",

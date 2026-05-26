@@ -15,7 +15,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
     hero: {
       location: "Rishikesh · 200-Hour Yoga Therapy & Wellness TTC",
       title: "Yoga Therapy & Wellness TTC",
-      highlight: "18 Days 200 Hours",
+      highlight: "18 Days 200 Hours ",
       subtitle:
         "A marvelous first-level execution merging comprehensive Yoga Therapy, Ayurveda adjustments, and Naturopathy medicine. Empower your career with an accredited clinical roadmap.",
       price: "$1099",

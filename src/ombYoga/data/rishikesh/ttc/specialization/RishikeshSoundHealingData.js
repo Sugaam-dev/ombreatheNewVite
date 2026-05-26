@@ -380,7 +380,7 @@ export const RishikeshSoundHealingData = {
     content: {
       eyebrow: "The Himalayan Belt",
       title: "Immerse in the",
-      highlight: "Vibrational Energy of Rishikesh",
+      highlight: "Vibrational Energy of Rishikesh ",
       subtitle:
         "Our beautiful destination provides immediate access to ancient spiritual properties to support your self-healing track.",
 

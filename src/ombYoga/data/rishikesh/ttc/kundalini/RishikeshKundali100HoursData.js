@@ -664,7 +664,7 @@ export const RishikeshKundali100HoursData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Rishikesh",
+      highlight: "heart of Rishikesh ",
       subtitle:
         "Located in Ubud — a haven for those seeking enlightenment — surrounded by jungle, temples, and nature.",
 

@@ -15,7 +15,7 @@ export const Rishikesh6NightsYinYogaData = {
     hero: {
       location: "Rishikesh · Yin Yoga Teacher Training Course",
       title: "Yin Yoga TTC",
-      highlight: "6 Nights 7 Days",
+      highlight: "6 Nights 7 Days ",
       subtitle:
         "Explore the depth of relaxation with a deeper connection to the Supreme. Master Taoist passive lines, functional skeletal alignment, and connective fascia tissue release.",
       price: "$599",

@@ -14,7 +14,7 @@ overlay: "linear-gradient(180deg, rgba(45,26,0,0.55), rgba(45,26,0,0.9))",
     hero: {
      location: "Dharamshala, India · 200-Hour Professional",
 title: "Multi-Style YTTC",
-highlight: "20 Days 200 Hours",
+highlight: "20 Days 200 Hours ",
 subtitle: "200-hour yoga teacher training in Dharamshala — Hatha, Ashtanga, RYT-200 & Himalayan tradition",
 price: "$1,399",
       priceNote: "Includes stay, meals & certification",

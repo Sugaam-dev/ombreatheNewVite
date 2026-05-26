@@ -15,7 +15,7 @@ export const ChiangYinYogaData = {
     hero: {
       location: "Ubud, Bali · Yin Yoga Teacher Training",
       title: "Discover the Art of",
-      highlight: "Yin Yoga",
+      highlight: "Yin Yoga ",
       subtitle:
         "Yin yoga teacher training in Bali — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
       price: "$650",
