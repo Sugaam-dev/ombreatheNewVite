@@ -91,8 +91,8 @@ export const PROGRAM_LINKS = {
       { path: "rishikesh50houryoganidra", label: "5 Days Yoga Nidra Teacher Training Course in Rishikesh" }
     ],
     specialization: [
-      { path: "soundhealing", label: "Vedic Sound Healing Level 1 & 2" },
-      { path: "wellness-retreat", label: "Ganga Aarti & Ashram Detox Retreat" },
+      // { path: "soundhealing", label: "Vedic Sound Healing Level 1 & 2" },
+      // { path: "wellness-retreat", label: "Ganga Aarti & Ashram Detox Retreat" },
       { path: "rishikesh200hourmultistylekundaliniayurvedamassage", label: "200 Hour Multistyle / Kundalini Yoga TTC with Ayurveda Massage" },
       { path: "rishikesh10dayspanchakarma", label: "10 Days Panchakarma Therapy Program in Rishikesh" },
       { path: "rishikesh2daysayurvedicnutrition", label: "2 Days Ayurvedic Nutrition Course In Rishikesh" },

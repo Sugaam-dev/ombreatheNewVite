@@ -5,11 +5,10 @@ export default function MassageSection({ data }) {
   const scrollContainerRef = useRef(null);
   const [isPaused, setIsPaused] = useState(false);
 
-  // Structural sanity defense guard clause
-  if (!data || !data.content || !data.content.massages) return null;
-
-  const { colors, content } = data;
-  const massageList = content.massages;
+  // Fallback fallback declarations to protect downstream destructuring parameters safely
+  const colors = data?.colors || {};
+  const content = data?.content || {};
+  const massageList = content?.massages || [];
 
   // Triplicate the rendering array list to facilitate an unbroken running cycle effect
   const infiniteMassages = [...massageList, ...massageList, ...massageList];
@@ -44,13 +43,18 @@ export default function MassageSection({ data }) {
     }
   };
 
+  // 🛠️ RULES OF HOOKS SAFE DISMISS CHECK: Guard checks must reside down here!
+  if (!data || !data.content || !data.content.massages) {
+    return null;
+  }
+
   return (
     <div className="spa-carousel-wrapper">
       {/* INJECTED ENCAPSULATED SCOPED STYLE CORE */}
       <style>{`
         .spa-carousel-wrapper {
           width: 100%;
-         
+          
           background: ${colors.navy || "#1A2456"};
           font-family: system-ui, -apple-system, sans-serif;
           padding: 60px 16px;
@@ -200,7 +204,7 @@ export default function MassageSection({ data }) {
           -webkit-box-orient: vertical;
           overflow: hidden;
           min-height: 40px;
-        }
+          }
 
         .spa-status-indicator {
           margin-top: 16px;
@@ -237,16 +241,6 @@ export default function MassageSection({ data }) {
           </h2>
           <p className="spa-subtitle-text">{content.subtitle}</p>
         </div>
-
-        {/* Control Button nodes - Automatically hidden on mobile devices */}
-        {/* <div className="spa-nav-buttons">
-          <button onClick={() => handleManualActionScroll("left")} className="spa-arrow-btn" aria-label="Slide Left">
-            <ChevronLeft size={18} />
-          </button>
-          <button onClick={() => handleManualActionScroll("right")} className="spa-arrow-btn" aria-label="Slide Right">
-            <ChevronRight size={18} />
-          </button>
-        </div> */}
       </div>
 
       {/* Slider outer framework tracking layer */}
