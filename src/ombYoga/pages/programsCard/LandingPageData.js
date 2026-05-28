@@ -42,7 +42,7 @@
 //     subheadline: "Where ancient wisdom meets tropical paradise",
 //     description:
 //       "Nestled among sacred rice terraces and whispering temples, our Bali programs offer the most immersive yoga teacher training experience in Southeast Asia. Train with master teachers, live in harmony with nature, and return home forever changed.",
-//     heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=90",
+//     heroImage: "https://etimg.etb2bimg.com/photo/115997634.cms",
 //     accentColor: "#2e8b6e",
 //     accentLight: "#e8f5f0",
 //     highlights: [
@@ -324,7 +324,7 @@ export const LANDING_LOCATION_DATA = {
     subheadline: "Where ancient wisdom meets tropical paradise",
     description:
       "Nestled among sacred rice terraces and whispering temples, our Bali programs offer the most immersive yoga teacher training experience in Southeast Asia. Train with master teachers, live in harmony with nature, and return home forever changed.",
-    heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=90",
+    heroImage: "https://etimg.etb2bimg.com/photo/115997634.cms",
     accentColor: "#2e8b6e",
     accentLight: "#e8f5f0",
     highlights: [

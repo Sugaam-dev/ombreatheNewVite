@@ -18,7 +18,7 @@ export const CAROUSEL_LOCATION_DATA = {
   bali: {
     tagline: "Island of the Gods",
     description: "Nestled among sacred rice terraces and whispering temples, our Bali programs offer the most immersive yoga teacher training experience in Southeast Asia. Train with master teachers, live in harmony with nature, and return home forever changed.",
-    heroImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=90",
+    heroImage: "https://etimg.etb2bimg.com/photo/115997634.cms",
     accentColor: "#2e8b6e",
     totalProgramsCount: 15 // Updated to match your exact link map index totals (including all 4 specialization paths + 1 retreat layout)
   },

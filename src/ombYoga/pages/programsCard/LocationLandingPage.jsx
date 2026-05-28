@@ -17,6 +17,7 @@ const LANDING_PAGE_STYLES = `
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* ✅ Vertically centers children within the 100vh window layout */
   }
 
   .llp-hero__img {
@@ -29,23 +30,25 @@ const LANDING_PAGE_STYLES = `
   .llp-hero__overlay {
     position: absolute;
     inset: 0;
+    /* ✅ Gradient adjusted to support center-positioned typography readability profiles */
     background: linear-gradient(
       to bottom,
-      rgba(0,0,0,0.08)  0%,
-      rgba(0,0,0,0.18) 35%,
-      rgba(0,0,0,0.60) 68%,
-      rgba(0,0,0,0.88) 100%
+      rgba(0,0,0,0.22) 0%,
+      rgba(0,0,0,0.45) 50%,
+      rgba(0,0,0,0.75) 100%
     );
     pointer-events: none;
   }
 
   .llp-hero__content {
     position: absolute;
-    bottom: 0;
+    top: 50%; /* ✅ Anchors container alignment origin point directly in the middle line split */
+    transform: translateY(-50%); /* ✅ Counterbalances offset to center block dynamically */
     left: 0;
     right: 0;
-    padding: 0 60px 48px;
+    padding: 0 60px; /* ✅ Left/Right padding preserved safely, bottom padding removed */
     z-index: 2;
+    max-width: 1200px; /* ✅ Prevents lines stretching wide across ultrawide monitors */
   }
 
   .llp-hero__eyebrow {
@@ -247,7 +250,7 @@ const LANDING_PAGE_STYLES = `
   .llp-cta__btns { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
 
   @media (max-width: 900px) {
-    .llp-hero__content { padding: 0 28px 36px; }
+    .llp-hero__content { padding: 0 28px; } /* ✅ Bottom padding fallback removed for centered layout configuration constraints */
     .llp-intro, .llp-programs, .llp-cta { padding: 60px 28px; }
     .llp-intro__inner { grid-template-columns: 1fr; gap: 40px; }
     .llp-cta__inner { flex-direction: column; align-items: flex-start; }
@@ -299,7 +302,6 @@ const LocationLandingPage = () => {
   const navigate = useNavigate();
   const programsRef = useRef(null); 
 
-  // Synchronously resolve structural names out of matching data parameters
   const matchedKey = Object.keys(LANDING_LOCATION_DATA).find(
     (key) => key.toLowerCase() === location.toLowerCase()
   );
@@ -308,7 +310,6 @@ const LocationLandingPage = () => {
 
   const storageKey = `active_cat_${resolvedLocationName.toLowerCase()}`;
 
-  // 🛠️ FIX: Clean initialization block that avoids reliance on useEffect routines
   const [activeCategory, setActiveCategory] = useState(() => {
     const savedTab = sessionStorage.getItem(storageKey);
     if (savedTab && data.programsByCategoryId?.[savedTab]?.length > 0) {
@@ -331,7 +332,6 @@ const LocationLandingPage = () => {
   const scrollToPrograms = () =>
     programsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-  // 🛠️ FIX: Handled dynamic URL city swapping without disturbing local tab selections
   useEffect(() => { 
     window.scrollTo(0, 0); 
     const savedTab = sessionStorage.getItem(storageKey);
@@ -344,7 +344,7 @@ const LocationLandingPage = () => {
         setActiveCategory(Object.keys(data.programsByCategoryId || {})[0] || "multi-style");
       }
     }
-  }, [location]); // Only trigger when moving between completely different cities
+  }, [location]);
 
   const accentPale = data.accentColor + "cc";
 
