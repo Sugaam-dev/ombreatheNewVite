@@ -137,32 +137,25 @@ const OmbLocationSection = ({ data }) => {
               />
             </div>
 
-            {/* STATS */}
+            {/* STATS GRID - Made bulletproof for micro mobile displays */}
             <div className="omb-stats-grid">
               {content.stats.map((s, i) => (
                 <div
                   key={i}
                   className="omb-stat-card"
                   style={{
-                    padding: "16px 10px",
-                    textAlign: "center",
                     background: colors.white,
                     borderRadius: 12,
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "4px",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.02)"
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.02)",
                   }}
                 >
-                  <div style={{ color: colors.violet, marginBottom: "2px" }}>
+                  <div className="omb-stat-icon" style={{ color: colors.violet }}>
                     {iconMap[s.icon]}
                   </div>
-                  <div style={{ fontWeight: 700, fontSize: "1.1rem", color: colors.navy }}>
+                  <div className="omb-stat-value" style={{ fontWeight: 700, color: colors.navy }}>
                     {s.value}
                   </div>
-                  <small style={{ fontSize: "0.75rem", color: "#666", display: "block", lineHeight: 1.2 }}>
+                  <small className="omb-stat-label" style={{ color: "#666", display: "block" }}>
                     {s.label}
                   </small>
                 </div>
@@ -173,9 +166,9 @@ const OmbLocationSection = ({ data }) => {
         </div>
       </div>
 
-      {/* Global CSS Injector to deal with structural changes seamlessly across viewport ranges */}
+      {/* Embedded CSS Engine for flawless responsiveness */}
       <style>{`
-        /* Base Structural Main Breakpoint Shifts */
+        /* 1. Main Grid Layout System */
         .omb-main-grid {
           display: grid;
           grid-template-columns: 1fr;
@@ -189,56 +182,91 @@ const OmbLocationSection = ({ data }) => {
           }
         }
 
-        /* Typography Fluid Responsiveness Layout rules */
+        /* 2. Fluid Responsive Typography */
         .omb-title {
-          font-size: clamp(1.8rem, 4vw, 2.5rem);
+          font-size: clamp(1.6rem, 4vw, 2.5rem);
           font-weight: 700;
           line-height: 1.2;
         }
         .omb-subtitle {
-          font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+          font-size: clamp(0.9rem, 1.5vw, 1.05rem);
         }
         .omb-eyebrow {
-          font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+          font-size: clamp(0.75rem, 1.2vw, 0.9rem);
           text-transform: uppercase;
         }
 
-        /* Map Iframe Dynamic Heights scaling */
+        /* 3. Map Resizer */
         .omb-map-container iframe {
-          height: 280px;
+          height: 250px;
         }
         @media (min-width: 576px) {
-          .omb-map-container iframe { height: 350px; }
+          .omb-map-container iframe { height: 320px; }
         }
         @media (min-width: 992px) {
-          .omb-map-container iframe { height: 400px; }
+          .omb-map-container iframe { height: 380px; }
         }
 
-        /* Stats Responsive Reflow Optimization rules (Prevents text smash on mobiles) */
+        /* 4. Complete Stats Grid Optimization for Small Mobile Screens */
         .omb-stats-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 12px;
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 10px !important;
+          width: 100% !important;
         }
+        
+        .omb-stat-card {
+          padding: 12px 6px !important;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+          min-width: 0 !important; /* Forces container to contract below text size defaults */
+          overflow: hidden;
+        }
+
+        .omb-stat-icon svg {
+          width: 18px !important;
+          height: 18px !important;
+        }
+
+        .omb-stat-value {
+          font-size: clamp(0.95rem, 3.5vw, 1.2rem) !important;
+          line-height: 1.1;
+        }
+
+        .omb-stat-label {
+          font-size: clamp(0.68rem, 2.5vw, 0.75rem) !important;
+          line-height: 1.2;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100%;
+          padding: 0 2px;
+        }
+
+        /* Responsive scale shifts for larger screen real-estate classes */
         @media (min-width: 400px) {
-          .omb-stats-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-          }
+          .omb-stats-grid { gap: 14px !important; }
+          .omb-stat-card { padding: 16px 10px !important; }
         }
-        @media (min-width: 576px) {
+
+        @media (min-width: 600px) {
           .omb-stats-grid {
-            grid-template-columns: repeat(4, 1fr);
-          }
-        }
-        @media (min-width: 992px) and (max-width: 1200px) {
-          /* Fallback drop back into a cleaner structural 2x2 grid when space gets limited on small laptops */
-          .omb-stats-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr) !important;
           }
         }
 
-        /* Hover animation feedback loop states */
+        @media (min-width: 992px) and (max-width: 1200px) {
+          /* Neatly switches to a balanced 2x2 design matrix on narrow laptop screens */
+          .omb-stats-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+
+        /* Interaction feedback states */
         .omb-spot-card:hover {
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(0,0,0,0.03);
