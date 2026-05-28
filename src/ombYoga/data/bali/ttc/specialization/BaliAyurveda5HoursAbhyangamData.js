@@ -23,7 +23,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",
       certificateImage:
-        "https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=600&q=80",
+        "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
       buttonText: "Enroll This Course Now",
       url: "/contact",
     },

@@ -20,7 +20,7 @@ price: "$2,899",
 priceNote: "Includes stay, meals & RYT-500 certification",
 bgImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
       certificateImage:
-        "https://www.ombreathe.in/static/media/Yogalyaa_500_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+        "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
       buttonText: "Book Now",
         url:"/contact",
     },

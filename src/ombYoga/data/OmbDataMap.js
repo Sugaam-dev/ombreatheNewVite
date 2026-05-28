@@ -79,10 +79,47 @@ import { ChiangAyurvedicTreatmentTTCData }        from "./chiang/ttc/specializat
 import { ChiangAyurveda5HoursAbhyangamData }        from "./chiang/ttc/specialization/ChiangAyurveda5HoursAbhyangamData";
 import { ChiangRetreats6DaysData }       from "./chiang/retreats/ChiangRetreats6DaysData";
 
+
+//mysore
+//multistyle
+import {Mysore200HourAshtangaHathaData} from "./mysore/ttc/multiStyle/Mysore200HourAshtangaHathaData"
+import {Mysore300HoursData} from "./mysore/ttc/multiStyle/Mysore300HoursData"
+import {Mysore500HoursData} from "./mysore/ttc/multiStyle/Mysore500HoursData"
+import {Mysore21DayAshtangaTTCData} from "./mysore/ttc/multiStyle/Mysore21DayAshtangaTTCData"
+import {Mysore21DayHathaTTCData} from "./mysore/ttc/multiStyle/Mysore21DayHathaTTCData"
+//short
+import {Mysore50HourYinYogaData} from "./mysore/ttc/shortCourse/Mysore50HourYinYogaData"
+import {Mysore50HourAerialYogaData} from "./mysore/ttc/shortCourse/Mysore50HourAerialYogaData"
+import {MysorePrenatalYogaData} from "./mysore/ttc/shortCourse/MysorePrenatalYogaData"
+import {Mysore7DayYogaTherapyTTCData} from "./mysore/ttc/shortCourse/Mysore7DayYogaTherapyTTCData"
+
+//specialization
+import {MysoreSingingBowlSoundHealingData} from "./mysore/ttc/specializtion/MysoreSingingBowlSoundHealingData"
+import {Mysore7DayChairYogaData} from "./mysore/ttc/specializtion/Mysore7DayChairYogaData"
+import {Mysore7DayWheelYogaData} from "./mysore/ttc/specializtion/Mysore7DayWheelYogaData"
+
+
 export const OmbDataMap = {
   // ── Mysuru ──────────────────────────────────
   mysuru: {
     // add Mysuru data imports and keys here when ready
+    "200hr":Mysore200HourAshtangaHathaData,
+    "300hr":Mysore300HoursData,
+    "500hr":Mysore500HoursData,
+    "mysore21dayashtanga":Mysore21DayAshtangaTTCData,
+    "mysore21dayhatha":Mysore21DayHathaTTCData,
+    //short
+    "mysore50houryinyoga":Mysore50HourYinYogaData,
+    "mysore50houraerialyoga": Mysore50HourAerialYogaData,
+    "mysoreprenatalyoga":MysorePrenatalYogaData,
+    "mysore7dayyogatherapy":Mysore7DayYogaTherapyTTCData,
+    //specialization
+    "mysoresingingbowlsoundhealing":MysoreSingingBowlSoundHealingData,
+    "mysore7daychairyoga":Mysore7DayChairYogaData,
+    "mysore7daywheelyoga":Mysore7DayWheelYogaData,
+
+
+
   },
 
   // ── Bali ────────────────────────────────────

@@ -27,16 +27,28 @@ export const labelToSlug = Object.fromEntries(
 export const PROGRAM_LINKS = {
   mysuru: {
     multiStyle: [
-      { path: "50hr",  label: "6 Days 50 Hours Primary Series Foundations" },
-      { path: "100hr", label: "10 Days 100 Hours Classical Ashtanga Course" },
-      { path: "200hr", label: "20 Days 200 Hours Traditional Multi-Style YTTC" },
-      { path: "300hr", label: "26 Days 300 Hours Advanced Ashtanga Vinyasa" }
+      // { path: "50hr",  label: "6 Days 50 Hours Primary Series Foundations" },
+      // { path: "100hr", label: "10 Days 100 Hours Classical Ashtanga Course" },
+      { path: "200hr", label: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course" },
+      { path: "300hr", label: "300 Hour Yoga Teacher Training Course" },
+      {path:"500hr", label:"500 Hour Yoga Teacher Training Course"},
+      {path:"mysore21dayashtanga",label:"21-Day Ashtanga Yoga Teacher Training Course"},
+      {path:"mysore21dayhatha",label:"21-Day Hatha Yoga Teacher Training Course"},
+
     ],
     kundalini: [],
     shortCourses: [
-      { path: "yinyoga", label: "6 Days 50 Hours Yin & Restoration" }
+      { path: "mysore50houryinyoga", label: "50 hour Yin Yoga TTC" },
+      {path:"mysore50houraerialyoga",label:"50 Hour Aerial Yoga Teacher Training"},
+      {path:"mysoreprenatalyoga",label:"Prenatal Postnatal Yoga Teacher Training Course"},
+      {path:"mysore7dayyogatherapy",label:"Yoga Therapy Teacher Training Course"}
+
     ],
-    specialization: [],
+    specialization: [
+      {path:"mysoresingingbowlsoundhealing",label:"3 Days Intensive Training Sound Healing Course"},
+      {path:"mysore7daychairyoga",label:"7 Day Chair Yoga Teacher Training Course"},
+      {path:"mysore7daywheelyoga",label:"7 Day wheel Yoga Teacher Training Course"},
+    ],
   },
 
   bali: {

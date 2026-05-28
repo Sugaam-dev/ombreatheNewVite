@@ -23,7 +23,7 @@ export const DharamshalaKundali50HoursData = {
       bgImage:
         "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1600&q=80",
       certificateImage:
-        "https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=600&q=80",
+        "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
       buttonText: "Enroll Course With Us",
       url: "/contact",
     },

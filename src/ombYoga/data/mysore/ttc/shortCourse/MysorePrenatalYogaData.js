@@ -1,4 +1,4 @@
-export const RishikeshPrenatalYogaData = {
+export const MysorePrenatalYogaData = {
   heroSection: {
     colors: {
       cream: "#FFF5F5",       // Soft nourishing rose cream
@@ -13,7 +13,7 @@ export const RishikeshPrenatalYogaData = {
     },
 
     hero: {
-      location: "Rishikesh · 85-Hour RPYT Prenatal Yoga Course",
+      location: "Mysore · 85-Hour RPYT Prenatal Yoga Course",
       title: "Prenatal Yoga TTC",
       highlight: "6 Days 85 Hours ",
       subtitle:
@@ -99,7 +99,7 @@ export const RishikeshPrenatalYogaData = {
       title: "Experience the",
       highlight: "sacred maternal path",
       duration: "6-day",
-      strongText: "Rishikesh, India",
+      strongText: "Mysore, India",
       features: [
         {
           icon: "award",
@@ -391,7 +391,7 @@ export const RishikeshPrenatalYogaData = {
     content: {
       eyebrow: "Integrated Tours",
       title: "Explore the Beautiful",
-      highlight: "Wonders of Rishikesh",
+      highlight: "Wonders of Mysore",
       subtitle:
         "Every single sightseeing path is fully bundled inside tuition variables to support your personal restoration.",
 
@@ -586,13 +586,13 @@ export const RishikeshPrenatalYogaData = {
     content: {
       eyebrow: "Geographical Context",
       title: "Timeless Domain:",
-      highlight: "Laxman Jhula, Rishikesh",
+      highlight: "Laxman Jhula, Mysore",
       subtitle:
         "Operated directly inside India's legendary yoga capital where powerful divine currents speed up internal focus patterns.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Mysore, Uttarakhand 249302, India",
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
+        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Mysore&output=embed",
 
       spots: [
         {
@@ -681,7 +681,7 @@ export const RishikeshPrenatalYogaData = {
         {
           question: "What food variations are provided across the week?",
           answer:
-            "We serve nutritious, organic vegetarian and vegan meals three times daily based on traditional Ayurvedic principles. On Sundays, we provide breakfast only, giving you the perfect opportunity to explore Rishikesh's unique ashram cafes and local culinary culture independently.",
+            "We serve nutritious, organic vegetarian and vegan meals three times daily based on traditional Ayurvedic principles. On Sundays, we provide breakfast only, giving you the perfect opportunity to explore Mysore's unique ashram cafes and local culinary culture independently.",
         },
         {
           question: "What items or tools must be provided inside my packing checklist?",

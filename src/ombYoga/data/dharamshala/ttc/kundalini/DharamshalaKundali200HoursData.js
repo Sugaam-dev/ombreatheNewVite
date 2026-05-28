@@ -24,7 +24,7 @@ export const DharamshalaKundali200HoursData = {
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
       certificateImage:
-        "https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=600&q=80",
+        "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
       buttonText: "Get Your Yoga Certification Course Today",
       url: "/contact",
     },

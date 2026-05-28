@@ -13,6 +13,22 @@ import {
 } from "react-router-dom";
 
 // ==========================================
+// PAGE TRACKING (ADDED)
+// ==========================================
+function usePageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+
+    window.dataLayer.push({
+      event: "pageview",
+      page: location.pathname,
+    });
+  }, [location]);
+}
+
+// ==========================================
 // PRELOAD HOME FOR SMOOTH NAVIGATION
 // ==========================================
 import("./Components/Home");
@@ -89,9 +105,6 @@ function NormalisedTTCRoute() {
   );
 }
 
-
-
-
 function NormalisedLocationRoute() {
   const { location: loc } = useParams();
   const navigate = useNavigate();
@@ -116,7 +129,9 @@ function NormalisedLocationRoute() {
 // ROUTES
 // ==========================================
 function AppRoutes() {
-  
+
+  usePageTracking(); // 👈 ADDED HERE
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -160,12 +175,14 @@ function AppRoutes() {
             </Suspense>
           }
         />
-        <Route path="programs"
-        element={
-              <Suspense fallback={<PageLoader />}>
-              <ProgramsCarousel/>
+
+        <Route
+          path="programs"
+          element={
+            <Suspense fallback={<PageLoader />}>
+              <ProgramsCarousel />
             </Suspense>
-        }
+          }
         />
 
         {/* MEMBERSHIP PROGRAMS */}
@@ -210,14 +227,16 @@ function AppRoutes() {
           path="programs/:location/:course"
           element={<NormalisedTTCRoute />}
         />
+
         <Route
           path="programs/:location"
           element={<NormalisedLocationRoute />}
         />
+
         <Route
-  path="retreats/:location/:course"
-  element={<NormalisedTTCRoute />}
-/>
+          path="retreats/:location/:course"
+          element={<NormalisedTTCRoute />}
+        />
 
         {/* 404 */}
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
