@@ -74,25 +74,35 @@ const Navbar = () => {
 
   // ── active top-level link from URL ──────────────────────────────────────
   useEffect(() => {
-    const path = location.pathname;
+    const path = location.pathname.toLowerCase();
     if (path === "/" || path === "") setActiveLink("home");
-    else if (path === "/about") setActiveLink("about");
-    else if (path === "/contact") setActiveLink("contact");
+    else if (path.startsWith("/about")) setActiveLink("about");
+    else if (path.startsWith("/contact")) setActiveLink("contact");
     else if (path.startsWith("/programs") || path.startsWith("/online"))
       setActiveLink("programs");
     else if (path.startsWith("/retreats")) setActiveLink("retreats");
-  }, [location]);
+  }, [location.pathname]);
 
-  // Add this new useEffect after your existing location useEffect
+  // ── sync nested state configuration on mount or change (Prevents refresh loss) ──
   useEffect(() => {
     const path = location.pathname.toLowerCase();
+    const pathSegments = path.split("/").filter(Boolean);
+    const isProgramsPage = path.startsWith("/programs") || path.startsWith("/online");
 
-    const isProgramsPage =
-      path.startsWith("/programs") ||
-      path.startsWith("/online");
+    if (isProgramsPage) {
+      // Find if any of our known location slugs exist in the active URL parameters
+      const matchedLocation = LOCATIONS.find((loc) =>
+        pathSegments.includes(loc.slug.toLowerCase())
+      );
 
-    // ✅ Reset only when user leaves programs (includes retreats)
-    if (!isProgramsPage) {
+      if (matchedLocation) {
+        setSelectedTtcSlug(matchedLocation.slug);
+        setTtcView("detail");
+      } else {
+        setTtcView("main");
+        setSelectedTtcSlug("");
+      }
+    } else {
       setTtcView("main");
       setSelectedTtcSlug("");
     }
@@ -208,7 +218,8 @@ const Navbar = () => {
                 </span>
               ) : (
                 items.map(({ path, label }) => {
-                  const fullPath = buildPath(slug, path, "retreats");
+                  // ✅ Fixed configuration mapping bug from "retreats" context to "programs"
+                  const fullPath = buildPath(slug, path, "programs");
                   return (
                     <Link
                       key={path}
@@ -413,6 +424,7 @@ const Navbar = () => {
                                   const fullPath = buildPath(
                                     selectedTtcSlug,
                                     path,
+                                    "programs"
                                   );
                                   return (
                                     <Link
@@ -799,7 +811,7 @@ const Navbar = () => {
         .loc-toggle,
         .drawer-loc-header,
         .back-btn,
-      
+        
         .coming-soon-text {
           color: #aaa;
           font-size: 13px;
@@ -807,53 +819,40 @@ const Navbar = () => {
           padding-top: 8px;
         }
 
-    .ttc-selected-title {
-  color: #111 !important;
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding-bottom: 6px;
-  display: inline-block;
-  vertical-align: middle;
-  
-  /* Text Fade-In Animation */
-  animation: titleFadeIn 0.4s ease forwards;
-}
+        .ttc-selected-title {
+          color: #111 !important;
+          font-size: 18px !important;
+          font-weight: 700 !important;
+          letter-spacing: 0.5px;
+          position: relative;
+          padding-bottom: 6px;
+          display: inline-block;
+          vertical-align: middle;
+          animation: titleFadeIn 0.4s ease forwards;
+        }
 
-.ttc-selected-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  background-color: #ff9933; /* Matching Saffron accent bar */
-  border-radius: 2px;
-  
-  /* Accent Line Growing Animation */
-  animation: lineGrow 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
-  width: 0;
-}
+        .ttc-selected-title::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          background-color: #ff9933; 
+          border-radius: 2px;
+          animation: lineGrow 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
+          width: 0;
+        }
 
-@keyframes titleFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+        @keyframes titleFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
 
-@keyframes lineGrow {
-  from { width: 0; }
-  to { width: 45px; }
-}
+        @keyframes lineGrow {
+          from { width: 0; }
+          to { width: 100px; }
+        }
 
-@keyframes titleFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes lineGrow {
-  from { width: 0; }
-  to { width: 100px; }
-}
         .premium-navbar {
           background: #fff !important;
           padding: 0 !important;
@@ -931,51 +930,46 @@ const Navbar = () => {
             cursor: pointer;
           }
           .mega-column a:hover, .loc-toggle:hover { color: #007bff; }
-    
-         .back-btn {
-  /* Bhagwa / Saffron Gradient Theme */
-  background: linear-gradient(135deg, #ff9933 0%, #ff6600 100%) !important;
-  border: none !important;
-  color: #fff !important;
-  padding: 8px 22px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.35);
-  
-  /* Combined Animations: Slide entrance from right, then start smooth up/down float */
-  animation: backBtnSlideIn 0.4s ease-out exact, bhagwaFloat 3s ease-in-out infinite 0.4s;
-}
+          
+          .back-btn {
+            background: linear-gradient(135deg, #ff9933 0%, #ff6600 100%) !important;
+            border: none !important;
+            color: #fff !important;
+            padding: 8px 22px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.35);
+            animation: backBtnSlideIn 0.4s ease-out exact, bhagwaFloat 3s ease-in-out infinite 0.4s;
+          }
 
-.back-btn:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
-  background: linear-gradient(135deg, #ffaa44 0%, #ff5500 100%) !important;
-}
+          .back-btn:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
+            background: linear-gradient(135deg, #ffaa44 0%, #ff5500 100%) !important;
+          }
 
-/* Up and Down Smooth Floating Animation */
-@keyframes bhagwaFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
+          @keyframes bhagwaFloat {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+          }
 
-/* Initial Entrance Animation */
-@keyframes backBtnSlideIn {
-  from {
-    opacity: 0;
-    transform: translateX(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+          @keyframes backBtnSlideIn {
+            from {
+              opacity: 0;
+              transform: translateX(15px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
           .bridge-area {
             position: absolute;
             bottom: -15px;
@@ -1001,7 +995,6 @@ const Navbar = () => {
 
         .book-blue-btn {
           background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
-          // background-color:#105162;
           color: #fff !important;
           padding: 12px 32px !important;
           border-radius: 50px !important;
