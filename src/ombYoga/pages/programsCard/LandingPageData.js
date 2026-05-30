@@ -295,8 +295,8 @@ export const LANDING_LOCATION_DATA = {
     facts: ["Yoga Alliance Certified", "Vegetarian Meals Included", "Cultural Excursions", "Visa Assistance"],
     programsByCategoryId: {
       "multi-style": [
-        { path: "50hr", hours: "50", title: "6 Days 50 Hours Primary Series Foundations", price: "$450", duration: "6 days", badge: "Intense Shala Setup", certification: "YACEP" },
-        { path: "100hr", hours: "100", title: "10 Days 100 Hours Classical Ashtanga Course", price: "$850", duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
+        // { path: "50hr", hours: "50", title: "6 Days 50 Hours Primary Series Foundations", price: "$450", duration: "6 days", badge: "Intense Shala Setup", certification: "YACEP" },
+        // { path: "100hr", hours: "100", title: "10 Days 100 Hours Classical Ashtanga Course", price: "$850", duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
         { path: "200hr", hours: "200", title: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course", price: "$1,199", duration: "20 days", badge: "Authentic Shala", certification: "RYT-200" },
         { path: "300hr", hours: "300", title: "300 Hour Yoga Teacher Training Course", price: "$1,899", duration: "26 days", badge: "Intense Practice", certification: "RYT-300" },
         { path: "500hr", hours: "500", title: "500 Hour Yoga Teacher Training Course", price: "$2,899", duration: "56 days", badge: "Ultimate Shala Mastery", certification: "RYT-500" },
