@@ -349,7 +349,7 @@ const Accordion = () => {
 .question-text {
   flex: 1;
   font-size: clamp(14px, 1.1vw, 20px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   color: #1e1e1c;
 }
