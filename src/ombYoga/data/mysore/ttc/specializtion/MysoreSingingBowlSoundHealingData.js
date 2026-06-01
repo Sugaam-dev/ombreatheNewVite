@@ -14,8 +14,8 @@ export const MysoreSingingBowlSoundHealingData = {
 
     hero: {
       location: "Mysore · Singing Bowl & Sound Healing Course",
-      title: "Sound Healing Course",
-      highlight: "3 Days Intensive Training ",
+      title: "Sound Healing Training Course",
+      highlight: "3 Days ",
       subtitle:
         "The bowl is a symbol of emptiness and absolute receptivity. Master intense acoustic vibrational therapies, chakra balancing, sound massage, and water frequency training in Mysuru.",
       price: "$250",

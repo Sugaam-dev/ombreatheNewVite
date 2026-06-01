@@ -14,8 +14,8 @@ export const AerialYogaData = {
 
     hero: {
       location: "Ubud, Bali · 5-Day Aerial Yoga",
-      title: "Take Your Yoga to",
-      highlight: "New Heights",
+      title: "Aerial Yoga Teacher Training in Bali",
+      highlight: "5 Days ",
       subtitle:
         "5-day aerial yoga teacher training in Bali — hammock techniques, alignment, safety & YACEP certification",
       price: "$550",

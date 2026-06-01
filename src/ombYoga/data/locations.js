@@ -45,7 +45,7 @@ export const PROGRAM_LINKS = {
 
     ],
     specialization: [
-      {path:"mysoresingingbowlsoundhealing",label:"3 Days Intensive Training Sound Healing Course"},
+      {path:"mysoresingingbowlsoundhealing",label:"3 Days Sound Healing Training Course"},
       {path:"mysore7daychairyoga",label:"7 Day Chair Yoga Teacher Training Course"},
       {path:"mysore7daywheelyoga",label:"7 Day wheel Yoga Teacher Training Course"},
     ],
@@ -68,16 +68,16 @@ export const PROGRAM_LINKS = {
     ],
     shortCourses: [
       { path: "yinyoga",      label: "6 Days 50 Hours Yin Yoga Course" },
-      { path: "prenatalyoga", label: "Sacred Prenatal Yoga TTC" },
+      { path: "prenatalyoga", label: "85-Hours Prenatal Yoga TTC in Bali" },
       { path: "aerialyoga",   label: "5 Days Aerial Yoga Course" },
       { path: "acroyoga",     label: "5 Days Acro Yoga Course" },
     ],
     specialization: [
       { path: "soundhealing", label: "Vedic Sound Healing Level 1 & 2" },
-      { path: "100houryogatherapyayurve", label: "Bali 100Hours Yoga Therapy Ayurveda" },
+      { path: "100houryogatherapyayurve", label: "Bali 100 Hours Yoga Therapy Ayurveda" },
       { path: "ayurvedictreatmentttc", label: "Ayurvedic Treatment In Bali" },
-      { path: "ayurveda5hoursabhyangam", label: "Ayurveda Massage Course In Bali" },
-      { path: "wellness-retreat", label: "Yoga & Wellness Detox Retreat" }
+      { path: "ayurveda5hoursabhyangam", label: "Abhyangam Massage Training Course In Bali" },
+      // { path: "wellness-retreat", label: "Yoga & Wellness Detox Retreat" }
     ],
   },
 

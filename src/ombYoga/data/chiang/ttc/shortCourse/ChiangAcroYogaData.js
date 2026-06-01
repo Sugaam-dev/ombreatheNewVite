@@ -13,11 +13,11 @@ export const ChiangAcroYogaData = {
     },
 
     hero: {
-      location: "Ubud, Bali · 5-Day Acro Yoga",
-      title: "Rise Together Through",
-      highlight: "Acro Yoga ",
+      location: " Chiang Mai · 5-Day Acro Yoga",
+      title: "Acro Yoga teacher training in Chiang Mai",
+      highlight: "5-day ",
       subtitle:
-        "5-day Acro Yoga teacher training in Bali — yoga, acrobatics, Thai massage & YACEP certification",
+        "5-day Acro Yoga teacher training in Chiang Mai — yoga, acrobatics, Thai massage & YACEP certification",
       price: "$799",
       priceNote: "Includes stay, meals & YACEP certificate",
       bgImage:
@@ -69,7 +69,7 @@ export const ChiangAcroYogaData = {
       title: "Join our",
       highlight: "Acro Yoga adventure",
       subtitle:
-        "Combine yoga, acrobatics and Thai massage in Bali — build trust, strength and community through the dynamic art of Acro Yoga.",
+        "Combine yoga, acrobatics and Thai massage in Chiang Mai — build trust, strength and community through the dynamic art of Acro Yoga.",
       stats: [
         { value: "5 Days", label: "Intensive Training", icon: "clock" },
         { value: "Acro Yoga", label: "Partner Practice", icon: "heart" },
@@ -80,7 +80,7 @@ export const ChiangAcroYogaData = {
       bottomText1:
         "Our Acro Yoga training covers basing, flying, spotting, sequencing and teaching methodology in 5 intensive days.",
       bottomText2:
-        "Connect with like-minded individuals from around the world and build lifelong friendships in Bali's stunning setting.",
+        "Connect with like-minded individuals from around the world and build lifelong friendships in Chiang Mai's stunning setting.",
     },
   },
 
@@ -95,7 +95,7 @@ export const ChiangAcroYogaData = {
     },
 
     content: {
-      eyebrow: "Bali Acro Yoga Experience",
+      eyebrow: "Chiang Mai Acro Yoga Experience",
       title: "Join our",
       highlight: "dynamic",
       duration: "5-day",
@@ -123,8 +123,8 @@ export const ChiangAcroYogaData = {
         },
         {
           icon: "compass",
-          title: "Bali Cultural Experience",
-          sub: "Beaches, rice terraces & vibrant Balinese culture",
+          title: "Chiang Mai Cultural Experience",
+          sub: "Beaches, rice terraces & vibrant Chiang Mainese culture",
         },
       ],
       images: {
@@ -153,7 +153,7 @@ export const ChiangAcroYogaData = {
         "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&q=80",
       quoteStart: "Rise together and",
       highlight: "transform through the art of Acro Yoga",
-      quoteEnd: "in the vibrant heart of Bali",
+      quoteEnd: "in the vibrant heart of Chiang Mai",
       description:
         "Acro Yoga combines yoga, acrobatics and Thai massage — a dynamic partner practice that builds trust, strength, and community. Embark on a journey of physical and emotional growth and emerge as a certified Acro Yoga teacher ready to share this exhilarating practice with the world.",
     },
@@ -344,7 +344,7 @@ export const ChiangAcroYogaData = {
       cta: {
         title: "Become a Certified Acro Yoga Teacher",
         desc:
-          "Rise together through Acro Yoga teacher training in Bali — earn your YACEP certification in 5 dynamic days.",
+          "Rise together through Acro Yoga teacher training in Chiang Mai — earn your YACEP certification in 5 dynamic days.",
         buttonText: "Start Your Journey",
           url:"/contact",
       },
@@ -413,9 +413,9 @@ export const ChiangAcroYogaData = {
     content: {
       eyebrow: "Excursions",
       title: "Explore",
-      highlight: "Bali Experiences",
+      highlight: "Chiang Mai Experiences",
       subtitle:
-        "Immerse yourself in Bali's stunning landscapes and vibrant culture — beaches, rice terraces, temples and more.",
+        "Immerse yourself in Chiang Mai's stunning landscapes and vibrant culture — beaches, rice terraces, temples and more.",
 
       excursions: [
         {
@@ -475,13 +475,13 @@ export const ChiangAcroYogaData = {
           duration: "3 Hours",
           icon: "camera",
           img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
-          desc: "Explore local markets, art galleries & Balinese handicrafts.",
+          desc: "Explore local markets, art galleries & Chiang Mainese handicrafts.",
           highlights: ["Local markets", "Art & craft", "Shopping"],
         },
       ],
 
       bottom: {
-        title: "Bali cultural experience included ✨",
+        title: "Chiang Mai cultural experience included ✨",
         desc: "Beaches, temples, rice terraces & vibrant local life",
       },
     },
@@ -580,7 +580,7 @@ export const ChiangAcroYogaData = {
 
     content: {
       title: "Your",
-      highlight: "Stay in Bali",
+      highlight: "Stay in Chiang Mai",
       subtitle:
         "Clean, comfortable accommodation with garden area, outdoor lounge, high-speed WiFi and laundry facilities.",
 
@@ -664,26 +664,26 @@ export const ChiangAcroYogaData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Bali",
+      highlight: "heart of Chiang Mai",
       subtitle:
-        "Located in Ubud — Bali's yoga capital — surrounded by lush landscapes, stunning beaches and vibrant Balinese culture.",
+        "Located in Ubud — Chiang Mai's yoga capital — surrounded by lush landscapes, stunning beaches and vibrant Chiang Mainese culture.",
 
-      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+      address: "No 77 A, Jl. Bisma,  Kecamatan  Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
 
       mapEmbed:
-        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Bali+Indonesia&output=embed",
+        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Chiang Mai+Indonesia&output=embed",
 
       spots: [
         {
           name: "Ubud Center",
           distance: "5 min walk",
-          desc: "Heart of Bali's culture with cafés, markets & temples.",
+          desc: "Heart of Chiang Mai's culture with cafés, markets & temples.",
           icon: "globe",
         },
         {
           name: "Rice Terraces",
           distance: "15 min drive",
-          desc: "Famous green landscapes of Bali.",
+          desc: "Famous green landscapes of Chiang Mai.",
           icon: "leaf",
         },
         {
@@ -730,16 +730,16 @@ export const ChiangAcroYogaData = {
       title: "Acro Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's Acro Yoga teacher training in Bali.",
+        "Find answers to the most common questions about World Peace Yoga School's Acro Yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
-          question: "What is an Acro Yoga teacher training in Bali?",
+          question: "What is an Acro Yoga teacher training in Chiang Mai?",
           answer:
-            "Acro Yoga Teacher Training is a dynamic partner-based practice combining traditional yoga, acrobatics, and therapeutic techniques. You will learn basing, flying and spotting techniques, safety protocols, communication principles, sequencing and teaching methodology over 5 intensive days in Bali.",
+            "Acro Yoga Teacher Training is a dynamic partner-based practice combining traditional yoga, acrobatics, and therapeutic techniques. You will learn basing, flying and spotting techniques, safety protocols, communication principles, sequencing and teaching methodology over 5 intensive days in Chiang Mai.",
         },
         {
-          question: "Who is eligible for Acro Yoga teacher training in Bali?",
+          question: "Who is eligible for Acro Yoga teacher training in Chiang Mai?",
           answer:
             "The course is suitable for yoga enthusiasts, teachers and instructors with a basic Acro Yoga practice. A genuine interest in partner yoga and self-motivation are the key requirements. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
         },
@@ -774,14 +774,14 @@ export const ChiangAcroYogaData = {
             "In case of an emergency you may miss a class, but you must inform your teacher beforehand so arrangements can be made. Regular attendance is essential — if you complete only half the course, the certificate will not be provided. You can complete any missed content through our online course facility.",
         },
         {
-          question: "How can I book the Acro Yoga teacher training in Bali?",
+          question: "How can I book the Acro Yoga teacher training in Chiang Mai?",
           answer:
             "Visit our website and click the Apply Now button to complete the registration form. For specific questions about dates or rates, you may also contact us through our Contact Us section for instant assistance.",
         },
         {
-          question: "Why choose World Peace Yoga School in Bali for Acro Yoga?",
+          question: "Why choose World Peace Yoga School in Chiang Mai for Acro Yoga?",
           answer:
-            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Balinese environment. The school provides YACEP certification, small class sizes for personalized attention, rigorous safety emphasis, a comprehensive curriculum and a stunning Bali location that enhances learning and community building.",
+            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides YACEP certification, small class sizes for personalized attention, rigorous safety emphasis, a comprehensive curriculum and a stunning Chiang Mai location that enhances learning and community building.",
         },
       ],
     },

@@ -13,11 +13,11 @@ export const ChiangYinYogaData = {
     },
 
     hero: {
-      location: "Ubud, Bali · Yin Yoga Teacher Training",
-      title: "Discover the Art of",
-      highlight: "Yin Yoga ",
+      location: " Chiang Mai · Yin Yoga Teacher Training",
+      title: "Yin yoga teacher training in Chiang Mai",
+      highlight: "6 Days ",
       subtitle:
-        "Yin yoga teacher training in Bali — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
+        "Yin yoga teacher training in Chiang Mai — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
       price: "$650",
       priceNote: "Includes stay, meals & Yoga Alliance certificate",
       bgImage:
@@ -69,7 +69,7 @@ export const ChiangYinYogaData = {
       title: "Join our",
       highlight: "Yin Yoga awakening",
       subtitle:
-        "Experience authentic Yin Yoga in Bali — meridians, connective tissue release, deep relaxation & Yoga Alliance certified teacher training.",
+        "Experience authentic Yin Yoga in Chiang Mai — meridians, connective tissue release, deep relaxation & Yoga Alliance certified teacher training.",
       stats: [
         { value: "5 Days", label: "Intensive Training", icon: "clock" },
         { value: "Yin Yoga", label: "Specialist Program", icon: "heart" },
@@ -80,7 +80,7 @@ export const ChiangYinYogaData = {
       bottomText1:
         "Our Yin Yoga training is designed to give you a solid foundation in Yin Yoga — from passive stretching to meridian theory and teaching methodology.",
       bottomText2:
-        "Learn in Bali's beautiful and serene setting where spiritual energy supports deep relaxation and personal transformation.",
+        "Learn in Chiang Mai's beautiful and serene setting where spiritual energy supports deep relaxation and personal transformation.",
     },
   },
 
@@ -95,7 +95,7 @@ export const ChiangYinYogaData = {
     },
 
     content: {
-      eyebrow: "Bali Yin Yoga Experience",
+      eyebrow: "Chiang Mai Yin Yoga Experience",
       title: "Join our",
       highlight: "immersive",
       duration: "6-day",
@@ -123,8 +123,8 @@ export const ChiangYinYogaData = {
         },
         {
           icon: "compass",
-          title: "Bali Cultural Experience",
-          sub: "Temples, beaches & Balinese nature",
+          title: "Chiang Mai Cultural Experience",
+          sub: "Temples, beaches & Chiang Mainese nature",
         },
       ],
       images: {
@@ -153,7 +153,7 @@ export const ChiangYinYogaData = {
         "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=1600&q=80",
       quoteStart: "Release tension, restore balance and",
       highlight: "awaken through the stillness of Yin Yoga",
-      quoteEnd: "in the serene heart of Bali",
+      quoteEnd: "in the serene heart of Chiang Mai",
       description:
         "Yin Yoga focuses on the connective tissues — ligaments, tendons and fascia — through passive stretching and deep relaxation. By becoming a certified Yin Yoga teacher, you'll share the transformative power of stillness, mindfulness and gentle release with others.",
     },
@@ -344,7 +344,7 @@ export const ChiangYinYogaData = {
       cta: {
         title: "Become a Certified Yin Yoga Teacher",
         desc:
-          "Master the art of passive stretching and deep relaxation through Yin Yoga teacher training in Bali.",
+          "Master the art of passive stretching and deep relaxation through Yin Yoga teacher training in Chiang Mai.",
         buttonText: "Start Your Journey",
           url:"/contact",
       },
@@ -413,9 +413,9 @@ export const ChiangYinYogaData = {
     content: {
       eyebrow: "Excursions",
       title: "Explore",
-      highlight: "Bali Experiences",
+      highlight: "Chiang Mai Experiences",
       subtitle:
-        "Discover Bali's temples, rice terraces, beaches & cultural landmarks during your free time in Ubud.",
+        "Discover Chiang Mai's temples, rice terraces, beaches & cultural landmarks during your free time in Ubud.",
 
       excursions: [
         {
@@ -475,13 +475,13 @@ export const ChiangYinYogaData = {
           duration: "3 Hours",
           icon: "camera",
           img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
-          desc: "Explore local markets, art galleries & Balinese handicrafts.",
+          desc: "Explore local markets, art galleries & Chiang Mainese handicrafts.",
           highlights: ["Local markets", "Art & craft", "Shopping"],
         },
       ],
 
       bottom: {
-        title: "Free time to explore Bali ✨",
+        title: "Free time to explore Chiang Mai ✨",
         desc: "Hike, visit temples, relax on beaches or shop in local markets",
       },
     },
@@ -580,7 +580,7 @@ export const ChiangYinYogaData = {
 
     content: {
       title: "Your",
-      highlight: "Stay in Bali",
+      highlight: "Stay in Chiang Mai",
       subtitle:
         "Clean, comfortable accommodation with garden area, outdoor lounge, high-speed WiFi and laundry facilities.",
 
@@ -664,26 +664,26 @@ export const ChiangYinYogaData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Bali",
+      highlight: "heart of Chiang Mai",
       subtitle:
-        "Located in Ubud — Bali's yoga capital — surrounded by jungle, rice paddies, temples and serene natural beauty.",
+        "Located in Ubud — Chiang Mai's yoga capital — surrounded by jungle, rice paddies, temples and serene natural beauty.",
 
-      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+      address: "No 77 A, Jl. Bisma,  Kecamatan  Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
 
       mapEmbed:
-        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Bali+Indonesia&output=embed",
+        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Chiang Mai+Indonesia&output=embed",
 
       spots: [
         {
           name: "Ubud Center",
           distance: "5 min walk",
-          desc: "Heart of Bali's culture with cafés, markets & temples.",
+          desc: "Heart of Chiang Mai's culture with cafés, markets & temples.",
           icon: "globe",
         },
         {
           name: "Rice Terraces",
           distance: "15 min drive",
-          desc: "Famous green landscapes of Bali.",
+          desc: "Famous green landscapes of Chiang Mai.",
           icon: "leaf",
         },
         {
@@ -730,7 +730,7 @@ export const ChiangYinYogaData = {
       title: "Yin Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's Yin Yoga Teacher Training in Bali.",
+        "Find answers to the most common questions about World Peace Yoga School's Yin Yoga Teacher Training in Chiang Mai.",
 
       faqs: [
         {
@@ -785,7 +785,7 @@ export const ChiangYinYogaData = {
           question: "What can I do during my free time?",
           answer: [
             "Explore the local area — temples, ashrams & local markets",
-            "Relax on Bali's beautiful beaches",
+            "Relax on Chiang Mai's beautiful beaches",
             "Hike in nature or trek to nearby waterfalls",
             "Participate in surfing, diving or other adventure activities",
             "Visit spa for treatments, massages or local yoga classes",

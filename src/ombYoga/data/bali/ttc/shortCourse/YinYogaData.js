@@ -14,8 +14,8 @@ export const YinYogaData = {
 
     hero: {
       location: "Ubud, Bali · Yin Yoga Teacher Training",
-      title: "Discover the Art of",
-      highlight: "Yin Yoga",
+      title: "Yin yoga teacher training in Bali",
+      highlight: "6 Days ",
       subtitle:
         "Yin yoga teacher training in Bali — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
       price: "$650",

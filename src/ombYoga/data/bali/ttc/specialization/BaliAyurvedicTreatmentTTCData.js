@@ -14,8 +14,8 @@ export const BaliAyurvedicTreatmentTTCData = {
 
     hero: {
       location: "Bali · Ayurvedic Treatment & Massage Therapist TTC",
-      title: "Ayurveda Massage TTC",
-      highlight: "12 Days Advanced Training",
+      title: "Advanced Training Ayurveda Massage TTC",
+      highlight: "12 Days ",
       subtitle:
         "Master the oldest Ayurveda massage rituals and therapeutic oil techniques practiced for thousands of years to naturally balance Vata, Pitta, and Kapha doshas.",
       price: "$1450",

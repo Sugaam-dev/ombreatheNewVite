@@ -13,11 +13,11 @@ export const ChiangAerialYogaData = {
     },
 
     hero: {
-      location: "Ubud, Bali · 5-Day Aerial Yoga",
-      title: "Take Your Yoga to",
-      highlight: "New Heights ",
+      location: " Chiang Mai · 5-Day Aerial Yoga",
+      title: "Aerial yoga teacher training in Chiang Mai",
+      highlight: "5-day ",
       subtitle:
-        "5-day aerial yoga teacher training in Bali — hammock techniques, alignment, safety & YACEP certification",
+        "5-day aerial yoga teacher training in Chiang Mai — hammock techniques, alignment, safety & YACEP certification",
       price: "$550",
       priceNote: "Includes stay, meals & YACEP certificate",
       bgImage:
@@ -69,7 +69,7 @@ export const ChiangAerialYogaData = {
       title: "Join our",
       highlight: "aerial yoga adventure",
       subtitle:
-        "Soar through the air, connect with your inner self and emerge as a certified aerial yoga teacher in Bali's stunning natural setting.",
+        "Soar through the air, connect with your inner self and emerge as a certified aerial yoga teacher in Chiang Mai's stunning natural setting.",
       stats: [
         { value: "5 Days", label: "Intensive Training", icon: "clock" },
         { value: "Aerial", label: "Specialist Program", icon: "sparkles" },
@@ -80,7 +80,7 @@ export const ChiangAerialYogaData = {
       bottomText1:
         "Our aerial yoga training covers hammock techniques, safety, anatomy, sequencing and teaching methodology in 5 intensive days.",
       bottomText2:
-        "Practice in Bali's lush jungles and tranquil tropical ambiance — the perfect environment for this exhilarating journey.",
+        "Practice in Chiang Mai's lush jungles and tranquil tropical ambiance — the perfect environment for this exhilarating journey.",
     },
   },
 
@@ -95,7 +95,7 @@ export const ChiangAerialYogaData = {
     },
 
     content: {
-      eyebrow: "Bali Aerial Yoga Experience",
+      eyebrow: "Chiang Mai Aerial Yoga Experience",
       title: "Join our",
       highlight: "exhilarating",
       duration: "6-day",
@@ -123,8 +123,8 @@ export const ChiangAerialYogaData = {
         },
         {
           icon: "compass",
-          title: "Bali Cultural Experience",
-          sub: "Temples, beaches & vibrant Balinese culture",
+          title: "Chiang Mai Cultural Experience",
+          sub: "Temples, beaches & vibrant Chiang Mainese culture",
         },
       ],
       images: {
@@ -153,7 +153,7 @@ export const ChiangAerialYogaData = {
         "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1600&q=80",
       quoteStart: "Soar through the air and",
       highlight: "discover your inner freedom through aerial yoga",
-      quoteEnd: "in the breathtaking beauty of Bali",
+      quoteEnd: "in the breathtaking beauty of Chiang Mai",
       description:
         "Aerial yoga combines traditional yoga postures with the support of aerial hammocks and silks — building strength, flexibility and confidence both in and out of the hammock. Emerge as a certified aerial yoga teacher ready to share this unique and exhilarating practice with the world.",
     },
@@ -344,7 +344,7 @@ export const ChiangAerialYogaData = {
       cta: {
         title: "Become a Certified Aerial Yoga Teacher",
         desc:
-          "Soar to new heights through aerial yoga teacher training in Bali — earn your YACEP certification in 5 days.",
+          "Soar to new heights through aerial yoga teacher training in Chiang Mai — earn your YACEP certification in 5 days.",
         buttonText: "Start Your Journey",
           url:"/contact",
       },
@@ -413,9 +413,9 @@ export const ChiangAerialYogaData = {
     content: {
       eyebrow: "Excursions",
       title: "Explore",
-      highlight: "Bali Experiences",
+      highlight: "Chiang Mai Experiences",
       subtitle:
-        "Immerse yourself in Bali's vibrant culture — explore temples, beaches and stunning natural landscapes during free time.",
+        "Immerse yourself in Chiang Mai's vibrant culture — explore temples, beaches and stunning natural landscapes during free time.",
 
       excursions: [
         {
@@ -475,13 +475,13 @@ export const ChiangAerialYogaData = {
           duration: "3 Hours",
           icon: "camera",
           img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
-          desc: "Explore local markets, art galleries & Balinese handicrafts.",
+          desc: "Explore local markets, art galleries & Chiang Mainese handicrafts.",
           highlights: ["Local markets", "Art & craft", "Shopping"],
         },
       ],
 
       bottom: {
-        title: "Bali cultural experience included ✨",
+        title: "Chiang Mai cultural experience included ✨",
         desc: "Explore temples, nature & local life during free time",
       },
     },
@@ -580,7 +580,7 @@ export const ChiangAerialYogaData = {
 
     content: {
       title: "Your",
-      highlight: "Stay in Bali",
+      highlight: "Stay in Chiang Mai",
       subtitle:
         "Clean, comfortable accommodation with garden area, outdoor lounge, high-speed WiFi and laundry facilities.",
 
@@ -664,26 +664,26 @@ export const ChiangAerialYogaData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Bali",
+      highlight: "heart of Chiang Mai",
       subtitle:
-        "Located in Ubud — Bali's yoga capital — surrounded by lush jungles, tranquil beaches and a peaceful tropical ambiance.",
+        "Located in Ubud — Chiang Mai's yoga capital — surrounded by lush jungles, tranquil beaches and a peaceful tropical ambiance.",
 
-      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+      address: "No 77 A, Jl. Bisma,  Kecamatan  Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
 
       mapEmbed:
-        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Bali+Indonesia&output=embed",
+        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Chiang Mai+Indonesia&output=embed",
 
       spots: [
         {
           name: "Ubud Center",
           distance: "5 min walk",
-          desc: "Heart of Bali's culture with cafés, markets & temples.",
+          desc: "Heart of Chiang Mai's culture with cafés, markets & temples.",
           icon: "globe",
         },
         {
           name: "Rice Terraces",
           distance: "15 min drive",
-          desc: "Famous green landscapes of Bali.",
+          desc: "Famous green landscapes of Chiang Mai.",
           icon: "leaf",
         },
         {
@@ -730,16 +730,16 @@ export const ChiangAerialYogaData = {
       title: "Aerial Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's aerial yoga teacher training in Bali.",
+        "Find answers to the most common questions about World Peace Yoga School's aerial yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
-          question: "What is an aerial yoga teacher training in Bali?",
+          question: "What is an aerial yoga teacher training in Chiang Mai?",
           answer:
             "The aerial yoga teacher training course teaches you about aerial asanas, flexibility, anatomy, injury prevention, safety techniques and proper alignment — all while using aerial hammocks or silks as a support tool. You will gain the knowledge and skills needed to become a certified aerial yoga teacher.",
         },
         {
-          question: "Who is eligible for aerial yoga teacher training in Bali?",
+          question: "Who is eligible for aerial yoga teacher training in Chiang Mai?",
           answer:
             "The course is suitable for yoga enthusiasts, teachers and instructors who have a basic aerial yoga practice. A genuine interest in aerial yoga and self-motivation are the key requirements. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
         },
@@ -774,14 +774,14 @@ export const ChiangAerialYogaData = {
             "In case of an emergency you may miss a class, but you must inform your teacher beforehand so arrangements can be made. Regular attendance is essential — if you complete only half the course, the certificate will not be provided. You can complete any missed content through our online course facility.",
         },
         {
-          question: "How can I book the aerial yoga teacher training in Bali?",
+          question: "How can I book the aerial yoga teacher training in Chiang Mai?",
           answer:
             "Visit our website and click the Apply Now button to complete the registration form. For specific questions about dates or rates, you may also contact us through our Contact Us section for instant assistance.",
         },
         {
-          question: "Why choose World Peace Yoga School in Bali for aerial yoga?",
+          question: "Why choose World Peace Yoga School in Chiang Mai for aerial yoga?",
           answer:
-            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Balinese environment. The school provides Yoga Alliance certification, small class sizes for personalized attention, a comprehensive curriculum, and a stunning Bali location that enhances your learning and self-discovery experience.",
+            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides Yoga Alliance certification, small class sizes for personalized attention, a comprehensive curriculum, and a stunning Chiang Mai location that enhances your learning and self-discovery experience.",
         },
       ],
     },

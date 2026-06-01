@@ -14,8 +14,8 @@ export const Bali100HourYogaTherapyAyurvedaData = {
 
     hero: {
       location: "Bali · 100-Hour Yoga Therapy & Ayurveda Wellness TTC",
-      title: "Yoga Therapy TTC",
-      highlight: "10 Days of Immersions",
+      title: "Yoga Therapy & Ayurveda Wellness TTC",
+      highlight: "10 Days ",
       subtitle:
         "An advanced post-TTC program for yoga professionals. Boost your career as a wellness coach, healer, and therapist in the spiritual heart of Ubud.",
       price: "$1299",

@@ -14,8 +14,8 @@ export const AcroYogaData = {
 
     hero: {
       location: "Ubud, Bali · 5-Day Acro Yoga",
-      title: "Rise Together Through",
-      highlight: "Acro Yoga",
+      title: "5-day Acro Yoga teacher training in Bali",
+      highlight: "5 Days ",
       subtitle:
         "5-day Acro Yoga teacher training in Bali — yoga, acrobatics, Thai massage & YACEP certification",
       price: "$799",

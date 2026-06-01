@@ -300,8 +300,8 @@ export const LANDING_LOCATION_DATA = {
         { path: "200hr", hours: "200", title: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course", price: "$1,199", duration: "20 days", badge: "Authentic Shala", certification: "RYT-200" },
         { path: "300hr", hours: "300", title: "300 Hour Yoga Teacher Training Course", price: "$1,899", duration: "26 days", badge: "Intense Practice", certification: "RYT-300" },
         { path: "500hr", hours: "500", title: "500 Hour Yoga Teacher Training Course", price: "$2,899", duration: "56 days", badge: "Ultimate Shala Mastery", certification: "RYT-500" },
-        { path: "mysore21dayashtanga", hours: "200", title: "21-Day Ashtanga Yoga Teacher Training Course", price: "$1,250", duration: "21 days", badge: "Lineage Focused", certification: "RYT-200" },
-        { path: "mysore21dayhatha", hours: "200", title: "21-Day Hatha Yoga Teacher Training Course", price: "$1,250", duration: "21 days", badge: "Classic Foundations", certification: "RYT-200" }
+        { path: "mysore21dayashtanga", hours: "N/A", title: "21-Day Ashtanga Yoga Teacher Training Course", price: "$1,250", duration: "21 days", badge: "Lineage Focused", certification: "RYT-200" },
+        { path: "mysore21dayhatha", hours: "N/A", title: "21-Day Hatha Yoga Teacher Training Course", price: "$1,250", duration: "21 days", badge: "Classic Foundations", certification: "RYT-200" }
       ],
       "kundalini": [],
       "short": [

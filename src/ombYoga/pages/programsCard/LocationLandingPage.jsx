@@ -271,7 +271,7 @@ const ProgramCard = React.memo(({ prog, location, accentColor, onNavigate }) => 
   >
     <div className="prog-card__top">
       <span className="prog-card__hours">
-        {prog.hours === "N/A" ? "🌿" : prog.hours}
+        {prog.hours === "N/A" ? "N/A" : prog.hours}
         {prog.hours !== "N/A" && <small>hr</small>}
       </span>
       <span className="prog-card__badge">{prog.badge}</span>

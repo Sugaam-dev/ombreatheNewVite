@@ -14,8 +14,8 @@ export const Mysore7DayChairYogaData = {
 
     hero: {
       location: "Mysore · 7-Day Chair Yoga Teacher Training",
-      title: "Chair Yoga TTC",
-      highlight: "7 Days Intensive ",
+      title: "Chair Yoga Teacher Training Course",
+      highlight: "7 Days ",
       subtitle:
         "Turn the symbol of a sedentary life into an elegant tool for wellness. Master smart structural alignments, accessible adaptations, and corporate desk-break mechanics.",
       price: "$500",

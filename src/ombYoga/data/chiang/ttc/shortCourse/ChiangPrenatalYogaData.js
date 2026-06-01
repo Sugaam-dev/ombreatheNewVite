@@ -13,11 +13,11 @@ export const ChiangPrenatalYogaData = {
     },
 
     hero: {
-      location: "Ubud, Bali · 85-Hour Prenatal Yoga",
-      title: "Empower Mothers Through",
-      highlight: "Prenatal Yoga ",
+      location: " Chiang Mai · 85-Hour Prenatal Yoga",
+      title: "prenatal yoga teacher training in Chiang Mai",
+      highlight: "85-hour ",
       subtitle:
-        "85-hour prenatal yoga teacher training in Bali — pregnancy anatomy, safe sequencing & Yoga Alliance certification",
+        "85-hour prenatal yoga teacher training in Chiang Mai — pregnancy anatomy, safe sequencing & Yoga Alliance certification",
       price: "$650",
       priceNote: "Includes stay, meals & Yoga Alliance certificate",
       bgImage:
@@ -69,7 +69,7 @@ export const ChiangPrenatalYogaData = {
       title: "Join our",
       highlight: "prenatal yoga journey",
       subtitle:
-        "Learn to support expectant mothers through safe and nurturing prenatal yoga in Bali — pregnancy anatomy, breathwork & certified teacher training.",
+        "Learn to support expectant mothers through safe and nurturing prenatal yoga in Chiang Mai — pregnancy anatomy, breathwork & certified teacher training.",
       stats: [
         { value: "85 Hrs", label: "Training Hours", icon: "clock" },
         { value: "Prenatal", label: "Specialist Program", icon: "heart" },
@@ -80,7 +80,7 @@ export const ChiangPrenatalYogaData = {
       bottomText1:
         "Our 85-hour prenatal YTTC is a comprehensive program covering pregnancy anatomy, safe asana, breathwork, meditation and teaching methodology.",
       bottomText2:
-        "Learn in Bali's nurturing spiritual environment — perfect for deepening compassion, care and holistic teaching skills.",
+        "Learn in Chiang Mai's nurturing spiritual environment — perfect for deepening compassion, care and holistic teaching skills.",
     },
   },
 
@@ -95,7 +95,7 @@ export const ChiangPrenatalYogaData = {
     },
 
     content: {
-      eyebrow: "Bali Prenatal Yoga Experience",
+      eyebrow: "Chiang Mai Prenatal Yoga Experience",
       title: "Join our",
       highlight: "transformative",
       duration: "6-day",
@@ -123,8 +123,8 @@ export const ChiangPrenatalYogaData = {
         },
         {
           icon: "compass",
-          title: "Bali Cultural Experience",
-          sub: "Temples, beaches & Balinese nature",
+          title: "Chiang Mai Cultural Experience",
+          sub: "Temples, beaches & Chiang Mainese nature",
         },
       ],
       images: {
@@ -153,7 +153,7 @@ export const ChiangPrenatalYogaData = {
         "https://images.unsplash.com/photo-1609619385002-f40f1df9b7f3?w=1600&q=80",
       quoteStart: "Support expectant mothers and",
       highlight: "nurture new life through prenatal yoga",
-      quoteEnd: "in the sacred heart of Bali",
+      quoteEnd: "in the sacred heart of Chiang Mai",
       description:
         "Prenatal yoga is a valuable tool to help pregnant women navigate the immense physical and emotional changes of pregnancy. As a certified prenatal yoga teacher, you will create safe and nurturing spaces for expectant mothers to practice yoga and prepare for childbirth and motherhood.",
     },
@@ -344,7 +344,7 @@ export const ChiangPrenatalYogaData = {
       cta: {
         title: "Become a Certified Prenatal Yoga Teacher",
         desc:
-          "Support expectant mothers through safe and nurturing prenatal yoga — become a certified teacher in Bali.",
+          "Support expectant mothers through safe and nurturing prenatal yoga — become a certified teacher in Chiang Mai.",
         buttonText: "Start Your Journey",
           url:"/contact",
       },
@@ -413,9 +413,9 @@ export const ChiangPrenatalYogaData = {
     content: {
       eyebrow: "Excursions",
       title: "Explore",
-      highlight: "Bali Experiences",
+      highlight: "Chiang Mai Experiences",
       subtitle:
-        "Rest and explore Bali's temples, beaches, markets & natural beauty on your free Sundays.",
+        "Rest and explore Chiang Mai's temples, beaches, markets & natural beauty on your free Sundays.",
 
       excursions: [
         {
@@ -475,13 +475,13 @@ export const ChiangPrenatalYogaData = {
           duration: "3 Hours",
           icon: "camera",
           img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
-          desc: "Explore local markets, art galleries & Balinese handicrafts.",
+          desc: "Explore local markets, art galleries & Chiang Mainese handicrafts.",
           highlights: ["Local markets", "Art & craft", "Shopping"],
         },
       ],
 
       bottom: {
-        title: "Free Sundays to explore Bali ✨",
+        title: "Free Sundays to explore Chiang Mai ✨",
         desc: "Hike, visit temples, relax on beaches or shop in local markets",
       },
     },
@@ -580,7 +580,7 @@ export const ChiangPrenatalYogaData = {
 
     content: {
       title: "Your",
-      highlight: "Stay in Bali",
+      highlight: "Stay in Chiang Mai",
       subtitle:
         "Clean, comfortable accommodation with garden area, outdoor lounge, high-speed WiFi and laundry facilities.",
 
@@ -664,26 +664,26 @@ export const ChiangPrenatalYogaData = {
     content: {
       eyebrow: "Location",
       title: "Spiritual",
-      highlight: "heart of Bali",
+      highlight: "heart of Chiang Mai",
       subtitle:
-        "Located in Ubud — Bali's yoga capital — a nurturing and peaceful setting perfect for prenatal yoga training.",
+        "Located in Ubud — Chiang Mai's yoga capital — a nurturing and peaceful setting perfect for prenatal yoga training.",
 
-      address: "No 77 A, Jl. Bisma, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia",
+      address: "No 77 A, Jl. Bisma,  Kecamatan  Kabupaten Gianyar, Chiang Mai 80571, Indonesia",
 
       mapEmbed:
-        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Bali+Indonesia&output=embed",
+        "https://www.google.com/maps?q=Jl.+Bisma+Ubud+Chiang Mai+Indonesia&output=embed",
 
       spots: [
         {
           name: "Ubud Center",
           distance: "5 min walk",
-          desc: "Heart of Bali's culture with cafés, markets & temples.",
+          desc: "Heart of Chiang Mai's culture with cafés, markets & temples.",
           icon: "globe",
         },
         {
           name: "Rice Terraces",
           distance: "15 min drive",
-          desc: "Famous green landscapes of Bali.",
+          desc: "Famous green landscapes of Chiang Mai.",
           icon: "leaf",
         },
         {
@@ -730,7 +730,7 @@ export const ChiangPrenatalYogaData = {
       title: "Prenatal Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 85-hour prenatal yoga teacher training in Bali.",
+        "Find answers to the most common questions about World Peace Yoga School's 85-hour prenatal yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
@@ -759,7 +759,7 @@ export const ChiangPrenatalYogaData = {
             "You must complete all of the required 85 hours of coursework and demonstrate proficiency in teaching prenatal yoga to receive certification. All classes are mandatory — leaves are only accepted in case of an emergency or illness with teacher permission. If you complete only half the course, the certificate will not be provided.",
         },
         {
-          question: "What is the cost of the prenatal yoga teacher training in Bali?",
+          question: "What is the cost of the prenatal yoga teacher training in Chiang Mai?",
           answer:
             "The course is available in three options — Course Only (no food & stay) at $499, 2 Sharing Room (with meals & accommodation) at $650, and Private Room at $750. All options include full training, yoga materials and certification. A no-meals option is also available at $899 for private room.",
         },
@@ -780,14 +780,14 @@ export const ChiangPrenatalYogaData = {
           ],
         },
         {
-          question: "Are there job opportunities available for prenatal yoga teachers in Bali?",
+          question: "Are there job opportunities available for prenatal yoga teachers in Chiang Mai?",
           answer:
-            "Yes — there are many opportunities to teach prenatal yoga in Bali, including at various yoga studios, retreat centers, hotels and wellness centers. With a Yoga Alliance RPYT certification, you can also teach prenatal yoga online or in your home country at studios, gyms, hospitals and community centers.",
+            "Yes — there are many opportunities to teach prenatal yoga in Chiang Mai, including at various yoga studios, retreat centers, hotels and wellness centers. With a Yoga Alliance RPYT certification, you can also teach prenatal yoga online or in your home country at studios, gyms, hospitals and community centers.",
         },
         {
-          question: "What kind of visa do I need for the training in Bali?",
+          question: "What kind of visa do I need for the training in Chiang Mai?",
           answer:
-            "If you are not an Indonesian citizen, you will need a visa to attend the prenatal yoga teacher training in Bali. You can obtain a visa on arrival or apply for a visa in advance at an Indonesian embassy or consulate. Please check current Indonesian visa requirements before travelling.",
+            "If you are not an Indonesian citizen, you will need a visa to attend the prenatal yoga teacher training in Chiang Mai. You can obtain a visa on arrival or apply for a visa in advance at an Indonesian embassy or consulate. Please check current Indonesian visa requirements before travelling.",
         },
         {
           question: "What happens if I need to leave the course early?",

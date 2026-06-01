@@ -14,8 +14,8 @@ export const PrenatalYogaData = {
 
     hero: {
       location: "Ubud, Bali · 85-Hour Prenatal Yoga",
-      title: "Empower Mothers Through",
-      highlight: "Prenatal Yoga",
+      title: "Prenatal Yoga Teacher Training in Bali",
+      highlight: "85-Hours ",
       subtitle:
         "85-hour prenatal yoga teacher training in Bali — pregnancy anatomy, safe sequencing & Yoga Alliance certification",
       price: "$650",

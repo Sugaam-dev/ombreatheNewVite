@@ -14,8 +14,8 @@ export const Mysore7DayWheelYogaData = {
 
     hero: {
       location: "Mysore · 7-Day Wheel Yoga Teacher Training",
-      title: "Wheel Yoga TTC",
-      highlight: "7 Days 50 Hours ",
+      title: "Wheel Yoga Teacher Training Course",
+      highlight: "7 Days ",
       subtitle:
         "Master the ultimate tool for deep spinal expansion, core stabilization, and advanced backbending. Accelerate your alignment capabilities in the heritage city of Mysore.",
       price: "$500",
