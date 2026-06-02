@@ -119,7 +119,7 @@ const Navbar = () => {
     if (isDesktop) {
       timeoutRef.current = setTimeout(
         () => setDropdownOpen((p) => ({ ...p, programs: false })),
-        300,
+        250,
       );
     }
   };
@@ -140,7 +140,7 @@ const Navbar = () => {
     if (isDesktop) {
       timeoutRef.current = setTimeout(
         () => setDropdownOpen((p) => ({ ...p, retreats: false })),
-        300
+        250
       );
     }
   };
@@ -203,8 +203,8 @@ const Navbar = () => {
             <span className="sub-cat-arrow">{openSubCat[key] ? "−" : "+"}</span>
           </div>
 
-          {openSubCat[key] && (
-            <div className="mobile-sub-cat-body">
+          <div className={`animated-collapse-grid ${openSubCat[key] ? "grid-open" : ""}`}>
+            <div className="collapse-inner-content mobile-sub-cat-body">
               {items.length === 0 ? (
                 <span
                   style={{
@@ -218,7 +218,6 @@ const Navbar = () => {
                 </span>
               ) : (
                 items.map(({ path, label }) => {
-                  // ✅ Fixed configuration mapping bug from "retreats" context to "programs"
                   const fullPath = buildPath(slug, path, "programs");
                   return (
                     <Link
@@ -235,7 +234,7 @@ const Navbar = () => {
                 })
               )}
             </div>
-          )}
+          </div>
         </div>
       );
     });
@@ -310,9 +309,11 @@ const Navbar = () => {
                   onMouseEnter={openProgramsMenu}
                   onMouseLeave={closeProgramsMenu}
                 >
-                  <div className="container-fluid px-lg-5">
-                    {ttcView === "main" ? (
-                      <div className="row py-4 fade-in">
+                  <div className="container-fluid px-lg-5 mega-panel-sliding-container">
+                    
+                    {/* View Wrapper 1: Programs Main Menu Screen */}
+                    <div className={`sliding-view-pane ${ttcView === "main" ? "pane-active-left" : "pane-hidden-left"}`}>
+                      <div className="row py-4">
                         {/* Membership */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">MEMBERSHIP PROGRAMS</h6>
@@ -350,7 +351,7 @@ const Navbar = () => {
                         {/* Online */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">ONLINE COURSES</h6>
-                          {[
+                          {/* {[
                             { to: "/online/live", label: "Live Sessions" },
                             {
                               to: "/online/recorded",
@@ -371,7 +372,8 @@ const Navbar = () => {
                             >
                               {label}
                             </Link>
-                          ))}
+                          ))} */}
+                          <span>Comming Soon</span>
                         </div>
 
                         {/* TTC locations — driven by LOCATIONS array */}
@@ -391,12 +393,14 @@ const Navbar = () => {
                           ))}
                         </div>
                       </div>
-                    ) : (
-                      /* TTC detail view */
-                      <div className="row py-4 fade-in">
-                        <div className="col-12 mb-3 d-flex align-items-center">
+                    </div>
+
+                    {/* View Wrapper 2: TTC Inner Categories Screen */}
+                    <div className={`sliding-view-pane ${ttcView === "detail" ? "pane-active-right" : "pane-hidden-right"}`}>
+                      <div className="row py-4">
+                        <div className="col-12 mb-4 d-flex align-items-center">
                           <button className="back-btn" onClick={() => setTtcView("main")}>
-                            ← Back to Programs
+                            <span className="back-arrow-icon">←</span> Back to Programs
                           </button>
                           <h5 className="ms-4 mb-0 ttc-selected-title">
                             {
@@ -448,7 +452,8 @@ const Navbar = () => {
                           </div>
                         ))}
                       </div>
-                    )}
+                    </div>
+
                   </div>
                 </div>
               </li>
@@ -484,7 +489,7 @@ const Navbar = () => {
                   onMouseLeave={closeRetreatsMenu}
                 >
                   <div className="container-fluid px-lg-5">
-                    <div className="row py-4 fade-in">
+                    <div className="row py-4">
                       {LOCATIONS.map(({ slug, label }, idx, arr) => (
                         <div
                           key={slug}
@@ -570,8 +575,8 @@ const Navbar = () => {
                 </span>
               </div>
 
-              {mobileAccordion.programs && (
-                <div className="drawer-sub-menu">
+              <div className={`animated-collapse-grid ${mobileAccordion.programs ? "grid-open" : ""}`}>
+                <div className="collapse-inner-content drawer-sub-menu">
                   {/* Membership */}
                   <div className="drawer-loc-item">
                     <div
@@ -583,36 +588,37 @@ const Navbar = () => {
                         {activeMobileCategory === "MEMBERSHIP" ? "−" : "+"}
                       </span>
                     </div>
-                    <div
-                      className={`drawer-loc-body ${activeMobileCategory === "MEMBERSHIP" ? "open" : ""}`}
-                    >
-                      {[
-                        {
-                          to: "/programs/shiv-shakti-sadhana",
-                          label: "Shiv Shakti Sadhana",
-                        },
-                        {
-                          to: "/programs/shakti-sadhana",
-                          label: "Shakti Sadhana",
-                        },
-                        {
-                          to: "/programs/sapta-rishi-sadhana",
-                          label: "Sapta Rishi Sadhana",
-                        },
-                        {
-                          to: "/programs/pashu-patayaa-sadhana",
-                          label: "Pashu-Patayaa Sadhana",
-                        },
-                      ].map(({ to, label }) => (
-                        <Link
-                          key={to}
-                          to={to}
-                          className={isSubActive(to) ? "m-sub-active-text" : ""}
-                          onClick={() => handleLinkClick("programs")}
-                        >
-                          {label}
-                        </Link>
-                      ))}
+                    
+                    <div className={`animated-collapse-grid ${activeMobileCategory === "MEMBERSHIP" ? "grid-open" : ""}`}>
+                      <div className="collapse-inner-content drawer-loc-body">
+                        {[
+                          {
+                            to: "/programs/shiv-shakti-sadhana",
+                            label: "Shiv Shakti Sadhana",
+                          },
+                          {
+                            to: "/programs/shakti-sadhana",
+                            label: "Shakti Sadhana",
+                          },
+                          {
+                            to: "/programs/sapta-rishi-sadhana",
+                            label: "Sapta Rishi Sadhana",
+                          },
+                          {
+                            to: "/programs/pashu-patayaa-sadhana",
+                            label: "Pashu-Patayaa Sadhana",
+                          },
+                        ].map(({ to, label }) => (
+                          <Link
+                            key={to}
+                            to={to}
+                            className={isSubActive(to) ? "m-sub-active-text" : ""}
+                            onClick={() => handleLinkClick("programs")}
+                          >
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
@@ -627,23 +633,24 @@ const Navbar = () => {
                         {activeMobileCategory === "ONLINE" ? "−" : "+"}
                       </span>
                     </div>
-                    <div
-                      className={`drawer-loc-body ${activeMobileCategory === "ONLINE" ? "open" : ""}`}
-                    >
-                      {[
-                        { to: "/online/live", label: "Live Sessions" },
-                        { to: "/online/recorded", label: "Recorded Classes" },
-                        { to: "/online/workshops", label: "Special Workshops" },
-                      ].map(({ to, label }) => (
-                        <Link
-                          key={to}
-                          to={to}
-                          className={isSubActive(to) ? "m-sub-active-text" : ""}
-                          onClick={() => handleLinkClick("programs")}
-                        >
-                          {label}
-                        </Link>
-                      ))}
+                    
+                    <div className={`animated-collapse-grid ${activeMobileCategory === "ONLINE" ? "grid-open" : ""}`}>
+                      <div className="collapse-inner-content drawer-loc-body">
+                        {[
+                          { to: "/online/live", label: "Live Sessions" },
+                          { to: "/online/recorded", label: "Recorded Classes" },
+                          { to: "/online/workshops", label: "Special Workshops" },
+                        ].map(({ to, label }) => (
+                          <Link
+                            key={to}
+                            to={to}
+                            className={isSubActive(to) ? "m-sub-active-text" : ""}
+                            onClick={() => handleLinkClick("programs")}
+                          >
+                            {label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
@@ -654,33 +661,37 @@ const Navbar = () => {
                       onClick={() => toggleMobileCategory("TTC")}
                     >
                       TTC TRAINING{" "}
-                      <span>{activeMobileCategory === "TTC" ? "−" : "+"}</span>
+                      <span>
+                        {activeMobileCategory === "TTC" ? "−" : "+"}
+                      </span>
                     </div>
-                    <div
-                      className={`drawer-loc-body ${activeMobileCategory === "TTC" ? "open" : ""}`}
-                    >
-                      {LOCATIONS.map(({ slug, label }) => (
-                        <div key={slug} className="drawer-nested-loc mb-2">
-                          <div
-                            className={`drawer-loc-header nested ${isTtcPath && currentPathLower.split("/").includes(slug) ? "m-active-path-text" : ""}`}
-                            onClick={(e) => toggleLocation(e, `m-ttc-${slug}`)}
-                          >
-                            {label} TTC{" "}
-                            <span>
-                              {activeLocation === `m-ttc-${slug}` ? "−" : "+"}
-                            </span>
+                    
+                    <div className={`animated-collapse-grid ${activeMobileCategory === "TTC" ? "grid-open" : ""}`}>
+                      <div className="collapse-inner-content drawer-loc-body">
+                        {LOCATIONS.map(({ slug, label }) => (
+                          <div key={slug} className="drawer-nested-loc mb-2">
+                            <div
+                              className={`drawer-loc-header nested ${isTtcPath && currentPathLower.split("/").includes(slug) ? "m-active-path-text" : ""}`}
+                              onClick={(e) => toggleLocation(e, `m-ttc-${slug}`)}
+                            >
+                              {label} TTC{" "}
+                              <span>
+                                {activeLocation === `m-ttc-${slug}` ? "−" : "+"}
+                              </span>
+                            </div>
+                            
+                            <div className={`animated-collapse-grid ${activeLocation === `m-ttc-${slug}` ? "grid-open" : ""}`}>
+                              <div className="collapse-inner-content drawer-loc-body-nested">
+                                {renderMobileTTCSubCats(slug)}
+                              </div>
+                            </div>
                           </div>
-                          <div
-                            className={`drawer-loc-body ${activeLocation === `m-ttc-${slug}` ? "open" : ""}`}
-                          >
-                            {renderMobileTTCSubCats(slug)}
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
             {/* MOBILE RETREATS ACCORDION ──────── */}
@@ -697,81 +708,74 @@ const Navbar = () => {
                 </span>
               </div>
 
-              {mobileAccordion.retreats && (
-                <div className="drawer-sub-menu">
-                  <div className="drawer-loc-item">
-                    <div
-                      className="drawer-loc-header"
-                      style={{
-                        color: "#007bff",
-                        borderBottom: "1px solid #f0f0f0",
-                        padding: "12px 0",
-                      }}
-                    >
-                      RETREATS BY LOCATION
-                    </div>
+              <div className={`animated-collapse-grid ${mobileAccordion.retreats ? "grid-open" : ""}`}>
+                <div className="collapse-inner-content drawer-sub-menu">
+                  <div
+                    className="drawer-loc-item"
+                    style={{
+                      color: "#007bff",
+                      borderBottom: "1px solid #f0f0f0",
+                      padding: "12px 0",
+                      fontWeight: "700"
+                    }}
+                  >
+                    RETREATS BY LOCATION
+                  </div>
 
-                    {LOCATIONS.map(({ slug, label }) => (
-                      <div key={slug} className="drawer-nested-loc mb-2">
-                        <div
-                          className={`drawer-loc-header nested ${
-                            isRetreatPath && currentPathLower.split("/").includes(slug)
-                              ? "m-active-path-text"
-                              : ""
-                          }`}
-                          onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
-                        >
-                          <span>{label} Retreat</span>
+                  {LOCATIONS.map(({ slug, label }) => (
+                    <div key={slug} className="drawer-nested-loc mb-2">
+                      <div
+                        className={`drawer-loc-header nested ${
+                          isRetreatPath && currentPathLower.split("/").includes(slug)
+                            ? "m-active-path-text"
+                            : ""
+                        }`}
+                        onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
+                      >
+                        <span>{label} Retreat</span>
+                        <span>
+                          {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
+                        </span>
+                      </div>
 
-                          <span>
-                            {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
-                          </span>
-                        </div>
-
-                        <div
-                          className={`drawer-loc-body ${
-                            activeLocation === `m-retreat-${slug}` ? "open" : ""
-                          }`}
-                        >
-                          <div className="mobile-sub-cat-body">
-                            {(RETREAT_LINKS[slug] || []).length === 0 ? (
-                              <span
-                                style={{
-                                  color: "#aaa",
-                                  fontSize: "13px",
-                                  padding: "8px 0",
-                                  display: "block",
-                                }}
-                              >
-                                Coming Soon
-                              </span>
-                            ) : (
-                              (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
-                                const fullPath = buildPath(slug, path, "retreats");
-
-                                return (
-                                  <Link
-                                    key={path}
-                                    to={fullPath}
-                                    className={
-                                      isSubActive(fullPath)
-                                        ? "m-sub-active-text"
-                                        : ""
-                                    }
-                                    onClick={() => handleLinkClick("retreats")}
-                                  >
-                                    {label}
-                                  </Link>
-                                );
-                              })
-                            )}
-                          </div>
+                      <div className={`animated-collapse-grid ${activeLocation === `m-retreat-${slug}` ? "grid-open" : ""}`}>
+                        <div className="collapse-inner-content mobile-sub-cat-body">
+                          {(RETREAT_LINKS[slug] || []).length === 0 ? (
+                            <span
+                              style={{
+                                color: "#aaa",
+                                fontSize: "13px",
+                                padding: "8px 0",
+                                display: "block",
+                              }}
+                            >
+                              Coming Soon
+                            </span>
+                          ) : (
+                            (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
+                              const fullPath = buildPath(slug, path, "retreats");
+                              return (
+                                <Link
+                                  key={path}
+                                  to={fullPath}
+                                  className={
+                                    isSubActive(fullPath)
+                                      ? "m-sub-active-text"
+                                      : ""
+                                  }
+                                  onClick={() => handleLinkClick("retreats")}
+                                >
+                                  {label}
+                                </Link>
+                              );
+                            })
+                          )}
                         </div>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
-              )}
+              </div>
             </div>
 
             <Link
@@ -811,7 +815,6 @@ const Navbar = () => {
         .loc-toggle,
         .drawer-loc-header,
         .back-btn,
-        
         .coming-soon-text {
           color: #aaa;
           font-size: 13px;
@@ -828,7 +831,6 @@ const Navbar = () => {
           padding-bottom: 6px;
           display: inline-block;
           vertical-align: middle;
-          animation: titleFadeIn 0.4s ease forwards;
         }
 
         .ttc-selected-title::after {
@@ -839,18 +841,7 @@ const Navbar = () => {
           height: 3px;
           background-color: #ff9933; 
           border-radius: 2px;
-          animation: lineGrow 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
-          width: 0;
-        }
-
-        @keyframes titleFadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes lineGrow {
-          from { width: 0; }
-          to { width: 100px; }
+          width: 100px;
         }
 
         .premium-navbar {
@@ -890,24 +881,83 @@ const Navbar = () => {
           .premium-link.active::after { width: 100%; left: 0; }
           .premium-link:hover { color: #007bff !important; }
           .mega-static { position: static !important; }
+          
           .mega-panel {
             position: absolute;
-            top: calc(100% + 5px);
+            top: calc(100% + 10px); 
             left: 0;
             width: 100%;
             background: #fff;
-            border-top: 1px solid #eee;
-            padding: 40px 80px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-            display: none;
+            border-top: 1px solid #f3f3f3;
+            padding: 30px 80px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
             z-index: 3000;
-            border-radius: 0 0 8px 8px;
+            border-radius: 0 0 12px 12px;
+            
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px) scale(0.995);
+            transition: opacity 0.35s cubic-bezier(0.25, 1, 0.5, 1), 
+                        transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), 
+                        visibility 0.35s;
+            display: block !important; 
+            pointer-events: none;
           }
-          .mega-panel.show { display: block; animation: slideUpFade 0.3s ease; }
+          
+          .mega-panel.show { 
+            opacity: 1; 
+            visibility: visible; 
+            transform: translateY(0) scale(1); 
+            pointer-events: auto;
+          }
+
+          .mega-panel-sliding-container {
+            position: relative;
+            overflow: hidden;
+            min-height: 290px;
+            display: block;
+          }
+
+          .sliding-view-pane {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1), 
+                        opacity 0.45s cubic-bezier(0.25, 1, 0.5, 1), 
+                        visibility 0.45s;
+          }
+
+          .pane-active-left {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+          }
+          .pane-hidden-left {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-30px);
+          }
+
+          .pane-active-right {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+          }
+          .pane-hidden-right {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(30px);
+          }
+          
           .mega-column {
             border-right: 1px solid #f0f0f0;
-            padding: 0 2px 0 10px;
-            min-height: 250px;
+            padding: 0 15px 0 20px;
+            min-height: 230px;
           }
           .mega-column.no-border { border-right: none; }
           .column-title {
@@ -926,10 +976,13 @@ const Navbar = () => {
             text-decoration: none;
             padding: 8px 0;
             font-size: 15px;
-            transition: 0.3s;
+            transition: color 0.25s ease, transform 0.25s ease;
             cursor: pointer;
           }
-          .mega-column a:hover, .loc-toggle:hover { color: #007bff; }
+          .mega-column a:hover, .loc-toggle:hover { 
+            color: #007bff; 
+            transform: translateX(4px);
+          }
           
           .back-btn {
             background: linear-gradient(135deg, #ff9933 0%, #ff6600 100%) !important;
@@ -942,55 +995,43 @@ const Navbar = () => {
             cursor: pointer;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(255, 102, 0, 0.35);
-            animation: backBtnSlideIn 0.4s ease-out exact, bhagwaFloat 3s ease-in-out infinite 0.4s;
           }
 
           .back-btn:hover {
-            transform: scale(1.05) !important;
+            transform: scale(1.03) !important;
             box-shadow: 0 6px 20px rgba(255, 102, 0, 0.5);
             background: linear-gradient(135deg, #ffaa44 0%, #ff5500 100%) !important;
           }
 
-          @keyframes bhagwaFloat {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-            100% { transform: translateY(0); }
+          .back-arrow-icon {
+            transition: transform 0.25s ease;
+            display: inline-block;
+          }
+          .back-btn:hover .back-arrow-icon {
+            transform: translateX(-3px);
           }
 
-          @keyframes backBtnSlideIn {
-            from {
-              opacity: 0;
-              transform: translateX(15px);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
           .bridge-area {
             position: absolute;
-            bottom: -15px;
+            bottom: -20px;
             left: 0;
             width: 100%;
-            height: 25px;
+            height: 30px;
             background: transparent;
             z-index: 10;
           }
         }
 
-        .fade-in { animation: fadeIn 0.4s ease; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
         .arrow-icon {
           display: inline-block;
-          transition: 0.3s;
+          transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
           font-size: 10px;
           margin-left: 6px;
         }
-        .rotated { transform: rotate(180deg); }
+        .rotated { transform: rotate(180deg) !important; }
         .symbol { font-size: 16px; font-weight: 300; opacity: 0.7; }
 
         .book-blue-btn {
@@ -1006,14 +1047,15 @@ const Navbar = () => {
           text-decoration: none;
         }
         .book-blue-btn:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 12px 25px rgba(11, 78, 53, 0.5);
+          transform: translateY(-4px);
+          box-shadow: 0 12px 25px rgba(11, 78, 53, 0.4);
         }
         @keyframes floatingGlow {
           0%, 100% { transform: translateY(0); }
-          50%       { transform: translateY(-6px); }
+          50%       { transform: translateY(-4px); }
         }
 
+        /* Mobile Side Canvas Configuration */
         .mobile-side-drawer {
           position: fixed;
           top: 0;
@@ -1023,7 +1065,7 @@ const Navbar = () => {
           height: 100vh;
           background: #fff;
           z-index: 4000;
-          transition: 0.4s cubic-bezier(0.7,0,0.3,1);
+          transition: left 0.4s cubic-bezier(0.25, 1, 0.5, 1);
           overflow-y: auto;
           display: flex;
           flex-direction: column;
@@ -1043,11 +1085,34 @@ const Navbar = () => {
           text-decoration: none;
           border-bottom: 1px solid #f9f9f9;
         }
+        
+        .animated-collapse-grid {
+          display: grid;
+          grid-template-rows: 0fr;
+          transition: grid-template-rows 0.32s cubic-bezier(0.25, 1, 0.5, 1);
+          overflow: hidden;
+        }
+        .animated-collapse-grid.grid-open {
+          grid-template-rows: 1fr;
+        }
+        .collapse-inner-content {
+          min-height: 0;
+        }
+        
+        .drawer-sub-menu {
+          padding-left: 10px;
+          padding-bottom: 5px;
+        }
+        .drawer-loc-item {
+          overflow: hidden;
+        }
+
         .drawer-loc-header {
           display: flex;
           justify-content: space-between;
-          padding: 15px 0;
-          border-bottom: 1px solid #f0f0f0;
+          align-items: center;
+          padding: 14px 0;
+          border-bottom: 1px solid #f3f3f3;
           cursor: pointer;
           font-size: 13px;
           font-weight: 700;
@@ -1061,29 +1126,32 @@ const Navbar = () => {
           text-transform: none;
           border-bottom: 1px dashed #eee;
         }
+        
         .drawer-loc-body {
-          max-height: 0;
-          overflow: hidden;
-          transition: 0.4s ease;
           padding-left: 10px;
-          display: flex;
-          flex-direction: column;
+          padding-top: 5px;
+          padding-bottom: 5px;
         }
-        .drawer-loc-body.open { max-height: 1200px; padding-top: 10px; }
+        .drawer-loc-body-nested {
+          padding-left: 5px;
+        }
+        
         .drawer-loc-body a {
           display: block;
           padding: 8px 0;
           color: #666;
           font-size: 14.5px;
           text-decoration: none;
+          transition: color 0.2s ease;
         }
+        
         .mobile-sub-category-label {
           font-size: 12px;
           font-weight: 700;
           color: #007bff;
           text-transform: uppercase;
           letter-spacing: 0.8px;
-          padding: 10px 0 6px 0;
+          padding: 12px 0 8px 0;
           border-bottom: 1px dashed #e8e8e8;
           margin-bottom: 2px;
           font-family: Caudex, serif;
@@ -1095,7 +1163,12 @@ const Navbar = () => {
         }
         .mobile-sub-category-label:hover { color: #0056cc; }
         .sub-cat-arrow { font-size: 14px; font-weight: 400; opacity: 0.8; }
-        .mobile-sub-cat-body { padding-left: 10px; padding-bottom: 4px; }
+        
+        .mobile-sub-cat-body { 
+          padding-left: 12px; 
+          padding-top: 4px;
+          padding-bottom: 4px; 
+        }
         .mobile-sub-cat-body a {
           display: block;
           padding: 7px 0;
@@ -1103,15 +1176,25 @@ const Navbar = () => {
           font-size: 13.5px;
           text-decoration: none;
         }
-        .mobile-sub-cat-body a:hover { color: #007bff; }
+        
         .drawer-overlay {
           position: fixed;
           top: 0; left: 0;
           width: 100vw; height: 100vh;
-          background: rgba(0,0,0,0.5);
+          background: rgba(0,0,0,0.4);
           z-index: 3500;
-          backdrop-filter: blur(2px);
+          backdrop-filter: blur(3px);
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.35s ease, visibility 0.35s;
         }
+        .mobile-toggle-btn.open ~ .drawer-overlay,
+        nav.navbar:has(.mobile-side-drawer.open) .drawer-overlay,
+        .mobile-side-drawer.open ~ .drawer-overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+        
         .mobile-toggle-btn {
           width: 30px; height: 20px;
           position: relative;
@@ -1124,7 +1207,7 @@ const Navbar = () => {
           height: 2.5px; width: 100%;
           background: #333;
           border-radius: 2px;
-          transition: 0.25s;
+          transition: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
         }
         .mobile-toggle-btn span:nth-child(1) { top: 0; }
         .mobile-toggle-btn span:nth-child(2) { top: 9px; }
@@ -1132,11 +1215,6 @@ const Navbar = () => {
         .mobile-toggle-btn.open span:nth-child(1) { transform: rotate(45deg);  top: 9px; }
         .mobile-toggle-btn.open span:nth-child(2) { opacity: 0; }
         .mobile-toggle-btn.open span:nth-child(3) { transform: rotate(-45deg); top: 9px; }
-
-        @keyframes slideUpFade {
-          from { opacity: 0; transform: translateY(15px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
       `}</style>
     </>
   );
