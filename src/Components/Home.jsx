@@ -33,12 +33,13 @@ const YogaTeachersLazy = lazy(() =>
 import Ayurveda from "./Ayurveda";
 import Offering from "./Offering";
 import BannerImage from "./HomeCredentials/BannerImage";
-import GuruLineage from "./HomeCredentials/GuruLineage";
+// import GuruLineage from "./HomeCredentials/GuruLineage";
 // import Schedule from "./Teachers/Schedule";
 import Blog from "./Blog/Blog";
 import Accordion from "./Accordion";
 import Ratings from "./Ratings";
 import Contact from "./Contact";
+import TrustBanner from "./Banner/TrustBanner";
 
 // ==========================================
 // SECTION LOADER
@@ -59,6 +60,7 @@ const Home = () => {
 
       <ImageSliderBanner />
 
+<TrustBanner/>
       <WelcomeToYogalayaa />
 
       <Yogaschool />
@@ -81,7 +83,7 @@ const Home = () => {
         <YogaTeachersLazy />
       </Suspense>
 
-      <GuruLineage />
+      {/* <GuruLineage /> */}
 
       {/* <Schedule /> */}
 
