@@ -186,7 +186,7 @@ export const RishikeshKundali500HoursData = {
           label: "Advanced Alignment Labs",
           desc: "Understand systemic muscle alignment roles based on body regions to lower strain and track energetic koshas.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Teaching and Adjustment Dynamics",

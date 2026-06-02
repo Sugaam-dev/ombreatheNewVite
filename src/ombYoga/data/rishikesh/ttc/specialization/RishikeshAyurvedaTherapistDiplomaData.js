@@ -186,7 +186,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
           label: "Forehead Liquid Pours",
           desc: "Perform meticulous Shirodhara forehead pacing, and Takradhara using medicated butter-milk layers.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Poultices & Regional Bastis",

@@ -186,7 +186,7 @@ export const RishikeshSoundHealingData = {
           label: "Levels 3 & 4: Clinical Modalities",
           desc: "Apply vibrational wave actions to clear structural energy bottlenecks, master tuning forks, and structure group sound baths.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Level 5: Professional Instruction",

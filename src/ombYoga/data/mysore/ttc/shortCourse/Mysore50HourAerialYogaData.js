@@ -186,7 +186,7 @@ export const Mysore50HourAerialYogaData = {
           label: "Suspension Anatomy Labs",
           desc: "Deeply analyze human bone and muscular frameworks, targeting the specific joints and muscles activated during suspension tracks.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Adjustments & Modifications",

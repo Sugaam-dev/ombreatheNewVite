@@ -186,7 +186,7 @@ export const Rishikesh200HourMultiStyleKundaliniAyurvedaMassageData = {
           label: "Kundalini Prana Activation",
           desc: "Execute precise kriya paths, breath control systems, and specific mantra chanting sequences to safely awake dormant pranic powers.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Ayurvedic Massage Application",

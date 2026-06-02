@@ -240,6 +240,7 @@ export default function MassageSection({ data }) {
             {content.title} <span style={{ color: colors.sage || "#7BAF8A" }}>{content.highlight}</span>
           </h2>
           <p className="spa-subtitle-text">{content.subtitle}</p>
+         
         </div>
       </div>
 

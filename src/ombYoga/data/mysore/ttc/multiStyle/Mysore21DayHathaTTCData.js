@@ -186,7 +186,7 @@ export const Mysore21DayHathaTTCData = {
           label: "Pranayama & Energy Control",
           desc: "Refine your life-force streams via calculated yogic breathing tracks, clearing internal nervous system blockages.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Meditation & Mind Stillness",

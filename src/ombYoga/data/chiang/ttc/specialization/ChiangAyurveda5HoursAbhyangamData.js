@@ -186,7 +186,7 @@ export const ChiangAyurveda5HoursAbhyangamData = {
           label: "Myo-Releasing Forearm Sweeps",
           desc: "Employ long rhythmic massage movements with the forearm and elbow regions to fast-track deep physical release.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Regional Isolation Balancing",

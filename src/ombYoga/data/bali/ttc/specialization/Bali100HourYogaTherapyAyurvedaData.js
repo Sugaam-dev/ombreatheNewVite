@@ -186,7 +186,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
           label: "Clinical Anatomy & Custom Flow",
           desc: "Analyze therapeutic physical anatomy, sequence disease-specific Vinyasa layouts, and maintain absolute safety parameters from injury.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Psychotherapy & Vibrational Waves",

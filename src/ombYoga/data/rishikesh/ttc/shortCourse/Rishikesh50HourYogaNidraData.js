@@ -186,7 +186,7 @@ export const Rishikesh50HourYogaNidraData = {
           label: "Sankalpa & Script Mastery",
           desc: "Understand the blueprint mechanics behind powerful resolution setting, voice modulation training, and custom script design.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Subtle Energy & Visualizations",

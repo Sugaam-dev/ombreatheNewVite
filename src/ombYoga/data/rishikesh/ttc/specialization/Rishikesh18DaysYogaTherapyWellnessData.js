@@ -186,7 +186,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
           label: "Elemental Naturopathy Labs",
           desc: "Master hands-on mud application, water fasting hydrotherapy steps, dry body friction, and fasting-based biological detoxes.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Vedic & Sound Healing",

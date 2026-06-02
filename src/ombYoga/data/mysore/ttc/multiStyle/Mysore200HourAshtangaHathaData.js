@@ -1,4 +1,5 @@
 export const Mysore200HourAshtangaHathaData = {
+  
   heroSection: {
     colors: {
       cream: "#FAF8F5",       // Traditional Mysore palace cream
@@ -72,7 +73,7 @@ export const Mysore200HourAshtangaHathaData = {
         "Our school features dedicated Ashtanga sadhakas who teach with the sole objective to deliver traditional experiences as per ancient texts, reshaping your fundamental relationship with life.",
       stats: [
         { value: "200 Hours", label: "Comprehensive Syllabus", icon: "clock" },
-        { value: "Dual Style", label: "Ashtanga & Hatha Focus", icon: "sparkles" },
+        { value: "Dual Style", label: "Ashtanga & Hatha Focus", icon: "Sparkles" },
         { value: "20 Days", label: "Residential Metamorphosis", icon: "calendar" },
         { value: "Accredited", label: "Yoga Alliance Certified", icon: "award" },
         { value: "Panchama", label: "5 Elements Ayurveda Base", icon: "globe" },
@@ -186,7 +187,7 @@ export const Mysore200HourAshtangaHathaData = {
           label: "Conscious Pranayama Control",
           desc: "Refine your vital life force via traditional Nadi Shodhan, Sithali, Ujjayi, Kapalabhati, Bhastrika, and Bramari breath sciences.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Vedanta & Meditation Labs",

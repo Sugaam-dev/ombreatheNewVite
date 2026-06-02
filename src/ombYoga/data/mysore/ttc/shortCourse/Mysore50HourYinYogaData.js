@@ -186,7 +186,7 @@ export const Mysore50HourYinYogaData = {
           label: "Five Biological Grids",
           desc: "Analyze the human physical body through deep tracking of the skeletal, muscular, fascial, nervous, and respiratory systems.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Tactile Class Management",

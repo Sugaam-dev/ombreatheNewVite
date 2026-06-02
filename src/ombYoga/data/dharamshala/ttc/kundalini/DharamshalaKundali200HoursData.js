@@ -187,7 +187,7 @@ export const DharamshalaKundali200HoursData = {
           label: "Manipura & Anahata Core",
           desc: "Ignite your personal power seat below the navel before expanding emotional balances into states of pure bliss.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Vishuddhi, Ajna & Sahasrara Highs",

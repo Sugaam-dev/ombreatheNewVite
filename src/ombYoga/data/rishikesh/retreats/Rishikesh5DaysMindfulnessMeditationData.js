@@ -186,7 +186,7 @@ export const Rishikesh5DaysMindfulnessMeditationData = {
           label: "Active vs Passive Systems",
           desc: "Balance dynamic physical movements, meditative posture labs, and breath controls with passive silent reflection states.",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1536623975743-4fe4ed57c415?w=800&q=80",
+          img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
         },
         {
           label: "Therapeutic Health Applications",
