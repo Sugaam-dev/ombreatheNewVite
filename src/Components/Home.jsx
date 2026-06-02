@@ -1,6 +1,4 @@
-// Home.jsx
-
-import React, { Suspense, lazy } from "react";
+import React, { lazy } from "react";
 
 // ==========================================
 // ABOVE THE FOLD (NORMAL IMPORTS)
@@ -10,8 +8,17 @@ import WelcomeToYogalayaa from "./HomeCredentials/WelcomeToYogalayaa";
 import Yogaschool from "./Yogaschool";
 import WhyChoose from "./HomeCredentials/WhyChoose";
 
+import Ayurveda from "./Ayurveda";
+import Offering from "./Offering";
+import BannerImage from "./HomeCredentials/BannerImage";
+import Blog from "./Blog/Blog";
+import Accordion from "./Accordion";
+import Ratings from "./Ratings";
+import Contact from "./Contact";
+import TrustBanner from "./Banner/TrustBanner";
+
 // ==========================================
-// KEEP ONLY HEAVY COMPONENTS LAZY
+// LAZY COMPONENTS
 // ==========================================
 const ProgramsCarousel = lazy(() =>
   import("../ombYoga/pages/programsCard/ProgramsCarousel")
@@ -21,34 +28,18 @@ const GalleryLazy = lazy(() =>
   import("./HomeCredentials/Gallery")
 );
 
-const UtubeLazy = lazy(() => import("./Utube"));
+const UtubeLazy = lazy(() =>
+  import("./Utube")
+);
 
 const YogaTeachersLazy = lazy(() =>
   import("./Teachers/YogaTeachers")
 );
 
 // ==========================================
-// NORMAL IMPORTS
+// INTERSECTION OBSERVER WRAPPER
 // ==========================================
-import Ayurveda from "./Ayurveda";
-import Offering from "./Offering";
-import BannerImage from "./HomeCredentials/BannerImage";
-// import GuruLineage from "./HomeCredentials/GuruLineage";
-// import Schedule from "./Teachers/Schedule";
-import Blog from "./Blog/Blog";
-import Accordion from "./Accordion";
-import Ratings from "./Ratings";
-import Contact from "./Contact";
-import TrustBanner from "./Banner/TrustBanner";
-
-// ==========================================
-// SECTION LOADER
-// ==========================================
-const SectionLoader = () => (
-  <div className="section-loader">
-    <div className="loader-spinner"></div>
-  </div>
-);
+import LazySection from "./LazySection";
 
 // ==========================================
 // HOME
@@ -60,7 +51,8 @@ const Home = () => {
 
       <ImageSliderBanner />
 
-<TrustBanner/>
+      <TrustBanner />
+
       <WelcomeToYogalayaa />
 
       <Yogaschool />
@@ -69,9 +61,9 @@ const Home = () => {
 
       {/* BELOW THE FOLD */}
 
-      <Suspense fallback={<SectionLoader />}>
+      <LazySection>
         <ProgramsCarousel />
-      </Suspense>
+      </LazySection>
 
       <Ayurveda />
 
@@ -79,23 +71,19 @@ const Home = () => {
 
       <BannerImage />
 
-      <Suspense fallback={<SectionLoader />}>
+      <LazySection>
         <YogaTeachersLazy />
-      </Suspense>
-
-      {/* <GuruLineage /> */}
-
-      {/* <Schedule /> */}
+      </LazySection>
 
       <Blog />
 
-      <Suspense fallback={<SectionLoader />}>
+      <LazySection>
         <GalleryLazy />
-      </Suspense>
+      </LazySection>
 
-      <Suspense fallback={<SectionLoader />}>
+      <LazySection>
         <UtubeLazy />
-      </Suspense>
+      </LazySection>
 
       <Accordion />
 
@@ -106,4 +94,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default React.memo(Home);

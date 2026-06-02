@@ -1,49 +1,85 @@
-import React, { Suspense, lazy } from "react";
+import React, { lazy } from "react";
+import { useParams } from "react-router-dom";
+
 import GlobalStyles from "./GlobalStyles";
+import { OmbDataMap } from "../data/OmbDataMap";
 
 import OmbHeroSection from "../sections/OmbHeroSection";
 import OmbCommunitySection from "../sections/OmbCommunitySection";
 
-import { OmbDataMap } from "../data/OmbDataMap";
-import { useParams } from "react-router-dom";
-// import Gallery from "../../Components/HomeCredentials/Gallery";
-// import YogaTeachers from "../../Components/Teachers/YogaTeachers";
-// import Ratings from "../../Components/Ratings";
 import Contact from "../../Components/Contact";
-import Questions from "./questions/Questions";
-// import MassageSection from "../sections/MassageSection";
+import LazySection from "../../Components/LazySection";
 
+// ==========================================
+// LAZY LOADED SECTIONS
+// ==========================================
 
-const OmbPromoSection          = lazy(() => import("../sections/OmbPromoSection"));
-const OmbTransformationSection = lazy(() => import("../sections/OmbTransformationSection"));
-const OmbPracticeSection       = lazy(() => import("../sections/OmbPracticeSection"));
-const OmbCurriculumSection     = lazy(() => import("../sections/OmbCurriculumSection"));
-const OmbScheduleSection       = lazy(() => import("../sections/OmbScheduleSection"));
-const MassageSection      = lazy(() => import("../sections/MassageSection"));
-const OmbExcursionSection      = lazy(() => import("../sections/OmbExcursionSection"));
-const OmbFoodSection           = lazy(() => import("../sections/OmbFoodSection"));
-const OmbAccommodationSection  = lazy(() => import("../sections/OmbAccommodationSection"));
-const OmbLocationSection       = lazy(() => import("../sections/OmbLocationSection"));
-
-const Loading = () => (
-  <div style={{ textAlign: "center", padding: "30px", fontSize: "0.8rem" }}>
-    Loading...
-  </div>
+const OmbPromoSection = lazy(() =>
+  import("../sections/OmbPromoSection")
 );
+
+const OmbTransformationSection = lazy(() =>
+  import("../sections/OmbTransformationSection")
+);
+
+const OmbPracticeSection = lazy(() =>
+  import("../sections/OmbPracticeSection")
+);
+
+const OmbCurriculumSection = lazy(() =>
+  import("../sections/OmbCurriculumSection")
+);
+
+const OmbScheduleSection = lazy(() =>
+  import("../sections/OmbScheduleSection")
+);
+
+const MassageSection = lazy(() =>
+  import("../sections/MassageSection")
+);
+
+const OmbExcursionSection = lazy(() =>
+  import("../sections/OmbExcursionSection")
+);
+
+const OmbFoodSection = lazy(() =>
+  import("../sections/OmbFoodSection")
+);
+
+const OmbAccommodationSection = lazy(() =>
+  import("../sections/OmbAccommodationSection")
+);
+
+const OmbLocationSection = lazy(() =>
+  import("../sections/OmbLocationSection")
+);
+
+const Questions = lazy(() =>
+  import("./questions/Questions")
+);
+
+// ==========================================
+// PAGE
+// ==========================================
 
 const OmbYogaPage = () => {
   const { location, course } = useParams();
 
-  // Normalise both params to lowercase so "Bali/acroYoga" → bali + acroyoga
   const locationKey = location?.toLowerCase().trim();
-  const courseKey   = course?.toLowerCase().trim();
+  const courseKey = course?.toLowerCase().trim();
 
   const data = OmbDataMap[locationKey]?.[courseKey];
 
   if (!data) {
     return (
-      <div style={{ padding: "80px 40px", textAlign: "center" }}>
+      <div
+        style={{
+          padding: "80px 40px",
+          textAlign: "center",
+        }}
+      >
         <h2>Coming Soon</h2>
+
         <p>
           We're preparing the <strong>{course}</strong> program for{" "}
           <strong>{location}</strong>. Check back soon!
@@ -55,73 +91,100 @@ const OmbYogaPage = () => {
   return (
     <>
       <GlobalStyles />
+
       <div className="omb-root">
 
-        <OmbHeroSection        data={data.heroSection} />
-        <OmbCommunitySection   data={data.communitySection} />
+        {/* ==========================================
+            ABOVE THE FOLD
+        ========================================== */}
 
-        <Suspense fallback={<Loading />}>
-          <OmbPromoSection data={data.promoSection} />
-        </Suspense>
+        <OmbHeroSection
+          data={data.heroSection}
+        />
 
+        <OmbCommunitySection
+          data={data.communitySection}
+        />
 
-        <Suspense fallback={<Loading />}>
-          <OmbTransformationSection data={data.transformationSection} />
-        </Suspense>
+        {/* ==========================================
+            BELOW THE FOLD
+        ========================================== */}
 
-        <Suspense fallback={<Loading />}>
-          <OmbPracticeSection data={data.practiceSection} />
-        </Suspense>
+        <LazySection>
+          <OmbPromoSection
+            data={data.promoSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <OmbCurriculumSection data={data.curriculumSection} />
-        </Suspense>
+        <LazySection>
+          <OmbTransformationSection
+            data={data.transformationSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <OmbScheduleSection data={data.scheduleSection} />
-        </Suspense>
- <Suspense fallback={<Loading />}>
-          <MassageSection data={data.MassageSection} />
-        </Suspense>
-        <Suspense fallback={<Loading />}>
-          <OmbExcursionSection data={data.excursionSection} />
-        </Suspense>
+        <LazySection>
+          <OmbPracticeSection
+            data={data.practiceSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <OmbFoodSection data={data.foodSection} />
-        </Suspense>
+        <LazySection>
+          <OmbCurriculumSection
+            data={data.curriculumSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <OmbAccommodationSection data={data.accommodationSection} />
-        </Suspense>
+        <LazySection>
+          <OmbScheduleSection
+            data={data.scheduleSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <OmbLocationSection data={data.locationSection} />
-        </Suspense>
+        <LazySection>
+          <MassageSection
+            data={data.MassageSection}
+          />
+        </LazySection>
 
-        {/* <Suspense fallback={<Loading />}>
-          <Gallery />
-        </Suspense>
+        <LazySection>
+          <OmbExcursionSection
+            data={data.excursionSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <YogaTeachers />
-        </Suspense> */}
+        <LazySection>
+          <OmbFoodSection
+            data={data.foodSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <Questions data={data.teacherTrainingFaq} />
-        </Suspense>
+        <LazySection>
+          <OmbAccommodationSection
+            data={data.accommodationSection}
+          />
+        </LazySection>
 
-        {/* <Suspense fallback={<Loading />}>
-          <Ratings />
-        </Suspense> */}
+        <LazySection>
+          <OmbLocationSection
+            data={data.locationSection}
+          />
+        </LazySection>
 
-        <Suspense fallback={<Loading />}>
-          <Contact />
-        </Suspense>
+        <LazySection>
+          <Questions
+            data={data.teacherTrainingFaq}
+          />
+        </LazySection>
+
+        {/* ==========================================
+            CONTACT
+        ========================================== */}
+
+        <Contact />
 
       </div>
     </>
   );
 };
 
-export default OmbYogaPage;
+export default React.memo(OmbYogaPage);
