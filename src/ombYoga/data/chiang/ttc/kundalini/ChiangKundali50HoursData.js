@@ -158,6 +158,7 @@ export const ChiangKundali50HoursData = {
         "Kundalini yoga is not just for your body and mind — it is a way of life and an awakening from within. Understand the chakras, Nadis, energy flow and Kundalini awareness to experience the deeper self through a transformative 6-day journey.",
     },
   },
+  
 
   practiceSection: {
     colors: {
@@ -180,7 +181,7 @@ export const ChiangKundali50HoursData = {
           label: "Kundalini Kriya Yoga",
           desc: "Dynamic fixed sequences of postures, mudras, bandhas & mantras for expanding awareness and unblocking chakras",
           icon: "sparkles",
-          img: "https://images.unsplash.com/photo-1518611012118-f2fbdc7a1c1b?w=800&q=80",
+          img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Chakra Meditation",
@@ -192,7 +193,7 @@ export const ChiangKundali50HoursData = {
           label: "Pranayama & Hatha Yoga",
           desc: "Activate Ida, Pingla & Sushumna Nadis through cleansing breath practices and chakra-focused Hatha postures",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1526401281623-3594d7d97c3f?w=800&q=80",
+          img: "https://a-static.besthdwallpaper.com/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
         },
       ],
       specialTitle: "Why Choose",
@@ -464,7 +465,7 @@ export const ChiangKundali50HoursData = {
           tagBg: "#1E1040",
           duration: "Half Day",
           icon: "waves",
-          img: "https://images.unsplash.com/photo-1526481280691-7f50a1d5d6a1?w=800&q=80",
+          img: "https://wallpaperaccess.com/full/139164.jpg",
           desc: "Iconic ocean temple with breathtaking sunset views.",
           highlights: ["Ocean temple", "Sunset", "Coastal walk"],
         },
