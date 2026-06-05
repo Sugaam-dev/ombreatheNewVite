@@ -382,7 +382,7 @@ export const Rishikesh50HourYogaNidraData = {
           tagBg: "#2C3E50",
           duration: "Evening Block",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
           desc: "Watch breathtaking twilight light offerings and mantra chanting right down on the river steps.",
           highlights: ["Mantra chanting choruses", "River beach seating", "Timeless divine currents"],
         },

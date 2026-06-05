@@ -405,7 +405,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
           tagBg: "#2C3E50",
           duration: "Weekend Outing",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
           desc: "Visit powerful historical temples and regional ashrams to absorb timeless spiritual connotations.",
           highlights: ["Vedic chant exposure", "Ancient architectural view", "Spiritual energy zones"],
         },

@@ -424,7 +424,7 @@ export const BaliKundali500HoursData = {
           tagBg: "#4A50A0",
           duration: "Half Day",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1604608672516-5413fbb6d72f?w=800&q=80",
+          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
           desc: "Sacred purification temple with holy spring pools.",
           highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
         },

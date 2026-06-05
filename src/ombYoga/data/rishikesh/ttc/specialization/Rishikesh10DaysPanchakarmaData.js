@@ -383,7 +383,7 @@ export const Rishikesh10DaysPanchakarmaData = {
           tagBg: "#3A5F43",
           duration: "Evening Block",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
           desc: "Watch breathtaking twilight light rituals and corporate kirtan chanting on the holy river steps.",
           highlights: ["Mantra chanting loops", "Vibrational alignments", "River beach seating"],
         },

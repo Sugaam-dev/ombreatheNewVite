@@ -402,7 +402,7 @@ export const RishikeshKundali50HoursData = {
           tagBg: "#34495E",
           duration: "Evening Block",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
           desc: "Experience powerful, direct river devotionals on the ancient holy steps of Rishikesh.",
           highlights: ["Mantra sound fields", "Traditional light offerings", "Riverside contemplation"],
         },

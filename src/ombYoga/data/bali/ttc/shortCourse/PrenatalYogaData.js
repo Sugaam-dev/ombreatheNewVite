@@ -129,7 +129,7 @@ export const PrenatalYogaData = {
       ],
       images: {
         main:
-          "https://images.unsplash.com/photo-1609619385002-f40f1df9b7f3?w=1200&q=80",
+          "https://yogajala.com/wp-content/uploads/3-49.jpg",
         food:
           "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
         stay:
@@ -180,7 +180,7 @@ export const PrenatalYogaData = {
           label: "Prenatal Asana & Sequencing",
           desc: "Prenatal Vinyasa Flow, safe posture modifications, trimester-specific sequencing and post-natal yoga practices",
           icon: "heart",
-          img: "https://images.unsplash.com/photo-1609619385002-f40f1df9b7f3?w=800&q=80",
+          img: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
         },
         {
           label: "Pregnancy Breathwork & Meditation",
@@ -371,7 +371,7 @@ export const PrenatalYogaData = {
         "A well-rounded daily program — check in 20th at 2:00 PM, classes begin 21st, checkout 26th at 10:00 AM. All classes are mandatory.",
 
       image:
-        "https://images.unsplash.com/photo-1609619385002-f40f1df9b7f3?w=1200&q=80",
+        "https://yogajala.com/wp-content/uploads/3-49.jpg",
 
       morning: [
         { time: "06:00 AM", activity: "Prenatal Vinyasa Flow", icon: "sun" },
@@ -424,7 +424,7 @@ export const PrenatalYogaData = {
           tagBg: "#A04060",
           duration: "Half Day",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1604608672516-5413fbb6d72f?w=800&q=80",
+          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
           desc: "Sacred purification temple with holy spring pools.",
           highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
         },
@@ -474,7 +474,7 @@ export const PrenatalYogaData = {
           tagBg: "#6A4A20",
           duration: "3 Hours",
           icon: "camera",
-          img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
+          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
           desc: "Explore local markets, art galleries & Balinese handicrafts.",
           highlights: ["Local markets", "Art & craft", "Shopping"],
         },
@@ -590,7 +590,7 @@ export const PrenatalYogaData = {
           tag: "Course Only",
           tagBg: "#A04060",
           price: "$499",
-          img: "https://images.unsplash.com/photo-1609619385002-f40f1df9b7f3?w=1200&q=80",
+          img: "https://yogajala.com/wp-content/uploads/3-49.jpg",
           desc: "Course-only option — attend all prenatal yoga training sessions without accommodation or meals included.",
           features: [
             "Course access only",

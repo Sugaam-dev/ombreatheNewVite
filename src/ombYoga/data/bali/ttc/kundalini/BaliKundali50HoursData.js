@@ -180,7 +180,7 @@ export const BaliKundali50HoursData = {
           label: "Kundalini Kriya Yoga",
           desc: "Dynamic fixed sequences of postures, mudras, bandhas & mantras for expanding awareness and unblocking chakras",
           icon: "sparkles",
-          img: "https://images.unsplash.com/photo-1518611012118-f2fbdc7a1c1b?w=800&q=80",
+          img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Chakra Meditation",
@@ -192,7 +192,7 @@ export const BaliKundali50HoursData = {
           label: "Pranayama & Hatha Yoga",
           desc: "Activate Ida, Pingla & Sushumna Nadis through cleansing breath practices and chakra-focused Hatha postures",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1526401281623-3594d7d97c3f?w=800&q=80",
+          img: "https://a-static.besthdwallpaper.com/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
         },
       ],
       specialTitle: "Why Choose",
@@ -464,7 +464,7 @@ export const BaliKundali50HoursData = {
           tagBg: "#1E1040",
           duration: "Half Day",
           icon: "waves",
-          img: "https://images.unsplash.com/photo-1526481280691-7f50a1d5d6a1?w=800&q=80",
+          img: "https://wallpaperaccess.com/full/139164.jpg",
           desc: "Iconic ocean temple with breathtaking sunset views.",
           highlights: ["Ocean temple", "Sunset", "Coastal walk"],
         },
@@ -725,6 +725,7 @@ export const BaliKundali50HoursData = {
       shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
       shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
     },
+
 
     content: {
       title: "Kundalini",

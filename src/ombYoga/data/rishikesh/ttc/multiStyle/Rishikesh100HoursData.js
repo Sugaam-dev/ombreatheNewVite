@@ -21,7 +21,7 @@ export const Rishikesh100HoursData = {
       price: "$899",
       priceNote: "Includes stay, meals & certification",
       bgImage:
-        "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1600&q=80",
+        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       certificateImage:
         "https://www.ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
       buttonText: "Book Now",
@@ -64,7 +64,7 @@ export const Rishikesh100HoursData = {
 
     content: {
       bgImage:
-        "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1600&q=80",
+        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       eyebrow: "World Peace Yoga School Experience",
       title: "Join our",
       highlight: "transformative",
@@ -129,7 +129,7 @@ export const Rishikesh100HoursData = {
       ],
       images: {
         main:
-          "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1200&q=80",
+          "https://wallpaperbat.com/img/499607-yoga-background.jpg",
         food:
           "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
         stay:
@@ -150,7 +150,7 @@ export const Rishikesh100HoursData = {
 
     content: {
       bgImage:
-        "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1600&q=80",
+        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       quoteStart: "Begin your yoga journey in",
       highlight: "Rishikesh — the birthplace of yoga",
       quoteEnd: "beside the sacred Ganges and eternal Himalayas",
@@ -180,7 +180,7 @@ export const Rishikesh100HoursData = {
           label: "Hatha & Ashtanga Yoga",
           desc: "100+ postures — traditional Hatha yoga and Ashtanga practice with deep alignment and adjustment",
           icon: "sun",
-          img: "https://images.unsplash.com/photo-1518611012118-f2fbdc7a1c1b?w=800&q=80",
+          img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Pranayama & Meditation",
@@ -371,7 +371,7 @@ export const Rishikesh100HoursData = {
         "A structured daily routine from early morning Yoga Sadhana to evening Ganga beach meditation — all classes are mandatory.",
 
       image:
-        "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=1200&q=80",
+        "https://wallpaperbat.com/img/499607-yoga-background.jpg",
 
       morning: [
         { time: "05:00 AM", activity: "Yoga Sadhana", icon: "moon" },
@@ -434,7 +434,7 @@ export const Rishikesh100HoursData = {
           tagBg: "#C8874A",
           duration: "Half Day",
           icon: "globe",
-          img: "https://images.unsplash.com/photo-1585014612641-3c82a764ce9d?w=800&q=80",
+          img: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
           desc: "Historic ashram where The Beatles studied Transcendental Meditation in 1968.",
           highlights: ["Historic ashram", "Street art", "Meditation history"],
         },
@@ -444,7 +444,7 @@ export const Rishikesh100HoursData = {
           tagBg: "#1E2D0E",
           duration: "2 Hours",
           icon: "sparkles",
-          img: "https://images.unsplash.com/photo-1604608672516-5413fbb6d72f?w=800&q=80",
+          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
           desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
           highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
         },
@@ -474,7 +474,7 @@ export const Rishikesh100HoursData = {
           tagBg: "#4A6A20",
           duration: "Half Day",
           icon: "book",
-          img: "https://images.unsplash.com/photo-1602526433898-f15e8b87b405?w=800&q=80",
+          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
           desc: "Study tours to different ashrams and temples in and around Rishikesh.",
           highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
         },

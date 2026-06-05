@@ -278,7 +278,7 @@ const shaktiSadhanaData = {
         description: "Daily practice of the powerful 9-syllable Devi mantra for spiritual transformation and protection"
       },
       {
-        image: "https://images.unsplash.com/photo-1574936913940-5b9f6b30b4c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "https://img.freepik.com/premium-photo/buddhist-monks-meditation-chanting-sessions-ancient-temple_201606-20597.jpg",
         alt: "Temple meditation and prayer",
         title: "Sri Lalita Sahasranama",
         description: "Recitation of 1000 names of Divine Mother Lalita for deep devotion and spiritual connection"

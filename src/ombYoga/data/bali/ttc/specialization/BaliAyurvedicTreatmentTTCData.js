@@ -192,7 +192,7 @@ export const BaliAyurvedicTreatmentTTCData = {
           label: "Localized Swedana and Bastis",
           desc: "Master Podikkizhi herbal poultices (Pinda Swedana), regional Kati Basti warmth rings, and Nasyam nasal cleansings.",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=800&q=80",
+          img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
         },
       ],
       specialTitle: "Elite Features",

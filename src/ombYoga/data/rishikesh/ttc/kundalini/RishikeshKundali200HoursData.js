@@ -424,7 +424,7 @@ export const RishikeshKundali200HoursData = {
           tagBg: "#C8874A",
           duration: "Evening Block",
           icon: "sparkles",
-          img: "https://images.unsplash.com/photo-1561361531-99f2a6e90111?w=800&q=80",
+          img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
           desc: "Watch beautiful devotional light ceremonies held right along the holy river steps.",
           highlights: ["Ganga Aarti seating", "Mantra vocal choruses", "Sacred river vibrations"],
         },

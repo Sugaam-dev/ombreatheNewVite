@@ -192,7 +192,7 @@ export const MysorePrenatalYogaData = {
           label: "Labor and Postpartum Support",
           desc: "Track the physical stages of delivery, pelvic floor sequencing, behavior guides, and traditional recovery parameters.",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=800&q=80",
+          img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
         },
       ],
       specialTitle: "Pillars of Integrity",

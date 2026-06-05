@@ -145,7 +145,7 @@ const shivShaktiSadhanaData = {
     description: "Our Shiv Shakti Sadhana program dives deep into advanced tantric practices, sacred geometry, and energy balancing techniques. Learn to harmonize masculine and feminine energies within yourself while visiting the most powerful Shiva temples in India.",
     items: [
       {
-        image: "https://images.unsplash.com/photo-1583470274350-4d0b4f8c41dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "https://img.freepik.com/premium-photo/view-hand-meditation-yoga-mudra-position-outdoors-beach-night_535168-1544.jpg",
         alt: "Jyotirlinga meditation practice",
         title: "Jyotirlinga Meditation",
         description: "Deep meditation practices at 12 sacred Jyotirlingas, absorbing Shiva's infinite light energy"

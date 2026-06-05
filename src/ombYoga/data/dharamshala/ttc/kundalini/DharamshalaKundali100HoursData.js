@@ -159,6 +159,79 @@ export const DharamshalaKundali100HoursData = {
     },
   },
 
+    MassageSection: {
+  colors: {
+    navy: "#1A2456",
+    white: "#ffffff",
+    sage: "#7BAF8A",
+    border: "rgba(255,255,255,0.15)",
+    cardBg: "rgba(255, 255, 255, 0.05)",
+    shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+  },
+  content: {
+    title: "Signature",
+    highlight: "Massage Treatments",
+    subtitle: "Unwind your body and restore your muscle flexibility after intensive yoga training sessions with expert therapies.",
+    massages: [
+      {
+        id: 1,
+        title: "Deep Tissue Ritual",
+        tagline: "Designed to relieve deep-seated muscle tension, chronic stress, and stiffness using slow, deliberate strokes.",
+        duration: "60 mins",
+        rating: 4.9,
+        reviews: 184,
+        isPopular: true,
+        isPaid: true,
+        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 2,
+        title: "Himalayan Hot Stone",
+        tagline: "Warm, mineral-rich basalt stones are placed strategically to melt away anxiety and restore deeply aligned energy flow.",
+        duration: "75 mins",
+        rating: 4.8,
+        reviews: 92,
+        isPopular: false,
+        isPaid: true,
+        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 3,
+        title: "Complimentary Aroma Mist",
+        tagline: "A brief, relaxing hydration aromatherapy session available to all resort guests during morning welcome check-ins.",
+        duration: "15 mins",
+        rating: 5.0,
+        reviews: 210,
+        isPopular: false,
+        isPaid: false,
+        image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 4,
+        title: "Swedish Bliss Massage",
+        tagline: "Long, gliding strokes mixed with kneading to promote total body relaxation, improved circulation, and optimal flexibility.",
+        duration: "50 mins",
+        rating: 4.7,
+        reviews: 145,
+        isPopular: false,
+        isPaid: true,
+        image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        id: 5,
+        title: "Welcome Scalp Massage",
+        tagline: "Enjoy a quick, stress-relieving tension release head massage routine. Completely complimentary.",
+        duration: "10 mins",
+        rating: 4.9,
+        reviews: 76,
+        isPopular: true,
+        isPaid: false,
+        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+      }
+    ]
+  }
+},
+
   practiceSection: {
     colors: {
       navy: "#0D3B3E",
@@ -180,7 +253,7 @@ export const DharamshalaKundali100HoursData = {
           label: "Kundalini Kriya & Asana",
           desc: "Chakra-specific postures, Asthi Granthi Kriya, Prana Kriya & Kundalini Tantra philosophy for awakening",
           icon: "sparkles",
-          img: "https://images.unsplash.com/photo-1518611012118-f2fbdc7a1c1b?w=800&q=80",
+          img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Pranayama & Meditation",
@@ -192,7 +265,7 @@ export const DharamshalaKundali100HoursData = {
           label: "Hatha Yoga & Teaching",
           desc: "Chakra-focused Hatha postures, alignment & adjustment, Ayurveda, Mudra & Kundalini teaching methodology",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1526401281623-3594d7d97c3f?w=800&q=80",
+          img: "https://a-static.besthdwallpaper.com/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
         },
       ],
       specialTitle: "Why Choose",
@@ -464,7 +537,7 @@ export const DharamshalaKundali100HoursData = {
           tagBg: "#0D3B3E",
           duration: "Half Day",
           icon: "waves",
-          img: "https://images.unsplash.com/photo-1526481280691-7f50a1d5d6a1?w=800&q=80",
+          img: "https://wallpaperaccess.com/full/139164.jpg",
           desc: "Iconic ocean temple with breathtaking sunset views.",
           highlights: ["Ocean temple", "Sunset", "Coastal walk"],
         },

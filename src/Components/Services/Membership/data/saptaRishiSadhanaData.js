@@ -157,7 +157,7 @@ const saptaRishiSadhanaData = {
         description: "Traditional Agnihotra and Yajna practices for purification and cosmic connection"
       },
       {
-        image: "https://images.unsplash.com/photo-1606166894937-8ea762d2c4db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "https://img.freepik.com/premium-photo/scholars-studying-manuscripts-ancient-civilizations-together_1079150-345395.jpg",
         alt: "Ancient text study",
         title: "Vedic Scripture Study",
         description: "Deep study of original texts including Vedas, Upanishads, and sage teachings"

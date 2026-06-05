@@ -145,7 +145,7 @@ Nature Journey to Sacred
     description: "Our Pashu-Patayaa Sadhana program provides deep immersion into nature consciousness, animal communication, and ecological healing. Learn to recognize the divine in all life forms while developing practices that honor and protect our natural world.",
     items: [
       {
-        image: "https://images.unsplash.com/photo-1574263867128-a3d5c1b1deec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "https://i.pinimg.com/736x/51/c0/1c/51c01c4be14d3038abb5b171784667da.jpg",
         alt: "Animal meditation practice",
         title: "Animal Consciousness Meditation",
         description: "Learn to communicate with and understand the wisdom of different animal species through meditation"
@@ -157,7 +157,7 @@ Nature Journey to Sacred
         description: "Practice yoga postures inspired by animals and trees in their natural forest environment"
       },
       {
-        image: "https://images.unsplash.com/photo-1464822759844-d150baec0094?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "https://img.freepik.com/premium-photo/indigenous-communities-participating-healing-ceremony_1168612-411862.jpg",
         alt: "Ecological healing ceremony",
         title: "Ecological Healing Practices",
         description: "Learn earth healing techniques and ceremonies for environmental restoration and protection"
