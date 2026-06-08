@@ -377,7 +377,7 @@ sage: "#8A5A10",
           tagBg: "#1E2D0E",
           duration: "2 Hours",
           icon: "sparkles",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
           highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
         },
@@ -407,7 +407,7 @@ sage: "#8A5A10",
           tagBg: "#4A6A20",
           duration: "Half Day",
           icon: "book",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Study tours to different ashrams and temples in and around Rishikesh.",
           highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
         },
@@ -648,69 +648,6 @@ activeBg: "rgba(138,32,16,0.1)",
     },
   },
 
-  teacherTrainingFaq: {
-    colors: {
-      navy: "#1E2D0E",
-      white: "#ffffff",
-   sage: "#8A2010",
-      border: "rgba(255,255,255,0.25)",
-      cardBg: "rgba(255,255,255,0.08)",
-      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-    },
-
-    content: {
-      title: "Teacher",
-highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 300-hour yoga teacher training in Rishikesh.",
-
-
-// Replace ALL faqs with these 10:
-faqs: [
-  {
-    question: "Can you tell me about my room and facilities?",
-    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $150. Low-cost laundry service available.",
-  },
-  {
-    question: "What food is provided?",
-    answer: "You receive 3 organic vegetarian meals per day — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
-  },
-  {
-    question: "Do I need to bring any special equipment or clothes?",
-    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment — mats, blocks and props — is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
-  },
-  {
-    question: "What is the refund procedure?",
-    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
-  },
- {
-  question: "Can I do 300 hours directly without completing 200 hours?",
-  answer: "Yes, you can do a 300-hour yoga teacher training without completing 200 hours first — but it is not recommended, as it is like going for an advanced course without basic knowledge. If you have not completed 200 hours from a Yoga Alliance registered school, you can still join but will not be able to register as RYT-500 with Yoga Alliance.",
-},
-{
-  question: "What is advanced in the 300-hour yoga teacher training course?",
-  answer: "The 300-hour course is a four-week intensive program crafted to deepen your existing foundations of yoga. High attention is given to Classical Dance, Ganga Beach Sadhna, Chakras, Mantra Diksha, Silence practice, Yoga Therapy, advanced alignment principles across 5 Koshas and neuroscience, physiology, anatomy and psychology perspectives.",
-},
-{
-  question: "Can I do 200 hours and 300 hours in two different schools?",
-  answer: "Yes — you can do 200 hours and 300 hours at two different schools. Both schools must be Yoga Alliance registered for you to register as RYT-500. Completing 200+300 hours gives you a total of 500 hours and eligibility to register as RYT-500 with Yoga Alliance.",
-},
-{
-  question: "Is this 300-hour YTTC only for yoga teachers?",
-  answer: "No — this course is not exclusively for yoga teachers. Anyone who wants to refresh their skills, obtain deep knowledge of yoga, meditation and philosophy, deepen their personal practice, or enhance their credibility as a yoga teacher can join. RYT-200 holders benefit most but the course is open to all serious practitioners.",
-},
-{
-  question: "I did a 200-hour YTTC online. Can I still do the 300-hour in Rishikesh?",
-  answer: "Yes — you can pursue the 300-hour yoga teacher training in Rishikesh even if you completed your 200-hour YTTC online. However, for Yoga Alliance RYT-500 registration, both your 200-hour and 300-hour certifications need to be from Yoga Alliance registered schools.",
-},
-{
-  question: "What is the difference between 200-hour and 300-hour yoga teacher training?",
-  answer: "The 200-hour YTTC is a foundation-level yoga training covering basic yoga concepts. The 300-hour YTTC is an advanced level training that deepens your existing knowledge with Classical Dance, Ganga Sadhna, Chakras, Mantra Diksha, Yoga Therapy, Silence and advanced alignment. Completing both gives you 500 hours total and RYT-500 eligibility.",
-},
-],
-    },
-  },
-
   MassageSection: {
   colors: {
     navy: "#1A2456",
@@ -783,4 +720,69 @@ faqs: [
     ]
   }
 },
+
+  teacherTrainingFaq: {
+    colors: {
+      navy: "#1E2D0E",
+      white: "#ffffff",
+   sage: "#8A2010",
+      border: "rgba(255,255,255,0.25)",
+      cardBg: "rgba(255,255,255,0.08)",
+      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+    },
+
+    content: {
+      title: "Teacher",
+highlight: "Training FAQ",
+subtitle: "Find answers to the most common questions about World Peace Yoga School's 300-hour yoga teacher training in Rishikesh.",
+
+
+// Replace ALL faqs with these 10:
+faqs: [
+  {
+    question: "Can you tell me about my room and facilities?",
+    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $150. Low-cost laundry service available.",
+  },
+  {
+    question: "What food is provided?",
+    answer: "You receive 3 organic vegetarian meals per day — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
+  },
+  {
+    question: "Do I need to bring any special equipment or clothes?",
+    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment — mats, blocks and props — is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
+  },
+  {
+    question: "What is the refund procedure?",
+    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
+  },
+ {
+  question: "Can I do 300 hours directly without completing 200 hours?",
+  answer: "Yes, you can do a 300-hour yoga teacher training without completing 200 hours first — but it is not recommended, as it is like going for an advanced course without basic knowledge. If you have not completed 200 hours from a Yoga Alliance registered school, you can still join but will not be able to register as RYT-500 with Yoga Alliance.",
+},
+{
+  question: "What is advanced in the 300-hour yoga teacher training course?",
+  answer: "The 300-hour course is a four-week intensive program crafted to deepen your existing foundations of yoga. High attention is given to Classical Dance, Ganga Beach Sadhna, Chakras, Mantra Diksha, Silence practice, Yoga Therapy, advanced alignment principles across 5 Koshas and neuroscience, physiology, anatomy and psychology perspectives.",
+},
+{
+  question: "Can I do 200 hours and 300 hours in two different schools?",
+  answer: "Yes — you can do 200 hours and 300 hours at two different schools. Both schools must be Yoga Alliance registered for you to register as RYT-500. Completing 200+300 hours gives you a total of 500 hours and eligibility to register as RYT-500 with Yoga Alliance.",
+},
+{
+  question: "Is this 300-hour YTTC only for yoga teachers?",
+  answer: "No — this course is not exclusively for yoga teachers. Anyone who wants to refresh their skills, obtain deep knowledge of yoga, meditation and philosophy, deepen their personal practice, or enhance their credibility as a yoga teacher can join. RYT-200 holders benefit most but the course is open to all serious practitioners.",
+},
+{
+  question: "I did a 200-hour YTTC online. Can I still do the 300-hour in Rishikesh?",
+  answer: "Yes — you can pursue the 300-hour yoga teacher training in Rishikesh even if you completed your 200-hour YTTC online. However, for Yoga Alliance RYT-500 registration, both your 200-hour and 300-hour certifications need to be from Yoga Alliance registered schools.",
+},
+{
+  question: "What is the difference between 200-hour and 300-hour yoga teacher training?",
+  answer: "The 200-hour YTTC is a foundation-level yoga training covering basic yoga concepts. The 300-hour YTTC is an advanced level training that deepens your existing knowledge with Classical Dance, Ganga Sadhna, Chakras, Mantra Diksha, Yoga Therapy, Silence and advanced alignment. Completing both gives you 500 hours total and RYT-500 eligibility.",
+},
+],
+    },
+  },
+
+
 };

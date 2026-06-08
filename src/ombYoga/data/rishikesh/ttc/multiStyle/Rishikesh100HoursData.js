@@ -444,7 +444,7 @@ export const Rishikesh100HoursData = {
           tagBg: "#1E2D0E",
           duration: "2 Hours",
           icon: "sparkles",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
           highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
         },
@@ -474,7 +474,7 @@ export const Rishikesh100HoursData = {
           tagBg: "#4A6A20",
           duration: "Half Day",
           icon: "book",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Study tours to different ashrams and temples in and around Rishikesh.",
           highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
         },
@@ -715,77 +715,6 @@ export const Rishikesh100HoursData = {
     },
   },
 
-  teacherTrainingFaq: {
-    colors: {
-      navy: "#1E2D0E",
-      white: "#ffffff",
-      sage: "#4A7A2A",
-      border: "rgba(255,255,255,0.25)",
-      cardBg: "rgba(255,255,255,0.08)",
-      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-    },
-
-    content: {
-      title: "Teacher",
-      highlight: "Training FAQ",
-      subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 100-hour yoga teacher training in Rishikesh.",
-
-      faqs: [
-        {
-          question: "Can you tell me about my room and facilities?",
-          answer:
-            "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. You have the option of single rooms or twin sharing — all rooms have their own private bathrooms. We provide filtered water throughout the building, free WiFi, fresh towels, clean bedding changed weekly, a study desk, wardrobe and low-cost laundry service. AC is available at an additional $150.",
-        },
-        {
-          question: "What food is provided?",
-          answer:
-            "You will receive 3 organic vegetarian meals per day. We serve a very traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes. We also provide herbal tea and unlimited filtered water. WPYS food is based on a yoga diet — nutritious, easy to digest, and helps optimize the wellness of the mind and body.",
-        },
-        {
-          question: "Do I need to bring any special equipment or clothes?",
-          answer:
-            "Appropriate dress code should be followed during yoga classes. One white outfit is provided for the ceremony days. We have all the yoga equipment for comfortable practice — mats, blocks and props. Please bring a water bottle to reduce plastic usage. When visiting temples and the Ganga, modest dress in line with local culture should be maintained.",
-        },
-        {
-          question: "What is the refund procedure?",
-          answer:
-            "The advance course fee deposit is non-refundable. In case of emergency, you can contact us to delay the course start date. If you cancel, we accept the cancellation but the advance deposit will not be refunded. Once you are in the school and on the course, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
-        },
-        {
-          question: "Which airport should I fly to?",
-          answer:
-            "The closest and most convenient airport is Dehradun (Jolly Grant Airport) — just 30 minutes from Rishikesh. Free taxi pick-up from Dehradun Airport is included in the course fee. If flying to New Delhi, Delhi to Rishikesh by car is a 6-hour journey.",
-        },
-        {
-          question: "How can I reach Rishikesh from Delhi and how much does it cost?",
-          answer:
-            "Delhi airport to Rishikesh by car is 6 hours. We have a transportation package for $150 covering airport pick-up and return transfer. One-way from Delhi airport to Rishikesh is $75. An alternative is to travel by train from New Delhi to Haridwar and then by car to Rishikesh. Free taxi pick-up is included from Dehradun Airport.",
-        },
-        {
-          question: "Is it safe to travel alone to Rishikesh?",
-          answer:
-            "Yes — it is very safe to travel alone to Rishikesh. Many tourists do it every year. If you have never been to India before, it can be helpful to fly directly to Dehradun Airport (30 min from Rishikesh) rather than navigating from Delhi, as local buses and trains can be complex for first-time visitors.",
-        },
-        {
-          question: "Will you handle travel arrangements once I arrive in India?",
-          answer:
-            "Yes — with advanced notice we will arrange transportation directly from Dehradun Airport (free of charge), the bus or train station. Upon arriving in Rishikesh we will help you with directions to reach our school at Laxman Jhula.",
-        },
-        {
-          question: "Is the 100-hour course Yoga Alliance certified?",
-          answer:
-            "The 100-hour course is a basic foundation yoga course — students study alongside 200-hour YTTC students for the first half. After completing 100 hours, you are eligible to attend the second 100 hours at any World Peace Yoga School within one year, which will then qualify you for the full 200-hour Yoga Alliance RYT-200 certification.",
-        },
-        {
-          question: "What do I wear during classes?",
-          answer:
-            "Wear comfortable yoga clothing that is appropriate for alignment and adjustment work. One white outfit is provided for ceremony days. When visiting the Ganga or temples, please dress modestly in line with Indian culture and traditions.",
-        },
-      ],
-    },
-  },
   MassageSection: {
   colors: {
     navy: "#1A2456",
@@ -857,5 +786,78 @@ export const Rishikesh100HoursData = {
       }
     ]
   }
-}
+},
+
+  teacherTrainingFaq: {
+    colors: {
+      navy: "#1E2D0E",
+      white: "#ffffff",
+      sage: "#4A7A2A",
+      border: "rgba(255,255,255,0.25)",
+      cardBg: "rgba(255,255,255,0.08)",
+      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+    },
+
+    content: {
+      title: "Teacher",
+      highlight: "Training FAQ",
+      subtitle:
+        "Find answers to the most common questions about World Peace Yoga School's 100-hour yoga teacher training in Rishikesh.",
+
+      faqs: [
+        {
+          question: "Can you tell me about my room and facilities?",
+          answer:
+            "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. You have the option of single rooms or twin sharing — all rooms have their own private bathrooms. We provide filtered water throughout the building, free WiFi, fresh towels, clean bedding changed weekly, a study desk, wardrobe and low-cost laundry service. AC is available at an additional $150.",
+        },
+        {
+          question: "What food is provided?",
+          answer:
+            "You will receive 3 organic vegetarian meals per day. We serve a very traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes. We also provide herbal tea and unlimited filtered water. WPYS food is based on a yoga diet — nutritious, easy to digest, and helps optimize the wellness of the mind and body.",
+        },
+        {
+          question: "Do I need to bring any special equipment or clothes?",
+          answer:
+            "Appropriate dress code should be followed during yoga classes. One white outfit is provided for the ceremony days. We have all the yoga equipment for comfortable practice — mats, blocks and props. Please bring a water bottle to reduce plastic usage. When visiting temples and the Ganga, modest dress in line with local culture should be maintained.",
+        },
+        {
+          question: "What is the refund procedure?",
+          answer:
+            "The advance course fee deposit is non-refundable. In case of emergency, you can contact us to delay the course start date. If you cancel, we accept the cancellation but the advance deposit will not be refunded. Once you are in the school and on the course, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
+        },
+        {
+          question: "Which airport should I fly to?",
+          answer:
+            "The closest and most convenient airport is Dehradun (Jolly Grant Airport) — just 30 minutes from Rishikesh. Free taxi pick-up from Dehradun Airport is included in the course fee. If flying to New Delhi, Delhi to Rishikesh by car is a 6-hour journey.",
+        },
+        {
+          question: "How can I reach Rishikesh from Delhi and how much does it cost?",
+          answer:
+            "Delhi airport to Rishikesh by car is 6 hours. We have a transportation package for $150 covering airport pick-up and return transfer. One-way from Delhi airport to Rishikesh is $75. An alternative is to travel by train from New Delhi to Haridwar and then by car to Rishikesh. Free taxi pick-up is included from Dehradun Airport.",
+        },
+        {
+          question: "Is it safe to travel alone to Rishikesh?",
+          answer:
+            "Yes — it is very safe to travel alone to Rishikesh. Many tourists do it every year. If you have never been to India before, it can be helpful to fly directly to Dehradun Airport (30 min from Rishikesh) rather than navigating from Delhi, as local buses and trains can be complex for first-time visitors.",
+        },
+        {
+          question: "Will you handle travel arrangements once I arrive in India?",
+          answer:
+            "Yes — with advanced notice we will arrange transportation directly from Dehradun Airport (free of charge), the bus or train station. Upon arriving in Rishikesh we will help you with directions to reach our school at Laxman Jhula.",
+        },
+        {
+          question: "Is the 100-hour course Yoga Alliance certified?",
+          answer:
+            "The 100-hour course is a basic foundation yoga course — students study alongside 200-hour YTTC students for the first half. After completing 100 hours, you are eligible to attend the second 100 hours at any World Peace Yoga School within one year, which will then qualify you for the full 200-hour Yoga Alliance RYT-200 certification.",
+        },
+        {
+          question: "What do I wear during classes?",
+          answer:
+            "Wear comfortable yoga clothing that is appropriate for alignment and adjustment work. One white outfit is provided for ceremony days. When visiting the Ganga or temples, please dress modestly in line with Indian culture and traditions.",
+        },
+      ],
+    },
+  },
+
 };

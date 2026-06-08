@@ -717,45 +717,7 @@ export const Bali50HourData = {
     },
   },
 
-teacherTrainingFaq: {
-  colors: {
-    navy: "#1A2456",
-    white: "#ffffff",
-    sage: "#7BAF8A",
-    border: "rgba(255,255,255,0.25)",
-    cardBg: "rgba(255,255,255,0.08)",
-    shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-    shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-  },
-
-  content: {
-    title: "Teacher",
-    highlight: "Training FAQ",
-    subtitle:
-      "Find answers to the most common questions about Yogalayaa’s yoga teacher training program.",
-
-    faqs: [
-      {
-        question: "What is Yogalayaa's teacher training program?",
-        answer:
-          "Yogalayaa's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
-      },
-      {
-        question: "What is the duration of the program?",
-        answer:
-          "The duration ranges from 100 hours to 500 hours depending on the certification level.",
-      },
-      {
-        question: "What styles of yoga are taught?",
-        answer:
-          "The program covers Hatha, Vinyasa, Kundalini, Prenatal, and Ayurveda yoga styles.",
-      },
-    ],
-
-  },
-},
-  
-MassageSection: {
+  MassageSection: {
   colors: {
     navy: "#1A2456",
     white: "#ffffff",
@@ -826,5 +788,45 @@ MassageSection: {
       }
     ]
   }
-}
+},
+
+teacherTrainingFaq: {
+  colors: {
+    navy: "#1A2456",
+    white: "#ffffff",
+    sage: "#7BAF8A",
+    border: "rgba(255,255,255,0.25)",
+    cardBg: "rgba(255,255,255,0.08)",
+    shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+    shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+  },
+
+  content: {
+    title: "Teacher",
+    highlight: "Training FAQ",
+    subtitle:
+      "Find answers to the most common questions about Yogalayaa’s yoga teacher training program.",
+
+    faqs: [
+      {
+        question: "What is Yogalayaa's teacher training program?",
+        answer:
+          "Yogalayaa's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
+      },
+      {
+        question: "What is the duration of the program?",
+        answer:
+          "The duration ranges from 100 hours to 500 hours depending on the certification level.",
+      },
+      {
+        question: "What styles of yoga are taught?",
+        answer:
+          "The program covers Hatha, Vinyasa, Kundalini, Prenatal, and Ayurveda yoga styles.",
+      },
+    ],
+
+  },
+},
+  
+
 };

@@ -434,7 +434,7 @@ sage: "#8A5A10",
           tagBg: "#1E2D0E",
           duration: "2 Hours",
           icon: "sparkles",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
           highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
         },
@@ -464,7 +464,7 @@ sage: "#8A5A10",
           tagBg: "#4A6A20",
           duration: "Half Day",
           icon: "book",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Study tours to different ashrams and temples in and around Rishikesh.",
           highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
         },
@@ -703,68 +703,6 @@ sage: "#8A5A10",
       ],
     },
   },
-
-  teacherTrainingFaq: {
-    colors: {
-      navy: "#1E2D0E",
-      white: "#ffffff",
-      sage: "#4A7A2A",
-      border: "rgba(255,255,255,0.25)",
-      cardBg: "rgba(255,255,255,0.08)",
-      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-    },
-
-    content: {
-      title: "Teacher",
-highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 200-hour yoga teacher training in Rishikesh.",
-
-// Replace ALL faqs with these 10:
-faqs: [
-  {
-    question: "Can you tell me about my room and facilities?",
-    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $150. Low-cost laundry service available.",
-  },
-  {
-    question: "What food is provided?",
-    answer: "You receive 3 organic vegetarian meals per day — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
-  },
-  {
-    question: "Do I need to bring any special equipment or clothes?",
-    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment — mats, blocks and props — is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
-  },
-  {
-    question: "What is the refund procedure?",
-    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
-  },
-  {
-    question: "What are the advantages of studying yoga in India?",
-    answer: "India offers a perfect distraction-free environment for learning yoga where everyone has the same goal. You get to experience authentic yoga that has not altered its original form, understand yoga philosophy as a lifestyle — not just exercise — and learn directly from masters who follow the ancient Himalayan tradition.",
-  },
-  {
-    question: "What is 200-hour yoga teacher training?",
-    answer: "A 200-hour Yoga Teacher Training is the most common yoga teacher certification course. It covers every fundamental concept of yoga — anatomy, philosophy, asana, pranayama, meditation and teaching methodology — and prepares you to start teaching yoga professionally as a Yoga Alliance registered RYT-200 teacher.",
-  },
-  {
-    question: "Can a beginner do the 200-hour yoga teacher training?",
-    answer: "Yes — the 200-hour YTTC is a beginner to intermediate level course and complete beginners can join. The course is designed to meet all individual needs. Our teachers ensure students receive full attention in class, proper help in utilizing props and the freedom to work at their own speed.",
-  },
-  {
-    question: "Can I be a certified yoga teacher with 200-hour yoga certification?",
-    answer: "Yes — upon completing the 200-hour course from a Yoga Alliance certified school like World Peace Yoga School, you will be recognized as an internationally certified yoga teacher eligible to register as RYT-200 with Yoga Alliance. This gives you an international identity to teach yoga anywhere in the world.",
-  },
-  {
-    question: "What are the benefits of doing 200-hour yoga teacher training?",
-    answer: "The training teaches advanced techniques not available in regular classes. Your body becomes stronger, your mind-body connection deepens, and you gain a thorough understanding of yoga anatomy, philosophy and teaching skills. One month of training leads to lifetime learning and the ability to teach confidently worldwide.",
-  },
-  {
-    question: "What next after completing the 200-hour YTTC?",
-    answer: "You can start teaching yoga, take advanced courses like 300-hour YTTC, deepen your practice, attend workshops, or switch styles — for example from multi-style to Kundalini. World Peace Yoga School will always be your second home and you can extend your stay to explore Rishikesh and the Himalayas.",
-  },
-],
-    },
-  },
   MassageSection: {
   colors: {
     navy: "#1A2456",
@@ -836,5 +774,68 @@ faqs: [
       }
     ]
   }
-}
+},
+
+  teacherTrainingFaq: {
+    colors: {
+      navy: "#1E2D0E",
+      white: "#ffffff",
+      sage: "#4A7A2A",
+      border: "rgba(255,255,255,0.25)",
+      cardBg: "rgba(255,255,255,0.08)",
+      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+    },
+
+    content: {
+      title: "Teacher",
+highlight: "Training FAQ",
+subtitle: "Find answers to the most common questions about World Peace Yoga School's 200-hour yoga teacher training in Rishikesh.",
+
+// Replace ALL faqs with these 10:
+faqs: [
+  {
+    question: "Can you tell me about my room and facilities?",
+    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $150. Low-cost laundry service available.",
+  },
+  {
+    question: "What food is provided?",
+    answer: "You receive 3 organic vegetarian meals per day — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
+  },
+  {
+    question: "Do I need to bring any special equipment or clothes?",
+    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment — mats, blocks and props — is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
+  },
+  {
+    question: "What is the refund procedure?",
+    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
+  },
+  {
+    question: "What are the advantages of studying yoga in India?",
+    answer: "India offers a perfect distraction-free environment for learning yoga where everyone has the same goal. You get to experience authentic yoga that has not altered its original form, understand yoga philosophy as a lifestyle — not just exercise — and learn directly from masters who follow the ancient Himalayan tradition.",
+  },
+  {
+    question: "What is 200-hour yoga teacher training?",
+    answer: "A 200-hour Yoga Teacher Training is the most common yoga teacher certification course. It covers every fundamental concept of yoga — anatomy, philosophy, asana, pranayama, meditation and teaching methodology — and prepares you to start teaching yoga professionally as a Yoga Alliance registered RYT-200 teacher.",
+  },
+  {
+    question: "Can a beginner do the 200-hour yoga teacher training?",
+    answer: "Yes — the 200-hour YTTC is a beginner to intermediate level course and complete beginners can join. The course is designed to meet all individual needs. Our teachers ensure students receive full attention in class, proper help in utilizing props and the freedom to work at their own speed.",
+  },
+  {
+    question: "Can I be a certified yoga teacher with 200-hour yoga certification?",
+    answer: "Yes — upon completing the 200-hour course from a Yoga Alliance certified school like World Peace Yoga School, you will be recognized as an internationally certified yoga teacher eligible to register as RYT-200 with Yoga Alliance. This gives you an international identity to teach yoga anywhere in the world.",
+  },
+  {
+    question: "What are the benefits of doing 200-hour yoga teacher training?",
+    answer: "The training teaches advanced techniques not available in regular classes. Your body becomes stronger, your mind-body connection deepens, and you gain a thorough understanding of yoga anatomy, philosophy and teaching skills. One month of training leads to lifetime learning and the ability to teach confidently worldwide.",
+  },
+  {
+    question: "What next after completing the 200-hour YTTC?",
+    answer: "You can start teaching yoga, take advanced courses like 300-hour YTTC, deepen your practice, attend workshops, or switch styles — for example from multi-style to Kundalini. World Peace Yoga School will always be your second home and you can extend your stay to explore Rishikesh and the Himalayas.",
+  },
+],
+    },
+  },
+ 
 };

@@ -322,7 +322,7 @@ cardShadow: "0 8px 24px rgba(0,0,0,0.1)",
           tagBg: "#1E2D0E",
           duration: "2 Hours",
           icon: "sparkles",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
           highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
         },
@@ -352,7 +352,7 @@ cardShadow: "0 8px 24px rgba(0,0,0,0.1)",
           tagBg: "#4A6A20",
           duration: "Half Day",
           icon: "book",
-          img: "https://wallpaperswide.com/download/spring_yoga_outdoors-wallpaper-5120x3200.jpg",
+          img: "https://wallpaperaccess.com/full/139108.jpg",
           desc: "Study tours to different ashrams and temples in and around Rishikesh.",
           highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
         },
@@ -548,66 +548,6 @@ border: "rgba(0,0,0,0.05)",
       ],
     },
   },
-
-  teacherTrainingFaq: {
-    colors: {
-     navy: "#082828",
-white: "#ffffff",
-sage: "#1A6060",
-border: "rgba(255,255,255,0.25)",
-cardBg: "rgba(255,255,255,0.08)",
-shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-    },
-
-    content: {
-    title: "Teacher",
-highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 500-hour yoga teacher training in Rishikesh.",
-faqs: [
-  {
-    question: "Can you tell me about my room and facilities?",
-    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $300 for the full 2-month program. Low-cost laundry service available.",
-  },
-  {
-    question: "What food is provided?",
-    answer: "You receive 3 organic vegetarian meals per day for both months — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
-  },
-  {
-    question: "Do I need to bring any special equipment or clothes?",
-    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
-  },
-  {
-    question: "What is the refund procedure?",
-    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
-  },
-  {
-    question: "What are the advantages of studying yoga in India?",
-    answer: "India offers a perfect distraction-free environment where everyone has the same goal of learning yoga. You experience authentic yoga that has not altered its original form, understand yoga philosophy as a lifestyle — not just exercise — and learn directly from Himalayan masters who follow the 5,000-year-old tradition.",
-  },
-  {
-    question: "What is 500-hour yoga teacher training?",
-    answer: "The 500-hour YTTC is the combination of 200-hour foundation + 300-hour advanced yoga teacher training. It covers every fundamental and advanced concept — Hatha, Ashtanga primary and intermediate series, Classical Dance, Ganga Sadhna, Chakras, Mantra Diksha, Yoga Therapy and complete teaching methodology. Upon completion you earn RYT-500 — the highest Yoga Alliance certification.",
-  },
-  {
-    question: "Is the 500-hour suitable for beginners?",
-    answer: "Yes — the program begins with the 200-hour foundation in Month 1, making it accessible for beginners and intermediate students alike. Month 1 builds your solid base, and Month 2 deepens into advanced practices. Our teachers ensure full personal attention throughout both months.",
-  },
-  {
-    question: "Can I be a certified yoga teacher with 500-hour certification?",
-    answer: "Yes — upon completing the 500-hour course you receive RYT-500 — the highest international yoga teacher certification. You also earn both RYT-200 and RYT-300 certifications separately, giving you three Yoga Alliance credentials recognized worldwide.",
-  },
-  {
-    question: "What are the benefits of doing 500-hour yoga teacher training?",
-    answer: "You emerge as a deeply qualified expert yoga teacher capable of teaching all levels confidently. Your body becomes strong, mind-body connection deepens, and you gain mastery over advanced techniques including Ashtanga intermediate series, Classical Dance, Yoga Therapy and Himalayan philosophy. After completion you are eligible for Guru Vishnu's Master Trainer Program.",
-  },
-  {
-    question: "What next after completing the 500-hour YTTC?",
-    answer: "After 500 hours you are eligible to attend our 85-hour Prenatal Yoga TTC, Kids Yoga TTC, Yin Yoga TTC and many other advanced programs. The main benefit is eligibility for Guru Vishnu's Master Trainer Program held every year in September — the pinnacle of yoga mastery at World Peace Yoga School.",
-  },
-],
-    },
-  },
   MassageSection: {
   colors: {
     navy: "#1A2456",
@@ -680,4 +620,64 @@ faqs: [
     ]
   }
 },
+
+  teacherTrainingFaq: {
+    colors: {
+     navy: "#082828",
+white: "#ffffff",
+sage: "#1A6060",
+border: "rgba(255,255,255,0.25)",
+cardBg: "rgba(255,255,255,0.08)",
+shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+    },
+
+    content: {
+    title: "Teacher",
+highlight: "Training FAQ",
+subtitle: "Find answers to the most common questions about World Peace Yoga School's 500-hour yoga teacher training in Rishikesh.",
+faqs: [
+  {
+    question: "Can you tell me about my room and facilities?",
+    answer: "We offer clean, light and airy accommodation encased by the Himalayan mountains with the Ganga on our doorstep. All rooms have private bathrooms, free WiFi, study desk, wardrobe, fresh towels and clean bedding changed weekly. Filtered water is provided throughout. AC is available at an additional $300 for the full 2-month program. Low-cost laundry service available.",
+  },
+  {
+    question: "What food is provided?",
+    answer: "You receive 3 organic vegetarian meals per day for both months — a traditional Indian Ayurvedic diet of rice, chapatti, lentils and seasonal vegetable dishes, plus herbal tea and unlimited filtered water. WPYS food is nutritious, easy to digest and optimizes mind-body wellness.",
+  },
+  {
+    question: "Do I need to bring any special equipment or clothes?",
+    answer: "Appropriate dress code should be followed during yoga classes. One white outfit is provided for ceremony days. All yoga equipment is available. Please bring a water bottle. When visiting temples and the Ganga, dress modestly in line with Indian culture.",
+  },
+  {
+    question: "What is the refund procedure?",
+    answer: "The advance course fee is non-refundable. In case of emergency, you can contact us to delay the course start. Cancellations are accepted but the advance deposit will not be refunded. Once you are in the school, fees are 100% non-refundable. The course can be deferred should you need to leave early.",
+  },
+  {
+    question: "What are the advantages of studying yoga in India?",
+    answer: "India offers a perfect distraction-free environment where everyone has the same goal of learning yoga. You experience authentic yoga that has not altered its original form, understand yoga philosophy as a lifestyle — not just exercise — and learn directly from Himalayan masters who follow the 5,000-year-old tradition.",
+  },
+  {
+    question: "What is 500-hour yoga teacher training?",
+    answer: "The 500-hour YTTC is the combination of 200-hour foundation + 300-hour advanced yoga teacher training. It covers every fundamental and advanced concept — Hatha, Ashtanga primary and intermediate series, Classical Dance, Ganga Sadhna, Chakras, Mantra Diksha, Yoga Therapy and complete teaching methodology. Upon completion you earn RYT-500 — the highest Yoga Alliance certification.",
+  },
+  {
+    question: "Is the 500-hour suitable for beginners?",
+    answer: "Yes — the program begins with the 200-hour foundation in Month 1, making it accessible for beginners and intermediate students alike. Month 1 builds your solid base, and Month 2 deepens into advanced practices. Our teachers ensure full personal attention throughout both months.",
+  },
+  {
+    question: "Can I be a certified yoga teacher with 500-hour certification?",
+    answer: "Yes — upon completing the 500-hour course you receive RYT-500 — the highest international yoga teacher certification. You also earn both RYT-200 and RYT-300 certifications separately, giving you three Yoga Alliance credentials recognized worldwide.",
+  },
+  {
+    question: "What are the benefits of doing 500-hour yoga teacher training?",
+    answer: "You emerge as a deeply qualified expert yoga teacher capable of teaching all levels confidently. Your body becomes strong, mind-body connection deepens, and you gain mastery over advanced techniques including Ashtanga intermediate series, Classical Dance, Yoga Therapy and Himalayan philosophy. After completion you are eligible for Guru Vishnu's Master Trainer Program.",
+  },
+  {
+    question: "What next after completing the 500-hour YTTC?",
+    answer: "After 500 hours you are eligible to attend our 85-hour Prenatal Yoga TTC, Kids Yoga TTC, Yin Yoga TTC and many other advanced programs. The main benefit is eligibility for Guru Vishnu's Master Trainer Program held every year in September — the pinnacle of yoga mastery at World Peace Yoga School.",
+  },
+],
+    },
+  }
 };

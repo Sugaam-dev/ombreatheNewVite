@@ -714,67 +714,6 @@ export const Bali100HoursData= {
       ],
     },
   },
-  teacherTrainingFaq: {
-  colors: {
-    navy: "#1A2456",
-    white: "#ffffff",
-    sage: "#7BAF8A",
-    border: "rgba(255,255,255,0.25)",
-    cardBg: "rgba(255,255,255,0.08)",
-    shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
-    shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-  },
-
-  content: {
-    title: "Teacher",
-    highlight: "Training FAQ",
-    subtitle:
-      "Find answers to the most common questions about 100 Hours Ombreathe's yoga teacher training program in Bali.",
-
-    faqs: [
-      {
-        question: "After this class, would it be possible for me to enroll in Yoga Alliance?",
-        answer:
-          "If you are new to yoga, the 100-hour teacher training course is a wonderful place to start. Rather, it is a personal journey to discover Yoga for oneself.",
-      },
-    {
-  question: "Can you tell me what TTC entails?",
-  answer: [
-    "Every day, three plant-based meals, Blended Drinks with Seasonal Fruits (If you have any food allergies, please let us know in advance)",
-    "Seasonal Fruits, Herbal Tea, and Coffee Clean water",
-    "Pranayama",
-    "Lodging in an Individual Room",
-    "Properly sized notepad, pen, and course materials",
-    "There are yoga mats and other equipment in the yoga room.",
-    "Instruction in every area as outlined in the course outline",
-    "Adventures to different locations during the weekend (personal spending on vacations is not accounted for).",
-  ],
-},
-{
-  question: "What to bring to TTC?",
-  answer: [
-    "Valid visa and passport required for the whole course",
-    "Shoes suitable for inside usage, such as house shoes or clean slippers",
-    "Any and all prescription drugs that may be required",
-    "Sunglasses",
-    "Sunscreen",
-    "Reusable water bottles and thermoses",
-    "Adapters and power converters",
-    "Plugs for all kinds of devices",
-    "Repellent for mosquitoes",
-    "Organic personal care items",
-    "A notebook",
-  ],
-},
-{
-question:"What Do I Need To Wear During Classes?",
-answer:"You are free to wear whatever makes you happy, although white is necessary for the opening and closing ceremonies that you wear white cloths."
-}
-    ],
-
-  },
-},
-
 MassageSection: {
   colors: {
     navy: "#1A2456",
@@ -847,5 +786,66 @@ MassageSection: {
     ]
   }
 },
+  teacherTrainingFaq: {
+  colors: {
+    navy: "#1A2456",
+    white: "#ffffff",
+    sage: "#7BAF8A",
+    border: "rgba(255,255,255,0.25)",
+    cardBg: "rgba(255,255,255,0.08)",
+    shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+    shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+  },
+
+  content: {
+    title: "Teacher",
+    highlight: "Training FAQ",
+    subtitle:
+      "Find answers to the most common questions about 100 Hours Ombreathe's yoga teacher training program in Bali.",
+
+    faqs: [
+      {
+        question: "After this class, would it be possible for me to enroll in Yoga Alliance?",
+        answer:
+          "If you are new to yoga, the 100-hour teacher training course is a wonderful place to start. Rather, it is a personal journey to discover Yoga for oneself.",
+      },
+    {
+  question: "Can you tell me what TTC entails?",
+  answer: [
+    "Every day, three plant-based meals, Blended Drinks with Seasonal Fruits (If you have any food allergies, please let us know in advance)",
+    "Seasonal Fruits, Herbal Tea, and Coffee Clean water",
+    "Pranayama",
+    "Lodging in an Individual Room",
+    "Properly sized notepad, pen, and course materials",
+    "There are yoga mats and other equipment in the yoga room.",
+    "Instruction in every area as outlined in the course outline",
+    "Adventures to different locations during the weekend (personal spending on vacations is not accounted for).",
+  ],
+},
+{
+  question: "What to bring to TTC?",
+  answer: [
+    "Valid visa and passport required for the whole course",
+    "Shoes suitable for inside usage, such as house shoes or clean slippers",
+    "Any and all prescription drugs that may be required",
+    "Sunglasses",
+    "Sunscreen",
+    "Reusable water bottles and thermoses",
+    "Adapters and power converters",
+    "Plugs for all kinds of devices",
+    "Repellent for mosquitoes",
+    "Organic personal care items",
+    "A notebook",
+  ],
+},
+{
+question:"What Do I Need To Wear During Classes?",
+answer:"You are free to wear whatever makes you happy, although white is necessary for the opening and closing ceremonies that you wear white cloths."
+}
+    ],
+
+  },
+},
+
 
 };
