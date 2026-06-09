@@ -31,52 +31,80 @@ function Ratings() {
   const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonials];
   
   const [currentIndex, setCurrentIndex] = useState(testimonials.length);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [useTransition, setUseTransition] = useState(true);
+  const [isMoving, setIsMoving] = useState(false);
+
   const timeoutRef = useRef(null);
   const autoPlayRef = useRef(null);
+  const isSnappingRef = useRef(false);
+
+  // Safe slide forward
+  const slideNext = () => {
+    if (isMoving || isSnappingRef.current) return;
+    setIsMoving(true);
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  // Safe slide backward
+  const slidePrev = () => {
+    if (isMoving || isSnappingRef.current) return;
+    setIsMoving(true);
+    setCurrentIndex((prev) => prev - 1);
+  };
 
   const resetAutoplay = () => {
     if (autoPlayRef.current) clearInterval(autoPlayRef.current);
     autoPlayRef.current = setInterval(() => {
-      handleNext();
+      slideNext();
     }, 4000);
   };
 
+  // Initialize Autoplay on Mount
   useEffect(() => {
     resetAutoplay();
     return () => {
       if (autoPlayRef.current) clearInterval(autoPlayRef.current);
     };
-  }, [currentIndex]);
+  }, []);
 
   const handleNext = () => {
-    if (!isTransitioning) return;
-    setCurrentIndex((prev) => prev + 1);
+    resetAutoplay(); // Reset the 4s timer so it doesn't scroll immediately after manual interaction
+    slideNext();
   };
 
   const handlePrev = () => {
-    if (!isTransitioning) return;
-    setCurrentIndex((prev) => prev - 1);
+    resetAutoplay(); // Reset the 4s timer
+    slidePrev();
   };
 
   const handleTransitionEnd = () => {
+    if (isSnappingRef.current) return;
+
     if (currentIndex >= testimonials.length * 2) {
-      setIsTransitioning(false);
+      isSnappingRef.current = true;
+      setUseTransition(false);
       setCurrentIndex(currentIndex - testimonials.length);
     } else if (currentIndex < testimonials.length) {
-      setIsTransitioning(false);
+      isSnappingRef.current = true;
+      setUseTransition(false);
       setCurrentIndex(currentIndex + testimonials.length);
+    } else {
+      // Release lock for normal transitions
+      setIsMoving(false);
     }
   };
 
+  // Recover from snaps (disable transitions briefly)
   useEffect(() => {
-    if (!isTransitioning) {
+    if (!useTransition) {
       timeoutRef.current = setTimeout(() => {
-        setIsTransitioning(true);
+        setUseTransition(true);
+        isSnappingRef.current = false;
+        setIsMoving(false); // Release lock after snap completes
       }, 50);
     }
     return () => clearTimeout(timeoutRef.current);
-  }, [isTransitioning]);
+  }, [useTransition]);
 
   return (
     <section className="testimonials-section">
@@ -102,12 +130,11 @@ function Ratings() {
           onTransitionEnd={handleTransitionEnd}
           style={{
             transform: `translateX(calc(-${currentIndex} * var(--card-width-fallback)))`,
-            transition: isTransitioning ? "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)" : "none"
+            transition: useTransition ? "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)" : "none"
           }}
         >
           {duplicatedTestimonials.map((item, index) => (
             <div key={index} className="testimonial-card-wrapper">
-              {/* Single fully unified card item */}
               <div className="testimonial-card">
                 <div className="star-rating">
                   {[...Array(item.stars)].map((_, i) => (

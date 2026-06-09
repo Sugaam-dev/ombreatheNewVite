@@ -284,6 +284,9 @@ const ProgramsCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(realItemsCount);
   const [visibleCardsCount, setVisibleCardsCount] = useState(1);
   const [useTransition, setUseTransition] = useState(true);
+  
+  // ✅ Lock state to prevent rapid click/autoplay collision during transitions
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const touchStartXRef = useRef(0);
   const touchEndXRef = useRef(0);
@@ -303,6 +306,20 @@ const ProgramsCarousel = () => {
     return () => window.removeEventListener("resize", handleResizeCalculations);
   }, []);
 
+  // ✅ Slide Forward Safe Function
+  const slideNext = () => {
+    if (isTransitioning || isSnappingRef.current) return;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev + 1);
+  };
+
+  // ✅ Slide Backward Safe Function
+  const slidePrev = () => {
+    if (isTransitioning || isSnappingRef.current) return;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev - 1);
+  };
+
   const handleTransitionEnd = () => {
     if (isSnappingRef.current) return;
 
@@ -315,23 +332,30 @@ const ProgramsCarousel = () => {
       isSnappingRef.current = true;
       setUseTransition(false);
       setActiveIndex(activeIndex + realItemsCount);
+    } else {
+      // ✅ Release lock on standard transitions
+      setIsTransitioning(false);
     }
   };
 
+  // Snapping adjustment hook
   useEffect(() => {
     if (!useTransition) {
       const timeout = setTimeout(() => {
         setUseTransition(true);
         isSnappingRef.current = false;
+        // ✅ Release lock after snapping is completed
+        setIsTransitioning(false);
       }, 30);
       return () => clearTimeout(timeout);
     }
   }, [useTransition]);
 
+  // Autoplay safely utilizing slideNext()
   const startAutoplay = () => {
     stopAutoplay();
     autoplayTimerRef.current = setInterval(() => {
-      setActiveIndex((prev) => prev + 1);
+      slideNext();
     }, 2000);
   };
 
@@ -345,28 +369,30 @@ const ProgramsCarousel = () => {
   }, [visibleCardsCount]);
 
   const handlePrevSlide = () => {
-    if (isSnappingRef.current) return;
     stopAutoplay();
-    setActiveIndex((prev) => prev - 1);
+    slidePrev();
     startAutoplay();
   };
 
   const handleNextSlide = () => {
-    if (isSnappingRef.current) return;
     stopAutoplay();
-    setActiveIndex((prev) => prev + 1);
+    slideNext();
     startAutoplay();
   };
 
   const handleDotNavigation = (realIdx) => {
-    if (isSnappingRef.current) return;
+    const targetIdx = realItemsCount + realIdx;
+    if (targetIdx === activeIndex) return;
+    if (isTransitioning || isSnappingRef.current) return;
+
+    setIsTransitioning(true);
     stopAutoplay();
-    setActiveIndex(realItemsCount + realIdx);
+    setActiveIndex(targetIdx);
     startAutoplay();
   };
 
   const handleTouchStart = (e) => {
-    if (isSnappingRef.current) return;
+    if (isTransitioning || isSnappingRef.current) return;
     stopAutoplay();
     touchStartXRef.current = e.targetTouches[0].clientX;
     touchEndXRef.current = e.targetTouches[0].clientX;
@@ -377,6 +403,7 @@ const ProgramsCarousel = () => {
   };
 
   const handleTouchEnd = () => {
+    if (isTransitioning || isSnappingRef.current) return;
     const swipeThreshold = 50;
     const totalSwipeDistance = touchStartXRef.current - touchEndXRef.current;
 
@@ -432,7 +459,6 @@ const ProgramsCarousel = () => {
           </div>
         </div>
 
-        {/* CONTROLS BUTTONS PANEL (Hidden on mobile via CSS style configurations above) */}
         <div className="pc-controls">
           <button className="pc-arrow" onClick={handlePrevSlide}>
             <ChevronLeft size={20} />

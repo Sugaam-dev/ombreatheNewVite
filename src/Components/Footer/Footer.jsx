@@ -17,6 +17,7 @@ const lazyLoadImage = (imageName) => {
   const imageModules = {
     logo: () => import('../../images/omBreatheLogo.png'),
     yoga: () => import('../../images/cirtificats/yoga.png'),
+    l100: () => import('../../images/cirtificats/100logo.png'),
     two: () => import('../../images/cirtificats/200.png'),
     l500: () => import('../../images/cirtificats/500.webp'),
     l300: () => import('../../images/cirtificats/300yy.png'),
@@ -262,7 +263,9 @@ const Certifications = memo(() => {
 
   const certifications = useMemo(() => [
     { imageKey: 'yoga', alt: 'Yoga Alliance Certified', title: 'Yoga Alliance Certified School' },
+     { imageKey: 'l100', alt: 'RYT 100 Certified', title: 'Registered Yoga Teacher 100 Hours' },
     { imageKey: 'two', alt: 'RYT 200 Certified', title: 'Registered Yoga Teacher 200 Hours' },
+   
     { imageKey: 'l300', alt: 'RYT 300 Certified', title: 'Registered Yoga Teacher 300 Hours' },
     { imageKey: 'l500', alt: 'RYT 500 Certified', title: 'Registered Yoga Teacher 500 Hours' },
     { imageKey: 'yacep', alt: 'YACEP Certified', title: 'Yoga Alliance Continuing Education Provider' }
