@@ -1,11 +1,12 @@
 import React, { useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../Styles/offering.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import SectionHeading from './useFullComponent/SectionHeading';
 
 function Offering() {
+const navigate=useNavigate();
 
   const offerings = useMemo(() => [
     {
@@ -61,7 +62,7 @@ function Offering() {
         <img src={item.icon} alt="" />
         <h2>{item.title}</h2>
         <p>{item.description}</p>
-        <button>Discover more</button>
+        <button onClick={() => navigate('/contact')}>Discover more</button>
       </div>
 
     </div>
