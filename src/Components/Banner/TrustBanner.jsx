@@ -1,12 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// Importing local images from your project's images folder
+// Importing local images
 import yogaAllianceLogo from '../../images/cirtificats/yoga.png'; 
 import y100 from '../../images/cirtificats/100logo.png';
 import rys200 from '../../images/cirtificats/200.png';
 import rys300 from '../../images/cirtificats/300yy.png';
 import rys500 from '../../images/cirtificats/500.webp';
 import yacep from '../../images/cirtificats/YACEP.png';
+
+// Helper component for external BookRetreats scripts
+const BookRetreatsWidget = ({ id, widgetType }) => {
+  const containerRef = useRef(null);
+  
+  useEffect(() => {
+    if (!containerRef.current) return;
+    containerRef.current.innerHTML = ''; // Clear container to avoid duplicate widgets
+    
+    const script = document.createElement('script');
+    script.src = `https://bookretreats.com/widgets/${widgetType}/${id}`;
+    script.async = true;
+    script.setAttribute('data-cfasync', 'false');
+    containerRef.current.appendChild(script);
+  }, [id, widgetType]);
+
+  return <div id={`${id}_${widgetType}`} ref={containerRef} style={{ width: '100%', display: 'flex', justifyContent: 'center' }} />;
+};
 
 const TrustBanner = () => {
   const certificates = [
@@ -20,26 +38,10 @@ const TrustBanner = () => {
 
   const bannerRef = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const [hoveredId, setHoveredId] = useState(null);
   const [brokenImages, setBrokenImages] = useState({});
-  const [isMobile, setIsMobile] = useState(false);
-  
-  // Counter states
   const [studentCount, setStudentCount] = useState(0);
   const [ratingCount, setRatingCount] = useState(0.0);
 
-  // 1. Check screen width for mobile optimization dynamically
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    handleResize(); // Run on initial mount
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // 2. Intersection Observer to trigger animation when scrolled into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -51,268 +53,430 @@ const TrustBanner = () => {
           setRatingCount(0.0);
         }
       },
-      { threshold: 0.05 } 
+      { threshold: 0.1 } 
     );
-
-    if (bannerRef.current) {
-      observer.observe(bannerRef.current);
-    }
-
+    if (bannerRef.current) observer.observe(bannerRef.current);
     return () => observer.disconnect();
   }, []);
 
-  // 3. High-performance requestAnimationFrame text counting thread
   useEffect(() => {
     if (!isIntersecting) return;
-
     let startTimestamp = null;
     const duration = 1400; 
-
     const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      
       const easeOutQuad = (x) => 1 - (1 - x) * (1 - x);
       const easedProgress = easeOutQuad(progress);
-
       setStudentCount(Math.floor(easedProgress * 1000)); 
-      setRatingCount(parseFloat((easedProgress * 4.9).toFixed(1)));
-
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
+      setRatingCount(parseFloat((easedProgress * 4.5).toFixed(1))); // Cap rating animation at 4.5
+      if (progress < 1) window.requestAnimationFrame(step);
     };
-
     window.requestAnimationFrame(step);
   }, [isIntersecting]);
 
-  // 4. Inject global hardware CSS keyframes once
-  useEffect(() => {
-    const styleId = "trust-banner-final-anims";
-    if (!document.getElementById(styleId)) {
-      const styleSheet = document.createElement("style");
-      styleSheet.id = styleId;
-      styleSheet.innerText = `
-        @keyframes dynamicFadeInUp {
-          0% { opacity: 0; transform: translateY(16px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes dynamicStarPop {
-          0% { opacity: 0; transform: scale(0.5); }
-          100% { opacity: 1; transform: scale(1); }
-        }
-      `;
-      document.head.appendChild(styleSheet);
-    }
-  }, []);
+  const handleImageError = (id) => setBrokenImages(prev => ({ ...prev, [id]: true }));
 
-  const handleImageError = (id) => {
-    setBrokenImages(prev => ({ ...prev, [id]: true }));
+  // Helper to determine the color/gradient of each star during count-up
+  const getStarFill = (index, rating) => {
+    if (rating >= index + 1) return '#c99a4e'; // Full gold star
+    if (rating > index && rating < index + 1) return 'url(#halfStarGrad)'; // 4.5 rating half-filled star
+    return '#dcd4c9'; // Empty star neutral grey-beige
   };
 
-  const styles = {
-    banner: {
-      width: '100%',
-      position: 'relative',
-      overflow: 'hidden',
-      background: 'linear-gradient(135deg, #fbf9f4 0%, #f6f1e7 50%, #f1eae0 100%)',
-      borderTop: '1px solid rgba(197, 185, 172, 0.35)',
-      borderBottom: '1px solid rgba(197, 185, 172, 0.35)',
-      padding: isMobile ? '28px 20px' : '40px 24px',
-      boxSizing: 'border-box',
-    },
-    container: {
-      maxWidth: '1280px',
-      margin: '0 auto',
-      display: 'flex',
-      flexDirection: isMobile ? 'column' : 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      gap: isMobile ? '28px' : '48px',
-    },
-    leftStats: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: isMobile ? 'space-between' : 'flex-start',
-      width: isMobile ? '100%' : 'auto',
-      gap: isMobile ? '16px' : '56px',
-    },
-    statBox: {
-      display: 'flex',
-      flexDirection: 'column',
-      opacity: isIntersecting ? 1 : 0,
-      animation: isIntersecting ? 'dynamicFadeInUp 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards' : 'none',
-    },
-    numberWrapper: {
-      display: 'flex',
-      alignItems: 'baseline',
-      gap: '2px',
-    },
-    number: {
-      fontSize: isMobile ? '28px' : '38px',
-      fontWeight: '800',
-      color: '#2a2421', 
-      margin: 0,
-      letterSpacing: '-0.03em',
-      lineHeight: 1,
-    },
-    label: {
-      fontSize: '11px',
-      fontWeight: '600',
-      color: '#7e7367', 
-      marginTop: '10px',
-      textTransform: 'uppercase',
-      letterSpacing: '0.15em',
-    },
-    divider: {
-      height: isMobile ? '36px' : '56px',
-      width: '1px',
-      background: 'linear-gradient(to bottom, transparent, rgba(197, 185, 172, 0.7), transparent)',
-      opacity: isIntersecting ? 1 : 0,
-      animation: isIntersecting ? 'dynamicFadeInUp 0.5s ease forwards' : 'none',
-    },
-    ratingRow: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '12px',
-    },
-    starContainer: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '4px',
-      backgroundColor: '#ffffff', 
-      padding: '6px 12px',
-      borderRadius: '30px',
-      boxShadow: '0 2px 10px rgba(141, 127, 110, 0.06)',
-      border: '1px solid rgba(197, 185, 172, 0.2)',
-    },
-    star: (index) => ({
-      width: '14px',
-      height: '14px',
-      color: '#c99a4e', 
-      fill: 'currentColor',
-      opacity: 0,
-      animation: isIntersecting ? 'dynamicStarPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards' : 'none',
-      animationDelay: isIntersecting ? `${0.25 + index * 0.08}s` : '0s',
-    }),
-    rightCertificates: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: isMobile ? '20px' : '36px',
-      width: isMobile ? '100%' : 'auto',
-    },
-    certWrapper: (id, index) => ({
-      height: isMobile ? '48px' : '68px',
-      padding: '0 8px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      position: 'relative',
-      opacity: 0,
-      animation: isIntersecting ? 'dynamicFadeInUp 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards' : 'none',
-      animationDelay: isIntersecting ? `${0.35 + index * 0.12}s` : '0s',
-      transition: 'all 0.5s cubic-bezier(0.25, 1, 0.5, 1)', 
-      transform: hoveredId === id ? 'translateY(-6px)' : 'translateY(0)',
-    }),
-    img: (id) => ({
-      height: '100%',
-      width: 'auto',
-      objectFit: 'contain',
-      mixBlendMode: 'multiply',
-      transition: 'all 0.4s ease',
-      filter: hoveredId === id ? 'sepia(0) contrast(1)' : 'sepia(0.15) contrast(0.9)',
-      opacity: hoveredId === id ? 1 : 0.72,
-    }),
-    glowShadow: (id) => ({
-      position: 'absolute',
-      bottom: '-8px',
-      width: '60%',
-      height: '8px',
-      background: 'rgba(197, 185, 172, 0.3)',
-      borderRadius: '50%',
-      filter: 'blur(6px)',
-      opacity: hoveredId === id ? 1 : 0,
-      transition: 'opacity 0.4s ease',
-      pointerEvents: 'none',
-    }),
-    fallbackBadge: {
-      fontSize: '11px',
-      fontWeight: '700',
-      padding: '10px 20px',
-      background: '#ffffff',
-      color: '#5c5246',
-      borderRadius: '4px',
-      border: '1px solid rgba(197, 185, 172, 0.4)',
-      letterSpacing: '0.08em',
-      textTransform: 'uppercase',
+  const stylesCSS = `
+    .trust-banner-wrapper {
+      background: linear-gradient(135deg, #fbf9f4 0%, #f6f1e7 50%, #f1eae0 100%);
+      border-top: 1px solid rgba(197, 185, 172, 0.35);
+      border-bottom: 1px solid rgba(197, 185, 172, 0.35);
+      padding: 24px 0;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
-  };
+
+    .trust-banner-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -10%;
+      width: 50%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+      pointer-events: none;
+      transform: rotate(-15deg);
+    }
+
+    .trust-banner-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 40px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1fr 1fr 1.6fr; /* Rebalanced desktop grid layout */
+      align-items: stretch; /* Stretches columns to same height so vertical centering aligns perfectly */
+      gap: 32px;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 1200px) {
+      .trust-banner-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px 24px;
+        padding: 0 24px;
+        align-items: start;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .trust-banner-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 0 20px;
+      }
+    }
+
+    /* Common Column Structure */
+    .banner-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      text-align: center;
+      height: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      .banner-col {
+        height: auto;
+      }
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #8c8073;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-top: 0;
+      margin-bottom: 2px;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Vertical centering wrapper for column contents */
+    .col-content {
+      flex-grow: 1;
+      display: flex;
+      align-items: center; /* Centers counter / rating / widgets / certs vertically */
+      justify-content: center; /* Centers content horizontally */
+      width: 100%;
+    }
+
+    /* Stats Content styles */
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+      width: 100%;
+    }
+
+    .stat-item.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stat-number-wrapper {
+      display: flex;
+      align-items: baseline;
+      width: auto; /* Changed to auto to prevent wrapping/shifting */
+      justify-content: center;
+      margin: 0;
+    }
+
+    .stat-number {
+      font-size: 42px;
+      font-weight: 800;
+      color: #2a2421;
+      margin: 0;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum";
+    }
+
+    .stat-plus {
+      font-size: 24px;
+      font-weight: 700;
+      color: #c99a4e;
+      margin-left: 3px;
+    }
+
+    .rating-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px; /* Reduced gap to keep rating & stars connected */
+      justify-content: center;
+      width: auto;
+    }
+
+    .stars-badge {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      background: #ffffff;
+      padding: 6px 12px;
+      border-radius: 30px;
+      box-shadow: 0 3px 10px rgba(141, 127, 110, 0.04);
+      border: 1px solid rgba(197, 185, 172, 0.2);
+    }
+
+    .star-icon {
+      width: 14px;
+      height: 14px;
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .star-icon.pop {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Trust Shields Grid */
+    .shields-grid {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      .shields-grid {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
+    .shield-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    .shield-wrapper.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .shield-wrapper:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Certificates Grid */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+      align-items: center;
+      justify-items: center;
+      width: 100%;
+    }
+
+    @media (max-width: 640px) {
+      .certs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 16px;
+      }
+    }
+
+    .cert-item {
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .cert-item.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .cert-img {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+      opacity: 0.72;
+      filter: sepia(0.12) contrast(0.9);
+      transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .cert-item:hover .cert-img {
+      opacity: 1;
+      filter: sepia(0) contrast(1.05);
+      transform: translateY(-6px);
+    }
+
+    .cert-glow {
+      position: absolute;
+      bottom: -8px;
+      width: 60%;
+      height: 6px;
+      background: rgba(197, 185, 172, 0.25);
+      border-radius: 50%;
+      filter: blur(4px);
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: none;
+    }
+
+    .cert-item:hover .cert-glow {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    .fallback-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 8px 12px;
+      background: #ffffff;
+      color: #5c5246;
+      border-radius: 6px;
+      border: 1px solid rgba(197, 185, 172, 0.3);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(141, 127, 110, 0.02);
+    }
+  `;
 
   return (
-    <div ref={bannerRef} style={styles.banner}>
-      <div style={styles.container}>
+    <div ref={bannerRef} className="trust-banner-wrapper">
+      <style>{stylesCSS}</style>
+
+      {/* Star gradient definitions used to render a clean 4.5 star rating layout */}
+      <svg style={{ width: 0, height: 0, position: 'absolute' }}>
+        <defs>
+          <linearGradient id="halfStarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="50%" stopColor="#c99a4e" />
+            <stop offset="50%" stopColor="#dcd4c9" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div className="trust-banner-container">
         
-        {/* Stats Row: Side-by-side push layout on mobile, compact line on desktops */}
-        <div style={styles.leftStats}>
-          
-          {/* Capped at 1,000 */}
-          <div style={styles.statBox}>
-            <div style={styles.numberWrapper}>
-              <h3 style={styles.number}>
-                {studentCount.toLocaleString()}
-              </h3>
-              <span style={{ fontSize: isMobile ? '16px' : '22px', fontWeight: '600', color: '#c99a4e', marginLeft: '2px' }}>+</span>
-            </div>
-            <p style={styles.label}>Graduated Yogis</p>
-          </div>
-
-          <div style={styles.divider} />
-
-          {/* Rating Block */}
-          <div style={{ ...styles.statBox, animationDelay: isIntersecting ? '0.12s' : '0s' }}>
-            <div style={styles.ratingRow}>
-              <span style={styles.number}>
-                {ratingCount.toFixed(1)}
-              </span>
-              <div style={styles.starContainer}>
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} style={styles.star(i)} viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+        {/* COLUMN 1: GRADUATED YOGIS */}
+        <div className="banner-col">
+          <h4 className="section-title">Graduated Yogis</h4>
+          <div className="col-content">
+            <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.1s' }}>
+              <div className="stat-number-wrapper">
+                <h3 className="stat-number">{studentCount.toLocaleString()}</h3>
+                <span className="stat-plus">+</span>
               </div>
             </div>
-            <p style={styles.label}>Top Tier Reviews</p>
           </div>
-
         </div>
 
-        {/* Certificates Section: Sits perfectly horizontal below stats on mobile, expands next to them on desktop */}
-        <div style={styles.rightCertificates}>
-          {certificates.map((cert, index) => (
-            <div 
-              key={cert.id} 
-              style={styles.certWrapper(cert.id, index)}
-              onMouseEnter={() => setHoveredId(cert.id)}
-              onMouseLeave={() => setHoveredId(null)}
-            >
-              {brokenImages[cert.id] ? (
-                <span style={styles.fallbackBadge}>{cert.name}</span>
-              ) : (
-                <>
-                  <img
-                    src={cert.src}
-                    alt={cert.name}
-                    style={styles.img(cert.id)}
-                    onError={() => handleImageError(cert.id)}
-                  />
-                  <div style={styles.glowShadow(cert.id)} />
-                </>
-              )}
+        {/* COLUMN 2: TOP TIER REVIEWS */}
+        <div className="banner-col">
+          <h4 className="section-title">Top Tier Reviews</h4>
+          <div className="col-content">
+            <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
+              <div className="rating-wrapper">
+                <div className="stat-number-wrapper rating-num">
+                  <h3 className="stat-number">{ratingCount.toFixed(1)}</h3>
+                </div>
+                <div className="stars-badge">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className={`star-icon ${isIntersecting ? 'pop' : ''}`}
+                      style={{
+                        transitionDelay: `${0.35 + i * 0.08}s`,
+                        fill: getStarFill(i, ratingCount),
+                        color: getStarFill(i, ratingCount)
+                      }}
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* COLUMN 3: BOOKING TRUST */}
+        <div className="banner-col">
+          <h4 className="section-title">Booking Trust</h4>
+          <div className="col-content">
+            <div className="shields-grid">
+              <div
+                className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
+                style={{ transitionDelay: '0.4s' }}
+              >
+                <BookRetreatsWidget id="27436" widgetType="recommend" />
+              </div>
+              <div
+                className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
+                style={{ transitionDelay: '0.5s' }}
+              >
+                <BookRetreatsWidget id="27436" widgetType="ratings" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* COLUMN 4: YOGA ACCREDITATIONS */}
+        <div className="banner-col">
+          <h4 className="section-title">Yoga Accreditations</h4>
+          <div className="col-content">
+            <div className="certs-grid">
+              {certificates.map((cert, index) => (
+                <div
+                  key={cert.id}
+                  className={`cert-item ${isIntersecting ? 'is-visible' : ''}`}
+                  style={{ transitionDelay: `${0.4 + index * 0.06}s` }}
+                >
+                  {brokenImages[cert.id] ? (
+                    <span className="fallback-badge">{cert.name}</span>
+                  ) : (
+                    <>
+                      <img
+                        src={cert.src}
+                        alt={cert.name}
+                        className="cert-img"
+                        onError={() => handleImageError(cert.id)}
+                      />
+                      <div className="cert-glow" />
+                    </>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
       </div>
@@ -321,173 +485,3 @@ const TrustBanner = () => {
 };
 
 export default TrustBanner;
-
-
-
-// import React, { useState, useEffect, useRef } from 'react';
-
-// // Importing local images
-// import yogaAllianceLogo from '../../images/cirtificats/yoga.png'; 
-// import y100 from '../../images/cirtificats/100logo.png';
-// import rys200 from '../../images/cirtificats/200.png';
-// import rys300 from '../../images/cirtificats/300yy.png';
-// import rys500 from '../../images/cirtificats/500.webp';
-// import yacep from '../../images/cirtificats/YACEP.png';
-
-// // Helper component for external BookRetreats scripts
-// const BookRetreatsWidget = ({ id, widgetType }) => {
-//   const containerRef = useRef(null);
-//   useEffect(() => {
-//     const script = document.createElement('script');
-//     script.src = `https://bookretreats.com/widgets/${widgetType}/${id}`;
-//     script.async = true;
-//     script.setAttribute('data-cfasync', 'false');
-//     if (containerRef.current) containerRef.current.appendChild(script);
-//   }, [id, widgetType]);
-//   return <div id={`${id}_${widgetType}`} ref={containerRef} />;
-// };
-
-// const TrustBanner = () => {
-//   const certificates = [
-//     { id: 1, name: 'Yoga Alliance', src: yogaAllianceLogo },
-//     { id: 2, name: 'Y100', src: y100 },
-//     { id: 3, name: 'RYS 200', src: rys200 },
-//     { id: 4, name: 'RYS 300', src: rys300 },
-//     { id: 5, name: 'RYS 500', src: rys500 },
-//     { id: 6, name: 'YACEP', src: yacep },
-//   ];
-
-//   const bannerRef = useRef(null);
-//   const [isIntersecting, setIsIntersecting] = useState(false);
-//   const [hoveredId, setHoveredId] = useState(null);
-//   const [brokenImages, setBrokenImages] = useState({});
-//   const [isMobile, setIsMobile] = useState(false);
-  
-//   const [studentCount, setStudentCount] = useState(0);
-//   const [ratingCount, setRatingCount] = useState(0.0);
-
-//   useEffect(() => {
-//     const handleResize = () => setIsMobile(window.innerWidth < 768);
-//     handleResize(); 
-//     window.addEventListener('resize', handleResize);
-//     return () => window.removeEventListener('resize', handleResize);
-//   }, []);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         if (entry.isIntersecting) setIsIntersecting(true);
-//         else {
-//           setIsIntersecting(false);
-//           setStudentCount(0);
-//           setRatingCount(0.0);
-//         }
-//       },
-//       { threshold: 0.05 } 
-//     );
-//     if (bannerRef.current) observer.observe(bannerRef.current);
-//     return () => observer.disconnect();
-//   }, []);
-
-//   useEffect(() => {
-//     if (!isIntersecting) return;
-//     let startTimestamp = null;
-//     const duration = 1400; 
-//     const step = (timestamp) => {
-//       if (!startTimestamp) startTimestamp = timestamp;
-//       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-//       const easeOutQuad = (x) => 1 - (1 - x) * (1 - x);
-//       const easedProgress = easeOutQuad(progress);
-//       setStudentCount(Math.floor(easedProgress * 1000)); 
-//       setRatingCount(parseFloat((easedProgress * 4.9).toFixed(1)));
-//       if (progress < 1) window.requestAnimationFrame(step);
-//     };
-//     window.requestAnimationFrame(step);
-//   }, [isIntersecting]);
-
-//   useEffect(() => {
-//     const styleId = "trust-banner-final-anims";
-//     if (!document.getElementById(styleId)) {
-//       const styleSheet = document.createElement("style");
-//       styleSheet.id = styleId;
-//       styleSheet.innerText = `
-//         @keyframes dynamicFadeInUp {
-//           0% { opacity: 0; transform: translateY(16px); }
-//           100% { opacity: 1; transform: translateY(0); }
-//         }
-//         @keyframes dynamicStarPop {
-//           0% { opacity: 0; transform: scale(0.5); }
-//           100% { opacity: 1; transform: scale(1); }
-//         }
-//       `;
-//       document.head.appendChild(styleSheet);
-//     }
-//   }, []);
-
-//   const handleImageError = (id) => setBrokenImages(prev => ({ ...prev, [id]: true }));
-
-//   const styles = {
-//     banner: { width: '100%', position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, #fbf9f4 0%, #f6f1e7 50%, #f1eae0 100%)', borderTop: '1px solid rgba(197, 185, 172, 0.35)', borderBottom: '1px solid rgba(197, 185, 172, 0.35)', padding: isMobile ? '28px 20px' : '40px 24px', boxSizing: 'border-box' },
-//     container: { maxWidth: '1280px', margin: '0 auto', display: 'flex', flexDirection: isMobile ? 'column' : 'row', alignItems: 'center', justifyContent: 'space-between', gap: isMobile ? '28px' : '48px' },
-//     leftStats: { display: 'flex', alignItems: 'center', justifyContent: isMobile ? 'space-between' : 'flex-start', width: isMobile ? '100%' : 'auto', gap: isMobile ? '16px' : '56px' },
-//     statBox: { display: 'flex', flexDirection: 'column', opacity: isIntersecting ? 1 : 0, animation: isIntersecting ? 'dynamicFadeInUp 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards' : 'none' },
-//     numberWrapper: { display: 'flex', alignItems: 'baseline', gap: '2px' },
-//     number: { fontSize: isMobile ? '28px' : '38px', fontWeight: '800', color: '#2a2421', margin: 0, letterSpacing: '-0.03em', lineHeight: 1 },
-//     label: { fontSize: '11px', fontWeight: '600', color: '#7e7367', marginTop: '10px', textTransform: 'uppercase', letterSpacing: '0.15em' },
-//     divider: { height: isMobile ? '36px' : '56px', width: '1px', background: 'linear-gradient(to bottom, transparent, rgba(197, 185, 172, 0.7), transparent)', opacity: isIntersecting ? 1 : 0, animation: isIntersecting ? 'dynamicFadeInUp 0.5s ease forwards' : 'none' },
-//     ratingRow: { display: 'flex', alignItems: 'center', gap: '12px' },
-//     starContainer: { display: 'flex', alignItems: 'center', gap: '4px', backgroundColor: '#ffffff', padding: '6px 12px', borderRadius: '30px', boxShadow: '0 2px 10px rgba(141, 127, 110, 0.06)', border: '1px solid rgba(197, 185, 172, 0.2)' },
-//     star: (index) => ({ width: '14px', height: '14px', color: '#c99a4e', fill: 'currentColor', opacity: 0, animation: isIntersecting ? 'dynamicStarPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards' : 'none', animationDelay: isIntersecting ? `${0.25 + index * 0.08}s` : '0s' }),
-//     rightCertificates: { display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: isMobile ? '20px' : '36px', width: isMobile ? '100%' : 'auto' },
-//     certWrapper: (id, index) => ({ height: isMobile ? '48px' : '68px', padding: '0 8px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', opacity: 0, animation: isIntersecting ? 'dynamicFadeInUp 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards' : 'none', animationDelay: isIntersecting ? `${0.35 + index * 0.12}s` : '0s', transition: 'all 0.5s cubic-bezier(0.25, 1, 0.5, 1)', transform: hoveredId === id ? 'translateY(-6px)' : 'translateY(0)' }),
-//     img: (id) => ({ height: '100%', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply', transition: 'all 0.4s ease', filter: hoveredId === id ? 'sepia(0) contrast(1)' : 'sepia(0.15) contrast(0.9)', opacity: hoveredId === id ? 1 : 0.72 }),
-//     glowShadow: (id) => ({ position: 'absolute', bottom: '-8px', width: '60%', height: '8px', background: 'rgba(197, 185, 172, 0.3)', borderRadius: '50%', filter: 'blur(6px)', opacity: hoveredId === id ? 1 : 0, transition: 'opacity 0.4s ease', pointerEvents: 'none' }),
-//     fallbackBadge: { fontSize: '11px', fontWeight: '700', padding: '10px 20px', background: '#ffffff', color: '#5c5246', borderRadius: '4px', border: '1px solid rgba(197, 185, 172, 0.4)', letterSpacing: '0.08em', textTransform: 'uppercase' }
-//   };
-
-//   return (
-//     <div ref={bannerRef} style={styles.banner}>
-//       <div style={styles.container}>
-//         <div style={styles.leftStats}>
-//           <div style={styles.statBox}>
-//             <div style={styles.numberWrapper}>
-//               <h3 style={styles.number}>{studentCount.toLocaleString()}</h3>
-//               <span style={{ fontSize: isMobile ? '16px' : '22px', fontWeight: '600', color: '#c99a4e', marginLeft: '2px' }}>+</span>
-//             </div>
-//             <p style={styles.label}>Graduated Yogis</p>
-//           </div>
-//           <div style={styles.divider} />
-//           <div style={{ ...styles.statBox, animationDelay: isIntersecting ? '0.12s' : '0s' }}>
-//             <div style={styles.ratingRow}>
-//               <span style={styles.number}>{ratingCount.toFixed(1)}</span>
-//               <div style={styles.starContainer}>
-//                 {[...Array(5)].map((_, i) => (
-//                   <svg key={i} style={styles.star(i)} viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
-//                 ))}
-//               </div>
-//             </div>
-//             <p style={styles.label}>Top Tier Reviews</p>
-//           </div>
-//         </div>
-
-//         <div style={styles.rightCertificates}>
-//           {certificates.map((cert, index) => (
-//             <div key={cert.id} style={styles.certWrapper(cert.id, index)} onMouseEnter={() => setHoveredId(cert.id)} onMouseLeave={() => setHoveredId(null)}>
-//               {brokenImages[cert.id] ? <span style={styles.fallbackBadge}>{cert.name}</span> : (
-//                 <>
-//                   <img src={cert.src} alt={cert.name} style={styles.img(cert.id)} onError={() => handleImageError(cert.id)} />
-//                   <div style={styles.glowShadow(cert.id)} />
-//                 </>
-//               )}
-//             </div>
-//           ))}
-//           {/* External BookRetreats Widgets */}
-//           <div style={styles.certWrapper('widget-1', 6)}><BookRetreatsWidget id="27436" widgetType="recommend" /></div>
-//           <div style={styles.certWrapper('widget-2', 7)}><BookRetreatsWidget id="27436" widgetType="ratings" /></div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TrustBanner;
