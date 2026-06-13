@@ -314,6 +314,27 @@ const Navbar = () => {
                     {/* View Wrapper 1: Programs Main Menu Screen */}
                     <div className={`sliding-view-pane ${ttcView === "main" ? "pane-active-left" : "pane-hidden-left"}`}>
                       <div className="row py-4">
+                        
+
+                        
+
+                        {/* TTC locations — driven by LOCATIONS array */}
+                        <div className="col-lg-4 mega-column no-border">
+                          <h6 className="column-title">
+                            TTC (TEACHER TRAINING)
+                          </h6>
+                          {LOCATIONS.map(({ slug, label }) => (
+                            <div
+                              key={slug}
+                              className={`loc-toggle ${isTtcPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}
+                              onClick={() => handleTtcLocationSelection(slug)}
+                            >
+                              <span>{label} TTC</span>
+                              {/* <span className="symbol">→</span> */}
+                            </div>
+                          ))}
+                        </div>
+
                         {/* Membership */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">MEMBERSHIP PROGRAMS</h6>
@@ -376,22 +397,7 @@ const Navbar = () => {
                           <span>Comming Soon</span>
                         </div>
 
-                        {/* TTC locations — driven by LOCATIONS array */}
-                        <div className="col-lg-4 mega-column no-border">
-                          <h6 className="column-title">
-                            TTC (TEACHER TRAINING)
-                          </h6>
-                          {LOCATIONS.map(({ slug, label }) => (
-                            <div
-                              key={slug}
-                              className={`loc-toggle ${isTtcPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}
-                              onClick={() => handleTtcLocationSelection(slug)}
-                            >
-                              <span>{label} TTC</span>
-                              <span className="symbol">→</span>
-                            </div>
-                          ))}
-                        </div>
+
                       </div>
                     </div>
 
