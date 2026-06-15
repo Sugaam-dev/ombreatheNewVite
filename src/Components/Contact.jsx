@@ -361,9 +361,10 @@ import { IoLogoYoutube } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import SectionHeading from "./useFullComponent/SectionHeading";
 
-// Replace this placeholder with your actual Web3Forms access key
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
-
+const WEB3FORMS_ACCESS_KEY = 
+  (typeof import.meta !== "undefined" && import.meta.env?.VITE_WEB3FORMS_KEY) || 
+  (typeof process !== "undefined" && process.env?.REACT_APP_WEB3FORMS_KEY) || 
+  "YOUR_ACCESS_KEY_HERE";
 const LOCATIONS = [
   {
     id: 1,
