@@ -72,8 +72,8 @@ export default function Contact() {
         const bounds = window.L.latLngBounds(southWest, northEast);
 
         const map = window.L.map(mapRef.current, {
-          center: [20, 80],
-          zoom: 3,
+          center: [15, 90],
+          zoom: 4,
           minZoom: 2,
           maxBounds: bounds,
           maxBoundsViscosity: 1.0,
@@ -88,11 +88,11 @@ export default function Contact() {
 
         LOCATIONS.forEach((loc, i) => {
           const icon = window.L.divIcon({
-            html: `<div class="custom-pin" style="background:${PIN_COLORS[i]}"></div>`,
-            className: "",
-            iconSize: [20, 20],
-            iconAnchor: [10, 10],
-          });
+  html: `<div class="emoji-pin">${loc.icon}</div>`,
+  className: "emoji-pin-wrapper",
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+});
           window.L.marker([loc.lat, loc.lng], { icon })
             .addTo(map)
             .on("click", () => setActive(loc));
@@ -181,8 +181,21 @@ export default function Contact() {
         .map-chip:hover { border-color: #11241e; }
         .map-box { position: relative; height: 450px; border-radius: 24px; overflow: hidden; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .map-element { height: 100%; width: 100%; z-index: 1; }
-        .custom-pin { width: 14px; height: 14px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 8px rgba(0,0,0,0.3); }
-
+        .emoji-pin-wrapper {
+  background: none !important;
+  border: none !important;
+}
+.emoji-pin {
+  font-size: 28px;
+  line-height: 1;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.emoji-pin:hover {
+  transform: scale(1.3);
+}
         .popup-card { position: absolute; bottom: 15px; left: 15px; right: 15px; max-width: 350px; background: #fff; padding: 15px; border-radius: 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); z-index: 1000; }
         .popup-card h4 { font-size: 16px; margin: 0; color: #11241e; }
         .popup-card p { font-size: 12px; color: #666; margin: 2px 0 0; }

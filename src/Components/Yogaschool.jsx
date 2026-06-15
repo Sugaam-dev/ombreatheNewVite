@@ -37,6 +37,25 @@ const Yogaschool = () => {
   const navigate = useNavigate();
 
   // =========================================
+  // WINDOW WIDTH (for responsive inline styles)
+  // =========================================
+
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1024
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isDesktop = windowWidth >= 1024;
+  const isTablet = windowWidth >= 640 && windowWidth < 1024;
+  const isSmall = windowWidth < 640;
+  const isLargeDesktop = windowWidth >= 1440;
+
+  // =========================================
   // AOS
   // =========================================
 
@@ -80,7 +99,7 @@ const Yogaschool = () => {
       // 🛠️ ACCESSIBILITY FIX: Clear active focus from slides before they are hidden
       beforeChange: () => {
         if (
-          document.activeElement && 
+          document.activeElement &&
           (document.activeElement.closest(".slick-slide") || document.activeElement.closest(".modern-slide"))
         ) {
           document.activeElement.blur();
@@ -267,13 +286,21 @@ const Yogaschool = () => {
           </div>
 
           {/* ========================================= */}
-          {/* CONTENT SECTION — image LEFT, text RIGHT */}
+          {/* CONTENT SECTION — image LEFT, text + features RIGHT */}
           {/* ========================================= */}
 
-          <div className="box">
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: isDesktop ? "1fr 1fr" : "1fr",
+              gap: isDesktop ? "40px" : "24px",
+              marginTop: "40px",
+            }}
+          >
 
+            {/* Image */}
             <div
-              className="box1"
+              style={{ width: "100%", height: "100%" }}
               data-aos="fade-right"
               data-aos-offset="50"
               data-aos-duration="600"
@@ -284,104 +311,180 @@ const Yogaschool = () => {
                   src={images.yogaSchool}
                   alt="Yoga School"
                   loading="lazy"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "16px",
+                    display: "block",
+                  }}
                 />
               )}
 
             </div>
 
+            {/* Paragraph + Feature cards */}
             <div
-              className="box2"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+                justifyContent: "space-between",
+                gap: isSmall ? "16px" : "20px",
+              }}
               data-aos="fade-left"
               data-aos-offset="50"
               data-aos-duration="600"
             >
 
-              <p>
-                At Ombreathe, all courses are led by skilled and
-                certified yoga teachers dedicated to delivering
-                authentic, immersive, and Yoga
-                Alliance-accredited programs.
-
-                <br /><br />
-
-                Whether you're beginning your journey or aiming
-                to become a certified instructor, our
-                comprehensive training helps you build a strong,
-                mindful foundation in yoga.
-
-                <br /><br />
-
-                With serene campuses in Bali, Mysuru,
-                Rishikesh, Chiang Mai, and Dharamshala,
-                we offer an inspiring environment that nurtures
-                self-growth, discipline, and spiritual
-                connection.
-
-                <br /><br />
-
-                At Ombreathe, we guide you to develop your own
-                teaching style, deepen your practice, and
-                embrace a holistic yogic lifestyle.
-
-                <br /><br />
-
-                Our courses are designed to transform habits,
-                enhance awareness, and lead you toward a life
-                of balance, clarity, and inner peace.
-
-                <br /><br />
-
-                From in-person teacher training and retreats to
-                online programs, Ombreathe offers a global
-                platform to learn, grow, and share yoga with
-                the world — all rooted in the spiritual essence
-                of traditional Indian yoga.
-
-                <br /><br />
-
-                Join us at Ombreathe and step into your fullest
-                potential as a student, seeker, or teacher of
-                yoga.
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* ========================================= */}
-          {/* FEATURES — full width below both columns */}
-          {/* ========================================= */}
-
-          <div className="boxcontent">
-
-            {features.map((feature, index) => (
-
+              {/* Full original paragraph, smaller text to fit */}
               <div
-                key={index}
-                className="item1"
-                data-aos="zoom-in"
-                data-aos-delay={feature.delay}
-                data-aos-offset="30"
-                data-aos-duration="500"
-                style={{ "--accent": feature.accent }}
+                style={{
+                  color: "#1e1e1c",
+                  fontSize: isSmall ? "12px" : isTablet ? "13px" : isLargeDesktop ? "18px" : "16px",
+                  lineHeight: 1.5,
+                  overflow: "auto",
+                  
+                }}
+              >
+                <p style={{ margin: 0 }}>
+                  At Ombreathe, all courses are led by skilled and
+                  certified yoga teachers dedicated to delivering
+                  authentic, immersive, and Yoga
+                  Alliance-accredited programs.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  Whether you're beginning your journey or aiming
+                  to become a certified instructor, our
+                  comprehensive training helps you build a strong,
+                  mindful foundation in yoga.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  With serene campuses in Bali, Mysuru,
+                  Rishikesh, Chiang Mai, and Dharamshala,
+                  we offer an inspiring environment that nurtures
+                  self-growth, discipline, and spiritual
+                  connection.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  At Ombreathe, we guide you to develop your own
+                  teaching style, deepen your practice, and
+                  embrace a holistic yogic lifestyle.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  Our courses are designed to transform habits,
+                  enhance awareness, and lead you toward a life
+                  of balance, clarity, and inner peace.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  From in-person teacher training and retreats to
+                  online programs, Ombreathe offers a global
+                  platform to learn, grow, and share yoga with
+                  the world — all rooted in the spiritual essence
+                  of traditional Indian yoga.
+                </p>
+
+                <br />
+
+                <p style={{ margin: 0 }}>
+                  Join us at Ombreathe and step into your fullest
+                  potential as a student, seeker, or teacher of
+                  yoga.
+                </p>
+              </div>
+
+              {/* 2x2 feature cards — small, no colored background */}
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: isSmall ? "8px" : "12px",
+                }}
               >
 
-                <div className="itemlogo">
-                  <img
-                    src={feature.icon}
-                    alt={feature.title}
-                    loading="lazy"
-                  />
-                </div>
+                {features.map((feature, index) => (
 
-                <div className="item2">
-                  <h3>{feature.title}</h3>
-                  <p>{feature.description}</p>
-                </div>
+                  <div
+                    key={index}
+                    data-aos="zoom-in"
+                    data-aos-delay={feature.delay}
+                    data-aos-offset="30"
+                    data-aos-duration="500"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      textAlign: "center",
+                      gap: "4px",
+                      borderRadius: "8px",
+                      padding: isSmall ? "6px" : "10px",
+                      border: "1px solid #e5e5e5",
+                    }}
+                  >
+
+                    <div
+                      style={{
+                        width: isSmall ? "22px" : "28px",
+                        height: isSmall ? "22px" : "28px",
+                      }}
+                    >
+                      <img
+                        src={feature.icon}
+                        alt={feature.title}
+                        loading="lazy"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                        }}
+                      />
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: isSmall ? "10px" : "12px",
+                        fontWeight: 600,
+                        color: "#1e1e1c",
+                        margin: 0,
+                      }}
+                    >
+                      {feature.title}
+                    </h3>
+
+                    <p
+                      style={{
+                        fontSize: isSmall ? "9px" : "10px",
+                        color: "#666",
+                        lineHeight: 1.2,
+                        margin: 0,
+                      }}
+                    >
+                      {feature.description}
+                    </p>
+
+                  </div>
+
+                ))}
 
               </div>
 
-            ))}
+            </div>
 
           </div>
 
