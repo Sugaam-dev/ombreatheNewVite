@@ -30,6 +30,7 @@ export const PROGRAM_LINKS = {
       // { path: "50hr",  label: "6 Days 50 Hours Primary Series Foundations" },
       // { path: "100hr", label: "10 Days 100 Hours Classical Ashtanga Course" },
       { path: "200hr", label: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course" },
+      {path:"200hrmultistyle",label:"200 hrs Multi Style Yoga TTC In Maysuru"},
       { path: "300hr", label: "300 Hour Yoga Teacher Training Course" },
       {path:"500hr", label:"500 Hour Yoga Teacher Training Course"},
       {path:"mysore21dayashtanga",label:"21-Day Ashtanga Yoga Teacher Training Course"},
