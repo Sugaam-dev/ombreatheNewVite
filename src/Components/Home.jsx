@@ -16,6 +16,7 @@ import Accordion from "./Accordion";
 import Ratings from "./Ratings";
 import Contact from "./Contact";
 import TrustBanner from "./Banner/TrustBanner";
+import TransformationJourney from "./HomeCredentials/TransformationJourney";
 
 // ==========================================
 // LAZY COMPONENTS
@@ -59,10 +60,14 @@ const Home = () => {
 
       <WhyChoose />
 
+      <ProgramsCarousel />
+
+      <TransformationJourney/>
+
       {/* BELOW THE FOLD */}
 
       <LazySection>
-        <ProgramsCarousel />
+      
       </LazySection>
 
       <Ayurveda />

@@ -147,7 +147,9 @@ function AppRoutes() {
           <Route
             path="contact"
             element={<Cont />}
+            
           />
+          
 
           {/* TEACHERS */}
           <Route

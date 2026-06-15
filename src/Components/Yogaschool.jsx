@@ -207,8 +207,8 @@ const Yogaschool = () => {
           {/* ========================================= */}
 
           <SectionHeading
-            title="Best Yoga School In"
-            highlight="India and Indonesia"
+            title="Leading Yoga Teacher Training School in"
+            highlight="India & Bali"
             subtitle="Discover authentic yoga teacher training, retreats & holistic wellness programs with Ombreathe"
             highlightColor="#4a7c68"
             textColor="#1e1e1c"

@@ -227,6 +227,7 @@ const LOCATION_ENTRIES = Object.entries(CAROUSEL_LOCATION_DATA).map(([name, data
   programs: data.totalProgramsCount,
   image: data.heroImage,
   accent: data.accentColor,
+  citycolor: data.cityColor,
   path: `/programs/${name.toLowerCase()}`,
 }));
 
@@ -252,7 +253,13 @@ const LocationCard = memo(({ loc, onClick }) => (
       <div className="pc-card__body">
         <div>
           <span className="pc-card__tagline">{loc.tagline}</span>
-          <h3 className="pc-card__name">{loc.name}</h3>
+          {/* <h3 className="pc-card__name">{loc.name}</h3> */}
+          <h3
+            className="pc-card__name"
+            style={{ color: loc.accent }}
+          >
+            {loc.name}
+          </h3>
           <p className="pc-card__desc">{loc.description}</p>
         </div>
 
@@ -267,9 +274,16 @@ const LocationCard = memo(({ loc, onClick }) => (
 
           <div className="pc-card__footer">
             <span className="pc-card__count">{loc.programs} Programs</span>
-            <button className="pc-card__cta" style={{ "--accent": loc.accent }}>
+            {/* <button className="pc-card__cta" style={{ "--accent": loc.accent }}>
               Explore →
-            </button>
+            </button> */}
+
+            <button
+                className="pc-card__cta"
+                style={{ backgroundColor: loc.accent }}
+              >
+                Explore →
+              </button>
           </div>
         </div>
       </div>

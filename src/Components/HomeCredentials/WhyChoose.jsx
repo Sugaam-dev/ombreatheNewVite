@@ -139,7 +139,7 @@ const WhyChoose = () => {
           </div>
 
           {/* CTA */}
-
+{/* 
           <div className="soulfit-cta-section">
 
             <div className="soulfit-cta-card">
@@ -171,12 +171,12 @@ const WhyChoose = () => {
 
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 
       </div>
-      <TransformationJourney/>
+      
     </>
   );
 };

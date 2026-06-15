@@ -10,7 +10,7 @@ const WelcomeToYogalayaa = () => {
 
         <SectionHeading
           title="Welcome To Ombreathe"
-          highlight="Wellness Sanctuary"
+          highlight="Elevating Wellness Through Yoga & Transformation"
           subtitle="Experience authentic yoga, mindfulness & holistic healing with expert guidance"
           highlightColor="#4a7c68"
           textColor="#1e1e1c"
@@ -23,7 +23,7 @@ const WelcomeToYogalayaa = () => {
             
             <br />
             
-            We also provide trial classes to help you get a taste of what we offer before committing to a full course. Our programs include 100 Hour Yoga TTC, 200 Hour Yoga TTC, and 300 Hour Yoga TTC in Rishikesh and other locations. As part of the Ombreathe entity, under Shreeram Yogshala, we also cater to diverse areas such as Pilgrimage, Events, Merchandise, Tours, and Community Services. 
+            We also provide trial classes to help you get a taste of what we offer before committing to a full course. Our programs include 100 Hour Yoga TTC, 200 Hour Yoga TTC, 300 Hour Yoga TTC and 500 Hour Yoga TTC in Rishikesh and other locations. As part of the Ombreathe entity, under 'Collaborated Yoga Alliance School – Yoga with Shreeram', we also cater to diverse areas such as Pilgrimage, Events, Merchandise, Tours, and Community Services. 
             
             <br />
             
