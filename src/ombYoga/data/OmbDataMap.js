@@ -83,6 +83,7 @@ import { ChiangRetreats6DaysData }       from "./chiang/retreats/ChiangRetreats6
 //mysore
 //multistyle
 import {Mysore200HourAshtangaHathaData} from "./mysore/ttc/multiStyle/Mysore200HourAshtangaHathaData"
+import {Mysore200HoursMultistyle} from "./mysore/ttc/multiStyle/Mysore200HoursMultistyle"
 import {Mysore300HoursData} from "./mysore/ttc/multiStyle/Mysore300HoursData"
 import {Mysore500HoursData} from "./mysore/ttc/multiStyle/Mysore500HoursData"
 import {Mysore21DayAshtangaTTCData} from "./mysore/ttc/multiStyle/Mysore21DayAshtangaTTCData"
@@ -104,6 +105,7 @@ export const OmbDataMap = {
   mysuru: {
     // add Mysuru data imports and keys here when ready
     "200hr":Mysore200HourAshtangaHathaData,
+    "200hrmultistyle":Mysore200HoursMultistyle,
     "300hr":Mysore300HoursData,
     "500hr":Mysore500HoursData,
     "mysore21dayashtanga":Mysore21DayAshtangaTTCData,
