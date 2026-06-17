@@ -8,6 +8,7 @@ import {
   RETREAT_LINKS,
   buildPath,
 } from "../../ombYoga/data/locations";
+import { OnlineDataMap } from "../../ombYoga/data/OnlineDataMap";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TTC sub-category section definitions (static — no data here)
@@ -310,14 +311,10 @@ const Navbar = () => {
                   onMouseLeave={closeProgramsMenu}
                 >
                   <div className="container-fluid px-lg-5 mega-panel-sliding-container">
-                    
+
                     {/* View Wrapper 1: Programs Main Menu Screen */}
                     <div className={`sliding-view-pane ${ttcView === "main" ? "pane-active-left" : "pane-hidden-left"}`}>
                       <div className="row py-4">
-                        
-
-                        
-
                         {/* TTC locations — driven by LOCATIONS array */}
                         <div className="col-lg-4 mega-column no-border">
                           <h6 className="column-title">
@@ -394,74 +391,83 @@ const Navbar = () => {
                               {label}
                             </Link>
                           ))} */}
-                          <span>Comming Soon</span>
+                          {Object.keys(OnlineDataMap).map((slug) => (
+                            <Link
+                              key={slug}
+                              to={`/online/${slug}`}
+                              className={
+                                isSubActive(`/online/${slug}`) ? "sub-link-active" : ""
+                              }
+                              onClick={() => handleLinkClick("programs")}
+                            >
+                              {OnlineDataMap[slug].title || slug}
+                            </Link>
+                          ))}
                         </div>
-
-
                       </div>
-                    </div>
+                      </div>
 
-                    {/* View Wrapper 2: TTC Inner Categories Screen */}
-                    <div className={`sliding-view-pane ${ttcView === "detail" ? "pane-active-right" : "pane-hidden-right"}`}>
-                      <div className="row py-4">
-                        <div className="col-12 mb-4 d-flex align-items-center">
-                          <button className="back-btn" onClick={() => setTtcView("main")}>
-                            <span className="back-arrow-icon">←</span> Back to Programs
-                          </button>
-                          <h5 className="ms-4 mb-0 ttc-selected-title">
-                            {
-                              LOCATIONS.find((l) => l.slug === selectedTtcSlug)
-                                ?.label
-                            }{" "}
-                            Teacher Training
-                          </h5>
-                        </div>
-
-                        {TTC_SECTIONS.map(({ title, dataKey }, idx) => (
-                          <div
-                            key={dataKey}
-                            className={`col-lg-3 mega-column ${idx === 3 ? "no-border" : ""}`}
-                          >
-                            <h6 className="column-title">{title}</h6>
-                            {(PROGRAM_LINKS[selectedTtcSlug]?.[dataKey] || [])
-                              .length === 0 ? (
-                              <span className="coming-soon-text">
-                                Coming Soon
-                              </span>
-                            ) : (
-                              PROGRAM_LINKS[selectedTtcSlug][dataKey].map(
-                                ({ path, label }) => {
-                                  const fullPath = buildPath(
-                                    selectedTtcSlug,
-                                    path,
-                                    "programs"
-                                  );
-                                  return (
-                                    <Link
-                                      key={path}
-                                      to={fullPath}
-                                      className={
-                                        isSubActive(fullPath)
-                                          ? "sub-link-active"
-                                          : ""
-                                      }
-                                      onClick={() =>
-                                        handleLinkClick("programs")
-                                      }
-                                    >
-                                      {label}
-                                    </Link>
-                                  );
-                                },
-                              )
-                            )}
+                      {/* View Wrapper 2: TTC Inner Categories Screen */}
+                      <div className={`sliding-view-pane ${ttcView === "detail" ? "pane-active-right" : "pane-hidden-right"}`}>
+                        <div className="row py-4">
+                          <div className="col-12 mb-4 d-flex align-items-center">
+                            <button className="back-btn" onClick={() => setTtcView("main")}>
+                              <span className="back-arrow-icon">←</span> Back to Programs
+                            </button>
+                            <h5 className="ms-4 mb-0 ttc-selected-title">
+                              {
+                                LOCATIONS.find((l) => l.slug === selectedTtcSlug)
+                                  ?.label
+                              }{" "}
+                              Teacher Training
+                            </h5>
                           </div>
-                        ))}
-                      </div>
-                    </div>
 
+                          {TTC_SECTIONS.map(({ title, dataKey }, idx) => (
+                            <div
+                              key={dataKey}
+                              className={`col-lg-3 mega-column ${idx === 3 ? "no-border" : ""}`}
+                            >
+                              <h6 className="column-title">{title}</h6>
+                              {(PROGRAM_LINKS[selectedTtcSlug]?.[dataKey] || [])
+                                .length === 0 ? (
+                                <span className="coming-soon-text">
+                                  Coming Soon
+                                </span>
+                              ) : (
+                                PROGRAM_LINKS[selectedTtcSlug][dataKey].map(
+                                  ({ path, label }) => {
+                                    const fullPath = buildPath(
+                                      selectedTtcSlug,
+                                      path,
+                                      "programs"
+                                    );
+                                    return (
+                                      <Link
+                                        key={path}
+                                        to={fullPath}
+                                        className={
+                                          isSubActive(fullPath)
+                                            ? "sub-link-active"
+                                            : ""
+                                        }
+                                        onClick={() =>
+                                          handleLinkClick("programs")
+                                        }
+                                      >
+                                        {label}
+                                      </Link>
+                                    );
+                                  },
+                                )
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
-                </div>
               </li>
 
               {/* RETREATS ─────────────────────── */}
@@ -522,6 +528,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+          
           )}
 
           <div className="d-flex align-items-center">
@@ -594,7 +601,7 @@ const Navbar = () => {
                         {activeMobileCategory === "MEMBERSHIP" ? "−" : "+"}
                       </span>
                     </div>
-                    
+
                     <div className={`animated-collapse-grid ${activeMobileCategory === "MEMBERSHIP" ? "grid-open" : ""}`}>
                       <div className="collapse-inner-content drawer-loc-body">
                         {[
@@ -639,7 +646,7 @@ const Navbar = () => {
                         {activeMobileCategory === "ONLINE" ? "−" : "+"}
                       </span>
                     </div>
-                    
+
                     <div className={`animated-collapse-grid ${activeMobileCategory === "ONLINE" ? "grid-open" : ""}`}>
                       <div className="collapse-inner-content drawer-loc-body">
                         {[
@@ -671,7 +678,7 @@ const Navbar = () => {
                         {activeMobileCategory === "TTC" ? "−" : "+"}
                       </span>
                     </div>
-                    
+
                     <div className={`animated-collapse-grid ${activeMobileCategory === "TTC" ? "grid-open" : ""}`}>
                       <div className="collapse-inner-content drawer-loc-body">
                         {LOCATIONS.map(({ slug, label }) => (
@@ -685,7 +692,7 @@ const Navbar = () => {
                                 {activeLocation === `m-ttc-${slug}` ? "−" : "+"}
                               </span>
                             </div>
-                            
+
                             <div className={`animated-collapse-grid ${activeLocation === `m-ttc-${slug}` ? "grid-open" : ""}`}>
                               <div className="collapse-inner-content drawer-loc-body-nested">
                                 {renderMobileTTCSubCats(slug)}
@@ -731,11 +738,10 @@ const Navbar = () => {
                   {LOCATIONS.map(({ slug, label }) => (
                     <div key={slug} className="drawer-nested-loc mb-2">
                       <div
-                        className={`drawer-loc-header nested ${
-                          isRetreatPath && currentPathLower.split("/").includes(slug)
+                        className={`drawer-loc-header nested ${isRetreatPath && currentPathLower.split("/").includes(slug)
                             ? "m-active-path-text"
                             : ""
-                        }`}
+                          }`}
                         onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
                       >
                         <span>{label} Retreat</span>

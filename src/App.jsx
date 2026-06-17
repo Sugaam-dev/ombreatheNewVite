@@ -64,6 +64,10 @@ const OmbYogaPage = lazy(() =>
   import("./ombYoga/pages/OmbYogaPage")
 );
 
+const OnlineYogaPage = lazy(() =>
+  import("./ombYoga/pages/OnlineYogaPage")
+);
+
 const LocationLandingPage = lazy(() =>
   import("./ombYoga/pages/programsCard/LocationLandingPage")
 );
@@ -168,6 +172,11 @@ function AppRoutes() {
             element={<ProgramsCarousel />}
           />
 
+          <Route
+  path="online/:course"
+  element={<OnlineYogaPage />}
+/>
+
           {/* MEMBERSHIP PROGRAMS */}
           <Route
             path="programs/shakti-sadhana"
@@ -204,6 +213,7 @@ function AppRoutes() {
               />
             }
           />
+
 
           {/* DYNAMIC PROGRAMS */}
           <Route
