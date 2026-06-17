@@ -79,6 +79,7 @@ import shivShaktiSadhanaData from "./Components/Services/Membership/data/shivSha
 import saptaRishiSadhanaData from "./Components/Services/Membership/data/saptaRishiSadhanaData";
 import pashuPatayaaData from "./Components/Services/Membership/data/pashuPatayaaData";
 import shaktiSadhanaData from "./Components/Services/Membership/data/shaktiSadhanaData";
+import TermsAndConditions from "./Components/Footer/Term-conditions";
 
 // ==========================================
 // PAGE LOADER
@@ -148,6 +149,10 @@ function AppRoutes() {
             path="contact"
             element={<Cont />}
             
+          />
+            <Route
+        path="/terms-and-conditions"
+        element={<TermsAndConditions />}
           />
           
 
@@ -222,6 +227,9 @@ function AppRoutes() {
             element={<h1>404 - Page Not Found</h1>}
           />
         </Route>
+
+      
+
       </Routes>
     </Suspense>
   );

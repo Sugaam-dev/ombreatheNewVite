@@ -340,19 +340,42 @@ const Footer = () => {
       </footer>
 
       {/* Copyright Section */}
-      <div className="py-3" style={{ backgroundColor: '#1a252f' }}>
+      <div className="py-3" style={{ backgroundColor: "#1a252f" }}>
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
+          <div className="row align-items-center text-center">
+
+            {/* Left */}
+            <div className="col-md-4">
               <p className="mb-0 copyright-text-white">
                 © {currentYear} Ombreathe. All Rights Reserved.
               </p>
             </div>
-            <div className="col-md-6 text-md-end">
+
+            {/* Center */}
+            <div className="col-md-4">
+              <Link
+                to="/terms-and-conditions"
+                className="footer-link-copyright-white"
+              >
+                Terms & Conditions
+              </Link>
+            </div>
+
+            {/* Right */}
+            <div className="col-md-4 text-md-end">
               <p className="mb-0 copyright-text-white">
-                Designed by <a href="https://www.pmrgsolution.com/" className="footer-link-copyright-white">PMRG Solution</a>
+                Designed by{" "}
+                <a
+                  href="https://www.pmrgsolution.com/"
+                  className="footer-link-copyright-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PMRG Solution
+                </a>
               </p>
             </div>
+
           </div>
         </div>
       </div>
