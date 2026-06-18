@@ -14,8 +14,16 @@ import LazySection from "../../Components/LazySection";
 // LAZY LOADED SECTIONS
 // ==========================================
 
+const OnlineAboutSection = lazy(() =>
+  import("../onlinesections/OnlineAboutSection")
+);
+
 const OnlinePromoSection = lazy(() =>
   import("../onlinesections/OnlinePromoSection")
+);
+
+const OnlineReceiveSection = lazy(() =>
+  import("../onlinesections/OnlineReceiveSection")
 );
 
 const OnlineTransformationSection = lazy(() =>
@@ -34,20 +42,24 @@ const OnlineScheduleSection = lazy(() =>
   import("../onlinesections/OnlineScheduleSection")
 );
 
+const OnlineBenefitsSection = lazy(() =>
+  import("../onlinesections/OnlineBenefitsSection")
+);
+
+const OnlineGallerySection = lazy(() =>
+  import("../onlinesections/OnlineGallerySection")
+);
+
+const OnlineLineageSection = lazy(() =>
+  import("../onlinesections/OnlineLineageSection")
+);
+
 const OnlineMassageSection = lazy(() =>
   import("../onlinesections/OnlineMassageSection")
 );
 
-const OnlineExcursionSection = lazy(() =>
-  import("../onlinesections/OnlineExcursionSection")
-);
-
-const OnlineFoodSection = lazy(() =>
-  import("../onlinesections/OnlineFoodSection")
-);
-
-const OnlineAccommodationSection = lazy(() =>
-  import("../onlinesections/OnlineAccommodationSection")
+const OnlineTestimonialsSection = lazy(() =>
+  import("../onlinesections/OnlineTestimonialsSection")
 );
 
 const OnlineLocationSection = lazy(() =>
@@ -106,12 +118,27 @@ const OnlineYogaPage = () => {
         />
 
         {/* ==========================================
-            BELOW THE FOLD
+            BELOW THE FOLD — follows the real page order:
+            About -> Promo/Course card -> Receive -> Transformation ->
+            Practice -> Curriculum -> Schedule -> Benefits & Eligibility ->
+            Gallery -> Lineage -> Instructors -> Testimonials -> Location -> FAQ
         ========================================== */}
+
+        <LazySection>
+          <OnlineAboutSection
+            data={data.aboutSection}
+          />
+        </LazySection>
 
         <LazySection>
           <OnlinePromoSection
             data={data.promoSection}
+          />
+        </LazySection>
+
+        <LazySection>
+          <OnlineReceiveSection
+            data={data.receiveSection}
           />
         </LazySection>
 
@@ -140,26 +167,32 @@ const OnlineYogaPage = () => {
         </LazySection>
 
         <LazySection>
+          <OnlineBenefitsSection
+            data={data.benefitsSection}
+          />
+        </LazySection>
+
+        <LazySection>
+          <OnlineGallerySection
+            data={data.gallerySection}
+          />
+        </LazySection>
+
+        <LazySection>
+          <OnlineLineageSection
+            data={data.lineageSection}
+          />
+        </LazySection>
+
+        <LazySection>
           <OnlineMassageSection
             data={data.MassageSection}
           />
         </LazySection>
 
         <LazySection>
-          <OnlineExcursionSection
-            data={data.excursionSection}
-          />
-        </LazySection>
-
-        <LazySection>
-          <OnlineFoodSection
-            data={data.foodSection}
-          />
-        </LazySection>
-
-        <LazySection>
-          <OnlineAccommodationSection
-            data={data.accommodationSection}
+          <OnlineTestimonialsSection
+            data={data.testimonialsSection}
           />
         </LazySection>
 

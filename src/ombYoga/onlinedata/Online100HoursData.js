@@ -14,12 +14,12 @@ export const Online100HoursData = {
 
     hero: {
       location: "Online · 100-Hour Foundation",
-      title: "100 Hour Online Yoga Teacher Training",
-      highlight: "Yoga Alliance Certified",
+      title: "Yoga Teacher Training Course",
+      highlight: "100 Hour Online ",
       subtitle:
-        "100-hour online yoga teacher training — Hatha, Ashtanga Vinyasa, Pranayama & Himalayan philosophy from World Peace Yoga School",
-      price: "$195",
-      priceNote: "Includes study material & Yoga Alliance certification",
+        "Look within and you will find the greatest love — pre-recorded lessons, unlimited daily live classes and unlimited live Q&A from World Peace Yoga School",
+      price: "195 USD",
+      priceNote: "Includes 145 course videos, study manuals & Yoga Alliance certification",
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       certificateImage:
@@ -29,12 +29,12 @@ export const Online100HoursData = {
     },
 
     gains: [
-      "145 pre-recorded course videos taught by Himalayan tradition teachers",
-      "Unlimited daily live classes & live Q&A sessions over Zoom",
-      "Classical Hatha, Ashtanga Vinyasa, alignment & adjustment training",
-      "Yoga philosophy, anatomy, pranayama, mantra, bandha & mudra studies",
-      "6 months access — study anytime, on mobile, tablet or desktop",
-      "Eligible for higher-level 200hr, 300hr & 500hr Yoga Alliance YTTC",
+      "1 year access",
+      "Pre-recorded videos",
+      "Unlimited daily live classes",
+      "Unlimited live Q&A",
+      "Free workshops & webinars",
+      "Course manuals",
     ],
 
     certificates: [
@@ -45,7 +45,7 @@ export const Online100HoursData = {
 
     content: {
       bottomText:
-        "Receive a 100-hour Yoga Alliance accredited certificate of completion from World Peace Yoga School and begin your transformation journey from home.",
+        "Look within and you will find the greatest love.",
     },
   },
 
@@ -69,18 +69,86 @@ export const Online100HoursData = {
       title: "Join our",
       highlight: "global online",
       subtitle:
-        "Learn authentic Himalayan yoga from the comfort of your home — pre-recorded lessons, daily live classes and a supportive worldwide community of students.",
+        "Are you looking for an online yoga teacher training course from an authentic, Indian, traditional yoga Guru? Give us a chance to serve you wholeheartedly.",
       stats: [
-        { value: "100+", label: "Training Hours" },
-{ value: "6 Months", label: "Course Access" },
-{ value: "Daily", label: "Live Classes" },
-{ value: "Self-Paced", label: "Learning Format" },
-{ value: "Worldwide", label: "Student Community" }
+        { value: "145", label: "Course Videos", icon: "award" },
+        { value: "1 Year", label: "Course Access", icon: "calendar" },
+        { value: "Daily", label: "Live Classes", icon: "clock" },
+        { value: "7,000+", label: "Teachers Trained", icon: "heart" },
+        { value: "60+", label: "Countries Represented", icon: "globe" },
       ],
       bottomText1:
-        "From an authentic Indian, traditional Himalayan lineage — guided by Yogi Vishnu and a team of experienced instructors based in Rishikesh.",
+        "Through training in Hatha Yoga, Philosophy, Pranayama, Anatomy, Meditation, Teaching Methodology, Ayurvedic knowledge, mantras and Kundalini Tantra, the course fully prepares you to convey yogic teachings with full confidence, while staying true to its roots.",
       bottomText2:
-        "Yoga Alliance certified school — pre-recorded videos, unlimited live classes and live Q&A keep you connected wherever you are in the world.",
+        "Being a yoga teacher requires great discipline and humility. Our experienced teachers, led by Yogi Vishnu, will be there to help you on this journey with any questions you may have.",
+    },
+  },
+
+  aboutSection: {
+    colors: {
+      white: "#ffffff",
+      cream: "#F5EFE8",
+      navy: "#1E2D0E",
+      sage: "#4A7A2A",
+    },
+
+    content: {
+      block1: {
+        eyebrow: "Why Choose Us",
+        title: "Why Choose Online Yoga Teacher Training Course at World Peace Yoga School?",
+        paragraphs: [
+          "The Online 100 Hr Yoga Teacher Training is one of the best introductory level courses at World Peace Yoga School, and is great for beginners or those who want to try yoga but never had the time or opportunity, or have been practicing it as a hobby. Our school aims to bring you in-depth knowledge about the yoga discipline.",
+          "The course is structured extremely well, around pre-recorded lessons, access to live classes across the curriculum, and easy-to-understand guidance. You will be learning about all the fundamentals of yoga in this 100-Hr Online Yoga Teacher Training. After you complete the course, you can further pursue all the higher-level yoga courses like the 200hr, 300hr and 500hr Yoga TTC. We follow a widely recognized curriculum and go to extreme lengths with the practice to ensure that you get the same quality online.",
+          "So, why not yoga? We've got world-class infrastructure to teach you yoga in the comfort of your home. The only things you need are respect and love for discipline — and a good Wi-Fi connection. We have dedicated ourselves to the practice of this holistic science and will imbibe the same in you.",
+        ],
+      },
+      block2: {
+        title: "100 Hour Online Yoga Teacher Training Course & Certification",
+        paragraphs: [
+          "This is a specialized course that establishes your comfort level with the ancient art of yoga — that might otherwise take decades to master. We commence by inspiring participants to create a bridge between the mind and body. Through training in Hatha Yoga, Philosophy, Pranayama, Anatomy, Meditation, Teaching Methodology, Ayurvedic knowledge, mantras and Kundalini Tantra, the course fully prepares you to convey yogic teachings with full confidence, while staying true to its roots.",
+          "Yoga is the union of the body, mind and spirit, and this holistic course — in addition to preparing you to be a teacher — also teaches you about the lifestyle and ways of a true yogi, and how to live a full, happy and healthy life. A yoga teacher lives and breathes yoga; complete this course feeling transformed, confident, whole and connected with your inner self, with a strong sense of purpose.",
+        ],
+        includesTitle: "Course Includes",
+        includes: [
+          "145 course videos",
+          "Study materials",
+          "Yoga Alliance accreditation",
+          "Certification of completion",
+          "1 year access",
+          "Compatible with mobile, desktop & tablet",
+        ],
+        stylesTitle: "Major Styles Of Yoga & Other Classes You'll Learn",
+        styles: [
+          "Classical Hatha Yoga",
+          "Vinyasa Ashtanga Yoga",
+          "Body Alignment",
+          "Adjustment of yoga pose",
+          "Teaching methodology and sequencing",
+        ],
+      },
+      block3: {
+        title: "Subjects & Certification With Yoga Alliance",
+        paragraphs: [
+          "We are Yoga Alliance certified and strict followers of the stringent guidelines laid down for us to follow. The Online 100-Hour Yoga TTC comprises the basic Hatha and Ashtanga-Vinyasa Yoga postures — you will be initiated into the asanas gently by our yoga experts and gurus. Additionally, you will learn basic Pranayama techniques, Surya Namaskars, mudras and mantras. Meditation is also an important part of the syllabus, alongside a basic idea of Yoga Nidra and Tantra.",
+          "The program is self-paced, giving you adequate time to practice. You are required to complete the course and appear for the examination to get the Yoga Alliance certification. We provide compatible notes and videos accessible on computers and mobiles. After successful completion, you are eligible for the higher-level courses.",
+        ],
+      },
+      block4: {
+        title: "How Can You Advance Your Career After the Online 100 Hours Yoga TTC?",
+        paragraphs: [
+          "You cannot become a yoga teacher after completing the Online 100 Hours Yoga TTC alone — the same teaching is part of the 200-hr Yoga TTC. This course is for all those who are unable to complete the 200-hr course in one go: you can complete 100 hours of the program and then come back for the next 100 hours. 200 hours is the minimum criteria to become a teacher.",
+          "At World Peace Yoga School, you can join our sessions and gain an edge over others in the market, for the best-rated teachings. You'll have 145 pre-recorded videos for your learning, 1 year of access to all videos and study materials, and you'll also learn about teaching methods — studying in your own time to understand the basic fundamentals of yoga.",
+        ],
+        advantagesTitle: "Advantages Of Yoga Alliance Certified Courses",
+        advantages: [
+          { title: "Global Yoga Community", desc: "Become part of a global yoga community." },
+          { title: "Career Opportunities", desc: "Network and improve your career opportunities in a peer group." },
+          { title: "Secure Jobs", desc: "These connections help you secure jobs in the future." },
+          { title: "Credibility", desc: "Yoga Alliance accreditation gives you credibility." },
+          { title: "Learning Material", desc: "Access to good-quality learning material." },
+          { title: "Lasting Friendships", desc: "Make great friends while doing the online course." },
+        ],
+      },
     },
   },
 
@@ -95,36 +163,36 @@ export const Online100HoursData = {
     },
 
     content: {
-      eyebrow: "Online Yoga Experience",
-      title: "Join our",
-      highlight: "immersive",
+      eyebrow: "100 Hour Yoga TTC",
+      title: "Course",
+      highlight: "Highlights",
       duration: "self-paced",
-      strongText: "online",
+      strongText: "195 USD",
       features: [
         {
           icon: "award",
-          title: "100-Hour Certificate",
-          sub: "Yoga Alliance accredited — RYT-100 registration eligible",
-        },
-        {
-          icon: "award",
-          title: "Comprehensive Video Library",
-          sub: "Pre-recorded lessons across the full curriculum",
-        },
-        {
-          icon: "heart",
-          title: "Daily Live Classes",
-          sub: "Unlimited live sessions & live Q&A over Zoom",
+          title: "145 Course Videos",
+          sub: "Pre-recorded lessons covering the complete curriculum",
         },
         {
           icon: "bed",
-          title: "Study Materials Included",
-          sub: "Course manuals, books & PDFs in your dashboard",
+          title: "Study Materials",
+          sub: "Course manuals, books and study materials included",
+        },
+        {
+          icon: "award",
+          title: "Yoga Alliance Accreditation",
+          sub: "Certification of completion recognized worldwide",
         },
         {
           icon: "compass",
-          title: "6-Month Access",
-          sub: "Mobile, tablet & desktop compatible, learn at your pace",
+          title: "1-Year Access",
+          sub: "Compatible with mobile, desktop & tablet",
+        },
+        {
+          icon: "heart",
+          title: "Unlimited Live Classes & Q&A",
+          sub: "Stay connected with teachers throughout the course",
         },
       ],
       images: {
@@ -134,6 +202,62 @@ export const Online100HoursData = {
         stay:
           "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
       },
+    },
+  },
+
+  receiveSection: {
+    colors: {
+      navy: "#1E2D0E",
+      cream: "#F5EFE8",
+      sage: "#4A7A2A",
+      white: "#ffffff",
+      shadowSm: "0 4px 12px rgba(0,0,0,0.08)",
+      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+      gradientCard: "linear-gradient(135deg,#1E2D0E,#4A7A2A)",
+    },
+
+    content: {
+      title: "What You'll Receive In This",
+      highlight: "100-Hour Online Course",
+      subtitle:
+        "Your life is a gift of the Divine, cherish it — here's everything included in your 100-hour online yoga teacher training.",
+      items: [
+        {
+          icon: "award",
+          title: "100-RYT Certificate",
+          desc: "100-RYT course completion certification, accredited by Yoga Alliance.",
+        },
+        {
+          icon: "level",
+          title: "Course Level",
+          desc: "Course level — Beginner.",
+        },
+        {
+          icon: "play",
+          title: "Pre-Recorded Videos",
+          desc: "145 pre-recorded course videos covering the full curriculum.",
+        },
+        {
+          icon: "calendar",
+          title: "Course Access",
+          desc: "Course access: 1 year.",
+        },
+        {
+          icon: "book",
+          title: "Study Material",
+          desc: "Course manuals, books and study materials are included in the course fee.",
+        },
+        {
+          icon: "percent",
+          title: "Discount",
+          desc: "10% discount on in-person courses, valid for one year.",
+        },
+        {
+          icon: "layers",
+          title: "In-Depth Understanding",
+          desc: "In-depth understanding of Hatha, Ashtanga, Vinyasa, Pranayama, Meditation & Philosophy.",
+        },
+      ],
     },
   },
 
@@ -150,11 +274,11 @@ export const Online100HoursData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      quoteStart: "Begin your yoga journey from",
-      highlight: "anywhere in the world",
-      quoteEnd: "guided by Himalayan masters in Rishikesh",
+      quoteStart: "Look within and you will find",
+      highlight: "the greatest love",
+      quoteEnd: "",
       description:
-        "Look within and you will find the greatest love. This 100-hour online course brings the authentic teachings of World Peace Yoga School to your home — Hatha, Ashtanga Vinyasa, philosophy, pranayama and meditation taught by experienced Himalayan-tradition instructors, with daily live classes to keep you connected and supported.",
+        "Your life is a gift of the Divine — cherish it. When calmness in the mind is permanent, absolute equilibrium is realized.",
     },
   },
 
@@ -173,23 +297,23 @@ export const Online100HoursData = {
       title: "Foundation of",
       highlight: "Hatha, Ashtanga & Himalayan Yoga",
       subtitle:
-        "Build a strong foundational understanding of traditional yoga online — postures, alignment, Pranayama, Meditation and Himalayan wisdom.",
+        "Build a strong foundational understanding of traditional yoga online — Classical Hatha postures, Vinyasa Ashtanga Yoga, body alignment, Pranayama and Himalayan wisdom.",
       practices: [
         {
           label: "Hatha & Ashtanga Vinyasa",
-          desc: "Classical Hatha postures and Ashtanga Vinyasa sequences with detailed alignment & adjustment guidance",
+          desc: "Classical Hatha Yoga postures and Vinyasa Ashtanga Yoga sequences with body alignment & adjustment of yoga pose guidance",
           icon: "sun",
           img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Pranayama & Meditation",
-          desc: "Breathing techniques, Bandha, Mudra, Yoga Nidra and guided meditation practices from the Himalayan tradition",
+          desc: "Pranayama practices, Bandhas, Mudra and Meditation drawn from scriptures and the Himalayan tradition",
           icon: "wind",
           img: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80",
         },
         {
           label: "Philosophy & Teaching",
-          desc: "Mantra chanting, yoga philosophy, anatomy, yoga therapy & teaching methodology for aspiring teachers",
+          desc: "Yoga philosophy, anatomy, yoga therapy, mantra chanting and teaching methodology & sequencing for aspiring teachers",
           icon: "feather",
           img: "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80",
         },
@@ -198,18 +322,18 @@ export const Online100HoursData = {
       specialHighlight: "This Online Training",
       specials: [
         {
-          title: "Authentic Himalayan Lineage",
-          desc: "Learn from experienced Himalayan-tradition teachers based in Rishikesh",
+          title: "Authentic Indian Guru",
+          desc: "Learn from an authentic, traditional Indian yoga Guru and his team of experienced teachers",
           icon: "heart",
         },
         {
           title: "Learn At Your Own Pace",
-          desc: "6 months of unrestricted access to 145 videos — study whenever your schedule allows",
+          desc: "1 year of access to 145 videos — complete the course in your own time, on your own schedule",
           icon: "shield",
         },
         {
           title: "Stay Connected",
-          desc: "Daily live classes, live Q&A and a WhatsApp community group keep you supported throughout",
+          desc: "Unlimited daily live classes and unlimited live Q&A keep you supported throughout",
           icon: "sparkles",
         },
       ],
@@ -231,29 +355,39 @@ export const Online100HoursData = {
 
     content: {
       eyebrow: "Curriculum",
-      title: "Your Complete",
-      highlight: "100-Hour Online Journey",
+      title: "100 Hour Online Yoga Teacher Training Course",
+      highlight: "Curriculum",
       subtitle:
-        "A comprehensive 145-video program covering Hatha, Ashtanga Vinyasa, alignment, philosophy, anatomy, pranayama, mantra, meditation, bandha and mudra.",
+        "Welcome to a life-changing 100-hour online course — covering preparation, lifestyle, Hatha Yoga, Alignment & Adjustment, Ashtanga Vinyasa, Philosophy, Anatomy/Yoga Therapy, Pranayama, Mantra Chanting, Meditation, Bandhas, Dance Exercise and Mudra.",
 
       courses: [
+        {
+          title: "Welcome & Preparation",
+          icon: "sparkles",
+          items: [
+            "Welcome message by Guru Vishnu, Founder of WPYS",
+            "Blessings of Master Swami Rama",
+            "Study materials, books & manuals overview",
+            "How to prepare yourself for this course",
+          ],
+        },
         {
           title: "Hatha Yoga",
           icon: "sun",
           items: [
             "Pawanmuktasana A, B & C",
             "Kneeling & standing postures",
-            "Sun salutations",
-            "Asana assignment",
+            "Parsvottanasana & balancing postures",
+            "Sun salutation & asana assignment",
           ],
         },
         {
           title: "Alignment & Adjustment",
-          icon: "sparkles",
+          icon: "align",
           items: [
-            "7-part alignment series",
-            "Adjustment technique",
-            "Posture correction",
+            "7-part alignment & adjustment series",
+            "Posture correction technique",
+            "Hands-on adjustment guidance",
             "Alignment assignment",
           ],
         },
@@ -261,19 +395,19 @@ export const Online100HoursData = {
           title: "Ashtanga Vinyasa",
           icon: "dumbbell",
           items: [
-            "12-part Ashtanga series",
-            "Sitting sequence",
-            "Sun Salutation B",
-            "Breath synchronization",
+            "12-part Ashtanga sequence",
+            "Ashtanga sitting sequence",
+            "Sun Salutation B & Triangle Pose",
+            "Breath-synchronized movement",
           ],
         },
         {
           title: "Philosophy",
           icon: "book",
           items: [
-            "Science of Karma",
-            "Eight limbs of yoga",
-            "Purpose of human life",
+            "Science of Karma & purpose of human life",
+            "Eight limbs of yoga — Santosha & Tapas",
+            "Yoga as a lifestyle, not a religion",
             "Philosophy assignment",
           ],
         },
@@ -281,20 +415,20 @@ export const Online100HoursData = {
           title: "Anatomy & Yoga Therapy",
           icon: "heart",
           items: [
-            "Body awareness",
-            "Yoga therapy fundamentals",
-            "Injury prevention",
-            "Yogic science",
+            "Body awareness fundamentals",
+            "Yoga therapy principles",
+            "Injury-aware practice",
+            "Yogic science foundations",
           ],
         },
         {
           title: "Pranayama Practices",
           icon: "wind",
           items: [
-            "Nadi Sodhanam & Bhastrika",
-            "Kapal Bhati Pranayama",
-            "Breathing patterns",
-            "Pranayama assignment",
+            "Vajrasana, Siddhasana & Padmasana for Pranayama",
+            "Clavicular, thoracic & diaphragmatic breathing",
+            "Nadi Sodhanam & Bhastrika Pranayama",
+            "Kapal Bhati Pranayama & assignment",
           ],
         },
         {
@@ -309,11 +443,11 @@ export const Online100HoursData = {
         },
         {
           title: "Meditation",
-          icon: "brain",
+          icon: "brainCircuit",
           items: [
-            "History & scriptures",
-            "Meditation postures",
-            "Full body relaxation",
+            "History & scriptures of meditation",
+            "Siddhasana & Padmasana meditation poses",
+            "Body position & full body relaxation",
             "Meditation assignment",
           ],
         },
@@ -321,10 +455,17 @@ export const Online100HoursData = {
           title: "Bandhas & Mudra",
           icon: "users",
           items: [
-            "Mula & Uddiyana Bandha",
-            "Jalandhara Bandha",
-            "Gyan, Chin & Yoni Mudra",
+            "Mula Bandha & Agnisara Kriya",
+            "Uddiyana & Jalandhara Bandha",
+            "Gyan, Chin, Namaste & Yoni Mudra",
             "Hridaya & Sambhavi Mudra",
+          ],
+        },
+        {
+          title: "Dance Exercise",
+          icon: "bellRing",
+          items: [
+            "Dance exercise session",
           ],
         },
       ],
@@ -332,20 +473,20 @@ export const Online100HoursData = {
       phases: [
         {
           title: "Foundation",
-          days: "Module 1–3",
-          desc: "Welcome session, course preparation, lifestyle guidance & study materials",
+          days: "Modules 1–3",
+          desc: "Welcome session with Guru Vishnu, course preparation, lifestyle guidance and study materials",
           color: "#2E5018",
         },
         {
           title: "Development",
-          days: "Module 4–7",
-          desc: "Hatha, alignment & adjustment, Ashtanga Vinyasa, philosophy & anatomy",
+          days: "Modules 4–7",
+          desc: "Hatha Yoga, Alignment & Adjustment, Ashtanga Vinyasa, Philosophy and Anatomy/Yoga Therapy",
           color: "#4A7A2A",
         },
         {
           title: "Integration",
-          days: "Module 8–11",
-          desc: "Pranayama, mantra, meditation, bandha, mudra & final assessment",
+          days: "Modules 8–11",
+          desc: "Pranayama, Mantra Chanting, Meditation, Bandhas, Dance Exercise, Mudra and final assessment",
           color: "#6A9A40",
         },
       ],
@@ -353,7 +494,7 @@ export const Online100HoursData = {
       cta: {
         title: "Begin Your Online Yoga Journey",
         desc:
-          "Transform your body, mind, and life through 100-hour online yoga teacher training rooted in the Himalayan tradition.",
+          "Transform your body, mind and life through this 100-hour online yoga teacher training course from World Peace Yoga School.",
         buttonText: "Start Your Journey",
         url: "/contact",
       },
@@ -374,10 +515,10 @@ export const Online100HoursData = {
 
     content: {
       eyebrow: "Live Class Schedule",
-      title: "Weekly Flow of",
-      highlight: "Live Classes",
+      title: "Daily Live Classes Schedule",
+      highlight: "With World Peace Yoga School",
       subtitle:
-        "Free daily live classes over Zoom — every session is recorded so you can watch later if you miss it live. All times in Indian Standard Time.",
+        "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
       image: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
 
@@ -397,258 +538,280 @@ export const Online100HoursData = {
         morningTitle: "Monday – Wednesday",
         afternoonTitle: "Thursday – Saturday",
         note:
-          "All live classes run 03:30 PM – 04:30 PM IST and are recorded. Sunday is a free day with no live class. Schedule may change with notice.",
+          "All free live classes run 03:30 PM – 04:30 PM IST and are recorded. Sunday is a holiday with no live class taught.",
       },
     },
   },
 
-  excursionSection: {
+  benefitsSection: {
     colors: {
       white: "#ffffff",
       navy: "#1E2D0E",
       sage: "#4A7A2A",
-      overlay: "linear-gradient(to top, rgba(0,0,0,0.6), transparent)",
-      cardShadow: "0 8px 24px rgba(0,0,0,0.1)",
+      cardShadow: "0 8px 24px rgba(0,0,0,0.06)",
     },
 
     content: {
-      eyebrow: "Beyond The Screen",
-      title: "Course",
-      highlight: "Highlights & Benefits",
+      eyebrow: "About World Peace Yoga School",
+      title: "Why World Peace Yoga School",
+      highlight: "& Eligibility For This Course",
       subtitle:
-        "More than just videos — this online course connects you to the World Peace Yoga School community and opens the door to future in-person training.",
+        "Become part of a community trusted by thousands of students from across the globe.",
 
-      excursions: [
-        {
-          title: "WhatsApp Student Group",
-          tag: "Support",
-          tagBg: "#2E5018",
-          duration: "Throughout Course",
-          icon: "waves",
-          img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-          desc: "Stay connected with like-minded students and ask teachers questions anytime via WhatsApp.",
-          highlights: ["Peer support", "Direct teacher access", "Global community"],
-        },
-        {
-          title: "Discount On Future Courses",
-          tag: "Savings",
-          tagBg: "#1E2D0E",
-          duration: "Valid 1 Year",
-          icon: "camera",
-          img: "https://wallpaperaccess.com/full/139108.jpg",
-          desc: "Receive a 10–15% discount toward in-person 200hr, 300hr or 500hr Yoga TTC programs.",
-          highlights: ["10–15% discount", "Valid one year", "Pathway to 200hr"],
-        },
-        {
-          title: "Full Moon Meditations",
-          tag: "Spiritual",
-          tagBg: "#6A4A20",
-          duration: "Monthly",
-          icon: "leaf",
-          img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-          desc: "Free invitations to full moon meditations and other special online events throughout the year.",
-          highlights: ["Free events", "Community gatherings", "Continued practice"],
-        },
-        {
-          title: "Volunteering Opportunity",
-          tag: "Community",
-          tagBg: "#C8874A",
-          duration: "Ongoing",
-          icon: "globe",
-          img: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
-          desc: "Join the World Peace Yoga School family through volunteering opportunities after course completion.",
-          highlights: ["Karma yoga", "Community service", "Lifelong connection"],
-        },
-        {
-          title: "Eligible For 200hr YTTC",
-          tag: "Pathway",
-          tagBg: "#4A6A20",
-          duration: "Within 1 Year",
-          icon: "trees",
-          img: "https://wallpaperaccess.com/full/139108.jpg",
-          desc: "Complete this 100-hour foundation and continue with the remaining 100 hours to reach the full 200-hour Yoga Alliance certification.",
-          highlights: ["200hr pathway", "Yoga Alliance RYT-200", "Flexible timeline"],
-        },
-        {
-          title: "3 Days / 2 Nights Free Stay",
-          tag: "Bonus",
-          tagBg: "#4A7A2A",
-          duration: "In Rishikesh",
-          icon: "mountain",
-          img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
-          desc: "Visit World Peace Yoga School in Rishikesh with a complimentary 3-day, 2-night stay.",
-          highlights: ["Free accommodation", "Meet the gurus", "Experience Rishikesh"],
-        },
-      ],
-
-      bottom: {
-        title: "Become part of the family ✨",
-        desc: "7,000+ teachers trained across 60+ countries — your journey continues beyond the course",
+      whyWpys: {
+        title: "Why World Peace Yoga School",
+        items: [
+          "One of the most reputed yoga schools in India",
+          "10+ years of yoga teacher training experience",
+          "7,000+ yoga teachers already trained all over the world",
+          "Students from 60+ countries",
+          "Yoga Alliance & Yoga Alliance Professional registered school",
+          "12 international centres worldwide",
+          "30+ highly experienced teachers working at WPYS",
+          "Offering 40+ life-changing yoga and spiritual courses",
+        ],
       },
+
+      benefits: {
+        title: "Benefit Of The Course",
+        items: [
+          "3 days / 2 nights free stay at World Peace Yoga School Rishikesh",
+          "Volunteering opportunity at World Peace Yoga School",
+          "Eligible to join our 300-hours Yoga teacher training course",
+          "Become a part of the World Peace Yoga family",
+          "Self-control and deep understanding of life",
+          "Get motivated to open a yoga centre",
+          "15% discount on future courses",
+        ],
+      },
+
+      eligibility: {
+        title: "Who Is Eligible For This Course",
+        items: [
+          "Anyone who wants to learn and expand their knowledge in yoga",
+          "Beginner to intermediate level students",
+        ],
+      },
+
+      community: {
+        title: "Be A Part Of World Peace Yoga School",
+        items: [
+          "Helpful and supportive team",
+          "Ready to give an enlightening experience",
+          "Affordable courses",
+          "Ready to help even after the course is completed",
+        ],
+      },
+
+      freeDays: "Free Days — Sunday is a holiday and there will be no live class taught.",
     },
   },
 
-  foodSection: {
+  gallerySection: {
     colors: {
       cream: "#F5EFE8",
       navy: "#1E2D0E",
-      white: "#ffffff",
       sage: "#4A7A2A",
+      white: "#ffffff",
       shadowSm: "0 4px 12px rgba(0,0,0,0.08)",
-      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
     },
 
     content: {
-      eyebrow: "What's Included",
-      title: "Everything you",
-      highlight: "need to succeed",
+      title: "Memories With Students At",
+      highlight: "World Peace Yoga School Rishikesh",
       subtitle:
-        "Your course fee includes complete study materials, manuals and resources — delivered straight to your dashboard.",
-
-      meals: [
-        {
-          key: "videos",
-          title: "Pre-Recorded Videos",
-          icon: "sun",
-          time: "6 Months Access",
-          img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
-          desc: "145 structured course videos covering every subject of the curriculum at your own pace.",
-          items: [
-            "145 course videos",
-            "Mobile, tablet & desktop",
-            "Lifetime-style learning dashboard",
-            "Re-watch anytime within access",
-          ],
-        },
-        {
-          key: "manuals",
-          title: "Study Manuals",
-          icon: "coffee",
-          time: "Included In Fee",
-          img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
-          desc: "Course manuals, books and PDFs covering philosophy, anatomy, mantra and meditation.",
-          items: [
-            "200-Hour YTT manual",
-            "Patanjali Yoga Sutra book",
-            "Asana Pranayama Bandha Mudra book",
-            "Meditation & anatomy manuals",
-          ],
-        },
-        {
-          key: "live",
-          title: "Live Classes & Q&A",
-          icon: "moon",
-          time: "Daily, 03:30–04:30 PM IST",
-          img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
-          desc: "Unlimited live Zoom classes and live Q&A sessions with experienced Himalayan-tradition teachers.",
-          items: [
-            "Daily live Zoom classes",
-            "Live Q&A with teachers",
-            "Recorded for later viewing",
-            "WhatsApp group support",
-          ],
-        },
+        "When calmness in the mind is permanent then absolute equilibrium is realized.",
+      images: [
+        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80",
+        "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=500&q=80",
+        "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=500&q=80",
+        "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?w=500&q=80",
+        "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&q=80",
+        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80",
+        "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=500&q=80",
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80",
+        "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?w=500&q=80",
       ],
+      linkText: "See More From Gallery",
+      galleryUrl: "/gallery",
+    },
+  },
 
-      dietary: [
-        { icon: "leaf", label: "Self-Paced" },
-        { icon: "feather", label: "Beginner Friendly" },
-        { icon: "sparkles", label: "Yoga Alliance" },
-        { icon: "sun", label: "145 Videos" },
-        { icon: "shield", label: "6-Month Access" },
-        { icon: "heart", label: "Live Support" },
-      ],
+  lineageSection: {
+    colors: {
+      navy: "#1A2456",
+      goldLight: "#C8874A",
+      white: "#ffffff",
+      border: "rgba(255,255,255,0.15)",
+      cardBg: "rgba(255,255,255,0.05)",
+    },
 
-      philosophy: [
-        { icon: "leaf", title: "Authentic", desc: "Traditional Himalayan teachings" },
-        { icon: "globe", title: "Accessible", desc: "Learn from anywhere" },
-        { icon: "heart", title: "Supported", desc: "Live classes & Q&A" },
-        { icon: "feather", title: "Flexible", desc: "Study at your own pace" },
+    content: {
+      eyebrow: "We Follow",
+      title: "The 5000 Years Old Yoga Tradition",
+      highlight: "Of The Himalayan Masters",
+      subtitle:
+        "A living lineage passed master to disciple, from the ancient rishis to Guru Vishnu in Rishikesh today.",
+      masters: [
+        {
+          era: "Vedic Era",
+          name: "Agastya Muni",
+          desc: "Author of some verses of the Rig Veda. One of the most revered of the Seven Rishis and a Siddha of the Shaivism tradition.",
+        },
+        {
+          era: "4th Century BC",
+          name: "Patanjali",
+          desc: "A great Raja Yogi of the Siddha tradition and writer of the Yoga Sutra — bringing the 4,000-year yoga tradition into 196 sutras and making it accessible.",
+        },
+        {
+          era: "550 BC",
+          name: "Siddha Bhogar",
+          desc: "A great Siddha accomplished yogi and disciple of Agastya Muni.",
+        },
+        {
+          era: "Born 30 Nov 203 AD — still alive in the Himalayas",
+          name: "Mahavatar Babaji",
+          desc: "An immortal yogi of the Himalayas, disciple of Siddha Bhogar Nather.",
+        },
+        {
+          era: "1925–1996",
+          name: "Swami Rama",
+          desc: "A Himalayan Yogi, disciple of Bengali Baba.",
+        },
+        {
+          era: "1933–2015",
+          name: "Swami Veda Bharati",
+          desc: "Founder of AHYMSIN, a great yogi and writer of many yoga books, and disciple of Swami Rama of the Himalayas.",
+        },
+        {
+          era: "Born 1974 — now in Rishikesh",
+          name: "Guru Vishnu",
+          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of World Peace Yoga School.",
+        },
       ],
     },
   },
 
-  accommodationSection: {
+  MassageSection: {
     colors: {
-      navy: "#1E2D0E",
+      navy: "#1A2456",
       white: "#ffffff",
-      sage: "#4A7A2A",
-      border: "rgba(255,255,255,0.25)",
-      cardBg: "rgba(255,255,255,0.08)",
-      shadowMd: "0 8px 24px rgba(0,0,0,0.15)",
+      sage: "#7BAF8A",
+      border: "rgba(255,255,255,0.15)",
+      cardBg: "rgba(255, 255, 255, 0.05)",
       shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
+    },
+    content: {
+      title: "Instructors Of",
+      highlight: "World Peace Yoga School",
+      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at World Peace Yoga School in Rishikesh.",
+      massages: [
+        {
+          id: 1,
+          title: "Vishnu Panigrahi",
+          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found World Peace Yoga School.",
+          duration: "Master Of Yoga",
+          rating: 4.9,
+          reviews: 184,
+          isPopular: true,
+          isPaid: true,
+          image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          id: 2,
+          title: "Rajeev Nautiyal",
+          tagline: "Hatha/Ashtanga/Alignment instructor — holds a Bachelor's in Engineering from Graphic Era University, plus a 500-hour TTC certificate and a degree in Yogic Science and Yoga Naturopathy from Uttarakhand University.",
+          duration: "Hatha / Ashtanga / Alignment",
+          rating: 4.8,
+          reviews: 92,
+          isPopular: false,
+          isPaid: true,
+          image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          id: 3,
+          title: "Yogi Naveen",
+          tagline: "Hatha, Ashtanga & Prenatal — teaching Yoga Teacher Training since 2015, having trained over 1,000 teachers in India, China and Vietnam, with a Master's in Yogic Science and a 500-hour Yoga Alliance USA TTC.",
+          duration: "Hatha / Ashtanga / Prenatal",
+          rating: 5.0,
+          reviews: 210,
+          isPopular: false,
+          isPaid: false,
+          image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          id: 4,
+          title: "Ashutosh Mishra",
+          tagline: "Hatha/Ashtanga/Alignment instructor — born and raised in Rishikesh, with a Bachelor's in Yogic Science and a Master's in Yoga Therapy from Uttarakhand Sanskrit University.",
+          duration: "Hatha / Ashtanga / Alignment",
+          rating: 4.7,
+          reviews: 145,
+          isPopular: false,
+          isPaid: true,
+          image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          id: 5,
+          title: "Haripriya Ji & Akshay Ji",
+          tagline: "Lead the weekly Kundalini Asana, Vinyasa Flow, Ashtanga Vinyasa, Hatha Yoga and Pranayama & Meditation live sessions throughout the program.",
+          duration: "Live Classes",
+          rating: 4.9,
+          reviews: 76,
+          isPopular: true,
+          isPaid: false,
+          image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+        }
+      ]
+    }
+  },
+
+  testimonialsSection: {
+    colors: {
+      cream: "#F5EFE8",
+      navy: "#1E2D0E",
+      sage: "#4A7A2A",
+      white: "#ffffff",
     },
 
     content: {
-      title: "What You",
-      highlight: "Receive In This Course",
-      subtitle:
-        "A complete online learning package — certification, study materials and live support, with a bonus stay in Rishikesh.",
-
-      rooms: [
+      title: "Student's Feedback About",
+      highlight: "Online YTTC",
+      subtitle: "What our students say about their online yoga teacher training experience with World Peace Yoga School.",
+      rating: "4.9",
+      ratingLabel: "World Peace Yoga School's Rating",
+      testimonials: [
         {
-          type: "Course Certification",
-          tag: "Certification",
-          tagBg: "#4A7A2A",
-          price: "$195",
-          img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
-          desc: "Yoga Alliance accredited 100-hour course completion certification recognized worldwide.",
-          features: [
-            "Yoga Alliance accreditation",
-            "Beginner course level",
-            "RYT-100 registration eligible",
-            "10% discount on in-person courses",
-            "145 pre-recorded videos",
-            "6 months dashboard access",
-          ],
+          quote:
+            "Being a student at this school and part of the World Peace Yoga family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
+          name: "Priscilla Smets",
+          location: "Online YTTC Student",
         },
         {
-          type: "Live Learning Access",
-          tag: "Popular",
-          tagBg: "#2E5018",
-          price: "Included",
-          img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
-          desc: "Unlimited daily live classes, live Q&A and full moon meditation invitations included in your fee.",
-          features: [
-            "Unlimited daily live classes",
-            "Unlimited live Q&A",
-            "Free workshops & webinars",
-            "WhatsApp student group",
-            "Compatible with all devices",
-            "Recorded sessions available",
-          ],
+          quote:
+            "World Peace Yoga School has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
+          name: "Laura Sanchez",
+          location: "Online YTTC Student",
         },
         {
-          type: "Student benefits",
-          tag: "Bonus",
-          tagBg: "#C8874A",
-          price: "Free",
-          img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
-          desc: "3 days, 2 nights free stay at World Peace Yoga School Rishikesh to experience the in-person ashram life.",
-          features: [
-            "3 days / 2 nights stay",
-            "Meet your online teachers",
-            "Volunteering opportunity",
-            "Pathway to 200hr YTTC",
-            "Community connection",
-            "Valid for one year",
-          ],
+          quote:
+            "Attending online training was an incredible experience. I wanted to improve my knowledge in yoga, but what I discovered was far more than that — the course is a real journey to life transformation. The recorded videos allow you to learn about traditional Indian yoga in all its aspects.",
+          name: "Caroline Oz",
+          location: "Online YTTC Student",
+        },
+        {
+          quote:
+            "This course at World Peace Yoga School has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
+          name: "Anna Vondroušková",
+          location: "Online Kundalini YTTC Student",
+        },
+        {
+          quote:
+            "A wonderful experience to learn with people from all over the world and yet still have a sense of a small, connected community. We check in for a live class every day and share questions through a WhatsApp group, which is very supportive. The program is very well structured.",
+          name: "Cindy Forde",
+          location: "Online YTTC Student",
         },
       ],
-
-      amenities: [
-        { icon: "music", label: "145 Videos" },
-        { icon: "waves", label: "Daily Live Classes" },
-        { icon: "heart", label: "Live Q&A" },
-        { icon: "wifi", label: "Any Device" },
-        { icon: "utensils", label: "Study Manuals" },
-        { icon: "feather", label: "WhatsApp Group" },
-        { icon: "leaf", label: "Self-Paced" },
-        { icon: "trees", label: "Yoga Alliance" },
-      ],
-
-      buttonText: "Book Now",
-      url: "/contact",
     },
   },
 
@@ -678,115 +841,36 @@ export const Online100HoursData = {
         {
           name: "Live Zoom Classes",
           distance: "Daily",
-          desc: "03:30–04:30 PM IST, taught live from Rishikesh, recorded for later viewing.",
+          desc: "03:30–04:30 PM IST, taught live from Rishikesh and recorded for later viewing.",
           icon: "sun",
         },
         {
-          name: "WhatsApp Community",
-          distance: "Always Open",
-          desc: "Connect with teachers and fellow students throughout your course.",
-          icon: "sparkles",
-        },
-        {
           name: "Student Dashboard",
-          distance: "6 Months",
+          distance: "1 Year",
           desc: "Access all 145 videos, manuals and live class links in one place.",
           icon: "globe",
         },
         {
           name: "World Peace Yoga School",
           distance: "Bonus Visit",
-          desc: "Use your free 3-day, 2-night stay to visit the Rishikesh campus in person.",
+          desc: "Use your free 3 days/2 nights stay to visit the Rishikesh campus in person.",
           icon: "mountain",
         },
         {
-          name: "Full Moon Meditations",
-          distance: "Monthly",
-          desc: "Free online events open to all enrolled and past online students.",
+          name: "WhatsApp Community",
+          distance: "Always Open",
+          desc: "Connect with teachers and fellow students throughout your course and beyond.",
           icon: "sparkles",
         },
       ],
 
       stats: [
         { label: "Time Zone", value: "IST", icon: "globe" },
-        { label: "Access", value: "6 Months", icon: "leaf" },
+        { label: "Access", value: "1 Year", icon: "leaf" },
         { label: "Videos", value: "145", icon: "sparkles" },
         { label: "Devices", value: "All", icon: "sun" },
       ],
     },
-  },
-
-  MassageSection: {
-    colors: {
-      navy: "#1A2456",
-      white: "#ffffff",
-      sage: "#7BAF8A",
-      border: "rgba(255,255,255,0.15)",
-      cardBg: "rgba(255, 255, 255, 0.05)",
-      shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
-    },
-    content: {
-      title: "Meet Your",
-      highlight: "Online Instructors",
-      subtitle: "Learn from experienced Himalayan-tradition teachers based at World Peace Yoga School in Rishikesh.",
-      massages: [
-        {
-          id: 1,
-          title: "Yogi Vishnu Panigrahi",
-          tagline: "Master of Yoga — guides students through philosophy and Q&A sessions, rooted in decades of Himalayan spiritual study.",
-          duration: "Philosophy",
-          rating: 4.9,
-          reviews: 184,
-          isPopular: true,
-          isPaid: true,
-          image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-          id: 2,
-          title: "Rajeev Nautiyal",
-          tagline: "Hatha, Ashtanga & alignment instructor — graduate in Yogic Science and Yoga Naturopathy from Uttarakhand University.",
-          duration: "Hatha / Ashtanga",
-          rating: 4.8,
-          reviews: 92,
-          isPopular: false,
-          isPaid: true,
-          image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-          id: 3,
-          title: "Yogi Naveen",
-          tagline: "Hatha, Ashtanga & Prenatal specialist — has trained 1,000+ teachers across India, China and Vietnam since 2015.",
-          duration: "Hatha / Prenatal",
-          rating: 5.0,
-          reviews: 210,
-          isPopular: false,
-          isPaid: false,
-          image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-          id: 4,
-          title: "Ashutosh Mishra",
-          tagline: "Hatha, Ashtanga & alignment instructor — Master's in Yoga Therapy from Uttarakhand Sanskrit University.",
-          duration: "Therapeutic Yoga",
-          rating: 4.7,
-          reviews: 145,
-          isPopular: false,
-          isPaid: true,
-          image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-          id: 5,
-          title: "Haripriya Ji & Akshay Ji",
-          tagline: "Lead the weekly Kundalini Asana, Vinyasa Flow and Pranayama live sessions throughout the program.",
-          duration: "Live Classes",
-          rating: 4.9,
-          reviews: 76,
-          isPopular: true,
-          isPaid: false,
-          image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
-        }
-      ]
-    }
   },
 
   teacherTrainingFaq: {
@@ -809,63 +893,91 @@ export const Online100HoursData = {
       faqs: [
         {
           question: "Why take the 100-hour online YTTC?",
-          answer:
-            "It's a great way to start a deeper dive into yoga and understand the basics before moving onto a more in-depth course. You can use this 100-hour course to feel comfortable before attending live in-person training for 200 hours, or completing an additional 100 hours online so that you reach the full 200-hour YTTC.",
+          answer: [
+            "A great way to start a deeper dive into yoga.",
+            "Understand the basics before moving onto a more in-depth course.",
+            "Use this 100-hour course to feel comfortable before attending live in-person training for 200 hours, or completing an additional 100 hours online so that you reach the full 200-hour YTTC.",
+          ],
         },
         {
           question: "What is the duration of the course?",
-          answer:
-            "You take the 100-hour yoga teacher training course at your own pace from the comfort of your home. You will be fully supported by the teachers throughout, and you determine when you want to complete the course within your 6-month access window.",
+          answer: [
+            "Take the 100-hour yoga teacher training course at your own pace from the comfort of your home.",
+            "You will be fully supported by the teachers on the course.",
+            "To empower you, you can determine when you want to complete the course.",
+          ],
         },
         {
-          question: "Can I teach yoga anywhere with a 100-hour certification?",
-          answer:
-            "Yes, after successful completion of the 100-hour yoga teacher training, you will receive the required accreditation. However, 200 hours is the minimum to become a certified yoga teacher. You can register with Yoga Alliance at the RYT-100 level after this course.",
+          question: "Can one teach yoga anywhere with a 100-hour yoga teacher certification?",
+          answer: [
+            "Yes, after successful completion of the 100-hour yoga teacher training, you will get the required accreditation — however, 200 hours is the minimum to become a yoga teacher.",
+            "You can also register with Yoga Alliance at the RYT-100 level.",
+          ],
         },
         {
-          question: "Is the online certificate the same as the in-person one?",
-          answer:
-            "Yes — the value of the certificate is the same whether you complete the course online or in person at our Rishikesh campus.",
+          question: "Is the online certificate the same as that for those attending the course in person?",
+          answer: "The value of the certificate is the same online as it is in person.",
         },
         {
           question: "What interactive tools are available for online students?",
-          answer:
-            "Live classes are conducted via Zoom with a weekly schedule for all students. You'll also join a WhatsApp discussion group with like-minded students from your starting month, where you can ask teachers questions anytime. You're also invited to full moon meditations and other free events, even after course completion.",
+          answer: [
+            "Live classes are all conducted via Zoom, with a live class schedule each week for all students.",
+            "A WhatsApp discussion group for the month that you begin connects you with like-minded students.",
+            "You can ask teachers questions either in class or in the WhatsApp groups.",
+            "Access to both remains even after the course is completed, and you'll be invited to full moon meditations and other free events.",
+          ],
         },
         {
-          question: "What time zone are the live classes in?",
-          answer:
-            "All live classes are held in Indian Standard Time (IST). Every class is recorded, so if you can't attend live, you can watch and learn in your own time.",
+          question: "What is the time zone?",
+          answer: [
+            "All live classes are held in Indian Standard Time.",
+            "All classes are recorded, so if you're not able to attend live you can watch and learn in your own time.",
+          ],
         },
         {
           question: "Is the course difficult?",
-          answer:
-            "This course is built for all levels — complete beginners or those wanting a refresher. You take it at your own pace, in your own time. It can be challenging, but teachers support you every step of the way, including live demonstration and guidance during classes.",
+          answer: [
+            "This course is built for all levels — complete beginners or those wanting a refresher yoga course.",
+            "The real beauty is when you start to go within and transformation begins.",
+            "You take the course at your own pace, in your own time.",
+            "It can be challenging, but we are here to support you each step of the way — teachers can see you, demonstrate and guide you during the live class.",
+          ],
         },
         {
-          question: "How long does it take to complete the 100 hours?",
-          answer:
-            "As long as it takes you according to your own schedule — there is no fixed deadline within your access period.",
+          question: "How long does it take to complete the 100 hours YTTC?",
+          answer: "As long as it takes you according to your schedule.",
         },
         {
-          question: "How do I pay and access the course?",
+          question: "How do you pay?",
           answer:
-            "You make full payment and are then added to the course in the month you'd like to start. You'll receive login details and a password to access the course dashboard, where all pre-recorded material, study manuals and live class links are available.",
+            "You make full payment, and then you are added to the course in the month that you would like to start.",
+        },
+        {
+          question: "How do you access the course?",
+          answer: [
+            "You will be provided login details and a password to access the course dashboard.",
+            "All course content and pre-recorded material is accessed in the dashboard, including the live classes.",
+          ],
         },
         {
           question: "Do I need to buy textbooks?",
-          answer:
-            "PDF versions are provided online where possible, though some books will need to be purchased separately. The manual is also available on the dashboard, which you can print at your own cost.",
+          answer: [
+            "We have provided PDF versions where possible online, however some books will need to be purchased.",
+            "The manual is also on the dashboard, and you can have this printed at your own cost.",
+          ],
         },
         {
-          question: "Can I get a refund if I can't take the course?",
+          question: "Can I get a refund if I am not able to take the course?",
           answer:
-            "No refund is available, however you can delay the course start date until you are ready to begin.",
+            "No refund is available, however you can delay the course until you are ready to start.",
         },
         {
-          question: "What equipment do I need for the course?",
-          answer:
-            "You'll need access to WiFi or a good internet connection, and a mobile, tablet, desktop or laptop to access the course. You'll also need a yoga mat, block, brick and yoga belt for practice.",
+          question: "What equipment do I need to do the course?",
+          answer: [
+            "Access to Wi-Fi or a good internet connection.",
+            "The course can be accessed on mobile, tablets, desktops or laptop.",
+            "Yoga mat, block, brick and yoga belt.",
+          ],
         },
       ],
     },
