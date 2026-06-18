@@ -59,11 +59,22 @@ function Ratings() {
     }, 4000);
   };
 
-  // Initialize Autoplay on Mount
+  // Initialize Autoplay on Mount and handle tab visibility change
   useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+      } else {
+        resetAutoplay();
+      }
+    };
+
     resetAutoplay();
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
     return () => {
       if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
@@ -77,7 +88,8 @@ function Ratings() {
     slidePrev();
   };
 
-  const handleTransitionEnd = () => {
+  const handleTransitionEnd = (e) => {
+    if (e && e.target !== e.currentTarget) return;
     if (isSnappingRef.current) return;
 
     if (currentIndex >= testimonials.length * 2) {

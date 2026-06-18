@@ -16,7 +16,7 @@ const BookRetreatsWidget = ({ id, widgetType }) => {
     if (!containerRef.current) return;
     containerRef.current.innerHTML = ''; // Clear container to avoid duplicate widgets
     
-    const script = document.createElement('script');
+    const script = document.createElement('script');  
     script.src = `https://bookretreats.com/widgets/${widgetType}/${id}`;
     script.async = true;
     script.setAttribute('data-cfasync', 'false');

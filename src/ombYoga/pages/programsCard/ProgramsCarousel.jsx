@@ -334,7 +334,8 @@ const ProgramsCarousel = () => {
     setActiveIndex((prev) => prev - 1);
   };
 
-  const handleTransitionEnd = () => {
+  const handleTransitionEnd = (e) => {
+    if (e && e.target !== e.currentTarget) return;
     if (isSnappingRef.current) return;
 
     if (activeIndex >= realItemsCount * 2) {
@@ -378,8 +379,21 @@ const ProgramsCarousel = () => {
   };
 
   useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        stopAutoplay();
+      } else {
+        startAutoplay();
+      }
+    };
+
     startAutoplay();
-    return () => stopAutoplay();
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      stopAutoplay();
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, [visibleCardsCount]);
 
   const handlePrevSlide = () => {
