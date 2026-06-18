@@ -15,6 +15,8 @@ import {
   AlignEndHorizontal,
   BrainCircuit,
   BellRing,
+  Flame,
+  Moon,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -34,6 +36,8 @@ const OnlineCurriculumSection = ({ data }) => {
     align:<AlignEndHorizontal size={22}/>,
     brainCircuit: <BrainCircuit size={22} />,
     bellRing: <BellRing size={22} />,
+    flame: <Flame size={22} />,
+    moon: <Moon size={22} />,
 
   };
 
