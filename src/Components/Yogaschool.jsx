@@ -54,6 +54,7 @@ const Yogaschool = () => {
   const isTablet = windowWidth >= 640 && windowWidth < 1024;
   const isSmall = windowWidth < 640;
   const isLargeDesktop = windowWidth >= 1440;
+  const isUltraWide = windowWidth >= 2560;
 
   // =========================================
   // AOS
@@ -289,14 +290,24 @@ const Yogaschool = () => {
           {/* CONTENT SECTION — image LEFT, text + features RIGHT */}
           {/* ========================================= */}
 
-          <div
+          {/* <div
             style={{
               display: "grid",
               gridTemplateColumns: isDesktop ? "1fr 1fr" : "1fr",
               gap: isDesktop ? "40px" : "24px",
               marginTop: "40px",
             }}
-          >
+          > */}
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: isDesktop ? "1fr 1fr" : "1fr",
+              gap: isUltraWide ? "50px" : isDesktop ? "40px" : "24px",
+              marginTop: "40px",
+              alignItems: "stretch",
+            }}
+>
 
             {/* Image */}
             <div
@@ -329,7 +340,7 @@ const Yogaschool = () => {
                 display: "flex",
                 flexDirection: "column",
                 height: "100%",
-                justifyContent: "space-between",
+                // justifyContent: "space-between",
                 gap: isSmall ? "16px" : "20px",
               }}
               data-aos="fade-left"
@@ -338,13 +349,30 @@ const Yogaschool = () => {
             >
 
               {/* Full original paragraph, smaller text to fit */}
-              <div
+              {/* <div
                 style={{
                   color: "#1e1e1c",
                   fontSize: isSmall ? "12px" : isTablet ? "13px" : isLargeDesktop ? "18px" : "16px",
                   lineHeight: 1.5,
                   overflow: "auto",
                   
+                }}
+              > */}
+
+              <div
+                style={{
+                  color: "#1e1e1c",
+                  fontSize: isSmall
+                    ? "12px"
+                    : isTablet
+                    ? "13px"
+                    : isUltraWide
+                    ? "26px"
+                    : isLargeDesktop
+                    ? "16px"
+                    : "14px",
+                  lineHeight: isUltraWide ? 1.9 : 1.6,
+                  overflow: "hidden",
                 }}
               >
                 <p style={{ margin: 0 }}>
