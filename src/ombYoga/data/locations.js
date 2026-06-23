@@ -10,7 +10,7 @@ export const LOCATIONS = [
   { slug: "bali",         label: "Bali" },
   { slug: "rishikesh",    label: "Rishikesh" },
   { slug: "chiang-mai",   label: "Chiang Mai" },
-  { slug: "dharamshala",  label: "Dharamshala" },
+  { slug: "dharamshala",  label: "Personalize Your" },
 ];
 
 // Quick lookup helpers
