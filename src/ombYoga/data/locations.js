@@ -182,7 +182,10 @@ export const RETREAT_LINKS = {
   "chiang-mai": [
     { path: "chiangmairetreats6days", label: "6-Day Yoga and Detox Retreat" },
   ],
-  dharamshala:  [],
+  dharamshala: [
+  { path: "host-your-retreat",   label: "Host Your Retreat" },
+  { path: "make-your-own-combo", label: "Make Your Own Combo" },
+],
 };
 
 // ─────────────────────────────────────────────
