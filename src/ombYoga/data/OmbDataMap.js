@@ -56,6 +56,9 @@ import { DharamshalaKundali200HoursData } from "./dharamshala/ttc/kundalini/Dhar
 import { DharamshalaKundali300HoursData } from "./dharamshala/ttc/kundalini/DharamshalaKundali300HoursData";
 import { DharamshalaKundali500HoursData } from "./dharamshala/ttc/kundalini/DharamshalaKundali500HoursData";
 
+import { HostYourRetreatData } from "./dharamshala/retreats/HostYourRetreatData";
+import { MakeYourOwnComboData } from "./dharamshala/retreats/MakeYourOwnComboData";
+
 // rom "./chiang/ttc/kundalini/ChiangKundali50HoursData";
 //Chiang
 // ./chiang/ttc/multiStyle/Chiang50HourData
@@ -224,5 +227,8 @@ export const OmbDataMap = {
     "kundalini200hr": DharamshalaKundali200HoursData,
     "kundalini300hr": DharamshalaKundali300HoursData,
     "kundalini500hr": DharamshalaKundali500HoursData,
+
+    "host-your-retreat":   HostYourRetreatData,
+    "make-your-own-combo": MakeYourOwnComboData,
   },
 };
