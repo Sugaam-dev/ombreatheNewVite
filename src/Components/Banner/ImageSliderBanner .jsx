@@ -11,11 +11,11 @@ import AutoTyping from "../AutoTyping";
 import "./Banner.css";
 
 // Desktop Images
-import desktop1 from "../../images/Gemini_Generated_Image.jpg";
-import desktop2 from "../../images/2.jpg";
-import desktop3 from "../../images/3.jpg";
-import desktop4 from "../../images/4.jpg";
-import desktop5 from "../../images/5.jpg";
+import desktop1 from "../../images/Ombreathe_Banner_1.webp";
+import desktop2 from "../../images/Ombreathe_Banner_2.webp";
+import desktop3 from "../../images/Ombreathe_Banner_3.webp";
+import desktop4 from "../../images/Ombreathe_Banner_4.webp";
+import desktop5 from "../../images/Ombreathe_Banner_5.webp";
 
 // Mobile Images
 import mobile1 from "../../images/mobile/shiv_Mobile.jpg";
