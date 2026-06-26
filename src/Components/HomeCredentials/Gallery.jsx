@@ -48,7 +48,6 @@ import img45 from '../../images/new Gallery/45.jpg';
 import img46 from '../../images/new Gallery/46.jpg';
 
 const CSS = `
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400&display=swap');
 
   .gy-root * { box-sizing: border-box; margin: 0; padding: 0; }
 

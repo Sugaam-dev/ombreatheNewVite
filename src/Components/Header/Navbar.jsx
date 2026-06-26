@@ -844,6 +844,7 @@ const Navbar = () => {
         .drawer-loc-header,
         .back-btn,
         .coming-soon-text {
+          font-family: 'Plus Jakarta Sans', sans-serif;
           color: #aaa;
           font-size: 13px;
           display: block;
@@ -878,6 +879,7 @@ const Navbar = () => {
         }
 
         .premium-navbar {
+          font-family: 'Plus Jakarta Sans', sans-serif !important;
           background: #fff !important;
           padding: 0 !important;
           z-index: 2000;
@@ -893,12 +895,13 @@ const Navbar = () => {
         @media (min-width: 992px) {
           .nav-spacing { gap: 1.5rem; }
           .premium-link {
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
             color: #444 !important;
             font-weight: 500;
             font-size: 16px;
             position: relative;
             padding: 12px 0;
-            transition: 0.3s;
+            transition: color 0.3s ease;
           }
           .premium-link::after {
             content: "";

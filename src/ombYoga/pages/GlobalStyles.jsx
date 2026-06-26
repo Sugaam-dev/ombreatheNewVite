@@ -3,8 +3,6 @@ import React from "react";
 const GlobalStyles = () => {
   return (
     <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
-
       * {
         box-sizing: border-box;
         margin: 0;

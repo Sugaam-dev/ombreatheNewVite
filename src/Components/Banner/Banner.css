@@ -81,6 +81,7 @@ html, body {
         }
 
         .slider-title{
+          font-family: 'Plus Jakarta Sans', sans-serif;
           font-size:clamp(2rem,5vw,5rem);
           font-weight:700;
           line-height:1.1;

@@ -8,9 +8,7 @@ import React, {
 import SectionHeading from "./useFullComponent/SectionHeading";
 import { Link } from "react-router-dom";
 
-// ─── Inline styles ─────────────────────────────────────────────────────────
 const styles = `
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap');
 
 /* ==========================================
    SECTION (CENTER FIX)

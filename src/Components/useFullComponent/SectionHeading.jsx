@@ -11,8 +11,6 @@ const SectionHeading = ({
     <>
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@300;400&display=swap');
-
           .section-heading {
             text-align: center;
             margin-bottom: .5rem;
