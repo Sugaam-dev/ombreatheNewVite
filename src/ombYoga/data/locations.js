@@ -84,7 +84,7 @@ export const PROGRAM_LINKS = {
 
   rishikesh: {
     multiStyle: [
-      { path: "50hr",  label: "6 Days 50 Hours Vedic Foundation" },
+      // { path: "50hr",  label: "6 Days 50 Hours Vedic Foundation" },
       { path: "100hr", label: "10 Days 100 Hours Hatha & Vinyasa Course" },
       { path: "200hr", label: "20 Days 200 Hours Holy Ganges Multi-Style YTTC" },
       { path: "300hr", label: "26 Days 300 Hours Advanced Multi-Style YTTC" },
