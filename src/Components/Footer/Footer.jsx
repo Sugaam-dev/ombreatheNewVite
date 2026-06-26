@@ -281,7 +281,7 @@ const Certifications = memo(() => {
               imageKey={cert.imageKey}
               alt={cert.alt}
               title={cert.title}
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '60px', maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
             />
           </div>
         ))}
@@ -313,7 +313,7 @@ const Footer = () => {
               <div className="footer-brand pe-lg-4" style={{borderRight: '1px solid rgba(0,0,0,0.1)', minHeight: '300px'}}>
                 <OptimizedImage
                   imageKey="logo"
-                  alt="Yogalayaa Logo"
+                  alt="ombreathe Logo"
                   className="mb-3"
                   style={{ maxHeight: '90px', width: 'auto' }}
                 />

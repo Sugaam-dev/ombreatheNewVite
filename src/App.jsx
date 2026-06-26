@@ -84,6 +84,8 @@ import saptaRishiSadhanaData from "./Components/Services/Membership/data/saptaRi
 import pashuPatayaaData from "./Components/Services/Membership/data/pashuPatayaaData";
 import shaktiSadhanaData from "./Components/Services/Membership/data/shaktiSadhanaData";
 import TermsAndConditions from "./Components/Footer/Term-conditions";
+import HostYourRetreats from "./ombYoga/data/dharamshala/retreats/HostYourRetreats";
+import MakeYourOwnCombo from "./ombYoga/data/dharamshala/retreats/MakeYourOwnCombo";
 
 // ==========================================
 // PAGE LOADER
@@ -141,7 +143,14 @@ function AppRoutes() {
         <Route path="/" element={<Layout />}>
           {/* HOME */}
           <Route index element={<Home />} />
-
+<Route
+  path="retreats/personalize-your-retreat/host-your-retreat"
+  element={<HostYourRetreats />}
+/>
+<Route
+  path="retreats/personalize-your-retreat/make-your-own-combo"
+  element={<MakeYourOwnCombo/>}
+/>
           {/* ABOUT */}
           <Route
             path="about"
@@ -227,6 +236,15 @@ function AppRoutes() {
           />
 
           <Route
+            path="retreats/personalize-your-retreat/host-your-retreat"
+            element={<HostYourRetreats />}
+          />
+          <Route
+            path="retreats/personalize-your-retreat/make-your-own-combo"
+            element={<MakeYourOwnCombo />}
+          />
+
+          <Route
             path="retreats/:location/:course"
             element={<NormalisedTTCRoute />}
           />
@@ -238,7 +256,6 @@ function AppRoutes() {
           />
         </Route>
 
-      
 
       </Routes>
     </Suspense>

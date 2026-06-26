@@ -165,26 +165,35 @@ const Navbar = () => {
   };
 
   // ── desktop retreat links renderer ──────────────────────────────────────
+  // const renderRetreatLinks = (slug) => {
+  // };
+
   const renderRetreatLinks = (slug) => {
-    const links = RETREAT_LINKS[slug] || [];
-    if (links.length === 0)
-      return (
-        <span style={{ color: "#aaa", fontSize: "13px" }}>Coming Soon</span>
-      );
-    return links.map(({ path, label }) => {
-      const fullPath = buildPath(slug, path, "retreats");
-      return (
-        <Link
-          key={path}
-          to={fullPath}
-          className={isSubActive(fullPath) ? "sub-link-active" : ""}
-          onClick={() => handleLinkClick("retreats")}
-        >
-          {label}
-        </Link>
-      );
-    });
-  };
+  const links = RETREAT_LINKS[slug] || [];
+  if (links.length === 0)
+    return (
+      <span style={{ color: "#aaa", fontSize: "13px" }}>Coming Soon</span>
+    );
+  
+  return links.map(({ path, label }) => {
+    // 1. If it is dharamshala, change the URL slug to 'personalize-your-retreat'
+    const urlSlug = slug === "dharamshala" ? "personalize-your-retreat" : slug;
+    
+    // 2. Build the path using the new URL slug
+    const fullPath = buildPath(urlSlug, path, "retreats");
+    
+    return (
+      <Link
+        key={path}
+        to={fullPath}
+        className={isSubActive(fullPath) ? "sub-link-active" : ""}
+        onClick={() => handleLinkClick("retreats")}
+      >
+        {label}
+      </Link>
+    );
+  });
+};
 
   // ── mobile TTC sub-category renderer ────────────────────────────────────
   const renderMobileTTCSubCats = (slug) =>
@@ -502,17 +511,20 @@ const Navbar = () => {
                 >
                   <div className="container-fluid px-lg-5">
                     <div className="row py-4">
-                      {LOCATIONS.map(({ slug, label }, idx, arr) => (
-                        <div
-                          key={slug}
-                          className={`col-lg mega-column ${idx === arr.length - 1 ? "no-border" : ""}`}
-                        >
-                          <h6 className={`column-title ${isRetreatPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}>
-                            {label.toUpperCase()} RETREAT
-                          </h6>
-                          {renderRetreatLinks(slug)}
-                        </div>
-                      ))}
+                      {LOCATIONS.map(({ slug, label }, idx, arr) => {
+                        const displayLabel = slug === "dharamshala" ? "Personalize Your" : label;
+                        return (
+                          <div
+                            key={slug}
+                            className={`col-lg mega-column ${idx === arr.length - 1 ? "no-border" : ""}`}
+                          >
+                            <h6 className={`column-title ${isRetreatPath && currentPathLower.split("/").includes(slug) ? "active-loc-text" : ""}`}>
+                              {displayLabel.toUpperCase()} RETREAT
+                            </h6>
+                            {renderRetreatLinks(slug)}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -735,20 +747,22 @@ const Navbar = () => {
                     RETREATS BY LOCATION
                   </div>
 
-                  {LOCATIONS.map(({ slug, label }) => (
-                    <div key={slug} className="drawer-nested-loc mb-2">
-                      <div
-                        className={`drawer-loc-header nested ${isRetreatPath && currentPathLower.split("/").includes(slug)
-                            ? "m-active-path-text"
-                            : ""
-                          }`}
-                        onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
-                      >
-                        <span>{label} Retreat</span>
-                        <span>
-                          {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
-                        </span>
-                      </div>
+                  {LOCATIONS.map(({ slug, label }) => {
+                    const displayLabel = slug === "dharamshala" ? "Personalize Your" : label;
+                    return (
+                      <div key={slug} className="drawer-nested-loc mb-2">
+                        <div
+                          className={`drawer-loc-header nested ${isRetreatPath && currentPathLower.split("/").includes(slug)
+                              ? "m-active-path-text"
+                              : ""
+                            }`}
+                          onClick={(e) => toggleLocation(e, `m-retreat-${slug}`)}
+                        >
+                          <span>{displayLabel} Retreat</span>
+                          <span>
+                            {activeLocation === `m-retreat-${slug}` ? "−" : "+"}
+                          </span>
+                        </div>
 
                       <div className={`animated-collapse-grid ${activeLocation === `m-retreat-${slug}` ? "grid-open" : ""}`}>
                         <div className="collapse-inner-content mobile-sub-cat-body">
@@ -765,7 +779,8 @@ const Navbar = () => {
                             </span>
                           ) : (
                             (RETREAT_LINKS[slug] || []).map(({ path, label }) => {
-                              const fullPath = buildPath(slug, path, "retreats");
+                              const urlSlug = slug === "dharamshala" ? "personalize-your-retreat" : slug;
+                              const fullPath = buildPath(urlSlug, path, "retreats");
                               return (
                                 <Link
                                   key={path}
@@ -785,7 +800,8 @@ const Navbar = () => {
                         </div>
                       </div>
                     </div>
-                  ))}
+                  );
+                })}
                 </div>
               </div>
             </div>
@@ -853,6 +869,11 @@ const Navbar = () => {
           height: 3px;
           background-color: #ff9933; 
           border-radius: 2px;
+          width: 0;
+          transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.15s;
+        }
+
+        .mega-panel.show .pane-active-right .ttc-selected-title::after {
           width: 100px;
         }
 
@@ -870,11 +891,11 @@ const Navbar = () => {
         .m-active-path-text { color: #007bff !important; font-weight: 700 !important; }
 
         @media (min-width: 992px) {
-          .nav-spacing { gap: 3.8rem; }
+          .nav-spacing { gap: 1.5rem; }
           .premium-link {
             color: #444 !important;
             font-weight: 500;
-            font-size: 17.5px;
+            font-size: 16px;
             position: relative;
             padding: 12px 0;
             transition: 0.3s;
@@ -935,6 +956,8 @@ const Navbar = () => {
             height: 100%;
             top: 0;
             left: 0;
+          }
+          .mega-panel.show .sliding-view-pane {
             transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1), 
                         opacity 0.45s cubic-bezier(0.25, 1, 0.5, 1), 
                         visibility 0.45s;
@@ -1035,6 +1058,26 @@ const Navbar = () => {
             background: transparent;
             z-index: 10;
           }
+        }
+
+        @media (min-width: 1200px) {
+          .nav-spacing { gap: 2.2rem; }
+          .premium-link { font-size: 17px; }
+        }
+
+        @media (min-width: 1440px) {
+          .nav-spacing { gap: 3.2rem; }
+          .premium-link { font-size: 18.5px; }
+        }
+
+        @media (min-width: 1920px) {
+          .nav-spacing { gap: 3.8rem; }
+          .premium-link { font-size: 20px; }
+        }
+
+        .premium-navbar .container-fluid {
+          max-width: 1600px;
+          margin: 0 auto;
         }
 
         .arrow-icon {
