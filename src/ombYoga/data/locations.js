@@ -179,8 +179,14 @@ export const RETREAT_LINKS = {
   rishikesh:    [
     { path: "rishikesh5daysmindfulnessmeditation", label: "Mindfulness & Meditation Retreat & Teacher Training Course in Rishikesh" },
   ],
+  
   "chiang-mai": [
     { path: "chiangmairetreats6days", label: "6-Day Yoga and Detox Retreat" },
+    { path: "vipassana-retreat", label: "New-Age Vipassana Retreat" },
+    { path: "womenshealthwellness-retreat", label: "Women's Wellness Retreat"},
+    { path: "kundalinisadhana-retreat", label: "Kudalini Sadhana Retreat"},
+    { path: "seniorcitizenwellness-retreat", label: "Senior Citizen Wellness Retreat"},
+    {path: "yogameditationwellness-retreat", label: "Yoga,Meditation Wellness Retreat"},
   ],
   dharamshala: [
   { path: "host-your-retreat",   label: "Host Your Retreat" },

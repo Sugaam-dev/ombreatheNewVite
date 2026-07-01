@@ -81,7 +81,11 @@ import { Chiang100HourYogaTherapyAyurvedaData }        from "./chiang/ttc/specia
 import { ChiangAyurvedicTreatmentTTCData }        from "./chiang/ttc/specialization/ChiangAyurvedicTreatmentTTCData";
 import { ChiangAyurveda5HoursAbhyangamData }        from "./chiang/ttc/specialization/ChiangAyurveda5HoursAbhyangamData";
 import { ChiangRetreats6DaysData }       from "./chiang/retreats/ChiangRetreats6DaysData";
-
+import { VipassanaRetreatData } from "./chiang/retreats/VipassanaRetreatData";
+import { YogaMeditationWellnessRetreatData} from "./chiang/retreats/YogaMeditationWellnessRetreatData";
+import { KundaliniSadhanaRetreatData } from "./chiang/retreats/KundaliniSadhanaRetreatData";
+import { SeniorCitizenWellnessRetreatData } from "./chiang/retreats/SeniorCitizenWellnessRetreatData";
+import { WomensHealthWellnessRetreatData } from "./chiang/retreats/WomensHealthWellnessRetreatData";
 
 //mysore
 //multistyle
@@ -212,6 +216,11 @@ export const OmbDataMap = {
 
     // Retreats
     "chiangmairetreats6days": ChiangRetreats6DaysData,
+    "vipassana-retreat": VipassanaRetreatData,
+    "womenshealthwellness-retreat" : WomensHealthWellnessRetreatData,
+    "kundalinisadhana-retreat" : KundaliniSadhanaRetreatData,
+    "seniorcitizenwellness-retreat" : SeniorCitizenWellnessRetreatData,
+    "yogameditationwellness-retreat" : YogaMeditationWellnessRetreatData,
   },
 
   // ── Dharamshala ─────────────────────────────
