@@ -1,8 +1,5 @@
 // Yoga, Meditation & Wellness Retreat — Chiang Mai, Thailand
-// Source: https://worldpeaceyogaschool.com/yoga-meditation-and-wellness-retreat-in-thailand.php
-// Images: live, working photos pulled directly from the World Peace Yoga School Thailand site
-// (worldpeaceyogaschool.com/images/thailand/...) plus reliable Unsplash stock photos.
-// Structure mirrors the New-Age Vipassana Retreat data file.
+
 
 export const YogaMeditationWellnessRetreatData = {
   heroSection: {

@@ -1,5 +1,4 @@
 // New-Age Vipassana Retreat — Chiang Mai, Thailand
-// Images sourced from Google image search — relevant, reliable, freely accessible
 
 export const VipassanaRetreatData = {
   heroSection: {

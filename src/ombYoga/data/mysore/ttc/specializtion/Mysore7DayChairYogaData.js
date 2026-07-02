@@ -39,7 +39,7 @@ export const Mysore7DayChairYogaData = {
 
     certificates: [
       { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Chair Specialist" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Adaptive Alignment" },
+      { img: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/100363/images/e413f52-56fd-f356-1071-78d3bb0756f0_Blog_Template_9_.png", label: "Adaptive Alignment" },
       { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance USA" },
     ],
 

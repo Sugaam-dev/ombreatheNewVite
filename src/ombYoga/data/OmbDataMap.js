@@ -105,6 +105,7 @@ import {Mysore7DayYogaTherapyTTCData} from "./mysore/ttc/shortCourse/Mysore7DayY
 import {MysoreSingingBowlSoundHealingData} from "./mysore/ttc/specializtion/MysoreSingingBowlSoundHealingData"
 import {Mysore7DayChairYogaData} from "./mysore/ttc/specializtion/Mysore7DayChairYogaData"
 import {Mysore7DayWheelYogaData} from "./mysore/ttc/specializtion/Mysore7DayWheelYogaData"
+import {Mysore10DayYogaMassageTTCData} from "./mysore/ttc/specializtion/Mysore10DayYogaMassageTTCData"
 
 
 export const OmbDataMap = {
@@ -126,7 +127,7 @@ export const OmbDataMap = {
     "mysoresingingbowlsoundhealing":MysoreSingingBowlSoundHealingData,
     "mysore7daychairyoga":Mysore7DayChairYogaData,
     "mysore7daywheelyoga":Mysore7DayWheelYogaData,
-
+    "mysore10dayyogamassage":Mysore10DayYogaMassageTTCData
 
 
   },

@@ -49,6 +49,7 @@ export const PROGRAM_LINKS = {
       {path:"mysoresingingbowlsoundhealing",label:"3 Days Sound Healing Training Course"},
       {path:"mysore7daychairyoga",label:"7 Day Chair Yoga Teacher Training Course"},
       {path:"mysore7daywheelyoga",label:"7 Day wheel Yoga Teacher Training Course"},
+      {path:"mysore10dayyogamassage", label:"10 Day Yoga Massage Teacher Training Course"},
     ],
   },
 
@@ -171,8 +172,14 @@ export const PROGRAM_LINKS = {
 // ─────────────────────────────────────────────
 // RETREAT LINKS  (keyed by slug)
 // ─────────────────────────────────────────────
-export const RETREAT_LINKS = {
-  mysuru:      [],
+export const RETREAT_LINKS = {     
+    mysuru: [
+  { path: "mysore7daychairyoga", label: "7 Day Chair Yoga Teacher Training Course" },
+  { path: "mysore7daywheelyoga", label: "7 Day Wheel Yoga Teacher Training Course" },
+  { path: "mysoresingingbowlsoundhealing", label: "3 Days Sound Healing Training Course" },
+  
+  ],
+
   bali: [
     { path: "retreats6days", label: "6-Day Yoga and Detox Retreat" },
   ],
