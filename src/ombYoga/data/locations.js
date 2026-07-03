@@ -45,11 +45,7 @@ export const PROGRAM_LINKS = {
       {path:"mysore7dayyogatherapy",label:"Yoga Therapy Teacher Training Course"}
 
     ],
-    specialization: [
-      {path:"mysoresingingbowlsoundhealing",label:"3 Days Sound Healing Training Course"},
-      {path:"mysore7daychairyoga",label:"7 Day Chair Yoga Teacher Training Course"},
-      {path:"mysore7daywheelyoga",label:"7 Day wheel Yoga Teacher Training Course"},
-    ],
+    specialization: [],
   },
 
   bali: {
@@ -172,7 +168,11 @@ export const PROGRAM_LINKS = {
 // RETREAT LINKS  (keyed by slug)
 // ─────────────────────────────────────────────
 export const RETREAT_LINKS = {
-  mysuru:      [],
+  mysuru:      [
+    { path: "mysoresingingbowlsoundhealing", label: "3 Days Sound Healing Training Course" },
+    { path: "mysore7daychairyoga", label: "7 Day Chair Yoga Teacher Training Course" },
+    { path: "mysore7daywheelyoga", label: "7 Day wheel Yoga Teacher Training Course" },
+  ],
   bali: [
     { path: "retreats6days", label: "6-Day Yoga and Detox Retreat" },
   ],
@@ -181,6 +181,11 @@ export const RETREAT_LINKS = {
   ],
   "chiang-mai": [
     { path: "chiangmairetreats6days", label: "6-Day Yoga and Detox Retreat" },
+     { path: "VipassanaRetreat", label: "Vipassana Retreat" },
+        { path: "YogaMeditationWellnessRetreat", label: "Yoga, Meditation & Wellness Retreat" },
+         { path: "KundaliniSadhanaRetreat", label: "Kundalini Sadhana Retreat" },
+         { path: "SeniorCitizenWellnessRetreat", label: "Senior Citizen Wellness Retreat" },
+        { path: "WomensHealthWellnessRetreat", label: "Women's Health & Wellness Retreat" },
   ],
   dharamshala: [
   { path: "host-your-retreat",   label: "Host Your Retreat" },

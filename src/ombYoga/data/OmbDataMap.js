@@ -78,8 +78,13 @@ import { ChiangSoundHealingData }        from "./chiang/ttc/specialization/Chian
 import { Chiang100HourYogaTherapyAyurvedaData }        from "./chiang/ttc/specialization/Chiang100HourYogaTherapyAyurvedaData";
 import { ChiangAyurvedicTreatmentTTCData }        from "./chiang/ttc/specialization/ChiangAyurvedicTreatmentTTCData";
 import { ChiangAyurveda5HoursAbhyangamData }        from "./chiang/ttc/specialization/ChiangAyurveda5HoursAbhyangamData";
+// retreats
 import { ChiangRetreats6DaysData }       from "./chiang/retreats/ChiangRetreats6DaysData";
-
+import { VipassanaRetreatData } from "./chiang/retreats/VipassanaRetreatData";
+import { YogaMeditationWellnessRetreatData} from "./chiang/retreats/YogaMeditationWellnessRetreatData";
+import { KundaliniSadhanaRetreatData } from "./chiang/retreats/KundaliniSadhanaRetreatData";
+import { SeniorCitizenWellnessRetreatData } from "./chiang/retreats/SeniorCitizenWellnessRetreatData";
+import { WomensHealthWellnessRetreatData } from "./chiang/retreats/WomensHealthWellnessRetreatData";
 
 //mysore
 //multistyle
@@ -96,9 +101,9 @@ import {MysorePrenatalYogaData} from "./mysore/ttc/shortCourse/MysorePrenatalYog
 import {Mysore7DayYogaTherapyTTCData} from "./mysore/ttc/shortCourse/Mysore7DayYogaTherapyTTCData"
 
 //specialization
-import {MysoreSingingBowlSoundHealingData} from "./mysore/ttc/specializtion/MysoreSingingBowlSoundHealingData"
-import {Mysore7DayChairYogaData} from "./mysore/ttc/specializtion/Mysore7DayChairYogaData"
-import {Mysore7DayWheelYogaData} from "./mysore/ttc/specializtion/Mysore7DayWheelYogaData"
+import {MysoreSingingBowlSoundHealingData} from "./mysore/retreats/MysoreSingingBowlSoundHealingData"
+import {Mysore7DayChairYogaData} from "./mysore/retreats/Mysore7DayChairYogaData"
+import {Mysore7DayWheelYogaData} from "./mysore/retreats/Mysore7DayWheelYogaData"
 
 
 export const OmbDataMap = {
@@ -210,7 +215,14 @@ export const OmbDataMap = {
 
     // Retreats
     "chiangmairetreats6days": ChiangRetreats6DaysData,
+    "vipassanaretreat": VipassanaRetreatData,
+    "yogameditationwellnessretreat": YogaMeditationWellnessRetreatData,
+    "kundalinisadhanaretreat": KundaliniSadhanaRetreatData,
+    "seniorcitizenwellnessretreat": SeniorCitizenWellnessRetreatData,
+    "womenshealthwellnessretreat": WomensHealthWellnessRetreatData,
   },
+
+
 
   // ── Dharamshala ─────────────────────────────
   dharamshala: {
