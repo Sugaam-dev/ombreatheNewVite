@@ -175,6 +175,10 @@ export const RETREAT_LINKS = {
   mysuru:      [],
   bali: [
     { path: "retreats6days", label: "6-Day Yoga and Detox Retreat" },
+    { path: "vipassanameditation", label: "New-Age Vipassana Meditation Retreat" },
+    { path: "3daywellness", label: "3-Day Yoga and Wellness Retreat" },
+    { path: "adventureyoga", label: "7-Day Adventure and Yoga Retreat" },
+    { path: "multistylemeditation", label: "7-Day Multi-Style & Meditation Retreat" },
   ],
   rishikesh:    [
     { path: "rishikesh5daysmindfulnessmeditation", label: "Mindfulness & Meditation Retreat & Teacher Training Course in Rishikesh" },

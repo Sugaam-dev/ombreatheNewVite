@@ -21,6 +21,10 @@ import { BaliAyurvedicTreatmentTTCData }        from "./bali/ttc/specialization/
 import { BaliAyurveda5HoursAbhyangamData }        from "./bali/ttc/specialization/BaliAyurveda5HoursAbhyangamData";
 
 import { Retreats6DaysData }       from "./bali/retreats/Retreats6DaysData";
+import { VipassanaMeditationRetreatData } from "./bali/retreats/VipassanaMeditationRetreatData";
+import { ThreeDayWellnessRetreatData } from "./bali/retreats/ThreeDayWellnessRetreatData";
+import { AdventureYogaRetreatData } from "./bali/retreats/AdventureYogaRetreatData";
+import { MultiStyleMeditationRetreatData } from "./bali/retreats/MultiStyleMeditationRetreatData";
 import { Rishikesh100HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh100HoursData";
 import { Rishikesh200HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh200HoursData";
 import { Rishikesh300HoursData }   from "./rishikesh/ttc/multiStyle/Rishikesh300HoursData";
@@ -152,6 +156,10 @@ export const OmbDataMap = {
 
     // Retreats
     "retreats6days": Retreats6DaysData,
+    "vipassanameditation": VipassanaMeditationRetreatData,
+    "3daywellness": ThreeDayWellnessRetreatData,
+    "adventureyoga": AdventureYogaRetreatData,
+    "multistylemeditation": MultiStyleMeditationRetreatData,
   },
 
   // ── Rishikesh ────────────────────────────────
