@@ -288,11 +288,11 @@ import desktop4 from "../../images/Ombreathe_Banner_4.webp";
 import desktop5 from "../../images/Ombreathe_Banner_5.webp";
 
 // Mobile Images
-import mobile1 from "../../images/mobile/shiv_Mobile.jpg";
-import mobile2 from "../../images/mobile/TTC.jpg";
-import mobile3 from "../../images/mobile/temple yoga.jpg";
-import mobile4 from "../../images/mobile/Experience.jpg";
-import mobile5 from "../../images/mobile/Certification.jpg";
+import mobile1 from "../../images/mobile/Ombreathe_1.webp";
+import mobile2 from "../../images/mobile/Ombreathe_2.webp";
+import mobile3 from "../../images/mobile/Ombreathe_3.webp";
+import mobile4 from "../../images/mobile/Ombreathe_4.webp";
+import mobile5 from "../../images/mobile/Ombreathe_5.webp";
 
 const ImageSliderBanner = () => {
   const navigate = useNavigate();
