@@ -6,7 +6,7 @@
   
   **Your journey to inner peace, wellness, and authentic spiritual transformation.**
   
-  *A premium, fully responsive web application built for the **Ombreathe Yoga School & Ashram** — a Yoga Alliance Accredited institution offering immersive teacher training, traditional sadhana programs, customized retreats, and Ayurveda-focused wellness journeys.*
+  *A premium, fully responsive web application developed by **PMRG Solution** for the **Ombreathe Yoga School & Ashram** — a Yoga Alliance Accredited institution offering immersive teacher training, traditional sadhana programs, customized retreats, and Ayurveda-focused wellness journeys.*
 
   ---
 
@@ -226,5 +226,5 @@ We welcome contributions from the community to improve the Ombreathe experience!
 ---
 
 <div align="center">
-  <sub>Made with ❤️ by the Ombreathe Dev Team. Namaste.</sub>
+  <sub>Developed & Maintained with ❤️ by **PMRG Solution**. Namaste.</sub>
 </div>
