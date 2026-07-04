@@ -13,8 +13,8 @@ import Aos from "aos";
 // SLIDER FIX — handles both default and
 // module object exports across versions
 // =========================================
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "../Styles/slick/slick.css";
+import "../Styles/slick/slick-theme.css";
 import _Slider from "react-slick";
 const SliderComponent = _Slider.default || _Slider;
 

@@ -13,7 +13,6 @@
   [![Vite](https://img.shields.io/badge/Vite-8.0.12-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
   [![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
   [![React Router](https://img.shields.io/badge/React_Router-7.15.0-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
-  [![Styled Components](https://img.shields.io/badge/Styled_Components-6.4.1-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
   [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
   
   ---
@@ -74,9 +73,9 @@ Deep spiritual initiations and practice paths detailed with curated modules, dai
 | :--- | :--- | :--- |
 | **Core Framework** | High-performance SPA skeleton | React 19.x & Vite 8.x |
 | **Routing** | Dynamic paths and clean URL redirects | React Router Dom 7.x |
-| **Styling** | Clean layouts, typography & component isolation | Styled Components, CSS, Bootstrap |
-| **Animation & Interactivity** | Polished, smooth scrolling, and typing effects | AOS (Animate on Scroll), React Simple Typewriter |
-| **Data Visualization & UI** | Responsive sliders, modern iconography | React Slick, Slick Carousel, Lucide React, React Icons |
+| **Styling** | Clean layouts, typography & component isolation | CSS, Bootstrap |
+| **Animation & Interactivity** | Polished, smooth scrolling, and typing effects | AOS (Animate on Scroll) |
+| **Data Visualization & UI** | Responsive sliders, modern iconography | React Slick, Lucide React, React Icons |
 | **Form Management** | Direct email delivery for inquiries/bookings | EmailJS Browser |
 
 ---
