@@ -25,6 +25,7 @@ const OmbAccommodationSection = ({ data }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const iconMap = {

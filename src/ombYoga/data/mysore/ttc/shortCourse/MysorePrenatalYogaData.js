@@ -38,9 +38,9 @@ export const MysorePrenatalYogaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "85 Hrs RPYT" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Garbha Samskara" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/yoga.png", label: "85 Hrs RPYT" },
+      { img: "/images/cirtificats/yoga.png", label: "Garbha Samskara" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance" }
     ],
 
     content: {

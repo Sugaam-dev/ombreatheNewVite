@@ -38,9 +38,9 @@ export const Rishikesh10DaysPanchakarmaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Panchakarma Detox" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Ayurvedic Rejuvenation" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "WPYS Certification" },
+      { img: "/images/cirtificats/yoga.png", label: "Panchakarma Detox" },
+      { img: "/images/cirtificats/yoga.png", label: "Ayurvedic Rejuvenation" },
+      { img: "/images/cirtificats/yoga.png", label: "WPYS Certification" }
     ],
 
     content: {

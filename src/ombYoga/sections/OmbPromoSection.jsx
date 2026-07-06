@@ -6,6 +6,7 @@ import {
   Heart,
   Compass,
   Sparkles,
+  Feather,
 } from "lucide-react";
 
 const OmbPromoSection = ({ data }) => {
@@ -16,6 +17,8 @@ const OmbPromoSection = ({ data }) => {
     return () => clearTimeout(t);
   }, []);
 
+  if (!data || !data.colors || !data.content) return null;
+
   const { colors, content } = data;
 
   // ICON MAP
@@ -25,6 +28,8 @@ const OmbPromoSection = ({ data }) => {
     utensils: <Utensils size={18} />,
     heart: <Heart size={18} />,
     compass: <Compass size={18} />,
+    sparkles: <Sparkles size={18} />,
+    feather: <Feather size={18} />,
   };
 
   return (

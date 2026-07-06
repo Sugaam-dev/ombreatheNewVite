@@ -32,9 +32,9 @@ export const WomensHealthWellnessRetreatData = {
       "Sound Healing & Energy Alignment",
     ],
     certificates: [
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand22.webp", label: "Wellness" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand23.webp", label: "Healing" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand24.webp", label: "Empowerment" },
+      { img: "/images/cirtificats/yoga.png", label: "Wellness" },
+      { img: "/images/cirtificats/yoga.png", label: "Healing" },
+      { img: "/images/cirtificats/yoga.png", label: "Empowerment" }
     ],
     content: {
       bottomText: "A secure, loving refuge made for women who want to mend their emotions, calm their minds, become fit in body, and grow in spirit — whether healing from heartbreak, stress, loneliness or burnout.",

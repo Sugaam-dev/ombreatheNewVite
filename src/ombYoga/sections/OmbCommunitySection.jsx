@@ -17,6 +17,7 @@ const OmbCommunitySection = ({ data }) => {
     return () => clearTimeout(t);
   }, []);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const iconMap = {

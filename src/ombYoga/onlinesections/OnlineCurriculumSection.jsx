@@ -17,6 +17,7 @@ import {
   BellRing,
   Flame,
   Moon,
+  Feather,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -38,7 +39,7 @@ const OnlineCurriculumSection = ({ data }) => {
     bellRing: <BellRing size={22} />,
     flame: <Flame size={22} />,
     moon: <Moon size={22} />,
-
+    feather: <Feather size={22} />,
   };
 
   return (

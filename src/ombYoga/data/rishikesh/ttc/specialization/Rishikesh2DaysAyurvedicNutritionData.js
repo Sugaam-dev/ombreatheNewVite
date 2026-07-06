@@ -38,9 +38,9 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Ayurvedic Diet" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Sattvic Cooking" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "WPYS Certification" },
+      { img: "/images/cirtificats/yoga.png", label: "Ayurvedic Diet" },
+      { img: "/images/cirtificats/yoga.png", label: "Sattvic Cooking" },
+      { img: "/images/cirtificats/yoga.png", label: "WPYS Certification" }
     ],
 
     content: {

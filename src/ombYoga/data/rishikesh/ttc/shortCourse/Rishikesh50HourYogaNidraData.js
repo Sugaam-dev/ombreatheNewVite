@@ -38,9 +38,9 @@ export const Rishikesh50HourYogaNidraData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "50 Hrs Nidra" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Conscious Sleep" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "WPYS Verified" },
+      { img: "/images/cirtificats/yoga.png", label: "50 Hrs Nidra" },
+      { img: "/images/cirtificats/yoga.png", label: "Conscious Sleep" },
+      { img: "/images/cirtificats/yoga.png", label: "WPYS Verified" }
     ],
 
     content: {

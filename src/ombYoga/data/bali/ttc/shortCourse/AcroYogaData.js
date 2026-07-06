@@ -38,9 +38,9 @@ export const AcroYogaData = {
     ],
 
     certificates: [
-      { img: "https://www.ombreathe.in/static/media/200.197061cc4d2bc369826c.png", label: "Acro Yoga" },
-      { img: "https://www.ombreathe.in/static/media/yoga.562f46cb59ea00ca8753.png", label: "Certified" },
-      { img: "https://www.ombreathe.in/static/media/YACEP.50cf2e991c78fbe3a13d.png", label: "YACEP" },
+      { img: "/images/cirtificats/200.png", label: "Acro Yoga" },
+      { img: "/images/cirtificats/yoga.png", label: "Certified" },
+      { img: "/images/cirtificats/YACEP.png", label: "YACEP" }
     ],
 
     content: {

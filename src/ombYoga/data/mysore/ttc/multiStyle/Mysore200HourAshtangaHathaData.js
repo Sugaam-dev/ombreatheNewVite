@@ -39,9 +39,9 @@ export const Mysore200HourAshtangaHathaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "RYT 200 Registered" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Ashtanga Primary" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/yoga.png", label: "RYT 200 Registered" },
+      { img: "/images/cirtificats/yoga.png", label: "Ashtanga Primary" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance" }
     ],
 
     content: {

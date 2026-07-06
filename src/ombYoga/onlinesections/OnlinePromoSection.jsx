@@ -6,6 +6,7 @@ import {
   Heart,
   Compass,
   Sparkles,
+  Feather,
 } from "lucide-react";
 
 const OnlinePromoSection = ({ data }) => {
@@ -16,6 +17,7 @@ const OnlinePromoSection = ({ data }) => {
     return () => clearTimeout(t);
   }, []);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   // ICON MAP
@@ -25,6 +27,8 @@ const OnlinePromoSection = ({ data }) => {
     utensils: <Utensils size={18} />,
     heart: <Heart size={18} />,
     compass: <Compass size={18} />,
+    sparkles: <Sparkles size={18} />,
+    feather: <Feather size={18} />,
   };
 
   return (

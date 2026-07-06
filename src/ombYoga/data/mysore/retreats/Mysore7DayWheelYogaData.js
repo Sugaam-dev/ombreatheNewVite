@@ -38,9 +38,9 @@ export const Mysore7DayWheelYogaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Wheel Specialist" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Spinal Expansion" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance USA" },
+      { img: "/images/cirtificats/yoga.png", label: "Wheel Specialist" },
+      { img: "/images/cirtificats/yoga.png", label: "Spinal Expansion" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance USA" }
     ],
 
     content: {

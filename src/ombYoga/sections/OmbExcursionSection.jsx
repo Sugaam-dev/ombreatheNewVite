@@ -12,6 +12,7 @@ import {
 const OmbExcursionSection = ({ data }) => {
   const [hovered, setHovered] = useState(null);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   // 🔥 ICON MAP (used dynamically)
@@ -77,8 +78,8 @@ const OmbExcursionSection = ({ data }) => {
               {/* IMAGE container */}
               <div style={{ height: 200, position: "relative", overflow: "hidden" }}>
                 <img
-                  src={exc.img}
-                  alt={exc.title}
+                  src={exc?.img}
+                  alt={exc?.title}
                   loading="lazy"
                   style={{
                     width: "100%",
@@ -101,37 +102,41 @@ const OmbExcursionSection = ({ data }) => {
                   }}
                 />
 
-                <div
-                  style={{
-                    position: "absolute",
-                    top: 10,
-                    right: 10,
-                    background: colors.white,
-                    padding: "4px 10px",
-                    borderRadius: 20,
-                    fontSize: "0.7rem",
-                    fontWeight: 500,
-                  }}
-                >
-                  {exc.duration}
-                </div>
+                {exc?.duration && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: 10,
+                      right: 10,
+                      background: colors.white,
+                      padding: "4px 10px",
+                      borderRadius: 20,
+                      fontSize: "0.7rem",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {exc?.duration}
+                  </div>
+                )}
               </div>
 
               {/* CONTENT */}
               <div style={{ padding: 20 }}>
                 
                 {/* TAG */}
-                <span
-                  style={{
-                    background: exc.tagBg,
-                    color: colors.white,
-                    padding: "4px 10px",
-                    borderRadius: 20,
-                    fontSize: "0.7rem",
-                  }}
-                >
-                  {exc.tag}
-                </span>
+                {exc?.tag && (
+                  <span
+                    style={{
+                      background: exc?.tagBg || colors.sage,
+                      color: colors.white,
+                      padding: "4px 10px",
+                      borderRadius: 20,
+                      fontSize: "0.7rem",
+                    }}
+                  >
+                    {exc?.tag}
+                  </span>
+                )}
 
                 {/* TITLE + ICON */}
                 <h3
@@ -142,53 +147,57 @@ const OmbExcursionSection = ({ data }) => {
                     gap: 8,
                   }}
                 >
-                  {iconMap[exc.icon] || <CheckCircle size={16} />}
-                  {exc.title}
+                  {iconMap[exc?.icon] || <CheckCircle size={16} />}
+                  {exc?.title}
                 </h3>
 
                 {/* DESC */}
-                <p style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.9rem", lineMedium: "1.4" }}>{exc.desc}</p>
+                <p style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.9rem", lineMedium: "1.4" }}>{exc?.desc}</p>
 
                 {/* HIGHLIGHTS */}
-                <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
-                  {exc.highlights.map((h, j) => (
-                    <div
-                      key={j}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 8,
-                        fontSize: "0.8rem",
-                      }}
-                    >
-                      {iconMap[exc.icon] || (
-                        <CheckCircle size={14} color={colors.sage} />
-                      )}
-                      {h}
-                    </div>
-                  ))}
-                </div>
+                {exc?.highlights && exc.highlights.length > 0 && (
+                  <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 6 }}>
+                    {exc.highlights.map((h, j) => (
+                      <div
+                        key={j}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 8,
+                          fontSize: "0.8rem",
+                        }}
+                      >
+                        {iconMap[exc?.icon] || (
+                          <CheckCircle size={14} color={colors.sage} />
+                        )}
+                        {h}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
 
         {/* BOTTOM */}
-        <div
-          style={{
-            marginTop: 50,
-            background: colors.navy,
-            borderRadius: 20,
-            padding: 30,
-            color: colors.white,
-            textAlign: "center",
-          }}
-        >
-          <h3>{content.bottom.title}</h3>
-          <p style={{ opacity: 0.7 }}>
-            {content.bottom.desc}
-          </p>
-        </div>
+        {content.bottom && (
+          <div
+            style={{
+              marginTop: 50,
+              background: colors.navy,
+              borderRadius: 20,
+              padding: 30,
+              color: colors.white,
+              textAlign: "center",
+            }}
+          >
+            <h3>{content.bottom.title}</h3>
+            <p style={{ opacity: 0.7 }}>
+              {content.bottom.desc}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

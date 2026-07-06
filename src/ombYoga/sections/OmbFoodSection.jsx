@@ -15,6 +15,7 @@ import {
 const OmbFoodSection = ({ data }) => {
   const [activeTab, setActiveTab] = useState("breakfast");
 
+  if (!data || !data.colors || !data.content || !data.content.meals) return null;
   const { colors, content } = data;
 
   const iconMap = {

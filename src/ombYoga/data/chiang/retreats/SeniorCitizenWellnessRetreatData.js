@@ -33,9 +33,9 @@ export const SeniorCitizenWellnessRetreatData = {
     ],
 
     certificates: [
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand17.webp", label: "Wellness" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand18.webp", label: "Healing" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand19.webp", label: "Vitality" },
+      { img: "/images/cirtificats/yoga.png", label: "Wellness" },
+      { img: "/images/cirtificats/yoga.png", label: "Healing" },
+      { img: "/images/cirtificats/yoga.png", label: "Vitality" }
     ],
     content: {
       bottomText: "A senior wellness resort intended solely for elderly citizens wishing to bring back their health, harmonize their thoughts and awaken their inner happiness — with specialized yoga, meditation, massage, Ayurveda and holistic health programs.",

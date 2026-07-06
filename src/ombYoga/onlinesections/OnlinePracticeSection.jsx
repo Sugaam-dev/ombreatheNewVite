@@ -6,6 +6,7 @@ import {
   Heart,
   Shield,
   Sparkles,
+  Leaf,
 } from "lucide-react";
 
 const OnlinePracticeSection = ({ data }) => {
@@ -26,6 +27,7 @@ const OnlinePracticeSection = ({ data }) => {
     heart: <Heart size={18} />,
     shield: <Shield size={18} />,
     sparkles: <Sparkles size={18} />,
+    leaf: <Leaf size={20} />,
   };
 
   return (

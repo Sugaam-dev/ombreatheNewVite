@@ -38,9 +38,9 @@ export const Mysore50HourAerialYogaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "50 Hr Aerial" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Suspension Lab" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "WPYS Verified" },
+      { img: "/images/cirtificats/yoga.png", label: "50 Hr Aerial" },
+      { img: "/images/cirtificats/yoga.png", label: "Suspension Lab" },
+      { img: "/images/cirtificats/yoga.png", label: "WPYS Verified" }
     ],
 
     content: {

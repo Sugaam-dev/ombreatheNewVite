@@ -163,30 +163,7 @@ const OnlineHeroSection = ({ data }) => {
           boxSizing: "border-box",
         }}
       >
-        {/* FEATURE IMAGE */}
-        <div
-          style={{
-            borderRadius: 24,
-            overflow: "hidden",
-            marginBottom: 50,
-            boxShadow: "0 12px 40px rgba(0,0,0,0.2)",
-            width: "100%",
-            aspectRatio: "16/10",
-          }}
-        >
-          <img
-            src={hero.certificateImage}
-            alt=""
-            loading="lazy"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "center 40%",
-              display: "block",
-            }}
-          />
-        </div>
+      
 
         {/* GRID */}
         <div

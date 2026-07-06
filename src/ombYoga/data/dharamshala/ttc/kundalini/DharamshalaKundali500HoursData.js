@@ -38,9 +38,9 @@ export const DharamshalaKundali500HoursData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "500 Hrs Master" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "1 Year Live Classes" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance RYT-500" },
+      { img: "/images/cirtificats/500.webp", label: "500 Hrs Master" },
+      { img: "/images/cirtificats/yoga.png", label: "1 Year Live Classes" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance RYT-500" }
     ],
 
     content: {

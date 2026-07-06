@@ -36,9 +36,9 @@ price: "$1,699",
     ],
 
     certificates: [
-      { img: "https://www.ombreathe.in/static/media/300.197061cc4d2bc369826c.png", label: "300 Hrs" },
-      { img: "https://www.ombreathe.in/static/media/yoga.562f46cb59ea00ca8753.png", label: "Certified" },
-      { img: "https://www.ombreathe.in/static/media/YACEP.50cf2e991c78fbe3a13d.png", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/300yy.png", label: "300 Hrs" },
+      { img: "/images/cirtificats/yoga.png", label: "Certified" },
+      { img: "/images/cirtificats/YACEP.png", label: "Yoga Alliance" }
     ],
 
     content: {

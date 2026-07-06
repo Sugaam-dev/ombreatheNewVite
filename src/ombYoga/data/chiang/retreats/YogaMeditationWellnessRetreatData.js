@@ -32,9 +32,9 @@ export const YogaMeditationWellnessRetreatData = {
       "Thai Nature Walks & Healing Therapies",
     ],
     certificates: [
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand12.webp", label: "Yoga" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand13.webp", label: "Wellness" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand14.webp", label: "Meditation" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga" },
+      { img: "/images/cirtificats/yoga.png", label: "Wellness" },
+      { img: "/images/cirtificats/yoga.png", label: "Meditation" }
     ],
     content: {
       bottomText: "World Peace Yoga School, Chiang Mai — where timeless Himalayan wisdom meets Thai nature. A life-changing journey for seekers looking to slow down and come back to the source of life.",

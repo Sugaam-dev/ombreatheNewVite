@@ -38,9 +38,9 @@ export const BaliKundali50HoursData = {
     ],
 
     certificates: [
-      { img: "https://www.ombreathe.in/static/media/200.197061cc4d2bc369826c.png", label: "50 Hrs" },
-      { img: "https://www.ombreathe.in/static/media/yoga.562f46cb59ea00ca8753.png", label: "Kundalini" },
-      { img: "https://www.ombreathe.in/static/media/YACEP.50cf2e991c78fbe3a13d.png", label: "YACEP" },
+      { img: "/images/cirtificats/200.png", label: "50 Hrs" },
+      { img: "/images/cirtificats/yoga.png", label: "Kundalini" },
+      { img: "/images/cirtificats/YACEP.png", label: "YACEP" }
     ],
 
     content: {

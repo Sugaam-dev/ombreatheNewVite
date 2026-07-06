@@ -12,6 +12,7 @@ import {
 const OmbLocationSection = ({ data }) => {
   const [activeSpot, setActiveSpot] = useState(0);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const iconMap = {

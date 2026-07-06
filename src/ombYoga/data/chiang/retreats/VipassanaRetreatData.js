@@ -33,10 +33,10 @@ export const VipassanaRetreatData = {
       "Yoga & Pranayama",
     ],
     certificates: [
-  { img: "https://static.vecteezy.com/system/resources/previews/029/333/384/non_2x/ai-generative-of-a-man-practicing-mindfulness-and-meditation-in-a-peaceful-natural-environment-sony-a7s-realistic-image-ultra-hd-high-design-very-detailed-free-photo.jpg", label: "Meditation" },
-  { img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=200&q=80", label: "Retreat" },
-  { img: "https://tse2.mm.bing.net/th/id/OIP.rYrioHFy-6EVgH_xWu8OgwHaFw?r=0&w=626&h=487&rs=1&pid=ImgDetMain&o=7&rm=3", label: "Wellness" },
-  ],
+      { img: "/images/cirtificats/yoga.png", label: "Meditation" },
+      { img: "/images/cirtificats/yoga.png", label: "Retreat" },
+      { img: "/images/cirtificats/yoga.png", label: "Wellness" }
+    ],
     content: {
       bottomText: "Experience deep silence, mindfulness and Himalayan meditation in Chiang Mai.",
     },

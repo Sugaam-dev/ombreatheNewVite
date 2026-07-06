@@ -11,9 +11,11 @@ import {
   Feather,
   Leaf,
   Sunrise,
+  Heart,
 } from "lucide-react";
 
 const OmbScheduleSection = ({ data }) => {
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const iconMap = {
@@ -27,6 +29,7 @@ const OmbScheduleSection = ({ data }) => {
     book: <BookOpen size={15} />,
     feather: <Feather size={15} />,
     leaf: <Leaf size={15} />,
+    heart: <Heart size={15} />,
   };
 
   const Row = ({ item }) => (

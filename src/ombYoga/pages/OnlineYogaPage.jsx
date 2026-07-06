@@ -109,13 +109,17 @@ const OnlineYogaPage = () => {
             ABOVE THE FOLD
         ========================================== */}
 
-        <OnlineHeroSection
-          data={data.heroSection}
-        />
+        {data.heroSection && (
+          <OnlineHeroSection
+            data={data.heroSection}
+          />
+        )}
 
-        <OnlineCommunitySection
-          data={data.communitySection}
-        />
+        {data.communitySection && (
+          <OnlineCommunitySection
+            data={data.communitySection}
+          />
+        )}
 
         {/* ==========================================
             BELOW THE FOLD — follows the real page order:
@@ -124,89 +128,117 @@ const OnlineYogaPage = () => {
             Gallery -> Lineage -> Instructors -> Testimonials -> Location -> FAQ
         ========================================== */}
 
-        <LazySection>
-          <OnlineAboutSection
-            data={data.aboutSection}
-          />
-        </LazySection>
+        {data.aboutSection && (
+          <LazySection>
+            <OnlineAboutSection
+              data={data.aboutSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlinePromoSection
-            data={data.promoSection}
-          />
-        </LazySection>
+        {data.promoSection && (
+          <LazySection>
+            <OnlinePromoSection
+              data={data.promoSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineReceiveSection
-            data={data.receiveSection}
-          />
-        </LazySection>
+        {data.receiveSection && (
+          <LazySection>
+            <OnlineReceiveSection
+              data={data.receiveSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineTransformationSection
-            data={data.transformationSection}
-          />
-        </LazySection>
+        {data.transformationSection && (
+          <LazySection>
+            <OnlineTransformationSection
+              data={data.transformationSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlinePracticeSection
-            data={data.practiceSection}
-          />
-        </LazySection>
+        {data.practiceSection && (
+          <LazySection>
+            <OnlinePracticeSection
+              data={data.practiceSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineCurriculumSection
-            data={data.curriculumSection}
-          />
-        </LazySection>
+        {data.curriculumSection && (
+          <LazySection>
+            <OnlineCurriculumSection
+              data={data.curriculumSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineScheduleSection
-            data={data.scheduleSection}
-          />
-        </LazySection>
+        {data.scheduleSection && (
+          <LazySection>
+            <OnlineScheduleSection
+              data={data.scheduleSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineBenefitsSection
-            data={data.benefitsSection}
-          />
-        </LazySection>
+        {data.benefitsSection && (
+          <LazySection>
+            <OnlineBenefitsSection
+              data={data.benefitsSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineGallerySection
-            data={data.gallerySection}
-          />
-        </LazySection>
+        {data.gallerySection && (
+          <LazySection>
+            <OnlineGallerySection
+              data={data.gallerySection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineLineageSection
-            data={data.lineageSection}
-          />
-        </LazySection>
+        {data.lineageSection && (
+          <LazySection>
+            <OnlineLineageSection
+              data={data.lineageSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineMassageSection
-            data={data.MassageSection}
-          />
-        </LazySection>
+        {data.MassageSection && (
+          <LazySection>
+            <OnlineMassageSection
+              data={data.MassageSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineTestimonialsSection
-            data={data.testimonialsSection}
-          />
-        </LazySection>
+        {data.testimonialsSection && (
+          <LazySection>
+            <OnlineTestimonialsSection
+              data={data.testimonialsSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OnlineLocationSection
-            data={data.locationSection}
-          />
-        </LazySection>
+        {data.locationSection && (
+          <LazySection>
+            <OnlineLocationSection
+              data={data.locationSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <Questions
-            data={data.teacherTrainingFaq}
-          />
-        </LazySection>
+        {data.teacherTrainingFaq && (
+          <LazySection>
+            <Questions
+              data={data.teacherTrainingFaq}
+            />
+          </LazySection>
+        )}
 
         {/* ==========================================
             CONTACT

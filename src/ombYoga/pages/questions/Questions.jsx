@@ -4,6 +4,7 @@ import SectionHeading from "../../../Components/useFullComponent/SectionHeading"
 const Questions = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const toggleAccordion = (index) => {

@@ -38,9 +38,9 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Ayurveda Diploma" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Massage Therapist" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/yoga.png", label: "Ayurveda Diploma" },
+      { img: "/images/cirtificats/yoga.png", label: "Massage Therapist" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance" }
     ],
 
     content: {

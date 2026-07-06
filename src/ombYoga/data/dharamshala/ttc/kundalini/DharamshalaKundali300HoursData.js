@@ -38,9 +38,9 @@ export const DharamshalaKundali300HoursData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "300 Hrs Advanced" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Complimentary Yin" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance RYT" },
+      { img: "/images/cirtificats/300yy.png", label: "300 Hrs Advanced" },
+      { img: "/images/cirtificats/yoga.png", label: "Complimentary Yin" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance RYT" }
     ],
 
     content: {

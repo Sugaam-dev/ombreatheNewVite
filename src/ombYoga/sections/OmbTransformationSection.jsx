@@ -2,6 +2,7 @@ import React from "react";
 import { Sparkles } from "lucide-react";
 
 const OmbTransformationSection = ({ data }) => {
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   return (

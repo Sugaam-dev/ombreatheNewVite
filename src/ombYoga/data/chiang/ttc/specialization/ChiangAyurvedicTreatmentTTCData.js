@@ -38,9 +38,9 @@ export const ChiangAyurvedicTreatmentTTCData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Ayurveda Therapist" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Marma Specialist" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "YACEP Certification" },
+      { img: "/images/cirtificats/yoga.png", label: "Ayurveda Therapist" },
+      { img: "/images/cirtificats/yoga.png", label: "Marma Specialist" },
+      { img: "/images/cirtificats/YACEP.png", label: "YACEP Certification" }
     ],
 
     content: {

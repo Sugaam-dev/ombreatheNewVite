@@ -38,9 +38,9 @@ export const RishikeshKundali50HoursData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "50 Hrs Tantra" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Kashmir Shaivism" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Trika Lineage" },
+      { img: "/images/cirtificats/yoga.png", label: "50 Hrs Tantra" },
+      { img: "/images/cirtificats/yoga.png", label: "Kashmir Shaivism" },
+      { img: "/images/cirtificats/yoga.png", label: "Trika Lineage" }
     ],
 
     content: {

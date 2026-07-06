@@ -32,9 +32,9 @@ export const KundaliniSadhanaRetreatData = {
       "Silent Sitting & Mindfulness",
     ],
     certificates: [
-      { img: "https://worldpeaceyogaschool.com/images/thailand/kundalini-sadhana-retreat-thailand-display2.webp", label: "Kundalini" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/kundalini-sadhana-retreat-thailand-display3.webp", label: "Sadhana" },
-      { img: "https://worldpeaceyogaschool.com/images/thailand/kundalini-sadhana-retreat-thailand-display4.webp", label: "Completion Cert" },
+      { img: "/images/cirtificats/yoga.png", label: "Kundalini" },
+      { img: "/images/cirtificats/yoga.png", label: "Sadhana" },
+      { img: "/images/cirtificats/yoga.png", label: "Completion Cert" }
     ],
     content: {
       bottomText: "A powerful retreat where the unchanging esoteric wisdom of the Himalayas meets the beautiful nature of Northern Thailand. No experience necessary — just heartfelt sincerity and the bravery to evolve.",

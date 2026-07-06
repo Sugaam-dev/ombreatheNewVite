@@ -6,6 +6,7 @@ import {
   Heart,
   Shield,
   Sparkles,
+  Leaf,
 } from "lucide-react";
 
 const OmbPracticeSection = ({ data }) => {
@@ -15,6 +16,8 @@ const OmbPracticeSection = ({ data }) => {
     const t = setTimeout(() => setVisible(true), 100);
     return () => clearTimeout(t);
   }, []);
+
+  if (!data || !data.colors || !data.content) return null;
 
   const { colors, content } = data;
 
@@ -26,6 +29,7 @@ const OmbPracticeSection = ({ data }) => {
     heart: <Heart size={18} />,
     shield: <Shield size={18} />,
     sparkles: <Sparkles size={18} />,
+    leaf: <Leaf size={20} />,
   };
 
   return (

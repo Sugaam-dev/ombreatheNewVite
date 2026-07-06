@@ -15,10 +15,13 @@ import {
   AlignEndHorizontal,
   BrainCircuit,
   BellRing,
+  Moon,
+  Feather,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const OmbCurriculumSection = ({ data }) => {
+  if (!data || !data.colors || !data.content) return null;
   const { colors, content } = data;
 
   const iconMap = {
@@ -34,7 +37,8 @@ const OmbCurriculumSection = ({ data }) => {
     align:<AlignEndHorizontal size={22}/>,
     brainCircuit: <BrainCircuit size={22} />,
     bellRing: <BellRing size={22} />,
-
+    moon: <Moon size={22} />,
+    feather: <Feather size={22} />,
   };
 
   return (

@@ -35,9 +35,9 @@ bgImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=
     ],
 
     certificates: [
-      { img: "https://www.ombreathe.in/static/media/500.197061cc4d2bc369826c.png", label: "500 Hrs" },
-      { img: "https://www.ombreathe.in/static/media/yoga.562f46cb59ea00ca8753.png", label: "Certified" },
-      { img: "https://www.ombreathe.in/static/media/YACEP.50cf2e991c78fbe3a13d.png", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/500.webp", label: "500 Hrs" },
+      { img: "/images/cirtificats/yoga.png", label: "Certified" },
+      { img: "/images/cirtificats/YACEP.png", label: "Yoga Alliance" }
     ],
 
     content: {

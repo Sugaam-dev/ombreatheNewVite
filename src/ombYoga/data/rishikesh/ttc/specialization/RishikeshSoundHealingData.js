@@ -38,9 +38,9 @@ export const RishikeshSoundHealingData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "Levels 1-5 Master" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Sound Massage" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "WPYS Certification" },
+      { img: "/images/cirtificats/yoga.png", label: "Levels 1-5 Master" },
+      { img: "/images/cirtificats/yoga.png", label: "Sound Massage" },
+      { img: "/images/cirtificats/yoga.png", label: "WPYS Certification" }
     ],
 
     content: {

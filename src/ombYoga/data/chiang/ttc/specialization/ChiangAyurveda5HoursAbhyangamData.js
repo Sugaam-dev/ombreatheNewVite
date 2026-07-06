@@ -38,9 +38,9 @@ export const ChiangAyurveda5HoursAbhyangamData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "5 Hrs Abhyangam" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Myofascial Release" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "YACEP Certification" },
+      { img: "/images/cirtificats/yoga.png", label: "5 Hrs Abhyangam" },
+      { img: "/images/cirtificats/yoga.png", label: "Myofascial Release" },
+      { img: "/images/cirtificats/YACEP.png", label: "YACEP Certification" }
     ],
 
     content: {

@@ -39,9 +39,9 @@ export const DharamshalaKundali200HoursData = {
     ],
 
     certificates: [
-      { img: "https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=150&q=80", label: "200 Hrs Kundalini" },
-      { img: "https://images.unsplash.com/photo-1524863380900-a1f5d95732e1?w=150&q=80", label: "Free Live Classes" },
-      { img: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=150&q=80", label: "Yoga Alliance RYT" },
+      { img: "/images/cirtificats/200.png", label: "200 Hrs Kundalini" },
+      { img: "/images/cirtificats/yoga.png", label: "Free Live Classes" },
+      { img: "/images/cirtificats/yoga.png", label: "Yoga Alliance RYT" }
     ],
 
     content: {

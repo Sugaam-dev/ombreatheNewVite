@@ -94,87 +94,109 @@ const OmbYogaPage = () => {
 
       <div className="omb-root">
 
-        {/* ==========================================
-            ABOVE THE FOLD
-        ========================================== */}
+        {data.heroSection && (
+          <OmbHeroSection
+            data={data.heroSection}
+          />
+        )}
 
-        <OmbHeroSection
-          data={data.heroSection}
-        />
-
-        <OmbCommunitySection
-          data={data.communitySection}
-        />
+        {data.communitySection && (
+          <OmbCommunitySection
+            data={data.communitySection}
+          />
+        )}
 
         {/* ==========================================
             BELOW THE FOLD
         ========================================== */}
 
-        <LazySection>
-          <OmbPromoSection
-            data={data.promoSection}
-          />
-        </LazySection>
+        {data.promoSection && (
+          <LazySection>
+            <OmbPromoSection
+              data={data.promoSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbTransformationSection
-            data={data.transformationSection}
-          />
-        </LazySection>
+        {data.transformationSection && (
+          <LazySection>
+            <OmbTransformationSection
+              data={data.transformationSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbPracticeSection
-            data={data.practiceSection}
-          />
-        </LazySection>
+        {data.practiceSection && (
+          <LazySection>
+            <OmbPracticeSection
+              data={data.practiceSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbCurriculumSection
-            data={data.curriculumSection}
-          />
-        </LazySection>
+        {data.curriculumSection && (
+          <LazySection>
+            <OmbCurriculumSection
+              data={data.curriculumSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbScheduleSection
-            data={data.scheduleSection}
-          />
-        </LazySection>
+        {data.scheduleSection && (
+          <LazySection>
+            <OmbScheduleSection
+              data={data.scheduleSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <MassageSection
-            data={data.MassageSection}
-          />
-        </LazySection>
+        {data.MassageSection && (
+          <LazySection>
+            <MassageSection
+              data={data.MassageSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbExcursionSection
-            data={data.excursionSection}
-          />
-        </LazySection>
+        {data.excursionSection && (
+          <LazySection>
+            <OmbExcursionSection
+              data={data.excursionSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbFoodSection
-            data={data.foodSection}
-          />
-        </LazySection>
+        {data.foodSection && (
+          <LazySection>
+            <OmbFoodSection
+              data={data.foodSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbAccommodationSection
-            data={data.accommodationSection}
-          />
-        </LazySection>
+        {data.accommodationSection && (
+          <LazySection>
+            <OmbAccommodationSection
+              data={data.accommodationSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <OmbLocationSection
-            data={data.locationSection}
-          />
-        </LazySection>
+        {data.locationSection && (
+          <LazySection>
+            <OmbLocationSection
+              data={data.locationSection}
+            />
+          </LazySection>
+        )}
 
-        <LazySection>
-          <Questions
-            data={data.teacherTrainingFaq}
-          />
-        </LazySection>
+        {data.teacherTrainingFaq && (
+          <LazySection>
+            <Questions
+              data={data.teacherTrainingFaq}
+            />
+          </LazySection>
+        )}
 
         {/* ==========================================
             CONTACT
