@@ -1,8 +1,8 @@
 const teacherTrainingFaq = [
   {
-    question: "What is Yogalayaa's teacher training program?",
+    question: "What is Ombreath's teacher training program?",
     answer:
-      "Yogalayaa's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
+      "Ombreath's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
   },
   {
     question: "What is the duration of the program?",

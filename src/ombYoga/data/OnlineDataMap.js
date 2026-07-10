@@ -7,11 +7,11 @@ import { Online50HoursAyurvedaData } from "../onlinedata/Online50HoursAyurvedaDa
 import { Online50HoursYogaNidraData } from "../onlinedata/Online50HoursYogaNidraData";
 
 export const OnlineDataMap = {
-  "100hr": Online100HoursData,
-  "200hr": Online200HoursData,       
-  "300hr": Online300HoursData,
-  "85hr": Online85HoursPrenatalData, 
-  "50hr-pranayama": Online50HoursPranayamaData,
-  "50hr-ayurveda": Online50HoursAyurvedaData, 
-  "50hr-yoga-nidra": Online50HoursYogaNidraData,
+  "100 Hour Online Yoga Teacher Training Course": Online100HoursData,
+  "200 Hour Online Yoga Teacher Training Course": Online200HoursData,       
+  "300 Hour Online Yoga Teacher Training Course": Online300HoursData,
+  "85 Hour Online Pre-Natal Yoga Teacher Training Course": Online85HoursPrenatalData, 
+  "50 Hour Online Online Pranayama Course": Online50HoursPranayamaData,
+  "50 Hour Online Online Ayurveda Yoga Teacher Training Course": Online50HoursAyurvedaData, 
+  "50 Hour Online Online Yoga Nidra Teacher Training Course": Online50HoursYogaNidraData,
 };

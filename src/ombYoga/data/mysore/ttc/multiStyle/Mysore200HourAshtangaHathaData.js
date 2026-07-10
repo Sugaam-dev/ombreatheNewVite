@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore200HourAshtangaHathaData = {
   
   heroSection: {
@@ -19,7 +21,7 @@ export const Mysore200HourAshtangaHathaData = {
       highlight: "20 Days 200 Hours ",
       subtitle:
         "A wonderful metamorphosis for any yoga practitioner. Touch all foundations of a yogic lifestyle in Mysore, the Ashtanga Yoga Capital of the world, and build the confidence to teach globally.",
-      price: "$1200",
+      price: PROGRAM_PRICES_MYSORE.multiStyle["200hrAshtanga"],
       priceNote: "Shared room tier ($900 without food and accommodation options); fully certified under international Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

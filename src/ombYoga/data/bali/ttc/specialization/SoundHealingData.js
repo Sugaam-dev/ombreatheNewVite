@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const SoundHealingData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const SoundHealingData = {
       highlight: "Level-1 & Level-2 ",
       subtitle:
         "Sound healing Level-1 & Level-2 course in Bali — Tibetan singing bowls, chakra healing & YACEP certification",
-      price: "$400",
+      price: PROGRAM_PRICES.specializations.soundhealing,
       priceNote: "Includes stay, meals & YACEP certificate",
       bgImage:
         "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=1600&q=80",

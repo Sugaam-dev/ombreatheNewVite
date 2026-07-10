@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore300HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore300HoursData = {
       highlight: "28 Days 300 Hours ",
       subtitle:
         "An incredible toolkit for serious yoga sadhakas wanting to improve their technical skills. Master primary to intermediate Ashtanga series and advanced Hatha with extreme safety.",
-      price: "$1500",
+      price: PROGRAM_PRICES_MYSORE.multiStyle["300hr"],
       priceNote: "Shared room tier ($1200 without food and accommodation options); fully certified under advanced Yoga Alliance USA standards",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

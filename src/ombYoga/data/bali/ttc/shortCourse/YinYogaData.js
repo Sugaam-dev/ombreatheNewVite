@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const YinYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const YinYogaData = {
       highlight: "6 Days ",
       subtitle:
         "Yin yoga teacher training in Bali — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
-      price: "$650",
+      price: PROGRAM_PRICES.shortcourses.yinyoga,
       priceNote: "Includes stay, meals & Yoga Alliance certificate",
       bgImage:
         "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const Bali100HoursData= {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Bali100HoursData= {
       highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour multi style yoga teacher training in Bali — Ashtanga, Hatha & Vinyasa",
-      price: "$999",
+      price: PROGRAM_PRICES.multiStyle["100hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

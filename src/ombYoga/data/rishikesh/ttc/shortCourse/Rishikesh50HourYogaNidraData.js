@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh50HourYogaNidraData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh50HourYogaNidraData = {
       highlight: "5 Days 50 Hours ",
       subtitle:
         "A spiritual and scientific exploration of conscious relaxation. Merge ancient yogic wisdom with modern neuroscience to master brain wave states and nervous system regulation.",
-      price: "$500",
+      price: PROGRAM_PRICES_RISHIKESH.shortcourses["nidra"],
       priceNote: "Includes cozy ashram accommodation, 3 daily vegetarian meals, specialized script manuals, and 50-hour certification",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangSoundHealingData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangSoundHealingData = {
       highlight: "Power of Sound ",
       subtitle:
         "Sound healing Level-1 & Level-2 course in Bali — Tibetan singing bowls, chakra healing & YACEP certification",
-      price: "$400",
+      price: PROGRAM_PRICES_CHIANG.specializations["ChiangSoundHealingData"],
       priceNote: "Includes stay, meals & YACEP certificate",
       bgImage:
         "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=1600&q=80",

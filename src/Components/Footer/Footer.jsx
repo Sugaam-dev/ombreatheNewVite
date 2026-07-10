@@ -111,12 +111,12 @@ const SocialLinks = memo(() => {
       label: "Facebook"
     },
     {
-      href: "https://instagram.com/yogalayaa",
+      href: "https://instagram.com/Ombreath",
       icon: FaInstagram,
       label: "Instagram"
     },
     {
-      href: "https://youtube.com/@yogalayaa",
+      href: "https://youtube.com/@Ombreath",
       icon: FaYoutube,
       label: "YouTube"
     }

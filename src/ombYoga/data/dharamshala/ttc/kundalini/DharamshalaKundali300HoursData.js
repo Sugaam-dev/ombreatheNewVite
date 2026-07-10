@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_DHARAMSHALA } from "../../programPricesDharamshala";
+
 export const DharamshalaKundali300HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const DharamshalaKundali300HoursData = {
       highlight: "29 Days 300 Hours ",
       subtitle:
         "Relish a transformational involvement and ecstasy in the Yoga Capital of the World. Master Ashtanga Vinyasa, Hatha alignment, anatomy, and Vedic philosophy.",
-      price: "$1699",
+      price: PROGRAM_PRICES_DHARAMSHALA.kundalini["300hr"],
       priceNote: "Includes free Dehradun airport taxi pick-up, stay, organic meals & dual certifications",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",

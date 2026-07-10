@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore50HourYinYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore50HourYinYogaData = {
       highlight: "8 Days 50 Hours ",
       subtitle:
         "An enriching experience designed to provide a solid foundation for teaching Yin Yoga. Deepen your personal practice, master passive floor tissues, and trigger deep mind-body renewal.",
-      price: "$500",
+      price: PROGRAM_PRICES_MYSORE.shortcourses["yinyoga"],
       priceNote: "Shared room configuration rate ($300 without accommodation and food options); officially certified under global Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

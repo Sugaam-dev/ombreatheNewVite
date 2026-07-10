@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const BaliKundali200HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const BaliKundali200HoursData = {
       highlight: "20 Days 200 Hours ",
       subtitle:
         "200-hour Kundalini yoga teacher training in Bali — 7 chakras, Kriya, Tantra philosophy & RYT-200 certification",
-      price: "$1,299",
+      price: PROGRAM_PRICES.kundalini["200hr"],
       priceNote: "Includes stay, meals & RYT-200 certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

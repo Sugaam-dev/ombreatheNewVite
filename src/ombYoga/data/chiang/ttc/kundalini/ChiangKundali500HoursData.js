@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangKundali500HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangKundali500HoursData = {
       highlight: "56 Days 500 Hours ",
       subtitle:
         "500-hour Kundalini yoga teacher training in Chiang Mai — the ultimate RYT-500 combining 200 + 300 hour Kundalini TTC",
-      price: "$3,699",
+      price: PROGRAM_PRICES_CHIANG.kundalini["500hr"],
       priceNote: "Includes stay, meals & RYT-500 certification",
       bgImage:
         "https://www.adhiroha.com/uploads/695b85059d3e4.jpg",

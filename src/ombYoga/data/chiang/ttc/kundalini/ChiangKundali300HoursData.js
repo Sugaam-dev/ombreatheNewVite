@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangKundali300HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangKundali300HoursData = {
       highlight: "30 Days 300 Hours ",
       subtitle:
         "300-hour advanced Kundalini yoga teacher training in Chiang Mai — deep chakra mastery, Yin Yoga & RYT-300 certification",
-      price: "$2,199",
+      price: PROGRAM_PRICES_CHIANG.kundalini["300hr"],
       priceNote: "Includes stay, meals & RYT-300 certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

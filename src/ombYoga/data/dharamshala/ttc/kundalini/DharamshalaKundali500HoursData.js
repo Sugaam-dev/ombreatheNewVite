@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_DHARAMSHALA } from "../../programPricesDharamshala";
+
 export const DharamshalaKundali500HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const DharamshalaKundali500HoursData = {
       highlight: "59 Days 500 Hours ",
       subtitle:
         "The ultimate combined 200-Hour + 300-Hour training at our flagship Laxman Jhula center. Two months of intense learning to become an expert Yogi for life.",
-      price: "$2899",
+      price: PROGRAM_PRICES_DHARAMSHALA.kundalini["500hr"],
       priceNote: "Includes free Dehradun airport pickup, 58 nights lodging, all meals, and RYT-500 certification support",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

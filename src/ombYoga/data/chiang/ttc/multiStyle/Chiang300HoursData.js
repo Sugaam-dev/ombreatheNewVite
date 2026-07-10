@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const Chiang300HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Chiang300HoursData = {
       highlight: "26 Days 300 Hours ",
       subtitle:
         "300-hour advanced yoga teacher training in Chiang Mai — Ashtanga, Hatha, Yin Yoga & Vedic Philosophy",
-      price: "$2,099",
+      price: PROGRAM_PRICES_CHIANG.multiStyle["300hr"],
       priceNote: "Includes stay, meals & RYT-300 certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

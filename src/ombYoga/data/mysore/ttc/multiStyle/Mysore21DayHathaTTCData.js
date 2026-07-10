@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore21DayHathaTTCData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore21DayHathaTTCData = {
       highlight: "21 Days 200 Hours",
       subtitle:
         "Dive into a soothing learning experience by engaging with the science and power of Yoga. Honor a timeless lineage while meeting modern needs with absolute clarity.",
-      price: "$750",
+      price: PROGRAM_PRICES_MYSORE.multiStyle["21DayHatha"],
       priceNote: "Shared room base rate ($600 without food and lodging options); international course starting from ₹ 55000.00/-",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const Chiang100HoursData= {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Chiang100HoursData= {
       highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour multi style yoga teacher training in Chiang Mai — Ashtanga, Hatha & Vinyasa",
-      price: "$999",
+      price: PROGRAM_PRICES_CHIANG.multiStyle["100hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

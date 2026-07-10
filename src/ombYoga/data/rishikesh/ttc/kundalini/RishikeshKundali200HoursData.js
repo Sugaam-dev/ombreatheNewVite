@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const RishikeshKundali200HoursData = {
 
   heroSection: {
@@ -19,7 +21,7 @@ export const RishikeshKundali200HoursData = {
       highlight: "25 Days 200 Hours ",
       subtitle:
         "Activate your dormant power through profound, realistic learning and authentic practice. Awaken your cosmic energy centers, kriya paths, and foundational tantra traditions.",
-      price: "$1399",
+      price: PROGRAM_PRICES_RISHIKESH.kundalini["200hr"],
       priceNote: "Includes 24 nights room accommodation, fresh vegetarian meals, airport taxi pick-up, and RYT-200 credentials",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore7DayYogaTherapyTTCData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore7DayYogaTherapyTTCData = {
       highlight: "7 Days 50 Hours ",
       subtitle:
         "Dive into a soothing learning experience by engaging with the science and power of Yoga. Master structural disease-specific sequencing, clinical anatomy modifications, and localized restoration.",
-      price: "$500",
+      price: PROGRAM_PRICES_MYSORE.shortcourses["yogatherapy"],
       priceNote: "Shared room configuration rate ($300 without accommodation and food options); course runs over 7 days certified under global Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

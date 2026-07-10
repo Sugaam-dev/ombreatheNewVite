@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const BaliAyurveda5HoursAbhyangamData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
       highlight: "5 Hours ",
       subtitle:
         "Learn the ancient arts of deep healing with Indian Ayurvedic Full-Body Massage. Master myofascial tissue restoration and hands-on movement sequences in 1 or 2 days.",
-      price: "$250",
+      price: PROGRAM_PRICES.specializations.BaliAyurveda5HoursAbhyangamData,
       priceNote: "Flexible tiers up to $650 depending on personal lodging preference; includes YACEP certification",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",

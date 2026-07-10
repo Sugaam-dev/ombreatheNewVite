@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangPrenatalYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangPrenatalYogaData = {
       highlight: "85-hour ",
       subtitle:
         "85-hour prenatal yoga teacher training in Chiang Mai — pregnancy anatomy, safe sequencing & Yoga Alliance certification",
-      price: "$650",
+      price: PROGRAM_PRICES_CHIANG.shortcourses["prenatalyoga"],
       priceNote: "Includes stay, meals & Yoga Alliance certificate",
       bgImage:
         "https://images.squarespace-cdn.com/content/v1/5abdee1596d455819877579b/1648274019067-I2YJFHCOB685D1D9ZXL2/1.jpg",

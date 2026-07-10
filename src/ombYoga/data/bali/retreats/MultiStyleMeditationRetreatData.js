@@ -58,7 +58,7 @@ export const MultiStyleMeditationRetreatData = {
 
     content: {
       bgImage: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "Yogalayaa Silent Retreat",
+      eyebrow: "Ombreath Silent Retreat",
       title: "Join our",
       highlight: "silent meditation retreat",
       subtitle:

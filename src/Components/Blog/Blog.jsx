@@ -293,7 +293,7 @@ const Blog = () => {
               <h1>Blog</h1>
               <img 
                 src="./images/lg.png" 
-                alt="Yogalayaa Logo" 
+                alt="Ombreath Logo" 
                 loading="eager"
                 style={{ maxWidth: '100%', height: 'auto' }}
               />

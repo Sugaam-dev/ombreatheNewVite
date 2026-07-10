@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore21DayAshtangaTTCData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore21DayAshtangaTTCData = {
       highlight: "21 Days 200 Hours",
       subtitle:
         "Revived in the modern era under Sri T. Krishnamacharya and Sri K. Pattabhi Jois. Explore the Primary Series with deep alignment, breath synchronization, drishtis, and philosophical depth.",
-      price: "$750",
+      price: PROGRAM_PRICES_MYSORE.multiStyle["21DayAshtanga"],
       priceNote: "Shared room configuration baseline rate ($600 without food and accommodation options); fully certified under international Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

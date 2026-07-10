@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_DHARAMSHALA } from "../../programPricesDharamshala";
+
 export const DharamshalaKundali50HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const DharamshalaKundali50HoursData = {
       highlight: "5 Days 50 Hours ",
       subtitle:
         "Tread into the sacred, pure, and non-dualistic dimension of Kashmir Shaivism. A holistic science of consciousness awakening, free from modern distortions and illusions.",
-      price: "$799",
+      price: PROGRAM_PRICES_DHARAMSHALA.kundalini["50hr"],
       priceNote: "Includes cozy accommodation, 3 sattvic vegetarian meals, and pure Trika tradition certification",
       bgImage:
         "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1600&q=80",

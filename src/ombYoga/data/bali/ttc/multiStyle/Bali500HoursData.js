@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const Bali500HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Bali500HoursData = {
       highlight: "56 Days 500 Hours ",
       subtitle:
         "500-hour multi style yoga teacher training in Bali — the ultimate RYT-500 certification combining 200 + 300 hour TTC",
-      price: "$3,599",
+      price: PROGRAM_PRICES.multiStyle["500hr"],
       priceNote: "Includes stay, meals & RYT-500 certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

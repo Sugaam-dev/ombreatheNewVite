@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh18DaysYogaTherapyWellnessData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
       highlight: "18 Days 200 Hours ",
       subtitle:
         "A marvelous first-level execution merging comprehensive Yoga Therapy, Ayurveda adjustments, and Naturopathy medicine. Empower your career with an accredited clinical roadmap.",
-      price: "$1099",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["Rishikesh18DaysYogaTherapyWellnessData"],
       priceNote: "Shared room baseline rate ($1499 for private rooms); covers 18 days residential lodging, free Dehradun airport pickup, meals, and global RYT-200 registry credentials",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

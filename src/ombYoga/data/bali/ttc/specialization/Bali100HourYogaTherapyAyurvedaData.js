@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES } from "../../programPrices";
+
 export const Bali100HourYogaTherapyAyurvedaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Bali100HourYogaTherapyAyurvedaData = {
       highlight: "10 Days ",
       subtitle:
         "An advanced post-TTC program for yoga professionals. Boost your career as a wellness coach, healer, and therapist in the spiritual heart of Ubud.",
-      price: "$1299",
+      price: PROGRAM_PRICES.specializations.Bali100HourYogaTherapyAyurvedaData,
       priceNote: "Includes 9 nights lodging, organic plant-based meals, excursions, and dual YACEP & Yoga Therapy Foundation certifications",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

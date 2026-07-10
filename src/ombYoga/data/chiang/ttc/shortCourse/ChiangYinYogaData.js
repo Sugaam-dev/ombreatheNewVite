@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangYinYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangYinYogaData = {
       highlight: "6 Days ",
       subtitle:
         "Yin yoga teacher training in Chiang Mai — passive stretching, meridians, deep relaxation & Yoga Alliance certification",
-      price: "$650",
+      price: PROGRAM_PRICES_CHIANG.shortcourses["yinyoga"],
       priceNote: "Includes stay, meals & Yoga Alliance certificate",
       bgImage:
         "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=1600&q=80",

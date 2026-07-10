@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh300HoursData = {
   heroSection: {
     colors: {
@@ -16,7 +18,7 @@ overlay: "linear-gradient(180deg, rgba(45,8,8,0.55), rgba(45,8,8,0.9))",
 title: "Multi-Style YTTC",
 highlight: "30 Days 300 Hours ",
 subtitle: "300-hour advanced yoga teacher training in Rishikesh — RYT-300, Classical Dance, Ganga Sadhna & complimentary Yin YTTC",
-price: "$1,699",
+price: PROGRAM_PRICES_RISHIKESH.multiStyle["300hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",

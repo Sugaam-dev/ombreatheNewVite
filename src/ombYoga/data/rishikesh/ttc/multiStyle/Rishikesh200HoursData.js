@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh200HoursData = {
   heroSection: {
     colors: {
@@ -16,7 +18,7 @@ overlay: "linear-gradient(180deg, rgba(45,26,0,0.55), rgba(45,26,0,0.9))",
 title: "Multi-Style YTTC",
 highlight: "20 Days 200 Hours ",
 subtitle: "200-hour yoga teacher training in Rishikesh — Hatha, Ashtanga, RYT-200 & Himalayan tradition",
-price: "$1,399",
+price: PROGRAM_PRICES_RISHIKESH.multiStyle["200hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",

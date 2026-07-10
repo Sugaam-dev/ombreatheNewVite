@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../programPricesMysore";
+
 export const MysoreSingingBowlSoundHealingData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const MysoreSingingBowlSoundHealingData = {
       highlight: "3 Days ",
       subtitle:
         "The bowl is a symbol of emptiness and absolute receptivity. Master intense acoustic vibrational therapies, chakra balancing, sound massage, and water frequency training in Mysuru.",
-      price: "$250",
+      price: PROGRAM_PRICES_MYSORE.specializations["MysoreSingingBowlSoundHealingData"],
       priceNote: "Base tuition rate ($300 packages include residential ashram housing and food options); choose between our dual monthly batch calendars",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",

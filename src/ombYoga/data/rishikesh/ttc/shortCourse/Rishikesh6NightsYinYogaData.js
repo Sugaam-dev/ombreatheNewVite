@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh6NightsYinYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh6NightsYinYogaData = {
       highlight: "6 Nights 7 Days ",
       subtitle:
         "Explore the depth of relaxation with a deeper connection to the Supreme. Master Taoist passive lines, functional skeletal alignment, and connective fascia tissue release.",
-      price: "$599",
+      price: PROGRAM_PRICES_RISHIKESH.shortcourses["yinyoga"],
       priceNote: "Includes free Dehradun airport pickup, 6 nights ashram lodging, delicious vegetarian meals, and official YACEP credentials",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

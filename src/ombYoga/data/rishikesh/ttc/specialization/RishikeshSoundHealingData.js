@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const RishikeshSoundHealingData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const RishikeshSoundHealingData = {
       highlight: "5 Days 5 Levels",
       subtitle:
         "Embark on a transformative journey of self-discovery and cellular healing. Master the science of acoustic therapy, singing bowls, and gongs next to the holy Ganges River.",
-      price: "$799 Total",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["RishikeshSoundHealingData"],
       priceNote: "Modular pricing: $150 per level (Levels 1-4) & $199 for Level 5; includes specialized course manuals and full master certification",
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",

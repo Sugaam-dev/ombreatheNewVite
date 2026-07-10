@@ -58,7 +58,7 @@ export const AdventureYogaRetreatData = {
 
     content: {
       bgImage: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "Yogalayaa Bali Retreat",
+      eyebrow: "Ombreath Bali Retreat",
       title: "Join our",
       highlight: "adventure & yoga retreat",
       subtitle:

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangKundali200HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangKundali200HoursData = {
       highlight: "20 Days 200 Hours ",
       subtitle:
         "200-hour Kundalini yoga teacher training in Chiang Mai — 7 chakras, Kriya, Tantra philosophy & RYT-200 certification",
-      price: "$1,299",
+      price: PROGRAM_PRICES_CHIANG.kundalini["200hr"],
       priceNote: "Includes stay, meals & RYT-200 certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

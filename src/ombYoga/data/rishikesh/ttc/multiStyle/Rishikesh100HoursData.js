@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh100HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh100HoursData = {
       highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour yoga teacher training in Rishikesh — Hatha, Ashtanga, Pranayama & Himalayan tradition",
-      price: "$899",
+      price: PROGRAM_PRICES_RISHIKESH.multiStyle["100hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",

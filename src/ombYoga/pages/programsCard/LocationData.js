@@ -27,10 +27,10 @@ export const LOCATION_DATA = {
     
     programsByCategoryId: {
       "multi-style": [
-        { path: "50hr", hours: "50", title: "6 Days 50 Hours Multi-Style Yoga Course", price: "$750", duration: "6 days", badge: "Beginner Friendly", certification: "YACEP" },
-        { path: "100hr", hours: "100", title: "10 Days 100 Hours Multi-Style Yoga Course", price: "$1,150", duration: "10 days", badge: "Most Popular", certification: "Yoga Alliance" },
-        { path: "200hr", hours: "200", title: "20 Days 200 Hours Multi-Style YTTC", price: "$1,599", duration: "20 days", badge: "Luxury Eco-Stay", certification: "RYT-200" },
-        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Multi-Style YTTC", price: "$2,399", duration: "26 days", badge: "For Teachers", certification: "RYT-300" },
+        { path: "50hr", hours: "50", title: "6 Days 50 Hours Multi-Style Yoga Course", price: "$650", duration: "6 days", badge: "Beginner Friendly", certification: "YACEP" },
+        { path: "100hr", hours: "100", title: "10 Days 100 Hours Multi-Style Yoga Course", price: "$999", duration: "10 days", badge: "Most Popular", certification: "Yoga Alliance" },
+        { path: "200hr", hours: "200", title: "20 Days 200 Hours Multi-Style YTTC", price: "$1,299", duration: "20 days", badge: "Luxury Eco-Stay", certification: "RYT-200" },
+        { path: "300hr", hours: "300", title: "26 Days 300 Hours Advanced Multi-Style YTTC", price: "$2,099", duration: "26 days", badge: "For Teachers", certification: "RYT-300" },
       { path: "500hr", hours: "500", title: "56 Days 500 Hours Advanced Multi-Style YTTC", price: "$3,599", duration: "56 days", badge: "For Teachers", certification: "RYT-500" }
    
       ],

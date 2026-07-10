@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore500HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore500HoursData = {
       highlight: "2 Months 500 Hours ",
       subtitle:
         "A masterful complete package combining our 200-Hour and 300-Hour curriculums. Honor the sacred wisdom of traditional yoga and discover your true inner nature in the heritage city of Mysore.",
-      price: "$2500",
+      price: PROGRAM_PRICES_MYSORE.multiStyle["500hr"],
       priceNote: "Shared room configuration baseline rate ($1900 without food and accommodation options); master level certified under Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_DHARAMSHALA } from "../../programPricesDharamshala";
+
 export const Dharamshala500HoursData = {
   heroSection: {
     colors: {
@@ -16,7 +18,7 @@ textFade: "rgba(255,255,255,0.8)",
 title: "Multi-Style YTTC",
 highlight: "56 Days 500 Hours ",
 subtitle: "500-hour yoga teacher training in Dharamshala — 200 + 300 hours combined, RYT-500 & lifetime Himalayan mastery",
-price: "$2,899",
+price: PROGRAM_PRICES_DHARAMSHALA.multiStyle["500hr"],
 priceNote: "Includes stay, meals & RYT-500 certification",
 bgImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80",
       certificateImage:

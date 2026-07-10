@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangAcroYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangAcroYogaData = {
       highlight: "5-day ",
       subtitle:
         "5-day Acro Yoga teacher training in Chiang Mai — yoga, acrobatics, Thai massage & YACEP certification",
-      price: "$799",
+      price: PROGRAM_PRICES_CHIANG.shortcourses["acroyoga"],
       priceNote: "Includes stay, meals & YACEP certificate",
       bgImage:
         "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const MysorePrenatalYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const MysorePrenatalYogaData = {
       highlight: "6 Days 85 Hours ",
       subtitle:
         "Expose yourself to the wonderful, blissful world of Prenatal Yoga. A unique, encyclopedic curriculum offering a complete mix of theory, meditation, and customized safety asanas.",
-      price: "$599",
+      price: PROGRAM_PRICES_MYSORE.shortcourses["prenatalyoga"],
       priceNote: "Includes free Dehradun airport pickup, 5 nights stay, organic meals, Ayurveda consultation, and Yoga Alliance RPYT certification",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",

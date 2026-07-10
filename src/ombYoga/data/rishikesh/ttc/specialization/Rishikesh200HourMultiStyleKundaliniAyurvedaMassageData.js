@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh200HourMultiStyleKundaliniAyurvedaMassageData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh200HourMultiStyleKundaliniAyurvedaMassageData = {
       highlight: "25 Days 200 Hours ",
       subtitle:
         "Welcome to the sacred union of energy and inner alchemy. Awaken dormant prana through kriya and mantra while mastering classical Abhyangam massage to balance your system naturally.",
-      price: "$1599",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["Rishikesh200HourMultiStyleKundaliniAyurvedaMassageData"],
       priceNote: "Shared room configuration baseline rate ($1999 for private deluxe singles); includes 24 nights stay, all meals, and official dual certifications",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",

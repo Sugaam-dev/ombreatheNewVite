@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_DHARAMSHALA } from "../../programPricesDharamshala";
+
 export const Dharamshala100HoursData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Dharamshala100HoursData = {
       highlight: "10 Days 100 Hours ",
       subtitle:
         "100-hour yoga teacher training in Dharamshala — Hatha, Ashtanga, Pranayama & Himalayan tradition",
-      price: "$899",
+      price: PROGRAM_PRICES_DHARAMSHALA.multiStyle["100hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",

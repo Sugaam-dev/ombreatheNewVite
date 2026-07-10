@@ -39,7 +39,7 @@ const YogaTeachers = () => {
         instagram: "https://www.instagram.com/rockymohakud?igsh=Mm1lYnN6amcwdnQx",
         facebook: "https://www.facebook.com/share/1AmTEw7K2b/",
         twitter: "https://x.com/Yogalayaa_",
-        youtube: "https://www.youtube.com/@yogalayaa"
+        youtube: "https://www.youtube.com/@Ombreath"
       }
     },
     {

@@ -1,4 +1,4 @@
-
+import { PROGRAM_PRICES } from "../../programPrices";
 
 export const Bali50HourData = {
   heroSection: {
@@ -20,7 +20,7 @@ export const Bali50HourData = {
       highlight: "6-Day 50-Hour ",
       subtitle:
         "An immersive experience to transform your body, mind, and teaching journey",
-      price: "$650",
+      price: PROGRAM_PRICES.multiStyle["50hr"],
       priceNote: "Includes stay, meals & certification",
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
@@ -809,9 +809,9 @@ teacherTrainingFaq: {
 
     faqs: [
       {
-        question: "What is Yogalayaa's teacher training program?",
+        question: "What is Ombreath's teacher training program?",
         answer:
-          "Yogalayaa's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
+          "Ombreath's teacher training program is a comprehensive course that provides students with the knowledge and skills required to become a certified yoga instructor.",
       },
       {
         question: "What is the duration of the program?",

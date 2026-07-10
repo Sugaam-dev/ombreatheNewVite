@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_CHIANG } from "../../programPricesChiang";
+
 export const ChiangAyurvedicTreatmentTTCData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
       highlight: "12 Days Advanced Training ",
       subtitle:
         "Master the oldest Ayurveda massage rituals and therapeutic oil techniques practiced for thousands of years to naturally balance Vata, Pitta, and Kapha doshas.",
-      price: "$1450",
+      price: PROGRAM_PRICES_CHIANG.specializations["ChiangAyurvedicTreatmentTTCData"],
       priceNote: "Includes comfortable lodging, 3 daily fresh sattvic meals, expert doctor consultations, and formal YACEP certification",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",

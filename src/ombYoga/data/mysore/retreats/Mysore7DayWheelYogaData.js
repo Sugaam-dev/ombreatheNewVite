@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../programPricesMysore";
+
 export const Mysore7DayWheelYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore7DayWheelYogaData = {
       highlight: "7 Days ",
       subtitle:
         "Master the ultimate tool for deep spinal expansion, core stabilization, and advanced backbending. Accelerate your alignment capabilities in the heritage city of Mysore.",
-      price: "$500",
+      price: PROGRAM_PRICES_MYSORE.specializations["Mysore7DayWheelYogaData"],
       priceNote: "Shared room configuration rate ($300 without accommodation and food options); fully approved under international Yoga Alliance YACEP standards",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",

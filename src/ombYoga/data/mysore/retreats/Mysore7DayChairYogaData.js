@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../programPricesMysore";
+
 export const Mysore7DayChairYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore7DayChairYogaData = {
       highlight: "7 Days ",
       subtitle:
         "Turn the symbol of a sedentary life into an elegant tool for wellness. Master smart structural alignments, accessible adaptations, and corporate desk-break mechanics.",
-      price: "$500",
+      price: PROGRAM_PRICES_MYSORE.specializations["Mysore7DayChairYogaData"],
       priceNote: "Shared room configuration rate ($300 without accommodation and food options); globally validated under international Yoga Alliance standards",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",

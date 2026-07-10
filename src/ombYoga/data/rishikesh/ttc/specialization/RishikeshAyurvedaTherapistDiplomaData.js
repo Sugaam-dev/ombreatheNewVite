@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const RishikeshAyurvedaTherapistDiplomaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
       highlight: "10 Days Intensive Training ",
       subtitle:
         "Unite body, mind, and spirit to restore absolute balance and harmony. Master advanced oil body massage, ancient acupressure, body structure, and marma points.",
-      price: "$1099",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["RishikeshAyurvedaTherapistDiplomaData"],
       priceNote: "Includes 9 nights lodging, 3 daily fresh sattvic meals, study manuals, and Yoga Alliance validation",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",

@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh10DaysPanchakarmaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh10DaysPanchakarmaData = {
       highlight: "10 Days Complete Detox ",
       subtitle:
         "Welcome to the science of cellular purification. Remove deep-rooted mind-body afflictions, reset critical systemic functions, and rejuvenate under expert Ayurvedic practitioners.",
-      price: "$799 Regular",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["Rishikesh10DaysPanchakarmaData"],
       priceNote: "Special combined offer: Only $560 (30% discount) when paired with a main Yoga Teacher Training Course; includes private accommodation",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",

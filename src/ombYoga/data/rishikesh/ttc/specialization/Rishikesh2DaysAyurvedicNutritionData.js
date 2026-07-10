@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_RISHIKESH } from "../../programPricesRishikesh";
+
 export const Rishikesh2DaysAyurvedicNutritionData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
       highlight: "5 Hours Total Scope ",
       subtitle:
         "Empower yourself to consume food mindfully. Learn how subtle, minor modifications in your diet and lifestyle can create a massive difference in long-term wellness tracking.",
-      price: "$150",
+      price: PROGRAM_PRICES_RISHIKESH.specializations["Rishikesh2DaysAyurvedicNutritionData"],
       priceNote: "Baseline tuition rate without on-site housing and food; runs 10th-11th & 21st-22nd every month",
       bgImage:
         "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",

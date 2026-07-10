@@ -11,9 +11,9 @@ const Accordion = () => {
     () => ({
       training: [
         {
-          title: "What is Yogalayaa's teacher training program?",
+          title: "What is Ombreath's teacher training program?",
           content:
-            "Yogalayaa's teacher training program is a comprehensive course that aims to provide students with the knowledge and skills needed to become a certified yoga instructor.",
+            "Ombreath's teacher training program is a comprehensive course that aims to provide students with the knowledge and skills needed to become a certified yoga instructor.",
         },
         {
           title: "What is the duration of the program?",
@@ -28,7 +28,7 @@ const Accordion = () => {
         {
           title: "What styles of yoga are taught in the program?",
           content:
-            "Yogalayaa's teacher training program covers a variety of yoga styles, including Hatha, Vinyasa, Kundalini, Prenatal, and Ayurveda yoga.",
+            "Ombreath's teacher training program covers a variety of yoga styles, including Hatha, Vinyasa, Kundalini, Prenatal, and Ayurveda yoga.",
         },
         {
           title: "What topics are covered in the program?",
@@ -52,14 +52,14 @@ const Accordion = () => {
         },
         {
           title:
-            "What are the benefits of enrolling in Yogalayaa's teacher training program?",
+            "What are the benefits of enrolling in Ombreath's teacher training program?",
           content:
             "Benefits include gaining a deeper understanding of yoga and its philosophy, improving your own practice, developing teaching skills and techniques, and becoming certified to teach yoga.",
         },
         {
           title: "Are scholarships available for the program?",
           content:
-            "Yes, Yogalayaa offers a scholarship program for eligible students who demonstrate financial need and a commitment to their yoga practice.",
+            "Yes, Ombreath offers a scholarship program for eligible students who demonstrate financial need and a commitment to their yoga practice.",
         },
       ],
       retreats: [
@@ -131,7 +131,7 @@ const Accordion = () => {
             <h1>Frequently Asked Questions</h1>
             <img
               src={lg}
-              alt="Yogalayaa Logo"
+              alt="Ombreath Logo"
               className="logo-img"
               loading="eager"
             />
@@ -178,7 +178,7 @@ const Accordion = () => {
           </h2>
           <p className="section-subtitle">
             {activeCategory === "training"
-              ? "Everything you need to know about Yogalayaa's certification program"
+              ? "Everything you need to know about Ombreath's certification program"
               : "Discover our transformative retreat experiences"}
           </p>
         </div>

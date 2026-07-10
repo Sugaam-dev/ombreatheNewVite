@@ -1,3 +1,5 @@
+import { PROGRAM_PRICES_MYSORE } from "../../programPricesMysore";
+
 export const Mysore50HourAerialYogaData = {
   heroSection: {
     colors: {
@@ -18,7 +20,7 @@ export const Mysore50HourAerialYogaData = {
       highlight: "8 Days 50 Hours",
       subtitle:
         "Discover the joy of weightlessness. Master safe aerial sequencing, high-quality rigging operations, and anatomical suspension adjustments in the heritage heart of Mysuru.",
-      price: "$500",
+      price: PROGRAM_PRICES_MYSORE.shortcourses["aerialyoga"],
       priceNote: "Shared room configuration rate ($300 without accommodation and food options); course runs over 8 days starting every first Saturday of each month",
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
