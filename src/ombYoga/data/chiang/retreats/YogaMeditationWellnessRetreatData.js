@@ -37,7 +37,7 @@ export const YogaMeditationWellnessRetreatData = {
       { img: "/images/cirtificats/yoga.png", label: "Meditation" }
     ],
     content: {
-      bottomText: "World Peace Yoga School, Chiang Mai — where timeless Himalayan wisdom meets Thai nature. A life-changing journey for seekers looking to slow down and come back to the source of life.",
+      bottomText: "Ombreathe, Chiang Mai — where timeless Himalayan wisdom meets Thai nature. A life-changing journey for seekers looking to slow down and come back to the source of life.",
     },
   },
 
@@ -54,7 +54,7 @@ export const YogaMeditationWellnessRetreatData = {
     },
     content: {
       bgImage: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand13.webp",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Why Choose",
       highlight: "Our Retreat?",
       subtitle: "Life becomes beautiful when body, mind and soul exist together in perfect harmony — Ancient Hatha & Ashtanga Yoga, Himalayan mindfulness, wellness therapies and nature immersion.",
@@ -230,7 +230,7 @@ export const YogaMeditationWellnessRetreatData = {
       ],
       cta: {
         title: "Book Your Wellness Retreat in Chiang Mai",
-        desc: "Rebalance your body, awaken your mind and nourish your soul at World Peace Yoga School.",
+        desc: "Rebalance your body, awaken your mind and nourish your soul at Ombreathe.",
         buttonText: "Book Now",
         url: "/contact",
       },
@@ -549,7 +549,7 @@ export const YogaMeditationWellnessRetreatData = {
     content: {
       title: "Wellness Retreat",
       highlight: "FAQ",
-      subtitle: "Find answers to the most common questions about the Yoga, Meditation & Wellness Retreat at World Peace Yoga School in Chiang Mai.",
+      subtitle: "Find answers to the most common questions about the Yoga, Meditation & Wellness Retreat at Ombreathe in Chiang Mai.",
       faqs: [
         { question: "Who can join this retreat?", answer: "All-level yoga practitioners, meditation seekers, stressed or emotionally exhausted people, couples, solo travelers and professionals. No previous experience required — just openness." },
         { question: "What packages are available?", answer: "3-Day (350 USD / THB 11,000), 5-Day (499 USD / THB 16,000), 7-Day (599 USD / THB 20,000) and 10-Day (799 USD / THB 25,000)." },

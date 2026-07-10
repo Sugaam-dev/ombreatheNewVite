@@ -71,7 +71,7 @@ export const MysorePrenatalYogaData = {
       title: "Join our",
       highlight: "blissful prenatal community",
       subtitle:
-        "World Peace Yoga School is a global pioneer in this space. Our intellectually qualified and passionately driven instructors guide you through the spiritual journey of conscious conception and healthy delivery.",
+        "Ombreathe is a global pioneer in this space. Our intellectually qualified and passionately driven instructors guide you through the spiritual journey of conscious conception and healthy delivery.",
       stats: [
         { value: "85 Hours", label: "Specialized RPYT Scope", icon: "clock" },
         { value: "3 Trimesters", label: "Complete Anatomy Map", icon: "sparkles" },
@@ -592,7 +592,7 @@ export const MysorePrenatalYogaData = {
       subtitle:
         "Operated directly inside India's legendary yoga capital where powerful divine currents speed up internal focus patterns.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Mysore, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Mysore, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Mysore&output=embed",
 
@@ -728,7 +728,7 @@ export const MysorePrenatalYogaData = {
             "You will learn how to holistically nurture the most important time for mothers-to-be. The course offers a balanced mix of theory, meditation, and asanas that you will be able to teach confidently to pregnant women, yoga instructors, or anyone who assists pregnant women safely all over the world.",
         },
         {
-          question: "Why should I complete a prenatal course with World Peace Yoga School?",
+          question: "Why should I complete a prenatal course with Ombreathe?",
           answer:
             "Our school is one of the global pioneers of Prenatal YTT, teaching in the true tradition of ancient Yogis long before modern benefits were quantified. Our teachers are experts in their fields, and you can rest assured you will receive outstanding traditional training.",
         },

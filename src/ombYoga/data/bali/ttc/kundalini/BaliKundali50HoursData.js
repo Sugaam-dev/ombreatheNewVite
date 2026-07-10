@@ -67,7 +67,7 @@ export const BaliKundali50HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "kundalini awakening",
       subtitle:
@@ -805,7 +805,7 @@ export const BaliKundali50HoursData = {
       title: "Kundalini",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 50-hour Kundalini yoga teacher training in Bali.",
+        "Find answers to the most common questions about Ombreathe's 50-hour Kundalini yoga teacher training in Bali.",
 
       faqs: [
         {
@@ -838,7 +838,7 @@ export const BaliKundali50HoursData = {
         {
           question: "Will I receive a certificate after completing the course?",
           answer:
-            "Yes — you will receive a World Peace Yoga School 50-Hour Kundalini Course certificate with which you can register under YACEP. Please note this is an introduction course and is not Yoga Alliance certified. To become a certified Kundalini yoga teacher, you would need to extend to the 200-Hour Kundalini YTTC.",
+            "Yes — you will receive a Ombreathe 50-Hour Kundalini Course certificate with which you can register under YACEP. Please note this is an introduction course and is not Yoga Alliance certified. To become a certified Kundalini yoga teacher, you would need to extend to the 200-Hour Kundalini YTTC.",
         },
         {
           question: "Where is the Kundalini Yoga training held in Bali?",

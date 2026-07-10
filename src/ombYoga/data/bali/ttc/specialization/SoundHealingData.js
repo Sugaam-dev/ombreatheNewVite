@@ -67,7 +67,7 @@ export const SoundHealingData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "sound healing journey",
       subtitle:
@@ -805,7 +805,7 @@ export const SoundHealingData = {
       title: "Sound Healing",
       highlight: "Course FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's Sound Healing Level-1 & Level-2 course in Bali.",
+        "Find answers to the most common questions about Ombreathe's Sound Healing Level-1 & Level-2 course in Bali.",
 
       faqs: [
         {
@@ -829,7 +829,7 @@ export const SoundHealingData = {
         {
           question: "Who can enroll in the Sound Healing Level-1 & Level-2 course?",
           answer:
-            "Anyone can enroll who is interested in sound healing, wellness or energy work. No prior experience is required. Participants must be at least 18 years of age. Self-motivation is essential. World Peace Yoga School requires students to stay away from alcohol, non-vegetarian food and tobacco during the course.",
+            "Anyone can enroll who is interested in sound healing, wellness or energy work. No prior experience is required. Participants must be at least 18 years of age. Self-motivation is essential. Ombreathe requires students to stay away from alcohol, non-vegetarian food and tobacco during the course.",
         },
         {
           question: "Do I need any experience before taking this course?",
@@ -862,9 +862,9 @@ export const SoundHealingData = {
             "Go to our website and click on Apply Now to complete the registration form. For all date or rate-related questions, feel free to reach out via our Contact Us section for assistance.",
         },
         {
-          question: "Why choose World Peace Yoga School in Bali for sound healing?",
+          question: "Why choose Ombreathe in Bali for sound healing?",
           answer:
-            "World Peace Yoga School offers authentic Himalayan teachings by experienced and supportive teachers in a peaceful and spiritual Balinese environment. The school combines ancient Tibetan vibrational practices with modern scientific understanding, provides YACEP certification, full-time kitchen staff, beautiful accommodation options and two complimentary weekend excursions.",
+            "Ombreathe offers authentic Himalayan teachings by experienced and supportive teachers in a peaceful and spiritual Balinese environment. The school combines ancient Tibetan vibrational practices with modern scientific understanding, provides YACEP certification, full-time kitchen staff, beautiful accommodation options and two complimentary weekend excursions.",
         },
       ],
     },

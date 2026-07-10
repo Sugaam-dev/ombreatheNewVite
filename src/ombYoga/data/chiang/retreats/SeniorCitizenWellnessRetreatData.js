@@ -56,7 +56,7 @@ export const SeniorCitizenWellnessRetreatData = {
     
     content: {
       bgImage: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand18.webp",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Why Senior Citizens",
       highlight: "Need This Retreat",
       subtitle: "Specialized yoga for seniors, guided meditation, therapeutic massage, Ayurvedic treatments and holistic health programs designed to make aging adults energetic, flexible, mentally tranquil and emotionally robust.",
@@ -546,7 +546,7 @@ export const SeniorCitizenWellnessRetreatData = {
     content: {
       title: "Senior Wellness Retreat",
       highlight: "FAQ",
-      subtitle: "Find answers to the most common questions about the Senior Citizen Health & Wellness Retreat at World Peace Yoga School in Chiang Mai.",
+      subtitle: "Find answers to the most common questions about the Senior Citizen Health & Wellness Retreat at Ombreathe in Chiang Mai.",
       faqs: [
         { question: "Are there any risks for elderly people with health issues at the retreat?", answer: "No. Our team includes doctors and trained therapists to ensure safety and comfort for all participants." },
         { question: "Can seniors with no yoga experience join?", answer: "Yes, our yoga is gentle, chair-based and completely beginner-friendly." },

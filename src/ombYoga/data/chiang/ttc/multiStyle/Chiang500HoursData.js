@@ -67,7 +67,7 @@ export const Chiang500HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "ultimate",
       subtitle:
@@ -732,7 +732,7 @@ export const Chiang500HoursData = {
       title: "Teacher",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 500-hour multi style yoga teacher training in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's 500-hour multi style yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
@@ -796,7 +796,7 @@ export const Chiang500HoursData = {
         {
           question: "How do I apply for the 500-hour program?",
           answer:
-            "You can apply by contacting World Peace Yoga School directly through their website or by phone. You will need to provide your personal details, existing yoga qualifications (RYT-200 certificate), and a statement of interest. A non-refundable deposit is required to confirm your booking.",
+            "You can apply by contacting Ombreathe directly through their website or by phone. You will need to provide your personal details, existing yoga qualifications (RYT-200 certificate), and a statement of interest. A non-refundable deposit is required to confirm your booking.",
         },
       ],
     },

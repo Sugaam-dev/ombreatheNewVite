@@ -66,7 +66,7 @@ price: PROGRAM_PRICES_RISHIKESH.multiStyle["300hr"],
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
- eyebrow: "World Peace Yoga School Experience",
+ eyebrow: "Ombreathe Experience",
 highlight: "advanced",
 title: "Join our",
 subtitle: "Experience authentic yoga in Rishikesh with Himalayan masters, deep Vedic philosophy and Yoga Alliance RYT-300 certification.",
@@ -603,7 +603,7 @@ activeBg: "rgba(138,32,16,0.1)",
       subtitle:
         "Located in Rishikesh — beside the sacred Ganges, beneath the eternal Himalayas — 15+ years of authentic yoga tradition.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -737,7 +737,7 @@ activeBg: "rgba(138,32,16,0.1)",
     content: {
       title: "Teacher",
 highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 300-hour yoga teacher training in Rishikesh.",
+subtitle: "Find answers to the most common questions about Ombreathe's 300-hour yoga teacher training in Rishikesh.",
 
 
 // Replace ALL faqs with these 10:

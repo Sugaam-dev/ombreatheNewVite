@@ -67,7 +67,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School",
+      eyebrow: "Ombreathe",
       title: "Begin your",
       highlight: "holistic clinical journey",
       subtitle:
@@ -595,7 +595,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
       subtitle:
         "Secluded far away from the hustle and bustle of the city, yet connected cleanly to traditional markets for daily necessities.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 
@@ -726,7 +726,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
 
       faqs: [
         {
-          question: "What is included inside the 200 Hour Yoga Therapy & Wellness TTC at World Peace Yoga School?",
+          question: "What is included inside the 200 Hour Yoga Therapy & Wellness TTC at Ombreathe?",
           answer:
             "The 200 Hour Yoga Therapy & Wellness TTC includes a comprehensive curriculum covering Hatha Yoga, Vinyasa Flow, Yoga Therapy, Pranayama (breathing techniques), Meditation, and Ayurveda. You will receive in-depth training in anatomy, alignment, and teaching methodologies, alongside an introduction to wellness practices and holistic healing techniques. The course also includes daily asana practice, mantra chanting, and the philosophy of yoga.",
         },
@@ -736,9 +736,9 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
             "No, the 200 Hour TTC is designed for both beginners and those with some prior yoga experience. The course will take you through the fundamentals and progressively build your knowledge and skills in yoga, meditation, and teaching techniques. You do not need to be an expert in yoga to start the program, just an open mind and a willingness to learn.",
         },
         {
-          question: "What are the qualifications of the instructors at World Peace Yoga School?",
+          question: "What are the qualifications of the instructors at Ombreathe?",
           answer:
-            "All instructors at World Peace Yoga School are highly qualified and experienced in their respective fields. They are certified yoga teachers with years of experience in teaching yoga, therapy, and wellness practices. Many of them hold advanced certifications and have studied yoga in various traditions, ensuring a well-rounded and authentic learning experience.",
+            "All instructors at Ombreathe are highly qualified and experienced in their respective fields. They are certified yoga teachers with years of experience in teaching yoga, therapy, and wellness practices. Many of them hold advanced certifications and have studied yoga in various traditions, ensuring a well-rounded and authentic learning experience.",
         },
         {
           question: "What type of certification will I receive upon completing the 200 Hour Yoga Therapy & Wellness TTC?",
@@ -748,7 +748,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
         {
           question: "What accommodation options are available during the 200 Hour TTC?",
           answer:
-            "World Peace Yoga School offers a variety of accommodation options, including private rooms, shared rooms, and dormitory-style rooms. All accommodations are designed to provide comfort and support your yogic lifestyle. Amenities include daily vegetarian meals, Wi-Fi, and basic essentials, and the rooms are within walking distance of the school.",
+            "Ombreathe offers a variety of accommodation options, including private rooms, shared rooms, and dormitory-style rooms. All accommodations are designed to provide comfort and support your yogic lifestyle. Amenities include daily vegetarian meals, Wi-Fi, and basic essentials, and the rooms are within walking distance of the school.",
         },
         {
           question: "Is food included in the course fees?",
@@ -758,7 +758,7 @@ export const Rishikesh18DaysYogaTherapyWellnessData = {
         {
           question: "How do I register for the 200 Hour Yoga Therapy & Wellness TTC?",
           answer:
-            "To register, visit the World Peace Yoga School website and fill out the application form. Once your application is reviewed and accepted, you will be provided with further instructions for making a deposit to secure your spot. Early registration is recommended, as the courses tend to fill up quickly.",
+            "To register, visit the Ombreathe website and fill out the application form. Once your application is reviewed and accepted, you will be provided with further instructions for making a deposit to secure your spot. Early registration is recommended, as the courses tend to fill up quickly.",
         },
         {
           question: "What specific operational rules manage student behavioral frameworks?",

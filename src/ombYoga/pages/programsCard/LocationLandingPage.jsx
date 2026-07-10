@@ -15,14 +15,15 @@ const LANDING_PAGE_STYLES = `
   .llp-hero {
     position: relative;
     width: 100%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* ✅ Vertically centers children within the 100vh window layout */
+    justify-content: center; /* ✅ Vertically centers children within the 75vh window layout */
   }
 
   .llp-hero__img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
     object-fit: cover;
   }
@@ -137,7 +138,7 @@ const LANDING_PAGE_STYLES = `
   .llp-btn--outline-dark { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.38); }
   .llp-btn--outline-dark:hover { background: rgba(255,255,255,0.08); }
 
-  .llp-intro { padding: 80px 60px; background: #ffffff; }
+  .llp-intro { padding: 50px 60px; background: #ffffff; }
   .llp-intro__inner {
     max-width: 1160px;
     margin: 0 auto;
@@ -185,7 +186,7 @@ const LANDING_PAGE_STYLES = `
   .llp-highlight__label { font-size: 13px; font-weight: 700; color: #1c1c1e; }
   .llp-highlight__desc { font-size: 12px; color: #80808c; line-height: 1.5; }
 
-  .llp-programs { padding: 80px 60px; background: #f5f3ef; }
+  .llp-programs { padding: 55px 60px; background: #f5f3ef; }
   .llp-programs__inner { max-width: 1160px; margin: 0 auto; }
   .llp-programs__header { margin-bottom: 40px; }
   .llp-programs__lead { font-size: 15px; color: #5e5e68; line-height: 1.7; max-width: 520px; margin-top: 8px; }
@@ -380,26 +381,6 @@ const LocationLandingPage = () => {
           </div>
         </section>
 
-        {/* ══ WHY THIS LOCATION ══ */}
-        <section className="llp-intro">
-          <div className="llp-intro__inner">
-            <div>
-              <span className="llp-eyebrow">Why {resolvedLocationName}?</span>
-              <h2 className="llp-section-title">{data.headline}</h2>
-              <p className="llp-intro__desc">{data.description}</p>
-            </div>
-            <div className="llp-intro__highlights">
-              {data.highlights.map((h) => (
-                <div key={h.label} className="llp-highlight">
-                  <span className="llp-highlight__icon">{h.icon}</span>
-                  <span className="llp-highlight__label">{h.label}</span>
-                  <span className="llp-highlight__desc">{h.desc}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ══ PROGRAMS ══ */}
         <section className="llp-programs" ref={programsRef}>
           <div className="llp-programs__inner">
@@ -451,6 +432,26 @@ const LocationLandingPage = () => {
                   No courses currently scheduled for this category in {resolvedLocationName}.
                 </p>
               )}
+            </div>
+          </div>
+        </section>
+
+        {/* ══ WHY THIS LOCATION ══ */}
+        <section className="llp-intro">
+          <div className="llp-intro__inner">
+            <div>
+              <span className="llp-eyebrow">Why {resolvedLocationName}?</span>
+              <h2 className="llp-section-title">{data.headline}</h2>
+              <p className="llp-intro__desc">{data.description}</p>
+            </div>
+            <div className="llp-intro__highlights">
+              {data.highlights.map((h) => (
+                <div key={h.label} className="llp-highlight">
+                  <span className="llp-highlight__icon">{h.icon}</span>
+                  <span className="llp-highlight__label">{h.label}</span>
+                  <span className="llp-highlight__desc">{h.desc}</span>
+                </div>
+              ))}
             </div>
           </div>
         </section>

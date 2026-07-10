@@ -756,7 +756,7 @@ export const Mysore500HoursData = {
         {
           question: "Will I secure an official certified RYT-500 status with Yoga Alliance?",
           answer:
-            "Yes! World Peace Yoga School is an authorized institution. Successfully graduating this 2-month combined program allows you to apply and register your official RYT-500 credentials directly with the international Yoga Alliance directory database.",
+            "Yes! Ombreathe is an authorized institution. Successfully graduating this 2-month combined program allows you to apply and register your official RYT-500 credentials directly with the international Yoga Alliance directory database.",
         },
         {
           question: "What is the importance of Ayurveda as per this master course curriculum?",

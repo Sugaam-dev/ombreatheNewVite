@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+
 
 const OnlineGallerySection = ({ data }) => {
   const { colors, content } = data;
@@ -44,7 +43,7 @@ const OnlineGallerySection = ({ data }) => {
             >
               <img
                 src={img}
-                alt={`World Peace Yoga School student moment ${i + 1}`}
+                alt={`Ombreathe student moment ${i + 1}`}
                 loading="lazy"
                 style={{
                   width: "100%",
@@ -58,24 +57,6 @@ const OnlineGallerySection = ({ data }) => {
               />
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div style={{ textAlign: "center" }}>
-          <Link
-            to={content.galleryUrl}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 8,
-              color: colors.navy,
-              fontWeight: 600,
-              fontSize: "0.95rem",
-              textDecoration: "none",
-            }}
-          >
-            {content.linkText} <ArrowRight size={16} />
-          </Link>
         </div>
       </div>
     </section>

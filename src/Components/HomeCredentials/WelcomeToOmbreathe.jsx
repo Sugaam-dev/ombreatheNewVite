@@ -1,6 +1,6 @@
 import SectionHeading from "../useFullComponent/SectionHeading";
 
-const WelcomeToYogalayaa = () => {
+const WelcomeToOmbreathe = () => {
   return (
     <>
     
@@ -132,4 +132,4 @@ const WelcomeToYogalayaa = () => {
   );
 };
 
-export default WelcomeToYogalayaa;
+export default WelcomeToOmbreathe;

@@ -67,7 +67,7 @@ export const BaliKundali200HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "Kundalini transformation",
       subtitle:
@@ -804,7 +804,7 @@ export const BaliKundali200HoursData = {
       title: "Kundalini",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 200-hour Kundalini yoga teacher training in Bali.",
+        "Find answers to the most common questions about Ombreathe's 200-hour Kundalini yoga teacher training in Bali.",
 
       faqs: [
         {
@@ -815,7 +815,7 @@ export const BaliKundali200HoursData = {
         {
           question: "What are the prerequisites for this training?",
           answer:
-            "Participants should have a regular yoga practice and be in good physical and mental health. Self-motivation is essential. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco, and drugs during the training. Basic English knowledge is required.",
+            "Participants should have a regular yoga practice and be in good physical and mental health. Self-motivation is essential. Ombreathe prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco, and drugs during the training. Basic English knowledge is required.",
         },
         {
           question: "What is the daily schedule for the training?",

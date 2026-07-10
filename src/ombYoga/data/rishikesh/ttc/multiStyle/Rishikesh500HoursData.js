@@ -62,7 +62,7 @@ border: "rgba(255,255,255,0.2)",
 
     content: {
      bgImage: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-eyebrow: "World Peace Yoga School Experience",
+eyebrow: "Ombreathe Experience",
 title: "Join our",
 highlight: "ultimate",
 subtitle: "Two months of complete yoga mastery in Rishikesh — 200hr foundation + 300hr advanced — emerging as a globally certified RYT-500 teacher.",
@@ -73,7 +73,7 @@ stats: [
   { value: "2 Certs", label: "200hr + 300hr", icon: "heart" },
   { value: "121+", label: "Countries Represented", icon: "globe" },
 ],
-bottomText1: "200+300 combined = RYT-500 — consistency and continuity in one two-month journey at World Peace Yoga School Rishikesh.",
+bottomText1: "200+300 combined = RYT-500 — consistency and continuity in one two-month journey at Ombreathe Rishikesh.",
 bottomText2: "Arrive 1st, depart 29th of second month — the ultimate Himalayan yoga immersion with Guru Vishnu.",
     
     },
@@ -504,7 +504,7 @@ border: "rgba(0,0,0,0.05)",
       subtitle:
         "Located in Rishikesh — beside the sacred Ganges, beneath the eternal Himalayas — 15+ years of authentic yoga tradition.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -637,7 +637,7 @@ shadowLg: "0 10px 30px rgba(0,0,0,0.2)",
     content: {
     title: "Teacher",
 highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 500-hour yoga teacher training in Rishikesh.",
+subtitle: "Find answers to the most common questions about Ombreathe's 500-hour yoga teacher training in Rishikesh.",
 faqs: [
   {
     question: "Can you tell me about my room and facilities?",
@@ -677,7 +677,7 @@ faqs: [
   },
   {
     question: "What next after completing the 500-hour YTTC?",
-    answer: "After 500 hours you are eligible to attend our 85-hour Prenatal Yoga TTC, Kids Yoga TTC, Yin Yoga TTC and many other advanced programs. The main benefit is eligibility for Guru Vishnu's Master Trainer Program held every year in September — the pinnacle of yoga mastery at World Peace Yoga School.",
+    answer: "After 500 hours you are eligible to attend our 85-hour Prenatal Yoga TTC, Kids Yoga TTC, Yin Yoga TTC and many other advanced programs. The main benefit is eligibility for Guru Vishnu's Master Trainer Program held every year in September — the pinnacle of yoga mastery at Ombreathe.",
   },
 ],
     },

@@ -67,7 +67,7 @@ export const DharamshalaKundali50HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Lineage",
+      eyebrow: "Ombreathe Lineage",
       title: "Join our",
       highlight: "sacred transmission",
       subtitle:
@@ -674,7 +674,7 @@ export const DharamshalaKundali50HoursData = {
       subtitle:
         "Tucked cleanly into primitive Himalayan forest areas right where powerful divine currents speed up internal focus patterns.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Dharamshala&output=embed",
 

@@ -739,7 +739,7 @@ locationSection: {
             "Smoking, alcohol use, and non-vegetarian foods including eggs are strictly prohibited inside or near our ashram premises. Out of respect for teachers and fellow practitioners, absolute discipline and punctuality must be followed across all sessions.",
         },
         {
-          question: "Why choose this course at World Peace Yoga School in Bali or Mysore?",
+          question: "Why choose this course at Ombreathe in Bali or Mysore?",
           answer:
             "The school offers Himalayan authentic yogic teachings by experienced and supportive teachers in a peaceful and spiritual environment, backed completely by international Yoga Alliance certification channels.",
         },

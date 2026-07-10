@@ -71,7 +71,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
       title: "Join our",
       highlight: "ethnic therapeutic lineage",
       subtitle:
-        "World Peace Yoga School in Chiang Mai delivers pure Ayurvedic treatment disciplines, bringing body, mind, and spirit into total alignment using authentic medicated herbal oils.",
+        "Ombreathe in Chiang Mai delivers pure Ayurvedic treatment disciplines, bringing body, mind, and spirit into total alignment using authentic medicated herbal oils.",
       stats: [
         { value: "12 Days", label: "Complete Training Run", icon: "clock" },
         { value: "Tridosha", label: "Constitutional Blueprint", icon: "sparkles" },
@@ -756,7 +756,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
         {
           question: "Will I receive an official international certificate upon completion?",
           answer:
-            "Yes! World Peace Yoga School is an authorized registration space. Graduating this 12-day therapist track provides you with a formal Yoga Alliance YACEP certificate to verify your expert status globally.",
+            "Yes! Ombreathe is an authorized registration space. Graduating this 12-day therapist track provides you with a formal Yoga Alliance YACEP certificate to verify your expert status globally.",
         },
         {
           question: "Can we use our personal mobile phones on campus?",

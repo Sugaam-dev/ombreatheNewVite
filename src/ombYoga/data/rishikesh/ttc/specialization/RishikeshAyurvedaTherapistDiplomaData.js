@@ -82,7 +82,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
       bottomText1:
         "Our course emphasizes Abhyangam as a core part of Dinacharya because it is fundamentally preventative, progressing fluidly from classical massage mechanics to advanced myofascial release.",
       bottomText2:
-        "Located at World Peace Wellness in a peaceful environment next to the holy Ganges River, our center provides the perfect spot to get away from the busyness of everyday life and heal yourself.",
+        "Located at Ombreathe in a peaceful environment next to the holy Ganges River, our center provides the perfect spot to get away from the busyness of everyday life and heal yourself.",
     },
   },
 
@@ -609,7 +609,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
       subtitle:
         "Operated directly on Badrinath Road nearby the Kriya Yoga Ashram, where natural silence and refreshing mountain air streams support focus.",
       address:
-        "World Peace Wellness, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
+        "Ombreathe, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Wellness+Badrinath+Rd+Rishikesh&output=embed",
 
@@ -763,7 +763,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
         {
           question: "Will I Get Any Certificate After The Ayurveda Massage TTC In Rishikesh?",
           answer:
-            "Most excellent Rishikesh schools award certificates to their graduates. World Peace Wellness offers a Yoga Alliance certificate after you complete the training successfully.",
+            "Most excellent Rishikesh schools award certificates to their graduates. Ombreathe offers a Yoga Alliance certificate after you complete the training successfully.",
         },
         {
           question: "How Much and what is the duration of the ayurveda course?",

@@ -68,7 +68,7 @@ export const Chiang50HourData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "transformative",
       subtitle:
@@ -733,7 +733,7 @@ teacherTrainingFaq: {
     title: "Teacher",
     highlight: "Training FAQ",
     subtitle:
-      "Find answers to the most common questions about Yogalayaa’s yoga teacher training program.",
+      "Find answers to the most common questions about Ombreathe’s yoga teacher training program.",
 
     faqs: [
       {

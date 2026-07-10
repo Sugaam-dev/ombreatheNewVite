@@ -67,11 +67,11 @@ export const RishikeshKundali300HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "transformative advanced lineage",
       subtitle:
-        "World Peace Yoga School offers an Advance 300-hour yoga teacher training in Rishikesh to disciples from all over the world, led by Master teachers and PhD holders.",
+        "Ombreathe offers an Advance 300-hour yoga teacher training in Rishikesh to disciples from all over the world, led by Master teachers and PhD holders.",
       stats: [
         { value: "300+ Hrs", label: "Advanced Training", icon: "clock" },
         { value: "15,000+", label: "Global Graduates", icon: "sparkles" },
@@ -649,7 +649,7 @@ export const RishikeshKundali300HoursData = {
       subtitle:
         "Based along ancient geographic epicenters where powerful divine vibrations and refreshing cold mountain breezes speed up inner clarity.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 
@@ -813,7 +813,7 @@ export const RishikeshKundali300HoursData = {
         {
           question: "What are your structural code rules and restrictions?",
           answer:
-            "World Peace Yoga School strictly bans all meat, fish, egg options, black coffee, smoking, tobacco products, nudity, and alcohol variants inside or near school premises. Punctuality is required; latecomers will be locked out of ongoing practical tracks.",
+            "Ombreathe strictly bans all meat, fish, egg options, black coffee, smoking, tobacco products, nudity, and alcohol variants inside or near school premises. Punctuality is required; latecomers will be locked out of ongoing practical tracks.",
         },
         {
           question: "What is your financial refund and early departure policy?",

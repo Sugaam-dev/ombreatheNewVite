@@ -57,7 +57,7 @@ export const ThreeDayWellnessRetreatData = {
 
     content: {
       bgImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Join our",
       highlight: "wellness retreat",
       subtitle:

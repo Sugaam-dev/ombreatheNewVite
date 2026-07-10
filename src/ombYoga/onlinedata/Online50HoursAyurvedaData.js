@@ -17,7 +17,7 @@ export const Online50HoursAyurvedaData = {
       title: "Online Ayurveda Yoga Teacher Training Course",
       highlight: "50 Hour Online ",
       subtitle:
-        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from World Peace Yoga School",
+        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from Ombreathe",
       price: "125 USD",
       priceNote: "Includes 31 course videos and study materials",
       bgImage:
@@ -65,7 +65,7 @@ export const Online50HoursAyurvedaData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "global online",
       subtitle:
@@ -95,7 +95,7 @@ export const Online50HoursAyurvedaData = {
     content: {
       block1: {
         eyebrow: "Why Choose Us",
-        title: "Why Choose The 50 Hour Online Ayurveda Yoga Teacher Training Course From World Peace Yoga School?",
+        title: "Why Choose The 50 Hour Online Ayurveda Yoga Teacher Training Course From Ombreathe?",
         paragraphs: [
           "If you want to become an Ayurvedic yoga teacher, this comprehensive course lets you take your Ayurveda yoga journey from the comfort of home. Since most courses and training have gone online, we matched up to the current trends and founded this extensive Ayurveda program for you.",
           "We believe education should never stop, and yoga education can be pursued online. Our comprehensive course on Ayurveda yoga consists of live sessions, pre-recorded sessions and PDF notes, and the Yoga Alliance certification adds more weight to your qualification.",
@@ -135,7 +135,7 @@ export const Online50HoursAyurvedaData = {
       block4: {
         title: "What Are Your Career Options After The Online Ayurveda Yoga Teacher Training Course?",
         paragraphs: [
-          "Most students apply this knowledge directly to their yoga practice. Apart from becoming a teacher, you can also open your own wellness studio, sharing Ayurveda teaching methodologies with others in your community and gifting them health. After completing the course at World Peace Yoga School, you'll have the confidence to treat patients with therapies — and you need not be a yoga teacher at all to learn Ayurveda, since it can be studied as a standalone subject.",
+          "Most students apply this knowledge directly to their yoga practice. Apart from becoming a teacher, you can also open your own wellness studio, sharing Ayurveda teaching methodologies with others in your community and gifting them health. After completing the course at Ombreathe, you'll have the confidence to treat patients with therapies — and you need not be a yoga teacher at all to learn Ayurveda, since it can be studied as a standalone subject.",
         ],
         advantagesTitle: "Advantages Of The Yoga Alliance Certification",
         advantages: [
@@ -416,7 +416,7 @@ export const Online50HoursAyurvedaData = {
       cta: {
         title: "Begin Your Ayurveda Journey",
         desc:
-          "Deepen your holistic practice through this 50-hour online Ayurveda yoga teacher training course from World Peace Yoga School.",
+          "Deepen your holistic practice through this 50-hour online Ayurveda yoga teacher training course from Ombreathe.",
         buttonText: "Start Your Journey",
         url: "/contact",
       },
@@ -438,7 +438,7 @@ export const Online50HoursAyurvedaData = {
     content: {
       eyebrow: "Live Class Schedule",
       title: "Daily Live Classes Schedule",
-      highlight: "With World Peace Yoga School",
+      highlight: "With Ombreathe",
       subtitle:
         "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
@@ -474,14 +474,14 @@ export const Online50HoursAyurvedaData = {
     },
 
     content: {
-      eyebrow: "About World Peace Yoga School",
-      title: "Why World Peace Yoga School",
+      eyebrow: "About Ombreathe",
+      title: "Why Ombreathe",
       highlight: "& Eligibility For This Course",
       subtitle:
         "Become part of a community trusted by thousands of students from across the globe.",
 
       whyWpys: {
-        title: "Why World Peace Yoga School",
+        title: "Why Ombreathe",
         items: [
           "One of the most reputed yoga schools in India",
           "10+ years of yoga teacher training experience",
@@ -497,8 +497,8 @@ export const Online50HoursAyurvedaData = {
       benefits: {
         title: "Benefit Of The Course",
         items: [
-          "Volunteering opportunity at World Peace Yoga School",
-          "Become a part of the World Peace Yoga family",
+          "Volunteering opportunity at Ombreathe",
+          "Become a part of the Ombreathe family",
           "Self-control and deep understanding of life",
           "Get motivated to open a yoga centre",
           "10% discount on future courses",
@@ -515,7 +515,7 @@ export const Online50HoursAyurvedaData = {
       },
 
       community: {
-        title: "Be A Part Of World Peace Yoga School",
+        title: "Be A Part Of Ombreathe",
         items: [
           "Helpful and supportive team",
           "Ready to give an enlightening experience",
@@ -539,7 +539,7 @@ export const Online50HoursAyurvedaData = {
 
     content: {
       title: "Memories With Students At",
-      highlight: "World Peace Yoga School Rishikesh",
+      highlight: "Ombreathe Rishikesh",
       subtitle:
         "When calmness in the mind is permanent then absolute equilibrium is realized.",
       images: [
@@ -608,7 +608,7 @@ export const Online50HoursAyurvedaData = {
         {
           era: "Born 1974 — now in Rishikesh",
           name: "Guru Vishnu",
-          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of World Peace Yoga School.",
+          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of Ombreathe.",
         },
       ],
     },
@@ -625,13 +625,13 @@ export const Online50HoursAyurvedaData = {
     },
     content: {
       title: "Instructors Of",
-      highlight: "World Peace Yoga School",
-      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at World Peace Yoga School in Rishikesh.",
+      highlight: "Ombreathe",
+      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at Ombreathe in Rishikesh.",
       massages: [
         {
           id: 1,
           title: "Vishnu Panigrahi",
-          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found World Peace Yoga School.",
+          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found Ombreathe.",
           duration: "Master Of Yoga",
           rating: 4.9,
           reviews: 184,
@@ -698,19 +698,19 @@ export const Online50HoursAyurvedaData = {
     content: {
       title: "Student's Feedback About",
       highlight: "Online YTTC",
-      subtitle: "What our students say about their online yoga teacher training experience with World Peace Yoga School.",
+      subtitle: "What our students say about their online yoga teacher training experience with Ombreathe.",
       rating: "4.9",
-      ratingLabel: "World Peace Yoga School's Rating",
+      ratingLabel: "Ombreathe's Rating",
       testimonials: [
         {
           quote:
-            "Being a student at this school and part of the World Peace Yoga family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
+            "Being a student at this school and part of the Ombreathe family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
           name: "Priscilla Smets",
           location: "Online YTTC Student",
         },
         {
           quote:
-            "World Peace Yoga School has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
+            "Ombreathe has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
           name: "Laura Sanchez",
           location: "Online YTTC Student",
         },
@@ -722,7 +722,7 @@ export const Online50HoursAyurvedaData = {
         },
         {
           quote:
-            "This course at World Peace Yoga School has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
+            "This course at Ombreathe has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
           name: "Anna Vondroušková",
           location: "Online Kundalini YTTC Student",
         },
@@ -751,9 +751,9 @@ export const Online50HoursAyurvedaData = {
       title: "Taught From",
       highlight: "Rishikesh, India",
       subtitle:
-        "Though fully online, this course is taught by instructors based at World Peace Yoga School in Rishikesh — the yoga capital of the world.",
+        "Though fully online, this course is taught by instructors based at Ombreathe in Rishikesh — the yoga capital of the world.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -772,7 +772,7 @@ export const Online50HoursAyurvedaData = {
           icon: "globe",
         },
         {
-          name: "World Peace Yoga School",
+          name: "Ombreathe",
           distance: "Rishikesh",
           desc: "Home of the teachers behind your course and the Himalayan Tradition you're learning.",
           icon: "mountain",
@@ -809,7 +809,7 @@ export const Online50HoursAyurvedaData = {
       title: "50 Hour Ayurveda",
       highlight: "Course FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 50-hour online Ayurveda yoga teacher training course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
+        "Find answers to the most common questions about Ombreathe's 50-hour online Ayurveda yoga teacher training course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
 
       faqs: [
         {

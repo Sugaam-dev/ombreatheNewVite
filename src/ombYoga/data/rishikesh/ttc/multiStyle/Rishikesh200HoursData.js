@@ -65,7 +65,7 @@ price: PROGRAM_PRICES_RISHIKESH.multiStyle["200hr"],
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-  eyebrow: "World Peace Yoga School Experience",
+  eyebrow: "Ombreathe Experience",
 title: "Join our",
 highlight: "transformative",
 subtitle: "Experience authentic yoga in Rishikesh with Himalayan masters, deep Vedic philosophy and Yoga Alliance RYT-200 certification.",
@@ -659,7 +659,7 @@ sage: "#8A5A10",
       subtitle:
         "Located in Rishikesh — beside the sacred Ganges, beneath the eternal Himalayas — 15+ years of authentic yoga tradition.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -792,7 +792,7 @@ sage: "#8A5A10",
     content: {
       title: "Teacher",
 highlight: "Training FAQ",
-subtitle: "Find answers to the most common questions about World Peace Yoga School's 200-hour yoga teacher training in Rishikesh.",
+subtitle: "Find answers to the most common questions about Ombreathe's 200-hour yoga teacher training in Rishikesh.",
 
 // Replace ALL faqs with these 10:
 faqs: [
@@ -826,7 +826,7 @@ faqs: [
   },
   {
     question: "Can I be a certified yoga teacher with 200-hour yoga certification?",
-    answer: "Yes — upon completing the 200-hour course from a Yoga Alliance certified school like World Peace Yoga School, you will be recognized as an internationally certified yoga teacher eligible to register as RYT-200 with Yoga Alliance. This gives you an international identity to teach yoga anywhere in the world.",
+    answer: "Yes — upon completing the 200-hour course from a Yoga Alliance certified school like Ombreathe, you will be recognized as an internationally certified yoga teacher eligible to register as RYT-200 with Yoga Alliance. This gives you an international identity to teach yoga anywhere in the world.",
   },
   {
     question: "What are the benefits of doing 200-hour yoga teacher training?",
@@ -834,7 +834,7 @@ faqs: [
   },
   {
     question: "What next after completing the 200-hour YTTC?",
-    answer: "You can start teaching yoga, take advanced courses like 300-hour YTTC, deepen your practice, attend workshops, or switch styles — for example from multi-style to Kundalini. World Peace Yoga School will always be your second home and you can extend your stay to explore Rishikesh and the Himalayas.",
+    answer: "You can start teaching yoga, take advanced courses like 300-hour YTTC, deepen your practice, attend workshops, or switch styles — for example from multi-style to Kundalini. Ombreathe will always be your second home and you can extend your stay to explore Rishikesh and the Himalayas.",
   },
 ],
     },

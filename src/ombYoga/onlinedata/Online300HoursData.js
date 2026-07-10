@@ -17,7 +17,7 @@ export const Online300HoursData = {
       title: "Yoga Teacher Training Course",
       highlight: "300 Hour Online ",
       subtitle:
-        "Look within and you will find the greatest love — pre-recorded lessons, unlimited daily live classes and unlimited live Q&A from World Peace Yoga School",
+        "Look within and you will find the greatest love — pre-recorded lessons, unlimited daily live classes and unlimited live Q&A from Ombreathe",
       price: "399 USD / 745 USD",
       priceNote: "Includes 178 course videos, study manuals & Yoga Alliance certification",
       bgImage:
@@ -65,7 +65,7 @@ export const Online300HoursData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "global online",
       subtitle:
@@ -95,7 +95,7 @@ export const Online300HoursData = {
     content: {
       block1: {
         eyebrow: "Why Choose Us",
-        title: "Why Choose Online Yoga Teacher Training Course at World Peace Yoga School?",
+        title: "Why Choose Online Yoga Teacher Training Course at Ombreathe?",
         paragraphs: [
           "Do you want to become a yoga teacher, or even deepen your own practice? Then this is the right course for you. Now you can register for our Online 300-Hr Yoga Teacher Training at our esteemed yoga school — from the comfort of your living room, you can be here with us in Rishikesh, India.",
           "The entire world has gone online, and so has yoga. If you want to deepen your yoga practice, it makes sense to go for our 300-hour online yoga course, as you can complete it in your own time. There are multiple benefits associated with it — the pandemic has shown us that life does not have to come to a stop, and we have worked hard to bring the traditional teachings of yoga right to your doorstep.",
@@ -139,7 +139,7 @@ export const Online300HoursData = {
         title: "How Can You Advance Your Career After the Online 300 Hours Yoga TTC?",
         paragraphs: [
           "Only after you complete the 200-hr online Yoga TTC can you start the Online 300 Hours Yoga TTC — these are baby steps that help you get a grasp of the subject. There is a lot of difference between when you just learn as a practitioner and when you learn the teaching pedagogy, so you need the best teaching to stand out from the crowd. An intensive 300-hr course will give you the exposure you need to further progress on the path of yoga, learning Yoga Anatomy, Philosophy, Physiology, Meditation, Mantras, Satkarma, Pranayama, Mudras and more. The 300 Hours Online Yoga Teacher Training can give a huge boost to your yoga career.",
-          "At World Peace Yoga School, you can now join our sessions and gain an edge over others in the market for top-class teachings. We have pre-recorded modules for you to work through at your own pace, live weekly sessions for asana and philosophy Q&A, opening and closing ceremonies, and in-depth teachings of the Himalayan Tradition — feel the beauty of Rishikesh in your home, guided by highly qualified teachers with expertise in their subject matter. If you have completed 200 hours elsewhere, by taking this 300-hour course you will be 500-hour TTC qualified.",
+          "At Ombreathe, you can now join our sessions and gain an edge over others in the market for top-class teachings. We have pre-recorded modules for you to work through at your own pace, live weekly sessions for asana and philosophy Q&A, opening and closing ceremonies, and in-depth teachings of the Himalayan Tradition — feel the beauty of Rishikesh in your home, guided by highly qualified teachers with expertise in their subject matter. If you have completed 200 hours elsewhere, by taking this 300-hour course you will be 500-hour TTC qualified.",
         ],
         advantagesTitle: "Advantages Of Yoga Alliance Certified Courses",
         advantages: [
@@ -534,7 +534,7 @@ export const Online300HoursData = {
       cta: {
         title: "Begin Your Online Yoga Journey",
         desc:
-          "Transform your body, mind and life through this 300-hour online yoga teacher training course from World Peace Yoga School.",
+          "Transform your body, mind and life through this 300-hour online yoga teacher training course from Ombreathe.",
         buttonText: "Start Your Journey",
         url: "/contact",
       },
@@ -556,7 +556,7 @@ export const Online300HoursData = {
     content: {
       eyebrow: "Live Class Schedule",
       title: "Daily Live Classes Schedule",
-      highlight: "With World Peace Yoga School",
+      highlight: "With Ombreathe",
       subtitle:
         "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
@@ -592,14 +592,14 @@ export const Online300HoursData = {
     },
 
     content: {
-      eyebrow: "About World Peace Yoga School",
-      title: "Why World Peace Yoga School",
+      eyebrow: "About Ombreathe",
+      title: "Why Ombreathe",
       highlight: "& Eligibility For This Course",
       subtitle:
         "Become part of a community trusted by thousands of students from across the globe.",
 
       whyWpys: {
-        title: "Why World Peace Yoga School",
+        title: "Why Ombreathe",
         items: [
           "One of the most reputed yoga schools in India",
           "10+ years of yoga teacher training experience",
@@ -615,8 +615,8 @@ export const Online300HoursData = {
       benefits: {
         title: "Benefit Of The Course",
         items: [
-          "Volunteering opportunity at World Peace Yoga School",
-          "Become a part of the World Peace Yoga family",
+          "Volunteering opportunity at Ombreathe",
+          "Become a part of the Ombreathe family",
           "Self-control and deep understanding of life",
           "Get motivated to open a yoga centre",
           "15% discount on future courses",
@@ -634,7 +634,7 @@ export const Online300HoursData = {
       },
 
       community: {
-        title: "Be A Part Of World Peace Yoga School",
+        title: "Be A Part Of Ombreathe",
         items: [
           "Helpful and supportive team",
           "Ready to give an enlightening experience",
@@ -658,7 +658,7 @@ export const Online300HoursData = {
 
     content: {
       title: "Memories With Students At",
-      highlight: "World Peace Yoga School Rishikesh",
+      highlight: "Ombreathe Rishikesh",
       subtitle:
         "When calmness in the mind is permanent then absolute equilibrium is realized.",
       images: [
@@ -732,7 +732,7 @@ export const Online300HoursData = {
         {
           era: "Born 1974 — now in Rishikesh",
           name: "Guru Vishnu",
-          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of World Peace Yoga School.",
+          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of Ombreathe.",
         },
       ],
     },
@@ -749,13 +749,13 @@ export const Online300HoursData = {
     },
     content: {
       title: "Instructors Of",
-      highlight: "World Peace Yoga School",
-      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at World Peace Yoga School in Rishikesh.",
+      highlight: "Ombreathe",
+      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at Ombreathe in Rishikesh.",
       massages: [
         {
           id: 1,
           title: "Vishnu Panigrahi",
-          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found World Peace Yoga School.",
+          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found Ombreathe.",
           duration: "Master Of Yoga",
           rating: 4.9,
           reviews: 184,
@@ -822,19 +822,19 @@ export const Online300HoursData = {
     content: {
       title: "Student's Feedback About",
       highlight: "Online YTTC",
-      subtitle: "What our students say about their online yoga teacher training experience with World Peace Yoga School.",
+      subtitle: "What our students say about their online yoga teacher training experience with Ombreathe.",
       rating: "4.9",
-      ratingLabel: "World Peace Yoga School's Rating",
+      ratingLabel: "Ombreathe's Rating",
       testimonials: [
         {
           quote:
-            "Being a student at this school and part of the World Peace Yoga family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
+            "Being a student at this school and part of the Ombreathe family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
           name: "Priscilla Smets",
           location: "Online YTTC Student",
         },
         {
           quote:
-            "World Peace Yoga School has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
+            "Ombreathe has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
           name: "Laura Sanchez",
           location: "Online YTTC Student",
         },
@@ -846,7 +846,7 @@ export const Online300HoursData = {
         },
         {
           quote:
-            "This course at World Peace Yoga School has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
+            "This course at Ombreathe has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
           name: "Anna Vondroušková",
           location: "Online Kundalini YTTC Student",
         },
@@ -875,9 +875,9 @@ export const Online300HoursData = {
       title: "Taught From",
       highlight: "Rishikesh, India",
       subtitle:
-        "Though fully online, this course is taught live by instructors based at World Peace Yoga School in Rishikesh — the yoga capital of the world.",
+        "Though fully online, this course is taught live by instructors based at Ombreathe in Rishikesh — the yoga capital of the world.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -896,7 +896,7 @@ export const Online300HoursData = {
           icon: "globe",
         },
         {
-          name: "World Peace Yoga School",
+          name: "Ombreathe",
           distance: "Rishikesh",
           desc: "Home of the teachers behind your live classes and the Himalayan Tradition you're learning.",
           icon: "mountain",
@@ -933,7 +933,7 @@ export const Online300HoursData = {
       title: "300 Hour Online Teacher",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 300-hour online yoga teacher training course.",
+        "Find answers to the most common questions about Ombreathe's 300-hour online yoga teacher training course.",
 
       faqs: [
         {
@@ -974,7 +974,7 @@ export const Online300HoursData = {
         {
           question: "What are the supported payment methods?",
           answer:
-            "Please contact World Peace Yoga School directly for the most current list of supported payment methods for course enrollment.",
+            "Please contact Ombreathe directly for the most current list of supported payment methods for course enrollment.",
         },
       ],
     },

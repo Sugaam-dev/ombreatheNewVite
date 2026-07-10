@@ -13,7 +13,7 @@ export const CAROUSEL_LOCATION_DATA = {
     description: "Mysuru is the spiritual cradle of yoga as we know it. Train in the city where Krishnamacharya and Pattabhi Jois shaped the world's yoga practice — a city of sandalwood, silk, and timeless wisdom.",
     heroImage: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1600&q=90",
     accentColor: "#c8813a",
-    totalProgramsCount: 5
+    totalProgramsCount: 13
   },
   Bali: {
     tagline: "Island of the Gods",
@@ -41,7 +41,7 @@ export const CAROUSEL_LOCATION_DATA = {
     description: "High in the Dhauladhar ranges, Dharamshala carries a rare spiritual electricity — home to the Tibetan government-in-exile and the Dalai Lama. Yoga here feels less like exercise and more like remembering.",
     heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600&q=90",
     accentColor: "#7b5ea7",
-    totalProgramsCount: 10
+    totalProgramsCount: 11
   }
 };
 

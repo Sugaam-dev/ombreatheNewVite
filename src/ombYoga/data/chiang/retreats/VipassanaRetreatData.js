@@ -55,7 +55,7 @@ export const VipassanaRetreatData = {
     },
     content: {
       bgImage: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Join our",
       highlight: "silent retreat",
       subtitle: "A contemporary, holistic approach to meditation that combines Neo Vipassana, Traditional Vipassana and Himalayan Vipassana on a hilltop in Chiang Mai.",
@@ -519,7 +519,7 @@ export const VipassanaRetreatData = {
     content: {
       title: "Vipassana Retreat",
       highlight: "FAQ",
-      subtitle: "Find answers to the most common questions about the New-Age Vipassana Retreat at World Peace Yoga School in Chiang Mai.",
+      subtitle: "Find answers to the most common questions about the New-Age Vipassana Retreat at Ombreathe in Chiang Mai.",
       faqs: [
         { question: "What is the New-Age Vipassana Retreat in Chiang Mai?", answer: "A contemporary, holistic meditation retreat combining Neo Vipassana Meditation, Traditional Vipassana (Buddhist Technique) and Himalayan Vipassana (Ancient Yogic Method), supported by daily yoga and pranayama, high on a hilltop in Chiang Mai." },
         { question: "Who is eligible to participate in this retreat?", answer: "This retreat is open to everyone — travelers, beginners and seasoned meditators alike. No prior meditation experience is required." },

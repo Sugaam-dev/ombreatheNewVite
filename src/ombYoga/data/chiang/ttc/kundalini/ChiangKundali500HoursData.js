@@ -67,7 +67,7 @@ export const ChiangKundali500HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "ultimate Kundalini",
       subtitle:
@@ -207,7 +207,7 @@ export const ChiangKundali500HoursData = {
         },
         {
           title: "Kundalini Tantra Traditions",
-          desc: "World Peace Yoga School follows both Kundalini Yoga and Kundalini Tantra traditions authentically",
+          desc: "Ombreathe follows both Kundalini Yoga and Kundalini Tantra traditions authentically",
           icon: "shield",
         },
         {
@@ -804,7 +804,7 @@ export const ChiangKundali500HoursData = {
       title: "Kundalini",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 500-hour Kundalini yoga teacher training in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's 500-hour Kundalini yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
@@ -815,7 +815,7 @@ export const ChiangKundali500HoursData = {
         {
           question: "What are the prerequisites for this training?",
           answer:
-            "The 500-hour course is structured for passionate yogis who want to deepen their Kundalini knowledge. The course consists of two modules — a 200-hour foundation and a 300-hour advanced course. While anyone can enroll, having a regular yoga practice and being in good physical and mental health is recommended. World Peace Yoga School prohibits consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco, and drugs during training.",
+            "The 500-hour course is structured for passionate yogis who want to deepen their Kundalini knowledge. The course consists of two modules — a 200-hour foundation and a 300-hour advanced course. While anyone can enroll, having a regular yoga practice and being in good physical and mental health is recommended. Ombreathe prohibits consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco, and drugs during training.",
         },
         {
           question: "What is the daily schedule for the training?",

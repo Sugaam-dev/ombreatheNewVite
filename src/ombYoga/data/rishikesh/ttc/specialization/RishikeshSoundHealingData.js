@@ -71,7 +71,7 @@ export const RishikeshSoundHealingData = {
       title: "Join our",
       highlight: "harmonic healing circle",
       subtitle:
-        "Located at World Peace Wellness in the serene foothills of the Himalayas, our space provides a distraction-free natural environment to step away from everyday busyness and fast-track cellular restoration.",
+        "Located at Ombreathe in the serene foothills of the Himalayas, our space provides a distraction-free natural environment to step away from everyday busyness and fast-track cellular restoration.",
       stats: [
         { value: "5 Levels", label: "Complete Modular System", icon: "clock" },
         { value: "7 Chakras", label: "Acoustic Tuning Focus", icon: "sparkles" },
@@ -598,7 +598,7 @@ export const RishikeshSoundHealingData = {
       subtitle:
         "Operated directly on Badrinath Road near by the Kriya Yoga Ashram, where natural silence and tropical air patterns support muscle decompression.",
       address:
-        "World Peace Wellness, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
+        "Ombreathe, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Wellness+Badrinath+Rd+Rishikesh&output=embed",
 
@@ -747,7 +747,7 @@ export const RishikeshSoundHealingData = {
         {
           question: "Will I be able to obtain a formal completion certification?",
           answer:
-            "Yes! Upon successful completion of your course at World Peace Wellness, you will be eligible to receive an official completion certificate. Please note that passing the structural examination block is necessary to acquire the certificate.",
+            "Yes! Upon successful completion of your course at Ombreathe, you will be eligible to receive an official completion certificate. Please note that passing the structural examination block is necessary to acquire the certificate.",
         },
         {
           question: "Is it necessary for me to bring my own specialized instruments?",

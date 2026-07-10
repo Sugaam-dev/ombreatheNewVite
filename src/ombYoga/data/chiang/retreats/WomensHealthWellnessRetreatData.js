@@ -54,7 +54,7 @@ export const WomensHealthWellnessRetreatData = {
     },
     content: {
       bgImage: "https://worldpeaceyogaschool.com/images/thailand/wpys-courses-in-thailand23.webp",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "A Retreat",
       highlight: "Made for Women",
       subtitle: "A deeply effective, nourishing and transformational women's wellness retreat — emotional healing, stress-release, inner peace, rediscovery of the true self and reconnection.",
@@ -384,7 +384,7 @@ export const WomensHealthWellnessRetreatData = {
     content: {
       title: "Your",
       highlight: "Women's Retreat Stay",
-      subtitle: "Comfortable, serene accommodation at World Peace Yoga School, Chiang Mai — designed for rest, healing and restoration.",
+      subtitle: "Comfortable, serene accommodation at Ombreathe, Chiang Mai — designed for rest, healing and restoration.",
       rooms: [
         {
           type: "3-Day Package",
@@ -543,7 +543,7 @@ export const WomensHealthWellnessRetreatData = {
     content: {
       title: "Women's Wellness Retreat",
       highlight: "FAQ",
-      subtitle: "Find answers to the most common questions about the Women's Health & Wellness Retreat at World Peace Yoga School in Chiang Mai.",
+      subtitle: "Find answers to the most common questions about the Women's Health & Wellness Retreat at Ombreathe in Chiang Mai.",
       faqs: [
         { question: "May beginners join this retreat?", answer: "Yes, the retreat is suitable for those who have never practiced yoga. No prior experience is needed." },
         { question: "Is it safe for a solo female traveler?", answer: "Yes! Chiang Mai is one of the safest and most positive cities for solo women travellers." },

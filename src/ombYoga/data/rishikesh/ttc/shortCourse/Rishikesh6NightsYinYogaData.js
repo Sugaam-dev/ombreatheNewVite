@@ -71,7 +71,7 @@ export const Rishikesh6NightsYinYogaData = {
       title: "Join our",
       highlight: "rejuvenating path of stillness",
       subtitle:
-        "At World Peace Yoga School, you get the chance to enjoy a life-changing experience of learning Yin Yoga from the birthplace of spirituality, guided under Master teachers and PhD holders.",
+        "At Ombreathe, you get the chance to enjoy a life-changing experience of learning Yin Yoga from the birthplace of spirituality, guided under Master teachers and PhD holders.",
       stats: [
         { value: "7 Days", label: "Intensive Passive Training", icon: "clock" },
         { value: "Meridians", label: "Energy Channel Core", icon: "sparkles" },
@@ -573,7 +573,7 @@ export const Rishikesh6NightsYinYogaData = {
       subtitle:
         "Operated directly inside India's legendary yoga capital where powerful divine currents speed up internal focus patterns.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 
@@ -741,7 +741,7 @@ export const Rishikesh6NightsYinYogaData = {
         {
           question: "Will I secure an official certified status with Yoga Alliance?",
           answer:
-            "Yes! World Peace Yoga School is an authorized RYS hub. Successfully graduating this 6-night course enables you to register your official YACEP continuous education credentials directly with the global Yoga Alliance directory.",
+            "Yes! Ombreathe is an authorized RYS hub. Successfully graduating this 6-night course enables you to register your official YACEP continuous education credentials directly with the global Yoga Alliance directory.",
         },
         {
           question: "What happens if I need to leave the course a few days early?",

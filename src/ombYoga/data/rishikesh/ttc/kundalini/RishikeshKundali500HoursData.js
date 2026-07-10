@@ -67,7 +67,7 @@ export const RishikeshKundali500HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "complete two-month immersion",
       subtitle:
@@ -649,7 +649,7 @@ export const RishikeshKundali500HoursData = {
       subtitle:
         "Submerge into authentic culture inside an environment that lets you sit and perform yoga on white-sand riverbanks.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 

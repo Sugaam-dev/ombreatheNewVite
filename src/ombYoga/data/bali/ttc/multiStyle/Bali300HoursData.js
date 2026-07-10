@@ -67,7 +67,7 @@ export const Bali300HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "advanced",
       subtitle:
@@ -805,7 +805,7 @@ export const Bali300HoursData = {
       title: "Teacher",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 300-hour advanced yoga teacher training in Bali.",
+        "Find answers to the most common questions about Ombreathe's 300-hour advanced yoga teacher training in Bali.",
 
       faqs: [
         {

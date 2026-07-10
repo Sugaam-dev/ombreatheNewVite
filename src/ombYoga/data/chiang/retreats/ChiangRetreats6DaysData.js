@@ -65,7 +65,7 @@ export const ChiangRetreats6DaysData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Join our",
       highlight: "healing retreat",
       subtitle:
@@ -802,7 +802,7 @@ export const ChiangRetreats6DaysData = {
       title: "Wellness Retreat",
       highlight: "FAQ",
       subtitle:
-        "Find answers to the most common questions about the 6-Day Yoga & Wellness Detox Retreat at World Peace Yoga School in Chiang Mai.",
+        "Find answers to the most common questions about the 6-Day Yoga & Wellness Detox Retreat at Ombreathe in Chiang Mai.",
 
       faqs: [
         {

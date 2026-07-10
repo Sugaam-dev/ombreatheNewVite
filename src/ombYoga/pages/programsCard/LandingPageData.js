@@ -303,11 +303,12 @@ export const LANDING_LOCATION_DATA = {
       "multi-style": [
         // { path: "50hr", hours: "50", title: "6 Days 50 Hours Primary Series Foundations", price: "$450", duration: "6 days", badge: "Intense Shala Setup", certification: "YACEP" },
         // { path: "100hr", hours: "100", title: "10 Days 100 Hours Classical Ashtanga Course", price: "$850", duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
-        { path: "200hr", hours: "200", title: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["200hr"], duration: "20 days", badge: "Authentic Shala", certification: "RYT-200" },
+        { path: "200hr", hours: "200", title: "200 Hours Ashtanga Yoga and Hatha Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["200hrAshtanga"], duration: "20 days", badge: "Authentic Shala", certification: "RYT-200" },
+        { path: "200hrmultistyle", hours: "200", title: "200 hrs Multi Style Yoga TTC In Maysuru", price: PROGRAM_PRICES_MYSORE.multiStyle["200hrMultistyle"], duration: "20 days", badge: "Multi Style", certification: "RYT-200" },
         { path: "300hr", hours: "300", title: "300 Hour Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["300hr"], duration: "26 days", badge: "Intense Practice", certification: "RYT-300" },
         { path: "500hr", hours: "500", title: "500 Hour Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["500hr"], duration: "56 days", badge: "Ultimate Shala Mastery", certification: "RYT-500" },
-        { path: "mysore21dayashtanga", hours: "N/A", title: "21-Day Ashtanga Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["mysore21dayashtanga"], duration: "21 days", badge: "Lineage Focused", certification: "RYT-200" },
-        { path: "mysore21dayhatha", hours: "N/A", title: "21-Day Hatha Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["mysore21dayhatha"], duration: "21 days", badge: "Classic Foundations", certification: "RYT-200" }
+        { path: "mysore21dayashtanga", hours: "N/A", title: "21-Day Ashtanga Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["21DayAshtanga"], duration: "21 days", badge: "Lineage Focused", certification: "RYT-200" },
+        { path: "mysore21dayhatha", hours: "N/A", title: "21-Day Hatha Yoga Teacher Training Course", price: PROGRAM_PRICES_MYSORE.multiStyle["21DayHatha"], duration: "21 days", badge: "Classic Foundations", certification: "RYT-200" }
       ],
       "kundalini": [],
       "short": [
@@ -502,7 +503,7 @@ export const LANDING_LOCATION_DATA = {
         { path: "yinyoga", hours: "50", title: "6 Days 50 Hours Dhauladhar Yin Path", price: PROGRAM_PRICES_DHARAMSHALA.shortcourses.yinyoga, duration: "6 days", badge: "Alpine Vibe", certification: "Yoga Alliance" }
       ],
       "specialization": [
-        { path: "soundhealing", hours: "50", title: "Tibetan Singing Bowl Certification", price: PROGRAM_PRICES_DHARAMSHALA.specializations.soundhealing, duration: "4 days", badge: "Monk Guided Sessions", certification: "YACEP" }
+        { path: "soundhealing", hours: "50", title: "Tibetan Singing Bowl Certification", price: PROGRAM_PRICES_DHARAMSHALA.specializations["TibetanBowlSoundHealingData"], duration: "4 days", badge: "Monk Guided Sessions", certification: "YACEP" }
       ]
     }
   }

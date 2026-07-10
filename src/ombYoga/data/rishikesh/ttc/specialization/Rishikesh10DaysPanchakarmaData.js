@@ -82,7 +82,7 @@ export const Rishikesh10DaysPanchakarmaData = {
       bottomText1:
         "Our specialized program meticulously pairs custom clinical therapies with organized academic lectures, empowering yoga teachers, therapists, and practitioners to understand natural self-healing mechanics.",
       bottomText2:
-        "World Peace Yoga School combines ancient text parameters with modern science, utilizing a serene ashram setting bordered cleanly by the Himalayan hills to keep your cognitive tracks grounded.",
+        "Ombreathe combines ancient text parameters with modern science, utilizing a serene ashram setting bordered cleanly by the Himalayan hills to keep your cognitive tracks grounded.",
     },
   },
 
@@ -513,7 +513,7 @@ export const Rishikesh10DaysPanchakarmaData = {
       title: "Cozy Pleasant",
       highlight: "Ashram Room Options",
       subtitle:
-        "World Peace Wellness center spaces provide ultimate rest and comfort to look after personal recovery boundaries.",
+        "Ombreathe spaces provide ultimate rest and comfort to look after personal recovery boundaries.",
 
       rooms: [
         {
@@ -583,7 +583,7 @@ export const Rishikesh10DaysPanchakarmaData = {
       subtitle:
         "Based along ancient geographic epicenters where powerful divine currents and refreshing cold breezes speed up inner clarity indices.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 

@@ -17,7 +17,7 @@ export const Online50HoursPranayamaData = {
       title: "Online Pranayama Course",
       highlight: "50 Hour Online ",
       subtitle:
-        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from World Peace Yoga School",
+        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from Ombreathe",
       price: "69 USD",
       priceNote: "Includes 46 course videos and study materials",
       bgImage:
@@ -65,7 +65,7 @@ export const Online50HoursPranayamaData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "global online",
       subtitle:
@@ -95,7 +95,7 @@ export const Online50HoursPranayamaData = {
     content: {
       block1: {
         eyebrow: "Why Choose Us",
-        title: "Why Choose The 50 Hr Online Pranayama Course From World Peace Yoga School?",
+        title: "Why Choose The 50 Hr Online Pranayama Course From Ombreathe?",
         paragraphs: [
           "If you want to become a Pranayama instructor or trainer, this powerful breathwork course gives you the knowledge you need from the comfort of home. Many practitioners deepen their Hatha Yoga practice specifically through pranayama, and an online format lets you practice, learn and fit it into your everyday life.",
           "We believe everybody has the right to keep learning, no matter the circumstances. You can pursue this breathwork course alongside the comprehensive Classical Hatha Yoga curriculum, with live sessions, pre-recorded sessions and PDF notes all included.",
@@ -135,7 +135,7 @@ export const Online50HoursPranayamaData = {
       block4: {
         title: "What Are Your Career Options After The 50 Hr Online Pranayama Course?",
         paragraphs: [
-          "You can teach Pranayama alongside your regular yoga classes after completing this course. Most students take it together with the 200-Hour Yoga TTC or higher, since the 200-hour certification is the basic requirement to teach yoga worldwide. After finishing the course at World Peace Yoga School, you'll have the confidence to share this knowledge with others — and even start your own yoga venture.",
+          "You can teach Pranayama alongside your regular yoga classes after completing this course. Most students take it together with the 200-Hour Yoga TTC or higher, since the 200-hour certification is the basic requirement to teach yoga worldwide. After finishing the course at Ombreathe, you'll have the confidence to share this knowledge with others — and even start your own yoga venture.",
         ],
         advantagesTitle: "Advantages Of The Yoga Alliance Certification",
         advantages: [
@@ -389,7 +389,7 @@ export const Online50HoursPranayamaData = {
       cta: {
         title: "Begin Your Pranayama Journey",
         desc:
-          "Deepen your breathwork practice through this 50-hour online Pranayama course from World Peace Yoga School.",
+          "Deepen your breathwork practice through this 50-hour online Pranayama course from Ombreathe.",
         buttonText: "Start Your Journey",
         url: "/contact",
       },
@@ -411,7 +411,7 @@ export const Online50HoursPranayamaData = {
     content: {
       eyebrow: "Live Class Schedule",
       title: "Daily Live Classes Schedule",
-      highlight: "With World Peace Yoga School",
+      highlight: "With Ombreathe",
       subtitle:
         "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
@@ -447,14 +447,14 @@ export const Online50HoursPranayamaData = {
     },
 
     content: {
-      eyebrow: "About World Peace Yoga School",
-      title: "Why World Peace Yoga School",
+      eyebrow: "About Ombreathe",
+      title: "Why Ombreathe",
       highlight: "& Eligibility For This Course",
       subtitle:
         "Become part of a community trusted by thousands of students from across the globe.",
 
       whyWpys: {
-        title: "Why World Peace Yoga School",
+        title: "Why Ombreathe",
         items: [
           "One of the most reputed yoga schools in India",
           "10+ years of yoga teacher training experience",
@@ -469,8 +469,8 @@ export const Online50HoursPranayamaData = {
       benefits: {
         title: "Benefit Of The Course",
         items: [
-          "Volunteering opportunity at World Peace Yoga School",
-          "Become a part of the World Peace Yoga family",
+          "Volunteering opportunity at Ombreathe",
+          "Become a part of the Ombreathe family",
           "Self-control and deep understanding of life",
           "Get motivated to open a yoga centre",
           "10% discount on future courses",
@@ -487,7 +487,7 @@ export const Online50HoursPranayamaData = {
       },
 
       community: {
-        title: "Be A Part Of World Peace Yoga School",
+        title: "Be A Part Of Ombreathe",
         items: [
           "Helpful and supportive team",
           "Ready to give an enlightening experience",
@@ -511,7 +511,7 @@ export const Online50HoursPranayamaData = {
 
     content: {
       title: "Memories With Students At",
-      highlight: "World Peace Yoga School Rishikesh",
+      highlight: "Ombreathe Rishikesh",
       subtitle:
         "When calmness in the mind is permanent then absolute equilibrium is realized.",
       images: [
@@ -580,7 +580,7 @@ export const Online50HoursPranayamaData = {
         {
           era: "Born 1974 — now in Rishikesh",
           name: "Guru Vishnu",
-          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of World Peace Yoga School.",
+          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of Ombreathe.",
         },
       ],
     },
@@ -597,13 +597,13 @@ export const Online50HoursPranayamaData = {
     },
     content: {
       title: "Instructors Of",
-      highlight: "World Peace Yoga School",
-      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at World Peace Yoga School in Rishikesh.",
+      highlight: "Ombreathe",
+      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at Ombreathe in Rishikesh.",
       massages: [
         {
           id: 1,
           title: "Vishnu Panigrahi",
-          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found World Peace Yoga School.",
+          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found Ombreathe.",
           duration: "Master Of Yoga",
           rating: 4.9,
           reviews: 184,
@@ -670,19 +670,19 @@ export const Online50HoursPranayamaData = {
     content: {
       title: "Student's Feedback About",
       highlight: "Online YTTC",
-      subtitle: "What our students say about their online yoga teacher training experience with World Peace Yoga School.",
+      subtitle: "What our students say about their online yoga teacher training experience with Ombreathe.",
       rating: "4.9",
-      ratingLabel: "World Peace Yoga School's Rating",
+      ratingLabel: "Ombreathe's Rating",
       testimonials: [
         {
           quote:
-            "Being a student at this school and part of the World Peace Yoga family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
+            "Being a student at this school and part of the Ombreathe family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
           name: "Priscilla Smets",
           location: "Online YTTC Student",
         },
         {
           quote:
-            "World Peace Yoga School has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
+            "Ombreathe has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
           name: "Laura Sanchez",
           location: "Online YTTC Student",
         },
@@ -694,7 +694,7 @@ export const Online50HoursPranayamaData = {
         },
         {
           quote:
-            "This course at World Peace Yoga School has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
+            "This course at Ombreathe has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
           name: "Anna Vondroušková",
           location: "Online Kundalini YTTC Student",
         },
@@ -723,9 +723,9 @@ export const Online50HoursPranayamaData = {
       title: "Taught From",
       highlight: "Rishikesh, India",
       subtitle:
-        "Though fully online, this course is taught by instructors based at World Peace Yoga School in Rishikesh — the yoga capital of the world.",
+        "Though fully online, this course is taught by instructors based at Ombreathe in Rishikesh — the yoga capital of the world.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -744,7 +744,7 @@ export const Online50HoursPranayamaData = {
           icon: "globe",
         },
         {
-          name: "World Peace Yoga School",
+          name: "Ombreathe",
           distance: "Rishikesh",
           desc: "Home of the teachers behind your course and the Himalayan Tradition you're learning.",
           icon: "mountain",
@@ -781,7 +781,7 @@ export const Online50HoursPranayamaData = {
       title: "50 Hour Pranayama",
       highlight: "Course FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 50-hour online Pranayama course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
+        "Find answers to the most common questions about Ombreathe's 50-hour online Pranayama course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
 
       faqs: [
         {

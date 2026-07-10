@@ -4,7 +4,7 @@ import React, { lazy } from "react";
 // ABOVE THE FOLD (NORMAL IMPORTS)
 // ==========================================
 import ImageSliderBanner from "./Banner/ImageSliderBanner ";
-import WelcomeToYogalayaa from "./HomeCredentials/WelcomeToYogalayaa";
+import WelcomeToOmbreathe from "./HomeCredentials/WelcomeToOmbreathe";
 import Yogaschool from "./Yogaschool";
 import WhyChoose from "./HomeCredentials/WhyChoose";
 
@@ -54,7 +54,7 @@ const Home = () => {
 
       <TrustBanner />
 
-      <WelcomeToYogalayaa />
+      <WelcomeToOmbreathe />
 
       <Yogaschool />
 

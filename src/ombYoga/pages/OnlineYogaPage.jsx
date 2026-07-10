@@ -62,10 +62,6 @@ const OnlineTestimonialsSection = lazy(() =>
   import("../onlinesections/OnlineTestimonialsSection")
 );
 
-const OnlineLocationSection = lazy(() =>
-  import("../onlinesections/OnlineLocationSection")
-);
-
 const Questions = lazy(() =>
   import("./questions/Questions")
 );
@@ -220,14 +216,6 @@ const OnlineYogaPage = () => {
           <LazySection>
             <OnlineTestimonialsSection
               data={data.testimonialsSection}
-            />
-          </LazySection>
-        )}
-
-        {data.locationSection && (
-          <LazySection>
-            <OnlineLocationSection
-              data={data.locationSection}
             />
           </LazySection>
         )}

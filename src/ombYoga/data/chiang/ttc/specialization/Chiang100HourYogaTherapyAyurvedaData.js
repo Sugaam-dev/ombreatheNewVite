@@ -67,7 +67,7 @@ export const Chiang100HourYogaTherapyAyurvedaData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "World Peace Yoga Therapy School",
+      eyebrow: "Ombreathe Therapy School",
       title: "Join our",
       highlight: "healing force in the world",
       subtitle:
@@ -763,7 +763,7 @@ export const Chiang100HourYogaTherapyAyurvedaData = {
         {
           question: "Where exactly is the training campus held in Chiang Mai?",
           answer:
-            "The course takes place at our spacious World Peace Yoga School Chiang Mai campus located on Jalan Bisma in Ubud, surrounded by green fields, natural silence, and high spiritual energy fields.",
+            "The course takes place at our spacious Ombreathe Chiang Mai campus located on Jalan Bisma in Ubud, surrounded by green fields, natural silence, and high spiritual energy fields.",
         },
         {
           question: "What fields are included within the base course fee?",

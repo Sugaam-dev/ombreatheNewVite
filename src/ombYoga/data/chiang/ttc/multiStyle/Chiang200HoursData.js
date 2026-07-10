@@ -67,7 +67,7 @@ export const Chiang200HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "transformative",
       subtitle:
@@ -732,7 +732,7 @@ export const Chiang200HoursData = {
       title: "Teacher",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 200-hour yoga teacher training program in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's 200-hour yoga teacher training program in Chiang Mai.",
 
       faqs: [
         {
@@ -763,7 +763,7 @@ export const Chiang200HoursData = {
         {
           question: "What is the meaning of 200-hour RYT?",
           answer:
-            "RYT-200 means the school is registered within the requirements of Yoga Alliance USA — a professional body. You will be able to teach yoga through this accreditation in yoga studios, gyms, and retreats across the world. The traditional teachings at World Peace Yoga School are fully accredited.",
+            "RYT-200 means the school is registered within the requirements of Yoga Alliance USA — a professional body. You will be able to teach yoga through this accreditation in yoga studios, gyms, and retreats across the world. The traditional teachings at Ombreathe are fully accredited.",
         },
         {
           question: "What makes yoga in Chiang Mai stand apart from the West?",

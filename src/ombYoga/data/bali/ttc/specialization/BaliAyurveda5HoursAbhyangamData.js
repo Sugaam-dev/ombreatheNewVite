@@ -725,7 +725,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
         {
           question: "Will I secure an official recognized certificate upon completion?",
           answer:
-            "Yes! World Peace Yoga School is a certified training space. Successfully mastering your practical movements provides you with a formal Yoga Alliance YACEP certificate.",
+            "Yes! Ombreathe is a certified training space. Successfully mastering your practical movements provides you with a formal Yoga Alliance YACEP certificate.",
         },
         {
           question: "Can we use our personal mobile phones on campus?",

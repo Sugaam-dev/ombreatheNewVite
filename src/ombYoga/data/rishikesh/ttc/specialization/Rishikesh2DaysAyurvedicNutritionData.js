@@ -126,7 +126,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
         {
           icon: "compass",
           title: "Himalayan Forest Environments",
-          sub: "World Peace Yoga School grounds border natural wilderness lines, allowing deep calm meditation tracking",
+          sub: "Ombreathe grounds border natural wilderness lines, allowing deep calm meditation tracking",
         },
       ],
       images: {
@@ -374,7 +374,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
       title: "Explore the Sacred",
       highlight: "Environment of Rishikesh",
       subtitle:
-        "Our World Peace Wellness center campus features pristine facilities built to support deep mental restoration.",
+        "Our Ombreathe campus features pristine facilities built to support deep mental restoration.",
 
       excursions: [
         {
@@ -571,7 +571,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
       subtitle:
         "Operated directly inside India's legendary yoga capital where powerful divine currents speed up internal focus patterns.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 
@@ -724,7 +724,7 @@ export const Rishikesh2DaysAyurvedicNutritionData = {
         {
           question: "Will I secure an official formal certificate after completion?",
           answer:
-            "Yes! World Peace Yoga School is a Yoga Alliance certified institution. Successfully completing all instructional hours provides you with an authorized completion certificate.",
+            "Yes! Ombreathe is a Yoga Alliance certified institution. Successfully completing all instructional hours provides you with an authorized completion certificate.",
         },
         {
           question: "Can we use our personal mobile phones on campus?",

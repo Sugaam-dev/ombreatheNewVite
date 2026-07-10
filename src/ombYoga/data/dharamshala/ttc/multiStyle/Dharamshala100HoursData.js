@@ -67,7 +67,7 @@ export const Dharamshala100HoursData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "transformative",
       subtitle:
@@ -670,7 +670,7 @@ export const Dharamshala100HoursData = {
       subtitle:
         "Located in Dharamshala — beside the sacred Ganges, beneath the eternal Himalayas — 15+ years of authentic yoga tradition.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Dharamshala&output=embed",
@@ -732,7 +732,7 @@ export const Dharamshala100HoursData = {
       title: "Teacher",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 100-hour yoga teacher training in Dharamshala.",
+        "Find answers to the most common questions about Ombreathe's 100-hour yoga teacher training in Dharamshala.",
 
       faqs: [
         {
@@ -778,7 +778,7 @@ export const Dharamshala100HoursData = {
         {
           question: "Is the 100-hour course Yoga Alliance certified?",
           answer:
-            "The 100-hour course is a basic foundation yoga course — students study alongside 200-hour YTTC students for the first half. After completing 100 hours, you are eligible to attend the second 100 hours at any World Peace Yoga School within one year, which will then qualify you for the full 200-hour Yoga Alliance RYT-200 certification.",
+            "The 100-hour course is a basic foundation yoga course — students study alongside 200-hour YTTC students for the first half. After completing 100 hours, you are eligible to attend the second 100 hours at any Ombreathe within one year, which will then qualify you for the full 200-hour Yoga Alliance RYT-200 certification.",
         },
         {
           question: "What do I wear during classes?",

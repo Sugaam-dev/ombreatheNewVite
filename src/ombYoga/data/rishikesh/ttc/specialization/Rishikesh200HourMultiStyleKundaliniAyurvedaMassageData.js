@@ -584,7 +584,7 @@ export const Rishikesh200HourMultiStyleKundaliniAyurvedaMassageData = {
       subtitle:
         "Based along ancient geographic epicenters where powerful divine currents and refreshing cold breezes speed up inner clarity indices.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 

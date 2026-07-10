@@ -67,7 +67,7 @@ export const ChiangAcroYogaData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "Acro Yoga adventure",
       subtitle:
@@ -804,7 +804,7 @@ export const ChiangAcroYogaData = {
       title: "Acro Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's Acro Yoga teacher training in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's Acro Yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
@@ -815,7 +815,7 @@ export const ChiangAcroYogaData = {
         {
           question: "Who is eligible for Acro Yoga teacher training in Chiang Mai?",
           answer:
-            "The course is suitable for yoga enthusiasts, teachers and instructors with a basic Acro Yoga practice. A genuine interest in partner yoga and self-motivation are the key requirements. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
+            "The course is suitable for yoga enthusiasts, teachers and instructors with a basic Acro Yoga practice. A genuine interest in partner yoga and self-motivation are the key requirements. Ombreathe prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
         },
         {
           question: "Do I need any experience before taking this course?",
@@ -853,9 +853,9 @@ export const ChiangAcroYogaData = {
             "Visit our website and click the Apply Now button to complete the registration form. For specific questions about dates or rates, you may also contact us through our Contact Us section for instant assistance.",
         },
         {
-          question: "Why choose World Peace Yoga School in Chiang Mai for Acro Yoga?",
+          question: "Why choose Ombreathe in Chiang Mai for Acro Yoga?",
           answer:
-            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides YACEP certification, small class sizes for personalized attention, rigorous safety emphasis, a comprehensive curriculum and a stunning Chiang Mai location that enhances learning and community building.",
+            "Ombreathe offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides YACEP certification, small class sizes for personalized attention, rigorous safety emphasis, a comprehensive curriculum and a stunning Chiang Mai location that enhances learning and community building.",
         },
       ],
     },

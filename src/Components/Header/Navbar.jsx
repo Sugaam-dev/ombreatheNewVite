@@ -9,6 +9,7 @@ import {
   buildPath,
 } from "../../ombYoga/data/locations";
 import { OnlineDataMap } from "../../ombYoga/data/OnlineDataMap";
+import { ONLINE_LINKS } from "../../ombYoga/data/onlineLocations";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TTC sub-category section definitions (static — no data here)
@@ -378,40 +379,24 @@ const Navbar = () => {
                         {/* Online */}
                         <div className="col-lg-4 mega-column">
                           <h6 className="column-title">ONLINE COURSES</h6>
-                          {/* {[
-                            { to: "/online/live", label: "Live Sessions" },
-                            {
-                              to: "/online/recorded",
-                              label: "Recorded Classes",
-                            },
-                            {
-                              to: "/online/workshops",
-                              label: "Special Workshops",
-                            },
-                          ].map(({ to, label }) => (
-                            <Link
-                              key={to}
-                              to={to}
-                              className={
-                                isSubActive(to) ? "sub-link-active" : ""
-                              }
-                              onClick={() => handleLinkClick("programs")}
-                            >
-                              {label}
-                            </Link>
-                          ))} */}
-                          {Object.keys(OnlineDataMap).map((slug) => (
-                            <Link
-                              key={slug}
-                              to={`/online/${slug}`}
-                              className={
-                                isSubActive(`/online/${slug}`) ? "sub-link-active" : ""
-                              }
-                              onClick={() => handleLinkClick("programs")}
-                            >
-                              {OnlineDataMap[slug].title || slug}
-                            </Link>
-                          ))}
+                          {[
+                            ...ONLINE_LINKS.ttc,
+                            ...ONLINE_LINKS.short
+                          ].map(({ path, label }) => {
+                            const fullPath = `/online/${path}`;
+                            return (
+                              <Link
+                                key={path}
+                                to={fullPath}
+                                className={
+                                  isSubActive(fullPath) ? "sub-link-active" : ""
+                                }
+                                onClick={() => handleLinkClick("programs")}
+                              >
+                                {label}
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                       </div>
@@ -662,14 +647,13 @@ const Navbar = () => {
                     <div className={`animated-collapse-grid ${activeMobileCategory === "ONLINE" ? "grid-open" : ""}`}>
                       <div className="collapse-inner-content drawer-loc-body">
                         {[
-                          { to: "/online/live", label: "Live Sessions" },
-                          { to: "/online/recorded", label: "Recorded Classes" },
-                          { to: "/online/workshops", label: "Special Workshops" },
-                        ].map(({ to, label }) => (
+                          ...ONLINE_LINKS.ttc,
+                          ...ONLINE_LINKS.short
+                        ].map(({ path, label }) => (
                           <Link
-                            key={to}
-                            to={to}
-                            className={isSubActive(to) ? "m-sub-active-text" : ""}
+                            key={path}
+                            to={`/online/${path}`}
+                            className={isSubActive(`/online/${path}`) ? "m-sub-active-text" : ""}
                             onClick={() => handleLinkClick("programs")}
                           >
                             {label}

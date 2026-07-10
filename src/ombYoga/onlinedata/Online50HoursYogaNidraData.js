@@ -17,7 +17,7 @@ export const Online50HoursYogaNidraData = {
       title: "Online Yoga Nidra Teacher Training Course",
       highlight: "50 Hour Online ",
       subtitle:
-        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from World Peace Yoga School",
+        "Look within and you will find the greatest love — live sessions, pre-recorded sessions and PDF notes from Ombreathe",
       price: "80 USD",
       priceNote: "Includes 14 course videos and study materials",
       bgImage:
@@ -65,7 +65,7 @@ export const Online50HoursYogaNidraData = {
     content: {
       bgImage:
         "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "global online",
       subtitle:
@@ -95,7 +95,7 @@ export const Online50HoursYogaNidraData = {
     content: {
       block1: {
         eyebrow: "Why Choose Us",
-        title: "Why Choose The 50 Hour Online Yoga Nidra Teacher Training Course From World Peace Yoga School?",
+        title: "Why Choose The 50 Hour Online Yoga Nidra Teacher Training Course From Ombreathe?",
         paragraphs: [
           "The 50 Hour Online Yoga Nidra TTC is one of the best introductory-level Yoga Nidra courses today. If you want to become a proficient Yoga Nidra practitioner and teacher, this popular course gives you the knowledge you need from the comfort of home, with a robust infrastructure of live classes and recorded sessions to deepen your practice.",
           "Our Yoga Nidra online teacher training course includes live classes, pre-recorded videos and written notes in PDF as well. If you want to get the Yoga Alliance certificate, you ought to be admitted to an accredited school like ours, and we will only provide your certificate after you've taken the examination.",
@@ -104,7 +104,7 @@ export const Online50HoursYogaNidraData = {
       block2: {
         title: "Online 50 Hour Yoga Nidra TTC & Certification",
         paragraphs: [
-          "The Online Yoga Nidra course is one of the most relaxing courses at World Peace Yoga School. Here you stand to learn about the various types of Yoga Nidra, their benefits and their connection to neuroscience. Our learned experts have more than 20 years of experience and will take you through the journey with multiple styles, asanas for Yoga Nidra, breathing techniques and fundamental principles. The course, although just 50 hours, has a syllabus that makes your foundation in Yoga Nidra strong.",
+          "The Online Yoga Nidra course is one of the most relaxing courses at Ombreathe. Here you stand to learn about the various types of Yoga Nidra, their benefits and their connection to neuroscience. Our learned experts have more than 20 years of experience and will take you through the journey with multiple styles, asanas for Yoga Nidra, breathing techniques and fundamental principles. The course, although just 50 hours, has a syllabus that makes your foundation in Yoga Nidra strong.",
           "In this course, you'll learn how to practice Yoga Nidra in a proper manner, understand the science that drives it, and learn the subtle differences between Yoga Nidra and hypnotism. You'll also learn how to conduct single and group classes, with 6 months of access to the course content to set up your practice.",
         ],
         includesTitle: "Course Includes",
@@ -395,7 +395,7 @@ export const Online50HoursYogaNidraData = {
       cta: {
         title: "Begin Your Yoga Nidra Journey",
         desc:
-          "Deepen your restorative practice through this 50-hour online Yoga Nidra teacher training course from World Peace Yoga School.",
+          "Deepen your restorative practice through this 50-hour online Yoga Nidra teacher training course from Ombreathe.",
         buttonText: "Start Your Journey",
         url: "/contact",
       },
@@ -417,7 +417,7 @@ export const Online50HoursYogaNidraData = {
     content: {
       eyebrow: "Live Class Schedule",
       title: "Daily Live Classes Schedule",
-      highlight: "With World Peace Yoga School",
+      highlight: "With Ombreathe",
       subtitle:
         "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
@@ -453,14 +453,14 @@ export const Online50HoursYogaNidraData = {
     },
 
     content: {
-      eyebrow: "About World Peace Yoga School",
-      title: "Why World Peace Yoga School",
+      eyebrow: "About Ombreathe",
+      title: "Why Ombreathe",
       highlight: "& Eligibility For This Course",
       subtitle:
         "Become part of a community trusted by thousands of students from across the globe.",
 
       whyWpys: {
-        title: "Why World Peace Yoga School",
+        title: "Why Ombreathe",
         items: [
           "One of the most reputed yoga schools in India",
           "10+ years of yoga teacher training experience",
@@ -476,10 +476,10 @@ export const Online50HoursYogaNidraData = {
       benefits: {
         title: "Benefit Of The Course",
         items: [
-          "3 days / 2 nights free stay at World Peace Yoga School Rishikesh",
-          "Volunteering opportunity at World Peace Yoga School",
+          "3 days / 2 nights free stay at Ombreathe Rishikesh",
+          "Volunteering opportunity at Ombreathe",
           "Eligible to join our other yoga teacher training courses",
-          "Become a part of the World Peace Yoga family",
+          "Become a part of the Ombreathe family",
           "Self-control and deep understanding of life",
           "Get motivated to open a yoga centre",
           "10% discount on future courses",
@@ -496,7 +496,7 @@ export const Online50HoursYogaNidraData = {
       },
 
       community: {
-        title: "Be A Part Of World Peace Yoga School",
+        title: "Be A Part Of Ombreathe",
         items: [
           "Helpful and supportive team",
           "Ready to give an enlightening experience",
@@ -520,7 +520,7 @@ export const Online50HoursYogaNidraData = {
 
     content: {
       title: "Memories With Students At",
-      highlight: "World Peace Yoga School Rishikesh",
+      highlight: "Ombreathe Rishikesh",
       subtitle:
         "When calmness in the mind is permanent then absolute equilibrium is realized.",
       images: [
@@ -589,7 +589,7 @@ export const Online50HoursYogaNidraData = {
         {
           era: "Born 1974 — now in Rishikesh",
           name: "Guru Vishnu",
-          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of World Peace Yoga School.",
+          desc: "Leading master of yoga and meditation in the ancient Himalayan tradition. Disciple of Swami Veda Bharati and founder of Ombreathe.",
         },
       ],
     },
@@ -606,13 +606,13 @@ export const Online50HoursYogaNidraData = {
     },
     content: {
       title: "Instructors Of",
-      highlight: "World Peace Yoga School",
-      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at World Peace Yoga School in Rishikesh.",
+      highlight: "Ombreathe",
+      subtitle: "Learn from experienced Himalayan-tradition teachers led by Yogi Vishnu, based at Ombreathe in Rishikesh.",
       massages: [
         {
           id: 1,
           title: "Vishnu Panigrahi",
-          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found World Peace Yoga School.",
+          tagline: "Master of Yoga — steeped in spiritual endeavors since childhood, Vishnu read 18,000 verses of the Srimad Bhagavatam and trained in Kathak before settling in Rishikesh to found Ombreathe.",
           duration: "Master Of Yoga",
           rating: 4.9,
           reviews: 184,
@@ -679,19 +679,19 @@ export const Online50HoursYogaNidraData = {
     content: {
       title: "Student's Feedback About",
       highlight: "Online YTTC",
-      subtitle: "What our students say about their online yoga teacher training experience with World Peace Yoga School.",
+      subtitle: "What our students say about their online yoga teacher training experience with Ombreathe.",
       rating: "4.9",
-      ratingLabel: "World Peace Yoga School's Rating",
+      ratingLabel: "Ombreathe's Rating",
       testimonials: [
         {
           quote:
-            "Being a student at this school and part of the World Peace Yoga family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
+            "Being a student at this school and part of the Ombreathe family is such a blessing — this course will definitely change your life. It feels like a transformation and a beginning of so much more. The school is very professional and helpful, and the teachers are amazing. Guru Vishnu has personal time for all students.",
           name: "Priscilla Smets",
           location: "Online YTTC Student",
         },
         {
           quote:
-            "World Peace Yoga School has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
+            "Ombreathe has great teachers, full of knowledge and joy! I had a great experience doing the online multi-style course — it filled my expectations. The course is well structured and most of the videos were excellent quality.",
           name: "Laura Sanchez",
           location: "Online YTTC Student",
         },
@@ -703,7 +703,7 @@ export const Online50HoursYogaNidraData = {
         },
         {
           quote:
-            "This course at World Peace Yoga School has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
+            "This course at Ombreathe has a thousand times fulfilled my expectations. The teachers and everyone at the school are very open and helpful, and the material is very well prepared. The course is accompanied by many live and online resources.",
           name: "Anna Vondroušková",
           location: "Online Kundalini YTTC Student",
         },
@@ -732,9 +732,9 @@ export const Online50HoursYogaNidraData = {
       title: "Taught From",
       highlight: "Rishikesh, India",
       subtitle:
-        "Though fully online, this course is taught by instructors based at World Peace Yoga School in Rishikesh — the yoga capital of the world.",
+        "Though fully online, this course is taught by instructors based at Ombreathe in Rishikesh — the yoga capital of the world.",
 
-      address: "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
+      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
@@ -753,7 +753,7 @@ export const Online50HoursYogaNidraData = {
           icon: "globe",
         },
         {
-          name: "World Peace Yoga School",
+          name: "Ombreathe",
           distance: "Rishikesh",
           desc: "Home of the teachers behind your course and the Himalayan Tradition you're learning.",
           icon: "mountain",
@@ -790,7 +790,7 @@ export const Online50HoursYogaNidraData = {
       title: "50 Hour Yoga Nidra",
       highlight: "Course FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 50-hour online Yoga Nidra teacher training course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
+        "Find answers to the most common questions about Ombreathe's 50-hour online Yoga Nidra teacher training course. This course page doesn't list a separate FAQ block, so these answers are drawn directly from the course details above.",
 
       faqs: [
         {

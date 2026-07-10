@@ -67,7 +67,7 @@ export const ChiangAerialYogaData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "aerial yoga adventure",
       subtitle:
@@ -803,7 +803,7 @@ MassageSection: {
       title: "Aerial Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's aerial yoga teacher training in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's aerial yoga teacher training in Chiang Mai.",
 
       faqs: [
         {
@@ -814,7 +814,7 @@ MassageSection: {
         {
           question: "Who is eligible for aerial yoga teacher training in Chiang Mai?",
           answer:
-            "The course is suitable for yoga enthusiasts, teachers and instructors who have a basic aerial yoga practice. A genuine interest in aerial yoga and self-motivation are the key requirements. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
+            "The course is suitable for yoga enthusiasts, teachers and instructors who have a basic aerial yoga practice. A genuine interest in aerial yoga and self-motivation are the key requirements. Ombreathe prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during training.",
         },
         {
           question: "Do I need any experience before taking this course?",
@@ -852,9 +852,9 @@ MassageSection: {
             "Visit our website and click the Apply Now button to complete the registration form. For specific questions about dates or rates, you may also contact us through our Contact Us section for instant assistance.",
         },
         {
-          question: "Why choose World Peace Yoga School in Chiang Mai for aerial yoga?",
+          question: "Why choose Ombreathe in Chiang Mai for aerial yoga?",
           answer:
-            "World Peace Yoga School offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides Yoga Alliance certification, small class sizes for personalized attention, a comprehensive curriculum, and a stunning Chiang Mai location that enhances your learning and self-discovery experience.",
+            "Ombreathe offers authentic Himalayan yogic teachings by experienced and supportive teachers in a peaceful and spiritual Chiang Mainese environment. The school provides Yoga Alliance certification, small class sizes for personalized attention, a comprehensive curriculum, and a stunning Chiang Mai location that enhances your learning and self-discovery experience.",
         },
       ],
     },

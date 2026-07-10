@@ -68,7 +68,7 @@ export const RishikeshKundali200HoursData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Core Lineage",
+      eyebrow: "Ombreathe Core Lineage",
       title: "Join our",
       highlight: "passionate energy community",
       subtitle:
@@ -630,7 +630,7 @@ export const RishikeshKundali200HoursData = {
       subtitle:
         "Located in Northern India tucked into the Himalayas, where cool mountain breezes clear down toxic thoughts.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 
@@ -778,7 +778,7 @@ export const RishikeshKundali200HoursData = {
         {
           question: "Is this 200-Hour Kundalini course eligible for RYT-200 status?",
           answer:
-            "Yes, World Peace Yoga School is a globally recognized institution. Graduating this 200-Hour Kundalini track allows you to register your official RYT-200 credentials directly with the international Yoga Alliance directory.",
+            "Yes, Ombreathe is a globally recognized institution. Graduating this 200-Hour Kundalini track allows you to register your official RYT-200 credentials directly with the international Yoga Alliance directory.",
         },
         {
           question: "Who is the primary eligibility profile for this training?",

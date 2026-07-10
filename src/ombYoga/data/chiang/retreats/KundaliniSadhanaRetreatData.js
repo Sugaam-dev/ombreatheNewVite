@@ -54,7 +54,7 @@ export const KundaliniSadhanaRetreatData = {
     },
     content: {
       bgImage: "https://worldpeaceyogaschool.com/images/thailand/kundalini-sadhana-retreat-thailand-display3.webp",
-      eyebrow: "World Peace Yoga School Retreat",
+      eyebrow: "Ombreathe Retreat",
       title: "Why",
       highlight: "Kundalini Sadhana?",
       subtitle: "Kundalini is the latent divine energy kept at the base of your spine. When awakened through proper guidance, it brings emotional healing, inner strength and natural bliss.",
@@ -384,7 +384,7 @@ export const KundaliniSadhanaRetreatData = {
     content: {
       title: "Your",
       highlight: "Kundalini Retreat Stay",
-      subtitle: "Comfortable, peaceful and nature-friendly accommodation at World Peace Yoga School, Chiang Mai.",
+      subtitle: "Comfortable, peaceful and nature-friendly accommodation at Ombreathe, Chiang Mai.",
       rooms: [
         {
           type: "Sharing Room",
@@ -514,7 +514,7 @@ export const KundaliniSadhanaRetreatData = {
     content: {
       title: "Kundalini Sadhana",
       highlight: "FAQ",
-      subtitle: "Find answers to the most common questions about the Kundalini Sadhana Retreat at World Peace Yoga School in Chiang Mai.",
+      subtitle: "Find answers to the most common questions about the Kundalini Sadhana Retreat at Ombreathe in Chiang Mai.",
       faqs: [
         { question: "Is this retreat safe for beginners?", answer: "Yes, all practices are guided gently and safely under trained teachers." },
         { question: "Do I need to be flexible or experienced?", answer: "No, anyone can join. No prior yoga or meditation experience is necessary." },

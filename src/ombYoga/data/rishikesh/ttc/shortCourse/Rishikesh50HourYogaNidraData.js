@@ -71,7 +71,7 @@ export const Rishikesh50HourYogaNidraData = {
       title: "Join our",
       highlight: "authentic healing space",
       subtitle:
-        "World Peace Yoga School brings together ancient yogic scriptural roots and modern clinical research, producing true instructors and healers who return yoga to its original purpose.",
+        "Ombreathe brings together ancient yogic scriptural roots and modern clinical research, producing true instructors and healers who return yoga to its original purpose.",
       stats: [
         { value: "50 Hours", label: "Theoretical-Practical Scope", icon: "clock" },
         { value: "Theta Labs", label: "Brainwave Healing Focus", icon: "sparkles" },
@@ -512,7 +512,7 @@ export const Rishikesh50HourYogaNidraData = {
       title: "Cozy Pleasant",
       highlight: "Ashram Room Options",
       subtitle:
-        "World Peace Yoga School grounds feature complete modern utilities surrounded cleanly by natural wilderness lines.",
+        "Ombreathe grounds feature complete modern utilities surrounded cleanly by natural wilderness lines.",
 
       rooms: [
         {
@@ -582,7 +582,7 @@ export const Rishikesh50HourYogaNidraData = {
       subtitle:
         "Based along ancient geographic epicenters where powerful divine currents and refreshing cold breezes speed up inner clarity indices.",
       address:
-        "World Peace Yoga School, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
+        "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302, India",
       mapEmbed:
         "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
 

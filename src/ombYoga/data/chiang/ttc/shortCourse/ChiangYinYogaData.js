@@ -67,7 +67,7 @@ export const ChiangYinYogaData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "Yin Yoga awakening",
       subtitle:
@@ -804,7 +804,7 @@ export const ChiangYinYogaData = {
       title: "Yin Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's Yin Yoga Teacher Training in Chiang Mai.",
+        "Find answers to the most common questions about Ombreathe's Yin Yoga Teacher Training in Chiang Mai.",
 
       faqs: [
         {
@@ -820,12 +820,12 @@ export const ChiangYinYogaData = {
         {
           question: "What are the prerequisites for the Yin Yoga Teacher Training course?",
           answer:
-            "The prerequisites include a regular yoga practice, an open mind and a willingness to learn. No prior teaching experience is required. Self-motivation is essential. World Peace Yoga School prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during the training.",
+            "The prerequisites include a regular yoga practice, an open mind and a willingness to learn. No prior teaching experience is required. Self-motivation is essential. Ombreathe prohibits the consumption of meat, fish, eggs, black tea, coffee, alcohol, tobacco and drugs during the training.",
         },
         {
           question: "Is the Yin Yoga TTC Yoga Alliance certified?",
           answer:
-            "Yes — World Peace Yoga School is Yoga Alliance certified. Upon completion of the course you will be eligible to register with Yoga Alliance as a Registered Yoga Teacher (RYT). This internationally recognized certification allows you to teach Yin Yoga anywhere in the world.",
+            "Yes — Ombreathe is Yoga Alliance certified. Upon completion of the course you will be eligible to register with Yoga Alliance as a Registered Yoga Teacher (RYT). This internationally recognized certification allows you to teach Yin Yoga anywhere in the world.",
         },
         {
           question: "What topics are covered in the Yin Yoga Teacher Training course?",

@@ -67,7 +67,7 @@ export const PrenatalYogaData = {
     content: {
       bgImage:
         "https://images.unsplash.com/photo-1518611012118-f2fbdc7a1c1b?w=1600&q=80",
-      eyebrow: "World Peace Yoga School Experience",
+      eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "prenatal yoga journey",
       subtitle:
@@ -805,7 +805,7 @@ export const PrenatalYogaData = {
       title: "Prenatal Yoga",
       highlight: "Training FAQ",
       subtitle:
-        "Find answers to the most common questions about World Peace Yoga School's 85-hour prenatal yoga teacher training in Bali.",
+        "Find answers to the most common questions about Ombreathe's 85-hour prenatal yoga teacher training in Bali.",
 
       faqs: [
         {
