@@ -106,12 +106,12 @@ const OptimizedImage = memo(({ imageKey, alt, style, title, className }) => {
 const SocialLinks = memo(() => {
   const socialData = useMemo(() => [
     {
-      href: "https://www.facebook.com/profile.php?id=100090950655442",
+      href: "https://www.facebook.com/share/1BSKH3sBkD/",
       icon: FaFacebookF,
       label: "Facebook"
     },
     {
-      href: "https://instagram.com/Ombreath",
+      href: "https://www.instagram.com/ombreathein?igsh=MW9kOWVhbDFoeGZnaQ%3D%3D",
       icon: FaInstagram,
       label: "Instagram"
     },
