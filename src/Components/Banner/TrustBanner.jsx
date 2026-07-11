@@ -93,7 +93,7 @@ const TrustBanner = () => {
       position: relative;
       overflow: hidden;
       width: 100%;
-      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-trust);
     }
 
     .trust-banner-wrapper::before {
@@ -157,7 +157,7 @@ const TrustBanner = () => {
     }
 
     .section-title {
-      font-size: 11px;
+      font-size: var(--trust-label-size);
       font-weight: 700;
       color: #8c8073;
       text-transform: uppercase;
@@ -202,7 +202,7 @@ const TrustBanner = () => {
     }
 
     .stat-number {
-      font-size: 42px;
+      font-size: var(--trust-number-size);
       font-weight: 800;
       color: #2a2421;
       margin: 0;
@@ -213,7 +213,7 @@ const TrustBanner = () => {
     }
 
     .stat-plus {
-      font-size: 24px;
+      font-size: var(--trust-plus-size);
       font-weight: 700;
       color: #c99a4e;
       margin-left: 3px;

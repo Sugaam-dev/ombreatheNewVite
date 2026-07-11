@@ -28,10 +28,10 @@
 
 .bali-experience-title {
   color: #2c3e95;
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: var(--section-title-size);
+  font-weight: 300;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   position: relative;
   z-index: 1;
 }
@@ -50,7 +50,7 @@
 
 .bali-experience-subtitle {
   color: #6c757d;
-  font-size: 1.25rem;
+  font-size: var(--section-subtitle-size);
   font-weight: 400;
   margin: 0;
   opacity: 0.9;
@@ -77,16 +77,16 @@
 
 .bali-experience-content-title {
   color: #2c3e95;
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: var(--card-title-size);
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
 }
 
 .bali-experience-description {
   color: #495057;
-  font-size: 1.125rem;
+  font-size: var(--body-text-size);
   line-height: 1.7;
   margin: 0;
 }
@@ -313,8 +313,8 @@
 .bali-location-highlight {
   color: #2c3e95;
   font-size: 2rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-family: var(--font-heading);
 }
 
 .bali-location-rating {

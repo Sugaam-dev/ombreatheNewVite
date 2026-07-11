@@ -4,7 +4,7 @@
 .mp-container {
   --primary-color: #2E3A87;
   --accent-color: #d4af37;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-sans-body);
 }
 
 /* Hero Section Styles */

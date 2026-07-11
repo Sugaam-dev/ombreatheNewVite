@@ -22,10 +22,10 @@
 
 .community-school-title {
   color: #2c3e95;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: var(--section-title-size);
+  font-weight: 300;
   margin-bottom: 80px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   text-align: center;
   position: relative;
   z-index: 1;
@@ -79,7 +79,7 @@
 
 .community-school-description {
   color: #495057;
-  font-size: 1.1rem;
+  font-size: var(--body-text-size);
   line-height: 1.7;
   margin: 0;
   font-weight: 400;
@@ -170,7 +170,7 @@
   top: -10px;
   font-size: 2rem;
   color: #2c3e95;
-  font-family: 'Times New Roman', serif;
+  font-family: var(--font-heading);
 }
 
 /* Responsive Design */

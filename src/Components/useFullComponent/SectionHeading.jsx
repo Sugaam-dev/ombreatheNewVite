@@ -19,8 +19,8 @@ const SectionHeading = ({
           }
 
           .section-heading h2 {
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            font-size: clamp(38px, 6vw, 64px);
+            font-family: var(--font-heading);
+            font-size: var(--section-title-size);
             font-weight: 300;
             line-height: 1.1;
             margin-bottom: 0.5rem;
@@ -32,9 +32,9 @@ const SectionHeading = ({
           }
 
           .section-heading p {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 300;
+           
+            font-size: var(--section-subtitle-size);
+            font-weight: 400;
             color: #8f877f;
             letter-spacing: 0.03em;
             max-width: 700px;
@@ -68,11 +68,11 @@ const SectionHeading = ({
 
           @media (max-width: 768px) {
             .section-heading h2 {
-              font-size: 42px;
+              font-size: var(--section-title-mobile-size);
             }
 
             .section-heading p {
-              font-size: 14px;
+              font-size: var(--section-subtitle-mobile-size);
             }
 
             .section-heading-line span {

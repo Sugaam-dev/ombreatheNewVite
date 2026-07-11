@@ -33,7 +33,7 @@ const styles = `
   margin: 0 auto;
 
   font-family: 'DM Sans', sans-serif;
-  padding: clamp(40px, 5vw, 120px) clamp(12px, 2vw, 40px);
+  padding: clamp(20px, 2vw, 40px) clamp(6px, 1vw, 10px);
   box-sizing: border-box;
 }
 

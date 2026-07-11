@@ -3,56 +3,34 @@ import { useParams } from "react-router-dom";
 
 import GlobalStyles from "./GlobalStyles";
 import { OmbDataMap } from "../data/OmbDataMap";
+import "../styles/ProgramSections.css";
 
 import OmbHeroSection from "../sections/OmbHeroSection";
-import OmbCommunitySection from "../sections/OmbCommunitySection";
+import OmbAccommodationSection from "../sections/OmbAccommodationSection";
 
 import Contact from "../../Components/Contact";
 import LazySection from "../../Components/LazySection";
 
 // ==========================================
-// LAZY LOADED SECTIONS
+// LAZY LOADED CONSOLIDATED SECTIONS
 // ==========================================
 
-const OmbPromoSection = lazy(() =>
-  import("../sections/OmbPromoSection")
-);
-
-const OmbTransformationSection = lazy(() =>
-  import("../sections/OmbTransformationSection")
+const HighlightsSection = lazy(() =>
+  import("../sections/HighlightsSection")
 );
 
 const OmbPracticeSection = lazy(() =>
   import("../sections/OmbPracticeSection")
 );
 
-const OmbCurriculumSection = lazy(() =>
-  import("../sections/OmbCurriculumSection")
+const ProgramDetailsSection = lazy(() =>
+  import("../sections/ProgramDetailsSection")
 );
 
-const OmbScheduleSection = lazy(() =>
-  import("../sections/OmbScheduleSection")
+const ExperienceSection = lazy(() =>
+  import("../sections/ExperienceSection")
 );
 
-const MassageSection = lazy(() =>
-  import("../sections/MassageSection")
-);
-
-const OmbExcursionSection = lazy(() =>
-  import("../sections/OmbExcursionSection")
-);
-
-const OmbFoodSection = lazy(() =>
-  import("../sections/OmbFoodSection")
-);
-
-const OmbAccommodationSection = lazy(() =>
-  import("../sections/OmbAccommodationSection")
-);
-
-const OmbLocationSection = lazy(() =>
-  import("../sections/OmbLocationSection")
-);
 
 const Questions = lazy(() =>
   import("./questions/Questions")
@@ -88,120 +66,85 @@ const OmbYogaPage = () => {
     );
   }
 
+  const colors = data.heroSection?.colors;
+
   return (
     <>
       <GlobalStyles />
 
       <div className="omb-root">
 
+        {/* 1. Hero Section */}
         {data.heroSection && (
           <OmbHeroSection
             data={data.heroSection}
           />
         )}
 
-        {data.communitySection && (
-          <OmbCommunitySection
-            data={data.communitySection}
-          />
-        )}
-
-        {/* ==========================================
-            BELOW THE FOLD
-        ========================================== */}
-
-        {data.promoSection && (
+        {/* 2. Highlights (Consolidates Community, Promo & Transformation) */}
+        {data.highlightsSection && (
           <LazySection>
-            <OmbPromoSection
-              data={data.promoSection}
+            <HighlightsSection
+              communityData={data.highlightsSection.community}
+              promoData={data.highlightsSection.promo}
+              transformationData={data.highlightsSection.transformation}
+              colors={colors}
             />
           </LazySection>
         )}
 
-        {data.transformationSection && (
-          <LazySection>
-            <OmbTransformationSection
-              data={data.transformationSection}
-            />
-          </LazySection>
-        )}
-
+        {/* 3. Core Practices */}
         {data.practiceSection && (
           <LazySection>
             <OmbPracticeSection
               data={data.practiceSection}
+              colors={colors}
             />
           </LazySection>
         )}
 
-        {data.curriculumSection && (
+        {/* 4. Program Details (Consolidates Curriculum & Schedule) */}
+        {data.programDetailsSection && (
           <LazySection>
-            <OmbCurriculumSection
-              data={data.curriculumSection}
+            <ProgramDetailsSection
+              curriculumData={data.programDetailsSection.curriculum}
+              scheduleData={data.programDetailsSection.schedule}
+              colors={colors}
             />
           </LazySection>
         )}
 
-        {data.scheduleSection && (
+        {/* 5. Stay Experience (Consolidates Food, Excursions, Location & Massage) */}
+        {data.experienceSection && (
           <LazySection>
-            <OmbScheduleSection
-              data={data.scheduleSection}
+            <ExperienceSection
+              foodData={data.experienceSection.food}
+              excursionData={data.experienceSection.excursion}
+              locationData={data.experienceSection.location}
+              massageData={data.experienceSection.massage}
+              colors={colors}
             />
           </LazySection>
         )}
 
-        {data.MassageSection && (
-          <LazySection>
-            <MassageSection
-              data={data.MassageSection}
-            />
-          </LazySection>
-        )}
-
-        {data.excursionSection && (
-          <LazySection>
-            <OmbExcursionSection
-              data={data.excursionSection}
-            />
-          </LazySection>
-        )}
-
-        {data.foodSection && (
-          <LazySection>
-            <OmbFoodSection
-              data={data.foodSection}
-            />
-          </LazySection>
-        )}
-
+        {/* 6. Lodging / Rooms */}
         {data.accommodationSection && (
-          <LazySection>
-            <OmbAccommodationSection
-              data={data.accommodationSection}
-            />
-          </LazySection>
+          <OmbAccommodationSection
+            data={data.accommodationSection}
+            colors={data.accommodationSection.colors || colors}
+          />
         )}
 
-        {data.locationSection && (
-          <LazySection>
-            <OmbLocationSection
-              data={data.locationSection}
-            />
-          </LazySection>
-        )}
-
-        {data.teacherTrainingFaq && (
+        {/* 7. FAQs */}
+        {data.faqSection && (
           <LazySection>
             <Questions
-              data={data.teacherTrainingFaq}
+              data={data.faqSection}
             />
           </LazySection>
         )}
 
-        {/* ==========================================
-            CONTACT
-        ========================================== */}
-
+        {/* 8. Contact Form */}
         <Contact />
 
       </div>

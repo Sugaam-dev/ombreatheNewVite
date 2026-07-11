@@ -362,15 +362,7 @@ const Yogaschool = () => {
               <div
                 style={{
                   color: "#1e1e1c",
-                  fontSize: isSmall
-                    ? "12px"
-                    : isTablet
-                    ? "13px"
-                    : isUltraWide
-                    ? "26px"
-                    : isLargeDesktop
-                    ? "16px"
-                    : "14px",
+                  fontSize: "var(--body-text-size)",
                   lineHeight: isUltraWide ? 1.9 : 1.6,
                   overflow: "hidden",
                 }}
@@ -486,7 +478,7 @@ const Yogaschool = () => {
 
                     <h3
                       style={{
-                        fontSize: isSmall ? "10px" : "12px",
+                        fontSize: "var(--card-tagline-size)",
                         fontWeight: 600,
                         color: "#1e1e1c",
                         margin: 0,
@@ -497,7 +489,7 @@ const Yogaschool = () => {
 
                     <p
                       style={{
-                        fontSize: isSmall ? "9px" : "10px",
+                        fontSize: "var(--card-tagline-size)",
                         color: "#666",
                         lineHeight: 1.2,
                         margin: 0,

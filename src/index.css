@@ -1,3 +1,242 @@
-element.style {
-    padding-top: 0px;
+:root {
+  /* ==========================================
+     TYPOGRAPHY TOKENS (CENTRALIZED CONFIG)
+     ========================================== */
+
+  /* --- Font Families --- */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-serif-display: 'Playfair Display', Georgia, serif;
+  --font-sans-body: 'Plus Jakarta Sans', sans-serif;
+  --font-sans-display: 'DM Sans', sans-serif;
+  --font-navbar: 'Caudex', serif;
+  --font-banner-title: 'Cinzel', 'Playfair Display', serif;
+  --font-trust: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-blog: 'Caudex', serif;
+  --font-contact-form: 'Poppins', sans-serif;
+  --font-ratings-title: 'Georgia', serif;
+  --font-ratings-body: 'Helvetica Neue', Arial, sans-serif;
+
+  /* --- Font Sizes (Section-Wise) --- */
+  /* Navbar */
+  --nav-logo-size: 18px;
+  --nav-link-size: 14px;
+  --nav-link-mobile-size: 16px;
+
+  /* Hero / Banner */
+  --hero-title-size: clamp(2.2rem, 5vw, 6rem);
+  --hero-desc-size: clamp(18px, 1.4vw, 32px);
+  --hero-btn-size: clamp(14px, 0.9vw, 22px);
+
+  /* Trust Banner */
+  --trust-label-size: 11px;
+  --trust-number-size: 42px;
+  --trust-plus-size: 24px;
+
+  /* Section Headings */
+  --section-title-size: clamp(38px, 6vw, 64px);
+  --section-title-mobile-size: 42px;
+  --section-subtitle-size: 18px;
+  --section-subtitle-mobile-size: 14px;
+
+  /* Body Text */
+  --body-text-size: clamp(14px, 1.2vw, 18px);
+  --body-text-size-mobile: 15px;
+
+  /* Cards (Yoga School, Offerings, Why Choose, Programs) */
+  --card-title-size: clamp(1.05rem, 1.2vw, 2rem);
+  --card-desc-size: clamp(0.92rem, 0.9vw, 1.4rem);
+  --card-desc-size-mobile: 15px;
+  --card-tagline-size: clamp(9px, 0.55vw, 12px);
+
+  /* Blog */
+  --blog-title-size: 28px;
+  --blog-desc-size: 16px;
+
+  /* FAQ Accordion */
+  --faq-question-size: clamp(14px, 1.1vw, 20px);
+  --faq-answer-size: clamp(13px, 1vw, 18px);
+
+  /* Testimonials / Ratings */
+  --review-title-size: 38px;
+  --review-text-size: 16px;
+
+  /* Contact Form */
+  --contact-form-size: 14px;
+}
+
+/* ── Global Scrollbar Styles ── */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4a7c68 #f7f5f0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a7c68;
+  border-radius: 9999px;
+  border: 2px solid #f7f5f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #396051;
+}
+
+/* ==========================================================================
+   PROGRAM, RETREAT, ONLINE PAGES TYPOGRAPHY OVERRIDES
+   ========================================================================== */
+
+/* 1. Hero & Highlights Font Families (Cormorant Garamond) */
+.hero-content-wrap,
+.hero-content-wrap *,
+.llp-hero__content,
+.llp-hero__content *,
+.mp-hero-section,
+.mp-hero-section *,
+.highlights-outer,
+.highlights-outer * {
+  font-family: var(--font-heading) !important;
+}
+
+/* 2. Hero Subtitles (Slightly larger and fully responsive) */
+.hero-subtitle-p,
+.llp-hero__sub,
+.mp-subtitle {
+  font-size: clamp(17px, 2.2vw, 22px) !important;
+  line-height: 1.6 !important;
+}
+
+/* 3. Highlights Section Titles */
+.section-headline,
+.llp-section-title,
+.mp-about-heading,
+.mp-section-heading {
+  font-size: clamp(28px, 4vw, 42px) !important;
+  line-height: 1.25 !important;
+}
+
+/* 4. Body Paragraphs & List Items (Bigger and responsive) */
+.omb-root p,
+.mp-container p,
+.llp p,
+.omb-root li,
+.mp-container li,
+.llp li {
+  font-size: clamp(15px, 1.25vw, 19px) !important;
+  line-height: 1.75 !important;
+}
+
+/* 5. Smaller Details (Badge labels, Metadata, Excursion text, etc.) */
+.omb-root .small-details,
+.omb-root .stat-badge-lbl,
+.omb-root .hero-cert-label,
+.omb-root .eyebrow-span,
+.omb-root .promo-card-eyebrow,
+.omb-root .practice-tab-desc,
+.omb-root .practice-card-desc,
+.omb-root .promo-feature-text p,
+.omb-root .highlights-left-note,
+.omb-root .prog-card__meta,
+.omb-root .prog-card__features li,
+.omb-root .hero-pricenote-p,
+.llp .prog-card__features li,
+.llp-hero__eyebrow,
+.llp-eyebrow,
+.llp-highlight__desc,
+.llp-highlight__label,
+.llp-cat-desc,
+.llp-tab,
+.mp-container .mp-additional-highlights li,
+.mp-container .mp-curriculum-content li,
+.mp-container .mp-schedule-activity,
+.mp-container .mp-schedule-note,
+.mp-container .mp-benefits-list li {
+  font-size: clamp(13px, 1.1vw, 16px) !important;
+}
+
+/* 6. Non-Italic Styles for Highlights/Headings/Sub-headings */
+.omb-root h1 em,
+.omb-root h2 em,
+.omb-root h3 em,
+.omb-root h4 em,
+.omb-root h5 em,
+.omb-root h6 em,
+.section-heading h2 em,
+.gy-heading h2 em,
+.display-heading em,
+.hero-main-title em,
+.section-headline em,
+.trans-headline,
+.llp-hero__sub,
+.llp-hero__headline em {
+  font-family: var(--font-heading) !important;
+  font-style: italic !important;
+  font-weight: inherit !important;
+}
+
+/* 7. Heading Highlight High Contrast Color Overrides */
+.omb-root :not(.hero-bg-container) h1 em,
+.omb-root :not(.hero-bg-container) h1 span,
+.omb-root :not(.hero-bg-container) h2 em,
+.omb-root :not(.hero-bg-container) h2 span,
+.omb-root :not(.hero-bg-container) h3 em,
+.omb-root :not(.hero-bg-container) h3 span,
+.omb-root :not(.hero-bg-container) h4 em,
+.omb-root :not(.hero-bg-container) h4 span,
+.omb-root :not(.hero-bg-container) h5 em,
+.omb-root :not(.hero-bg-container) h5 span,
+.omb-root :not(.hero-bg-container) h6 em,
+.omb-root :not(.hero-bg-container) h6 span,
+.llp :not(.llp-hero) h1 em,
+.llp :not(.llp-hero) h1 span,
+.llp :not(.llp-hero) h2 em,
+.llp :not(.llp-hero) h2 span,
+.llp :not(.llp-hero) h3 em,
+.llp :not(.llp-hero) h3 span,
+.section-headline span,
+.section-headline em,
+.llp-section-title span,
+.llp-section-title em {
+  color: #4a7c68 !important;
+}
+
+/* 8. Core Practices Subtitle Small Size Override (Programs & Retreats only) */
+.practice-outer .practice-header-subtitle {
+  font-size: var(--body-text-size) !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  color: #57534e !important;
+}
+
+/* 9. Section Eyebrows High Contrast Color Overrides (Light Sections) */
+.omb-root :not(.hero-bg-container) .practice-header p:first-child,
+.omb-root :not(.hero-bg-container) .details-header > span,
+.omb-root :not(.hero-bg-container) .experience-header-block > span,
+.omb-root :not(.hero-bg-container) .eyebrow-span,
+.omb-root :not(.hero-bg-container) .massage-header > span,
+.omb-root :not(.hero-bg-container) .accommodation-header > span,
+.llp :not(.llp-hero) .llp-eyebrow,
+.llp :not(.llp-hero) .llp-highlight__label {
+  color: #c4855a !important;
+}
+
+/* 10. Hero Section Title & Highlight High Contrast Color Overrides (Dark Banner) */
+.omb-root .hero-bg-container h1,
+.omb-root .hero-bg-container h1 span,
+.hero-main-title,
+.hero-main-title span {
+  color: #ffffff !important;
+}
+
+.omb-root .hero-bg-container h1 em,
+.hero-main-title em {
+  color: #e8c5ac !important;
 }

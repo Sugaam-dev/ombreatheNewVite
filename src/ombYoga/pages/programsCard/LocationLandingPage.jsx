@@ -6,7 +6,7 @@ const LANDING_PAGE_STYLES = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   .llp {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     color: #1c1c1e;
     overflow-x: hidden;
     background: #f5f3ef;
@@ -79,7 +79,7 @@ const LANDING_PAGE_STYLES = `
   }
 
   .llp-hero__headline {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(38px, 6vw, 80px);
     font-weight: 900;
     color: #fff;
@@ -89,7 +89,7 @@ const LANDING_PAGE_STYLES = `
   }
 
   .llp-hero__sub {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(15px, 1.8vw, 20px);
     font-style: italic;
     font-weight: 400;
@@ -100,7 +100,7 @@ const LANDING_PAGE_STYLES = `
   .llp-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .llp-btn {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 13.5px;
     font-weight: 600;
     padding: 13px 32px;
@@ -159,7 +159,7 @@ const LANDING_PAGE_STYLES = `
   }
 
   .llp-section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(26px, 3vw, 42px);
     font-weight: 700;
     line-height: 1.18;
@@ -221,20 +221,20 @@ const LANDING_PAGE_STYLES = `
   }
   .prog-card:hover { transform: translateY(-5px); box-shadow: 0 14px 36px rgba(0,0,0,0.1); border-color: var(--accent); }
   .prog-card__top { background: var(--accent); padding: 20px 18px 16px; position: relative; }
-  .prog-card__hours { font-family: 'Playfair Display', serif; font-size: 50px; font-weight: 900; color: #fff; line-height: 1; display: block; }
+  .prog-card__hours { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 50px; font-weight: 900; color: #fff; line-height: 1; display: block; }
   .prog-card__hours small { font-size: 18px; font-weight: 400; opacity: 0.6; }
   .prog-card__badge {
     position: absolute; top: 12px; right: 12px; font-size: 9.5px; font-weight: 700;
     letter-spacing: 0.4px; text-transform: uppercase; background: rgba(255,255,255,0.18); color: #fff; border-radius: 4px; padding: 4px 8px;
   }
   .prog-card__body { padding: 16px 18px 12px; flex: 1; }
-  .prog-card__title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #1c1c1e; margin-bottom: 8px; line-height: 1.3; }
+  .prog-card__title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; font-weight: 600; color: #1c1c1e; margin-bottom: 8px; line-height: 1.3; }
   .prog-card__meta { display: flex; flex-direction: column; gap: 4px; font-size: 11.5px; color: #9a9aa4; font-weight: 500; margin-bottom: 12px; }
   .prog-card__features { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; }
   .prog-card__features li { font-size: 12px; color: #5e5e68; display: flex; align-items: center; gap: 6px; }
   .prog-card__features li::before { content: '✓'; color: var(--accent); font-weight: 700; font-size: 10.5px; flex-shrink: 0; }
   .prog-card__footer { display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; border-top: 1px solid #f0ece5; background: #fdfcfb; }
-  .prog-card__price { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--accent); }
+  .prog-card__price { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; font-weight: 700; color: var(--accent); }
   .prog-card__cta {
     font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700;
     background: var(--accent); color: #fff !important; border: none;
@@ -246,7 +246,7 @@ const LANDING_PAGE_STYLES = `
   .llp-cta__inner {
     max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;
   }
-  .llp-cta__title { font-family: 'Playfair Display', serif; font-size: clamp(24px, 3vw, 38px); font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 8px; }
+  .llp-cta__title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(28px, 3vw, 42px); font-weight: 600; color: #fff; line-height: 1.2; margin-bottom: 8px; }
   .llp-cta__sub { font-size: 14.5px; color: rgba(255,255,255,0.6); line-height: 1.65; }
   .llp-cta__btns { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
 

@@ -1,254 +1,145 @@
-import React, { useState, useEffect } from "react";
-import {
-  Waves,
-  Heart,
-  Leaf,
-  Wifi,
-  Utensils,
-  Feather,
-  Trees,
-  Music,
-  CheckCircle,
-  ArrowRight,
-} from "lucide-react";
+import React, { useState, useEffect, useRef } from "react";
+import { CheckCircle, ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { getIcon } from "./icons";
 
-const OmbAccommodationSection = ({ data }) => {
+const OmbAccommodationSection = ({ data, colors }) => {
   const [activeRoom, setActiveRoom] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  const [showArrow, setShowArrow] = useState(false);
+  const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 600);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  if (!data || !data.colors || !data.content) return null;
-  const { colors, content } = data;
-
-  const iconMap = {
-    waves: <Waves size={18} />,
-    heart: <Heart size={18} />,
-    leaf: <Leaf size={18} />,
-    wifi: <Wifi size={18} />,
-    utensils: <Utensils size={18} />,
-    feather: <Feather size={18} />,
-    trees: <Trees size={18} />,
-    music: <Music size={18} />,
+  const checkScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setShowArrow(el.scrollLeft + el.clientWidth < el.scrollWidth - 8);
   };
 
-  const room = content.rooms[activeRoom];
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+    return () => {
+      el.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
+    };
+  }, [data]);
+
+  if (!data || !data.content) return null;
+  const { title, highlight, subtitle, rooms = [], amenities = [], buttonText, url } = data.content;
+  const room = rooms[activeRoom];
+  if (!room) return null;
+
+  const handleRoomClick = (idx) => {
+    setActiveRoom(idx);
+    const el = scrollRef.current;
+    if (!el) return;
+    const buttons = el.querySelectorAll("button");
+    if (buttons[idx]) {
+      el.scrollTo({ left: Math.max(0, buttons[idx].offsetLeft - 40), behavior: "smooth" });
+    }
+    setTimeout(checkScroll, 400);
+  };
 
   return (
-    <section
-      style={{
-        background: colors.navy,
-        padding: "clamp(50px,8vw,100px) 16px",
-        color: colors.white,
-      }}
-    >
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+    <section className="accom-outer-box" style={{ backgroundColor: colors?.navy || "#1A2456", color: "#ffffff" }}>
+      <div className="accom-container">
 
-        {/* HEADER */}
-        <div style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: "clamp(1.5rem,4vw,2.2rem)" }}>
-            {content.title} <em>{content.highlight}</em>
+        {/* Header */}
+        <div className="accom-header-block">
+          <h2>
+            {title} <em style={{ color: colors?.goldLight }}>{highlight}</em>
           </h2>
-          <p style={{ opacity: 0.7, maxWidth: 600 }}>
-            {content.subtitle}
-          </p>
+          <p>{subtitle}</p>
         </div>
 
-        {/* TABS */}
-        <div
-          style={{
-            display: "flex",
-            gap: 10,
-            overflowX: "auto",
-            whiteSpace: "nowrap",
-            paddingBottom: 6,
-            marginBottom: 30,
-          }}
-        >
-          {content.rooms.map((r, i) => (
+        {/* Blinking swipe row hint on mobile */}
+        {showArrow && (
+          <div className="swipe-alert-row">
+            <span
+              className="swipe-alert-text"
+              style={{ color: colors?.goldLight }}
+            >
+              swipe for more <ChevronRight size={15} strokeWidth={2.5} />
+            </span>
+          </div>
+        )}
+
+        {/* Room tabs scroll row */}
+        <div className="accom-tabs-container" ref={scrollRef}>
+          {rooms.map((r, i) => (
             <button
               key={i}
-              onClick={() => setActiveRoom(i)}
-              style={{
-                flex: "0 0 auto",
-                padding: "10px 18px",
-                borderRadius: 30,
-                border: `1px solid ${colors.border}`,
-                background:
-                  activeRoom === i ? colors.white : "transparent",
-                color:
-                  activeRoom === i ? colors.navy : colors.white,
-                cursor: "pointer",
+              type="button"
+              onClick={() => handleRoomClick(i)}
+              style={{ 
+                backgroundColor: activeRoom === i ? "#ffffff" : "transparent",
+                color: activeRoom === i ? (colors?.navy || "#1A2456") : "#ffffff",
+                borderColor: activeRoom === i ? "#ffffff" : "rgba(255,255,255,0.4)"
               }}
+              className={`accom-tab-button ${activeRoom === i ? "active" : ""}`}
             >
               {r.type}
             </button>
           ))}
         </div>
 
-        {/* MAIN GRID */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: isMobile
-              ? "1fr"
-              : "repeat(auto-fit,minmax(260px,1fr))",
-            gap: 24,
-          }}
-        >
-          {/* IMAGE */}
-          <div
-            style={{
-              borderRadius: 20,
-              overflow: "hidden",
-              minHeight: "250px",
-              height: "clamp(250px,40vw,420px)",
-              boxShadow: colors.shadowLg,
-            }}
-          >
-            <img
-              src={room.img}
-              alt={room.type}
-              loading="lazy"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
+        {/* Main Grid: Image & details card */}
+        <div className="accom-main-grid">
+
+          {/* Room image side */}
+          <div className="accom-image-wrapper">
+            <img src={room.img} alt={room.type} loading="lazy" />
           </div>
 
-          {/* CONTENT */}
-          <div
-            style={{
-              background: colors.white,
-              borderRadius: 20,
-              padding: "clamp(20px,4vw,36px)",
-              color: colors.navy,
-              boxShadow: colors.shadowMd,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
+          {/* Content details side */}
+          <div className="accom-card-details" style={{ color: colors?.navy || "#1A2456" }}>
             <div>
               <span
-                style={{
-                  background: room.tagBg,
-                  color: colors.white,
-                  padding: "4px 14px",
-                  borderRadius: 20,
-                  fontSize: "0.75rem",
-                }}
+                className="accom-room-tag"
+                style={{ backgroundColor: room.tagBg || colors?.goldLight }}
               >
                 {room.tag}
               </span>
-
-              <h2 style={{ margin: "12px 0" }}>{room.type}</h2>
-
-              <p style={{ opacity: 0.7 }}>{room.desc}</p>
-
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns:
-                    "repeat(auto-fit,minmax(140px,1fr))",
-                  gap: 10,
-                  marginTop: 20,
-                }}
-              >
-                {room.features.map((f, i) => (
-                  <div key={i} style={{ display: "flex", gap: 6 }}>
-                    <CheckCircle size={14} color={colors.sage} />
-                    {f}
+              <h3>{room.type}</h3>
+              <p>{room.desc}</p>
+              <div className="accom-room-features">
+                {(room.features || []).map((f, i) => (
+                  <div key={i} className="accom-feature-row">
+                    <CheckCircle size={14} className="flex-shrink-0" style={{ color: colors?.sage || "#7BAF8A" }} /> {f}
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* CTA */}
-            <div style={{ marginTop: 24 }}>
-              <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
-                {room.price}
-              </div>
-
+            <div className="accom-card-bottom">
+              <div className="accom-price-label">{room.price}</div>
               <Link
-                to={content.url}
-                style={{
-                  marginTop: 14,
-                  padding: "12px 20px",
-                  borderRadius: 30,
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 8,
-                  background: colors.navy,
-                  color: colors.white,
-                  fontWeight: 500,
-                  fontSize: "0.9rem",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                  transition: "all 0.25s ease",
-                  textDecoration: "none",
-                }}
-                onMouseEnter={(e) => {
-                  if (!isMobile) {
-                    e.currentTarget.style.transform =
-                      "translateY(-2px)";
-                    e.currentTarget.style.boxShadow =
-                      "0 8px 20px rgba(0,0,0,0.2)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 12px rgba(0,0,0,0.1)";
-                }}
+                to={url || "/contact"}
+                className="accom-book-btn"
+                style={{ backgroundColor: colors?.navy || "#1A2456" }}
               >
-                {content.buttonText} <ArrowRight size={16} />
+                {buttonText || "Book Now"} <ArrowRight size={16} />
               </Link>
             </div>
           </div>
         </div>
 
-        {/* AMENITIES */}
-        <div style={{ marginTop: 50 }}>
-          <h3 style={{ fontSize: "clamp(1.2rem,3vw,1.6rem)" }}>
-            Amenities
-          </h3>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit,minmax(110px,1fr))",
-              gap: 14,
-              marginTop: 16,
-            }}
-          >
-            {content.amenities.map((a, i) => (
-              <div
-                key={i}
-                style={{
-                  background: colors.cardBg,
-                  padding: 14,
-                  borderRadius: 12,
-                  textAlign: "center",
-                }}
-              >
-                {iconMap[a.icon]}
-                <div style={{ fontSize: "0.8rem", marginTop: 6 }}>
-                  {a.label}
+        {/* Amenities grid */}
+        {amenities.length > 0 && (
+          <div className="accom-amenities-section">
+            <h3>Amenities</h3>
+            <div className="accom-amenities-grid">
+              {amenities.map((a, i) => (
+                <div key={i} className="accom-amenity-unit">
+                  <div style={{ display: "flex", justifyContent: "center", marginBottom: "6px" }}>{getIcon(a.icon, 18)}</div>
+                  <div className="accom-amenity-label">{a.label}</div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
       </div>
     </section>

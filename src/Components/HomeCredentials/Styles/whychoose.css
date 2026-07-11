@@ -1,38 +1,23 @@
 /* ========================================
-   SOULFIT CREDENTIALS SECTION STYLES
+   PREMIUM SOULFIT CREDENTIALS SECTION STYLES
    ======================================== */
+.whychoose-header-wrap {
+  width: min(92%, 1800px);
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 8px; /* Tightened spacing below subtitle */
+  text-align: center;
+}
+
 .soulfit-credentials-section {
-  /* min-height: 100vh; */
-  padding: 0rem 1rem;
-  padding-bottom: 2rem;
+  padding: 0 0 16px 0; /* Reduced padding-bottom to close the gap to next section */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .soulfit-credentials-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-}
-
-/* ========================================
-   CREDENTIALS HEADER STYLES
-   ======================================== */
-.soulfit-credentials-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.soulfit-credentials-header h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 1.5rem;
-}
-
-.soulfit-credentials-header p {
-  font-size: 1.25rem;
-  color: #6b7280;
-  max-width: 48rem;
-  margin: 0 auto;
-  line-height: 1.7;
 }
 
 /* ========================================
@@ -40,257 +25,223 @@
    ======================================== */
 .soulfit-credentials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
 }
 
 /* ========================================
    CREDENTIAL CARD STYLES
    ======================================== */
 .soulfit-credential-card {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  border: 1px solid rgba(229, 227, 222, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   text-align: center;
   position: relative;
   overflow: hidden;
+  cursor: default;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========================================
+   DESKTOP SLIDER STYLES (REACT-SLICK)
+   ======================================== */
+.whychoose-desktop-slider {
+  display: none !important;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .whychoose-desktop-slider {
+    display: block !important;
+  }
+  .whychoose-mobile-carousel {
+    display: none !important;
+  }
+}
+
+.slick-slide-wrapper {
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.whychoose-desktop-slider .soulfit-credential-card {
+  width: 100%;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Slick dots overrides */
+.whychoose-desktop-slider .slick-dots {
+  position: static !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.whychoose-desktop-slider .slick-dots li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+.whychoose-desktop-slider .slick-dots li button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
   cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.whychoose-desktop-slider .slick-dots li button::before {
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  content: '•';
+  text-align: center;
+  color: #4a7c68 !important;
+  opacity: 0.35;
   transition: all 0.3s ease;
 }
 
-.soulfit-credential-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+.whychoose-desktop-slider .slick-dots li.slick-active button::before {
+  color: #4a7c68 !important;
+  opacity: 0.9;
+  font-size: 16px;
 }
 
 .soulfit-credential-card::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  transition: left 0.5s;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4a7c68, #c8a96a); /* Forest green to Gold highlight line */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-.soulfit-credential-card:hover::before {
-  left: 100%;
+.soulfit-credential-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(74, 124, 104, 0.08);
+  border-color: rgba(74, 124, 104, 0.2);
+}
+
+/* Watermark Number style */
+.soulfit-card-number {
+  position: absolute;
+  right: 20px;
+  bottom: 8px;
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(74, 124, 104, 0.04);
+  font-family: var(--font-heading);
+  user-select: none;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.soulfit-credential-card:hover .soulfit-card-number {
+  color: rgba(74, 124, 104, 0.07);
+  transform: scale(1.05);
+  transition: all 0.4s ease;
 }
 
 /* ========================================
    ICON CONTAINER STYLES
    ======================================= */
 .soulfit-icon-container {
-  width: 5rem;
-  height: 5rem;
-  background: #f97316;
-  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background: #faf9f6;
+  color: #4a7c68;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
+  margin-bottom: 24px;
+  border: 1px solid rgba(74, 124, 104, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.soulfit-icon-container svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.75;
 }
 
 .soulfit-credential-card:hover .soulfit-icon-container {
-  background: #e36b33;
-  transform: scale(1.1) rotate(12deg);
-}
-
-.soulfit-icon-container::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3), transparent 70%);
-  transform: translateX(-100%);
-  transition: transform 0.6s;
-}
-
-.soulfit-credential-card:hover .soulfit-icon-container::after {
-  transform: translateX(100%);
+  background: #4a7c68;
+  color: #ffffff;
+  transform: translateY(-3px) rotate(8deg);
+  box-shadow: 0 10px 20px rgba(74, 124, 104, 0.2);
+  border-color: transparent;
 }
 
 /* ========================================
    CARD CONTENT STYLES
    ======================================== */
+.soulfit-card-content {
+  position: relative;
+  z-index: 2;
+}
+
 .soulfit-card-content h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 1rem;
+  font-size: var(--card-title-size);
+  font-weight: 600;
+  color: #1c1917;
+  margin-top: 0;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
 }
 
 .soulfit-card-content p {
   color: #6b7280;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-size: var(--card-desc-size);
+  margin: 0;
+  text-align: justify;
 }
 
 /* ========================================
-   CTA SECTION STYLES
-   ======================================== */
-.soulfit-cta-section {
-  display: flex;
-  justify-content: center;
-}
-
-.soulfit-cta-card {
-  background: white;
-  border-radius: 2rem;
-  padding: 3rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 800px;
-}
-
-.soulfit-cta-card h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 1.5rem;
-}
-
-.soulfit-cta-card p {
-  font-size: 1.125rem;
-  color: #6b7280;
-  margin-bottom: 2rem;
-  line-height: 1.7;
-}
-
-/* ========================================
-   CTA BUTTON
-   ======================================== */
-.soulfit-cta-button {
-  background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16);
-  color: white;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border-radius: 9999px;
-  font-size: 1.125rem;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.soulfit-cta-button:hover {
-    background: linear-gradient(145deg, #052e16, #0e8339 40%, #052e16);
-  transform: scale(1.05);
-}
-
-/* ========================================
-   RESPONSIVE - TABLET
+   RESPONSIVE OVERRIDES
    ======================================== */
 @media (max-width: 768px) {
-
+  .soulfit-credentials-section {
+   
+    border-radius: 24px;
+  }
   .soulfit-credentials-grid {
     grid-template-columns: 1fr;
-  }
-
-  .soulfit-cta-card {
-    padding: 2rem;
-  }
-
-  .soulfit-cta-card h2 {
-    font-size: 2rem;
-  }
-}
-
-/* ========================================
-   RESPONSIVE - MOBILE
-   ======================================== */
-@media (max-width: 480px) {
-
-  .soulfit-cta-card {
-    padding: 1.5rem;
-  }
-
-  .soulfit-cta-card h2 {
-    font-size: 1.75rem;
-  }
-}
-
-/* ========================================
-   🔥 ULTRA-WIDE 1920px
-   ======================================== */
-@media (min-width: 1920px) {
-
-  .soulfit-credentials-container {
-    max-width: 1500px;
-  }
-
-  .soulfit-credential-card {
-    padding: 2.5rem;
-  }
-
-  .soulfit-card-content h3 {
-    font-size: 1.7rem;
-  }
-
-  .soulfit-card-content p {
-    font-size: 1.1rem;
-  }
-
-  .soulfit-icon-container {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .soulfit-cta-card h2 {
-    font-size: 3rem;
-  }
-
-  .soulfit-cta-card p {
-    font-size: 1.25rem;
-  }
-}
-
-/* ========================================
-   🔥 ULTRA-WIDE 2560px
-   ======================================== */
-@media (min-width: 2560px) {
-
-  .soulfit-credentials-container {
-    max-width: 2200px;
-  }
-
-  .soulfit-credential-card {
-    padding: 2rem;
-  }
-
-  .soulfit-card-content h3 {
-    font-size: 2rem;
-  }
-
-  .soulfit-card-content p {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  .soulfit-icon-container {
-    width: 7rem;
-    height: 7rem;
-  }
-
-  .soulfit-cta-card {
-    max-width: 1000px;
-    padding: 4rem;
-  }
-
-  .soulfit-cta-card h2 {
-    font-size: 3.5rem;
-  }
-
-  .soulfit-cta-card p {
-    font-size: 2rem;
-  }
-
-  .soulfit-cta-button {
-    font-size: 1.3rem;
-    padding: 1.2rem 2.5rem;
+    gap: 20px;
   }
 }

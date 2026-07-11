@@ -5,7 +5,7 @@
 .testimonials-section {
   background-color: #fcf8f4;
   padding: 80px 24px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-ratings-body);
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
@@ -23,7 +23,7 @@
 }
 
 .subtitle-tag {
-  font-size: 11px;
+  font-size: var(--trust-label-size);
   letter-spacing: 2px;
   color: #b58a63;
   font-weight: 600;
@@ -33,8 +33,8 @@
 }
 
 .main-title {
-  font-size: 38px;
-  font-family: 'Georgia', serif;
+  font-size: var(--review-title-size);
+  font-family: var(--font-ratings-title);
   color: #2b2623;
   margin: 0;
   font-weight: 400;
@@ -114,7 +114,7 @@
 }
 
 .review-text {
-  font-size: 16px;
+  font-size: var(--review-text-size);
   line-height: 1.65;
   color: #4a423e;
   margin: 0 0 32px 0;

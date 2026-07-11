@@ -82,7 +82,7 @@
 }
 
 .wellness-sub-heading {
-  font-size: 1.6rem;
+  font-size: var(--section-subtitle-size);
   font-weight: 300;
   margin-bottom: 15px;
   color: #4ecdc4;
@@ -103,7 +103,7 @@
 }
 
 .wellness-main-heading {
-  font-size: 3.2rem;
+  font-size: var(--section-title-size);
   font-weight: 700;
   margin-bottom: 25px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
@@ -112,7 +112,7 @@
 }
 
 .wellness-content-text {
-  font-size: 18px;
+  font-size: var(--body-text-size);
   line-height: 30px;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
@@ -180,7 +180,7 @@
 }
 
 .wellness-slider-heading {
-  font-size: 2.8rem;
+  font-size: var(--section-title-size);
   margin-bottom: 50px;
   color: white;
   font-weight: 700;
@@ -289,7 +289,7 @@
 }
 
 .wellness-service-title {
-  font-size: 1.6rem;
+  font-size: var(--card-title-size);
   margin: 0;
   color: white;
   font-weight: 600;

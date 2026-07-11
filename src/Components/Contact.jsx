@@ -207,10 +207,10 @@ export default function Contact() {
   return (
     <div className="contact-root">
       <style>{`
-        .contact-root { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdfdfd; padding-bottom: 60px; }
+        .contact-root { font-family: var(--font-sans-body); background: #fdfdfd; padding-bottom: 60px; }
         .cp-hero { background: #0c375a; padding: 50px 20px 90px; text-align: center; }
-        .cp-hero h1 { color: #fff; font-size: clamp(32px, 5vw, 42px); font-weight: 700; }
-        .cp-hero p { color: #899a94; font-size: 17px; margin-top: 8px; }
+        .cp-hero h1 { color: #fff; font-size: var(--section-title-size); font-weight: 700; }
+        .cp-hero p { color: #899a94; font-size: var(--body-text-size); margin-top: 8px; }
 
         .cp-main-grid {
           display: grid; grid-template-columns: 360px 1fr;
@@ -220,27 +220,27 @@ export default function Contact() {
         }
 
         .ci-card { background: #2f7a63; color: #fff; padding: 45px; display: flex; flex-direction: column; justify-content: center; }
-        .ci-heading { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
-        .ci-tagline { color: #fff; font-size: 18px; line-height: 1.6; margin-bottom: 30px; }
+        .ci-heading { font-size: var(--card-title-size); font-weight: 700; margin-bottom: 12px; }
+        .ci-tagline { color: #fff; font-size: var(--body-text-size); line-height: 1.6; margin-bottom: 30px; }
         .ci-item { margin-bottom: 20px; }
-        .ci-label { color: #180e01; font-size: 14px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 5px; }
-        .ci-val { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: 18px; margin-bottom: 5px; transition: 0.3s; }
+        .ci-label { color: #180e01; font-size: var(--card-tagline-size); font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 5px; }
+        .ci-val { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; font-size: var(--body-text-size); margin-bottom: 5px; transition: 0.3s; }
         .ci-val:hover { color: #fff; transform: translateX(5px); }
         .ci-socials { display: flex; gap: 12px; margin-top: 20px; }
         .ci-soc-link { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: #fff; transition: 0.3s; text-decoration: none; }
         .ci-soc-link:hover { background: #52b788; transform: translateY(-3px); }
 
         .cf-card { padding: 50px; background: #fff; }
-        .cf-title { font-size: 28px; font-weight: 700; color: #11241e; margin-bottom: 30px; text-align: center; }
+        .cf-title { font-size: var(--section-subtitle-size); font-weight: 700; color: #11241e; margin-bottom: 30px; text-align: center; }
         .cf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
         .cf-group { position: relative; border-bottom: 1px solid #ddd; transition: 0.3s; }
         .cf-group:focus-within { border-color: #11241e; }
         .cf-group svg { position: absolute; left: 0; top: 18px; color: #aaa; font-size: 13px; }
-        .cf-input { width: 100%; border: none; padding: 15px 10px 15px 25px; outline: none; font-family: inherit; font-size: 14px; background: transparent; }
+        .cf-input { width: 100%; border: none; padding: 15px 10px 15px 25px; outline: none; font-family: inherit; font-size: var(--contact-form-size); background: transparent; }
         .cf-full { grid-column: span 2; }
         .cf-ta { resize: none; min-height: 80px; }
         .cf-btn-box { margin-top: 40px; text-align: center; }
-        .cf-btn { background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16); color: #fff; border: none; padding: 14px 60px; border-radius: 100px; font-weight: 700; cursor: pointer; transition: 0.4s; font-size: 14px; }
+        .cf-btn { background: linear-gradient(145deg, #16a34a, #0e8339 40%, #052e16); color: #fff; border: none; padding: 14px 60px; border-radius: 100px; font-weight: 700; cursor: pointer; transition: 0.4s; font-size: var(--hero-btn-size); }
         .cf-btn:hover:not(:disabled) { background: linear-gradient(145deg, #16a34a, #0e8339 40%, #16a34a); box-shadow: 0 10px 20px rgba(82, 183, 136, 0.2); transform: translateY(-2px); }
         .cf-btn:disabled { background: #cbd5e1; cursor: not-allowed; }
 

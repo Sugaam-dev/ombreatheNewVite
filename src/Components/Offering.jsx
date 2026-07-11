@@ -4,6 +4,7 @@ import '../Styles/offering.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import SectionHeading from './useFullComponent/SectionHeading';
+import MobileCarousel from '../ombYoga/sections/MobileCarousel';
 
 function Offering() {
 const navigate=useNavigate();
@@ -50,27 +51,26 @@ const navigate=useNavigate();
         textColor="#1e1e1c"
       />
 
-     <div className="offering-container">
-  {offerings.map((item, index) => (
-    <div className="offering-card" key={index}>
-      
-      <div className="offering-image">
-        <img src={item.image} alt="" />
-      </div>
+      <MobileCarousel
+        items={offerings}
+        gridClass="offering-container"
+        renderItem={(item, index) => (
+          <div className="offering-card" key={index}>
+            <div className="offering-image">
+              <img src={item.image} alt={item.title} />
+            </div>
 
-      <div className="offering-content">
-        <img src={item.icon} alt="" />
-        <h2>{item.title}</h2>
-        <p>{item.description}</p>
-        <button onClick={() => navigate('/contact')}>Discover more</button>
-      </div>
+            <div className="offering-content">
+              <img src={item.icon} alt="" />
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+              <button onClick={() => navigate('/contact')}>Discover more</button>
+            </div>
+          </div>
+        )}
+      />
 
     </div>
-  ))}
-</div>
-
-    </div>
-    
   );
 }
 

@@ -10,7 +10,7 @@
 html, body {
   width: 100%;
   overflow-x: hidden;
-  font-family: sans-serif;
+  font-family: var(--font-sans-body);
 }
 .slider-container{
           position:relative;
@@ -93,8 +93,8 @@ html, body {
         }
 
         .slider-title{
-          font-family: 'Cinzel', 'Playfair Display', serif;
-          font-size:clamp(2rem, 4.5vw, 3.8rem);
+          font-family: var(--font-banner-title);
+          font-size: var(--hero-title-size);
           font-weight: 500;
           line-height: 1.1;
           letter-spacing: 4px;
@@ -121,9 +121,9 @@ html, body {
           width:100%;
           min-height:40px;
 
-          font-family: 'Plus Jakarta Sans', sans-serif;
+          font-family: var(--font-sans-body);
           font-style: normal;
-          font-size:clamp(1rem, 1.8vw, 1.35rem);
+          font-size: var(--hero-desc-size);
           font-weight:500;
 
           color:#f6c177;
@@ -149,7 +149,7 @@ html, body {
 
           border-radius:999px;
 
-          font-size:0.85rem;
+          font-size: var(--hero-btn-size);
           font-weight:600;
           letter-spacing:0.5px;
 
@@ -279,7 +279,7 @@ html, body {
           }
 
           .type span{
-            font-size:clamp(1.1rem,3vw,2rem);
+            font-size:clamp(1.3rem,3.5vw,2.3rem);
           }
         }
 
@@ -321,8 +321,8 @@ html, body {
 
           .type span{
             min-height:36px;
-
-            font-size:clamp(0.9rem, 3.2vw, 1.15rem);
+ 
+            font-size:clamp(1.05rem, 3.8vw, 1.35rem);
 
             line-height:1.4;
 

@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {
-  Sun,
-  Wind,
-  Feather,
-  Heart,
-  Shield,
-  Sparkles,
-  Leaf,
-} from "lucide-react";
+import { getIcon } from "./icons";
+import MobileCarousel from "./MobileCarousel";
 
-const OmbPracticeSection = ({ data }) => {
+const OmbPracticeSection = ({ data, colors }) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -17,181 +10,93 @@ const OmbPracticeSection = ({ data }) => {
     return () => clearTimeout(t);
   }, []);
 
-  if (!data || !data.colors || !data.content) return null;
+  if (!data || !data.content) return null;
+  const { eyebrow, title, highlight, subtitle, practices = [], specialTitle, specialHighlight, specials = [] } = data.content;
 
-  const { colors, content } = data;
-
-  // ICON MAP
-  const iconMap = {
-    sun: <Sun size={20} />,
-    wind: <Wind size={20} />,
-    feather: <Feather size={20} />,
-    heart: <Heart size={18} />,
-    shield: <Shield size={18} />,
-    sparkles: <Sparkles size={18} />,
-    leaf: <Leaf size={20} />,
-  };
+  const activeBg = colors?.activeBg || "rgba(0,0,0,0.04)";
 
   return (
-    <section
-      style={{
-        background: "transparent",
-        padding: "clamp(30px,9vw,50px) 10px",
-      }}
-    >
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        
-        {/* HEADER */}
-        <div style={{ textAlign: "center", marginBottom: 60 }}>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            {content.eyebrow}
-          </div>
+    <section className="practice-outer" style={{ backgroundColor: "#ffffff" }}>
+      <div className="practice-container">
 
-          <h2>
-            {content.title} <em>{content.highlight}</em>
+        {/* Header */}
+        <div className="practice-header">
+          <p style={{ color: colors?.goldLight }}>{eyebrow}</p>
+          <h2 style={{ color: colors?.navy }}>
+            {title} <em style={{ color: colors?.goldLight }}>{highlight}</em>
           </h2>
-
-          <p style={{ maxWidth: 650, margin: "0 auto" }}>
-            {content.subtitle}
+          <p className="practice-header-subtitle">
+            {subtitle}
           </p>
         </div>
 
-        {/* PRACTICE CARDS */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: 24,
-            marginBottom: 70,
-          }}
-        >
-          {content.practices.map((p, i) => (
-            <div
-              key={i}
-              style={{
-                overflow: "hidden",
-                borderRadius: 20,
-                transform: visible ? "translateY(0)" : "translateY(30px)",
-                opacity: visible ? 1 : 0,
-                transition: "all 0.4s ease",
-                transitionDelay: `${i * 0.15}s`,
-                boxShadow: colors.shadowSm,
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow = colors.shadowLg;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = colors.shadowSm;
-              }}
-            >
-              {/* IMAGE */}
-              <div style={{ height: 220, position: "relative" }}>
-                <img
-                  src={p.img}
-                  alt={p.label}
-                  loading="lazy"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: colors.overlay,
-                  }}
-                />
-              </div>
-
-              {/* CONTENT */}
-              <div style={{ padding: 24 }}>
-                <div
-                  style={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: 12,
-                    background: colors.navy,
-                    color: colors.white,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: 12,
-                  }}
-                >
-                  {iconMap[p.icon]}
-                </div>
-
-                <h3 style={{ marginBottom: 8 }}>{p.label}</h3>
-                <p>{p.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* SPECIAL FEATURES */}
-        <div
-          style={{
-            background: colors.white,
-            borderRadius: 20,
-            padding: "clamp(30px,5vw,50px)",
-            boxShadow: colors.shadowSm,
-          }}
-        >
-          <h3 style={{ textAlign: "center", marginBottom: 40 }}>
-            {content.specialTitle}{" "}
-            <em>{content.specialHighlight}</em>
-          </h3>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: 24,
-            }}
-          >
-            {content.specials.map((s, i) => (
+        {/* Practice cards - Grid on desktop, Carousel on mobile */}
+        <div className="practice-cards-wrapper">
+          <MobileCarousel
+            items={practices}
+            gridClass="m-carousel-desktop grid-cols-3"
+            renderItem={(p, i) => (
               <div
                 key={i}
-                style={{
-                  padding: 20,
-                  borderRadius: 16,
-                  background: colors.cream,
-                  transition: "all 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-6px)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
+                className="practice-card-box"
+                style={{ 
+                  opacity: visible ? 1 : 0, 
+                  transform: visible ? "translateY(0)" : "translateY(32px)",
+                  transitionDelay: `${i * 0.15}s` 
                 }}
               >
-                <div
-                  style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: 10,
-                    background: colors.navy,
-                    color: colors.white,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginBottom: 12,
-                  }}
-                >
-                  {iconMap[s.icon]}
+                <div>
+                  {/* Image */}
+                  <div className="practice-card-imgwrap">
+                    <img src={p.img} alt={p.label} loading="lazy" />
+                    <div className="card-shade" />
+                  </div>
+                  {/* Content */}
+                  <div className="practice-card-body">
+                    <div 
+                      className="practice-iconbox"
+                      style={{ background: colors?.navy || "#1A2456" }}
+                    >
+                      {getIcon(p.icon, 20)}
+                    </div>
+                    <h3 style={{ color: colors?.navy }}>{p.label}</h3>
+                    <p>{p.desc}</p>
+                  </div>
                 </div>
-
-                <h4 style={{ marginBottom: 6 }}>{s.title}</h4>
-                <p>{s.desc}</p>
               </div>
-            ))}
-          </div>
+            )}
+          />
         </div>
+
+        {/* Special features - Grid on desktop, Carousel on mobile */}
+        <div className="practice-special-box">
+          <h3 className="practice-special-title" style={{ color: colors?.navy }}>
+            {specialTitle} <em style={{ color: colors?.goldLight }}>{specialHighlight}</em>
+          </h3>
+          <MobileCarousel
+            items={specials}
+            gridClass="m-carousel-desktop grid-cols-3"
+            renderItem={(s, i) => (
+              <div
+                key={i}
+                className="special-feature-card"
+                style={{ backgroundColor: colors?.cream || "#F7F3EF" }}
+              >
+                <div>
+                  <div 
+                    className="special-feature-iconbox"
+                    style={{ background: colors?.navy || "#1A2456" }}
+                  >
+                    {getIcon(s.icon, 18)}
+                  </div>
+                  <h4 style={{ color: colors?.navy }}>{s.title}</h4>
+                  <p>{s.desc}</p>
+                </div>
+              </div>
+            )}
+          />
+        </div>
+
       </div>
     </section>
   );

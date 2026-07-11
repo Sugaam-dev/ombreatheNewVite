@@ -33,8 +33,8 @@ const TransformationJourney = () => {
   // ================= CSS-IN-JS STYLING OBJECTS =================
   const styles = {
     container: {
-      padding: isMobile ? "40px 16px" : "60px 40px 80px",
-      fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+      padding: isMobile ? "20px 10px" : "20px 10px 40px",
+      fontFamily: "var(--font-sans-body)",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -62,13 +62,14 @@ const TransformationJourney = () => {
       background: "rgba(255,255,255,0.5)",
     },
     title: {
-      fontSize: "clamp(36px, 4.5vw, 56px)",
+      fontSize: "var(--section-title-size)",
+      fontWeight: 300,
       color: "#2C3E2B",
       margin: "0 0 16px 0",
       tracking: "-0.5px",
     },
     subtitle: {
-      fontSize: "clamp(14px, 1.1vw, 16px)",
+      fontSize: "var(--section-subtitle-size)",
       color: "#5A6E58",
       lineHeight: "1.6",
       margin: 0,
@@ -194,12 +195,12 @@ const TransformationJourney = () => {
     },
     cardTitleLeft: {
       color: "white",
-      fontSize: "clamp(24px, 2.2vw, 32px)",
+      fontSize: "var(--card-title-size)",
       margin: "20px 0 24px 0",
     },
     cardTitleRight: {
       color: "#2C3E2B",
-      fontSize: "clamp(24px, 2.2vw, 32px)",
+      fontSize: "var(--card-title-size)",
       margin: "20px 0 24px 0",
     },
     list: {
@@ -215,14 +216,14 @@ const TransformationJourney = () => {
       alignItems: "center",
       gap: "12px",
       color: "rgba(255,255,255,0.85)",
-      fontSize: "16px",
+      fontSize: "var(--body-text-size)",
     },
     listItemRight: {
       display: "flex",
       alignItems: "center",
       gap: "12px",
       color: "#2C3E2B",
-      fontSize: "16px",
+      fontSize: "var(--body-text-size)",
     },
     iconWrapperLeft: {
       width: "26px",
@@ -283,7 +284,7 @@ const TransformationJourney = () => {
     },
     footer: { textAlign: "center", width: "100%", maxWidth: "500px" },
     footerQuote: {
-      fontSize: "clamp(20px, 2.5vw, 26px)",
+      fontSize: "var(--card-title-size)",
       color: "#2C3E2B",
       fontStyle: "italic",
       marginBottom: "28px",
@@ -334,7 +335,7 @@ const TransformationJourney = () => {
           __html: `
         
         .serif-title {
-          font-family: 'Playfair Display', Georgia, serif !important;
+          font-family: var(--font-heading) !important;
         }
 
         .animated-btn {

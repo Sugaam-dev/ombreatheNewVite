@@ -68,7 +68,7 @@ const WelcomeToOmbreathe = () => {
   text-align: justify;
 
   /* 🔥 RESPONSIVE FONT */
-  font-size: clamp(14px, 1.2vw, 18px);
+  font-size: var(--body-text-size);
 }
 
 /* ================================
@@ -80,7 +80,7 @@ const WelcomeToOmbreathe = () => {
   }
 
   .welcome-text {
-    font-size: 18px;
+    font-size: var(--body-text-size);
   }
 }
 
@@ -90,7 +90,7 @@ const WelcomeToOmbreathe = () => {
   }
 
   .welcome-text {
-    font-size: 28px;
+    font-size: var(--body-text-size);
     line-height: 2;
   }
 }
@@ -100,7 +100,7 @@ const WelcomeToOmbreathe = () => {
 ================================ */
 @media (max-width: 1024px) {
   .welcome-text {
-    font-size: 16px;
+    font-size: var(--body-text-size);
   }
 }
 
@@ -114,7 +114,7 @@ const WelcomeToOmbreathe = () => {
   }
 
   .welcome-text {
-    font-size: 15px;
+    font-size: var(--body-text-size-mobile);
     text-align: left;
   }
 }
@@ -124,7 +124,7 @@ const WelcomeToOmbreathe = () => {
 ================================ */
 @media (max-width: 480px) {
   .welcome-text {
-    font-size: 14px;
+    font-size: var(--body-text-size-mobile);
   }
 }
     `}</style>

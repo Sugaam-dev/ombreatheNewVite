@@ -14,7 +14,7 @@
 /* HEADING */
 .headingc {
 	text-align: center;
-	font-family: Caudex, serif;
+	font-family: var(--font-blog);
 }
 
 .headingc img {
@@ -140,9 +140,9 @@
 	padding-left: 5px;
 	background: transparent;
 	color: #fff;
-	font-size: 12px;
+	font-size: var(--contact-form-size);
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-contact-form);
 }
 
 .contact-in-input::placeholder {
@@ -158,9 +158,9 @@
 	padding: 5px;
 	background: transparent;
 	color: #fff;
-	font-size: 12px;
+	font-size: var(--contact-form-size);
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-contact-form);
 }
 
 .contact-in-textarea::placeholder {
@@ -174,9 +174,9 @@
 	outline: none;
 	background: transparent;
 	color: #fff;
-	font-size: 12px;
+	font-size: var(--contact-form-size);
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	font-family: var(--font-contact-form);
 	cursor: pointer;
 }
 

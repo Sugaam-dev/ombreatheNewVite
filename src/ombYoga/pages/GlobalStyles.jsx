@@ -27,14 +27,30 @@ const GlobalStyles = () => {
         --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
         --shadow-lg: 0 20px 60px rgba(0,0,0,0.18);
 
-        --font-display: 'Cormorant Garamond', serif;
-        --font-body: 'DM Sans', sans-serif;
       }
 
       body {
         font-family: var(--font-body);
-     
         color: #1c1a16;
+      }
+
+      /* HEADINGS — explicit for all program/retreat/online pages */
+      .omb-root h1,
+      .omb-root h2,
+      .omb-root h3,
+      .omb-root h4,
+      .omb-root h5,
+      .omb-root h6 {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+
+      .omb-root p,
+      .omb-root span,
+      .omb-root a,
+      .omb-root li,
+      .omb-root label,
+      .omb-root button {
+       
       }
 
       .omb-root {

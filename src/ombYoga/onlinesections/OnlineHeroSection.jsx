@@ -20,6 +20,7 @@ const OnlineHeroSection = ({ data }) => {
 
       {/* ── HERO ── */}
       <div
+        className="hero-bg-container"
         style={{
           position: "relative",
           width: "100%",

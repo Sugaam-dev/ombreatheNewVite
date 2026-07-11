@@ -52,7 +52,7 @@ const CSS = `
   .gy-root * { box-sizing: border-box; margin: 0; padding: 0; }
 
   .gy-root {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-sans-display);
     // background: #faf7f2;
     padding: 3.5rem 1.5rem 4rem;
   }
@@ -62,8 +62,8 @@ const CSS = `
     margin-bottom: 2.5rem;
   }
   .gy-heading h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: clamp(36px, 6vw, 60px);
+    font-family: var(--font-heading);
+    font-size: var(--section-title-size);
     font-weight: 300;
     color: #1e1e1c;
     line-height: 1.1;
@@ -74,7 +74,7 @@ const CSS = `
     color: #4a7c68;
   }
   .gy-heading p {
-    font-size: 14px;
+    font-size: var(--body-text-size-mobile);
     font-weight: 300;
     color: #9a9188;
     letter-spacing: 0.03em;

@@ -49,7 +49,7 @@ const OnlinePracticeSection = ({ data }) => {
             {content.title} <em>{content.highlight}</em>
           </h2>
 
-          <p style={{ maxWidth: 650, margin: "0 auto" }}>
+          <p className="practice-header-subtitle" style={{ maxWidth: 650, margin: "0 auto" }}>
             {content.subtitle}
           </p>
         </div>

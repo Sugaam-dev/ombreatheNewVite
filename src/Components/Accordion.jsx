@@ -198,9 +198,9 @@ const Accordion = () => {
   margin: 0 auto;
 
   padding:
-    clamp(30px, 4vw, 90px)
-    clamp(12px, 2vw, 40px)
-    clamp(40px, 5vw, 100px);
+    clamp(10px, 2vw, 40px)
+    clamp(8px, 1vw, 20px)
+    clamp(20px, 2vw, 50px);
 
   // background: linear-gradient(180deg, #fafaf8 0%, #ffffff 100%);
   box-sizing: border-box;
@@ -248,7 +248,7 @@ const Accordion = () => {
   gap: clamp(8px, 0.8vw, 14px);
   padding: clamp(14px, 1.2vw, 24px);
 
-  font-size: clamp(13px, 0.9vw, 18px);
+  font-size: var(--faq-question-size);
   font-weight: 600;
 
   color: #666;
@@ -280,8 +280,8 @@ const Accordion = () => {
 }
 
 .section-header h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(26px, 2.2vw, 52px);
+  font-family: var(--font-heading);
+  font-size: var(--section-title-size);
   font-weight: 500;
   line-height: 1.1;
   color: #1e1e1c;
@@ -289,7 +289,7 @@ const Accordion = () => {
 }
 
 .section-subtitle {
-  font-size: clamp(13px, 1vw, 20px);
+  font-size: var(--section-subtitle-size);
   line-height: 1.7;
   color: #777;
   margin: 0 auto;
@@ -348,7 +348,7 @@ const Accordion = () => {
 
 .question-text {
   flex: 1;
-  font-size: clamp(14px, 1.1vw, 20px);
+  font-size: var(--faq-question-size);
   font-weight: 500;
   line-height: 1.5;
   color: #1e1e1c;
@@ -404,7 +404,7 @@ const Accordion = () => {
 }
 
 .content p {
-  font-size: clamp(13px, 1vw, 18px);
+  font-size: var(--faq-answer-size);
   line-height: 1.8;
   color: #555;
 }

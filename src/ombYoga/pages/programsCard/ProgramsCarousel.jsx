@@ -7,9 +7,9 @@ import SectionHeading from "../../../Components/useFullComponent/SectionHeading"
 const CAROUSEL_STYLES = `
   .pc-section {
     width: 100%;
-    padding: clamp(36px, 4vw, 90px) 0;
+    padding: clamp(16px, 1vw, 20px) 0;
     overflow: hidden;
-    font-family: 'Caudex', serif;
+    font-family: var(--font-heading);
     box-sizing: border-box;
     user-select: none;
   }
@@ -118,7 +118,7 @@ const CAROUSEL_STYLES = `
   }
 
   .pc-card__tagline {
-    font-size: clamp(9px, 0.55vw, 12px);
+    font-size: var(--card-tagline-size);
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -127,15 +127,15 @@ const CAROUSEL_STYLES = `
   }
 
   .pc-card__name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(22px, 1.9vw, 32px);
+    font-family: var(--font-heading);
+    font-size: var(--card-title-size);
     line-height: 1.1;
     margin: 4px 0;
     color: #1a1a1a;
   }
 
   .pc-card__desc {
-    font-size: clamp(13px, 0.85vw, 15px);
+    font-size: var(--card-desc-size);
     line-height: 1.6;
     margin: 0;
     display: -webkit-box;

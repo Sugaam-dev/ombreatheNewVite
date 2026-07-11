@@ -38,6 +38,7 @@
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 50px;
+  padding:10px;
 }
 
 @media (min-width: 768px) {
@@ -117,7 +118,7 @@
 }
 
 .teacher-name {
-  font-size: 1.4rem;
+  font-size: var(--card-title-size);
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 8px;
@@ -125,7 +126,7 @@
 }
 
 .teacher-title {
-  font-size: 1rem;
+  font-size: var(--card-desc-size);
   font-weight: 600;
   color: #052e16;
   margin-bottom: 15px;
@@ -134,7 +135,7 @@
 }
 
 .teacher-description {
-  font-size: 0.95rem;
+  font-size: var(--card-desc-size);
   color: #5a6c7d;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -189,7 +190,7 @@
   border: none;
   padding: 12px 16px;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: var(--hero-btn-size);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -246,6 +247,13 @@
 .see-more-btn:hover, .show-less-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 15px 35px rgba(22, 111, 35, 0.4);
+}
+
+@media (max-width: 768px) {
+  .see-more-btn, .show-less-btn {
+    padding: 10px 22px !important;
+    font-size: 14px !important;
+  }
 }
 
 .fade-in {

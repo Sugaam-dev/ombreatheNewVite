@@ -118,7 +118,7 @@
   color: white;
 
   font-size:
-    clamp(11px, 0.7vw, 18px);
+    var(--card-tagline-size);
 
   font-weight: 600;
 
@@ -140,7 +140,7 @@
 
 .modern-slide-content h3 {
   font-size:
-    clamp(2.2rem, 5vw, 6rem);
+    var(--hero-title-size);
 
   color: white;
 
@@ -156,7 +156,7 @@
 
 .modern-slide-content p {
   font-size:
-    clamp(15px, 1vw, 26px);
+    var(--hero-desc-size);
 
   line-height: 2;
 
@@ -185,7 +185,7 @@
   color: white;
 
   font-size:
-    clamp(14px, 0.9vw, 22px);
+    var(--hero-btn-size);
 
   font-weight: 600;
 
@@ -257,7 +257,7 @@
   line-height: 2;
 
   font-size:
-    clamp(15px, 1vw, 24px);
+    var(--body-text-size);
 
   text-align: justify;
 
@@ -330,7 +330,7 @@
 
 .item2 h3 {
   font-size:
-    clamp(1.05rem, 1.2vw, 2rem);
+    var(--card-title-size);
 
   margin-bottom:
     clamp(8px, 0.8vw, 16px);
@@ -342,7 +342,7 @@
 
 .item2 p {
   font-size:
-    clamp(0.92rem, 0.9vw, 1.4rem);
+    var(--card-desc-size);
 
   line-height: 1.8;
 
