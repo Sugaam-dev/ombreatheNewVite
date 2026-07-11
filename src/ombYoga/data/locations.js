@@ -182,6 +182,11 @@ export const RETREAT_LINKS = {
   ],
   rishikesh:    [
     { path: "rishikesh5daysmindfulnessmeditation", label: "Mindfulness & Meditation Retreat & Teacher Training Course in Rishikesh" },
+    { path: "rishikesh5daysyogaretreat", label: "5-Day Transformative Yoga Retreat" },
+    { path: "rishikesh7daysyogaretreat", label: "7-Day Transformative Yoga Retreat" },
+    { path: "rishikesh15daysyogaretreat", label: "15-Day Multi-Style Yoga Retreat" },
+    { path: "rishikesh5daysacupressure", label: "5-Day Acupressure Healing Course" },
+    { path: "rishikesh10dayspanchakarma", label: "10-Day Panchakarma Therapy Program" },
   ],
   "chiang-mai": [
     { path: "chiangmairetreats6days", label: "6-Day Yoga and Detox Retreat" },

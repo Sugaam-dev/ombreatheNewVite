@@ -27,5 +27,9 @@ export const PROGRAM_PRICES_RISHIKESH = {
     "RishikeshAyurvedaTherapistDiplomaData": "$1,099",
     "Rishikesh18DaysYogaTherapyWellnessData": "$1,099",
     "RishikeshmindfulnessMeditationData": "$650",
+    "Rishikesh5DaysYogaRetreatData": "$299",
+    "Rishikesh7DaysYogaRetreatData": "$399",
+    "Rishikesh15DaysYogaRetreatData": "$599",
+    "Rishikesh5DaysAcupressureData": "$500",
   },
 };

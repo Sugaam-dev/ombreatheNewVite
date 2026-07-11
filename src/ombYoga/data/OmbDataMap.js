@@ -48,6 +48,10 @@ import { RishikeshPrenatalYogaData } from "./rishikesh/ttc/shortCourse/Rishikesh
 import { Rishikesh6NightsYinYogaData } from "./rishikesh/ttc/shortCourse/Rishikesh6NightsYinYogaData";
 import { Rishikesh50HourYogaNidraData } from "./rishikesh/ttc/shortCourse/Rishikesh50HourYogaNidraData";
 import { Rishikesh5DaysMindfulnessMeditationData } from "./rishikesh/retreats/Rishikesh5DaysMindfulnessMeditationData";
+import { Rishikesh5DaysYogaRetreatData } from "./rishikesh/retreats/Rishikesh5DaysYogaRetreatData";
+import { Rishikesh7DaysYogaRetreatData } from "./rishikesh/retreats/Rishikesh7DaysYogaRetreatData";
+import { Rishikesh15DaysYogaRetreatData } from "./rishikesh/retreats/Rishikesh15DaysYogaRetreatData";
+import { Rishikesh5DaysAcupressureData } from "./rishikesh/retreats/Rishikesh5DaysAcupressureData";
 
 import { Dharamshala100HoursData }   from "./dharamshala/ttc/multiStyle/Dharamshala100HoursData";
 import { Dharamshala200HoursData }   from "./dharamshala/ttc/multiStyle/Dharamshala200HoursData";
@@ -192,6 +196,10 @@ export const OmbDataMap = {
     "rishikesh6nightsyinyoga": Rishikesh6NightsYinYogaData,
     "rishikesh50houryoganidra": Rishikesh50HourYogaNidraData,
     "rishikesh5daysmindfulnessmeditation": Rishikesh5DaysMindfulnessMeditationData,
+    "rishikesh5daysyogaretreat": Rishikesh5DaysYogaRetreatData,
+    "rishikesh7daysyogaretreat": Rishikesh7DaysYogaRetreatData,
+    "rishikesh15daysyogaretreat": Rishikesh15DaysYogaRetreatData,
+    "rishikesh5daysacupressure": Rishikesh5DaysAcupressureData,
   },
 
   // ── Chiang Mai ──────────────────────────────

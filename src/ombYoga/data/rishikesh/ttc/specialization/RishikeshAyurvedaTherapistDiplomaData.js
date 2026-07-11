@@ -611,7 +611,7 @@ export const RishikeshAyurvedaTherapistDiplomaData = {
       address:
         "Ombreathe, Badrinath Rd, near by Kriya Yoga Ashram on in, Laxman Jhula, Rishikesh, Uttarakhand 249192, India",
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Wellness+Badrinath+Rd+Rishikesh&output=embed",
+        "https://www.google.com/maps?q=Rishikesh&output=embed",
 
       spots: [
         {

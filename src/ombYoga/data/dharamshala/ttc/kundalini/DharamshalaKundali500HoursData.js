@@ -723,7 +723,7 @@ export const DharamshalaKundali500HoursData = {
       address:
         "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302, India",
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Dharamshala&output=embed",
+        "https://www.google.com/maps?q=Dharamshala&output=embed",
 
       spots: [
         {

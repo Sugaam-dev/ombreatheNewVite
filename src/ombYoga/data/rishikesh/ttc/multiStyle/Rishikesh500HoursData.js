@@ -507,7 +507,7 @@ border: "rgba(0,0,0,0.05)",
       address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
 
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
+        "https://www.google.com/maps?q=Rishikesh&output=embed",
 
       spots: [
         {

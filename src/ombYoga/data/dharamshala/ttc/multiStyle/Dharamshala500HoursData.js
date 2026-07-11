@@ -507,7 +507,7 @@ border: "rgba(0,0,0,0.05)",
       address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Dharamshala, Uttarakhand 249302",
 
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Dharamshala&output=embed",
+        "https://www.google.com/maps?q=Dharamshala&output=embed",
 
       spots: [
         {

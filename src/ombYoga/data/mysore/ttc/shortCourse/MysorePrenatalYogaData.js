@@ -594,7 +594,7 @@ export const MysorePrenatalYogaData = {
       address:
         "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Mysore, Uttarakhand 249302, India",
       mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Mysore&output=embed",
+        "https://www.google.com/maps?q=Mysuru&output=embed",
 
       spots: [
         {

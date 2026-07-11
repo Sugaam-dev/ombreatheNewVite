@@ -815,64 +815,6 @@ export const Online100HoursData = {
     },
   },
 
-  locationSection: {
-    colors: {
-      cream: "#F5EFE8",
-      navy: "#1E2D0E",
-      violet: "#4A7A2A",
-      white: "#ffffff",
-      activeBg: "rgba(74,122,42,0.1)",
-      border: "rgba(0,0,0,0.05)",
-    },
-
-    content: {
-      eyebrow: "Our Roots",
-      title: "Taught From",
-      highlight: "Rishikesh, India",
-      subtitle:
-        "Though fully online, this course is taught live by instructors based at Ombreathe in Rishikesh — the yoga capital of the world.",
-
-      address: "Ombreathe, Police Station, behind Laxman Jhula, Laxman Jhula, Rishikesh, Uttarakhand 249302",
-
-      mapEmbed:
-        "https://www.google.com/maps?q=World+Peace+Yoga+School+Laxman+Jhula+Rishikesh&output=embed",
-
-      spots: [
-        {
-          name: "Live Zoom Classes",
-          distance: "Daily",
-          desc: "03:30–04:30 PM IST, taught live from Rishikesh and recorded for later viewing.",
-          icon: "sun",
-        },
-        {
-          name: "Student Dashboard",
-          distance: "1 Year",
-          desc: "Access all 145 videos, manuals and live class links in one place.",
-          icon: "globe",
-        },
-        {
-          name: "Ombreathe",
-          distance: "Bonus Visit",
-          desc: "Use your free 3 days/2 nights stay to visit the Rishikesh campus in person.",
-          icon: "mountain",
-        },
-        {
-          name: "WhatsApp Community",
-          distance: "Always Open",
-          desc: "Connect with teachers and fellow students throughout your course and beyond.",
-          icon: "sparkles",
-        },
-      ],
-
-      stats: [
-        { label: "Time Zone", value: "IST", icon: "globe" },
-        { label: "Access", value: "1 Year", icon: "leaf" },
-        { label: "Videos", value: "145", icon: "sparkles" },
-        { label: "Devices", value: "All", icon: "sun" },
-      ],
-    },
-  },
-
   teacherTrainingFaq: {
     colors: {
       navy: "#1E2D0E",
