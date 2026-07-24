@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Components/Header/Navbar";
 import ScrollToTop from "./Components/useFullComponent/ScrollToTop";
 
-import logo from "./images/omBreatheLogo.png";
+import logo from "./images/ombreath-new-logo.jpeg";
 
 import "./Layout.css";
 
