@@ -1,25 +1,21 @@
 import React, { lazy } from "react";
 
 // ==========================================
-// ABOVE THE FOLD (NORMAL IMPORTS)
+// ABOVE THE FOLD (NORMAL IMPORTS — critical for LCP)
 // ==========================================
 import ImageSliderBanner from "../sections/ImageSliderBanner";
 import WelcomeToOmbreathe from "../sections/WelcomeToOmbreathe";
 import Yogaschool from "../sections/Yogaschool";
 import WhyChoose from "../sections/WhyChoose";
-
-import Ayurveda from "../sections/Ayurveda";
-import Offering from "../sections/Offering";
-import BannerImage from "../sections/BannerImage";
-import Blog from "../../blog/pages/BlogPage";
-import Accordion from "../../../components/ui/Accordion/Accordion";
-import Ratings from "../../../components/shared/Ratings/Ratings";
-import Contact from "../../contact/components/ContactForm";
 import TrustBanner from "../sections/TrustBanner";
-import TransformationJourney from "../sections/TransformationJourney";
 
 // ==========================================
-// LAZY COMPONENTS
+// INTERSECTION OBSERVER WRAPPER
+// ==========================================
+import LazySection from "../../../components/shared/LazySection/LazySection";
+
+// ==========================================
+// LAZY COMPONENTS (only load when visible / needed)
 // ==========================================
 const ProgramsCarousel = lazy(() =>
   import("../../yoga-retreats-programs/components/ProgramsCarousel")
@@ -37,10 +33,40 @@ const YogaTeachersLazy = lazy(() =>
   import("../../teachers/pages/TeachersPage")
 );
 
-// ==========================================
-// INTERSECTION OBSERVER WRAPPER
-// ==========================================
-import LazySection from "../../../components/shared/LazySection/LazySection";
+// Previously eagerly imported — now lazy to cut initial JS bundle
+const TransformationJourneyLazy = lazy(() =>
+  import("../sections/TransformationJourney")
+);
+
+const AyurvedaLazy = lazy(() =>
+  import("../sections/Ayurveda")
+);
+
+const OfferingLazy = lazy(() =>
+  import("../sections/Offering")
+);
+
+const BannerImageLazy = lazy(() =>
+  import("../sections/BannerImage")
+);
+
+const BlogLazy = lazy(() =>
+  import("../../blog/pages/BlogPage")
+);
+
+const AccordionLazy = lazy(() =>
+  import("../../../components/ui/Accordion/Accordion")
+);
+
+const RatingsLazy = lazy(() =>
+  import("../../../components/shared/Ratings/Ratings")
+);
+
+// ContactForm loads Leaflet from CDN — must be lazy so Leaflet
+// does NOT block the homepage initial load
+const ContactLazy = lazy(() =>
+  import("../../contact/components/ContactForm")
+);
 
 // ==========================================
 // HOME
@@ -49,7 +75,6 @@ const Home = () => {
   return (
     <>
       {/* ABOVE THE FOLD */}
-
       <ImageSliderBanner />
 
       <TrustBanner />
@@ -60,27 +85,34 @@ const Home = () => {
 
       <WhyChoose />
 
-      <ProgramsCarousel />
-
-      <TransformationJourney/>
-
-      {/* BELOW THE FOLD */}
-
+      {/* BELOW THE FOLD — lazy via IntersectionObserver */}
       <LazySection>
-      
+        <ProgramsCarousel />
       </LazySection>
 
-      <Ayurveda />
+      <LazySection>
+        <TransformationJourneyLazy />
+      </LazySection>
 
-      <Offering />
+      <LazySection>
+        <AyurvedaLazy />
+      </LazySection>
 
-      <BannerImage />
+      <LazySection>
+        <OfferingLazy />
+      </LazySection>
+
+      <LazySection>
+        <BannerImageLazy />
+      </LazySection>
 
       <LazySection>
         <YogaTeachersLazy />
       </LazySection>
 
-      <Blog />
+      <LazySection>
+        <BlogLazy />
+      </LazySection>
 
       <LazySection>
         <GalleryLazy />
@@ -90,11 +122,17 @@ const Home = () => {
         <UtubeLazy />
       </LazySection>
 
-      <Accordion />
+      <LazySection>
+        <AccordionLazy />
+      </LazySection>
 
-      <Ratings />
+      <LazySection>
+        <RatingsLazy />
+      </LazySection>
 
-      <Contact />
+      <LazySection>
+        <ContactLazy />
+      </LazySection>
     </>
   );
 };

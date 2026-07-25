@@ -315,6 +315,8 @@ const Footer = () => {
                   imageKey="logo"
                   alt="Ombreathe Logo"
                   className="mb-3"
+                  width="135"
+                  height="90"
                   style={{ maxHeight: '90px', width: 'auto' }}
                 />
                 <p className="footer-description mb-4">

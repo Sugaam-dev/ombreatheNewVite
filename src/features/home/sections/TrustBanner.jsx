@@ -468,6 +468,8 @@ const TrustBanner = () => {
                         src={cert.src}
                         alt={cert.name}
                         className="cert-img"
+                        width="150"
+                        height="150"
                         onError={() => handleImageError(cert.id)}
                       />
                       <div className="cert-glow" />

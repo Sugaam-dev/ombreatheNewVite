@@ -262,7 +262,7 @@ const Navbar = () => {
             to="/"
             onClick={() => handleLinkClick("home")}
           >
-            <img src={logo} alt="Logo" className="logo-image" />
+            <img src={logo} alt="Logo" className="logo-image" width="128" height="85" />
           </Link>
 
           {/* ════════════════════════════════════
@@ -552,7 +552,7 @@ const Navbar = () => {
         ════════════════════════════════════ */}
         <div className={`mobile-side-drawer ${isDrawerOpen ? "open" : ""}`}>
           <div className="drawer-header">
-            <img src={logo} alt="Logo" className="drawer-logo" />
+            <img src={logo} alt="Logo" className="drawer-logo" width="90" height="60" />
           </div>
 
           <div className="drawer-body">

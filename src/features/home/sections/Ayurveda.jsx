@@ -173,6 +173,8 @@ const Slider = SliderImport.default || SliderImport;
           src={ayurveda} 
           alt="Ayurveda healing and wellness" 
           className="wellness-left-image"
+          width="800"
+          height="533"
           onLoad={() => setImageLoaded(true)}
           style={{ display: 'block', maxWidth: '100%', height: 'auto' }}
         />
