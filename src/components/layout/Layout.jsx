@@ -40,6 +40,8 @@ function Layout() {
         alt=""
         aria-hidden="true"
         className="background-logo"
+        width="500"
+        height="500"
         decoding="async"
       />
 
