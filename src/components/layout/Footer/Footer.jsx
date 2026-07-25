@@ -124,7 +124,7 @@ const SocialLinks = memo(() => {
 
   return (
     <div className="social-links">
-      <h6 className="text-uppercase fw-bold mb-3">Follow Us</h6>
+      <h3 className="text-uppercase fw-bold mb-3 fs-6">Follow Us</h3>
       <div className="d-flex gap-2">
         {socialData.map(({ href, icon: Icon, label }) => (
           <a 
@@ -154,7 +154,7 @@ const QuickLinks = memo(() => {
 
   return (
     <div className="px-lg-3" style={{borderRight: '1px solid rgba(0,0,0,0.1)', minHeight: '300px'}}>
-      <h6 className="text-uppercase fw-bold mb-3">Quick Links</h6>
+      <h3 className="text-uppercase fw-bold mb-3 fs-6">Quick Links</h3>
       <ul className="list-unstyled">
         {links.map(({ to, label }) => (
           <li key={to} className="mb-2">
@@ -185,7 +185,7 @@ const ContactInfo = memo(() => {
 
   return (
     <div className="ps-lg-4">
-      <h6 className="text-uppercase fw-bold mb-3">Contact Info</h6>
+      <h3 className="text-uppercase fw-bold mb-3 fs-6">Contact Info</h3>
       <ul className="list-unstyled ">
         <li className="mb-3 d-flex align-items-start">
           <Phone
@@ -273,7 +273,7 @@ const Certifications = memo(() => {
 
   return (
     <div className="certifications mt-4">
-      <h6 className="text-uppercase fw-bold mb-3">Certified By</h6>
+      <h3 className="text-uppercase fw-bold mb-3 fs-6">Certified By</h3>
       <div className="d-flex flex-wrap gap-3 align-items-center">
         {isVisible && certifications.map((cert, index) => (
           <div key={cert.imageKey} className="cert-logo">

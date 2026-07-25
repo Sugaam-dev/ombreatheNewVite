@@ -546,6 +546,7 @@ Please share the schedule, payment options, and general availability details. Th
                             <button
                               type="button"
                               onClick={() => handleRemoveItem(item.id, item.roomType)}
+                              aria-label="Remove item"
                               style={{ color: "#a8a29e", background: "transparent", border: 0, cursor: "pointer" }}
                             >
                               <Trash2 size={16} />
@@ -555,6 +556,7 @@ Please share the schedule, payment options, and general availability details. Th
                               <button
                                 type="button"
                                 onClick={() => handleQuantityChange(item.id, item.roomType, item.quantity || 1, -1)}
+                                aria-label="Decrease quantity"
                                 style={{ width: "24px", height: "24px", display: "flex", alignItems: "center", justifyContent: "center", border: 0, background: "transparent", cursor: "pointer" }}
                               >
                                 <Minus size={11} />
@@ -563,6 +565,7 @@ Please share the schedule, payment options, and general availability details. Th
                               <button
                                 type="button"
                                 onClick={() => handleQuantityChange(item.id, item.roomType, item.quantity || 1, 1)}
+                                aria-label="Increase quantity"
                                 style={{ width: "24px", height: "24px", display: "flex", alignItems: "center", justifyContent: "center", border: 0, background: "transparent", cursor: "pointer" }}
                               >
                                 <Plus size={11} />
