@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./src/images/omBreatheLogo.png" alt="Ombreathe Logo" width="120" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+  <img src="./src/images/OmbreatheLogo.png" alt="Ombreathe Logo" width="120" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 
   # 🕉️ Ombreathe
   
@@ -85,7 +85,7 @@ Deep spiritual initiations and practice paths detailed with curated modules, dai
 The codebase is structured logically to separate global configurations, UI assets, reusable layout wrappers, and domain-specific content (such as `ombYoga` containing retreat and school data).
 
 ```text
-ombreathe/
+Ombreathe/
 ├── public/                 # Static assets (favicons, fonts, local scripts)
 ├── src/
 │   ├── Components/         # Reusable UI Components & Sections
@@ -150,8 +150,8 @@ graph TD
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/ombreathe.git
-cd ombreathe
+git clone https://github.com/your-username/Ombreathe.git
+cd Ombreathe
 ```
 
 ### 2. Install dependencies
@@ -190,7 +190,7 @@ In the project directory, you can run the following scripts:
 
 ## 🌐 Routing Map
 
-Ombreathe utilizes a declarative routing architecture under [App.jsx](file:///e:/sugaam/OmbreatheLatest/ombreathe/src/App.jsx). Below are the primary routes available:
+Ombreathe utilizes a declarative routing architecture under [App.jsx](file:///e:/sugaam/OmbreatheLatest/Ombreathe/src/App.jsx). Below are the primary routes available:
 
 | Route Path | Component / Target | Description |
 | :--- | :--- | :--- |
