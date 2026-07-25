@@ -31,7 +31,7 @@ function usePageTracking() {
 // ==========================================
 // LAYOUT
 // ==========================================
-import Layout from "../Components/layout/Layout";
+import Layout from "../components/layout/Layout";
 
 // ==========================================
 // PRELOAD IMPORTANT ROUTES
