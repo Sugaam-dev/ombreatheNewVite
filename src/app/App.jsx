@@ -36,8 +36,9 @@ import Layout from "../components/layout/Layout";
 // ==========================================
 // PRELOAD IMPORTANT ROUTES
 // ==========================================
+// Only preload the homepage — preloading YogaProgramPage forces the 2MB OmbDataMap
+// bundle to load on every page visit, severely hurting mobile performance.
 import("../features/home/pages/HomePage");
-import("../features/yoga-retreats-programs/pages/YogaProgramPage");
 
 // ==========================================
 // LAZY PAGES

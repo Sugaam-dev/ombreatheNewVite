@@ -387,11 +387,11 @@ const TrustBanner = () => {
         
         {/* COLUMN 1: GRADUATED YOGIS */}
         <div className="banner-col">
-          <h4 className="section-title">Graduated Yogis</h4>
+          <h3 className="section-title">Graduated Yogis</h3>
           <div className="col-content">
             <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.1s' }}>
               <div className="stat-number-wrapper">
-                <h3 className="stat-number">{studentCount.toLocaleString()}</h3>
+                <p className="stat-number" style={{ margin: 0 }}>{studentCount.toLocaleString()}</p>
                 <span className="stat-plus">+</span>
               </div>
             </div>
@@ -400,12 +400,12 @@ const TrustBanner = () => {
 
         {/* COLUMN 2: TOP TIER REVIEWS */}
         <div className="banner-col">
-          <h4 className="section-title">Top Tier Reviews</h4>
+          <h3 className="section-title">Top Tier Reviews</h3>
           <div className="col-content">
             <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
               <div className="rating-wrapper">
                 <div className="stat-number-wrapper rating-num">
-                  <h3 className="stat-number">{ratingCount.toFixed(1)}</h3>
+                  <p className="stat-number" style={{ margin: 0 }}>{ratingCount.toFixed(1)}</p>
                 </div>
                 <div className="stars-badge">
                   {[...Array(5)].map((_, i) => (
@@ -430,7 +430,7 @@ const TrustBanner = () => {
 
         {/* COLUMN 3: BOOKING TRUST */}
         <div className="banner-col">
-          <h4 className="section-title">Booking Trust</h4>
+          <h3 className="section-title">Booking Trust</h3>
           <div className="col-content">
             <div className="shields-grid">
               <div
@@ -451,7 +451,7 @@ const TrustBanner = () => {
 
         {/* COLUMN 4: YOGA ACCREDITATIONS */}
         <div className="banner-col">
-          <h4 className="section-title">Yoga Accreditations</h4>
+          <h3 className="section-title">Yoga Accreditations</h3>
           <div className="col-content">
             <div className="certs-grid">
               {certificates.map((cert, index) => (

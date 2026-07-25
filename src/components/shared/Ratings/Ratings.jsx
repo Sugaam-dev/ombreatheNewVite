@@ -159,7 +159,7 @@ function Ratings() {
                 <div className="reviewer-profile">
                   <img src={item.avatar} alt={item.name} className="reviewer-avatar" />
                   <div className="reviewer-details">
-                    <h4 className="reviewer-name">{item.name}</h4>
+                    <p className="reviewer-name" style={{ margin: 0, fontWeight: 700 }}>{item.name}</p>
                     <p className="reviewer-country">{item.country}</p>
                   </div>
                 </div>

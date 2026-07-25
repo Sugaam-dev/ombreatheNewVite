@@ -337,13 +337,13 @@ export default function Contact() {
           </div>
 
           <div className="ci-socials">
-            <a href="https://www.facebook.com/share/1BSKH3sBkD/" className="ci-soc-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/1BSKH3sBkD/" className="ci-soc-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://www.youtube.com/channel/UCEy9t9Wg-IKhz_WSOLuXrtg" className="ci-soc-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/channel/UCEy9t9Wg-IKhz_WSOLuXrtg" className="ci-soc-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
               <IoLogoYoutube />
             </a>
-            <a href="https://www.instagram.com/Ombreathein?igsh=MW9kOWVhbDFoeGZnaQ%3D%3D" className="ci-soc-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/Ombreathein?igsh=MW9kOWVhbDFoeGZnaQ%3D%3D" className="ci-soc-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>

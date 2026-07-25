@@ -1,0 +1,26 @@
+# Ombreathe
+
+> Ombreathe - Authentic Yoga Teacher Training, Retreats & Holistic Wellness Programs
+
+## Overview
+
+Ombreathe offers yoga teacher training programs (100hr, 200hr, 300hr, 500hr), yoga retreats, wellness programs, and Ayurveda healing across multiple locations.
+
+## Programs
+
+- [Yoga Teacher Training - Bali](https://ombreathe-new-vite.vercel.app/programs/bali/200hr)
+- [Yoga Teacher Training - Rishikesh](https://ombreathe-new-vite.vercel.app/programs/rishikesh/200hr)
+- [Yoga Teacher Training - Dharamshala](https://ombreathe-new-vite.vercel.app/programs/dharamshala/200hr)
+- [Yoga Teacher Training - Chiang Mai](https://ombreathe-new-vite.vercel.app/programs/chiang-mai/200hr)
+- [Yoga Retreats](https://ombreathe-new-vite.vercel.app/programs)
+- [Online Yoga Programs](https://ombreathe-new-vite.vercel.app/online/200hr)
+- [Membership Programs](https://ombreathe-new-vite.vercel.app/programs/shiv-shakti-sadhana)
+
+## Pages
+
+- [Home](https://ombreathe-new-vite.vercel.app/)
+- [About Us](https://ombreathe-new-vite.vercel.app/about)
+- [Contact](https://ombreathe-new-vite.vercel.app/contact)
+- [Our Teachers](https://ombreathe-new-vite.vercel.app/our-teachers-list)
+- [Terms and Conditions](https://ombreathe-new-vite.vercel.app/terms-and-conditions)
+- [Checkout](https://ombreathe-new-vite.vercel.app/checkout)

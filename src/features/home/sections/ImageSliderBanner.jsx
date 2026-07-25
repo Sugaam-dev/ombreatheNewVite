@@ -501,6 +501,7 @@ const ImageSliderBanner = () => {
             className="nav-button prev"
             onClick={goToPrevious}
             type="button"
+            aria-label="Previous slide"
           >
             <IoChevronBack size={28} />
           </button>
@@ -509,6 +510,7 @@ const ImageSliderBanner = () => {
             className="nav-button next"
             onClick={goToNext}
             type="button"
+            aria-label="Next slide"
           >
             <IoChevronForward size={28} />
           </button>
