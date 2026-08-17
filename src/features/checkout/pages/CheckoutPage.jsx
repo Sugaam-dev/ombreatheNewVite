@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Check, ArrowRight, ShieldCheck, Mail, MessageSquare, AlertCircle, ChevronDown, ShoppingBag, Trash2, Plus, Minus, CheckCircle2 } from "lucide-react";
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
+import { isValidPhoneNumber } from "libphonenumber-js";
 import { getCart, removeFromCart, updateQuantity, clearCart } from "../../../utils/cart";
 import { OmbDataMap } from "../../yoga-retreats-programs/data/OmbDataMap";
 
@@ -163,7 +166,8 @@ export default function CheckoutPage() {
           slug: state.slug,
           title,
           rooms,
-          price: programData.heroSection?.hero?.price || "$1,299"
+          price: programData.heroSection?.hero?.price || "$1,299",
+          location: state.location
         });
 
         // Pre-select room option
@@ -210,7 +214,18 @@ export default function CheckoutPage() {
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errs.email = "Invalid email format";
     }
-    if (!formData.phone.trim()) errs.phone = "Phone number is required";
+    
+    const phoneVal = formData.phone?.trim() || "";
+    if (!phoneVal) {
+      errs.phone = "Phone number is required";
+    } else {
+      const digitsOnly = phoneVal.replace(/\D/g, "");
+      if (digitsOnly.length <= 3) {
+        errs.phone = "Phone number is required";
+      } else if (!isValidPhoneNumber(phoneVal)) {
+        errs.phone = "Please enter a valid phone number for this country.";
+      }
+    }
     
     setErrors(errs);
     return Object.keys(errs).length === 0;
@@ -219,7 +234,7 @@ export default function CheckoutPage() {
   const getSummaryText = () => {
     let summaryStr = "";
     if (isDirectBooking && directCourse) {
-      summaryStr = `Course/Retreat: ${directCourse.title}\n- Accommodation Option: ${selectedRoom}\n- Selected Dates: ${selectedDate || "Not Specified"}\n- Price: ${totalStr}\n`;
+      summaryStr = `Course/Retreat: ${directCourse.title}\n- Location: ${directCourse.location || "Not Specified"}\n- Accommodation Option: ${selectedRoom}\n- Selected Dates: ${selectedDate || "Not Specified"}\n- Price: ${totalStr}\n`;
     } else {
       cart.forEach((item, idx) => {
         summaryStr += `${idx + 1}. ${item.title}\n`;
@@ -400,6 +415,47 @@ Please share the schedule, payment options, and general availability details. Th
           border-color: #1A2456 !important;
           box-shadow: 0 0 0 2px rgba(26, 36, 86, 0.15) !important;
         }
+        
+        /* Remove default borders and backgrounds from react-international-phone */
+        .react-international-phone-input-container {
+          border: none !important;
+          background: transparent !important;
+          width: 100% !important;
+        }
+        .react-international-phone-country-selector-button {
+          border: none !important;
+          background: transparent !important;
+          padding: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          cursor: pointer;
+        }
+        .react-international-phone-input {
+          border: none !important;
+          background: transparent !important;
+          width: 100% !important;
+          outline: none !important;
+          padding: 12px 16px !important;
+          font-family: inherit !important;
+          font-size: 0.875rem !important;
+          color: #44403c !important;
+        }
+        .react-international-phone-country-selector-dropdown {
+          z-index: 1050 !important;
+          border-radius: 12px !important;
+          border: 1px solid #e7e5e4 !important;
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+          padding: 6px 0 !important;
+          background-color: white !important;
+        }
+        .react-international-phone-country-selector-dropdown__list-item {
+          padding: 10px 16px !important;
+          font-family: inherit !important;
+          font-size: 0.875rem !important;
+        }
+        .react-international-phone-country-selector-dropdown__list-item:hover {
+          background-color: #f5f5f4 !important;
+        }
       `}</style>
       <div className="max-w-4xl mx-auto px-4" style={{ maxWidth: "1000px", margin: "0 auto" }}>
         
@@ -423,6 +479,11 @@ Please share the schedule, payment options, and general availability details. Th
                   <div className="border-b border-stone-100 pb-4" style={{ borderBottom: "1px solid #e7e5e4", paddingBottom: "16px" }}>
                     <span className="text-[#C8A96A] text-xs font-bold uppercase tracking-wider" style={{ color: "#C8A96A", fontSize: "0.75rem", fontWeight: "700", textTransform: "uppercase" }}>Selected Program</span>
                     <h2 className="text-xl font-bold text-[#1A2456] mt-1" style={{ color: "#1A2456", fontSize: "1.25rem", margin: "4px 0 0 0" }}>{directCourse.title}</h2>
+                    {directCourse.location && (
+                      <p className="text-xs text-stone-500 mt-1.5 capitalize" style={{ color: "#78716c", fontSize: "0.75rem", marginTop: "6px", textTransform: "capitalize" }}>
+                        Location: {directCourse.location}
+                      </p>
+                    )}
                   </div>
 
                   {/* Room Type Selector */}
@@ -616,24 +677,38 @@ Please share the schedule, payment options, and general availability details. Th
                   {errors.email && <p style={{ color: "#ef4444", fontSize: "0.75rem", margin: 0 }}>{errors.email}</p>}
                 </div>
 
-                <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                 <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
                   <label style={{ color: "#78716c", fontSize: "0.75rem", fontWeight: "600", textTransform: "uppercase" }}>Phone Number</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="+1 (555) 000-0000"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="checkout-input"
-                    style={{ width: "100%", padding: "12px 16px", borderRadius: "12px", border: errors.phone ? "1px solid #ef4444" : "1px solid #e7e5e4", backgroundColor: "#f5f5f4", fontSize: "0.875rem", boxSizing: "border-box" }}
-                  />
+                  <div 
+                    className="flex items-center w-full focus-within:ring-2 focus-within:ring-[#1A2456] transition-all"
+                    style={{ 
+                      display: "flex", 
+                      width: "100%", 
+                      borderRadius: "12px", 
+                      border: errors.phone ? "1px solid #ef4444" : "1px solid #e7e5e4", 
+                      backgroundColor: "#f5f5f4",
+                      boxSizing: "border-box",
+                      overflow: "hidden"
+                    }}
+                  >
+                    <PhoneInput
+                      defaultCountry="in"
+                      value={formData.phone}
+                      onChange={(phone) => setFormData(prev => ({ ...prev, phone }))}
+                      className="w-full flex"
+                      inputClassName="react-international-phone-input"
+                      countrySelectorStyleProps={{
+                        buttonClassName: "react-international-phone-country-selector-button"
+                      }}
+                    />
+                  </div>
                   {errors.phone && <p style={{ color: "#ef4444", fontSize: "0.75rem", margin: 0 }}>{errors.phone}</p>}
                 </div>
               </div>
 
               {/* Choice of Inquiry Method */}
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                <label style={{ color: "#78716c", fontSize: "0.75rem", fontWeight: "600", textTransform: "uppercase" }}>How would you like to receive your booking itinerary?</label>
+                <label style={{ color: "#78716c", fontSize: "0.75rem", fontWeight: "600", textTransform: "uppercase" }}>How would you like to send your booking inquiry?</label>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
                   <button
                     type="button"
@@ -762,6 +837,13 @@ Please share the schedule, payment options, and general availability details. Th
                     <span style={{ color: "#a8a29e", fontSize: "0.6875rem", fontWeight: "700", textTransform: "uppercase" }}>Program</span>
                     <span style={{ display: "block", color: "#1A2456", fontWeight: "700", fontSize: "0.875rem", marginTop: "2px", lineHeight: "1.4" }}>{directCourse.title}</span>
                   </div>
+
+                  {directCourse.location && (
+                    <div>
+                      <span style={{ color: "#a8a29e", fontSize: "0.6875rem", fontWeight: "700", textTransform: "uppercase" }}>Location</span>
+                      <span style={{ display: "block", color: "#44403c", fontWeight: "600", fontSize: "0.875rem", marginTop: "2px", textTransform: "capitalize" }}>{directCourse.location}</span>
+                    </div>
+                  )}
                   
                   <div>
                     <span style={{ color: "#a8a29e", fontSize: "0.6875rem", fontWeight: "700", textTransform: "uppercase" }}>Room Type</span>

@@ -10,10 +10,15 @@ import {
   FaEnvelope,
   FaPen,
   FaCommentDots,
+  FaMapMarkerAlt,
+  FaChevronDown,
 } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
+import { isValidPhoneNumber } from "libphonenumber-js";
 import SectionHeading from "../../../components/shared/SectionHeading/SectionHeading";
 
 const WEB3FORMS_ACCESS_KEY = 
@@ -69,6 +74,9 @@ export default function Contact() {
   const [active, setActive] = useState(null);
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("bali");
+  const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false);
 
   useEffect(() => {
     // 1. Ensure Leaflet CSS and JS are loaded
@@ -149,7 +157,6 @@ export default function Contact() {
     
     const formData = new FormData(event.target);
     const email = formData.get("email")?.toString().trim();
-    const phone = formData.get("phone")?.toString().trim();
 
     // 1. Email Format Validation
     if (!email) {
@@ -162,17 +169,19 @@ export default function Contact() {
       return;
     }
 
-    // 2. Phone Format Validation (Indian & International)
+    // 2. Phone Format Validation using libphonenumber-js
     if (!phone) {
       setResult("Phone number is required.");
       return;
     }
-    // Remove space, hyphen, and bracket symbols for clean digit validation
-    const cleanedPhone = phone.replace(/[\s\-()]/g, "");
-    // Must be 7 to 15 digits, optionally prefixed with '+'
-    const phoneRegex = /^\+?[0-9]{7,15}$/;
-    if (!phoneRegex.test(cleanedPhone)) {
-      setResult("Please enter a valid phone number (Indian or International).");
+    const cleanPhone = phone.trim();
+    const digitsOnly = cleanPhone.replace(/\D/g, "");
+    if (digitsOnly.length <= 3) {
+      setResult("Phone number is required.");
+      return;
+    }
+    if (!isValidPhoneNumber(cleanPhone)) {
+      setResult("Please enter a valid phone number for this country.");
       return;
     }
 
@@ -180,6 +189,8 @@ export default function Contact() {
     setResult("Sending...");
 
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+    formData.append("phone", cleanPhone);
+    formData.append("location", selectedLocation);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -192,6 +203,7 @@ export default function Contact() {
       if (data.success) {
         setResult("Message Sent Successfully!");
         event.target.reset();
+        setPhone("");
       } else {
         console.error("Submission Error", data);
         setResult(data.message || "Something went wrong. Please try again.");
@@ -267,6 +279,106 @@ export default function Contact() {
           background-color: #f1f5f9;
           color: #475569;
           border: 1px solid #e2e8f0;
+        }
+
+        .cf-dropdown-btn {
+          width: 100%;
+          border: none;
+          padding: 15px 10px 15px 25px;
+          outline: none;
+          font-family: inherit;
+          font-size: var(--contact-form-size);
+          background: transparent;
+          text-align: left;
+          color: #11241e;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+        }
+        .cf-dropdown-btn svg {
+          position: static !important;
+          color: #888 !important;
+          font-size: 14px !important;
+        }
+        .cf-dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #fff;
+          border: 1px solid #eee;
+          border-radius: 12px;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+          z-index: 1030;
+          overflow: hidden;
+          padding: 6px 0;
+          margin-top: 5px;
+        }
+        .cf-dropdown-item {
+          width: 100%;
+          border: none;
+          background: transparent;
+          padding: 10px 20px;
+          font-size: var(--contact-form-size);
+          text-align: left;
+          color: #444;
+          cursor: pointer;
+          transition: 0.2s;
+        }
+        .cf-dropdown-item:hover {
+          background: #f5f5f4;
+          color: #11241e;
+        }
+        .cf-dropdown-item.active {
+          background: #f1f5f9;
+          font-weight: 700;
+          color: #2f7a63;
+        }
+
+        /* Remove default borders and backgrounds from react-international-phone */
+        .react-international-phone-input-container {
+          border: none !important;
+          background: transparent !important;
+          width: 100% !important;
+        }
+        .react-international-phone-country-selector {
+          margin-left: 25px !important;
+        }
+        .react-international-phone-country-selector-button {
+          border: none !important;
+          background: transparent !important;
+          padding: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          cursor: pointer;
+        }
+        .react-international-phone-input {
+          border: none !important;
+          background: transparent !important;
+          width: 100% !important;
+          outline: none !important;
+          padding: 15px 10px 15px 10px !important;
+          font-family: inherit !important;
+          font-size: var(--contact-form-size) !important;
+          color: #11241e !important;
+        }
+        .react-international-phone-country-selector-dropdown {
+          z-index: 1050 !important;
+          border-radius: 12px !important;
+          border: 1px solid #eee !important;
+          box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+          padding: 6px 0 !important;
+          background-color: white !important;
+        }
+        .react-international-phone-country-selector-dropdown__list-item {
+          padding: 10px 16px !important;
+          font-family: inherit !important;
+          font-size: var(--contact-form-size) !important;
+          color: #444 !important;
+        }
+        .react-international-phone-country-selector-dropdown__list-item:hover {
+          background-color: #f5f5f4 !important;
         }
 
         .map-section { max-width: 1400px; width: 95%; margin: 0 auto; }
@@ -373,15 +485,58 @@ export default function Contact() {
                   required
                 />
               </div>
-              <div className="cf-group">
+              <div className="cf-group flex items-center">
                 <FaPhoneAlt />
-                <input
-                  className="cf-input"
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  required
+                <PhoneInput
+                  defaultCountry="in"
+                  value={phone}
+                  onChange={(val) => setPhone(val)}
+                  className="w-full flex"
+                  inputClassName="react-international-phone-input"
+                  countrySelectorStyleProps={{
+                    buttonClassName: "react-international-phone-country-selector-button"
+                  }}
                 />
+              </div>
+              <div className="cf-group" style={{ position: "relative" }}>
+                <FaMapMarkerAlt />
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsLocationDropdownOpen(!isLocationDropdownOpen);
+                  }}
+                  className="cf-dropdown-btn"
+                  style={{ position: "relative", zIndex: 10 }}
+                >
+                  <span>
+                    {LOCATIONS.find((l) => l.name.toLowerCase() === selectedLocation)?.name || "Select Location"}
+                  </span>
+                  <FaChevronDown />
+                </button>
+
+                {isLocationDropdownOpen && (
+                  <div className="fixed inset-0 z-10" onClick={() => setIsLocationDropdownOpen(false)} style={{ position: "fixed", inset: 0, zIndex: 10 }} />
+                )}
+
+                {isLocationDropdownOpen && (
+                  <div className="cf-dropdown-menu">
+                    {LOCATIONS.map((loc) => (
+                      <button
+                        key={loc.id}
+                        type="button"
+                        onClick={() => {
+                          setSelectedLocation(loc.name.toLowerCase());
+                          setIsLocationDropdownOpen(false);
+                        }}
+                        className={`cf-dropdown-item ${
+                          selectedLocation === loc.name.toLowerCase() ? "active" : ""
+                        }`}
+                      >
+                        {loc.name}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className="cf-group">
                 <FaPen />
