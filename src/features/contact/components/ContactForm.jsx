@@ -81,40 +81,44 @@ export default function Contact() {
   useEffect(() => {
     // 1. Ensure Leaflet CSS and JS are loaded
     const loadLeaflet = () => {
-      if (window.L && mapRef.current && !lMap.current) {
-        const southWest = window.L.latLng(-60, -170);
-        const northEast = window.L.latLng(85, 190);
-        const bounds = window.L.latLngBounds(southWest, northEast);
+      try {
+        if (window.L && mapRef.current && !lMap.current) {
+          const southWest = window.L.latLng(-60, -170);
+          const northEast = window.L.latLng(85, 190);
+          const bounds = window.L.latLngBounds(southWest, northEast);
 
-        const map = window.L.map(mapRef.current, {
-          center: [15, 90],
-          zoom: 4,
-          minZoom: 2,
-          maxBounds: bounds,
-          maxBoundsViscosity: 1.0,
-          zoomControl: false,
-          attributionControl: false,
-        });
-
-        window.L.tileLayer(
-          "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-        ).addTo(map);
-        lMap.current = map;
-
-        LOCATIONS.forEach((loc) => {
-          const icon = window.L.divIcon({
-            html: `<div class="emoji-pin">${loc.icon}</div>`,
-            className: "emoji-pin-wrapper",
-            iconSize: [32, 32],
-            iconAnchor: [16, 16],
+          const map = window.L.map(mapRef.current, {
+            center: [15, 90],
+            zoom: 4,
+            minZoom: 2,
+            maxBounds: bounds,
+            maxBoundsViscosity: 1.0,
+            zoomControl: false,
+            attributionControl: false,
           });
-          window.L.marker([loc.lat, loc.lng], { icon })
-            .addTo(map)
-            .on("click", () => setActive(loc));
-        });
 
-        // Trigger resize fix
-        setTimeout(() => map.invalidateSize(), 500);
+          window.L.tileLayer(
+            "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+          ).addTo(map);
+          lMap.current = map;
+
+          LOCATIONS.forEach((loc) => {
+            const icon = window.L.divIcon({
+              html: `<div class="emoji-pin">${loc.icon}</div>`,
+              className: "emoji-pin-wrapper",
+              iconSize: [32, 32],
+              iconAnchor: [16, 16],
+            });
+            window.L.marker([loc.lat, loc.lng], { icon })
+              .addTo(map)
+              .on("click", () => setActive(loc));
+          });
+
+          // Trigger resize fix
+          setTimeout(() => map.invalidateSize(), 500);
+        }
+      } catch (err) {
+        console.error("Leaflet initialization error:", err);
       }
     };
 
@@ -137,9 +141,13 @@ export default function Contact() {
     }
 
     return () => {
-      if (lMap.current) {
-        lMap.current.remove();
-        lMap.current = null;
+      try {
+        if (lMap.current) {
+          lMap.current.remove();
+          lMap.current = null;
+        }
+      } catch (err) {
+        console.error("Leaflet cleanup error:", err);
       }
     };
   }, []);

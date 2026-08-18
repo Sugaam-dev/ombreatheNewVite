@@ -10,55 +10,45 @@ import fourSharedRoomImg from "../../../images/rooms/fourSharedRoom.jpg";
 import sixSharedRoomImg from "../../../images/rooms/sixSharedRoom.jpg";
 
 const getRoomImage = (location, type, fallbackImg) => {
-  if (!location || !type) return fallbackImg;
-  const loc = location.toLowerCase().trim();
+  if (!type) return fallbackImg;
   const lower = type.toLowerCase();
   
-  if (loc === "bali") {
-    if (lower.includes("private")) {
-      return privateRoomImg;
-    }
-    if (
-      lower.includes("2 sharing") || 
-      lower.includes("two shared") || 
-      lower.includes("twoshared") || 
-      lower.includes("twin") || 
-      lower.includes("double") ||
-      lower.includes("2 shared") ||
-      lower.includes("2-shared")
-    ) {
-      return twoSharedRoomImg;
-    }
-    if (
-      lower.includes("4 sharing") || 
-      lower.includes("four shared") || 
-      lower.includes("fourshared") || 
-      lower.includes("quad") ||
-      lower.includes("4 shared") ||
-      lower.includes("4-shared")
-    ) {
-      return fourSharedRoomImg;
-    }
-    if (
-      lower.includes("6 sharing") || 
-      lower.includes("six shared") || 
-      lower.includes("sixshared") || 
-      lower.includes("6 shared") ||
-      lower.includes("6-shared")
-    ) {
-      return sixSharedRoomImg;
-    }
-    if (lower.includes("4/6")) {
-      return fourSharedRoomImg;
-    }
+  if (lower.includes("private")) {
+    return privateRoomImg;
   }
-  
-  // Extendable: Add future location mappers here!
-  /*
-  if (loc === "rishikesh") {
-     ...
+  if (
+    lower.includes("2 sharing") || 
+    lower.includes("two shared") || 
+    lower.includes("twoshared") || 
+    lower.includes("twin") || 
+    lower.includes("double") ||
+    lower.includes("2 shared") ||
+    lower.includes("2-shared")
+  ) {
+    return twoSharedRoomImg;
   }
-  */
+  if (
+    lower.includes("6 sharing") || 
+    lower.includes("six shared") || 
+    lower.includes("sixshared") || 
+    lower.includes("6 shared") ||
+    lower.includes("6-shared")
+  ) {
+    return sixSharedRoomImg;
+  }
+  if (
+    lower.includes("4 sharing") || 
+    lower.includes("four shared") || 
+    lower.includes("fourshared") || 
+    lower.includes("quad") ||
+    lower.includes("4 shared") ||
+    lower.includes("4-shared") ||
+    lower.includes("sharing") || 
+    lower.includes("shared") ||
+    lower.includes("4/6")
+  ) {
+    return fourSharedRoomImg;
+  }
   
   return fallbackImg;
 };
@@ -90,6 +80,7 @@ const OmbAccommodationSection = ({ data, colors, onBookClick }) => {
 
   if (!data || !data.content) return null;
   const { title, highlight, subtitle, rooms = [], amenities = [], buttonText, url } = data.content;
+  
   const room = rooms[activeRoom];
   if (!room) return null;
 

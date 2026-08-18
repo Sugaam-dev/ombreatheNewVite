@@ -596,38 +596,23 @@ export const Mysore7DayChairYogaData = {
   
         rooms: [
           {
-            type: "Shared Room Structure",
-            tag: "Standard Value Inclusion",
-            tagBg: "#A0522D",
-            price: "$500 USD",
+            type: "Sharing Room",
+            tag: "Sharing",
+            tagBg: "#7BAF8A",
+            price: "$500",
             img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-            desc: "Clean shared practitioner quarters housing private bathrooms, filtered water lines, and study desk boundaries.",
+            desc: "Clean shared quarters with attached bathroom, filtered water, and a comfortable study environment.",
             features: [
-              "Twin roommate setting",
-              "Private attached bathroom",
-              "Comfortable clean bedding",
-              "Fast wireless Wi-Fi link",
-              "Storage clothing wardrobes",
-              "Regular space maintenance",
-            ],
-          },
-          {
-            type: "Non-Residential Tier",
-            tag: "Practice Only Bracket",
-            tagBg: "#1C3144",
-            price: "$300 USD",
-            img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-            desc: "Access all practical workshops, anatomy masterclasses, and certified evaluation loops while arranging outside stay structures.",
-            features: [
-              "Full course materials access",
-              "All practical training blocks",
-              "On-site demonstration seats",
-              "Yoga Alliance RYT logs",
-              "Flexible out-living capability",
-              "Full library access metrics",
+              "Shared room (4-person)",
+              "Attached bathroom",
+              "Clean bedding provided",
+              "Wi-Fi included",
+              "Storage and wardrobe space",
+              "Regular cleaning service",
             ],
           },
         ],
+        
   
         amenities: [
           { icon: "waves", label: "Massive Practice Shalas" },

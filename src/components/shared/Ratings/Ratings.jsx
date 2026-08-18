@@ -2,31 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { IoStar } from "react-icons/io5";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import "../../../styles/ratings.css";
+import { DYNAMIC_TESTIMONIALS } from "../../../utils/dynamicPrices";
 
 function Ratings() {
-  const testimonials = [
-    {
-      stars: 5,
-      quote: "The Yoga TTC in Bali changed my life completely. The teachers, the food, the environment — everything was magical!",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-      name: "Jessica M.",
-      country: "USA",
-    },
-    {
-      stars: 5,
-      quote: "Ayurveda Healing Retreat in Rishikesh gave me a new life. I feel lighter, healthier and mentally so calm.",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-      name: "Arjun P.",
-      country: "Australia",
-    },
-    {
-      stars: 5,
-      quote: "A life-changing experience! I found my purpose and a beautiful community for life.",
-      avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-      name: "Maria K.",
-      country: "Germany",
-    },
-  ];
+  const testimonials = DYNAMIC_TESTIMONIALS;
 
   const duplicatedTestimonials = [...testimonials, ...testimonials, ...testimonials];
   

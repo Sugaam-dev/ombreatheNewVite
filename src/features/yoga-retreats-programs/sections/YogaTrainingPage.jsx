@@ -5,31 +5,20 @@ import { ROOM_PRICES_RISHIKESH } from '../../../data/rishikesh/programPricesRish
 import { ROOM_PRICES_MYSORE } from '../../../data/mysore/programPricesMysore';
 import { ROOM_PRICES_CHIANG } from '../../../data/chiang/programPricesChiang';
 import { ROOM_PRICES_DHARAMSHALA } from '../../../data/dharamshala/programPricesDharamshala';
+import { DYNAMIC_BATCHES } from '../../../utils/dynamicPrices';
 
+// Generic fallback when a course has no pricing data in either the sheet or JS files
 const defaultRooms = [
-  { type: '6 Sharing Room', current: 999, original: 1399, popular: false },
-  { type: '4 Sharing Room', current: 1099, original: 1499, popular: false },
-  { type: '2 Sharing Room', current: 1399, original: 1799, popular: true },
-  { type: 'Private Room', current: 1699, original: 2099, popular: false }
+  { type: 'Shared Room', current: 0, original: 0, popular: true }
 ];
 
-const generateBatches = (durationDays, roomsList) => {
+const generateBatches = (durationDays, roomsList, locationKey, courseKey) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const currentMonth = today.getMonth();
-  const currentYear = today.getFullYear();
-  
-  const months = [];
-  for (let i = 0; i < 8; i++) {
-    const d = new Date(currentYear, currentMonth + i, 1);
-    const monthIndex = d.getMonth();
-    const year = d.getFullYear();
-    const name = d.toLocaleString('en-US', { month: 'long', year: 'numeric' });
-    const startDay = monthIndex === 0 ? 5 : 1; // Course starts on 5th in January, 1st in others
-    months.push({ name, year, monthIndex, startDay });
-  }
-  
+  const customKey = `${locationKey}_${courseKey}`;
+  const customBatches = DYNAMIC_BATCHES[customKey];
+
   const getSuffix = (day) => {
     if (day > 3 && day < 21) return 'th';
     switch (day % 10) {
@@ -39,6 +28,48 @@ const generateBatches = (durationDays, roomsList) => {
       default: return 'th';
     }
   };
+
+  const formatBatchText = (startDate, endDate) => {
+    const startDayStr = `${startDate.getDate()}${getSuffix(startDate.getDate())}`;
+    const endDayStr = `${endDate.getDate()}${getSuffix(endDate.getDate())}`;
+    const startMonthStr = startDate.toLocaleString('en-US', { month: 'short' });
+    const endMonthStr = endDate.toLocaleString('en-US', { month: 'short' });
+    
+    if (startDate.getMonth() === endDate.getMonth()) {
+      return `${startDayStr} To ${endDayStr} ${startMonthStr} ${startDate.getFullYear()}`;
+    } else {
+      return `${startDayStr} ${startMonthStr} To ${endDayStr} ${endMonthStr} ${endDate.getFullYear()}`;
+    }
+  };
+
+  if (customBatches && customBatches.length > 0) {
+    return customBatches
+      .filter(b => b.startDate >= today)
+      .slice(0, 6)
+      .map((b) => {
+        const { startDate, endDate, dateText, seatsLeft = 3 } = b;
+        const monthName = startDate.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+        return {
+          dates: dateText || formatBatchText(startDate, endDate),
+          month: monthName,
+          seatsLeft: seatsLeft,
+          prices: roomsList || [],
+        };
+      });
+  }
+
+  const currentMonth = today.getMonth();
+  const currentYear = today.getFullYear();
+  
+  const months = [];
+  for (let i = 0; i < 14; i++) {
+    const d = new Date(currentYear, currentMonth + i, 1);
+    const monthIndex = d.getMonth();
+    const year = d.getFullYear();
+    const name = d.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+    const startDay = monthIndex === 0 ? 5 : 1; // Course starts on 5th in January, 1st in others
+    months.push({ name, year, monthIndex, startDay });
+  }
 
   return months
     .map((m, idx) => {
@@ -51,21 +82,8 @@ const generateBatches = (durationDays, roomsList) => {
     .slice(0, 6)
     .map((item) => {
       const { m, idx, startDate, endDate } = item;
-      const startDayStr = `${startDate.getDate()}${getSuffix(startDate.getDate())}`;
-      const endDayStr = `${endDate.getDate()}${getSuffix(endDate.getDate())}`;
-      
-      const startMonthStr = startDate.toLocaleString('en-US', { month: 'short' });
-      const endMonthStr = endDate.toLocaleString('en-US', { month: 'short' });
-      
-      let datesText = '';
-      if (startDate.getMonth() === endDate.getMonth()) {
-        datesText = `${startDayStr} To ${endDayStr} ${startMonthStr} ${startDate.getFullYear()}`;
-      } else {
-        datesText = `${startDayStr} ${startMonthStr} To ${endDayStr} ${endMonthStr} ${endDate.getFullYear()}`;
-      }
-
       return {
-        dates: datesText,
+        dates: formatBatchText(startDate, endDate),
         month: m.name,
         seatsLeft: [2, 3, 3, 3, 4, 6, 4, 3][idx] || 3,
         prices: roomsList || [],
@@ -93,9 +111,10 @@ export default function YogaTrainingPage({ selectedBatch, setSelectedBatch, onBo
   }
 
   const durationDays = pricingInfo?.durationDays || 25;
-  const roomsList = pricingInfo?.rooms || defaultRooms;
+  
+  let roomsList = pricingInfo?.rooms || defaultRooms;
 
-  const courses = generateBatches(durationDays, roomsList);
+  const courses = generateBatches(durationDays, roomsList, locKey, slugKey);
 
   if (courses.length === 0) return null;
 

@@ -2,7 +2,8 @@
 
 import "./App.css";
 
-import React, { Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import { fetchAndApplyDynamicPrices } from "../utils/dynamicPrices";
 import {
   BrowserRouter as Router,
   Routes,
@@ -276,9 +277,19 @@ function AppRoutes() {
 // APP
 // ==========================================
 function App() {
+  const [pricesUpdated, setPricesUpdated] = useState(0);
+
+  useEffect(() => {
+    fetchAndApplyDynamicPrices().then((success) => {
+      if (success) {
+        setPricesUpdated((prev) => prev + 1);
+      }
+    });
+  }, []);
+
   return (
     <Router>
-      <AppRoutes />
+      <AppRoutes key={pricesUpdated} />
     </Router>
   );
 }

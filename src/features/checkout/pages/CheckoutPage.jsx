@@ -146,18 +146,52 @@ export default function CheckoutPage() {
         }
 
         // Apply dynamic pricing if pricingInfo exists
-        if (pricingInfo?.rooms) {
-          rooms = rooms.map(originalRoom => {
-            const matchedPrice = pricingInfo.rooms.find(
-              room => room.type?.toLowerCase().replace(/\s+/g, '') === originalRoom.type?.toLowerCase().replace(/\s+/g, '')
+        if (pricingInfo?.rooms && pricingInfo.rooms.length > 0) {
+          const hardcodedRooms = rooms;
+          rooms = pricingInfo.rooms.map(sheetRoom => {
+            const normalise = s => s?.toLowerCase().replace(/\s+/g, "") || "";
+            const sheetTypeLower = sheetRoom.type?.toLowerCase() || "";
+            
+            // 1. Try exact normalized match
+            let hardcoded = hardcodedRooms.find(
+              hr => normalise(hr.type) === normalise(sheetRoom.type)
             );
-            if (matchedPrice) {
-              return {
-                ...originalRoom,
-                price: `$${matchedPrice.current}`
-              };
+            
+            // 2. Try substring match on standard terms
+            if (!hardcoded) {
+              if (sheetTypeLower.includes("private")) {
+                hardcoded = hardcodedRooms.find(hr => hr.type?.toLowerCase().includes("private"));
+              } else if (sheetTypeLower.includes("6 sharing") || sheetTypeLower.includes("6-bed") || sheetTypeLower.includes("6 sharing room")) {
+                hardcoded = hardcodedRooms.find(hr => hr.type?.toLowerCase().includes("6 sharing") || hr.type?.toLowerCase().includes("6-bed") || hr.type?.toLowerCase().includes("6 sharing room"));
+              } else if (sheetTypeLower.includes("4 sharing") || sheetTypeLower.includes("4-bed") || sheetTypeLower.includes("4 sharing room")) {
+                hardcoded = hardcodedRooms.find(hr => hr.type?.toLowerCase().includes("4 sharing") || hr.type?.toLowerCase().includes("4-bed") || hr.type?.toLowerCase().includes("4 sharing room"));
+              } else if (sheetTypeLower.includes("2 sharing") || sheetTypeLower.includes("twin") || sheetTypeLower.includes("double") || sheetTypeLower.includes("2 sharing room")) {
+                hardcoded = hardcodedRooms.find(hr => hr.type?.toLowerCase().includes("2 sharing") || hr.type?.toLowerCase().includes("twin") || hr.type?.toLowerCase().includes("double") || hr.type?.toLowerCase().includes("2 sharing room"));
+              } else if (sheetTypeLower.includes("sharing") || sheetTypeLower.includes("shared")) {
+                hardcoded = hardcodedRooms.find(hr => hr.type?.toLowerCase().includes("sharing") || hr.type?.toLowerCase().includes("shared") || hr.type?.toLowerCase().includes("shared room"));
+              }
             }
-            return originalRoom;
+            
+            // 3. Fall back to matching position index if any
+            if (!hardcoded) {
+              const idx = pricingInfo.rooms.indexOf(sheetRoom);
+              if (idx >= 0 && idx < hardcodedRooms.length) {
+                hardcoded = hardcodedRooms[idx];
+              }
+            }
+            
+            // 4. Absolute fallback to the first available hardcoded room
+            if (!hardcoded && hardcodedRooms.length > 0) {
+              hardcoded = hardcodedRooms[0];
+            }
+
+            return {
+              ...(hardcoded || {}),
+              type: sheetRoom.type,
+              price: `$${sheetRoom.current}`,
+              note: sheetRoom.note || hardcoded?.note || "",
+              popular: sheetRoom.popular,
+            };
           });
         }
 
