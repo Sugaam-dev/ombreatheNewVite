@@ -23,9 +23,7 @@ export const AerialYogaData = {
         price: PROGRAM_PRICES.shortcourses.aerialyoga,
         priceNote: "Includes stay, meals & YACEP certificate",
         bgImage:
-          "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -67,7 +65,7 @@ export const AerialYogaData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "aerial yoga adventure",
@@ -131,11 +129,11 @@ export const AerialYogaData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
             food:
-              "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
-              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const AerialYogaData = {
             label: "Aerial Yoga Asana & Hammock",
             desc: "Aerial poses, alignment principles, warm-up and cool-down sequences, hammock setup and equipment safety",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1547153760-18fc86324498?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
           },
           {
             label: "Hatha Flow & Yin Pranayama",
             desc: "Morning Hatha Yang Flow, Yin Pranayama & Meditation to ground and prepare the body for aerial practice",
             icon: "sun",
-            img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           },
           {
             label: "Anatomy, Sequencing & Teaching",
             desc: "Aerial anatomy & physiology, class sequencing, cueing, demonstrations, adjustments and teaching methodology",
             icon: "wind",
-            img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -354,7 +352,7 @@ export const AerialYogaData = {
             "5 days of morning grounding practice & afternoon aerial sessions — check in 20th, classes 21st–25th, checkout 26th.",
     
           image:
-            "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
     
           morning: [
             { time: "06:00 AM", activity: "Hatha Flow (Yang)", icon: "sun" },
@@ -408,7 +406,7 @@ export const AerialYogaData = {
               title: "Fruits & Tea",
               icon: "sun",
               time: "08:45 – 09:45",
-              img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
+              img: "/images/external/foods/easy_vegetarian_indian_breakfast_recipes.jpg",
               desc: "Fresh fruits and herbal teas to energize your morning Hatha Flow and aerial training.",
               items: [
                 "Fresh tropical fruits",
@@ -422,7 +420,7 @@ export const AerialYogaData = {
               title: "Lunch",
               icon: "coffee",
               time: "11:15 AM – 12:30 PM",
-              img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
               desc: "Nourishing organic vegetarian lunch to sustain your afternoon aerial yoga sessions.",
               items: [
                 "Rice bowls",
@@ -436,7 +434,7 @@ export const AerialYogaData = {
               title: "Dinner",
               icon: "moon",
               time: "06:30 – 07:30 PM",
-              img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1547592180-85f173990554.jpg",
               desc: "Light calming evening vegetarian meals — Sundays explore Ubud's local restaurants freely.",
               items: [
                 "Lentil soups",
@@ -488,7 +486,7 @@ export const AerialYogaData = {
               tagBg: "#1A5A8A",
               duration: "Half Day",
               icon: "globe",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Sacred purification temple with holy spring pools.",
               highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
             },
@@ -498,7 +496,7 @@ export const AerialYogaData = {
               tagBg: "#2E7A55",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1558618666-fcd25c85cd64.jpg",
               desc: "UNESCO iconic green rice terraces of Ubud.",
               highlights: ["Terraced fields", "Scenic views", "Nature walk"],
             },
@@ -508,7 +506,7 @@ export const AerialYogaData = {
               tagBg: "#8A6010",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1567745576352-e404ee640705?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1567745576352-e404ee640705.jpg",
               desc: "Jungle sanctuary with ancient temples and wild monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -518,7 +516,7 @@ export const AerialYogaData = {
               tagBg: "#8B3A3A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1555400038-63f5ba517a47.jpg",
               desc: "Sunrise volcano trek with stunning lake and crater views.",
               highlights: ["Sunrise trek", "Volcano hike", "Lake view"],
             },
@@ -528,7 +526,7 @@ export const AerialYogaData = {
               tagBg: "#0A1E38",
               duration: "Half Day",
               icon: "waves",
-              img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1537996194471-e657df975ab4.jpg",
               desc: "Iconic sea temple with breathtaking sunset views.",
               highlights: ["Ocean temple", "Sunset views", "Coastal walk"],
             },
@@ -538,7 +536,7 @@ export const AerialYogaData = {
               tagBg: "#3A5A7A",
               duration: "3 Hours",
               icon: "camera",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Explore local markets, art galleries & Balinese handicrafts.",
               highlights: ["Local markets", "Art & craft", "Shopping"],
             },
@@ -636,7 +634,7 @@ export const AerialYogaData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -647,7 +645,7 @@ export const AerialYogaData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -658,7 +656,7 @@ export const AerialYogaData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -669,7 +667,7 @@ export const AerialYogaData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -680,7 +678,7 @@ export const AerialYogaData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -710,7 +708,7 @@ export const AerialYogaData = {
           tag: "Course Only",
           tagBg: "#1A5A8A",
           price: "$399",
-          img: "https://images.unsplash.com/photo-1547153760-18fc86324498?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1547153760-18fc86324498.jpg",
           desc: "Course-only option — attend all aerial yoga training sessions without accommodation or meals included.",
           features: [
             "Course access only",
@@ -726,7 +724,7 @@ export const AerialYogaData = {
           tag: "Included",
           tagBg: "#2A8AC8",
           price: "$550",
-          img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1631049307264-da0ec9d70304.jpg",
           desc: "Comfortable shared rooms with AC, garden access and outdoor lounge for relaxation and socializing.",
           features: [
             "Twin sharing",
@@ -742,7 +740,7 @@ export const AerialYogaData = {
           tag: "Upgrade",
           tagBg: "#153050",
           price: "$650",
-          img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1618773928121-c32242e63f39.jpg",
           desc: "Private room with AC, peaceful atmosphere and all modern amenities for a focused aerial yoga stay.",
           features: [
             "Private room",

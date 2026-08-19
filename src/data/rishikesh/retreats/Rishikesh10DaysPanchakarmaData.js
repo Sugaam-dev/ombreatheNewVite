@@ -21,9 +21,7 @@ export const Rishikesh10DaysPanchakarmaData = {
         price: "$799",
         priceNote: "Private room configuration rate ($560 special discount rate for combined YTTC students); includes personalized detox protocols based on your prakriti constitution.",
         bgImage:
-          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
         buttonText: "Enroll This Course Now",
         url: "/contact",
       },
@@ -65,7 +63,7 @@ export const Rishikesh10DaysPanchakarmaData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
+            "/images/external/heroes/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           eyebrow: "Ombreathe Wellness",
           title: "Welcome to the",
           highlight: "science of holistic purification",
@@ -129,11 +127,11 @@ export const Rishikesh10DaysPanchakarmaData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -161,19 +159,19 @@ export const Rishikesh10DaysPanchakarmaData = {
             label: "Ama Toxin Removal",
             desc: "Target deep-rooted internal contaminants (Ama) hidden within tissues to clear out metabolic stagnation indices.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
           },
           {
             label: "Doshic Alignment",
             desc: "Bring Vata, Pitta, and Kapha energies back into perfect ancestral proportions using custom natural protocols.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Yogic-Ayurveda Fusion",
             desc: "Combine intensive detoxification therapies with systematic asana, breathing tracking, and cellular rejuvenation.",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Purification Scope",
@@ -297,7 +295,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             "Living appropriately according to the timetable teaches intense mental mastery. Every therapeutic assignment is mandatory.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "Morning Block", activity: "Therapeutic Asana practice and breath alignment tracking", icon: "sun" },
@@ -346,7 +344,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Light Initial Stoking",
               icon: "sun",
               time: "Morning Slot",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
               desc: "Easy-to-digest whole foods and therapeutic warm herbal infusions to optimize metabolic tracking parameters.",
               items: [
                 "Fresh seasonal organic fruits",
@@ -359,7 +357,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Midday Dosha Balancing Plate",
               icon: "coffee",
               time: "Noon Slot",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
               desc: "Complete nutritional assemblies prepared specifically to balance your identified primary prakriti state.",
               items: [
                 "Traditional digestible lentils",
@@ -372,7 +370,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Ultra-Digestible Reset Supper",
               icon: "moon",
               time: "Evening Slot",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max",
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg",
               desc: "Very light, comforting soups and broths configured carefully to keep your digestive tract clear before sleep.",
               items: [
                 "Clear organic vegetable broths",
@@ -421,7 +419,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#1E5154",
               duration: "Included Trip",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Witness the timeless evening fire rituals and traditional sound chants along the steps of the river Ganga.",
               highlights: ["Traditional lamp ritual", "Devotional group energy", "Riverside twilight views"],
             },
@@ -431,7 +429,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#367B80",
               duration: "Curated Path",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
               desc: "Walk across the famous architectural suspension bridge offering vast views of the mountain terrain.",
               highlights: ["Panoramic valley lookouts", "Ancient walking pathways", "Local ecosystem exposure"],
             },
@@ -441,7 +439,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#C8874A",
               duration: "Silent Path",
               icon: "sparkles",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Practice interior sensory withdrawal within traditional mountain cave structures used by historical ascetics.",
               highlights: ["Absolute environmental quiet", "Deep emotional space tracking", "Lineage energy fields"],
             },
@@ -526,7 +524,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               reviews: 184,
               isPopular: true,
               isPaid: true,
-              image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+              image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
             },
             {
               id: 2,
@@ -537,7 +535,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               reviews: 92,
               isPopular: false,
               isPaid: true,
-              image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+              image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
             },
             {
               id: 3,
@@ -548,7 +546,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               reviews: 145,
               isPopular: false,
               isPaid: true,
-              image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+              image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
             },
           ]
         }
@@ -578,7 +576,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             tag: "Standard Base Plan Inclusions",
             tagBg: "#1E5154",
             price: "$799 Regular Fee / $560 YTTC Student Tier",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Private accommodation layout structured cleanly to support structural isolation, text studies, and sound sleeping cycles.",
             features: [
               "Individual privacy settings",

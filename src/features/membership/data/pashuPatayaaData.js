@@ -78,15 +78,15 @@ const pashuPatayaaData = {
   // Certification images
   certifications: [
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1507003211169-0a1dd7228f2d.jpg",
       alt: "Eco-Yoga Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1494790108755-2616c95ae3d4?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
       alt: "Wildlife Conservation Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1534528741775-53994a69daeb.jpg",
       alt: "Ombreathe Nature Wisdom Certification"
     }
   ],
@@ -145,19 +145,19 @@ Nature Journey to Sacred
     description: "Our Pashu-Patayaa Sadhana program provides deep immersion into nature consciousness, animal communication, and ecological healing. Learn to recognize the divine in all life forms while developing practices that honor and protect our natural world.",
     items: [
       {
-        image: "https://i.pinimg.com/736x/51/c0/1c/51c01c4be14d3038abb5b171784667da.jpg",
+        image: "/images/external/general/51c01c4be14d3038abb5b171784667da.jpg",
         alt: "Animal meditation practice",
         title: "Animal Consciousness Meditation",
         description: "Learn to communicate with and understand the wisdom of different animal species through meditation"
       },
       {
-        image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1441974231531-c6227db76b6e.jpg",
         alt: "Forest yoga practice",
         title: "Sacred Forest Yoga",
         description: "Practice yoga postures inspired by animals and trees in their natural forest environment"
       },
       {
-        image: "https://img.freepik.com/premium-photo/indigenous-communities-participating-healing-ceremony_1168612-411862.jpg",
+        image: "/images/external/general/indigenous-communities-participating-healing-ceremony_1168612-411862.jpg",
         alt: "Ecological healing ceremony",
         title: "Ecological Healing Practices",
         description: "Learn earth healing techniques and ceremonies for environmental restoration and protection"

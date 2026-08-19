@@ -23,9 +23,7 @@ export const AcroYogaData = {
         price: PROGRAM_PRICES.shortcourses.acroyoga,
         priceNote: "Includes stay, meals & YACEP certificate",
         bgImage:
-          "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/unsplash_photo-1599901860904-17e6ed7083a0.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -67,7 +65,7 @@ export const AcroYogaData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1599901860904-17e6ed7083a0.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "Acro Yoga adventure",
@@ -131,11 +129,11 @@ export const AcroYogaData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1599901860904-17e6ed7083a0.jpg",
             food:
-              "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
-              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const AcroYogaData = {
             label: "Acro Yoga Basing & Flying",
             desc: "Bird, throne, folded leaf, intermediate to advanced poses — basing, flying and therapeutic Thai massage practices",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1599901860904-17e6ed7083a0.jpg",
           },
           {
             label: "Morning Sadhana & Breathwork",
             desc: "Morning meditation Sadhana, warm-up and breathwork to ground and energize for the day's Acro Yoga practice",
             icon: "sun",
-            img: "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1588286840104-8957b019727f.jpg",
           },
           {
             label: "Spotting, Safety & Teaching",
             desc: "Rigorous safety protocols, spotting techniques, cueing, adjustments, creative flows and teaching methodology",
             icon: "shield",
-            img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -354,7 +352,7 @@ export const AcroYogaData = {
             "5 days of intensive morning Acro practice, self-study and afternoon theory & self-practice sessions.",
     
           image:
-            "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1599901860904-17e6ed7083a0.jpg",
     
           morning: [
             { time: "05:30 AM", activity: "Morning Sadhana / Meditation", icon: "moon" },
@@ -408,7 +406,7 @@ export const AcroYogaData = {
               title: "Breakfast",
               icon: "sun",
               time: "09:30 – 10:30",
-              img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
+              img: "/images/external/foods/easy_vegetarian_indian_breakfast_recipes.jpg",
               desc: "Nourishing Ayurvedic breakfast to replenish after your morning Acro Yoga practice session.",
               items: [
                 "Fresh tropical fruits",
@@ -422,7 +420,7 @@ export const AcroYogaData = {
               title: "Lunch",
               icon: "coffee",
               time: "01:00 – 02:00",
-              img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
               desc: "Balanced organic vegetarian lunch to fuel your afternoon Acro Yoga theory and self-practice.",
               items: [
                 "Rice bowls",
@@ -436,7 +434,7 @@ export const AcroYogaData = {
               title: "Dinner",
               icon: "moon",
               time: "06:00 – 07:00",
-              img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1547592180-85f173990554.jpg",
               desc: "Light calming evening vegetarian meals — Sundays explore Ubud's local restaurants freely.",
               items: [
                 "Lentil soups",
@@ -488,7 +486,7 @@ export const AcroYogaData = {
               tagBg: "#8A4820",
               duration: "Half Day",
               icon: "globe",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Sacred purification temple with holy spring pools.",
               highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
             },
@@ -498,7 +496,7 @@ export const AcroYogaData = {
               tagBg: "#2E7A55",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1558618666-fcd25c85cd64.jpg",
               desc: "UNESCO iconic green rice terraces of Ubud.",
               highlights: ["Terraced fields", "Scenic views", "Nature walk"],
             },
@@ -508,7 +506,7 @@ export const AcroYogaData = {
               tagBg: "#6A5010",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1567745576352-e404ee640705?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1567745576352-e404ee640705.jpg",
               desc: "Jungle sanctuary with ancient temples and wild monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -518,7 +516,7 @@ export const AcroYogaData = {
               tagBg: "#8B3A3A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1555400038-63f5ba517a47.jpg",
               desc: "Sunrise volcano trek with stunning lake and crater views.",
               highlights: ["Sunrise trek", "Volcano hike", "Lake view"],
             },
@@ -528,7 +526,7 @@ export const AcroYogaData = {
               tagBg: "#2A1008",
               duration: "Half Day",
               icon: "waves",
-              img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1537996194471-e657df975ab4.jpg",
               desc: "Iconic sea temple perched on rock with stunning sunset views.",
               highlights: ["Ocean temple", "Sunset views", "Coastal walk"],
             },
@@ -538,7 +536,7 @@ export const AcroYogaData = {
               tagBg: "#6A4A20",
               duration: "3 Hours",
               icon: "camera",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Explore local markets, art galleries & Balinese handicrafts.",
               highlights: ["Local markets", "Art & craft", "Shopping"],
             },
@@ -636,7 +634,7 @@ export const AcroYogaData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -647,7 +645,7 @@ export const AcroYogaData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -658,7 +656,7 @@ export const AcroYogaData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -669,7 +667,7 @@ export const AcroYogaData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -680,7 +678,7 @@ export const AcroYogaData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -710,7 +708,7 @@ export const AcroYogaData = {
           tag: "Budget",
           tagBg: "#8A4820",
           price: "$599",
-          img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1505691938895-1758d7feb511.jpg",
           desc: "Comfortable 4-bed shared rooms with AC, garden access and all modern amenities in a serene Ubud setting.",
           features: [
             "4-bed sharing",
@@ -726,7 +724,7 @@ export const AcroYogaData = {
           tag: "Popular",
           tagBg: "#C87030",
           price: "$799",
-          img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1631049307264-da0ec9d70304.jpg",
           desc: "Comfortable twin sharing room with AC, peaceful atmosphere and all modern amenities.",
           features: [
             "Twin sharing",
@@ -742,7 +740,7 @@ export const AcroYogaData = {
           tag: "Upgrade",
           tagBg: "#4A2010",
           price: "$899",
-          img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1618773928121-c32242e63f39.jpg",
           desc: "Private room with AC, serene atmosphere and all modern amenities for a focused Acro Yoga stay.",
           features: [
             "Private room",

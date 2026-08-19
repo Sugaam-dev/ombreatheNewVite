@@ -78,15 +78,15 @@ const shivShaktiSadhanaData = {
   // Certification images
   certifications: [
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1507003211169-0a1dd7228f2d.jpg",
       alt: "Shiv Shakti Yoga Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1494790108755-2616c95ae3d4?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
       alt: "Jyotirlinga Pilgrimage Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1534528741775-53994a69daeb.jpg",
       alt: "Ombreathe Advanced Certification"
     }
   ],
@@ -145,19 +145,19 @@ const shivShaktiSadhanaData = {
     description: "Our Shiv Shakti Sadhana program dives deep into advanced tantric practices, sacred geometry, and energy balancing techniques. Learn to harmonize masculine and feminine energies within yourself while visiting the most powerful Shiva temples in India.",
     items: [
       {
-        image: "https://img.freepik.com/premium-photo/view-hand-meditation-yoga-mudra-position-outdoors-beach-night_535168-1544.jpg",
+        image: "/images/external/general/view-hand-meditation-yoga-mudra-position-outdoors-beach-night_535168-1544.jpg",
         alt: "Jyotirlinga meditation practice",
         title: "Jyotirlinga Meditation",
         description: "Deep meditation practices at 12 sacred Jyotirlingas, absorbing Shiva's infinite light energy"
       },
       {
-        image: "https://images.unsplash.com/photo-1582582621959-48d27397dc69?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1582582621959-48d27397dc69.jpg",
         alt: "Tantric yoga practice",
         title: "Sacred Tantric Yoga",
         description: "Advanced tantric yoga techniques for balancing and uniting Shiva-Shakti energies within"
       },
       {
-        image: "https://images.unsplash.com/photo-1570366583862-f91883984fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1570366583862-f91883984fde.jpg",
         alt: "Sacred geometry and yantra",
         title: "Sacred Geometry & Yantras",
         description: "Learn powerful geometric forms and yantras that represent divine cosmic principles"

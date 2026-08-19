@@ -99,7 +99,7 @@ export const LOCATION_DATA = {
     subheadline: "The birthplace of modern Ashtanga yoga",
     description:
       "Mysuru is the spiritual cradle of yoga as we know it. Train in the city where Krishnamacharya and Pattabhi Jois shaped the world's yoga practice — a city of sandalwood, silk, and timeless wisdom.",
-    heroImage: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1600&q=90",
+    heroImage: "/images/external/heroes/unsplash_photo-1590050752117-238cb0fb12b1.jpg",
     accentColor: "#c8813a",
     accentLight: "#fdf3e7",
     highlights: [
@@ -129,7 +129,7 @@ export const LOCATION_DATA = {
     subheadline: "Where the Himalayas and the Ganges unite",
     description:
       "Perched on the banks of the sacred Ganges, beneath the eternal Himalayas — Rishikesh is where yoga was born for the world. Every breath here carries centuries of practice and devotion.",
-    heroImage: "https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt80398e03b309f555/68a82def94a89550e2e57d49/lucas-hemingway-Ezp5CvwKoXQ-unsplash-header_mobile.jpg?format=webp&auto=avif&quality=60&crop=1%3A1&width=1440",
+    heroImage: "/images/external/heroes/lucas-hemingway-Ezp5CvwKoXQ-unsplash-header_mobile.jpg",
     accentColor: "#4a7fb5",
     accentLight: "#eaf2fb",
     highlights: [
@@ -171,7 +171,7 @@ export const LOCATION_DATA = {
     subheadline: "Ancient temples, misty mountains, quiet mind",
     description:
       "Surrounded by over 300 Buddhist temples and misty mountain peaks, Chiang Mai's peaceful energy makes it one of Asia's most beloved spiritual retreat destinations. Let Thailand's northern jewel slow you down.",
-    heroImage: "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1600&q=90",
+    heroImage: "/images/external/heroes/unsplash_photo-1528181304800-259b08848526.jpg",
     accentColor: "#a0522d",
     accentLight: "#f9ede5",
     highlights: [
@@ -203,7 +203,7 @@ export const LOCATION_DATA = {
     subheadline: "Where the Dalai Lama resides and dharma flows",
     description:
       "High in the Dhauladhar ranges, Dharamshala carries a rare spiritual electricity — home to the Tibetan government-in-exile and the Dalai Lama. Yoga here feels less like exercise and more like remembering.",
-    heroImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1600&q=90",
+    heroImage: "/images/external/heroes/unsplash_photo-1626621341517-bbf3d9990a23.jpg",
     accentColor: "#7b5ea7",
     accentLight: "#f2eefb",
     highlights: [

@@ -80,15 +80,15 @@ const shaktiSadhanaData = {
   // Certification images
   certifications: [
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1507003211169-0a1dd7228f2d.jpg",
       alt: "Temple Yoga Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1494790108755-2616c95ae3d4?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
       alt: "Shakti Sadhana Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1534528741775-53994a69daeb.jpg",
       alt: "Ombreathe Academy Certification"
     }
   ],
@@ -266,19 +266,19 @@ const shaktiSadhanaData = {
     description: "Our Shakti Sadhana program dives deep into traditional goddess worship practices, helping you understand the sacred feminine principles, temple protocols, and ancient sadhanas. Beyond physical practice, explore the divine feminine energy, chakra systems, and practical applications of Shakti philosophy.",
     items: [
       {
-        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
         alt: "Goddess yoga postures practice",
         title: "Devi Yoga Asanas",
         description: "Sacred yoga postures dedicated to different forms of the Divine Mother, channeling goddess energies"
       },
       {
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
         alt: "Mantra chanting practice",
         title: "Navarna Mantra Sadhana",
         description: "Daily practice of the powerful 9-syllable Devi mantra for spiritual transformation and protection"
       },
       {
-        image: "https://img.freepik.com/premium-photo/buddhist-monks-meditation-chanting-sessions-ancient-temple_201606-20597.jpg",
+        image: "/images/external/excursions/buddhist-monks-meditation-chanting-sessions-ancient-temple_201606-20597.jpg",
         alt: "Temple meditation and prayer",
         title: "Sri Lalita Sahasranama",
         description: "Recitation of 1000 names of Divine Mother Lalita for deep devotion and spiritual connection"

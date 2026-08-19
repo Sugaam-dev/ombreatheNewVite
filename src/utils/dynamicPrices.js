@@ -5,8 +5,7 @@ import { PROGRAM_PRICES_CHIANG, ROOM_PRICES_CHIANG } from "../data/chiang/progra
 import { PROGRAM_PRICES_DHARAMSHALA, ROOM_PRICES_DHARAMSHALA } from "../data/dharamshala/programPricesDharamshala";
 import { PROGRAM_PRICES_MYSORE, ROOM_PRICES_MYSORE } from "../data/mysore/programPricesMysore";
 import { PROGRAM_PRICES_RISHIKESH, ROOM_PRICES_RISHIKESH } from "../data/rishikesh/programPricesRishikesh";
-import { OmbDataMap } from "../features/yoga-retreats-programs/data/OmbDataMap";
-import { LANDING_LOCATION_DATA } from "../features/yoga-retreats-programs/data/LandingPageData";
+
 
 export const DYNAMIC_BATCHES = {};
 
@@ -14,21 +13,21 @@ export const DYNAMIC_TESTIMONIALS = [
   {
     stars: 5,
     quote: "The Yoga TTC in Bali changed my life completely. The teachers, the food, the environment — everything was magical!",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    avatar: "/images/external/testimonials/44.jpg",
     name: "Jessica M.",
     country: "USA",
   },
   {
     stars: 5,
     quote: "Ayurveda Healing Retreat in Rishikesh gave me a new life. I feel lighter, healthier and mentally so calm.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "/images/external/testimonials/32.jpg",
     name: "Arjun P.",
     country: "Australia",
   },
   {
     stars: 5,
     quote: "A life-changing experience! I found my purpose and a beautiful community for life.",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar: "/images/external/testimonials/68.jpg",
     name: "Maria K.",
     country: "Germany",
   }
@@ -345,10 +344,10 @@ function getUpdatedProgramPrice(mappedLoc, key) {
   return null;
 }
 
-/**
- * Traverses OmbDataMap and LANDING_LOCATION_DATA and injects the updated program prices.
- */
-function applyDynamicPricesToDataMaps() {
+async function applyDynamicPricesToDataMaps() {
+  const { OmbDataMap } = await import("../features/yoga-retreats-programs/data/OmbDataMap");
+  const { LANDING_LOCATION_DATA } = await import("../features/yoga-retreats-programs/data/LandingPageData");
+
   const mappings = [
     { locKeys: ["bali"], mappedLoc: "bali" },
     { locKeys: ["rishikesh"], mappedLoc: "rishikesh" },
@@ -574,7 +573,7 @@ export async function fetchAndApplyDynamicPrices() {
     }
 
     // 3. Propagate updated prices into static maps (OmbDataMap & LandingPageData)
-    applyDynamicPricesToDataMaps();
+    await applyDynamicPricesToDataMaps();
 
     // 4. Fetch and apply Testimonials (if set separately)
     const testimonialSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_TESTIMONIALS;
@@ -584,7 +583,7 @@ export async function fetchAndApplyDynamicPrices() {
         const parsedTestimonials = rows.map(row => ({
           stars: parseInt(row.stars) || 5,
           quote: row.quote || "",
-          avatar: row.avatar || "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop",
+          avatar: row.avatar || "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
           name: row.name || "",
           country: row.country || ""
         })).filter(t => t.name && t.quote);

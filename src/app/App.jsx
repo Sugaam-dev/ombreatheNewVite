@@ -108,7 +108,7 @@ const PageLoader = () => (
 function NormalisedTTCRoute() {
   const { location: loc, course } = useParams();
   const navigate = useNavigate();
-  const { search } = useLocation();
+  const { search, pathname } = useLocation();
 
   useEffect(() => {
     if (loc && loc !== loc.toLowerCase()) {
@@ -118,13 +118,13 @@ function NormalisedTTCRoute() {
     }
   }, [loc, course, navigate, search]);
 
-  return <OmbYogaPage />;
+  return <OmbYogaPage key={pathname.toLowerCase()} />;
 }
 
 function NormalisedLocationRoute() {
   const { location: loc } = useParams();
   const navigate = useNavigate();
-  const { search } = useLocation();
+  const { search, pathname } = useLocation();
 
   useEffect(() => {
     if (loc && loc !== loc.toLowerCase()) {
@@ -134,7 +134,12 @@ function NormalisedLocationRoute() {
     }
   }, [loc, navigate, search]);
 
-  return <LocationLandingPage />;
+  return <LocationLandingPage key={pathname.toLowerCase()} />;
+}
+
+function OnlineYogaRoute() {
+  const { pathname } = useLocation();
+  return <OnlineYogaPage key={pathname.toLowerCase()} />;
 }
 
 // ==========================================
@@ -189,7 +194,7 @@ function AppRoutes() {
 
           <Route
   path="online/:course"
-  element={<OnlineYogaPage />}
+  element={<OnlineYogaRoute />}
 />
 
           {/* MEMBERSHIP PROGRAMS */}

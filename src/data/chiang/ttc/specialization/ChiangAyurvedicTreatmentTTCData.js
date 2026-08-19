@@ -23,9 +23,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
         price: PROGRAM_PRICES_CHIANG.specializations["ChiangAyurvedicTreatmentTTCData"],
         priceNote: "Includes comfortable lodging, 3 daily fresh sattvic meals, expert doctor consultations, and formal YACEP certification",
         bgImage:
-          "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
         buttonText: "Apply Now For This Course",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Vedic Heritage Immersion",
           title: "Join our",
           highlight: "ethnic therapeutic lineage",
@@ -131,11 +129,11 @@ export const ChiangAyurvedicTreatmentTTCData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
             food:
-              "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=800&q=80", // Vegetarian Sattvic Asset URL
+              "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset URL
             stay:
-              "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+              "/images/external/general/unsplash_photo-1566073771259-6a8506099945.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const ChiangAyurvedicTreatmentTTCData = {
             label: "Abhyanga Body Alignments",
             desc: "Execute complete full-body medicated oil strokes across back and front systems systematically.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1575052814086-f385e2e2ad1b.jpg",
           },
           {
             label: "Liquid Streams & Shirodhara",
             desc: "Perform meticulous liquid forehead streams, Shirodhara pacing, and Takradhara using medicated buttermilk layers.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Localized Swedana and Bastis",
             desc: "Master Podikkizhi herbal poultices (Pinda Swedana), regional Kati Basti warmth rings, and Nasyam nasal cleansings.",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Elite Features",
@@ -334,7 +332,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             "Your total quality of lifestyle during your residential stay depends cleanly on keeping this structured loop.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM - 07:30 AM", activity: "Holistic Hatha Yoga, Pranayama & Meditation", icon: "moon" },
@@ -387,7 +385,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
               title: "Morning Tissue Repair",
               icon: "sun",
               time: "09:00 AM – 10:00 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset
               desc: "Fresh, unprocessed morning assemblies designed to support early body detoxification setups.",
               items: [
                 "Seasonal harvest local fruits",
@@ -401,7 +399,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
               title: "Midday Dosha Balancing",
               icon: "coffee",
               time: "01:00 PM – 02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset
               desc: "Nutrient-dense grains paired with traditional lentils to supply equal energy distribution parameters.",
               items: [
                 "Traditional Ayurvedic Khichdi pots",
@@ -415,7 +413,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
               title: "Twilight Metabolic Rest",
               icon: "moon",
               time: "07:30 PM – 08:30 PM",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max", // Vegetarian Sattvic Asset
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg", // Vegetarian Sattvic Asset
               desc: "Light, ultra-digestible properties keeping cognitive and circulatory channels unburdened during night rest.",
               items: [
                 "Clear organic vegetable broths",
@@ -466,7 +464,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
               tagBg: "#8D6E63",
               duration: "Half Day",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1507525428034-b723cf961d3e.jpg",
               desc: "Walk along pristine Chiang Mainese coastal lines to naturally center and ground your mental tracks.",
               highlights: ["Calm beach walks", "Ocean breeze breathing", "Elemental tranquility"],
             },
@@ -476,7 +474,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
               tagBg: "#A1887F",
               duration: "3 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1502082553048-f009c37129b9.jpg",
               desc: "Visit highly peaceful nature sanctuaries and ancient structural properties surrounding the town.",
               highlights: ["Spiritual forest paths", "Silent architecture lines", "Deep energetic grounding"],
             },
@@ -567,7 +565,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -578,7 +576,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -589,7 +587,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -600,7 +598,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -611,7 +609,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -641,7 +639,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             tag: "Standard Value Inclusions",
             tagBg: "#8D6E63",
             price: "$1450",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Comfortable, clean shared space featuring attached private plumbing tools and weekly laundry options.",
             features: [
               "Twin practitioner setting",
@@ -657,7 +655,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             tag: "Sovereign Luxury Tier",
             tagBg: "#3E2723",
             price: "$1600",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "Complete personal spatial isolation, ideal for long hours of scriptural study and independent meditation.",
             features: [
               "100% individual room bounds",
@@ -673,7 +671,7 @@ export const ChiangAyurvedicTreatmentTTCData = {
             tag: "External Practice Only",
             tagBg: "#C8874A",
             price: "$1250",
-            img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1582719508461-905c673771fd.jpg",
             desc: "Access all practical workshops, masterclasses, and certified evaluation loops while arranging outside stay structures.",
             features: [
               "Full course materials access",

@@ -136,7 +136,7 @@ export default function ProgramDetailsSection({ curriculumData, scheduleData, co
               {/* Left Column Image */}
               <div className="schedule-image-card">
                 <img 
-                  src={schedule.image || "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80"} 
+                  src={schedule.image || "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg"} 
                   alt="Daily Schedule" 
                 />
                 <div className="schedule-img-overlay" />

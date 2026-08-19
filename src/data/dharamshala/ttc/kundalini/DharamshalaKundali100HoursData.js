@@ -23,9 +23,7 @@ export const DharamshalaKundali100HoursData = {
         price: PROGRAM_PRICES_DHARAMSHALA.kundalini["100hr"],
         priceNote: "Includes stay, meals & Yoga Alliance certification",
         bgImage:
-          "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -67,7 +65,7 @@ export const DharamshalaKundali100HoursData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "Kundalini awakening",
@@ -131,11 +129,11 @@ export const DharamshalaKundali100HoursData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
             food:
-              "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
+              "/images/external/general/unsplash_photo-1552196563-55cd4e45efb3.jpg",
             stay:
-              "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
+              "/images/external/general/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const DharamshalaKundali100HoursData = {
             label: "Kundalini Kriya & Asana",
             desc: "Chakra-specific postures, Asthi Granthi Kriya, Prana Kriya & Kundalini Tantra philosophy for awakening",
             icon: "sparkles",
-            img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
+            img: "/images/external/heroes/yoga-background-2rmnmb16t7q2lj98.jpg",
           },
           {
             label: "Pranayama & Meditation",
             desc: "Shatkarma cleansing, Kundalini meditation, Yoga Nidra, mantra chanting & daily Sadhana practice",
             icon: "wind",
-            img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           },
           {
             label: "Hatha Yoga & Teaching",
             desc: "Chakra-focused Hatha postures, alignment & adjustment, Ayurveda, Mudra & Kundalini teaching methodology",
             icon: "feather",
-            img: "https://a-static.besthdwallpaper.com/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
+            img: "/images/external/general/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -354,7 +352,7 @@ export const DharamshalaKundali100HoursData = {
             "A structured daily routine balancing Kundalini practice, theory, and deep reflection for complete chakra transformation.",
     
           image:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
     
           morning: [
             { time: "05:30 AM", activity: "Self Practice & Self Awareness", icon: "moon" },
@@ -408,7 +406,7 @@ export const DharamshalaKundali100HoursData = {
               title: "Breakfast",
               icon: "sun",
               time: "09:00 – 10:30",
-              img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
+              img: "/images/external/foods/isolated-traditional-indian-thali-meal-free-photo.jpg",
               desc: "Vibrant organic sattvic foods to energize your Kundalini practice day.",
               items: [
                 "Seasonal fresh fruits",
@@ -422,7 +420,7 @@ export const DharamshalaKundali100HoursData = {
               title: "Lunch",
               icon: "coffee",
               time: "01:15 – 02:15",
-              img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
+              img: "/images/external/foods/isolated-traditional-indian-thali-meal-free-photo.jpg",
               desc: "Balanced locally sourced organic meals to fuel your afternoon Kundalini sessions.",
               items: [
                 "Rice bowls",
@@ -436,7 +434,7 @@ export const DharamshalaKundali100HoursData = {
               title: "Dinner",
               icon: "moon",
               time: "07:00 – 08:00",
-              img: "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
+              img: "/images/external/general/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
               desc: "Light calming evening sattvic meals — Sundays explore Ubud's local restaurants freely.",
               items: [
                 "Lentil dishes",
@@ -498,7 +496,7 @@ export const DharamshalaKundali100HoursData = {
               tagBg: "#5C8A6B",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1501785888041-af3ef285b470.jpg",
               desc: "Famous green rice terraces of Ubud.",
               highlights: ["Rice fields", "Scenic views", "Nature walk"],
             },
@@ -508,7 +506,7 @@ export const DharamshalaKundali100HoursData = {
               tagBg: "#C8874A",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1546182990-dffeafbe841d.jpg",
               desc: "Jungle sanctuary with ancient temples and monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -518,7 +516,7 @@ export const DharamshalaKundali100HoursData = {
               tagBg: "#8B3A3A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1500530855697-b586d89ba3ee.jpg",
               desc: "Sunrise volcano trek with stunning lake views.",
               highlights: ["Sunrise", "Volcano hike", "Lake view"],
             },
@@ -528,7 +526,7 @@ export const DharamshalaKundali100HoursData = {
               tagBg: "#0D3B3E",
               duration: "Half Day",
               icon: "waves",
-              img: "https://wallpaperaccess.com/full/139164.jpg",
+              img: "/images/external/general/139164.jpg",
               desc: "Iconic ocean temple with breathtaking sunset views.",
               highlights: ["Ocean temple", "Sunset", "Coastal walk"],
             },
@@ -538,7 +536,7 @@ export const DharamshalaKundali100HoursData = {
               tagBg: "#4A6A30",
               duration: "3 Hours",
               icon: "camera",
-              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1507525428034-b723cf961d3e.jpg",
               desc: "Explore local markets, art galleries & Dharamshalanese culture.",
               highlights: ["Local markets", "Art & craft", "Cultural walk"],
             },
@@ -636,7 +634,7 @@ export const DharamshalaKundali100HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -647,7 +645,7 @@ export const DharamshalaKundali100HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -658,7 +656,7 @@ export const DharamshalaKundali100HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -669,7 +667,7 @@ export const DharamshalaKundali100HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -680,7 +678,7 @@ export const DharamshalaKundali100HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -710,7 +708,7 @@ export const DharamshalaKundali100HoursData = {
             tag: "Included",
             tagBg: "#2E8A8F",
             price: "$999",
-            img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1505691938895-1758d7feb511.jpg",
             desc: "Comfortable shared rooms with AC, private washroom and modern amenities in the heart of Ubud.",
             features: [
               "Twin sharing",
@@ -726,7 +724,7 @@ export const DharamshalaKundali100HoursData = {
             tag: "Upgrade",
             tagBg: "#1A6065",
             price: "$1,299",
-            img: "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1501183638710-841dd1904471.jpg",
             desc: "Private room with AC, private washroom and luxurious Dharamshalanese ambience.",
             features: [
               "Private ensuite",
@@ -742,7 +740,7 @@ export const DharamshalaKundali100HoursData = {
             tag: "Flexible",
             tagBg: "#C8874A",
             price: "$1,699",
-            img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/866819513.jpg?k=939134bbac877f77cc6f87e182f0d428935e72df145f15860c1b69405bab9a90&o=",
+            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
             desc: "Private room without meals — enjoy Dharamshala's local restaurants and food culture independently.",
             features: [
               "Private room",

@@ -10,6 +10,9 @@ import fourSharedRoomImg from "../../../images/rooms/fourSharedRoom.jpg";
 import sixSharedRoomImg from "../../../images/rooms/sixSharedRoom.jpg";
 
 const getRoomImage = (location, type, fallbackImg) => {
+  if (!location || location.toLowerCase().trim() !== "bali") {
+    return fallbackImg;
+  }
   if (!type) return fallbackImg;
   const lower = type.toLowerCase();
   

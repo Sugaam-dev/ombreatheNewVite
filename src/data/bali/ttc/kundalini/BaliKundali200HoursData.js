@@ -23,9 +23,7 @@ export const BaliKundali200HoursData = {
         price: PROGRAM_PRICES.kundalini["200hr"],
         priceNote: "Includes stay, meals & RYT-200 certification",
         bgImage:
-          "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -67,7 +65,7 @@ export const BaliKundali200HoursData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "Kundalini transformation",
@@ -131,11 +129,11 @@ export const BaliKundali200HoursData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
             food:
-              "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
+              "/images/external/general/unsplash_photo-1552196563-55cd4e45efb3.jpg",
             stay:
-              "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
+              "/images/external/general/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const BaliKundali200HoursData = {
             label: "Kundalini Kriya & Asana",
             desc: "Kundalini Kriya sets, joints movements, awakening techniques, Tantra Mudra & Bandha energy locks",
             icon: "sparkles",
-            img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
+            img: "/images/external/heroes/yoga-background-2rmnmb16t7q2lj98.jpg",
           },
           {
             label: "Pranayama, Meditation & Mantra",
             desc: "Daily Sadhana, chakra meditation, Yoga Nidra, mantra chanting, sound healing & Kundalini anatomy",
             icon: "wind",
-            img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           },
           {
             label: "Hatha Yoga & Teaching",
             desc: "Chakra-focused Hatha postures, Hatha mastery self practice, alignment, adjustment & teaching methodology",
             icon: "feather",
-            img: "https://a-static.besthdwallpaper.com/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
+            img: "/images/external/general/morning-yoga-wallpaper-2160x1440-78799_40.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -354,7 +352,7 @@ export const BaliKundali200HoursData = {
             "A balanced and comprehensive daily routine — from early morning Kundalini Kriya to evening Yoga Sadhna and Kriya Mantra practice.",
     
           image:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
     
           morning: [
             { time: "05:45 AM", activity: "Kundalini Kriya", icon: "sparkles" },
@@ -408,7 +406,7 @@ export const BaliKundali200HoursData = {
               title: "Fruits & Tea",
               icon: "sun",
               time: "08:45 – 09:30",
-              img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
+              img: "/images/external/foods/isolated-traditional-indian-thali-meal-free-photo.jpg",
               desc: "Seasonal fruits, herbal teas and detox spice tea — a Kundalini yoga tradition with ginger, cinnamon & cardamom.",
               items: [
                 "Seasonal fresh fruits",
@@ -422,7 +420,7 @@ export const BaliKundali200HoursData = {
               title: "Brunch",
               icon: "coffee",
               time: "10:45 – 12:00",
-              img: "https://static.vecteezy.com/system/resources/thumbnails/065/445/650/small/isolated-traditional-indian-thali-meal-free-photo.jpg",
+              img: "/images/external/foods/isolated-traditional-indian-thali-meal-free-photo.jpg",
               desc: "Nourishing locally sourced organic meals to fuel your afternoon Kundalini and Hatha sessions.",
               items: [
                 "Rice bowls",
@@ -436,7 +434,7 @@ export const BaliKundali200HoursData = {
               title: "Dinner",
               icon: "moon",
               time: "18:30 – 19:30",
-              img: "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
+              img: "/images/external/general/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
               desc: "Light calming evening sattvic meals — Sundays explore Ubud's local restaurants freely.",
               items: [
                 "Lentil dishes",
@@ -498,7 +496,7 @@ export const BaliKundali200HoursData = {
               tagBg: "#5C8A6B",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1501785888041-af3ef285b470.jpg",
               desc: "Famous green rice terraces of Ubud.",
               highlights: ["Rice fields", "Scenic views", "Nature walk"],
             },
@@ -508,7 +506,7 @@ export const BaliKundali200HoursData = {
               tagBg: "#C8874A",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1546182990-dffeafbe841d.jpg",
               desc: "Jungle sanctuary with ancient temples and monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -518,7 +516,7 @@ export const BaliKundali200HoursData = {
               tagBg: "#8B3A3A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1500530855697-b586d89ba3ee.jpg",
               desc: "Sunrise volcano trek with stunning lake views.",
               highlights: ["Sunrise", "Volcano hike", "Lake view"],
             },
@@ -528,7 +526,7 @@ export const BaliKundali200HoursData = {
               tagBg: "#3D1520",
               duration: "Half Day",
               icon: "waves",
-              img: "https://wallpaperaccess.com/full/139164.jpg",
+              img: "/images/external/general/139164.jpg",
               desc: "Iconic ocean temple with breathtaking sunset views.",
               highlights: ["Ocean temple", "Sunset", "Coastal walk"],
             },
@@ -538,7 +536,7 @@ export const BaliKundali200HoursData = {
               tagBg: "#7A4A30",
               duration: "3 Hours",
               icon: "camera",
-              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1507525428034-b723cf961d3e.jpg",
               desc: "Explore local markets, art galleries & Balinese culture.",
               highlights: ["Local markets", "Art & craft", "Cultural walk"],
             },
@@ -636,7 +634,7 @@ export const BaliKundali200HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -647,7 +645,7 @@ export const BaliKundali200HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -658,7 +656,7 @@ export const BaliKundali200HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -669,7 +667,7 @@ export const BaliKundali200HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -680,7 +678,7 @@ export const BaliKundali200HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -710,7 +708,7 @@ export const BaliKundali200HoursData = {
           tag: "Budget",
           tagBg: "#7BAF8A",
           price: "$1,299",
-          img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1505691938895-1758d7feb511.jpg",
           desc: "Comfortable 6-bed shared rooms with AC, washroom and modern amenities.",
           features: [
             "6-bed sharing",
@@ -726,7 +724,7 @@ export const BaliKundali200HoursData = {
           tag: "Comfort",
           tagBg: "#E5A93B",
           price: "$1,499",
-          img: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1555854877-bab0e564b8d5.jpg",
           desc: "Spacious 4-bed shared rooms with AC, washroom and modern conveniences.",
           features: [
             "4-bed sharing",
@@ -742,7 +740,7 @@ export const BaliKundali200HoursData = {
           tag: "Popular",
           tagBg: "#6A2535",
           price: "$1,799",
-          img: "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1501183638710-841dd1904471.jpg",
           desc: "Twin sharing room with AC, comfortable beds and all modern amenities in a serene Ubud setting.",
           features: [
             "Twin sharing",
@@ -758,7 +756,7 @@ export const BaliKundali200HoursData = {
           tag: "Luxury",
           tagBg: "#C4756A",
           price: "$2,399",
-          img: "https://www.livehome3d.com/assets/img/articles/rooms-in-house/stylish-guest-room@2x.jpg",
+          img: "/images/external/rooms/stylish-guest-room@2x.jpg",
           desc: "Private room with all modern amenities for a focused and comfortable 20-day Kundalini stay.",
           features: [
             "Private room",

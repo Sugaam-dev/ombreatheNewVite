@@ -23,9 +23,7 @@ export const Rishikesh10DaysPanchakarmaData = {
         price: PROGRAM_PRICES_RISHIKESH.specializations["Rishikesh10DaysPanchakarmaData"],
         priceNote: "Special combined offer: Only $560 (30% discount) when paired with a main Yoga Teacher Training Course; includes private accommodation",
         bgImage:
-          "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
         buttonText: "Enroll Course With Us",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const Rishikesh10DaysPanchakarmaData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "The Science of Deep Purification",
           title: "Join our",
           highlight: "systematic cleansing retreat",
@@ -131,11 +129,11 @@ export const Rishikesh10DaysPanchakarmaData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset URL
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset URL
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const Rishikesh10DaysPanchakarmaData = {
             label: "Vamana & Virechana Channels",
             desc: "Master therapeutic clinical emesis and precise purgation loops to clear out toxic build-ups from upper metabolic tracks.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           },
           {
             label: "Basti Power Formulations",
             desc: "Execute powerful medicated enema treatments, recognized traditionally as the most vital tool to regulate vata imbalances.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Nasya & Raktamokshana Tracks",
             desc: "Apply nasal cleansing solutions safely for cranial clarity, alongside selective blood purification models for skin tissue renewal.",
             icon: "feather",
-            img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1517838277536-f5f99be501cd.jpg",
           },
         ],
         specialTitle: "Program Options",
@@ -314,7 +312,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             "Surrendering completely to your personalized daily schedule fuels maximum physical detoxification results.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM - 07:30 AM", activity: "Holistic Hatha Yoga, Pranayama & Meditation Base", icon: "moon" },
@@ -367,7 +365,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Morning Tissue Prep",
               icon: "sun",
               time: "09:00 AM – 10:00 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset
               desc: "Fresh morning fruit selections and organic green tonics designed to lighten systemic filtration stress.",
               items: [
                 "Seasonal fresh hill fruits",
@@ -381,7 +379,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Midday Operational Dhal",
               icon: "coffee",
               time: "01:00 PM – 02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset
               desc: "Nutrient-dense grains paired with traditional lentils to supply comprehensive, balanced energy.",
               items: [
                 "Traditional Ayurvedic Khichdi pots",
@@ -395,7 +393,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               title: "Twilight Metabolic Rest",
               icon: "moon",
               time: "07:30 PM",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max", // Vegetarian Sattvic Asset
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg", // Vegetarian Sattvic Asset
               desc: "Light vegetable compositions designed to support twilight silent meditation loops safely.",
               items: [
                 "Clear organic vegetable broths",
@@ -447,7 +445,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#3A5F43",
               duration: "Evening Block",
               icon: "globe",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Watch breathtaking twilight light rituals and corporate kirtan chanting on the holy river steps.",
               highlights: ["Mantra chanting loops", "Vibrational alignments", "River beach seating"],
             },
@@ -457,7 +455,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#4E7C59",
               duration: "3 Hours Outing",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
               desc: "Walk across ancient walking sectors lined with local textbook counters and gemstone marketplace vendors.",
               highlights: ["Artisan counters walk", "Spiritual local atmosphere", "Historic bridge paths"],
             },
@@ -467,7 +465,7 @@ export const Rishikesh10DaysPanchakarmaData = {
               tagBg: "#C8874A",
               duration: "Half Day Run",
               icon: "sparkles",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Step directly inside high-vibration quiet settings optimized for deep silent contemplation.",
               highlights: ["Absolute sensory silence", "Deep lineage traces", "Pure internal listening"],
             },
@@ -558,7 +556,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -569,7 +567,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -580,7 +578,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -591,7 +589,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -602,7 +600,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -632,7 +630,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             tag: "Baseline Inclusion Track",
             tagBg: "#3A5F43",
             price: "$799 Regular Fee Tier",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Clean shared practitioner quarters housing private bathrooms, filtered water lines, and study desk boundaries.",
             features: [
               "Twin roommate setting",
@@ -648,7 +646,7 @@ export const Rishikesh10DaysPanchakarmaData = {
             tag: "Sovereign Upgrade Tier",
             tagBg: "#1B3B2B",
             price: "$799 + Deluxe Upgrade",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "100% individual structural privacy, maximizing long hours of quiet text study and independent sleep cycles.",
             features: [
               "Total single room isolation",

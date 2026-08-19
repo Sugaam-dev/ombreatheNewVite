@@ -133,7 +133,7 @@ const styles = `
   position: absolute;
   inset: 0;
 
-  background: url(https://img.youtube.com/vi/_xLrirWP-S0/maxresdefault.jpg) center/cover;
+  background: url(/images/external/heroes/maxresdefault.jpg) center/cover;
 
   cursor: pointer;
   transition: 0.4s;

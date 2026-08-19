@@ -21,9 +21,7 @@ export const Rishikesh7DaysYogaRetreatData = {
         price: "$399",
         priceNote: "Shared room configuration package rate ($499 single private room space limited time offer); includes free Dehradun airport pickup, welcome kit, daily outdoor excursions, and complimentary massage treatment.",
         bgImage:
-          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
         buttonText: "Enroll This Course Now",
         url: "/contact",
       },
@@ -65,7 +63,7 @@ export const Rishikesh7DaysYogaRetreatData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
+            "/images/external/heroes/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           eyebrow: "Ombreathe Sanctuary",
           title: "Welcome to a",
           highlight: "sanctuary for holistic well-being",
@@ -129,11 +127,11 @@ export const Rishikesh7DaysYogaRetreatData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -161,19 +159,19 @@ export const Rishikesh7DaysYogaRetreatData = {
             label: "Invigorating Posture Labs",
             desc: "Practice active morning asana tracking, carefully balancing breath with movement to awaken your inner vitality lines.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
           },
           {
             label: "Guided Introspection States",
             desc: "Engage in systematic morning and evening meditation blocks to foster profound mindfulness and mental quietude.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Lifestyle Optimization",
             desc: "Attend structured wellness workshops focusing on Ayurveda principles, healthy lifestyle management, and self-discovery.",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Retreat Pillars",
@@ -299,7 +297,7 @@ export const Rishikesh7DaysYogaRetreatData = {
             "Living appropriately according to the timetable teaches intense mental mastery. Every class is completely mandatory.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "Morning Slot A", activity: "Invigorating Morning Yoga Practice (Harmonizing Breath with Movement)", icon: "sun" },
@@ -348,7 +346,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               title: "Morning Vitality Cleanse",
               icon: "sun",
               time: "Morning Slot",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
               desc: "Organic breakfast items designed cleanly to eliminate internal pollutants and maximize physical stamina parameters.",
               items: [
                 "Fresh seasonal hill fruits",
@@ -361,7 +359,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               title: "Tasty Traditional Midday Meal",
               icon: "coffee",
               time: "Noon Slot",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
               desc: "Tasty traditional Indian meals cooked completely vegetarian using local, organic ingredients to optimize digestion indexes.",
               items: [
                 "Traditional Indian lentils & beans",
@@ -374,7 +372,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               title: "Ultra-Digestible Rest Supper",
               icon: "moon",
               time: "Evening Slot",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max",
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg",
               desc: "Light vegetarian selections compiled to settle your body systems prior to evening reflection ceremonies.",
               items: [
                 "Clear organic vegetable broths",
@@ -422,7 +420,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               tagBg: "#1E5154",
               duration: "Included Excursion",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
               desc: "Explore historic, serene mountain pathways and quiet forest paths to ground your sensory tracking layers.",
               highlights: ["Pristine mountain vistas", "Clean fresh alpine air flows", "Mindful outdoor walking"],
             },
@@ -432,7 +430,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               tagBg: "#367B80",
               duration: "Curated Event",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Navigate the thrilling currents of the holy river Ganges, introducing an energetic balance into your stillness.",
               highlights: ["River current navigation", "High-vibration water flow", "Exciting group alignment"],
             },
@@ -442,7 +440,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               tagBg: "#C8874A",
               duration: "Short Foot Walk",
               icon: "sparkles",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Immerse yourself within the nearby local markets just a 3 to 5-minute walk from our main school gates.",
               highlights: ["Local herbal suppliers", "Traditional tea counters", "Spiritual book arrays"],
             },
@@ -533,7 +531,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               reviews: 184,
               isPopular: true,
               isPaid: false,
-              image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+              image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
             },
             {
               id: 2,
@@ -544,7 +542,7 @@ export const Rishikesh7DaysYogaRetreatData = {
               reviews: 98,
               isPopular: false,
               isPaid: false,
-              image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+              image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
             },
           ]
         }
@@ -574,7 +572,7 @@ export const Rishikesh7DaysYogaRetreatData = {
             tag: "Ideal Reasonable Accommodation",
             tagBg: "#1E5154",
             price: "$399 Package Rate (2 People)",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Single-gendered shared rooms ideal for students who seek a more reasonable rate while still having all the comforts of being indoors.",
             features: [
               "Single-gender room setting",
@@ -590,7 +588,7 @@ export const Rishikesh7DaysYogaRetreatData = {
             tag: "Sovereign Privacy Upgrade",
             tagBg: "#0B2527",
             price: "$499 Limited Time Offer (1 Person)",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "Ideal for any yoga students, couples, family, or friends who prefer a little more structural privacy, maximizing quiet study and sleep cycles.",
             features: [
               "Total single or couple room options",

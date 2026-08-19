@@ -174,7 +174,7 @@ const YogaTeachers = () => {
 
   // Memoized image error handler
   const handleImageError = useCallback((e) => {
-    e.target.src = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&crop=center&auto=format';
+    e.target.src = '/images/external/general/unsplash_photo-1506905925346-21bda4d32df4.jpg';
     e.target.onerror = null;
   }, []);
 

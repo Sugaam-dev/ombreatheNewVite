@@ -26,7 +26,7 @@ function Carousal() {
 },
 {name:"3 Night 4 Days Kumbh Mela Package",
   description:"Our holy Kumbh Mela Tour Package for 3 nights and 4 days will lead you to a world that washes away all your sins.",
-  img:"https://nextjs.thekumbhyatra.com/wp-content/uploads/2020/02/Kumbh-Mela-Tour.jpg",
+  img:"/images/external/heroes/six-young-women-meditate-sitting-in-lotus-posture.jpg",
   style:"Arrival At Prayagraj",
   level:"Kumbh Mela Holy Dip & Departure",
   duration:"",

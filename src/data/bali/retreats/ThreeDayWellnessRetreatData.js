@@ -18,9 +18,7 @@ export const ThreeDayWellnessRetreatData = {
         subtitle: "Yoga, meditation, massage & wellness with customized Panchakarma consultation",
         price: "$350",
         priceNote: "2 sharing room — includes stay, sattvic meals & wellness therapy",
-        bgImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+        bgImage: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
         buttonText: "Book Now",
         url: "/contact",
       },
@@ -57,7 +55,7 @@ export const ThreeDayWellnessRetreatData = {
         },
     
         content: {
-          bgImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80",
+          bgImage: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
           eyebrow: "Ombreathe Retreat",
           title: "Join our",
           highlight: "wellness retreat",
@@ -120,11 +118,11 @@ export const ThreeDayWellnessRetreatData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
             food:
-              "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
-              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg",
           },
         },
       }
@@ -152,19 +150,19 @@ export const ThreeDayWellnessRetreatData = {
             label: "Yoga & Breathwork",
             desc: "Morning Hatha yoga, pranayama and detox breathwork to cleanse the body, breath and mind each day",
             icon: "sun",
-            img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
           },
           {
             label: "Shat Karma & Panchakarma",
             desc: "Traditional yogic cleansing processes — remove deep-rooted toxins, balance doshas and restore digestive fire",
             icon: "leaf",
-            img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           },
           {
             label: "Ayurveda & Wellness Therapy",
             desc: "Customized Ayurvedic massage, rejuvenation therapy, Yoga Nidra and spiritual philosophy talks",
             icon: "heart",
-            img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg",
           },
         ],
         specialTitle: "Why Join",
@@ -340,7 +338,7 @@ export const ThreeDayWellnessRetreatData = {
           title: "A Day at",
           highlight: "Your Wellness Retreat",
           subtitle: "Each day balances yoga, wellness therapy, nourishing meals, and peaceful restoration.",
-          image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80",
+          image: "/images/external/general/unsplash_photo-1571019613454-1cb2f99b2d8b.jpg",
           morning: [
             { time: "06:00 AM", activity: "Yoga", icon: "sun" },
             { time: "07:30 AM", activity: "Meditation and pranayama, detox", icon: "wind" },
@@ -386,7 +384,7 @@ export const ThreeDayWellnessRetreatData = {
               title: "Breakfast",
               icon: "sun",
               time: "09:00 – 10:00",
-              img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
+              img: "/images/external/foods/easy_vegetarian_indian_breakfast_recipes.jpg",
               desc: "Light and energizing sattvic breakfast after your morning yoga and detox practices.",
               items: [
                 "Fresh tropical fruits",
@@ -400,7 +398,7 @@ export const ThreeDayWellnessRetreatData = {
               title: "Lunch",
               icon: "coffee",
               time: "01:00 – 02:00",
-              img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
               desc: "Nourishing Ayurvedic vegetarian lunch to support your afternoon wellness therapies.",
               items: [
                 "Detox rice bowls",
@@ -414,7 +412,7 @@ export const ThreeDayWellnessRetreatData = {
               title: "Dinner",
               icon: "moon",
               time: "06:30 – 07:30",
-              img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1547592180-85f173990554.jpg",
               desc: "Light calming sattvic evening meals to support deep rest and overnight healing.",
               items: [
                 "Lentil soups",
@@ -466,7 +464,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#4A7A30",
               duration: "Half Day",
               icon: "globe",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Sacred purification temple — perfect complement to your inner cleansing retreat.",
               highlights: ["Holy water ritual", "Sacred energy", "Spiritual cleansing"],
             },
@@ -476,7 +474,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#7AAA5A",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1558618666-fcd25c85cd64.jpg",
               desc: "Serene green rice terraces — ideal for mindful walking and reconnection with nature.",
               highlights: ["Peaceful walks", "Scenic views", "Nature therapy"],
             },
@@ -486,7 +484,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#6A8A30",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1567745576352-e404ee640705?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1567745576352-e404ee640705.jpg",
               desc: "Lush jungle sanctuary with ancient temples and playful wild monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -496,7 +494,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#8B4A2A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1555400038-63f5ba517a47.jpg",
               desc: "Sunrise volcano trek — energizing and grounding for your retreat journey.",
               highlights: ["Sunrise energy", "Volcano hike", "Lake views"],
             },
@@ -506,7 +504,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#1A2E10",
               duration: "Half Day",
               icon: "waves",
-              img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1537996194471-e657df975ab4.jpg",
               desc: "Iconic ocean temple with breathtaking sunset — deeply calming for retreat guests.",
               highlights: ["Sunset healing", "Ocean energy", "Cultural depth"],
             },
@@ -516,7 +514,7 @@ export const ThreeDayWellnessRetreatData = {
               tagBg: "#5A7A3A",
               duration: "Flexible",
               icon: "camera",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Explore Ubud's cafes for authentic Balinese food and local markets on free afternoons.",
               highlights: ["Local cuisine", "Art & craft", "Self-discovery"],
             },
@@ -614,7 +612,7 @@ export const ThreeDayWellnessRetreatData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -625,7 +623,7 @@ export const ThreeDayWellnessRetreatData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -636,7 +634,7 @@ export const ThreeDayWellnessRetreatData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -647,7 +645,7 @@ export const ThreeDayWellnessRetreatData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -658,7 +656,7 @@ export const ThreeDayWellnessRetreatData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -686,7 +684,7 @@ export const ThreeDayWellnessRetreatData = {
           tag: "Included",
           tagBg: "#4A7A30",
           price: "$350",
-          img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1631049307264-da0ec9d70304.jpg",
           desc: "Comfortable shared room with sattvic meals and wellness therapy included.",
           features: [
             "Twin sharing",
@@ -700,7 +698,7 @@ export const ThreeDayWellnessRetreatData = {
           tag: "Upgrade",
           tagBg: "#2E5018",
           price: "$400",
-          img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1618773928121-c32242e63f39.jpg",
           desc: "Private room with sattvic meals and wellness therapy included.",
           features: [
             "Private room",

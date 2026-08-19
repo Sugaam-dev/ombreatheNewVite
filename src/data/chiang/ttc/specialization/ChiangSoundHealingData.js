@@ -23,9 +23,7 @@ export const ChiangSoundHealingData = {
         price: PROGRAM_PRICES_CHIANG.specializations["ChiangSoundHealingData"],
         priceNote: "Includes stay, meals & YACEP certificate",
         bgImage:
-          "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=1600&q=80",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/unsplash_photo-1593811167562-9cef47bfc4d7.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -67,7 +65,7 @@ export const ChiangSoundHealingData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1600&q=80",
+            "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "sound healing journey",
@@ -131,11 +129,11 @@ export const ChiangSoundHealingData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1200&q=80",
+              "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
             food:
-              "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
-              "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const ChiangSoundHealingData = {
             label: "Tibetan Singing Bowl Techniques",
             desc: "Striking, circling, holding, palm techniques, Tingsha bells, self-healing and basic one-on-one healing practices",
             icon: "music",
-            img: "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80",
+            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
           },
           {
             label: "Chakra & Energy Body Healing",
             desc: "Seven-bowl chakra healing, frequency & energy body understanding, full-body vibrational healing in different positions",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1593811167562-9cef47bfc4d7.jpg",
           },
           {
             label: "Sound Bath Facilitation",
             desc: "Guiding group sound healing sessions, working with multiple bowls, client safety and professional healer self-care",
             icon: "heart",
-            img: "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1588286840104-8957b019727f.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -354,7 +352,7 @@ export const ChiangSoundHealingData = {
             "4 days of sound healing — evening sessions from 5:00 PM to 8:00 PM, 19th to 21st of every month in Bali.",
     
           image:
-            "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1200&q=80",
+            "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
     
           morning: [
             { time: "06:30 AM", activity: "Morning Meditation & Sadhana", icon: "moon" },
@@ -408,7 +406,7 @@ export const ChiangSoundHealingData = {
               title: "Breakfast",
               icon: "sun",
               time: "09:00 – 10:00",
-              img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
+              img: "/images/external/foods/easy_vegetarian_indian_breakfast_recipes.jpg",
               desc: "Nourishing sattvic morning foods to prepare your body and mind for sound healing practice.",
               items: [
                 "Fresh tropical fruits",
@@ -422,7 +420,7 @@ export const ChiangSoundHealingData = {
               title: "Lunch",
               icon: "coffee",
               time: "12:30 – 01:30",
-              img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
               desc: "Balanced sattvic vegetarian lunch — freshly cooked from locally sourced ingredients.",
               items: [
                 "Rice bowls",
@@ -436,7 +434,7 @@ export const ChiangSoundHealingData = {
               title: "Dinner",
               icon: "moon",
               time: "08:30 – 09:30",
-              img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1547592180-85f173990554.jpg",
               desc: "Light calming evening sattvic meals after your sound healing sessions.",
               items: [
                 "Lentil soups",
@@ -488,7 +486,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#5A3A90",
               duration: "Half Day",
               icon: "globe",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Sacred purification temple with holy spring pools.",
               highlights: ["Holy water ritual", "Ancient temple", "Spiritual cleansing"],
             },
@@ -498,7 +496,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#2E7A55",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1558618666-fcd25c85cd64.jpg",
               desc: "UNESCO iconic green rice terraces of Ubud.",
               highlights: ["Terraced fields", "Scenic views", "Nature walk"],
             },
@@ -508,7 +506,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#8A6010",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1567745576352-e404ee640705?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1567745576352-e404ee640705.jpg",
               desc: "Jungle sanctuary with ancient temples and wild monkeys.",
               highlights: ["Wild monkeys", "Temple ruins", "Jungle walk"],
             },
@@ -518,7 +516,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#8B3A3A",
               duration: "Full Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1555400038-63f5ba517a47.jpg",
               desc: "Sunrise volcano trek with stunning lake and crater views.",
               highlights: ["Sunrise trek", "Volcano hike", "Lake view"],
             },
@@ -528,7 +526,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#1A0838",
               duration: "Half Day",
               icon: "waves",
-              img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1537996194471-e657df975ab4.jpg",
               desc: "Iconic sea temple perched on rock with stunning sunset views.",
               highlights: ["Ocean temple", "Sunset views", "Coastal walk"],
             },
@@ -538,7 +536,7 @@ export const ChiangSoundHealingData = {
               tagBg: "#4A2A6A",
               duration: "3 Hours",
               icon: "camera",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Explore local markets, art galleries & Balinese handicrafts.",
               highlights: ["Local markets", "Art & craft", "Shopping"],
             },
@@ -636,7 +634,7 @@ export const ChiangSoundHealingData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -647,7 +645,7 @@ export const ChiangSoundHealingData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -658,7 +656,7 @@ export const ChiangSoundHealingData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -669,7 +667,7 @@ export const ChiangSoundHealingData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -680,7 +678,7 @@ export const ChiangSoundHealingData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -710,7 +708,7 @@ export const ChiangSoundHealingData = {
             tag: "Course Only",
             tagBg: "#5A3A90",
             price: "$350",
-            img: "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=1200&q=80",
+            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
             desc: "Course-only option — attend all sound healing sessions from 5:00 PM to 8:00 PM without accommodation or meals.",
             features: [
               "Evening sessions only",
@@ -726,7 +724,7 @@ export const ChiangSoundHealingData = {
             tag: "Included",
             tagBg: "#8A60C8",
             price: "$400",
-            img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1631049307264-da0ec9d70304.jpg",
             desc: "Comfortable shared rooms with AC, garden access and outdoor lounge in a peaceful Ubud setting.",
             features: [
               "Twin sharing",
@@ -742,7 +740,7 @@ export const ChiangSoundHealingData = {
             tag: "Upgrade",
             tagBg: "#301860",
             price: "$450",
-            img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1618773928121-c32242e63f39.jpg",
             desc: "Private room with AC, peaceful atmosphere and all modern amenities for a focused sound healing stay.",
             features: [
               "Private room",

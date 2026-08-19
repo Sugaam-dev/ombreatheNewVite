@@ -23,9 +23,7 @@ export const RishikeshKundali300HoursData = {
         price: PROGRAM_PRICES_RISHIKESH.kundalini["300hr"],
         priceNote: "Includes free Dehradun airport taxi pick-up, stay, organic meals & dual certifications",
         bgImage:
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/heroes/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
         buttonText: "Enroll This Course Now",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const RishikeshKundali300HoursData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "transformative advanced lineage",
@@ -131,11 +129,11 @@ export const RishikeshKundali300HoursData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1575052814086-f385e2e2ad1b.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const RishikeshKundali300HoursData = {
             label: "Hatha & Ashtanga Vinyasa",
             desc: "Advanced postures, flow transitions, structural execution, and intense daily practice routines.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1517838277536-f5f99be501cd.jpg",
           },
           {
             label: "Scientific Anatomy & Alignment",
             desc: "Decrease safety risks, manage body weight distribution, use props perfectly, and trace neuroscience links.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Therapeutics & Adjustment",
             desc: "Explore structural dynamics of adjustments, therapeutic healing, and advanced student sequencing metrics.",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Why Our",
@@ -354,7 +352,7 @@ export const RishikeshKundali300HoursData = {
             "Surrendering completely to the daily schedule maximizes internal shift and yields complete integration.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "05:00 AM", activity: "Yoga Sadhana", icon: "moon" },
@@ -408,7 +406,7 @@ export const RishikeshKundali300HoursData = {
               title: "Morning Nourishment",
               icon: "sun",
               time: "09:00 AM – 09:45 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
               desc: "Clean macronutrients structured to optimize body recovery and preparation loops.",
               items: [
                 "Fresh seasonal hill fruits",
@@ -422,7 +420,7 @@ export const RishikeshKundali300HoursData = {
               title: "Midday Balanced Meal",
               icon: "coffee",
               time: "01:00 PM – 02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
               desc: "Complete Ayurvedic profile incorporating all six essential tastes to fuel heavy training blocks.",
               items: [
                 "Traditional medicinal Khichdi",
@@ -436,7 +434,7 @@ export const RishikeshKundali300HoursData = {
               title: "Calming Night Supper",
               icon: "moon",
               time: "06:00 PM – 07:00 PM",
-              img: "https://newsmeter.in/h-upload/2024/09/30/383358-chaitra-navratri-2024-recipes-ideas-2024-04-45920c418220b803d30dfec9ceac631d.webp",
+              img: "/images/external/general/383358-chaitra-navratri-2024-recipes-ideas-2024-04-45920c418220b803d30dfec9ceac631d.webp",
               desc: "Light, ultra-digestible properties ensuring peaceful evening meditation and deep sleep.",
               items: [
                 "Clear organic vegetable broths",
@@ -487,7 +485,7 @@ export const RishikeshKundali300HoursData = {
               tagBg: "#5A3D73",
               duration: "Half Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1464822759023-fed622ff2c3b.jpg",
               desc: "Mysterious mountain temple offering deep vistas over the snow-covered Himalayan heights.",
               highlights: ["Panoramic sunrise", "Shakti Peeth energy", "High alpine air"],
             },
@@ -497,7 +495,7 @@ export const RishikeshKundali300HoursData = {
               tagBg: "#7B5B94",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
               desc: "Explore historic meditation domes where profound artistic works were structured.",
               highlights: ["Meditation cave runs", "Eco-jungle sanctuary", "Vintage visual graffiti"],
             },
@@ -507,7 +505,7 @@ export const RishikeshKundali300HoursData = {
               tagBg: "#C8874A",
               duration: "Evening",
               icon: "sparkles",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Participate in global kirtan and traditional light offerings right down on the river steps.",
               highlights: ["Ganga Aarti attendance", "Mantra chanting choruses", "River bank seating"],
             },
@@ -517,7 +515,7 @@ export const RishikeshKundali300HoursData = {
               tagBg: "#8B3A3A",
               duration: "Half Day",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Ancient cave site used for thousands of years for deep, intense silent contemplation.",
               highlights: ["Absolute stillness", "Natural river beachfronts", "Pure ancient vibrations"],
             },
@@ -608,7 +606,7 @@ export const RishikeshKundali300HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -619,7 +617,7 @@ export const RishikeshKundali300HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -630,7 +628,7 @@ export const RishikeshKundali300HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -641,7 +639,7 @@ export const RishikeshKundali300HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -652,7 +650,7 @@ export const RishikeshKundali300HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -682,7 +680,7 @@ export const RishikeshKundali300HoursData = {
             tag: "Standard Inclusion",
             tagBg: "#5A3D73",
             price: "$1699",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Clean, light-filled shared quarters featuring private bathrooms and personal desk boundaries.",
             features: [
               "Twin roommate setting",
@@ -698,7 +696,7 @@ export const RishikeshKundali300HoursData = {
             tag: "Solo Upgrade",
             tagBg: "#231336",
             price: "$2099",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "Complete personal isolation option maximizing study hours and silent reflective contemplation.",
             features: [
               "Total single privacy",
@@ -714,7 +712,7 @@ export const RishikeshKundali300HoursData = {
             tag: "Females Only Budget",
             tagBg: "#C8874A",
             price: "$1299",
-            img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1582719508461-905c673771fd.jpg",
             desc: "Highly supportive shared spaces restricted solely to female practitioners looking for optimized community building.",
             features: [
               "Community single beds",

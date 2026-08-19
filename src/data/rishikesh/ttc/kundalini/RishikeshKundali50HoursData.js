@@ -23,9 +23,7 @@ export const RishikeshKundali50HoursData = {
         price: PROGRAM_PRICES_RISHIKESH.kundalini["50hr"],
         priceNote: "Includes cozy accommodation, 3 sattvic vegetarian meals, and pure Trika tradition certification",
         bgImage:
-          "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
         buttonText: "Enroll Course With Us",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const RishikeshKundali50HoursData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1502134249126-9f3755a50d78.jpg",
           eyebrow: "Ombreathe Lineage",
           title: "Join our",
           highlight: "sacred transmission",
@@ -131,11 +129,11 @@ export const RishikeshKundali50HoursData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1470240731273-7821a6eeb6bd.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80",
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const RishikeshKundali50HoursData = {
             label: "Trika Philosophy Core",
             desc: "Analyze the foundational shifts of ancient Kashmir Shaivism and track the mapping metrics of all 36 Tattvas.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           },
           {
             label: "Subtle Energy Refinement",
             desc: "Track energetic channels and nadis from a Trika orientation. Dissolve deep mental blockages without force hooks.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Esoteric Meditation Labs",
             desc: "Perform internal witness practices, pure breath containment scripts, and deep energetic presence absorption.",
             icon: "feather",
-            img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1517838277536-f5f99be501cd.jpg",
           },
         ],
         specialTitle: "Lineage Pillars",
@@ -334,7 +332,7 @@ export const RishikeshKundali50HoursData = {
             "Living inside our campus demands deep focus, humbleness, punctuality, and compliance with ashram rules.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM", activity: "Morning Awakening Routine", icon: "moon" },
@@ -387,7 +385,7 @@ export const RishikeshKundali50HoursData = {
               title: "Morning Pure Nutrition",
               icon: "sun",
               time: "09:30 AM – 10:15 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
               desc: "Clean baseline items crafted carefully to refresh physical tracks without triggering heavy sleepiness.",
               items: [
                 "Fresh regional harvest fruits",
@@ -401,7 +399,7 @@ export const RishikeshKundali50HoursData = {
               title: "Midday Operational Dhal",
               icon: "coffee",
               time: "01:00 PM – 02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80",
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
               desc: "Hearty traditional staples serving optimal fuel indexes for intense scriptural study sessions.",
               items: [
                 "Nutritious lentil dhal pots",
@@ -415,7 +413,7 @@ export const RishikeshKundali50HoursData = {
               title: "Light Evening Supper",
               icon: "moon",
               time: "06:00 PM – 07:00 PM",
-              img: "https://newsmeter.in/h-upload/2024/09/30/383358-chaitra-navratri-2024-recipes-ideas-2024-04-45920c418220b803d30dfec9ceac631d.webp",
+              img: "/images/external/general/383358-chaitra-navratri-2024-recipes-ideas-2024-04-45920c418220b803d30dfec9ceac631d.webp",
               desc: "Highly digestible, minimal formulations designed to support night meditation loops.",
               items: [
                 "Clear seasonal vegetable broths",
@@ -466,7 +464,7 @@ export const RishikeshKundali50HoursData = {
               tagBg: "#34495E",
               duration: "Evening Block",
               icon: "globe",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Experience powerful, direct river devotionals on the ancient holy steps of Rishikesh.",
               highlights: ["Mantra sound fields", "Traditional light offerings", "Riverside contemplation"],
             },
@@ -476,7 +474,7 @@ export const RishikeshKundali50HoursData = {
               tagBg: "#4E5D6C",
               duration: "3 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
               desc: "Walk through historic, jungle-covered meditation pods structured for deep, sensory isolation.",
               highlights: ["Silent forest pathways", "Historical design ruins", "Creative wave energies"],
             },
@@ -486,7 +484,7 @@ export const RishikeshKundali50HoursData = {
               tagBg: "#C8874A",
               duration: "Half Day",
               icon: "sparkles",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Step directly inside high-vibration quiet settings dedicated strictly to absolute silence.",
               highlights: ["Senses withdrawal trials", "Deep lineage traces", "Pure internal listening"],
             },
@@ -577,7 +575,7 @@ export const RishikeshKundali50HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -588,7 +586,7 @@ export const RishikeshKundali50HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -599,7 +597,7 @@ export const RishikeshKundali50HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -610,7 +608,7 @@ export const RishikeshKundali50HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -621,7 +619,7 @@ export const RishikeshKundali50HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -651,7 +649,7 @@ export const RishikeshKundali50HoursData = {
             tag: "Baseline Inclusion",
             tagBg: "#34495E",
             price: "$799",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Clean, well-ventilated shared spaces housing private attached plumbing utilities.",
             features: [
               "Double occupant setup",
@@ -667,7 +665,7 @@ export const RishikeshKundali50HoursData = {
             tag: "Sovereign Upgrade",
             tagBg: "#1A1C29",
             price: "$999",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "Isolate your daily hours fully to fast-track scriptural absorption and uninterrupted meditation runs.",
             features: [
               "100% individual privacy locking",

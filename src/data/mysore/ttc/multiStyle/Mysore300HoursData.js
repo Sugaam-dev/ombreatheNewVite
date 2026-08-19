@@ -23,9 +23,7 @@ export const Mysore300HoursData = {
         price: PROGRAM_PRICES_MYSORE.multiStyle["300hr"],
         priceNote: "Shared room tier ($1200 without food and accommodation options); fully certified under advanced Yoga Alliance USA standards",
         bgImage:
-          "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
         buttonText: "BOOK NOW",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const Mysore300HoursData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Yoga With Srinatha Masterclass",
           title: "Join our",
           highlight: "advanced structural collective",
@@ -131,11 +129,11 @@ export const Mysore300HoursData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset URL
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset URL
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const Mysore300HoursData = {
             label: "Ashtanga Intermediate Series",
             desc: "Analyze individual postures, trace structural Sanskrit terminology, and apply the mechanics of Ujjayi breathing and Drishti locks.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1575052814086-f385e2e2ad1b.jpg",
           },
           {
             label: "Pancha Vayus Stabilization",
             desc: "Regulate respiratory speeds to cleanly balance and clear the internal Apana, Samana, Prana, Udana, and Vyana lifecycle winds.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Vedanta Mind Reprogramming",
             desc: "Progress from sense-withdrawal (Pratyahara) and concentration (Dharana) to touch the higher stages of Dhyana and object meditation (Samadhi).",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Lineage Strengths",
@@ -354,7 +352,7 @@ export const Mysore300HoursData = {
             "Every class contains real importance to help you grow organically. Complete attendance remains required.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM - 07:30 AM", activity: "Intensive Hatha Yoga Practice Session", icon: "moon" },
@@ -406,7 +404,7 @@ export const Mysore300HoursData = {
               title: "Morning Tissue Prep",
               icon: "sun",
               time: "09:00 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset
               desc: "Fresh assemblies designed carefully to supply clean energy fields without slowing filtration paths.",
               items: [
                 "Seasonal fresh local fruits",
@@ -420,7 +418,7 @@ export const Mysore300HoursData = {
               title: "Midday Balanced Fuel",
               icon: "coffee",
               time: "02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset
               desc: "Nutrient-dense grains paired with traditional lentils to supply comprehensive, equal energy distribution.",
               items: [
                 "Traditional Indian rice bowls",
@@ -434,7 +432,7 @@ export const Mysore300HoursData = {
               title: "Twilight Metabolic Rest",
               icon: "moon",
               time: "08:00 PM",
-              img: "https://www.thatgoangirl.com/wp-content/uploads/2023/11/pure-veg-restaurants-in-goa-edited-1.jpg", // Vegetarian Sattvic Asset
+              img: "/images/external/general/pure-veg-restaurants-in-goa-edited-1.jpg", // Vegetarian Sattvic Asset
               desc: "Light vegetable compositions designed to support twilight silent meditation loops safely.",
               items: [
                 "Clear organic vegetable broths",
@@ -486,7 +484,7 @@ export const Mysore300HoursData = {
               tagBg: "#A0522D",
               duration: "Weekend Outing",
               icon: "globe",
-              img: "https://www.karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg",
+              img: "/images/external/heroes/Mysore-banner.jpg",
               desc: "Explore iconic lineage landmarks, historical palaces, and traditional centers matching your study records.",
               highlights: ["Lineage palace grounds", "Traditional craft blocks", "Ancient energy grids"],
             },
@@ -496,7 +494,7 @@ export const Mysore300HoursData = {
               tagBg: "#CD853F",
               duration: "Half Day",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Visit highly dynamic regional mountain temple boundaries to ground your internal meditation blocks.",
               highlights: ["Mantra chant exposures", "Scenic hilltop lookouts", "Deep inner reflection blocks"],
             },
@@ -581,7 +579,7 @@ export const Mysore300HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -592,7 +590,7 @@ export const Mysore300HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -603,7 +601,7 @@ export const Mysore300HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -614,7 +612,7 @@ export const Mysore300HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -625,7 +623,7 @@ export const Mysore300HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -655,7 +653,7 @@ export const Mysore300HoursData = {
             tag: "Sharing",
             tagBg: "#7BAF8A",
             price: "$1200",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Clean shared quarters with attached bathroom, filtered water, and a comfortable study environment.",
             features: [
               "Shared room (4-person)",

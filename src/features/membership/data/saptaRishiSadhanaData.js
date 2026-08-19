@@ -78,15 +78,15 @@ const saptaRishiSadhanaData = {
   // Certification images
   certifications: [
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1507003211169-0a1dd7228f2d.jpg",
       alt: "Vedic Studies Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1494790108755-2616c95ae3d4?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
       alt: "Sapta Rishi Lineage Certification"
     },
     {
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
+      image: "/images/external/general/unsplash_photo-1534528741775-53994a69daeb.jpg",
       alt: "Ombreathe Advanced Wisdom Certification"
     }
   ],
@@ -145,19 +145,19 @@ const saptaRishiSadhanaData = {
     description: "Our Sapta Rishi Sadhana program provides deep immersion into Vedic knowledge systems, ancient meditation techniques, and universal principles. Learn directly from traditional teachers in authentic ashram environments while discovering practical applications for modern life.",
     items: [
       {
-        image: "https://images.unsplash.com/photo-1524863479829-916d8e77f114?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1524863479829-916d8e77f114.jpg",
         alt: "Vedic meditation practice",
         title: "Rishi Meditation Techniques",
         description: "Ancient meditation methods passed down through sage lineages for accessing higher consciousness"
       },
       {
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "/images/external/general/unsplash_photo-1578662996442-48f60103fc96.jpg",
         alt: "Vedic fire ceremony",
         title: "Sacred Fire Ceremonies",
         description: "Traditional Agnihotra and Yajna practices for purification and cosmic connection"
       },
       {
-        image: "https://img.freepik.com/premium-photo/scholars-studying-manuscripts-ancient-civilizations-together_1079150-345395.jpg",
+        image: "/images/external/general/scholars-studying-manuscripts-ancient-civilizations-together_1079150-345395.jpg",
         alt: "Ancient text study",
         title: "Vedic Scripture Study",
         description: "Deep study of original texts including Vedas, Upanishads, and sage teachings"

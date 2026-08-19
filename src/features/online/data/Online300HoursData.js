@@ -21,9 +21,7 @@ export const Online300HoursData = {
       price: "399 USD / 745 USD",
       priceNote: "Includes 178 course videos, study manuals & Yoga Alliance certification",
       bgImage:
-        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-      certificateImage:
-        "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+        "/images/external/general/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       buttonText: "Book Now",
       url: "/contact",
     },
@@ -38,9 +36,9 @@ export const Online300HoursData = {
     ],
 
     certificates: [
-      { img: "https://www.Ombreathe.in/static/media/200.197061cc4d2bc369826c.png", label: "300 Hrs" },
-      { img: "https://www.Ombreathe.in/static/media/yoga.562f46cb59ea00ca8753.png", label: "Certified" },
-      { img: "https://www.Ombreathe.in/static/media/YACEP.50cf2e991c78fbe3a13d.png", label: "Yoga Alliance" },
+      { img: "/images/cirtificats/300yy.png", label: "300 Hrs" },
+      { img: "/images/cirtificats/yoga.png", label: "Certified" },
+      { img: "/images/cirtificats/YACEP.png", label: "Yoga Alliance" },
     ],
 
     content: {
@@ -64,7 +62,7 @@ export const Online300HoursData = {
 
     content: {
       bgImage:
-        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
+        "/images/external/general/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       eyebrow: "Ombreathe Experience",
       title: "Join our",
       highlight: "global online",
@@ -198,11 +196,11 @@ export const Online300HoursData = {
         },
       ],
       images: {
-        main: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
+        main: "/images/external/heroes/499607-yoga-background.jpg",
         food:
-          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+          "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
         stay:
-          "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+          "/images/external/general/unsplash_photo-1626621341517-bbf3d9990a23.jpg",
       },
     },
   },
@@ -280,7 +278,7 @@ export const Online300HoursData = {
 
     content: {
       bgImage:
-        "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
+        "/images/external/general/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       quoteStart: "Your life is a gift of the Divine,",
       highlight: "Cherish it",
       quoteEnd: "",
@@ -310,19 +308,19 @@ export const Online300HoursData = {
           label: "Advanced Hatha & Ashtanga",
           desc: "Advanced Hatha Yoga and the Ashtanga Secondary Series, with alignment & adjustment of yoga pose guidance",
           icon: "sun",
-          img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
+          img: "/images/external/heroes/yoga-background-2rmnmb16t7q2lj98.jpg",
         },
         {
           label: "Kundalini & Traditional Tantra",
           desc: "Kundalini Theory & Practice, Yoga Nidra Theory & Practice, and Traditional Tantra drawn from the Himalayan tradition",
           icon: "wind",
-          img: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80",
+          img: "/images/external/general/unsplash_photo-1593811167562-9cef47bfc4d7.jpg",
         },
         {
           label: "Philosophy, Therapy & Ayurveda",
           desc: "Yoga Philosophy, Yoga Psychology, Yoga Therapy, Ayurveda and Anatomy, plus teaching methodology for aspiring teachers",
           icon: "feather",
-          img: "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80",
+          img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
         },
       ],
       specialTitle: "Why Choose",
@@ -560,7 +558,7 @@ export const Online300HoursData = {
       subtitle:
         "Free daily live classes over Zoom — every class is recorded, so you can watch and learn in your own time if you can't attend live. All times Indian Standard Time.",
 
-      image: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
+      image: "/images/external/heroes/499607-yoga-background.jpg",
 
       morning: [
         { time: "Monday", activity: "Kundalini Asana — Haripriya Ji", icon: "sun" },
@@ -662,16 +660,16 @@ export const Online300HoursData = {
       subtitle:
         "When calmness in the mind is permanent then absolute equilibrium is realized.",
       images: [
-        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80",
-        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80",
-        "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=500&q=80",
-        "https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=500&q=80",
-        "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?w=500&q=80",
-        "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&q=80",
-        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80",
-        "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=500&q=80",
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80",
-        "https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?w=500&q=80",
+        "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
+        "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
+        "/images/external/general/unsplash_photo-1554284126-aa88f22d8b74.jpg",
+        "/images/external/general/unsplash_photo-1599447421416-3414500d18a5.jpg",
+        "/images/external/general/unsplash_photo-1591228127791-8e2eaef098d3.jpg",
+        "/images/external/general/unsplash_photo-1545205597-3d9d02c29597.jpg",
+        "/images/external/general/unsplash_photo-1573497019940-1c28c88b4f3e.jpg",
+        "/images/external/general/unsplash_photo-1588286840104-8957b019727f.jpg",
+        "/images/external/general/unsplash_photo-1506905925346-21bda4d32df4.jpg",
+        "/images/external/general/unsplash_photo-1517021897933-0e0319cfbc28.jpg",
       ],
       linkText: "See More From Gallery",
       galleryUrl: "/gallery",
@@ -761,7 +759,7 @@ export const Online300HoursData = {
           reviews: 184,
           isPopular: true,
           isPaid: true,
-          image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+          image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
         },
         {
           id: 2,
@@ -772,7 +770,7 @@ export const Online300HoursData = {
           reviews: 92,
           isPopular: false,
           isPaid: true,
-          image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+          image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
         },
         {
           id: 3,
@@ -783,7 +781,7 @@ export const Online300HoursData = {
           reviews: 210,
           isPopular: false,
           isPaid: false,
-          image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+          image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
         },
         {
           id: 4,
@@ -794,7 +792,7 @@ export const Online300HoursData = {
           reviews: 145,
           isPopular: false,
           isPaid: true,
-          image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+          image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
         },
         {
           id: 5,
@@ -805,7 +803,7 @@ export const Online300HoursData = {
           reviews: 76,
           isPopular: true,
           isPaid: false,
-          image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+          image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
         }
       ]
     }

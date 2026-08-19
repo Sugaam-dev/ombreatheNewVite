@@ -23,9 +23,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
         price: PROGRAM_PRICES.specializations.BaliAyurveda5HoursAbhyangamData,
         priceNote: "Flexible tiers up to $650 depending on personal lodging preference; includes YACEP certification",
         bgImage:
-          "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg",
         buttonText: "Enroll This Course Now",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
+            "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
           eyebrow: "Fast-Track Bodywork Specialization",
           title: "Join our",
           highlight: "ancient ritual of unity",
@@ -131,11 +129,11 @@ export const BaliAyurveda5HoursAbhyangamData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset URL
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset URL
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const BaliAyurveda5HoursAbhyangamData = {
             label: "Myo-Restorative Fist Work",
             desc: "Utilize hands and closed fists to locate and target deep tissue restrictions in superficial muscle matrices.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
           },
           {
             label: "Myo-Releasing Forearm Sweeps",
             desc: "Employ long rhythmic massage movements with the forearm and elbow regions to fast-track deep physical release.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Regional Isolation Balancing",
             desc: "Isolate individual coordination tracks covering the neck, upper shoulders, head, and facial muscular regions.",
             icon: "feather",
-            img: "https://vedantastudents.com/wp-content/uploads/2025/08/c1-e1756205578471.jpg",
+            img: "/images/external/general/c1-e1756205578471.jpg",
           },
         ],
         specialTitle: "Lineage Features",
@@ -314,7 +312,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             "Our structured daily flow perfectly balances active physical training with deep interiorizing calm practices.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM - 07:30 AM", activity: "Holistic Hatha Yoga, Pranayama & Meditation", icon: "moon" },
@@ -366,7 +364,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
               title: "Morning Tissue Prep",
               icon: "sun",
               time: "09:00 AM – 10:00 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset
               desc: "Light unprocessed morning assemblies structured to ease metabolic filtration loads.",
               items: [
                 "Fresh regional harvest fruits",
@@ -380,7 +378,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
               title: "Midday Balanced Fuel",
               icon: "coffee",
               time: "01:00 PM – 02:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset
               desc: "Nutrient-dense grains paired with traditional lentils to supply equal energy distribution parameters.",
               items: [
                 "Traditional Ayurvedic Khichdi pots",
@@ -394,7 +392,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
               title: "Twilight Metabolic Rest",
               icon: "moon",
               time: "06:30 PM – 07:30 PM",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max", // Vegetarian Sattvic Asset
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg", // Vegetarian Sattvic Asset
               desc: "Light, ultra-digestible properties keeping cognitive and circulatory channels unburdened during night rest.",
               items: [
                 "Clear organic vegetable broths",
@@ -445,7 +443,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
               tagBg: "#E67E22",
               duration: "Day Outing",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1507525428034-b723cf961d3e.jpg",
               desc: "Relax your cognitive layers completely along gorgeous Balinese sandy beach settings.",
               highlights: ["Tropical ocean breezes", "Nervous system calming", "Natural restoration"],
             },
@@ -455,7 +453,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
               tagBg: "#D35400",
               duration: "2 Hours",
               icon: "trees",
-              img: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1502082553048-f009c37129b9.jpg",
               desc: "Walk through beautiful tropical landscapes and serene regional heritage zones.",
               highlights: ["Silent jungle tracks", "High spiritual charges", "Distraction-free resting"],
             },
@@ -546,7 +544,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -557,7 +555,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -568,7 +566,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -579,7 +577,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -590,7 +588,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -620,7 +618,7 @@ export const BaliAyurveda5HoursAbhyangamData = {
           tag: "Standard",
           tagBg: "#1A2456",
           price: "$250",
-          img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80",
+          img: "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           desc: "Complete course access, materials, and internationally recognized certification.",
           features: [
             "Full training",

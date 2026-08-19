@@ -23,9 +23,7 @@ export const RishikeshSoundHealingData = {
         price: PROGRAM_PRICES_RISHIKESH.specializations["RishikeshSoundHealingData"],
         priceNote: "Modular pricing: $150 per level (Levels 1-4) & $199 for Level 5; includes specialized course manuals and full master certification",
         bgImage:
-          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80",
-        certificateImage:
-          "https://images.news18.com/ibnlive/uploads/2025/07/yoga-2025-07-b991f89664f8b2f2295cef01947ff7e4.jpg",
+          "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
         buttonText: "Book Package Now",
         url: "/contact",
       },
@@ -67,7 +65,7 @@ export const RishikeshSoundHealingData = {
     
         content: {
           bgImage:
-            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1600&q=80",
+            "/images/external/heroes/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
           eyebrow: "Vibrational Sound Therapy Hub",
           title: "Join our",
           highlight: "harmonic healing circle",
@@ -131,11 +129,11 @@ export const RishikeshSoundHealingData = {
           ],
           images: {
             main:
-              "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&q=80",
+              "/images/external/general/unsplash_photo-1512100356356-de1b84283e18.jpg",
             food:
-              "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset URL
+              "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset URL
             stay:
-              "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+              "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
           },
         },
       }
@@ -163,19 +161,19 @@ export const RishikeshSoundHealingData = {
             label: "Levels 1 & 2: Base Foundations",
             desc: "Unpack historical acoustic timelines, instrument properties, and chart specific frequencies to tune all 7 chakras.",
             icon: "sparkles",
-            img: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
           },
           {
             label: "Levels 3 & 4: Clinical Modalities",
             desc: "Apply vibrational wave actions to clear structural energy bottlenecks, master tuning forks, and structure group sound baths.",
             icon: "wind",
-            img: "https://www.rishikulyogshalarishikesh.com/blog/wp-content/uploads/2024/08/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
+            img: "/images/external/excursions/indian-male-thirties-doing-yoga-temple-background-1024x1024.jpg",
           },
           {
             label: "Level 5: Professional Instruction",
             desc: "Master the subtle arts of commercial classroom teaching, workshop facilitation leadership, and student evaluation tracking.",
             icon: "feather",
-            img: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1517838277536-f5f99be501cd.jpg",
           },
         ],
         specialTitle: "Syllabus Weight",
@@ -324,7 +322,7 @@ export const RishikeshSoundHealingData = {
             "Our everyday retreat structure balances rigorous acoustic study blocks with deep meditative rest protocols.",
     
           image:
-            "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80",
+            "/images/external/general/unsplash_photo-1545389336-cf090694435e.jpg",
     
           morning: [
             { time: "06:00 AM", activity: "Holistic Hatha Yoga, Pranayama & Meditation Core", icon: "moon" },
@@ -376,7 +374,7 @@ export const RishikeshSoundHealingData = {
               title: "Morning Tissue Prep",
               icon: "sun",
               time: "09:00 AM",
-              img: "https://images.unsplash.com/photo-1496042399014-dc73c4f2bde1?w=600&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1496042399014-dc73c4f2bde1.jpg", // Vegetarian Sattvic Asset
               desc: "Fresh, unprocessed morning assemblies designed to support early metabolic detoxification.",
               items: [
                 "Fresh seasonal hill fruits",
@@ -390,7 +388,7 @@ export const RishikeshSoundHealingData = {
               title: "Midday Balanced Fuel",
               icon: "coffee",
               time: "01:00 PM",
-              img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&q=80", // Vegetarian Sattvic Asset
+              img: "/images/external/general/unsplash_photo-1540420773420-3366772f4999.jpg", // Vegetarian Sattvic Asset
               desc: "Complete Ayurvedic plates cooked cleanly using local, organic seasonal vegetables.",
               items: [
                 "Traditional Indian dhal pots",
@@ -404,7 +402,7 @@ export const RishikeshSoundHealingData = {
               title: "Twilight Metabolic Rest",
               icon: "moon",
               time: "07:30 PM",
-              img: "https://media.assettype.com/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg?rect=0%2C0%2C1280%2C720&w=undefined&auto=format%2Ccompress&fit=max", // Vegetarian Sattvic Asset
+              img: "/images/external/general/deccanherald%2F2024-05%2F00253cf2-c151-4695-a4db-4cf14c310868%2Ffile7v4xyryjkx3hhw9u9lr__1_.jpg", // Vegetarian Sattvic Asset
               desc: "Light vegetable compositions designed to support quiet evening meditation loops.",
               items: [
                 "Clear organic vegetable broths",
@@ -456,7 +454,7 @@ export const RishikeshSoundHealingData = {
               tagBg: "#4A286D",
               duration: "Ashram Proximity",
               icon: "globe",
-              img: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1447752875215-b2761acb3c5d.jpg",
               desc: "Sit quietly along white sand river beaches to naturally internalize your daily frequency training modules.",
               highlights: ["White sandy riverbanks", "Vibrating spiritual energy", "Deep emotional clearing"],
             },
@@ -466,7 +464,7 @@ export const RishikeshSoundHealingData = {
               tagBg: "#D4A373",
               duration: "Campus Borderline",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1506126613408-eca07ce68773.jpg",
               desc: "Surrounds our landmark footprint on Badrinath Road, keeping the entire atmosphere highly meditative.",
               highlights: ["Absolute sound silence", "Deep internal listening", "Lineage energy traces"],
             },
@@ -557,7 +555,7 @@ export const RishikeshSoundHealingData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -568,7 +566,7 @@ export const RishikeshSoundHealingData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -579,7 +577,7 @@ export const RishikeshSoundHealingData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -590,7 +588,7 @@ export const RishikeshSoundHealingData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -601,7 +599,7 @@ export const RishikeshSoundHealingData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -631,7 +629,7 @@ export const RishikeshSoundHealingData = {
             tag: "Standard Optional Upgrade",
             tagBg: "#4A286D",
             price: "Tuition + 3000 INR / Day",
-            img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1590490360182-c33d57733427.jpg",
             desc: "Clean shared practitioner quarters housing private bathrooms, filtered water lines, and daily meals.",
             features: [
               "Twin roommate setting",
@@ -647,7 +645,7 @@ export const RishikeshSoundHealingData = {
             tag: "Sovereign Optional Upgrade",
             tagBg: "#1E112A",
             price: "Tuition + Premium Day Rate",
-            img: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1591088398332-8a7791972843.jpg",
             desc: "100% individual structural privacy, maximizing long hours of quiet text study and independent rest cycles.",
             features: [
               "Total single room isolation",
@@ -663,7 +661,7 @@ export const RishikeshSoundHealingData = {
             tag: "Practice Blocks Only",
             tagBg: "#C8874A",
             price: "Base Tuition Rates Only",
-            img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1582719508461-905c673771fd.jpg",
             desc: "Access all dynamic classroom hours, masterclasses, and certified evaluation loops while arranging outside stay structures.",
             features: [
               "Full course tools access",

@@ -119,7 +119,7 @@ const Yogaschool = () => {
       {
         location: "Bali",
         image:
-          "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?q=80&w=2070&auto=format&fit=crop",
+          "/images/external/general/unsplash_photo-1537953773345-d172ccf13cf1.jpg",
         title: "Discover Yoga Paradise In Bali",
         description:
           "Immerse yourself in tropical serenity, sacred temples, waterfalls, and transformative yoga retreats surrounded by Bali's spiritual energy.",
@@ -139,7 +139,7 @@ const Yogaschool = () => {
       {
         location: "Rishikesh",
         image:
-          "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=2070&auto=format&fit=crop",
+          "/images/external/general/unsplash_photo-1626621341517-bbf3d9990a23.jpg",
         title: "Experience Yoga In Rishikesh",
         description:
           "Practice yoga by the sacred Ganges River surrounded by Himalayan energy in the spiritual heart of India.",
@@ -149,7 +149,7 @@ const Yogaschool = () => {
       {
         location: "Chiang Mai",
         image:
-          "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2070&auto=format&fit=crop",
+          "/images/external/general/unsplash_photo-1552465011-b4e21bf6e79a.jpg",
         title: "Mindful Retreats In Chiang Mai",
         description:
           "Blend yoga, meditation, mindfulness, and nature in the peaceful mountains and temples of Northern Thailand.",
@@ -159,7 +159,7 @@ const Yogaschool = () => {
       {
         location: "Dharamshala",
         image:
-          "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+          "/images/external/general/unsplash_photo-1506744038136-46273834b3fb.jpg",
         title: "Yoga In The Himalayas",
         description:
           "Reconnect with yourself in the serene Himalayan atmosphere inspired by Tibetan spiritual culture and meditation.",

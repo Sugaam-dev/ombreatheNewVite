@@ -21,9 +21,7 @@ export const Dharamshala200HoursData = {
   price: PROGRAM_PRICES_DHARAMSHALA.multiStyle["200hr"],
         priceNote: "Includes stay, meals & certification",
         bgImage:
-          "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
-        certificateImage:
-          "https://www.Ombreathe.in/static/media/Yogalyaa_200_Hour_TTC_1st%20image.68041e974b4b6b7d159e.jpg",
+          "/images/external/general/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
         buttonText: "Book Now",
           url:"/contact",
       },
@@ -65,7 +63,7 @@ export const Dharamshala200HoursData = {
     
         content: {
           bgImage:
-            "https://wallpaperbat.com/img/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
+            "/images/external/general/329294-magnificent-yoga-wallpaper-ralph-smart-infinite-waters-diving-deep.jpg",
       eyebrow: "Ombreathe Experience",
     title: "Join our",
     highlight: "transformative",
@@ -128,11 +126,11 @@ export const Dharamshala200HoursData = {
           ],
           images: {
             main:
-              "https://wallpaperbat.com/img/499607-yoga-background.jpg",
+              "/images/external/heroes/499607-yoga-background.jpg",
             food:
-              "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
-              "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+              "/images/external/general/unsplash_photo-1626621341517-bbf3d9990a23.jpg",
           },
         },
       }
@@ -160,19 +158,19 @@ export const Dharamshala200HoursData = {
             label: "Hatha & Ashtanga Yoga",
             desc: "200+ postures — traditional Hatha yoga and Ashtanga practice with deep alignment and adjustment",
             icon: "sun",
-            img: "https://wallpapers.com/images/hd/yoga-background-2rmnmb16t7q2lj98.jpg",
+            img: "/images/external/heroes/yoga-background-2rmnmb16t7q2lj98.jpg",
           },
           {
             label: "Pranayama & Meditation",
             desc: "Yoga Sadhana, breathing techniques, Yoga Nidra, Bandha, Mudra & evening Ganga beach meditation",
             icon: "wind",
-            img: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80",
+            img: "/images/external/general/unsplash_photo-1593811167562-9cef47bfc4d7.jpg",
           },
           {
             label: "Philosophy & Teaching",
             desc: "Mantra chanting, yoga philosophy, anatomy, alignment & teaching methodology from Himalayan masters",
             icon: "feather",
-            img: "https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80",
+            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
           },
         ],
         specialTitle: "Why Choose",
@@ -345,7 +343,7 @@ export const Dharamshala200HoursData = {
           subtitle: "A structured daily routine from early morning Yoga Sadhana to evening Ganga beach meditation — all classes are mandatory.",
     
           image:
-            "https://wallpaperbat.com/img/499607-yoga-background.jpg",
+            "/images/external/heroes/499607-yoga-background.jpg",
     
           morning: [
             { time: "05:00 AM", activity: "Yoga Sadhana", icon: "moon" },
@@ -399,7 +397,7 @@ export const Dharamshala200HoursData = {
               title: "Breakfast",
               icon: "sun",
               time: "09:00 – 09:45",
-              img: "https://www.cookwithkushi.com/wp-content/uploads/2021/11/easy_vegetarian_indian_breakfast_recipes.jpg",
+              img: "/images/external/foods/easy_vegetarian_indian_breakfast_recipes.jpg",
               desc: "Nourishing yogic breakfast after your morning Sadhana and Hatha yoga practice.",
               items: [
                 "Seasonal fresh fruits",
@@ -413,7 +411,7 @@ export const Dharamshala200HoursData = {
               title: "Lunch",
               icon: "coffee",
               time: "01:00 – 02:00",
-              img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
               desc: "Traditional Ayurvedic Indian vegetarian lunch — easy to digest and energizing.",
               items: [
                 "Rice & chapatti",
@@ -427,7 +425,7 @@ export const Dharamshala200HoursData = {
               title: "Dinner",
               icon: "moon",
               time: "06:00 – 07:00",
-              img: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1547592180-85f173990554.jpg",
               desc: "Light sattvic evening meals before Ganga beach meditation — Sundays explore local Dharamshala restaurants.",
               items: [
                 "Lentil soups",
@@ -479,7 +477,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#4A7A2A",
               duration: "Half Day",
               icon: "mountain",
-              img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1626621341517-bbf3d9990a23.jpg",
               desc: "Himalayan temple with breathtaking sunrise views over the mountains.",
               highlights: ["Sunrise views", "Himalayan temple", "Spiritual energy"],
             },
@@ -489,7 +487,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#C8874A",
               duration: "Half Day",
               icon: "globe",
-              img: "https://wallpaperbat.com/img/499607-yoga-background.jpg",
+              img: "/images/external/heroes/499607-yoga-background.jpg",
               desc: "Historic ashram where The Beatles studied Transcendental Meditation in 1968.",
               highlights: ["Historic ashram", "Street art", "Meditation history"],
             },
@@ -499,7 +497,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#1E2D0E",
               duration: "2 Hours",
               icon: "sparkles",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Famous Ganga Aarti ceremony at one of India's largest ashrams.",
               highlights: ["Ganga Aarti", "Sacred ceremony", "Ashram visit"],
             },
@@ -509,7 +507,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#6A4A20",
               duration: "Half Day",
               icon: "leaf",
-              img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1558618666-fcd25c85cd64.jpg",
               desc: "Ancient meditation cave where sage Vashishta practiced yoga.",
               highlights: ["Ancient cave", "Meditation site", "Spiritual history"],
             },
@@ -519,7 +517,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#2E5018",
               duration: "Daily",
               icon: "waves",
-              img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+              img: "/images/external/general/unsplash_photo-1544367567-0f2fcb009e0b.jpg",
               desc: "Evening meditation and Kirtan on the sacred banks of the Ganges river.",
               highlights: ["Sacred Ganges", "Evening Kirtan", "Sunset meditation"],
             },
@@ -529,7 +527,7 @@ export const Dharamshala200HoursData = {
               tagBg: "#4A6A20",
               duration: "Half Day",
               icon: "book",
-              img: "https://wallpaperaccess.com/full/139108.jpg",
+              img: "/images/external/general/139108.jpg",
               desc: "Study tours to different ashrams and temples in and around Dharamshala.",
               highlights: ["Ashram visits", "Temple tours", "Yogic culture"],
             },
@@ -627,7 +625,7 @@ export const Dharamshala200HoursData = {
             reviews: 184,
             isPopular: true,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1600334129128-685c5582fd35.jpg"
           },
           {
             id: 2,
@@ -638,7 +636,7 @@ export const Dharamshala200HoursData = {
             reviews: 92,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1544161515-4ab6ce6db874.jpg"
           },
           {
             id: 3,
@@ -649,7 +647,7 @@ export const Dharamshala200HoursData = {
             reviews: 210,
             isPopular: false,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1519699047748-de8e457a634e.jpg"
           },
           {
             id: 4,
@@ -660,7 +658,7 @@ export const Dharamshala200HoursData = {
             reviews: 145,
             isPopular: false,
             isPaid: true,
-            image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1515377905703-c4788e51af15.jpg"
           },
           {
             id: 5,
@@ -671,7 +669,7 @@ export const Dharamshala200HoursData = {
             reviews: 76,
             isPopular: true,
             isPaid: false,
-            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80"
+            image: "/images/external/general/unsplash_photo-1540555700478-4be289fbecef.jpg"
           }
         ]
       }
@@ -700,7 +698,7 @@ export const Dharamshala200HoursData = {
             tag: "Budget",
             tagBg: "#4A7A2A",
            price: "$999",
-            img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1505691938895-1758d7feb511.jpg",
             desc: "Female-only shared rooms with private bathrooms, Himalayan views and clean comfortable furnishing.",
             features: [
               "6-bed sharing",
@@ -716,7 +714,7 @@ export const Dharamshala200HoursData = {
             tag: "Popular",
             tagBg: "#2E5018",
             price: "$1399",
-            img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1631049307264-da0ec9d70304.jpg",
             desc: "Twin sharing room with private bathroom, wardrobe, study desk and clean comfortable environment.",
             features: [
               "Twin sharing",
@@ -732,7 +730,7 @@ export const Dharamshala200HoursData = {
             tag: "Upgrade",
             tagBg: "#C8874A",
             price: "$1,699",
-            img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80",
+            img: "/images/external/general/unsplash_photo-1618773928121-c32242e63f39.jpg",
             desc: "Private room with private bathroom, all modern amenities and peaceful Himalayan ambience.",
             features: [
               "Private room",
