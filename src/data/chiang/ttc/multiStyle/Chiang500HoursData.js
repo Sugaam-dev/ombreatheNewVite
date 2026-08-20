@@ -740,7 +740,7 @@ export const Chiang500HoursData = {
             tag: "Luxury",
             tagBg: "#C8874A",
             price: "$4,799",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room with wide balcony, all modern amenities for a focused and elegant two-month stay.",
             features: [
               "Private room",

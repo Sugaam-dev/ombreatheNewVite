@@ -313,7 +313,7 @@ export const Online100HoursData = {
           label: "Philosophy & Teaching",
           desc: "Yoga philosophy, anatomy, yoga therapy, mantra chanting and teaching methodology & sequencing for aspiring teachers",
           icon: "feather",
-          img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+          img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
         },
       ],
       specialTitle: "Why Choose",

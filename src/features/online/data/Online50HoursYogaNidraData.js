@@ -301,7 +301,7 @@ export const Online50HoursYogaNidraData = {
           label: "Advanced Practices",
           desc: "Yoga Nidra as a connection to Divine energy, extrasensory experiences, and advanced Yoga Nidra practice",
           icon: "feather",
-          img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+          img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
         },
       ],
       specialTitle: "Why Choose",

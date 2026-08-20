@@ -65,7 +65,7 @@ export const ChiangSoundHealingData = {
     
         content: {
           bgImage:
-            "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
           eyebrow: "Ombreathe Experience",
           title: "Join our",
           highlight: "sound healing journey",
@@ -129,7 +129,7 @@ export const ChiangSoundHealingData = {
           ],
           images: {
             main:
-              "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+              "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             food:
               "/images/external/general/unsplash_photo-1512621776951-a57141f2eefd.jpg",
             stay:
@@ -161,7 +161,7 @@ export const ChiangSoundHealingData = {
             label: "Tibetan Singing Bowl Techniques",
             desc: "Striking, circling, holding, palm techniques, Tingsha bells, self-healing and basic one-on-one healing practices",
             icon: "music",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
           },
           {
             label: "Chakra & Energy Body Healing",
@@ -352,7 +352,7 @@ export const ChiangSoundHealingData = {
             "4 days of sound healing — evening sessions from 5:00 PM to 8:00 PM, 19th to 21st of every month in Bali.",
     
           image:
-            "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
     
           morning: [
             { time: "06:30 AM", activity: "Morning Meditation & Sadhana", icon: "moon" },
@@ -708,7 +708,7 @@ export const ChiangSoundHealingData = {
             tag: "Course Only",
             tagBg: "#5A3A90",
             price: "$350",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Course-only option — attend all sound healing sessions from 5:00 PM to 8:00 PM without accommodation or meals.",
             features: [
               "Evening sessions only",

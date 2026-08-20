@@ -301,7 +301,7 @@ export const Online50HoursPranayamaData = {
           label: "Pranayama Techniques",
           desc: "Pranava, Nadi Sodhanam, Bhastrika and Kapal Bhati Pranayama, with Pranayama philosophy",
           icon: "feather",
-          img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+          img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
         },
       ],
       specialTitle: "Why Choose",

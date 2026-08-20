@@ -173,7 +173,7 @@ export const Rishikesh100HoursData = {
             label: "Philosophy & Teaching",
             desc: "Mantra chanting, yoga philosophy, anatomy, alignment & teaching methodology from Himalayan masters",
             icon: "feather",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
           },
         ],
         specialTitle: "Why Choose",

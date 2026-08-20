@@ -33,22 +33,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   margin-top: 20px;
 }
 .m-carousel-dot {
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
-  background-color: #d1d5db;
-  border: 10px solid transparent;
-  background-clip: content-box;
+  background: transparent;
+  border: none;
   cursor: pointer;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-carousel-dot-inner {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #d1d5db;
   transition: all 0.3s ease;
-  margin: 0 -7px;
 }
 .m-carousel-dot.active {
-  width: 44px;
+  width: 42px;
+}
+.m-carousel-dot.active .m-carousel-dot-inner {
+  width: 24px;
   background-color: #1a2456;
   border-radius: 9999px;
 }

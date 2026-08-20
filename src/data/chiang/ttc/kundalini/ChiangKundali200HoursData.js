@@ -740,7 +740,7 @@ export const ChiangKundali200HoursData = {
             tag: "Luxury",
             tagBg: "#C4756A",
             price: "$2,199",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room with all modern amenities for a focused and comfortable 20-day Kundalini stay.",
             features: [
               "Private room",

@@ -740,7 +740,7 @@ export const Chiang300HoursData = {
             tag: "Luxury",
             tagBg: "#C8964A",
             price: "$2,699",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room with all modern amenities for a luxurious and focused 26-day advanced stay.",
             features: [
               "Private room",

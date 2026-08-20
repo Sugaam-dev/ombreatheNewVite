@@ -740,7 +740,7 @@ export const Chiang100HoursData = {
             tag: "Flexible",
             tagBg: "#C8964A",
             price: "$1,699",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room without meals — enjoy Chiang Mai's local restaurants and food culture independently.",
             features: [
               "Private room",

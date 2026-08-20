@@ -9,11 +9,11 @@ import rys500 from '../../../images/cirtificats/500.webp';
 import yacep from '../../../images/cirtificats/YACEP.webp';
 
 // Helper component for external BookRetreats scripts
-const BookRetreatsWidget = ({ id, widgetType }) => {
+const BookRetreatsWidget = ({ id, widgetType, load }) => {
   const containerRef = useRef(null);
   
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!load || !containerRef.current) return;
     containerRef.current.innerHTML = ''; // Clear container to avoid duplicate widgets
     
     const script = document.createElement('script');  
@@ -21,7 +21,7 @@ const BookRetreatsWidget = ({ id, widgetType }) => {
     script.async = true;
     script.setAttribute('data-cfasync', 'false');
     containerRef.current.appendChild(script);
-  }, [id, widgetType]);
+  }, [id, widgetType, load]);
 
   return <div id={`${id}_${widgetType}`} ref={containerRef} style={{ width: '100%', display: 'flex', justifyContent: 'center' }} />;
 };
@@ -38,6 +38,7 @@ const TrustBanner = () => {
 
   const bannerRef = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
+  const [hasIntersected, setHasIntersected] = useState(false);
   const [brokenImages, setBrokenImages] = useState({});
   const [studentCount, setStudentCount] = useState(0);
   const [ratingCount, setRatingCount] = useState(0.0);
@@ -47,6 +48,7 @@ const TrustBanner = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsIntersecting(true);
+          setHasIntersected(true);
         } else {
           setIsIntersecting(false);
           setStudentCount(0);
@@ -437,13 +439,13 @@ const TrustBanner = () => {
                 className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
                 style={{ transitionDelay: '0.4s' }}
               >
-                <BookRetreatsWidget id="27436" widgetType="recommend" />
+                <BookRetreatsWidget id="27436" widgetType="recommend" load={hasIntersected} />
               </div>
               <div
                 className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
                 style={{ transitionDelay: '0.5s' }}
               >
-                <BookRetreatsWidget id="27436" widgetType="ratings" />
+                <BookRetreatsWidget id="27436" widgetType="ratings" load={hasIntersected} />
               </div>
             </div>
           </div>

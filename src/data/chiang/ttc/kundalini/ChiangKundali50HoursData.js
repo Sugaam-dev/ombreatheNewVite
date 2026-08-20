@@ -740,7 +740,7 @@ export const ChiangKundali50HoursData = {
             tag: "Flexible",
             tagBg: "#9B5E4A",
             price: "$1,150",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room without meals — freedom to explore Chiang Mai's local food culture.",
             features: [
               "Private room",

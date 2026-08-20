@@ -167,7 +167,7 @@ export const BaliKundali500HoursData = {
             label: "Sanskrit, Chakra Sound & Mantra",
             desc: "Basic Sanskrit, Chakra Sound science, 14 mantras, Kundalini Tantra philosophy & sacred geometry in Month 2",
             icon: "music",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
           },
           {
             label: "Yin Yoga, Therapy & Teaching",

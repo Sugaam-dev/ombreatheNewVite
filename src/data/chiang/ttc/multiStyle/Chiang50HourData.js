@@ -740,7 +740,7 @@ export const Chiang50HourData = {
             tag: "Flexible",
             tagBg: "#C8964A",
             price: "$1,150",
-            img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+            img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
             desc: "Private room option without meals for those who prefer flexibility in dining.",
             features: [
               "Private room",

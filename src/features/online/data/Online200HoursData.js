@@ -340,7 +340,7 @@ export const Online200HoursData = {
           label: "Philosophy, Therapy & Ayurveda",
           desc: "Yoga philosophy, anatomy, yoga therapy, Ayurveda, Yoga Nidra and teaching methodology for aspiring teachers",
           icon: "feather",
-          img: "/images/external/rooms/unsplash_photo-1604881991720-f91add269bed.jpg",
+          img: "/images/external/rooms/unsplash_photo-1631049307264-da0ec9d70304.webp",
         },
       ],
       specialTitle: "Why Choose",

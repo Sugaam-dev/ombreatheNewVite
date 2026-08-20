@@ -114,7 +114,9 @@ const MobileCarousel = ({ items, renderItem, className = "", gridClass = "" }) =
                 onClick={() => goToSlide(idx)}
                 aria-label={`Go to slide ${idx + 1}`}
                 className={`m-carousel-dot ${activeDotIndex === idx ? "active" : ""}`}
-              />
+              >
+                <span className="m-carousel-dot-inner" />
+              </button>
             ))}
           </div>
         )}
