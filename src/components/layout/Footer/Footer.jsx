@@ -15,19 +15,19 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
 // Lazy load images for better performance
 const lazyLoadImage = (imageName) => {
   const imageModules = {
-    logo: () => import('/images/Ombreathe-new-logo.jpeg'),
-    yoga: () => import('../../../images/cirtificats/yoga.png'),
-    l100: () => import('../../../images/cirtificats/100logo.png'),
-    two: () => import('../../../images/cirtificats/200.png'),
+    logo: () => import('/images/Ombreathe-new-logo.webp'),
+    yoga: () => import('../../../images/cirtificats/yoga.webp'),
+    l100: () => import('../../../images/cirtificats/100logo.webp'),
+    two: () => import('../../../images/cirtificats/200.webp'),
     l500: () => import('../../../images/cirtificats/500.webp'),
-    l300: () => import('../../../images/cirtificats/300yy.png'),
-    yacep: () => import('../../../images/cirtificats/YACEP.png')
+    l300: () => import('../../../images/cirtificats/300yy.webp'),
+    yacep: () => import('../../../images/cirtificats/YACEP.webp')
   };
   return imageModules[imageName]?.() || Promise.reject('Image not found');
 };
 
 // Optimized Image Component with Lazy Loading
-const OptimizedImage = memo(({ imageKey, alt, style, title, className }) => {
+const OptimizedImage = memo(({ imageKey, alt, style, title, className, width, height }) => {
   const [src, setSrc] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
@@ -94,6 +94,8 @@ const OptimizedImage = memo(({ imageKey, alt, style, title, className }) => {
     <img 
       src={src}
       alt={alt}
+      width={width}
+      height={height}
       style={style}
       title={title}
       className={className}
@@ -409,12 +411,13 @@ const Footer = () => {
           line-height: 1.5;
         }
         
-        .contact-hours {
-          color: #6c757d !important;
-          font-weight: 500;
-          opacity: 0.9;
-        }
+
         
+        .contact-hours {
+          color: #4a4a4a !important;
+          font-weight: 500;
+          opacity: 1;
+        }
         .footer-link {
           color: #212529 !important;
           text-decoration: none !important;

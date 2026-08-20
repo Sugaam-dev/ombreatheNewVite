@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "/images/Ombreathe-new-logo.jpeg";
+import logo from "/images/Ombreathe-new-logo.webp";
 import "./Navbar.css";
 import {
   LOCATIONS,
   PROGRAM_LINKS,
   RETREAT_LINKS,
   buildPath,
+  slugToLabel,
 } from "../../../data/locations";
 import { OnlineDataMap } from "../../../features/online/data/OnlineDataMap";
 import { ONLINE_LINKS } from "../../../data/onlineLocations";
@@ -189,6 +190,7 @@ const Navbar = () => {
         to={fullPath}
         className={isSubActive(fullPath) ? "sub-link-active" : ""}
         onClick={() => handleLinkClick("retreats")}
+        aria-label={`${label} in ${slugToLabel[slug] || slug}`}
       >
         {label}
       </Link>
@@ -238,6 +240,7 @@ const Navbar = () => {
                         isSubActive(fullPath) ? "m-sub-active-text" : ""
                       }
                       onClick={() => handleLinkClick("programs")}
+                      aria-label={`${label} in ${slugToLabel[slug] || slug}`}
                     >
                       {label}
                     </Link>
@@ -448,6 +451,7 @@ const Navbar = () => {
                                         onClick={() =>
                                           handleLinkClick("programs")
                                         }
+                                        aria-label={`${label} in ${slugToLabel[selectedTtcSlug] || selectedTtcSlug}`}
                                       >
                                         {label}
                                       </Link>
@@ -775,6 +779,7 @@ const Navbar = () => {
                                       : ""
                                   }
                                   onClick={() => handleLinkClick("retreats")}
+                                  aria-label={`${label} in ${slugToLabel[slug] || slug}`}
                                 >
                                   {label}
                                 </Link>

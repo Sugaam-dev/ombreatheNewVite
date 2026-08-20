@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Importing local images
-import yogaAllianceLogo from '../../../images/cirtificats/yoga.png'; 
-import y100 from '../../../images/cirtificats/100logo.png';
-import rys200 from '../../../images/cirtificats/200.png';
-import rys300 from '../../../images/cirtificats/300yy.png';
+import yogaAllianceLogo from '../../../images/cirtificats/yoga.webp'; 
+import y100 from '../../../images/cirtificats/100logo.webp';
+import rys200 from '../../../images/cirtificats/200.webp';
+import rys300 from '../../../images/cirtificats/300yy.webp';
 import rys500 from '../../../images/cirtificats/500.webp';
-import yacep from '../../../images/cirtificats/YACEP.png';
+import yacep from '../../../images/cirtificats/YACEP.webp';
 
 // Helper component for external BookRetreats scripts
 const BookRetreatsWidget = ({ id, widgetType }) => {
@@ -159,7 +159,7 @@ const TrustBanner = () => {
     .section-title {
       font-size: var(--trust-label-size);
       font-weight: 700;
-      color: #8c8073;
+      color: #61564b;
       text-transform: uppercase;
       letter-spacing: 0.15em;
       margin-top: 0;
@@ -387,7 +387,7 @@ const TrustBanner = () => {
         
         {/* COLUMN 1: GRADUATED YOGIS */}
         <div className="banner-col">
-          <h3 className="section-title">Graduated Yogis</h3>
+          <h2 className="section-title">Graduated Yogis</h2>
           <div className="col-content">
             <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.1s' }}>
               <div className="stat-number-wrapper">
@@ -400,7 +400,7 @@ const TrustBanner = () => {
 
         {/* COLUMN 2: TOP TIER REVIEWS */}
         <div className="banner-col">
-          <h3 className="section-title">Top Tier Reviews</h3>
+          <h2 className="section-title">Top Tier Reviews</h2>
           <div className="col-content">
             <div className={`stat-item ${isIntersecting ? 'is-visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
               <div className="rating-wrapper">
@@ -430,7 +430,7 @@ const TrustBanner = () => {
 
         {/* COLUMN 3: BOOKING TRUST */}
         <div className="banner-col">
-          <h3 className="section-title">Booking Trust</h3>
+          <h2 className="section-title">Booking Trust</h2>
           <div className="col-content">
             <div className="shields-grid">
               <div
@@ -451,7 +451,7 @@ const TrustBanner = () => {
 
         {/* COLUMN 4: YOGA ACCREDITATIONS */}
         <div className="banner-col">
-          <h3 className="section-title">Yoga Accreditations</h3>
+          <h2 className="section-title">Yoga Accreditations</h2>
           <div className="col-content">
             <div className="certs-grid">
               {certificates.map((cert, index) => (

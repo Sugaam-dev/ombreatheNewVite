@@ -35,7 +35,7 @@ const SectionHeading = ({
            
             font-size: var(--section-subtitle-size);
             font-weight: 400;
-            color: #8f877f;
+            color: #5c5651;
             letter-spacing: 0.03em;
             max-width: 700px;
             margin: 0 auto;

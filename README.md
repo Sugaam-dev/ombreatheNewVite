@@ -11,10 +11,11 @@
 3. [Getting Started](#getting-started)
 4. [How the App Works — End to End](#how-the-app-works--end-to-end)
 5. [Locations System](#locations-system)
-6. [Data Architecture](#data-architecture)
+6. [Data Architecture & Dynamic Pricing](#data-architecture--dynamic-pricing)
    - [Program Data Files](#program-data-files)
-   - [Pricing Files](#pricing-files)
+   - [Pricing Files (Local Static Fallbacks)](#pricing-files-local-static-fallbacks)
    - [OmbDataMap — The Routing Brain](#ombdatamap--the-routing-brain)
+   - [Dynamic Pricing & Batches (Google Sheets Integration)](#dynamic-pricing--batches-google-sheets-integration)
 7. [Page Sections — What Each Section Renders](#page-sections--what-each-section-renders)
 8. [How to Add a New Program or Retreat](#how-to-add-a-new-program-or-retreat)
 9. [How to Update Prices](#how-to-update-prices)
@@ -39,7 +40,7 @@
 | **React Icons** | Additional icons |
 | **React Slick** | Carousel / slider |
 | **AOS** | Scroll animations |
-| **EmailJS** | Contact form email sending (no backend needed) |
+| **Web3Forms** | Contact form & checkout submissions processor (no backend needed) |
 
 ---
 
@@ -198,10 +199,10 @@ Here is the complete flow when a user visits a program page:
 3. The `NormalisedTTCRoute` wrapper lowercases the URL params (so `/Programs/RISHIKESH/200HR` auto-redirects to `/programs/rishikesh/200hr`)
 4. `YogaProgramPage` receives `location = "rishikesh"` and `course = "200hr"` from `useParams()`
 5. It looks up **`OmbDataMap["rishikesh"]["200hr"]`** → returns `Rishikesh200HoursData` (the full content object)
-6. It looks up **`ROOM_PRICES_RISHIKESH["200hr"]`** → returns room types, current prices, original prices, and duration
-7. All page sections are rendered from the data object — Hero, Highlights, Curriculum, Schedule, Food, Accommodation, FAQ, and Contact form
-8. Room prices from the pricing file **overwrite** the placeholder prices inside the data file at runtime
-9. Batch dates are **auto-generated** from today's date using the `durationDays` field from the pricing file
+6. It looks up **`ROOM_PRICES_RISHIKESH["200hr"]`** → returns room types, fallback prices, and duration as static defaults
+7. **Dynamic Sheets Fetch**: When the app initializes, it calls `fetchAndApplyDynamicPrices()` to fetch the configured Google Spreadsheet. If loaded, these dynamic prices, room options, and batch dates overwrite the static defaults.
+8. Room prices from the pricing file (or Google Sheets) **overwrite** the placeholder prices inside the data file at runtime
+9. Batch dates are retrieved from the Google Sheets "Batches" sheet, falling back to being **auto-generated** from today's date using the `durationDays` field if Google Sheets are not available
 10. User clicks **Enroll / Book** → navigates to `/checkout` with `location`, `slug`, `roomType`, `type` (program vs. retreat), and `selectedDate` in router state
 
 ---
@@ -410,9 +411,9 @@ export const MyProgramData = {
 
 ---
 
-### Pricing Files
+### Pricing Files (Local Static Fallbacks)
 
-Each location has **one centralized pricing file** that stores all room prices. This is the **only file you need to update** when a price changes.
+Each location has **one centralized pricing file** that stores all room prices. This serves as the **local static fallback** if the Google Sheets API fetch fails or if spreadsheet IDs are not configured.
 
 | Location | Pricing File |
 |---|---|
@@ -515,6 +516,40 @@ export const OmbDataMap = {
 When a user visits `/programs/rishikesh/200hr`:
 - `OmbDataMap["rishikesh"]["200hr"]` returns `Rishikesh200HoursData`
 - If the key doesn't exist, the page shows a "Coming Soon" message automatically
+
+---
+
+### Dynamic Pricing & Batches (Google Sheets Integration)
+
+The application supports loading real-time prices, room rates, batches, and testimonials directly from Google Spreadsheets. On application mount, it runs `fetchAndApplyDynamicPrices()` (`src/utils/dynamicPrices.js`) which fetches the configured sheets and overrides the static local pricing and batch definitions in memory.
+
+#### Google Sheet Configuration & Column Schema
+
+The loader parses CSV data and maps columns case-insensitively using header normalization. The spreadsheet must follow these column layouts:
+
+1. **Program Prices** (Tab/Sheet Name: `Program Prices`):
+   - **Required Columns**: `location`, `coursekey`, `price`
+   - **Optional Columns**: `category`, `programname`
+   - *Example values*: `location` (e.g. `Rishikesh`, `Bali`), `coursekey` (e.g. `200hr`, `300hr`, `rishikeshsoundhealing`), `price` (e.g. `$999`).
+
+2. **Room Prices** (Tab/Sheet Name: `Room Prices`):
+   - **Required Columns**: `location`, `coursekey`, `roomtype`, `current`, `original`, `durationdays`
+   - **Optional Columns**: `popular` (`true` or `false`), `note`
+   - *Formula Logic*: `current` and `original` on the sheet are surcharges added to the base program price. At runtime: `currentPrice = basePrice + rawCurrent`.
+
+3. **Batches** (Tab/Sheet Name: `Batches`):
+   - **Required Columns**: `location`, `coursekey`, `startdate`, `enddate`, `seatsleft`
+   - **Optional Columns**: `datetext` (custom display string like `"Flexible dates"`)
+   - *Sorting*: Batch dates are sorted chronologically.
+
+4. **Testimonials** (Tab/Sheet Name: `Testimonials`):
+   - **Required Columns**: `name`, `quote`
+   - **Optional Columns**: `stars`, `avatar`, `country`
+   - *Overwrites*: Overrides the default homepage testimonials with dynamic submissions.
+
+#### Local Static Fallback
+
+If sheet coordinates are missing, network requests fail, or a program key is omitted from the sheet, the application automatically uses static files (e.g., `ROOM_PRICES_RISHIKESH`) as fallbacks.
 
 ---
 
@@ -718,7 +753,22 @@ and add your program to the Mysuru section listing.
 
 ## How to Update Prices
 
-### Updating Room Prices on the Program Detail Page
+Prices and room options are primarily updated dynamically. However, the static files serve as backup fallbacks.
+
+### Method 1 — Google Sheets (Primary & Real-time)
+
+To change prices, update the respective rows and columns in the configured Google Spreadsheet. These changes will reflect immediately upon refreshing the page:
+1. **Base Program Price**: Edit the `price` column on the **Program Prices** tab for the target `location` and `coursekey`.
+2. **Room Surcharge/Option Price**: Edit the `current` (price to pay) and `original` (strikethrough price) columns on the **Room Prices** tab. (At runtime, these surcharges are added to the Base Program Price to compute final room rate).
+3. **Cheapest Badge/Notes**: Ensure that the lowest room package price matches the base program price.
+
+---
+
+### Method 2 — Local Static Files (Fallback)
+
+If you need to update prices directly in the code (e.g. for offline use or when spreadsheet IDs are not used):
+
+#### Updating Room Prices on the Program Detail Page
 
 1. Open the pricing file for the location:
 
@@ -744,7 +794,7 @@ and add your program to the Mysuru section listing.
 },
 ```
 
-### Updating the Hero Price Badge
+#### Updating the Hero Price Badge
 
 The price shown in the top hero area of each page is inside the program's data file:
 
@@ -765,7 +815,7 @@ hero: {
 
 > **Best practice:** Keep `hero.price` in sync with the lowest room option in the pricing file.
 
-### Updating Prices in Carousels / Program Cards
+#### Updating Prices in Carousels / Program Cards
 
 The `PROGRAM_PRICES_*` object (first export in each pricing file) is used in program listing cards and carousels. Update this too if needed:
 
@@ -871,12 +921,20 @@ All routes are defined in `src/app/App.jsx`.
 Create a `.env` file in the root of the project (already listed in `.gitignore` — never commit it):
 
 ```env
-VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+# Web3Forms API key for form submissions
+VITE_WEB3FORMS_KEY=your_web3forms_access_key
+
+# Unified Google Spreadsheet ID (Shared as "Anyone with link can view")
+VITE_SPREADSHEET_ID=your_google_spreadsheet_id
+
+# Optional/Fallback direct published CSV links for individual tabs
+VITE_SPREADSHEET_ID_PROGRAM=https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=...
+VITE_SPREADSHEET_ID_ROOM=https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=...
+VITE_SPREADSHEET_ID_BATCHES=https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=...
+VITE_SPREADSHEET_ID_TESTIMONIALS=https://docs.google.com/spreadsheets/d/e/.../pub?output=csv&gid=...
 ```
 
-These are used by the contact form to send emails via [EmailJS](https://www.emailjs.com/) without needing a backend server.
+Web3Forms is used by the contact form and checkout page to submit user inquiries and booking requests directly without needing a backend server. Google Sheets environment variables enable dynamic loading of prices, rooms, batches, and testimonials.
 
 ---
 
@@ -908,17 +966,18 @@ npm run build
 
 - [ ] Create data file in `src/data/<location>/<type>/YourProgramData.js`
 - [ ] Fill in all sections: heroSection, highlightsSection, practiceSection, programDetailsSection, experienceSection, accommodationSection, faqSection
-- [ ] Add room pricing entry to `ROOM_PRICES_*` in the location's pricing file
+- [ ] Add room pricing fallback entry to `ROOM_PRICES_*` in the location's pricing file
 - [ ] Import and add the data to `OmbDataMap` in `src/features/yoga-retreats-programs/data/OmbDataMap.js`
 - [ ] Add the nav link to `PROGRAM_LINKS` or `RETREAT_LINKS` in `src/data/locations.js`
+- [ ] **(Dynamic)** Add the program entry, room surcharges, and batch dates to the respective tabs in the Google Sheets configuration
 
 ### Updating a Price
 
-- [ ] Open the location's pricing file (`programPrices<Location>.js`)
-- [ ] Update `current` and/or `original` in `ROOM_PRICES_*` for the specific course slug
-- [ ] (Optional) Update `hero.price` in the program data file to match the cheapest room option
-- [ ] (Optional) Update `PROGRAM_PRICES_*` for the price shown in cards and carousels
+- [ ] **(Primary)** Open the Google Sheet and update base prices (Program Prices tab) or room surcharges (Room Prices tab)
+- [ ] **(Static Fallback)** Open the location's pricing file (`programPrices<Location>.js`) and update `current` and/or `original` in `ROOM_PRICES_*` for the specific course slug
+- [ ] **(Static Fallback)** Update `hero.price` in the program data file to match the cheapest room option
+- [ ] **(Static Fallback)** Update `PROGRAM_PRICES_*` for the price shown in cards and carousels
 
 ---
 
-*Last updated: July 2026*
+*Last updated: August 2026*

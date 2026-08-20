@@ -33,21 +33,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
   margin-top: 20px;
 }
 .m-carousel-dot {
-  height: 6px;
-  width: 6px;
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   background-color: #d1d5db;
-  border: none;
+  border: 10px solid transparent;
+  background-clip: content-box;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease;
+  margin: 0 -7px;
 }
 .m-carousel-dot.active {
-  width: 24px;
+  width: 44px;
   background-color: #1a2456;
   border-radius: 9999px;
 }

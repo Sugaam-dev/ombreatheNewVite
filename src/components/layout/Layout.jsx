@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import ScrollToTop from "../../hooks/useScrollToTop";
 
-import logo from "/images/Ombreathe-new-logo.jpeg";
+import logo from "/images/Ombreathe-new-logo.webp";
 
 import "./Layout.css";
 

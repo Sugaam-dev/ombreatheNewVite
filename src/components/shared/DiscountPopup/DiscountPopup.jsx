@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, memo } from "react";
-import img1 from "../../../images/Gallery/1.jpeg";
+import img1 from "../../../images/Gallery/1.webp";
 
 const DiscountPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -351,7 +351,7 @@ useEffect(() => {
             <div className="content-box">
               <div
                 style={{
-                  color: "#D4AF37",
+                  color: "#946f07",
                   fontSize: "11px",
                   fontWeight: "800",
                   letterSpacing: "2px",
