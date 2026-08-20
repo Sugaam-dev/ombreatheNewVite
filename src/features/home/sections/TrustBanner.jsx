@@ -48,7 +48,6 @@ const TrustBanner = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsIntersecting(true);
-          setHasIntersected(true);
         } else {
           setIsIntersecting(false);
           setStudentCount(0);
