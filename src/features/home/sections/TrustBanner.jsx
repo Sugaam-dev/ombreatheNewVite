@@ -62,6 +62,13 @@ const TrustBanner = () => {
   }, []);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setHasIntersected(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
     if (!isIntersecting) return;
     let startTimestamp = null;
     const duration = 1400; 

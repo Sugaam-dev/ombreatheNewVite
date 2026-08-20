@@ -64,4 +64,21 @@ export default defineConfig({
       }
     }
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react-international-phone') || id.includes('libphonenumber-js')) {
+              return 'vendor-phone';
+            }
+            if (id.includes('bootstrap') || id.includes('react-slick')) {
+              return 'vendor-ui';
+            }
+            return 'vendor-core';
+          }
+        }
+      }
+    }
+  }
 });
