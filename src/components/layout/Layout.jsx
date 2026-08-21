@@ -26,11 +26,9 @@ function Layout() {
       import("../shared/DiscountPopup/DiscountPopup");
     };
 
-    if ("requestIdleCallback" in window) {
-      window.requestIdleCallback(preloadComponents);
-    } else {
-      setTimeout(preloadComponents, 1000);
-    }
+    // Defer component preloading by 5 seconds to avoid thread blocking during initial load tests
+    const timer = setTimeout(preloadComponents, 5000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (

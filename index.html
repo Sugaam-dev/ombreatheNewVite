@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://bookretreats.com" crossorigin />
     <link rel="preload" href="/src/images/mobile/Ombreathe_1_small.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 480px)" />
     <link rel="preload" href="/src/images/mobile/Ombreathe_1.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 481px) and (max-width: 768px)" />
     <link rel="preload" href="/src/images/Ombreathe_Banner_1.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 769px)" />
@@ -32,7 +31,6 @@
           gtmLoaded = true;
           
           window.removeEventListener('scroll', loadGTM);
-          window.removeEventListener('mousemove', loadGTM);
           window.removeEventListener('touchstart', loadGTM);
           window.removeEventListener('keydown', loadGTM);
 
@@ -54,7 +52,6 @@
         }
 
         window.addEventListener('scroll', loadGTM, { passive: true });
-        window.addEventListener('mousemove', loadGTM, { passive: true });
         window.addEventListener('touchstart', loadGTM, { passive: true });
         window.addEventListener('keydown', loadGTM, { passive: true });
 

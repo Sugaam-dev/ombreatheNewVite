@@ -897,14 +897,16 @@ const Navbar = () => {
             content: "";
             position: absolute;
             bottom: 0;
-            left: 50%;
-            width: 0;
+            left: 0;
+            width: 100%;
             height: 2.5px;
             background: #007bff;
-            transition: 0.4s ease;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.4s ease;
           }
           .premium-link:hover::after,
-          .premium-link.active::after { width: 100%; left: 0; }
+          .premium-link.active::after { transform: scaleX(1); }
           .premium-link:hover { color: #007bff !important; }
           .mega-static { position: static !important; }
           

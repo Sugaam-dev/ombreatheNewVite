@@ -50,18 +50,19 @@
 }
 .m-carousel-dot-inner {
   height: 6px;
-  width: 6px;
-  border-radius: 50%;
+  width: 24px;
+  border-radius: 3px;
   background-color: #d1d5db;
-  transition: all 0.3s ease;
+  transform: scaleX(0.25);
+  transform-origin: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .m-carousel-dot.active {
-  width: 42px;
+  width: 24px;
 }
 .m-carousel-dot.active .m-carousel-dot-inner {
-  width: 24px;
+  transform: scaleX(1);
   background-color: #1a2456;
-  border-radius: 9999px;
 }
 .m-carousel-desktop {
   display: none !important;

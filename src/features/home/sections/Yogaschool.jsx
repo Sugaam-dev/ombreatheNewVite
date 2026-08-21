@@ -246,14 +246,24 @@ const Yogaschool = () => {
 
                 <div key={index} className="modern-slide">
 
-                  <div
-                    className="modern-slide-image"
-                    style={{
-                      backgroundImage: `url(${slide.image})`,
-                    }}
-                  >
-
-                    <div className="modern-overlay">
+                  <div className="modern-slide-image">
+                    <img
+                      src={slide.image}
+                      alt={slide.location}
+                      loading="lazy"
+                      width="800"
+                      height="500"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        zIndex: 1,
+                      }}
+                    />
+                    <div className="modern-overlay" style={{ zIndex: 2 }}>
 
                       <div className="modern-location-badge">
                         {slide.location}
