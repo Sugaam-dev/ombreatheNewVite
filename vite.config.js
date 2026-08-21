@@ -65,7 +65,7 @@ export default defineConfig({
     }
   ],
   build: {
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
