@@ -9,22 +9,65 @@ import rys500 from '../../../images/cirtificats/500.webp';
 import yacep from '../../../images/cirtificats/YACEP.webp';
 
 // Helper component for external BookRetreats scripts
-const BookRetreatsWidget = ({ id, widgetType, load }) => {
-  const containerRef = useRef(null);
-  
-  useEffect(() => {
-    if (!load || !containerRef.current) return;
-    containerRef.current.innerHTML = ''; // Clear container to avoid duplicate widgets
-    
-    const script = document.createElement('script');  
-    script.src = `https://bookretreats.com/widgets/${widgetType}/${id}`;
-    script.async = true;
-    script.setAttribute('data-cfasync', 'false');
-    containerRef.current.appendChild(script);
-  }, [id, widgetType, load]);
+const RecommendWidgetMockup = () => (
+  <div className="book-widget-container">
+    <div className="book-widget-header">
+      <div className="book-widget-logo-base">
+        <a target="_blank" href="https://bookretreats.com/search?pageNumber=1" rel="noopener noreferrer">
+          <div className="book-widget-logo-body">
+            <div>
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0C6.49367 0 0 6.49367 0 14.5C0 22.5064 6.49367 29 14.5 29C22.5064 29 29 22.5064 29 14.5C29 6.49367 22.5147 0 14.5 0ZM14.5 26.7353C7.75563 26.7353 2.26484 21.2444 2.26484 14.5C2.26484 7.75563 7.75563 2.26484 14.5 2.26484C21.2444 2.26484 26.7353 7.75563 26.7353 14.5C26.7353 21.2444 21.2527 26.7353 14.5 26.7353ZM19.9406 8.83372H9.05937C8.14005 8.83372 7.29597 9.33517 6.86138 10.1542C6.42681 10.9648 6.47696 11.9427 6.98674 12.7115L12.4274 20.8683C12.887 21.562 13.6643 21.9798 14.5 21.9798C15.3357 21.9798 16.113 21.562 16.5726 20.8683L22.0133 12.7115C22.5231 11.9427 22.5732 10.9648 22.1386 10.1542C21.704 9.33517 20.86 8.83372 19.9406 8.83372ZM20.1329 11.4496L14.6922 19.6063C14.6086 19.7317 14.3997 19.7317 14.3161 19.6063L8.87551 11.4496C8.83372 11.3827 8.82536 11.2908 8.85879 11.2156C8.90058 11.1403 8.9758 11.0986 9.05937 11.0986H19.9323C20.0158 11.0986 20.0911 11.1403 20.1329 11.2156C20.1746 11.2908 20.1746 11.3827 20.1329 11.4496Z" fill="white"/>
+              </svg>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
+              <span className="book-widget-logo-texts" style={{ fontSize: '9px', lineHeight: '10px', opacity: 0.9 }}>Recommended on</span>
+              <span style={{ fontSize: '13px', fontWeight: '800', lineHeight: '14px', letterSpacing: '-0.3px' }}>BookRetreats</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div className="book-widget-footer">
+      <div className="book-center-link">
+        <a target="_blank" href="https://bookretreats.com/organizers/o/yogi-ranjan" rel="noopener noreferrer">Yogi Ranjan</a>
+      </div>
+    </div>
+  </div>
+);
 
-  return <div id={`${id}_${widgetType}`} ref={containerRef} style={{ width: '100%', display: 'flex', justifyContent: 'center' }} />;
-};
+const RatingsWidgetMockup = () => (
+  <div className="book-widget-container">
+    <div className="book-widget-header">
+      <div className="book-widget-logo-base">
+        <a target="_blank" href="https://bookretreats.com/organizers/o/yogi-ranjan#reviews" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingRight: '12px' }}>
+          <div className="book-widget-logo-body">
+            <div>
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0C6.49367 0 0 6.49367 0 14.5C0 22.5064 6.49367 29 14.5 29C22.5064 29 29 22.5064 29 14.5C29 6.49367 22.5147 0 14.5 0ZM14.5 26.7353C7.75563 26.7353 2.26484 21.2444 2.26484 14.5C2.26484 7.75563 7.75563 2.26484 14.5 2.26484C21.2444 2.26484 26.7353 7.75563 26.7353 14.5C26.7353 21.2444 21.2527 26.7353 14.5 26.7353ZM19.9406 8.83372H9.05937C8.14005 8.83372 7.29597 9.33517 6.86138 10.1542C6.42681 10.9648 6.47696 11.9427 6.98674 12.7115L12.4274 20.8683C12.887 21.562 13.6643 21.9798 14.5 21.9798C15.3357 21.9798 16.113 21.562 16.5726 20.8683L22.0133 12.7115C22.5231 11.9427 22.5732 10.9648 22.1386 10.1542C21.704 9.33517 20.86 8.83372 19.9406 8.83372ZM20.1329 11.4496L14.6922 19.6063C14.6086 19.7317 14.3997 19.7317 14.3161 19.6063L8.87551 11.4496C8.83372 11.3827 8.82536 11.2908 8.85879 11.2156C8.90058 11.1403 8.9758 11.0986 9.05937 11.0986H19.9323C20.0158 11.0986 20.0911 11.1403 20.1329 11.2156C20.1746 11.2908 20.1746 11.3827 20.1329 11.4496Z" fill="white"/>
+              </svg>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
+              <span className="book-widget-logo-texts" style={{ fontSize: '9px', lineHeight: '10px', opacity: 0.9 }}>Read reviews</span>
+              <span style={{ fontSize: '13px', fontWeight: '800', lineHeight: '14px', letterSpacing: '-0.3px' }}>BookRetreats</span>
+            </div>
+          </div>
+          <div className="book-widget-star" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1px' }}>
+            <svg width="12" height="11" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.88307 0.767617L5.85809 2.72902C5.90692 2.82795 6.00122 2.897 6.11068 2.91299L8.29353 3.22832C8.38193 3.24011 8.4615 3.28642 8.51581 3.35714C8.61769 3.48975 8.60211 3.6775 8.48003 3.79159L6.89794 5.32148C6.81753 5.39726 6.78174 5.5084 6.80279 5.6166L7.18169 7.77544C7.20821 7.95437 7.08612 8.12192 6.9072 8.15097C6.8331 8.16234 6.75733 8.15055 6.68997 8.11729L4.74582 7.09807C4.64815 7.04502 4.53112 7.04502 4.43345 7.09807L2.475 8.12276C2.31124 8.20612 2.11084 8.14423 2.02159 7.98384C1.98749 7.919 1.97571 7.84533 1.98749 7.77334L2.36639 5.61449C2.38533 5.50672 2.34955 5.396 2.27124 5.3198L0.680732 3.79033C0.551067 3.66151 0.550225 3.45187 0.679469 3.3222L0.680732 3.32052C0.734198 3.2721 0.799873 3.23969 0.871021 3.22706L3.05429 2.91173C3.16332 2.89447 3.25721 2.82627 3.30688 2.72734L4.28105 0.767617C4.3202 0.68805 4.38966 0.627006 4.47386 0.59922C4.55848 0.571014 4.6511 0.57775 4.73067 0.617744C4.79592 0.650161 4.84939 0.702785 4.88307 0.767617Z" fill="#FFC621"/>
+            </svg>
+            <span style={{ fontSize: '9px', color: '#FFF', fontWeight: '700', lineHeight: '9px', marginTop: '1px' }}>4.5</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div className="book-widget-footer">
+      <div className="book-center-link">
+        <a target="_blank" href="https://bookretreats.com/organizers/o/yogi-ranjan" rel="noopener noreferrer">Yogi Ranjan</a>
+      </div>
+    </div>
+  </div>
+);
 
 const TrustBanner = () => {
   const certificates = [
@@ -38,7 +81,6 @@ const TrustBanner = () => {
 
   const bannerRef = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const [hasIntersected, setHasIntersected] = useState(false);
   const [brokenImages, setBrokenImages] = useState({});
   const [studentCount, setStudentCount] = useState(0);
   const [ratingCount, setRatingCount] = useState(0.0);
@@ -58,13 +100,6 @@ const TrustBanner = () => {
     );
     if (bannerRef.current) observer.observe(bannerRef.current);
     return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setHasIntersected(true);
-    }, 3000);
-    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -123,8 +158,8 @@ const TrustBanner = () => {
       box-sizing: border-box;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 0.9fr 1fr 1fr 1.6fr; /* Rebalanced desktop grid layout */
-      align-items: stretch; /* Stretches columns to same height so vertical centering aligns perfectly */
+      grid-template-columns: 0.9fr 1fr 1.2fr 1.6fr; /* 4 columns: Graduated Yogis, Top Tier Reviews, Booking Trust, Yoga Accreditations */
+      align-items: stretch;
       gap: 32px;
       position: relative;
       z-index: 1;
@@ -375,6 +410,56 @@ const TrustBanner = () => {
       white-space: nowrap;
       box-shadow: 0 2px 6px rgba(141, 127, 110, 0.02);
     }
+
+    /* Mockup Widget Styles */
+    .book-widget-container {
+      text-align: left;
+      width: 165px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      margin: 10px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      background-color: #fff;
+    }
+    .book-widget-header {
+      height: 52px;
+    }
+    .book-widget-logo-base {
+      line-height: 18px !important;
+      background-color: #00a6ff;
+      height: 52px;
+      padding-top: 12px;
+    }
+    .book-widget-logo-base a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .book-widget-logo-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 8px;
+      padding-right: 8px;
+      gap: 6px;
+    }
+    .book-widget-logo-texts {
+      font-size: 9px;
+      font-weight: 500;
+    }
+    .book-widget-footer {
+      font-weight: 500;
+      text-align: center;
+      background-color: #f1f5f9;
+      padding: 5px;
+    }
+    .book-widget-footer a {
+      color: #475569;
+      font-size: 10px;
+      text-decoration: underline;
+      font-weight: 600;
+    }
   `;
 
   return (
@@ -445,19 +530,19 @@ const TrustBanner = () => {
                 className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
                 style={{ transitionDelay: '0.4s' }}
               >
-                <BookRetreatsWidget id="27436" widgetType="recommend" load={hasIntersected} />
+                <RecommendWidgetMockup />
               </div>
               <div
                 className={`shield-wrapper ${isIntersecting ? 'is-visible' : ''}`}
                 style={{ transitionDelay: '0.5s' }}
               >
-                <BookRetreatsWidget id="27436" widgetType="ratings" load={hasIntersected} />
+                <RatingsWidgetMockup />
               </div>
             </div>
           </div>
         </div>
 
-        {/* COLUMN 4: YOGA ACCREDITATIONS */}
+        {/* COLUMN 4: YOGA ACCREDITATIONS (RIGHT) */}
         <div className="banner-col">
           <h2 className="section-title">Yoga Accreditations</h2>
           <div className="col-content">

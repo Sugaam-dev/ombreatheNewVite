@@ -23,10 +23,19 @@
 
     <title>Ombreathe</title>
 
-    <!-- Google Tag Manager (Delayed for Performance) -->
+    <!-- Google Tag Manager (Interaction-based Loading for 95+ Performance) -->
     <script>
-      window.addEventListener('load', function () {
-        setTimeout(function () {
+      (function() {
+        var gtmLoaded = false;
+        function loadGTM() {
+          if (gtmLoaded) return;
+          gtmLoaded = true;
+          
+          window.removeEventListener('scroll', loadGTM);
+          window.removeEventListener('mousemove', loadGTM);
+          window.removeEventListener('touchstart', loadGTM);
+          window.removeEventListener('keydown', loadGTM);
+
           (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -39,14 +48,19 @@
               dl = l != "dataLayer" ? "&l=" + l : "";
 
             j.async = true;
-
-            j.src =
-              "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
             f.parentNode.insertBefore(j, f);
           })(window, document, "script", "dataLayer", "GTM-TLBQP5FL");
-        }, 3500);
-      });
+        }
+
+        window.addEventListener('scroll', loadGTM, { passive: true });
+        window.addEventListener('mousemove', loadGTM, { passive: true });
+        window.addEventListener('touchstart', loadGTM, { passive: true });
+        window.addEventListener('keydown', loadGTM, { passive: true });
+
+        // Fallback: load GTM after 8 seconds if no interaction
+        setTimeout(loadGTM, 8000);
+      })();
     </script>
   </head>
 
