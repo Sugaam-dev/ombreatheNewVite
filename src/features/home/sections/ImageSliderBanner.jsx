@@ -345,7 +345,7 @@ const ImageSliderBanner = () => {
   // ==========================================
   const slides = useMemo(() => {
     return [
-      { desktop: desktop1, mobile: mobile1, mobileSmall: mobile1Small },
+      { desktop: "/hero-desktop.webp", mobile: "/hero-mobile.webp", mobileSmall: "/hero-mobile.webp" },
       { desktop: desktop2, mobile: mobile2, mobileSmall: mobile2Small },
       { desktop: desktop3, mobile: mobile3, mobileSmall: mobile3Small },
       { desktop: desktop4, mobile: mobile4, mobileSmall: mobile4Small },

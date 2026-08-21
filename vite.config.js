@@ -64,11 +64,11 @@ export default defineConfig({
       }
     },
     {
-      name: 'defer-css',
+      name: 'async-css',
       transformIndexHtml(html) {
         return html.replace(
           /<link rel="stylesheet"([^>]*?)href="([^"]+)"([^>]*?)>/g,
-          '<link rel="stylesheet" $1 href="$2" $3 media="print" onload="this.media=\'all\'">'
+          '<link rel="preload" as="style" href="$2" onload="this.onload=null;this.rel=\'stylesheet\'"><noscript><link rel="stylesheet" href="$2"></noscript>'
         );
       }
     }

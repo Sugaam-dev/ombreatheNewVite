@@ -12,6 +12,7 @@ import { ROOM_PRICES_RISHIKESH } from "../../../data/rishikesh/programPricesRish
 import { ROOM_PRICES_MYSORE } from "../../../data/mysore/programPricesMysore";
 import { ROOM_PRICES_CHIANG } from "../../../data/chiang/programPricesChiang";
 import { ROOM_PRICES_DHARAMSHALA } from "../../../data/dharamshala/programPricesDharamshala";
+import { fetchAndApplyDynamicPrices } from "../../../utils/dynamicPrices";
 
 const generateBatches = (durationDays) => {
   const today = new Date();
@@ -93,9 +94,15 @@ export default function CheckoutPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   const [sendEmail, setSendEmail] = useState(true);
-  const [sendWhatsApp, setSendWhatsApp] = useState(true);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const [, setPricesLoaded] = useState(0);
+
+  useEffect(() => {
+    fetchAndApplyDynamicPrices().then((success) => {
+      if (success) setPricesLoaded((prev) => prev + 1);
+    });
+  }, []);
 
   useEffect(() => {
     const state = location.state || {};

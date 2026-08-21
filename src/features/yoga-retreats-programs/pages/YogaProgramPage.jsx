@@ -1,4 +1,4 @@
-import React, { useState, lazy } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 import GlobalStyles from "../../../styles/globalStyles";
@@ -17,7 +17,7 @@ import { ROOM_PRICES_RISHIKESH } from "../../../data/rishikesh/programPricesRish
 import { ROOM_PRICES_MYSORE } from "../../../data/mysore/programPricesMysore";
 import { ROOM_PRICES_CHIANG } from "../../../data/chiang/programPricesChiang";
 import { ROOM_PRICES_DHARAMSHALA } from "../../../data/dharamshala/programPricesDharamshala";
-import { DYNAMIC_BATCHES } from "../../../utils/dynamicPrices";
+import { DYNAMIC_BATCHES, fetchAndApplyDynamicPrices } from "../../../utils/dynamicPrices";
 
 // ==========================================
 // LAZY LOADED CONSOLIDATED SECTIONS
@@ -121,6 +121,13 @@ const OmbYogaPage = () => {
   const navigate = useNavigate();
   const locationPath = useLocation().pathname;
   const [selectedBatch, setSelectedBatch] = useState(0);
+  const [, setPricesLoaded] = useState(0);
+
+  useEffect(() => {
+    fetchAndApplyDynamicPrices().then((success) => {
+      if (success) setPricesLoaded((prev) => prev + 1);
+    });
+  }, []);
 
   const locationKey = location?.toLowerCase().trim();
   const courseKey = course?.toLowerCase().trim();
