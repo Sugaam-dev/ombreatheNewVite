@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/AboutUsSection.css';
-import heroAboutImage from '../../../images/Gallery/10.jpg';
+import heroAboutImage from '../../../images/Gallery/10.webp';
 
 const AboutUsSection = () => {
   return (

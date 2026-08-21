@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Community.css';
-import embraceImage from '../../../images/Gallery/5.jpeg';
-import communityGroupImage from '../../../images/Gallery/13.jpg';
-import community_img3 from '../../../images/Gallery/14.jpg';
+import embraceImage from '../../../images/Gallery/5.webp';
+import communityGroupImage from '../../../images/Gallery/13.webp';
+import community_img3 from '../../../images/Gallery/14.webp';
 
 const Community = () => {
   return (

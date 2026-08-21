@@ -39,7 +39,8 @@ const AboutHeader = () => {
                     src={hero_img}
                     alt="Yoga graduation ceremony with students and instructors in white clothing, sitting together outdoors with certificate"
                     className="about-header-hero-image"
-                    loading="lazy"
+                    loading="eager"
+                    fetchpriority="high"
                   />
                 </div>
               </div>
