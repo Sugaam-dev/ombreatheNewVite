@@ -62,6 +62,15 @@ export default defineConfig({
           console.log('[copy-external-images] Copied src/images/external to dist/images/external');
         }
       }
+    },
+    {
+      name: 'defer-css',
+      transformIndexHtml(html) {
+        return html.replace(
+          /<link rel="stylesheet"([^>]*?)href="([^"]+)"([^>]*?)>/g,
+          '<link rel="stylesheet" $1 href="$2" $3 media="print" onload="this.media=\'all\'">'
+        );
+      }
     }
   ],
   build: {

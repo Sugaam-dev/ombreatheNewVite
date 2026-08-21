@@ -15,9 +15,11 @@ const MESSAGE =
   "Hi! I'd like to claim the 20% discount for the Rishikesh 2026 retreat.";
 
 useEffect(() => {
-  const img = new Image();
-  img.src = img1;
-}, []);
+  if (isOpen) {
+    const img = new Image();
+    img.src = img1;
+  }
+}, [isOpen]);
 
   // =========================
   // OPEN POPUP
@@ -337,14 +339,13 @@ useEffect(() => {
             {/* IMAGE */}
             <div className="img-box">
             <img
-  src={img1}
-  alt="Rishikesh Retreat"
-  loading="eager"
-  fetchPriority="high"
-  decoding="sync"
-  width="600"
-  height="800"
-/>
+              src={img1}
+              alt="Rishikesh Retreat"
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="800"
+            />
             </div>
 
             {/* CONTENT */}
