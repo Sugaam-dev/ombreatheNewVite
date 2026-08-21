@@ -302,6 +302,7 @@ const Navbar = () => {
                 <Link
                   className={`nav-link premium-link ${activeLink === "programs" ? "active" : ""}`}
                   to="#"
+                  aria-label="Programs Dropdown Menu"
                 >
                   Programs{" "}
                   <span

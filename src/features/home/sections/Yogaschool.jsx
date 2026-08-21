@@ -129,7 +129,7 @@ const Yogaschool = () => {
       {
         location: "Mysuru",
         image:
-          "https://karnatakatourism.org/_next/image/?url=https%3A%2F%2Fweb-cms.karnatakatourism.org%2Fwp-content%2Fuploads%2F2025%2F06%2FMysuru-Palace-banner-1920_1100.jpg&w=3840&q=75",
+          "/images/external/general/mysuru-palace.webp",
         title: "Birthplace Of Traditional Ashtanga Yoga",
         description:
           "Train in Mysuru, the yoga capital of South India, where authentic yogic discipline and ancient teachings continue to inspire practitioners worldwide.",
