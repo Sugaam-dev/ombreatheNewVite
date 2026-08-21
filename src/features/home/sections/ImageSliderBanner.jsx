@@ -294,6 +294,13 @@ import mobile3 from "../../../images/mobile/Ombreathe_3.webp";
 import mobile4 from "../../../images/mobile/Ombreathe_4.webp";
 import mobile5 from "../../../images/mobile/Ombreathe_5.webp";
 
+// Mobile Small Images (450px wide)
+import mobile1Small from "../../../images/mobile/Ombreathe_1_small.webp";
+import mobile2Small from "../../../images/mobile/Ombreathe_2_small.webp";
+import mobile3Small from "../../../images/mobile/Ombreathe_3_small.webp";
+import mobile4Small from "../../../images/mobile/Ombreathe_4_small.webp";
+import mobile5Small from "../../../images/mobile/Ombreathe_5_small.webp";
+
 const ImageSliderBanner = () => {
   const navigate = useNavigate();
 
@@ -336,21 +343,33 @@ const ImageSliderBanner = () => {
   // ==========================================
   // IMAGES
   // ==========================================
-  const imageSources = useMemo(() => {
-    return isMobile
-      ? [mobile1, mobile2, mobile3, mobile4, mobile5]
-      : [desktop1, desktop2, desktop3, desktop4, desktop5];
-  }, [isMobile]);
+  const slides = useMemo(() => {
+    return [
+      { desktop: desktop1, mobile: mobile1, mobileSmall: mobile1Small },
+      { desktop: desktop2, mobile: mobile2, mobileSmall: mobile2Small },
+      { desktop: desktop3, mobile: mobile3, mobileSmall: mobile3Small },
+      { desktop: desktop4, mobile: mobile4, mobileSmall: mobile4Small },
+      { desktop: desktop5, mobile: mobile5, mobileSmall: mobile5Small },
+    ];
+  }, []);
 
   // ==========================================
   // PRELOAD NEXT IMAGES
   // ==========================================
   useEffect(() => {
-    imageSources.slice(1).forEach((src) => {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    const nextSlide = slides[nextIndex];
+    if (nextSlide) {
       const img = new Image();
-      img.src = src;
-    });
-  }, [imageSources]);
+      if (window.innerWidth <= 480) {
+        img.src = nextSlide.mobileSmall;
+      } else if (window.innerWidth <= 768) {
+        img.src = nextSlide.mobile;
+      } else {
+        img.src = nextSlide.desktop;
+      }
+    }
+  }, [currentIndex, slides]);
 
   // ==========================================
   // AUTO TYPING TEXT
@@ -388,14 +407,14 @@ const ImageSliderBanner = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
-        prev === imageSources.length - 1
+        prev === slides.length - 1
           ? 0
           : prev + 1
       );
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, imageSources.length]);
+  }, [isAutoPlaying, slides.length]);
 
   // ==========================================
   // CONTROLS
@@ -413,20 +432,20 @@ const ImageSliderBanner = () => {
 
     setCurrentIndex((prev) =>
       prev === 0
-        ? imageSources.length - 1
+        ? slides.length - 1
         : prev - 1
     );
-  }, [imageSources.length]);
+  }, [slides.length]);
 
   const goToNext = useCallback(() => {
     restartAutoplay();
 
     setCurrentIndex((prev) =>
-      prev === imageSources.length - 1
+      prev === slides.length - 1
         ? 0
         : prev + 1
     );
-  }, [imageSources.length]);
+  }, [slides.length]);
 
   const goToSlide = useCallback((index) => {
     restartAutoplay();
@@ -435,7 +454,7 @@ const ImageSliderBanner = () => {
 
   return (
     <div className="slider-container">
-      {imageSources.map((image, index) => (
+      {slides.map((slide, index) => (
         <div
           key={index}
           className={`slider-image-wrapper ${
@@ -444,19 +463,23 @@ const ImageSliderBanner = () => {
               : ""
           }`}
         >
-          <img
-            src={image}
-            alt={`Yoga Slide ${index + 1}`}
-            className="slider-image"
-            loading={
-              index === 0 ? "eager" : "lazy"
-            }
-            fetchPriority={
-              index === 0 ? "high" : "auto"
-            }
-            decoding="async"
-            draggable={false}
-          />
+          <picture>
+            <source media="(max-width: 480px)" srcSet={slide.mobileSmall} type="image/webp" />
+            <source media="(max-width: 768px)" srcSet={slide.mobile} type="image/webp" />
+            <img
+              src={slide.desktop}
+              alt={`Yoga Slide ${index + 1}`}
+              className="slider-image"
+              loading={
+                index === 0 ? "eager" : "lazy"
+              }
+              fetchPriority={
+                index === 0 ? "high" : "auto"
+              }
+              decoding="async"
+              draggable={false}
+            />
+          </picture>
 
           <div className="slider-overlay" />
         </div>
