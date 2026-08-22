@@ -1,10 +1,46 @@
 import {
+  Component,
   Suspense,
   useEffect,
   useRef,
   useState,
   memo,
 } from "react";
+
+class SectionErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error) {
+    console.warn("LazySection failed to load module chunk:", error);
+    // If a chunk fails due to a new deployment, auto-reload once to fetch latest bundle
+    if (
+      error?.message?.includes("dynamically imported module") ||
+      error?.message?.includes("Failed to fetch") ||
+      error?.message?.includes("MIME type")
+    ) {
+      const lastReload = sessionStorage.getItem("chunk_reload_time");
+      const now = Date.now();
+      if (!lastReload || now - parseInt(lastReload, 10) > 10000) {
+        sessionStorage.setItem("chunk_reload_time", now.toString());
+        window.location.reload();
+      }
+    }
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return null;
+    }
+    return this.props.children;
+  }
+}
 
 const Loader = () => (
   <div
@@ -46,9 +82,11 @@ const LazySection = ({ children }) => {
   return (
     <div ref={sectionRef}>
       {visible && (
-        <Suspense fallback={<Loader />}>
-          {children}
-        </Suspense>
+        <SectionErrorBoundary>
+          <Suspense fallback={<Loader />}>
+            {children}
+          </Suspense>
+        </SectionErrorBoundary>
       )}
     </div>
   );
