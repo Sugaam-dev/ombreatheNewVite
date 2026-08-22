@@ -1,6 +1,6 @@
 
 
-import { useState } from "react";
+import { useState, memo } from "react";
 
 import SliderImport from "react-slick";
 
@@ -240,4 +240,4 @@ const Slider = SliderImport.default || SliderImport;
   );
 };
 
-export default React.memo(EnhancedAyurveda);
+export default memo(EnhancedAyurveda);

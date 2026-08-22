@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../../styles/offering.css';
 import 'aos/dist/aos.css';
@@ -74,4 +74,4 @@ const navigate=useNavigate();
   );
 }
 
-export default React.memo(Offering);
+export default memo(Offering);

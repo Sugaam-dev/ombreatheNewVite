@@ -2,6 +2,7 @@ import {
   useEffect,
   useState,
   useMemo,
+  memo,
 } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -515,4 +516,4 @@ const Yogaschool = () => {
   );
 };
 
-export default React.memo(Yogaschool);
+export default memo(Yogaschool);
