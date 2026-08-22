@@ -29,12 +29,6 @@ import firstimage from "../../../images/Websitefirstimage.webp";
 import SectionHeading from "../../../components/shared/SectionHeading/SectionHeading";
 
 const Yogaschool = () => {
-
-  const [images, setImages] = useState({
-    logo: null,
-    yogaSchool: null,
-  });
-
   const navigate = useNavigate();
 
   // =========================================
@@ -65,17 +59,6 @@ const Yogaschool = () => {
       offset: 100,
       easing: "ease-out",
       once: true,
-    });
-  }, []);
-
-  // =========================================
-  // LOAD IMAGES
-  // =========================================
-
-  useEffect(() => {
-    setImages({
-      logo: logo,
-      yogaSchool: firstimage,
     });
   }, []);
 
@@ -325,24 +308,20 @@ const Yogaschool = () => {
               data-aos-offset="50"
               data-aos-duration="600"
             >
-
-              {images.yogaSchool && (
-                <img
-                  src={images.yogaSchool}
-                  alt="Yoga School"
-                  width="800"
-                  height="891"
-                  loading="lazy"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    borderRadius: "16px",
-                    display: "block",
-                  }}
-                />
-              )}
-
+              <img
+                src={firstimage}
+                alt="Ombreathe Yoga School"
+                width="800"
+                height="891"
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "16px",
+                  display: "block",
+                }}
+              />
             </div>
 
             {/* Paragraph + Feature cards */}
