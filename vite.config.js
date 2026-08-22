@@ -38,6 +38,30 @@ export default defineConfig({
   plugins: [
     react(),
     {
+      name: 'sync-excel-config',
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          if (req.url === '/ombreathe_config_template_new.xlsx' || req.url.startsWith('/ombreathe_config_template_new.xlsx?')) {
+            const excelPath = path.resolve('ombreathe_config_template_new.xlsx');
+            if (fs.existsSync(excelPath)) {
+              res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+              res.end(fs.readFileSync(excelPath));
+              return;
+            }
+          }
+          next();
+        });
+      },
+      closeBundle() {
+        const srcFile = path.resolve('ombreathe_config_template_new.xlsx');
+        const destFile = path.resolve('dist/ombreathe_config_template_new.xlsx');
+        if (fs.existsSync(srcFile)) {
+          fs.copyFileSync(srcFile, destFile);
+          console.log('[sync-excel-config] Copied ombreathe_config_template_new.xlsx to dist/');
+        }
+      }
+    },
+    {
       name: 'copy-external-images',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {

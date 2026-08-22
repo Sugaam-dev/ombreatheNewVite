@@ -1,9 +1,9 @@
-import React, { 
+import { 
   useMemo, 
   memo, 
   useState, 
   useEffect,
-} from 'react';
+} from "react";
 import { Link } from "react-router-dom";
 import {
   Phone,

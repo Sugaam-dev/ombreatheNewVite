@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/AboutHeader.css';
 import hero_img from '../../../images/Background.jpg';
 

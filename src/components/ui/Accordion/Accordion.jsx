@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, memo } from "react";
+import { useState, useMemo, useCallback, memo } from "react";
 import SectionHeading from "../../shared/SectionHeading/SectionHeading";
 // import lg from "../../../images/lg.png";
 

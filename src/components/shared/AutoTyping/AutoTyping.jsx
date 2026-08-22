@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const AutoTyping = ({ texts, speed = 100, delay = 1000 }) => {
   const [displayedText, setDisplayedText] = useState('');

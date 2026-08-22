@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Clock, Heart, Calendar, Award, Globe, Sun, Wind, Feather, Coffee,
   Brain, BrainCircuit, BookOpen, Leaf, Sparkles, Shield, Dumbbell,

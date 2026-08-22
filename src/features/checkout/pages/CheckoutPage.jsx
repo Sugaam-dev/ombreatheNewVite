@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Check, ArrowRight, ShieldCheck, Mail, MessageSquare, AlertCircle, ChevronDown, ShoppingBag, Trash2, Plus, Minus, CheckCircle2 } from "lucide-react";
 import { PhoneInput } from "react-international-phone";
@@ -12,11 +12,44 @@ import { ROOM_PRICES_RISHIKESH } from "../../../data/rishikesh/programPricesRish
 import { ROOM_PRICES_MYSORE } from "../../../data/mysore/programPricesMysore";
 import { ROOM_PRICES_CHIANG } from "../../../data/chiang/programPricesChiang";
 import { ROOM_PRICES_DHARAMSHALA } from "../../../data/dharamshala/programPricesDharamshala";
-import { fetchAndApplyDynamicPrices } from "../../../utils/dynamicPrices";
+import { DYNAMIC_BATCHES, fetchAndApplyDynamicPrices } from "../../../utils/dynamicPrices";
 
-const generateBatches = (durationDays) => {
+const generateBatches = (durationDays, locationKey, courseKey) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+
+  const customKey = `${locationKey?.toLowerCase()}_${courseKey?.toLowerCase()}`;
+  const customBatches = DYNAMIC_BATCHES[customKey];
+
+  const getSuffix = (day) => {
+    if (day > 3 && day < 21) return 'th';
+    switch (day % 10) {
+      case 1:  return 'st';
+      case 2:  return 'nd';
+      case 3:  return 'rd';
+      default: return 'th';
+    }
+  };
+
+  const formatBatch = (startDate, endDate) => {
+    const startDayStr = `${startDate.getDate()}${getSuffix(startDate.getDate())}`;
+    const endDayStr = `${endDate.getDate()}${getSuffix(endDate.getDate())}`;
+    const startMonthStr = startDate.toLocaleString('en-US', { month: 'short' });
+    const endMonthStr = endDate.toLocaleString('en-US', { month: 'short' });
+    
+    if (startDate.getMonth() === endDate.getMonth()) {
+      return `${startDayStr} To ${endDayStr} ${startMonthStr} ${startDate.getFullYear()}`;
+    } else {
+      return `${startDayStr} ${startMonthStr} To ${endDayStr} ${endMonthStr} ${endDate.getFullYear()}`;
+    }
+  };
+
+  if (customBatches && customBatches.length > 0) {
+    return customBatches
+      .filter(b => b.startDate >= today)
+      .map(b => b.dateText || formatBatch(b.startDate, b.endDate))
+      .slice(0, 6);
+  }
 
   const currentMonth = today.getMonth();
   const currentYear = today.getFullYear();
@@ -30,16 +63,6 @@ const generateBatches = (durationDays) => {
     const startDay = monthIndex === 0 ? 5 : 1; // Course starts on 5th in January, 1st in others
     months.push({ name, year, monthIndex, startDay });
   }
-  
-  const getSuffix = (day) => {
-    if (day > 3 && day < 21) return 'th';
-    switch (day % 10) {
-      case 1:  return 'st';
-      case 2:  return 'nd';
-      case 3:  return 'rd';
-      default: return 'th';
-    }
-  };
 
   return months
     .map(m => {
@@ -50,24 +73,13 @@ const generateBatches = (durationDays) => {
     })
     .filter(batch => batch.startDate >= today)
     .slice(0, 6)
-    .map(batch => {
-      const { startDate, endDate } = batch;
-      const startDayStr = `${startDate.getDate()}${getSuffix(startDate.getDate())}`;
-      const endDayStr = `${endDate.getDate()}${getSuffix(endDate.getDate())}`;
-      
-      const startMonthStr = startDate.toLocaleString('en-US', { month: 'short' });
-      const endMonthStr = endDate.toLocaleString('en-US', { month: 'short' });
-      
-      if (startDate.getMonth() === endDate.getMonth()) {
-        return `${startDayStr} To ${endDayStr} ${startMonthStr} ${startDate.getFullYear()}`;
-      } else {
-        return `${startDayStr} ${startMonthStr} To ${endDayStr} ${endMonthStr} ${endDate.getFullYear()}`;
-      }
-    });
+    .map(batch => formatBatch(batch.startDate, batch.endDate));
 };
 
 const WEB3FORMS_ACCESS_KEY =
+  (typeof import.meta !== "undefined" && import.meta.env?.VITE_WEB3FORMS_CHECKOUT_KEY) ||
   (typeof import.meta !== "undefined" && import.meta.env?.VITE_WEB3FORMS_KEY) ||
+  (typeof process !== "undefined" && process.env?.REACT_APP_WEB3FORMS_CHECKOUT_KEY) ||
   (typeof process !== "undefined" && process.env?.REACT_APP_WEB3FORMS_KEY) ||
   "";
 
@@ -94,9 +106,10 @@ export default function CheckoutPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   const [sendEmail, setSendEmail] = useState(true);
+  const [sendWhatsApp, setSendWhatsApp] = useState(true);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState("");
-  const [, setPricesLoaded] = useState(0);
+  const [pricesLoaded, setPricesLoaded] = useState(0);
 
   useEffect(() => {
     fetchAndApplyDynamicPrices().then((success) => {
@@ -105,7 +118,20 @@ export default function CheckoutPage() {
   }, []);
 
   useEffect(() => {
-    const state = location.state || {};
+    let state = location.state;
+    if (state && state.slug) {
+      try {
+        sessionStorage.setItem("ombreathe_checkout_state", JSON.stringify(state));
+      } catch (e) {}
+    } else {
+      try {
+        const saved = sessionStorage.getItem("ombreathe_checkout_state");
+        if (saved) {
+          state = JSON.parse(saved);
+        }
+      } catch (e) {}
+    }
+    state = state || {};
     
     if (state.slug) {
       let programData = null;
@@ -212,15 +238,19 @@ export default function CheckoutPage() {
         });
 
         // Pre-select room option
-        const initialRoom = state.roomType || (rooms[0]?.type || "6 Shared Room");
-        setSelectedRoom(initialRoom);
+        setSelectedRoom(prev => {
+          if (prev && rooms.some(r => r.type === prev)) return prev;
+          return state.roomType || (rooms[0]?.type || "6 Shared Room");
+        });
 
         const durationDays = pricingInfo?.durationDays || 25;
-        const generated = generateBatches(durationDays);
+        const generated = generateBatches(durationDays, state.location, slugKey);
         setAvailableBatches(generated);
 
-        const initialDate = state.selectedDate || (generated[0] || "");
-        setSelectedDate(initialDate);
+        setSelectedDate(prev => {
+          if (prev && generated.includes(prev)) return prev;
+          return state.selectedDate || (generated[0] || "");
+        });
       }
     } else {
       setIsDirectBooking(false);
@@ -237,7 +267,7 @@ export default function CheckoutPage() {
     return () => {
       window.removeEventListener("cart_updated", handleCartUpdate);
     };
-  }, [location, isDirectBooking]);
+  }, [location, pricesLoaded]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -271,6 +301,34 @@ export default function CheckoutPage() {
     setErrors(errs);
     return Object.keys(errs).length === 0;
   };
+
+  const parsePrice = (priceStr) => {
+    if (!priceStr) return 0;
+    const clean = priceStr.replace(/[^0-9.]/g, "");
+    return parseFloat(clean) || 0;
+  };
+
+  const getPricing = () => {
+    if (isDirectBooking && directCourse) {
+      const roomList = Array.isArray(directCourse?.rooms) ? directCourse.rooms : [];
+      const activeRoomObj = roomList.find(r => r.type === selectedRoom);
+      const priceStr = activeRoomObj?.price || directCourse.price || "$0";
+      return {
+        totalStr: priceStr,
+        subtotal: parsePrice(priceStr)
+      };
+    } else {
+      const total = cart.reduce((sum, item) => {
+        return sum + (parsePrice(item.price) * (item.quantity || 1));
+      }, 0);
+      return {
+        totalStr: `$${total.toLocaleString()}`,
+        subtotal: total
+      };
+    }
+  };
+
+  const { totalStr } = getPricing();
 
   const getSummaryText = () => {
     let summaryStr = "";
@@ -312,6 +370,15 @@ export default function CheckoutPage() {
           formDataObj.append("email", formData.email);
           formDataObj.append("phone", formData.phone);
           formDataObj.append("subject", `New Booking Inquiry - ${formData.name}`);
+          
+          // Dedicated Web3Forms Dashboard Columns
+          formDataObj.append("booking_type", isDirectBooking ? "Direct Course Booking" : "Cart Booking");
+          formDataObj.append("location", isDirectBooking ? (directCourse?.location || "Not Specified") : "Multi-Program Cart");
+          formDataObj.append("program_name", isDirectBooking ? (directCourse?.title || "") : cart.map(i => i.title).join(", "));
+          formDataObj.append("accommodation", isDirectBooking ? selectedRoom : cart.map(i => `${i.title}: ${i.roomType || "Standard"}`).join("; "));
+          formDataObj.append("batch_dates", isDirectBooking ? selectedDate : "Multiple Dates");
+          formDataObj.append("total_price", totalStr);
+          
           formDataObj.append("message", `
 New Booking Inquiry received from Ombreathe Checkout Page:
 
@@ -359,33 +426,6 @@ Grand Total: ${totalStr}
     }
   };
 
-  const parsePrice = (priceStr) => {
-    if (!priceStr) return 0;
-    const clean = priceStr.replace(/[^0-9.]/g, "");
-    return parseFloat(clean) || 0;
-  };
-
-  const getPricing = () => {
-    if (isDirectBooking && directCourse) {
-      const activeRoomObj = directCourse.rooms.find(r => r.type === selectedRoom);
-      const priceStr = activeRoomObj?.price || directCourse.price;
-      return {
-        totalStr: priceStr,
-        subtotal: parsePrice(priceStr)
-      };
-    } else {
-      const total = cart.reduce((sum, item) => {
-        return sum + (parsePrice(item.price) * (item.quantity || 1));
-      }, 0);
-      return {
-        totalStr: `$${total.toLocaleString()}`,
-        subtotal: total
-      };
-    }
-  };
-
-  const { totalStr } = getPricing();
-
   const handleRemoveItem = (id, roomType) => {
     removeFromCart(id, roomType);
   };
@@ -395,7 +435,7 @@ Grand Total: ${totalStr}
   };
 
   const shareToWhatsApp = (summaryStr, shouldRedirect = true) => {
-    const phoneNumber = ""; // Ombreathe Booking WhatsApp Number
+    const phoneNumber = "917829997007"; // WhatsApp Number
     const message = `Hello Ombreathe! I would like to inquire about booking details and information for the following program:
 
 *PROGRAM INTERESTED*
@@ -528,7 +568,7 @@ Please share the schedule, payment options, and general availability details. Th
                   </div>
 
                   {/* Room Type Selector */}
-                  {directCourse.rooms.length > 0 && (
+                  {Array.isArray(directCourse?.rooms) && directCourse.rooms.length > 0 && (
                     <div className="space-y-2 relative" style={{ display: "flex", flexDirection: "column", gap: "8px", position: "relative" }}>
                       <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider" style={{ color: "#78716c", fontSize: "0.75rem", fontWeight: "700", textTransform: "uppercase" }}>Accommodation Option</label>
                       

@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import { useState, memo } from "react";
 import SectionHeading from "../../../components/shared/SectionHeading/SectionHeading";
 
 const Questions = ({ data }) => {

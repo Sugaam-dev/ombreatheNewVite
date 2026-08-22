@@ -7,6 +7,12 @@ import { PROGRAM_PRICES_MYSORE, ROOM_PRICES_MYSORE } from "../data/mysore/progra
 import { PROGRAM_PRICES_RISHIKESH, ROOM_PRICES_RISHIKESH } from "../data/rishikesh/programPricesRishikesh";
 
 
+
+// Set to false to read directly from local Excel file (ombreathe_config_template_new.xlsx)
+// Set to true  to read live from Google Sheets
+export const USE_GOOGLE_SHEETS = false; 
+// ============================================================================
+
 export const DYNAMIC_BATCHES = {};
 
 export const DYNAMIC_TESTIMONIALS = [
@@ -281,6 +287,49 @@ async function fetchGoogleSheetRows(spreadsheetId, sheetName) {
 }
 
 /**
+ * Reads and parses rows from the local Excel file inside the project (ombreathe_config_template_new.xlsx).
+ */
+async function fetchLocalExcelRows() {
+  const XLSX = await import("xlsx");
+  const res = await fetch("/ombreathe_config_template_new.xlsx");
+  if (!res.ok) {
+    throw new Error(`Failed to load local Excel file: HTTP status ${res.status}`);
+  }
+  const arrayBuffer = await res.arrayBuffer();
+  const workbook = XLSX.read(arrayBuffer, { type: "array" });
+
+  const parseSheet = (sheetName) => {
+    const sheet = workbook.Sheets[sheetName];
+    if (!sheet) return [];
+    const json = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" });
+    if (json.length === 0) return [];
+    
+    const rawHeaders = json[0].map(h => String(h || "").trim());
+    const headers = normalizeHeaders(rawHeaders);
+    
+    const rows = [];
+    for (let i = 1; i < json.length; i++) {
+      const rowArr = json[i];
+      if (!rowArr || rowArr.every(c => c === "" || c === null || c === undefined)) continue;
+      const obj = {};
+      headers.forEach((header, idx) => {
+        if (header) {
+          obj[header] = rowArr[idx] !== undefined && rowArr[idx] !== null ? String(rowArr[idx]).trim() : null;
+        }
+      });
+      rows.push(obj);
+    }
+    return rows;
+  };
+
+  return {
+    programRows: parseSheet("Program Prices"),
+    roomRows: parseSheet("Room Prices"),
+    batchRows: parseSheet("Batches")
+  };
+}
+
+/**
  * Resolves a dynamic program price for a given location and course key.
  */
 function getUpdatedProgramPrice(mappedLoc, key) {
@@ -303,7 +352,7 @@ function getUpdatedProgramPrice(mappedLoc, key) {
     }
   }
 
-  // 1. Kundalini courses (e.g. "kundalini100hr" -> program.kundalini["100hr"])
+  // Kundalini courses (e.g. "kundalini100hr" -> program.kundalini["100hr"])
   if (key.startsWith("kundalini")) {
     const duration = key.replace("kundalini", "");
     if (program.kundalini?.[duration]) {
@@ -311,12 +360,12 @@ function getUpdatedProgramPrice(mappedLoc, key) {
     }
   }
 
-  // 2. Multi-style matching exact key
+  // Multi-style matching exact key
   if (program.multiStyle?.[key]) {
     return program.multiStyle[key];
   }
 
-  // 3. Short courses and specializations exact key
+  // Short courses and specializations exact key
   if (program.shortcourses?.[key]) {
     return program.shortcourses[key];
   }
@@ -324,7 +373,7 @@ function getUpdatedProgramPrice(mappedLoc, key) {
     return program.specializations[key];
   }
 
-  // 4. Case-insensitive substring matching for prefixed/unprefixed keys
+  // Case-insensitive substring matching for prefixed/unprefixed keys
   for (const cat of ["shortcourses", "specializations"]) {
     if (program[cat]) {
       for (const [sKey, val] of Object.entries(program[cat])) {
@@ -335,7 +384,7 @@ function getUpdatedProgramPrice(mappedLoc, key) {
     }
   }
 
-  // 5. Special fallback mappings (e.g., Mysore multiStyle variant keys)
+  // Special fallback mappings (e.g., Mysore multiStyle variant keys)
   if (mappedLoc === "mysore") {
     if (key === "200hr" && program.multiStyle?.["200hrAshtanga"]) return program.multiStyle["200hrAshtanga"];
     if (key === "200hrmultistyle" && program.multiStyle?.["200hrMultistyle"]) return program.multiStyle["200hrMultistyle"];
@@ -374,7 +423,7 @@ async function applyDynamicPricesToDataMaps() {
       // 2. Update LANDING_LOCATION_DATA
       const landingData = LANDING_LOCATION_DATA[locKey];
       if (landingData && landingData.programsByCategoryId) {
-        for (const [catId, programs] of Object.entries(landingData.programsByCategoryId)) {
+        for (const programs of Object.values(landingData.programsByCategoryId)) {
           if (!Array.isArray(programs)) continue;
           for (const prog of programs) {
             if (!prog || !prog.path) continue;
@@ -394,70 +443,81 @@ async function applyDynamicPricesToDataMaps() {
  * Returns true if prices were loaded and applied successfully.
  */
 export async function fetchAndApplyDynamicPrices() {
-  const spreadsheetId = import.meta.env.VITE_SPREADSHEET_ID;
-  const programSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_PROGRAM;
-  const roomSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_ROOM;
-  const batchesSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_BATCHES;
+  const useGoogleSheets = USE_GOOGLE_SHEETS || import.meta.env.VITE_USE_GOOGLE_SHEETS === "true";
 
-  console.log("[Dynamic Pricing] Loader initialized:", {
-    spreadsheetId: spreadsheetId ? "Configured" : "NOT CONFIGURED",
-    programSpreadsheetId: programSpreadsheetId ? "Configured" : "NOT CONFIGURED",
-    roomSpreadsheetId: roomSpreadsheetId ? "Configured" : "NOT CONFIGURED",
-    batchesSpreadsheetId: batchesSpreadsheetId ? "Configured" : "NOT CONFIGURED"
-  });
+  console.log(`[Dynamic Pricing] Source Mode: ${useGoogleSheets ? "GOOGLE SHEETS (Live)" : "LOCAL EXCEL FILE (ombreathe_config_template_new.xlsx)"}`);
 
-  if (!spreadsheetId && !programSpreadsheetId && !roomSpreadsheetId && !batchesSpreadsheetId) {
-    console.warn("[Dynamic Pricing] Spreadsheet IDs are missing in environment variables.");
-    return false;
-  }
+  let programRows = [], roomRows = [], batchRows = [];
 
   try {
-    let programRows = [], roomRows = [], batchRows = [];
+    if (useGoogleSheets) {
+    const spreadsheetId = import.meta.env.VITE_SPREADSHEET_ID;
+    const programSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_PROGRAM;
+    const roomSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_ROOM;
+    const batchesSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_BATCHES;
 
-    // Check if we can fetch all tabs from a single Shared Google Sheet ID
-    const isSingleSheet = !!spreadsheetId && !spreadsheetId.includes("2PACX-") && !spreadsheetId.includes("/d/e/");
+    console.log("[Dynamic Pricing] Google Sheets Loader initialized:", {
+      spreadsheetId: spreadsheetId ? "Configured" : "NOT CONFIGURED",
+      programSpreadsheetId: programSpreadsheetId ? "Configured" : "NOT CONFIGURED",
+      roomSpreadsheetId: roomSpreadsheetId ? "Configured" : "NOT CONFIGURED",
+      batchesSpreadsheetId: batchesSpreadsheetId ? "Configured" : "NOT CONFIGURED"
+    });
 
-    if (isSingleSheet) {
-      console.log("[Dynamic Pricing] Loading all tabs from single Google Spreadsheet...");
-      [programRows, roomRows, batchRows] = await Promise.all([
-        fetchGoogleSheetRows(spreadsheetId, "Program Prices").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load tab 'Program Prices':", err);
-          return [];
-        }),
-        fetchGoogleSheetRows(spreadsheetId, "Room Prices").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load tab 'Room Prices':", err);
-          return [];
-        }),
-        fetchGoogleSheetRows(spreadsheetId, "Batches").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load tab 'Batches':", err);
-          return [];
-        })
-      ]);
-    } else {
-      console.log("[Dynamic Pricing] Loading from individual sheets / published URLs...");
-      const pSrc = programSpreadsheetId || spreadsheetId;
-      const rSrc = roomSpreadsheetId || spreadsheetId;
-      const bSrc = batchesSpreadsheetId || spreadsheetId;
+    if (spreadsheetId || programSpreadsheetId || roomSpreadsheetId || batchesSpreadsheetId) {
+      try {
+        const isSingleSheet = !!spreadsheetId && !spreadsheetId.includes("2PACX-") && !spreadsheetId.includes("/d/e/");
+        if (isSingleSheet) {
+          console.log("[Dynamic Pricing] Loading all tabs from single Google Spreadsheet...");
+          [programRows, roomRows, batchRows] = await Promise.all([
+            fetchGoogleSheetRows(spreadsheetId, "Program Prices").catch(err => {
+              console.warn("[Dynamic Pricing] Failed to load tab 'Program Prices':", err);
+              return [];
+            }),
+            fetchGoogleSheetRows(spreadsheetId, "Room Prices").catch(err => {
+              console.warn("[Dynamic Pricing] Failed to load tab 'Room Prices':", err);
+              return [];
+            }),
+            fetchGoogleSheetRows(spreadsheetId, "Batches").catch(err => {
+              console.warn("[Dynamic Pricing] Failed to load tab 'Batches':", err);
+              return [];
+            })
+          ]);
+        } else {
+          console.log("[Dynamic Pricing] Loading from individual sheets / published URLs...");
+          const pSrc = programSpreadsheetId || spreadsheetId;
+          const rSrc = roomSpreadsheetId || spreadsheetId;
+          const bSrc = batchesSpreadsheetId || spreadsheetId;
 
-      const [pRes, rRes, bRes] = await Promise.all([
-        pSrc ? fetchGoogleSheetRows(pSrc, "Program Prices").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load Program Prices:", err);
-          return [];
-        }) : [],
-        rSrc ? fetchGoogleSheetRows(rSrc, "Room Prices").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load Room Prices:", err);
-          return [];
-        }) : [],
-        bSrc ? fetchGoogleSheetRows(bSrc, "Batches").catch(err => {
-          console.warn("[Dynamic Pricing] Failed to load Batches:", err);
-          return [];
-        }) : []
-      ]);
+          const [pRes, rRes, bRes] = await Promise.all([
+            pSrc ? fetchGoogleSheetRows(pSrc, "Program Prices").catch(() => []) : [],
+            rSrc ? fetchGoogleSheetRows(rSrc, "Room Prices").catch(() => []) : [],
+            bSrc ? fetchGoogleSheetRows(bSrc, "Batches").catch(() => []) : []
+          ]);
 
-      programRows = pRes;
-      roomRows = rRes;
-      batchRows = bRes;
+          programRows = pRes;
+          roomRows = rRes;
+          batchRows = bRes;
+        }
+      } catch (err) {
+        console.warn("[Dynamic Pricing] Error fetching Google Sheets:", err);
+      }
     }
+  }
+
+  // If not using Google Sheets, or if Google Sheets fetch returned empty, read directly from local project Excel file
+  if (!useGoogleSheets || (programRows.length === 0 && roomRows.length === 0)) {
+    try {
+      console.log("[Dynamic Pricing] Reading data from local project Excel file (ombreathe_config_template_new.xlsx)...");
+      const localData = await fetchLocalExcelRows();
+      programRows = localData.programRows;
+      roomRows = localData.roomRows;
+      batchRows = localData.batchRows;
+      console.log(`[Dynamic Pricing] Successfully loaded from Excel: ${programRows.length} programs, ${roomRows.length} room rows, ${batchRows.length} batch rows.`);
+    } catch (err) {
+      console.warn("[Dynamic Pricing] Failed to load local Excel file, falling back to static defaults:", err);
+      return false;
+    }
+  }
 
     // 1. Group and apply Program Prices first
     const sheetProgramPrices = {

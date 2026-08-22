@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, memo } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import img1 from "../../../images/Gallery/1.webp";
 
 const DiscountPopup = () => {
@@ -9,7 +9,7 @@ const DiscountPopup = () => {
   const animFrameRef = useRef(null);
   const particlesRef = useRef([]);
 
-  const WHATSAPP_NUMBER = "917483987568";
+  const WHATSAPP_NUMBER = "917829997007";
 
 const MESSAGE =
   "Hi! I'd like to claim the 20% discount for the Rishikesh 2026 retreat.";

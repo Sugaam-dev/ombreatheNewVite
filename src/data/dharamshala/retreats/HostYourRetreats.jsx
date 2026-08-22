@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import SectionHeading from '../../../components/shared/SectionHeading/SectionHeading';
 import { Send, CheckCircle2, Shield, Heart } from 'lucide-react';
 

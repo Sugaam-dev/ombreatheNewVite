@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Sunrise, Moon, CheckCircle, BookOpen, Clock, Info } from "lucide-react";
 import { getIcon } from "./icons";
 import MobileCarousel from "./MobileCarousel";

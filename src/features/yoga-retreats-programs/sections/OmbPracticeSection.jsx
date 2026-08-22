@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getIcon } from "./icons";
 import MobileCarousel from "./MobileCarousel";
 
@@ -12,8 +12,6 @@ const OmbPracticeSection = ({ data, colors }) => {
 
   if (!data || !data.content) return null;
   const { eyebrow, title, highlight, subtitle, practices = [], specialTitle, specialHighlight, specials = [] } = data.content;
-
-  const activeBg = colors?.activeBg || "rgba(0,0,0,0.04)";
 
   return (
     <section className="practice-outer" style={{ backgroundColor: "#ffffff" }}>

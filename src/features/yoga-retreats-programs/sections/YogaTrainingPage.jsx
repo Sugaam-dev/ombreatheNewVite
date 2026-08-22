@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ROOM_PRICES_BALI } from '../../../data/bali/programPrices';
 import { ROOM_PRICES_RISHIKESH } from '../../../data/rishikesh/programPricesRishikesh';

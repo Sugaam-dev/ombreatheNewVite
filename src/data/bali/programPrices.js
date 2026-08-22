@@ -22,11 +22,17 @@ export const PROGRAM_PRICES = {
   },
   specializations: {
     "soundhealing": "$350",
-    "BaliAyurvedicTreatmentTTCData": "$1250",
+    "BaliAyurvedicTreatmentTTCData": "$1,250",
+    "ayurvedictreatmentttc": "$1,250",
     "BaliAyurveda5HoursAbhyangamData": "$250",
+    "ayurveda5hoursabhyangam": "$250",
     "Bali100HourYogaTherapyAyurvedaData": "$899",
-    "wellnessretreat": "$0",
+    "100houryogatherapyayurve": "$899",
     "retreats6days": "$650",
+    "vipassanameditation": "$99",
+    "3daywellness": "$350",
+    "adventureyoga": "$1,099",
+    "multistylemeditation": "$999",
   },
 };
 

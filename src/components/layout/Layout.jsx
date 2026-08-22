@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, memo, useEffect } from "react";
+import { Suspense, lazy, memo, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
 import Navbar from "./Navbar/Navbar";
@@ -57,7 +57,7 @@ function Layout() {
 
       <Suspense fallback={null}>
         <WhatsAppButton
-          phone="917483987568"
+          phone="917829997007"
           message="Hello! I'd like to know more about your yoga programs."
         />
       </Suspense>

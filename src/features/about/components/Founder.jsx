@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Founder.css';
 import founderImage from '../../../images/Teachers/Ranjan_Sir_Image.webp';
 

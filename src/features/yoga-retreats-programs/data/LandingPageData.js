@@ -99,7 +99,6 @@ export const LANDING_LOCATION_DATA = {
         { path: "100houryogatherapyayurve", hours: "100", title: "Bali 100Hours Yoga Therapy Ayurveda", price: PROGRAM_PRICES.specializations.Bali100HourYogaTherapyAyurvedaData, duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
         { path: "ayurvedictreatmentttc", hours: "50", title: "Ayurvedic Treatment In Bali", price: PROGRAM_PRICES.specializations.BaliAyurvedicTreatmentTTCData, duration: "6 days", badge: "Specialty", certification: "Yoga Alliance" },
         { path: "ayurveda5hoursabhyangam", hours: "5", title: "Ayurveda Massage Course In Bali", price: PROGRAM_PRICES.specializations.BaliAyurveda5HoursAbhyangamData, duration: "1 day", badge: "Spa Cleanse", certification: "YACEP" },
-        { path: "wellness-retreat", hours: "N/A", title: "Yoga & Wellness Detox Retreat", price: PROGRAM_PRICES.specializations.wellnessretreat, duration: "6 days", badge: "Spa Cleanse", certification: "YACEP" },
         { path: "retreats6days", hours: "N/A", title: "6-Day Yoga and Detox Retreat", price: PROGRAM_PRICES.specializations.retreats6days, duration: "6 days", badge: "Spa Cleanse", certification: "YACEP" }
       ]
     }
@@ -199,7 +198,6 @@ export const LANDING_LOCATION_DATA = {
         { path: "100houryogatherapyayurve", hours: "100", title: "Bali 100Hours Yoga Therapy Ayurveda", price: PROGRAM_PRICES_CHIANG.specializations["ChiangMai100HourYogaTherapyAyurvedaData"], duration: "10 days", badge: "Lineage Focused", certification: "Yoga Alliance" },
         { path: "ayurvedictreatmentttc", hours: "50", title: "Ayurvedic Treatment In Chiang Mai", price: PROGRAM_PRICES_CHIANG.specializations["ChiangMaiAyurvedicTreatmentTTCData"], duration: "6 days", badge: "Specialty", certification: "Yoga Alliance" },
         { path: "ayurveda5hoursabhyangam", hours: "5", title: "Ayurveda Massage Course In Chiang Mai", price: PROGRAM_PRICES_CHIANG.specializations["ChiangMaiAyurveda5HoursAbhyangamData"], duration: "1 day", badge: "Spa Cleanse", certification: "YACEP" },
-        { path: "wellness-retreat", hours: "N/A", title: "Monastery Meditation & Wellness Retreat", price: PROGRAM_PRICES_CHIANG.specializations["ChiangMaiwellnessretreat"], duration: "6 days", badge: "Total Stillness", certification: "YACEP" },
         { path: "chiangmairetreats6days", hours: "N/A", title: "6-Day Yoga and Detox Retreat", price: PROGRAM_PRICES_CHIANG.specializations["ChiangMairetreats6days"], duration: "6 days", badge: "Total Stillness", certification: "YACEP" }
       ]
     }

@@ -519,9 +519,29 @@ When a user visits `/programs/rishikesh/200hr`:
 
 ---
 
-### Dynamic Pricing & Batches (Google Sheets Integration)
+### Dynamic Pricing & Batches (Google Sheets vs. Local Excel File)
 
-The application supports loading real-time prices, room rates, batches, and testimonials directly from Google Spreadsheets. On application mount, it runs `fetchAndApplyDynamicPrices()` (`src/utils/dynamicPrices.js`) which fetches the configured sheets and overrides the static local pricing and batch definitions in memory.
+The application supports loading prices, room rates, batches, and testimonials either **directly from the local project Excel file (`ombreathe_config_template_new.xlsx`)** or **live from Google Spreadsheets**.
+
+#### Source Mode Configuration (`.env` Toggle)
+
+You can choose where the website reads its pricing and batch data using `VITE_USE_GOOGLE_SHEETS`:
+
+```env
+# Set to 'false' (or omit) to read directly from the local Excel file: ombreathe_config_template_new.xlsx
+VITE_USE_GOOGLE_SHEETS=false
+
+# Set to 'true' to fetch live in real-time from Google Spreadsheets
+# VITE_USE_GOOGLE_SHEETS=true
+```
+
+* **Mode 1 (Default: `false`): Local Project Excel File (`ombreathe_config_template_new.xlsx`)**  
+  The app automatically reads and parses `ombreathe_config_template_new.xlsx` directly from the project. Any updates made in the Excel file are automatically applied.
+
+* **Mode 2 (`true`): Live Google Spreadsheets**  
+  The app fetches live from your configured Google Spreadsheet IDs on mount and applies real-time overrides.
+
+---
 
 #### Google Sheet Configuration & Column Schema
 

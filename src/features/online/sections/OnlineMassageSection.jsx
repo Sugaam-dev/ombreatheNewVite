@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Clock, Star, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Clock, Star, Sparkles } from "lucide-react";
 
 export default function OnlineMassageSection({ data }) {
   const scrollContainerRef = useRef(null);
@@ -34,14 +34,6 @@ export default function OnlineMassageSection({ data }) {
     animationFrameId = requestAnimationFrame(runTicker);
     return () => cancelAnimationFrame(animationFrameId);
   }, [isPaused]);
-
-  const handleManualActionScroll = (direction) => {
-    if (scrollContainerRef.current) {
-      const stepOffsetValue = 364; // Card width + layout margin track column padding gaps
-      const finalVector = direction === "left" ? -stepOffsetValue : stepOffsetValue;
-      scrollContainerRef.current.scrollBy({ left: finalVector, behavior: "smooth" });
-    }
-  };
 
   // 🛠️ RULES OF HOOKS SAFE DISMISS CHECK: Guard checks must reside down here!
   if (!data || !data.content || !data.content.massages) {

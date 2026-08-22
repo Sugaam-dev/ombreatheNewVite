@@ -73,8 +73,7 @@ export const PROGRAM_LINKS = {
       { path: "soundhealing", label: "Vedic Sound Healing Level 1 & 2" },
       { path: "100houryogatherapyayurve", label: "Bali 100 Hours Yoga Therapy Ayurveda" },
       { path: "ayurvedictreatmentttc", label: "Ayurvedic Treatment In Bali" },
-      { path: "ayurveda5hoursabhyangam", label: "Abhyangam Massage Training Course In Bali" },
-      // { path: "wellness-retreat", label: "Yoga & Wellness Detox Retreat" }
+      { path: "ayurveda5hoursabhyangam", label: "Abhyangam Massage Training Course In Bali" }
     ],
   },
 
@@ -136,8 +135,7 @@ export const PROGRAM_LINKS = {
       { path: "soundhealing", label: "Sound Healing Course" },
       { path: "100houryogatherapyayurve", label: "Bali 100Hours Yoga Therapy Ayurveda" },
       { path: "ayurvedictreatmentttc", label: "Ayurvedic Treatment In Chiang Mai" },
-      { path: "ayurveda5hoursabhyangam", label: "Ayurveda Massage Course In Chiang Mai" },
-      { path: "wellness-retreat", label: "Monastery Meditation & Wellness Retreat" }
+      { path: "ayurveda5hoursabhyangam", label: "Ayurveda Massage Course In Chiang Mai" }
     ],
   },
 

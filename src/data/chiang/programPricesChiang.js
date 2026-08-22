@@ -25,7 +25,6 @@ export const PROGRAM_PRICES_CHIANG = {
     "ChiangMai100HourYogaTherapyAyurvedaData": "$899",
     "ChiangMaiAyurvedicTreatmentTTCData": "$1,250",
     "ChiangMaiAyurveda5HoursAbhyangamData": "$250",
-    "ChiangMaiwellnessretreat": "$699",
     "ChiangMairetreats6days": "$650",
   },
 };

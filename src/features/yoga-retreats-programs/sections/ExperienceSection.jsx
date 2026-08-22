@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Star, MapPin, Clock, CheckCircle, ChevronRight } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { getIcon } from "./icons";
@@ -31,25 +31,14 @@ const getMealImage = (location, title, fallbackImg, index) => {
       }
     }
   }
-  
-  // Extendable: Add future location mappers here!
-  /*
-  if (loc === "rishikesh") {
-     ...
-  }
-  */
-  
   return fallbackImg;
 };
 
 export default function ExperienceSection({ foodData, excursionData, locationData, massageData, colors }) {
   const { location: locParam } = useParams();
-  const isBali = locParam?.toLowerCase() === "bali";
   const [activeTab, setActiveTab] = useState("food");
   const [showArrow, setShowArrow] = useState(false);
   const scrollRef = useRef(null);
-
-  if (!foodData && !excursionData && !locationData && !massageData) return null;
 
   const food = foodData?.content || {};
   const excursions = excursionData?.content?.excursions || [];
@@ -67,7 +56,7 @@ export default function ExperienceSection({ foodData, excursionData, locationDat
     if (availableTabs.length > 0 && !availableTabs.some(t => t.id === activeTab)) {
       setActiveTab(availableTabs[0].id);
     }
-  }, []);
+  }, [availableTabs, activeTab]);
 
   const checkScroll = () => {
     const el = scrollRef.current;
@@ -87,6 +76,8 @@ export default function ExperienceSection({ foodData, excursionData, locationDat
       window.removeEventListener("resize", checkScroll);
     };
   }, [availableTabs]);
+
+  if (!foodData && !excursionData && !locationData && !massageData) return null;
 
   const handleTabClick = (id, idx) => {
     setActiveTab(id);

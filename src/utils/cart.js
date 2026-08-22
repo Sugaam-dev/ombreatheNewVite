@@ -5,7 +5,7 @@
 export const getCart = () => {
   try {
     return JSON.parse(localStorage.getItem("omb_cart")) || [];
-  } catch (e) {
+  } catch {
     return [];
   }
 };

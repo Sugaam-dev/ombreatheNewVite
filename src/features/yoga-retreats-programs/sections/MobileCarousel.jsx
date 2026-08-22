@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/ProgramSections.css";
 
 /**
@@ -6,30 +6,29 @@ import "../styles/ProgramSections.css";
  * Renders a swipeable, auto-scrolling carousel on mobile/tablet screens (< md)
  * with a seamless forward-infinite loop, falling back to a grid layout on desktop (>= md).
  */
-const MobileCarousel = ({ items, renderItem, className = "", gridClass = "" }) => {
+const MobileCarousel = ({ items = [], renderItem, className = "", gridClass = "" }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  if (!items || items.length === 0) return null;
-
+  const itemCount = items?.length || 0;
   // Append a clone of the first item to the end for a seamless forward loop transition
-  const displayItems = items.length > 1 ? [...items, items[0]] : items;
+  const displayItems = itemCount > 1 ? [...items, items[0]] : (items || []);
 
   useEffect(() => {
-    if (isPaused || items.length <= 1) return;
+    if (isPaused || itemCount <= 1) return;
     const interval = setInterval(() => {
       setIsTransitioning(true);
       setActiveIndex((prev) => prev + 1);
     }, 4500); // Transition every 4.5s
     return () => clearInterval(interval);
-  }, [items.length, isPaused]);
+  }, [itemCount, isPaused]);
 
   // Hook to handle reset when reaching the cloned element at the end
   useEffect(() => {
-    if (items.length <= 1) return;
+    if (itemCount <= 1) return;
     if (activeIndex === displayItems.length - 1) {
       const timer = setTimeout(() => {
         setIsTransitioning(false);
@@ -37,7 +36,9 @@ const MobileCarousel = ({ items, renderItem, className = "", gridClass = "" }) =
       }, 500);
       return () => clearTimeout(timer);
     }
-  }, [activeIndex, displayItems.length, items.length]);
+  }, [activeIndex, displayItems.length, itemCount]);
+
+  if (!items || items.length === 0) return null;
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.targetTouches[0].clientX;

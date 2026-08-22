@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/AboutUsSection.css';
 import heroAboutImage from '../../../images/Gallery/10.webp';
 

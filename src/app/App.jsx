@@ -2,7 +2,7 @@
 
 import "./App.css";
 
-import React, { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,6 +11,8 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
+
+import { fetchAndApplyDynamicPrices } from "../utils/dynamicPrices";
 
 // ==========================================
 // PAGE TRACKING
@@ -281,6 +283,10 @@ function AppRoutes() {
 // APP
 // ==========================================
 function App() {
+  useEffect(() => {
+    fetchAndApplyDynamicPrices();
+  }, []);
+
   return (
     <Router>
       <AppRoutes />

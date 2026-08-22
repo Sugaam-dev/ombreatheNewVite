@@ -1,4 +1,3 @@
-import React from "react";
 import { Sparkles, CheckCircle } from "lucide-react";
 
 const OnlineAboutSection = ({ data }) => {

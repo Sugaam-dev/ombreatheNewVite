@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import '../styles/MembershipProgram.css';
 import { useNavigate } from 'react-router-dom';
 

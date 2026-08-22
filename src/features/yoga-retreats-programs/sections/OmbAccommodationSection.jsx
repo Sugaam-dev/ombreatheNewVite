@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CheckCircle, ArrowRight, ChevronRight } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { getIcon } from "./icons";
@@ -58,7 +58,6 @@ const getRoomImage = (location, type, fallbackImg) => {
 
 const OmbAccommodationSection = ({ data, colors, onBookClick }) => {
   const { location } = useParams();
-  const isBali = location?.toLowerCase() === "bali";
   const [activeRoom, setActiveRoom] = useState(0);
   const [showArrow, setShowArrow] = useState(false);
   const scrollRef = useRef(null);

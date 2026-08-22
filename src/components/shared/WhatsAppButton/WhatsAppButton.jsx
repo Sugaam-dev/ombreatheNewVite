@@ -1,7 +1,7 @@
-import React, { memo, useCallback } from "react";
+import { memo, useCallback } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
 
-const WhatsAppButton = ({ phone = "917483987568", message }) => {
+const WhatsAppButton = ({ phone = "917829997007", message }) => {
   const handleClick = useCallback(() => {
     const defaultMsg =
       "Hello! I'm interested in learning more about your yoga programs.";

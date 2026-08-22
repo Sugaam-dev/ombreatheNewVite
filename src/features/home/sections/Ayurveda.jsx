@@ -1,7 +1,6 @@
 
 
-import React, { useEffect, useState } from "react";
-import Aos from "aos";
+import { useState } from "react";
 
 import SliderImport from "react-slick";
 

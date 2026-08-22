@@ -1,4 +1,4 @@
-import React, {
+import {
   useEffect,
   useState,
   useMemo,
@@ -51,9 +51,7 @@ const Yogaschool = () => {
   }, []);
 
   const isDesktop = windowWidth >= 1024;
-  const isTablet = windowWidth >= 640 && windowWidth < 1024;
   const isSmall = windowWidth < 640;
-  const isLargeDesktop = windowWidth >= 1440;
   const isUltraWide = windowWidth >= 2560;
 
   // =========================================
@@ -361,16 +359,6 @@ const Yogaschool = () => {
             >
 
               {/* Full original paragraph, smaller text to fit */}
-              {/* <div
-                style={{
-                  color: "#1e1e1c",
-                  fontSize: isSmall ? "12px" : isTablet ? "13px" : isLargeDesktop ? "18px" : "16px",
-                  lineHeight: 1.5,
-                  overflow: "auto",
-                  
-                }}
-              > */}
-
               <div
                 style={{
                   color: "#1e1e1c",

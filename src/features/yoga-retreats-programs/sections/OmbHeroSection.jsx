@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MapPin, ArrowRight, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -61,17 +61,19 @@ const OmbHeroSection = ({ data, onBookClick }) => {
           </p>
 
           {/* Price */}
-          <div className="hero-price-tag" style={{ color: "#ffffff" }}>
-            {hero.price}
-          </div>
-          <p className="hero-pricenote-p">{hero.priceNote}</p>
+          {hero.price && (
+            <div className="hero-price-tag" style={{ color: "#ffffff", fontSize: "1.75rem", fontWeight: 600, marginBottom: "28px" }}>
+              <span style={{ fontSize: "0.95rem", fontWeight: 400, opacity: 0.85, marginRight: "6px" }}>Starting from</span>
+              {hero.price}
+            </div>
+          )}
 
           {/* CTA */}
           {onBookClick ? (
             <button
               onClick={onBookClick}
               className="hero-cta-btn"
-              style={{ background: "linear-gradient(135deg, #16a34a, #15803d, #14532d)", border: 0, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px" }}
+              style={{ background: "linear-gradient(135deg, #16a34a, #15803d, #14532d)", border: 0, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", marginTop: "6px" }}
             >
               {hero.buttonText || "Book Now"} <ArrowRight size={18} />
             </button>

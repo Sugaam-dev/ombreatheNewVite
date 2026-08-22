@@ -1,6 +1,4 @@
-import React from 'react';
 import "../styles/whychoose.css";
-import { useNavigate } from 'react-router-dom';
 import SectionHeading from '../../../components/shared/SectionHeading/SectionHeading';
 import MobileCarousel from '../../yoga-retreats-programs/sections/MobileCarousel';
 
@@ -20,7 +18,6 @@ import {
 } from "lucide-react";
 
 const WhyChoose = () => {
-  const navigate = useNavigate();
 
   const credentials = [
     {

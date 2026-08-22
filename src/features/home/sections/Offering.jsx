@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../../styles/offering.css';
 import 'aos/dist/aos.css';
 import Aos from 'aos';

@@ -1,4 +1,4 @@
-import React, { 
+import { 
   useState, 
   useRef, 
   useMemo, 
@@ -9,7 +9,7 @@ import React, {
   startTransition,
   useDeferredValue,
   memo
-} from 'react';
+} from "react";
 import '../styles/Blog.css';
 import SectionHeading from '../../../components/shared/SectionHeading/SectionHeading';
 

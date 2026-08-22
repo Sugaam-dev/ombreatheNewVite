@@ -1,7 +1,7 @@
 
 
 
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   FaFacebookF,
   FaPhoneAlt,
@@ -22,7 +22,9 @@ import { isValidPhoneNumber } from "libphonenumber-js";
 import SectionHeading from "../../../components/shared/SectionHeading/SectionHeading";
 
 const WEB3FORMS_ACCESS_KEY = 
+  (typeof import.meta !== "undefined" && import.meta.env?.VITE_WEB3FORMS_CONTACT_KEY) || 
   (typeof import.meta !== "undefined" && import.meta.env?.VITE_WEB3FORMS_KEY) || 
+  (typeof process !== "undefined" && process.env?.REACT_APP_WEB3FORMS_CONTACT_KEY) || 
   (typeof process !== "undefined" && process.env?.REACT_APP_WEB3FORMS_KEY) || 
   "";
 const LOCATIONS = [

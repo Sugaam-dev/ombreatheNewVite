@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Community.css';
 import embraceImage from '../../../images/Gallery/5.webp';
 import communityGroupImage from '../../../images/Gallery/13.webp';

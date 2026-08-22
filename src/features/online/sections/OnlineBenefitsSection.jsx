@@ -1,39 +1,38 @@
-import React from "react";
 import { CheckCircle, Sun } from "lucide-react";
+
+const Group = ({ title, items, colors }) => (
+  <div
+    style={{
+      background: colors.white,
+      borderRadius: 18,
+      padding: "clamp(22px,4vw,32px)",
+      boxShadow: colors.cardShadow,
+    }}
+  >
+    <h3 style={{ color: colors.navy, marginBottom: 16, fontSize: "1.15rem" }}>
+      {title}
+    </h3>
+    {items.map((item, i) => (
+      <div
+        key={i}
+        style={{
+          display: "flex",
+          gap: 10,
+          marginBottom: 10,
+          fontSize: "0.92rem",
+          color: "#444",
+          lineHeight: 1.5,
+        }}
+      >
+        <CheckCircle size={16} color={colors.sage} style={{ flexShrink: 0, marginTop: 2 }} />
+        {item}
+      </div>
+    ))}
+  </div>
+);
 
 const OnlineBenefitsSection = ({ data }) => {
   const { colors, content } = data;
-
-  const Group = ({ title, items }) => (
-    <div
-      style={{
-        background: colors.white,
-        borderRadius: 18,
-        padding: "clamp(22px,4vw,32px)",
-        boxShadow: colors.cardShadow,
-      }}
-    >
-      <h3 style={{ color: colors.navy, marginBottom: 16, fontSize: "1.15rem" }}>
-        {title}
-      </h3>
-      {items.map((item, i) => (
-        <div
-          key={i}
-          style={{
-            display: "flex",
-            gap: 10,
-            marginBottom: 10,
-            fontSize: "0.92rem",
-            color: "#444",
-            lineHeight: 1.5,
-          }}
-        >
-          <CheckCircle size={16} color={colors.sage} style={{ flexShrink: 0, marginTop: 2 }} />
-          {item}
-        </div>
-      ))}
-    </div>
-  );
 
   return (
     <section
@@ -63,10 +62,10 @@ const OnlineBenefitsSection = ({ data }) => {
             marginBottom: 30,
           }}
         >
-          <Group title={content.whyWpys.title} items={content.whyWpys.items} />
-          <Group title={content.benefits.title} items={content.benefits.items} />
-          <Group title={content.eligibility.title} items={content.eligibility.items} />
-          <Group title={content.community.title} items={content.community.items} />
+          <Group title={content.whyWpys.title} items={content.whyWpys.items} colors={colors} />
+          <Group title={content.benefits.title} items={content.benefits.items} colors={colors} />
+          <Group title={content.eligibility.title} items={content.eligibility.items} colors={colors} />
+          <Group title={content.community.title} items={content.community.items} colors={colors} />
         </div>
 
         {/* FREE DAYS NOTE */}
