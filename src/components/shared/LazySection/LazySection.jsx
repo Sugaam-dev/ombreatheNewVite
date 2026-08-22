@@ -1,8 +1,9 @@
-import React, {
+import {
   Suspense,
   useEffect,
   useRef,
   useState,
+  memo,
 } from "react";
 
 const Loader = () => (
@@ -53,4 +54,4 @@ const LazySection = ({ children }) => {
   );
 };
 
-export default React.memo(LazySection);
+export default memo(LazySection);

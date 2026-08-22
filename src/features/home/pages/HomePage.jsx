@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import { lazy, memo } from "react";
 
 // ==========================================
 // ABOVE THE FOLD (NORMAL IMPORTS — critical for LCP)
@@ -137,4 +137,4 @@ const Home = () => {
   );
 };
 
-export default React.memo(Home);
+export default memo(Home);

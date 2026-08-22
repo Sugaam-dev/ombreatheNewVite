@@ -1,6 +1,6 @@
 
 
-import { useState, memo } from "react";
+import { useState, useEffect, memo } from "react";
 
 import SliderImport from "react-slick";
 
