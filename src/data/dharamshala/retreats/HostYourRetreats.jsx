@@ -10,7 +10,7 @@ const HostYourRetreats = () => {
     setFormStatus({ loading: true, success: null, message: '' });
 
     const formData = new FormData(e.target);
-    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || "0fdb225d-46a5-43c3-8ed3-c4f76d7a570b";
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || "";
     formData.append("access_key", accessKey);
     formData.append("subject", "New Host Your Retreat Inquiry - Ombreathe");
 

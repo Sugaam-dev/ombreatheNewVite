@@ -1,26 +1,39 @@
-# Ombreathe
+﻿# Ombreathe
 
-> Ombreathe - Authentic Yoga Teacher Training, Retreats & Holistic Wellness Programs
+> Authentic Yoga Teacher Training (100hr, 200hr, 300hr, 500hr), Kundalini TTC, Ayurveda Courses, and Holistic Yoga Retreats worldwide.
 
 ## Overview
 
-Ombreathe offers yoga teacher training programs (100hr, 200hr, 300hr, 500hr), yoga retreats, wellness programs, and Ayurveda healing across multiple locations.
+Ombreathe is a premier global yoga and wellness institution providing Yoga Alliance accredited Teacher Training Courses (TTC), specialized retreats, sound healing, and Ayurvedic healing across premier destinations including Bali, Rishikesh, Dharamshala, Mysore, Chiang Mai, and online.
 
-## Programs
+## Core Destinations & Programs
 
-- [Yoga Teacher Training - Bali](https://ombreathe-new-vite.vercel.app/programs/bali/200hr)
-- [Yoga Teacher Training - Rishikesh](https://ombreathe-new-vite.vercel.app/programs/rishikesh/200hr)
-- [Yoga Teacher Training - Dharamshala](https://ombreathe-new-vite.vercel.app/programs/dharamshala/200hr)
-- [Yoga Teacher Training - Chiang Mai](https://ombreathe-new-vite.vercel.app/programs/chiang-mai/200hr)
-- [Yoga Retreats](https://ombreathe-new-vite.vercel.app/programs)
-- [Online Yoga Programs](https://ombreathe-new-vite.vercel.app/online/200hr)
-- [Membership Programs](https://ombreathe-new-vite.vercel.app/programs/shiv-shakti-sadhana)
+- [Yoga Teacher Training & Retreats in Bali](https://ombreathe.com/programs/bali): 50hr, 100hr, 200hr, 300hr, 500hr Multi-Style TTC, Kundalini Yoga, Yin Yoga, Sound Healing, and Wellness Retreats.
+- [Yoga Teacher Training in Rishikesh](https://ombreathe.com/programs/rishikesh): 100hr, 200hr, 300hr, 500hr Multi-Style TTC, Kundalini TTC, Ayurvedic Panchakarma, and Yoga Retreats in the Himalayas.
+- [Yoga Teacher Training in Mysore](https://ombreathe.com/programs/mysore): 200hr, 300hr, 500hr Ashtanga and Hatha Yoga Teacher Training, Sound Healing, and Yoga Therapy.
+- [Yoga Teacher Training in Dharamshala](https://ombreathe.com/programs/dharamshala): 100hr, 200hr, 300hr, 500hr Multi-Style & Kundalini Yoga Teacher Training.
+- [Yoga Teacher Training in Chiang Mai](https://ombreathe.com/programs/chiang-mai): 100hr, 200hr, 300hr, 500hr Multi-Style, Kundalini, Ayurveda, and Vipassana Meditation Retreats.
 
-## Pages
+## Sadhana & Membership Programs
 
-- [Home](https://ombreathe-new-vite.vercel.app/)
-- [About Us](https://ombreathe-new-vite.vercel.app/about)
-- [Contact](https://ombreathe-new-vite.vercel.app/contact)
-- [Our Teachers](https://ombreathe-new-vite.vercel.app/our-teachers-list)
-- [Terms and Conditions](https://ombreathe-new-vite.vercel.app/terms-and-conditions)
-- [Checkout](https://ombreathe-new-vite.vercel.app/checkout)
+- [Shiv Shakti Sadhana](https://ombreathe.com/programs/shiv-shakti-sadhana): Deep transformative sadhana and yogic practices.
+- [Shakti Sadhana](https://ombreathe.com/programs/shakti-sadhana): Awakening inner spiritual and feminine energy.
+- [Sapta Rishi Sadhana](https://ombreathe.com/programs/sapta-rishi-sadhana): Sacred ancient yogic lineage practices.
+- [Pashu Patayaa Sadhana](https://ombreathe.com/programs/pashu-patayaa-sadhana): Advanced yogic meditation and discipline.
+
+## Online Yoga TTC
+
+- [Online 200-Hour Yoga Teacher Training](https://ombreathe.com/online/200hr)
+- [Online 300-Hour Yoga Teacher Training](https://ombreathe.com/online/300hr)
+- [Online 500-Hour Yoga Teacher Training](https://ombreathe.com/online/500hr)
+
+## Essential Pages
+
+- [Home](https://ombreathe.com/)
+- [All Programs](https://ombreathe.com/programs)
+- [About Ombreathe](https://ombreathe.com/about)
+- [Our Teachers](https://ombreathe.com/our-teachers-list)
+- [Contact Us](https://ombreathe.com/contact)
+- [Personalize & Host Your Retreat](https://ombreathe.com/retreats/personalize-your-retreat/host-your-retreat)
+- [Make Your Own Combo Retreat](https://ombreathe.com/retreats/personalize-your-retreat/make-your-own-combo)
+- [Terms and Conditions](https://ombreathe.com/terms-and-conditions)

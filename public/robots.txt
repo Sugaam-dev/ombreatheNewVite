@@ -1,2 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
+Disallow: /checkout
+
+Sitemap: https://ombreathe.com/sitemap.xml
