@@ -25,7 +25,7 @@ import Wisdom from "../../../images/logo/3.png";
 import Methodology from "../../../images/logo/4.png";
 
 import logo from "../../../images/lg.png";
-import firstimage from "../../../images/Websitefirstimage.webp";
+import firstimage from "../../../images/Websitefirstimage.jpg";
 import SectionHeading from "../../../components/shared/SectionHeading/SectionHeading";
 
 const Yogaschool = () => {

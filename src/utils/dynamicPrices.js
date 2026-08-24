@@ -1,10 +1,11 @@
 // src/utils/dynamicPrices.js
 
-import { PROGRAM_PRICES, ROOM_PRICES_BALI } from "../data/bali/programPrices";
-import { PROGRAM_PRICES_CHIANG, ROOM_PRICES_CHIANG } from "../data/chiang/programPricesChiang";
-import { PROGRAM_PRICES_DHARAMSHALA, ROOM_PRICES_DHARAMSHALA } from "../data/dharamshala/programPricesDharamshala";
-import { PROGRAM_PRICES_MYSORE, ROOM_PRICES_MYSORE } from "../data/mysore/programPricesMysore";
-import { PROGRAM_PRICES_RISHIKESH, ROOM_PRICES_RISHIKESH } from "../data/rishikesh/programPricesRishikesh";
+import { PROGRAM_PRICES, ROOM_PRICES_BALI } from "../data/bali/programPrices.js";
+import { PROGRAM_PRICES_CHIANG, ROOM_PRICES_CHIANG } from "../data/chiang/programPricesChiang.js";
+import { PROGRAM_PRICES_DHARAMSHALA, ROOM_PRICES_DHARAMSHALA } from "../data/dharamshala/programPricesDharamshala.js";
+import { PROGRAM_PRICES_MYSORE, ROOM_PRICES_MYSORE } from "../data/mysore/programPricesMysore.js";
+import { PROGRAM_PRICES_RISHIKESH, ROOM_PRICES_RISHIKESH } from "../data/rishikesh/programPricesRishikesh.js";
+import defaultPricesData from "../data/generated-prices.js";
 
 
 
@@ -287,46 +288,10 @@ async function fetchGoogleSheetRows(spreadsheetId, sheetName) {
 }
 
 /**
- * Reads and parses rows from the local Excel file inside the project (ombreathe_config_template_new.xlsx).
+ * Reads pricing and batch rows from pre-compiled local JSON (auto-generated at build time from Excel).
  */
-async function fetchLocalExcelRows() {
-  const XLSX = await import("xlsx");
-  const res = await fetch("/ombreathe_config_template_new.xlsx");
-  if (!res.ok) {
-    throw new Error(`Failed to load local Excel file: HTTP status ${res.status}`);
-  }
-  const arrayBuffer = await res.arrayBuffer();
-  const workbook = XLSX.read(arrayBuffer, { type: "array" });
-
-  const parseSheet = (sheetName) => {
-    const sheet = workbook.Sheets[sheetName];
-    if (!sheet) return [];
-    const json = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: "" });
-    if (json.length === 0) return [];
-    
-    const rawHeaders = json[0].map(h => String(h || "").trim());
-    const headers = normalizeHeaders(rawHeaders);
-    
-    const rows = [];
-    for (let i = 1; i < json.length; i++) {
-      const rowArr = json[i];
-      if (!rowArr || rowArr.every(c => c === "" || c === null || c === undefined)) continue;
-      const obj = {};
-      headers.forEach((header, idx) => {
-        if (header) {
-          obj[header] = rowArr[idx] !== undefined && rowArr[idx] !== null ? String(rowArr[idx]).trim() : null;
-        }
-      });
-      rows.push(obj);
-    }
-    return rows;
-  };
-
-  return {
-    programRows: parseSheet("Program Prices"),
-    roomRows: parseSheet("Room Prices"),
-    batchRows: parseSheet("Batches")
-  };
+function fetchLocalExcelRows() {
+  return defaultPricesData || { programRows: [], roomRows: [], batchRows: [] };
 }
 
 /**
@@ -394,8 +359,8 @@ function getUpdatedProgramPrice(mappedLoc, key) {
 }
 
 async function applyDynamicPricesToDataMaps() {
-  const { OmbDataMap } = await import("../features/yoga-retreats-programs/data/OmbDataMap");
-  const { LANDING_LOCATION_DATA } = await import("../features/yoga-retreats-programs/data/LandingPageData");
+  const { OmbDataMap } = await import("../features/yoga-retreats-programs/data/OmbDataMap.js");
+  const { LANDING_LOCATION_DATA } = await import("../features/yoga-retreats-programs/data/LandingPageData.js");
 
   const mappings = [
     { locKeys: ["bali"], mappedLoc: "bali" },
@@ -443,18 +408,19 @@ async function applyDynamicPricesToDataMaps() {
  * Returns true if prices were loaded and applied successfully.
  */
 export async function fetchAndApplyDynamicPrices() {
-  const useGoogleSheets = USE_GOOGLE_SHEETS || import.meta.env.VITE_USE_GOOGLE_SHEETS === "true";
+  const env = (typeof import.meta !== "undefined" && import.meta?.env) ? import.meta.env : {};
+  const useGoogleSheets = USE_GOOGLE_SHEETS || env.VITE_USE_GOOGLE_SHEETS === "true";
 
-  console.log(`[Dynamic Pricing] Source Mode: ${useGoogleSheets ? "GOOGLE SHEETS (Live)" : "LOCAL EXCEL FILE (ombreathe_config_template_new.xlsx)"}`);
+  console.log(`[Dynamic Pricing] Source Mode: ${useGoogleSheets ? "GOOGLE SHEETS (Live)" : "LOCAL EXCEL (Pre-compiled JSON)"}`);
 
   let programRows = [], roomRows = [], batchRows = [];
 
   try {
     if (useGoogleSheets) {
-    const spreadsheetId = import.meta.env.VITE_SPREADSHEET_ID;
-    const programSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_PROGRAM;
-    const roomSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_ROOM;
-    const batchesSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_BATCHES;
+    const spreadsheetId = env.VITE_SPREADSHEET_ID;
+    const programSpreadsheetId = env.VITE_SPREADSHEET_ID_PROGRAM;
+    const roomSpreadsheetId = env.VITE_SPREADSHEET_ID_ROOM;
+    const batchesSpreadsheetId = env.VITE_SPREADSHEET_ID_BATCHES;
 
     console.log("[Dynamic Pricing] Google Sheets Loader initialized:", {
       spreadsheetId: spreadsheetId ? "Configured" : "NOT CONFIGURED",
@@ -632,32 +598,7 @@ export async function fetchAndApplyDynamicPrices() {
       ROOM_PRICES_DHARAMSHALA[key] = val;
     }
 
-    // 3. Propagate updated prices into static maps (OmbDataMap & LandingPageData)
-    await applyDynamicPricesToDataMaps();
-
-    // 4. Fetch and apply Testimonials (if set separately)
-    const testimonialSpreadsheetId = import.meta.env.VITE_SPREADSHEET_ID_TESTIMONIALS;
-    if (testimonialSpreadsheetId) {
-      try {
-        const rows = await fetchGoogleSheetRows(testimonialSpreadsheetId, "Testimonials");
-        const parsedTestimonials = rows.map(row => ({
-          stars: parseInt(row.stars) || 5,
-          quote: row.quote || "",
-          avatar: row.avatar || "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
-          name: row.name || "",
-          country: row.country || ""
-        })).filter(t => t.name && t.quote);
-        
-        if (parsedTestimonials.length > 0) {
-          DYNAMIC_TESTIMONIALS.length = 0;
-          DYNAMIC_TESTIMONIALS.push(...parsedTestimonials);
-        }
-      } catch (err) {
-        console.warn("[Dynamic Pricing] Failed to load testimonials spreadsheet:", err);
-      }
-    }
-
-    // 5. Parse and apply Batch Dates (from batchRows)
+    // 3. Parse and apply Batch Dates (from batchRows)
     if (batchRows && batchRows.length > 0) {
       // Clear previous batches
       for (const key of Object.keys(DYNAMIC_BATCHES)) {
@@ -695,6 +636,35 @@ export async function fetchAndApplyDynamicPrices() {
       // Sort batches chronologically
       for (const key of Object.keys(DYNAMIC_BATCHES)) {
         DYNAMIC_BATCHES[key].sort((a, b) => a.startDate - b.startDate);
+      }
+    }
+
+    // 4. Propagate updated prices into static maps (OmbDataMap & LandingPageData)
+    try {
+      await applyDynamicPricesToDataMaps();
+    } catch (err) {
+      console.warn("[Dynamic Pricing] Static maps update note:", err?.message);
+    }
+
+    // 5. Fetch and apply Testimonials (if set separately)
+    const testimonialSpreadsheetId = env.VITE_SPREADSHEET_ID_TESTIMONIALS;
+    if (testimonialSpreadsheetId) {
+      try {
+        const rows = await fetchGoogleSheetRows(testimonialSpreadsheetId, "Testimonials");
+        const parsedTestimonials = rows.map(row => ({
+          stars: parseInt(row.stars) || 5,
+          quote: row.quote || "",
+          avatar: row.avatar || "/images/external/testimonials/unsplash_photo-1535713875002-d1d0cf377fde.jpg",
+          name: row.name || "",
+          country: row.country || ""
+        })).filter(t => t.name && t.quote);
+        
+        if (parsedTestimonials.length > 0) {
+          DYNAMIC_TESTIMONIALS.length = 0;
+          DYNAMIC_TESTIMONIALS.push(...parsedTestimonials);
+        }
+      } catch (err) {
+        console.warn("[Dynamic Pricing] Failed to load testimonials spreadsheet:", err);
       }
     }
 
